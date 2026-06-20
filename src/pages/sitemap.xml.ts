@@ -1,6 +1,8 @@
 import { absoluteUrl, supportedLocales, xDefaultPath } from "../config/site";
 
-const urls = supportedLocales
+const standalonePaths = ["/privacy/", "/cookies/"];
+
+const localeUrls = supportedLocales
   .map((locale) => {
     const alternates = supportedLocales
       .map(
@@ -18,6 +20,16 @@ ${alternates}
   </url>`;
   })
   .join("\n");
+
+const standaloneUrls = standalonePaths
+  .map(
+    (path) => `  <url>
+    <loc>${absoluteUrl(path)}</loc>
+  </url>`,
+  )
+  .join("\n");
+
+const urls = [localeUrls, standaloneUrls].join("\n");
 
 export function GET() {
   return new Response(`<?xml version="1.0" encoding="UTF-8"?>
