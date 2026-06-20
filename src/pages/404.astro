@@ -1,0 +1,35 @@
+---
+import PageLayout from "../layouts/PageLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { siteConfig } from "../config/site";
+import { landingContent } from "../data/locales";
+
+const content = landingContent.en;
+const routePath = "/";
+---
+
+<PageLayout
+  title={`404 — Page not found — ${siteConfig.name}`}
+  description="The page you are looking for does not exist or has been moved."
+  canonicalPath="/"
+  routePath={routePath}
+  lang="en"
+  baseHref="/"
+  robots="noindex, follow"
+>
+  <Header content={content} routePath={routePath} />
+  <main class="notfound">
+    <p class="notfound-code">404</p>
+    <div class="notfound-text">
+      <h1 class="notfound-title">Page not found</h1>
+      <p class="notfound-title-uk" lang="uk">Сторінку не знайдено</p>
+    </div>
+    <p class="notfound-body">
+      The page you're looking for doesn't exist or has been moved.<br />
+      <span lang="uk">Сторінки, яку ви шукаєте, не існує або її переміщено.</span>
+    </p>
+    <a href="/" class="btn-primary notfound-cta">Back to home / На головну</a>
+  </main>
+  <Footer content={content} routePath={routePath} />
+</PageLayout>
