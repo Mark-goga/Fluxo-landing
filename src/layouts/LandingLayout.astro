@@ -1,0 +1,70 @@
+---
+import { absoluteUrl, pageAssetUrl, siteConfig, supportedLocales, xDefaultPath } from "../config/site";
+import type { LandingContent } from "../data/locales";
+import "../styles/styles.css";
+
+interface Props {
+  content: LandingContent;
+  canonicalPath: string;
+  routePath: string;
+}
+
+const { content, canonicalPath, routePath } = Astro.props;
+const canonicalUrl = absoluteUrl(canonicalPath);
+const heroImageUrl = absoluteUrl(siteConfig.heroImagePath);
+const heroImagePath = pageAssetUrl(routePath, siteConfig.heroImagePath);
+const scriptPath = pageAssetUrl(routePath, siteConfig.scriptPath);
+const websiteJson = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: siteConfig.name,
+  description: content.structuredData.description,
+  url: canonicalUrl,
+  inLanguage: content.lang,
+};
+const claritySnippet = `(function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "${siteConfig.clarityProjectId}");`;
+---
+
+<!doctype html>
+<html lang={content.lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{content.meta.title}</title>
+    <meta name="description" content={content.meta.description} />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0f766e" />
+    <link rel="canonical" href={canonicalUrl} />
+    {
+      supportedLocales.map((locale) => (
+        <link rel="alternate" hreflang={locale.hreflang} href={absoluteUrl(locale.path)} />
+      ))
+    }
+    <link rel="alternate" hreflang="x-default" href={absoluteUrl(xDefaultPath)} />
+    <link rel="preload" as="image" href={heroImagePath} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={siteConfig.name} />
+    <meta property="og:title" content={content.meta.ogTitle} />
+    <meta property="og:description" content={content.meta.ogDescription} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={heroImageUrl} />
+    <meta property="og:locale" content={content.ogLocale} />
+    <meta property="og:locale:alternate" content={content.ogLocaleAlternate} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={content.meta.twitterTitle} />
+    <meta name="twitter:description" content={content.meta.twitterDescription} />
+    <meta name="twitter:image" content={heroImageUrl} />
+
+    <script type="application/ld+json" set:html={JSON.stringify(websiteJson)}></script>
+    <script type="text/javascript" is:inline set:html={claritySnippet}></script>
+  </head>
+  <body>
+    <slot />
+    <script src={scriptPath} defer></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+---
+import Footer from "./Footer.astro";
+import Header from "./Header.astro";
+import Hero from "./Hero.astro";
+import LandingLayout from "../layouts/LandingLayout.astro";
+import type { LocaleKey } from "../config/site";
+import { landingContent } from "../data/locales";
+
+interface Props {
+  locale: LocaleKey;
+  canonicalPath?: string;
+  routePath?: string;
+}
+
+const { locale, canonicalPath, routePath } = Astro.props;
+const content = landingContent[locale];
+const pageCanonicalPath = canonicalPath ?? content.path;
+const pageRoutePath = routePath ?? content.path;
+---
+
+<LandingLayout content={content} canonicalPath={pageCanonicalPath} routePath={pageRoutePath}>
+  <Header content={content} />
+  <Hero content={content} routePath={pageRoutePath} />
+  <Footer content={content} />
+</LandingLayout>

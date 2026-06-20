@@ -1,0 +1,25 @@
+---
+import { siteConfig } from "../config/site";
+import type { LandingContent } from "../data/locales";
+
+interface Props {
+  content: LandingContent;
+}
+
+const { content } = Astro.props;
+---
+
+<header class="site-header" data-header>
+  <a class="brand" href={content.path} aria-label={content.header.homeAria}>
+    <span class="brand-mark" aria-hidden="true">{siteConfig.name.slice(0, 1).toUpperCase()}</span>
+    <span>{siteConfig.name}</span>
+  </a>
+  <div class="header-actions">
+    <a class="language-link" href={content.header.languageLink.href} lang={content.header.languageLink.lang}>
+      {content.header.languageLink.label}
+    </a>
+    <a class="button button-small" href={content.header.cta.href} data-clarity-event={content.header.cta.clarityEvent}>
+      {content.header.cta.label}
+    </a>
+  </div>
+</header>
