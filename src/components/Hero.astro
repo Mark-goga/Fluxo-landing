@@ -1,5 +1,5 @@
 ---
-import { pageAssetUrl, siteConfig } from "../config/site";
+import { pageAssetUrl } from "../config/site";
 import type { LandingContent } from "../data/locales";
 
 interface Props {
@@ -8,30 +8,29 @@ interface Props {
 }
 
 const { content, routePath } = Astro.props;
-const heroImagePath = pageAssetUrl(routePath, siteConfig.heroImagePath);
+const heroImage = pageAssetUrl(routePath, "assets/hero.png");
 ---
 
-<main>
-  <section class="hero" id="start">
-    <div class="hero-copy">
-      <p class="eyebrow">{content.hero.eyebrow}</p>
-      <h1>{content.hero.title}</h1>
-      <p class="hero-text">{content.hero.text}</p>
-      <div class="hero-actions">
-        <a class="button" href={content.hero.primaryCta.href} data-clarity-event={content.hero.primaryCta.clarityEvent}>
-          {content.hero.primaryCta.label}
-        </a>
-        <a
-          class="button button-secondary"
-          href={content.hero.secondaryCta.href}
-          data-clarity-event={content.hero.secondaryCta.clarityEvent}
-        >
-          {content.hero.secondaryCta.label}
-        </a>
-      </div>
+<section class="hero" id="start">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1 set:html={content.hero.titleHtml} />
+      <p class="hero-body">{content.hero.text}</p>
     </div>
-    <figure class="hero-media">
-      <img src={heroImagePath} width="1536" height="1024" alt={content.hero.imageAlt} />
-    </figure>
-  </section>
-</main>
+    <div class="hero-buttons">
+      <a href={content.hero.primaryCta.href} class="btn-primary" data-clarity-event={content.hero.primaryCta.clarityEvent}>
+        {content.hero.primaryCta.label}
+      </a>
+      <a
+        href={content.hero.secondaryCta.href}
+        class="btn-secondary btn-secondary-lg"
+        data-clarity-event={content.hero.secondaryCta.clarityEvent}
+      >
+        {content.hero.secondaryCta.label}
+      </a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img src={heroImage} alt={content.hero.imageAlt} />
+  </div>
+</section>

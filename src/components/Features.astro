@@ -1,0 +1,78 @@
+---
+import { pageAssetUrl } from "../config/site";
+import type { LandingContent } from "../data/locales";
+
+interface Props {
+  content: LandingContent;
+  routePath: string;
+}
+
+const { content, routePath } = Astro.props;
+const { features } = content;
+
+const sparkle = pageAssetUrl(routePath, "assets/sparkle.svg");
+const fire = pageAssetUrl(routePath, "assets/fire.svg");
+const cat = pageAssetUrl(routePath, "assets/cat.png");
+---
+
+<section class="features" id="features">
+  <h2 class="section-title" set:html={features.titleHtml} />
+
+  <div class="features-layout">
+    <div class="features-col">
+      {
+        features.leftCards.map((card) => (
+          <div class="feat-card" style={`background:${card.bg}`}>
+            <div class={`feat-sticker feat-sticker--${card.sticker}`}>
+              <img src={pageAssetUrl(routePath, card.icon)} alt={card.iconAlt} />
+            </div>
+            <div class="feat-card-body">
+              <p class="feat-card-title">{card.title}</p>
+              <p class="feat-card-desc">{card.desc}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    <div class="features-center">
+      <div class="feat-ai-badge">
+        <img src={sparkle} alt="" class="feat-ai-icon" /> {features.aiBadge}
+      </div>
+      <div class="cat-box">
+        <img src={cat} alt={features.catAlt} />
+      </div>
+      <div class="feat-streak">
+        <div class="feat-streak-icons">
+          <div class="feat-fire"><img src={fire} alt="" /></div>
+          <div class="feat-fire"><img src={fire} alt="" /></div>
+          <div class="feat-fire"><img src={fire} alt="" /></div>
+          <div class="feat-fire"><img src={fire} alt="" /></div>
+        </div>
+        <span set:html={features.streakHtml} />
+      </div>
+    </div>
+
+    <div class="features-col">
+      {
+        features.rightCards.map((card) => (
+          <div class="feat-card" style={`background:${card.bg}`}>
+            <div class={`feat-sticker feat-sticker--${card.sticker}`}>
+              <img src={pageAssetUrl(routePath, card.icon)} alt={card.iconAlt} />
+            </div>
+            <div class="feat-card-body">
+              <p class="feat-card-title">{card.title}</p>
+              <p class="feat-card-desc">{card.desc}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+
+  <div class="features-cta">
+    <a href={features.cta.href} class="btn-primary" data-clarity-event={features.cta.clarityEvent}>
+      {features.cta.label}
+    </a>
+  </div>
+</section>

@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 const root = fileURLToPath(new URL("../", import.meta.url));
 const distDir = join(root, "dist");
 
-const walk = async (dir) => {
+const walk = async (dir, extensions) => {
   const entries = await readdir(dir, { withFileTypes: true });
   const files = [];
 
@@ -13,11 +13,11 @@ const walk = async (dir) => {
     const path = join(dir, entry.name);
 
     if (entry.isDirectory()) {
-      files.push(...(await walk(path)));
+      files.push(...(await walk(path, extensions)));
       continue;
     }
 
-    if (entry.isFile() && entry.name.endsWith(".html")) {
+    if (entry.isFile() && extensions.some((ext) => entry.name.endsWith(ext))) {
       files.push(path);
     }
   }
@@ -37,7 +37,7 @@ const prefixFor = (htmlPath) => {
   return "../".repeat(depth);
 };
 
-for (const htmlPath of await walk(distDir)) {
+for (const htmlPath of await walk(distDir, [".html"])) {
   const prefix = prefixFor(htmlPath);
   const html = await readFile(htmlPath, "utf8");
   const next = html
@@ -50,5 +50,16 @@ for (const htmlPath of await walk(distDir)) {
 
   if (next !== html) {
     await writeFile(htmlPath, next);
+  }
+}
+
+// Bundled CSS always lives in dist/_astro/, so font/asset URLs there
+// can use a fixed relative prefix that works from file:// and hosting.
+for (const cssPath of await walk(join(distDir, "_astro"), [".css"])) {
+  const css = await readFile(cssPath, "utf8");
+  const next = css.replaceAll("url(/assets/", "url(../assets/");
+
+  if (next !== css) {
+    await writeFile(cssPath, next);
   }
 }

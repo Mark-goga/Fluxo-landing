@@ -1,0 +1,41 @@
+---
+import type { LandingContent } from "../data/locales";
+
+interface Props {
+  content: LandingContent;
+}
+
+const { content } = Astro.props;
+---
+
+<section class="faq" id="faq">
+  <div class="faq-layout">
+    <div class="faq-header">
+      <h2 class="section-title" set:html={content.faq.titleHtml} />
+    </div>
+    <div class="faq-list">
+      {
+        content.faq.items.map((item) => (
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>{item.question}</span>
+              <span class="faq-icon-wrap">
+                <svg class="faq-icon faq-icon--plus" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+                </svg>
+                <svg class="faq-icon faq-icon--minus" width="14" height="14" viewBox="0 0 14 2" fill="none">
+                  <path d="M1 1h12" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer-wrap">
+              <div class="faq-answer-inner">
+                <p>{item.answer}</p>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

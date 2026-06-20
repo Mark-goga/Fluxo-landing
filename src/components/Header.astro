@@ -1,25 +1,43 @@
 ---
-import { siteConfig } from "../config/site";
+import { pageAssetUrl } from "../config/site";
 import type { LandingContent } from "../data/locales";
 
 interface Props {
   content: LandingContent;
+  routePath: string;
 }
 
-const { content } = Astro.props;
+const { content, routePath } = Astro.props;
+const logo = pageAssetUrl(routePath, "assets/logo-fluxo.png");
 ---
 
-<header class="site-header" data-header>
-  <a class="brand" href={content.path} aria-label={content.header.homeAria}>
-    <span class="brand-mark" aria-hidden="true">{siteConfig.name.slice(0, 1).toUpperCase()}</span>
-    <span>{siteConfig.name}</span>
-  </a>
-  <div class="header-actions">
-    <a class="language-link" href={content.header.languageLink.href} lang={content.header.languageLink.lang}>
-      {content.header.languageLink.label}
+<header>
+  <div class="header-wrapper">
+    <a href={content.path} class="logo" aria-label={content.header.homeAria}>
+      <img src={logo} alt={content.footer.brandAlt} height="28" />
     </a>
-    <a class="button button-small" href={content.header.cta.href} data-clarity-event={content.header.cta.clarityEvent}>
+    <nav class="nav">
+      {content.header.nav.map((link) => <a href={link.href} class="nav-link">{link.label}</a>)}
+      <a href={content.header.languageLink.href} class="nav-link" lang={content.header.languageLink.lang}>
+        {content.header.languageLink.label}
+      </a>
+    </nav>
+    <a href={content.header.cta.href} class="btn-secondary" data-clarity-event={content.header.cta.clarityEvent}>
       {content.header.cta.label}
     </a>
+    <button class="burger" aria-label="Menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
   </div>
+
+  <nav class="mobile-nav" id="mobileNav">
+    {content.header.nav.map((link) => <a href={link.href} class="nav-link">{link.label}</a>)}
+    <a href={content.header.languageLink.href} class="nav-link" lang={content.header.languageLink.lang}>
+      {content.header.languageLink.label}
+    </a>
+    <a href={content.header.cta.href} class="btn-secondary" data-clarity-event={content.header.cta.clarityEvent}>
+      {content.header.cta.label}
+    </a>
+  </nav>
 </header>

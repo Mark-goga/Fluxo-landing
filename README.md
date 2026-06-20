@@ -1,22 +1,24 @@
-# Multilingual SEO Landing Template
+# Fluxo Landing
 
-Static Astro template for fast landing pages with multilingual routing, SEO metadata, hreflang, sitemap, robots.txt,
-JSON-LD, Open Graph, Twitter cards, Microsoft Clarity events, and file-friendly static build output.
+Static Astro landing page for Fluxo — a learning app that turns passive reading into active long-term memory.
+Built on a multilingual SEO foundation: SEO metadata, hreflang, sitemap, robots.txt, JSON-LD, Open Graph,
+Twitter cards, Microsoft Clarity events, and file-friendly static build output.
 
-The template is intentionally small: header, hero, and footer. Build the real landing by editing localized content and
-adding only the sections the domain needs.
+The landing is split into purpose-specific sections: header, hero, "Why Fluxo", features, pricing, FAQ, CTA,
+and footer. All copy and SEO metadata live in `src/data/locales.ts` for both English and Ukrainian.
 
 ## What Is Included
 
 - Astro static output, no SSR.
 - English main page at `/`.
-- Ukrainian secondary page at `/uk/`.
+- Ukrainian page at `/uk/` (fully translated).
 - No `/en/` route, because English is already canonical at `/`.
 - Centralized SEO and localized copy in `src/data/locales.ts`.
 - Environment-driven site config in `src/config/site.ts`.
 - Generated `robots.txt` and `sitemap.xml`.
 - Microsoft Clarity loader and `data-clarity-event` click tracking.
-- Post-build relative asset paths, so `dist/index.html` can be opened directly in a browser.
+- Interactive mobile nav drawer and FAQ accordion in `public/script.js`.
+- Post-build relative asset paths (HTML and CSS), so `dist/index.html` can be opened directly in a browser.
 
 ## Local Setup
 
@@ -80,13 +82,28 @@ asset URLs to relative paths.
   Owns `<html>`, `<head>`, canonical, hreflang, OG, Twitter cards, JSON-LD, Clarity, CSS, and JS loading.
 
 - `src/components/Header.astro`  
-  Brand, language switcher, and header CTA.
+  Logo, primary nav, language switcher, header CTA, and mobile burger drawer.
 
 - `src/components/Hero.astro`  
-  First viewport content and hero image.
+  First viewport: headline, body copy, CTAs, and hero image.
+
+- `src/components/WhyFluxo.astro`  
+  Three problem cards explaining why Fluxo exists.
+
+- `src/components/Features.astro`  
+  Feature cards around the central "cat" visual, AI badge, and streak.
+
+- `src/components/Pricing.astro`  
+  Three pricing tiers with feature lists.
+
+- `src/components/Faq.astro`  
+  Accordion of frequently asked questions.
+
+- `src/components/Cta.astro`  
+  Email capture call-to-action.
 
 - `src/components/Footer.astro`  
-  Copyright and simple footer links.
+  Brand, social links, link columns, and copyright.
 
 - `src/pages/index.astro`  
   English main route at `/`.

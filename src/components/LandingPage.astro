@@ -1,7 +1,12 @@
 ---
-import Footer from "./Footer.astro";
 import Header from "./Header.astro";
 import Hero from "./Hero.astro";
+import WhyFluxo from "./WhyFluxo.astro";
+import Features from "./Features.astro";
+import Pricing from "./Pricing.astro";
+import Faq from "./Faq.astro";
+import Cta from "./Cta.astro";
+import Footer from "./Footer.astro";
 import LandingLayout from "../layouts/LandingLayout.astro";
 import type { LocaleKey } from "../config/site";
 import { landingContent } from "../data/locales";
@@ -19,7 +24,14 @@ const pageRoutePath = routePath ?? content.path;
 ---
 
 <LandingLayout content={content} canonicalPath={pageCanonicalPath} routePath={pageRoutePath}>
-  <Header content={content} />
-  <Hero content={content} routePath={pageRoutePath} />
-  <Footer content={content} />
+  <Header content={content} routePath={pageRoutePath} />
+  <main>
+    <Hero content={content} routePath={pageRoutePath} />
+    <WhyFluxo content={content} routePath={pageRoutePath} />
+    <Features content={content} routePath={pageRoutePath} />
+    <Pricing content={content} />
+    <Faq content={content} />
+    <Cta content={content} />
+  </main>
+  <Footer content={content} routePath={pageRoutePath} />
 </LandingLayout>
