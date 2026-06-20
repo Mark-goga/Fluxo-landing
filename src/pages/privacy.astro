@@ -1,0 +1,26 @@
+---
+import PageLayout from "../layouts/PageLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import PolicyDocument from "../components/PolicyDocument.astro";
+import policyHtml from "../components/policy-privacy.html?raw";
+import { siteConfig } from "../config/site";
+import { landingContent } from "../data/locales";
+
+const content = landingContent.en;
+const routePath = "/privacy/";
+---
+
+<PageLayout
+  title={`Privacy Policy — ${siteConfig.name}`}
+  description={`How ${siteConfig.name} collects, uses, and protects your personal data.`}
+  canonicalPath="/privacy/"
+  routePath={routePath}
+  lang="en"
+>
+  <Header content={content} routePath={routePath} />
+  <main class="legal-page">
+    <PolicyDocument html={policyHtml} />
+  </main>
+  <Footer content={content} routePath={routePath} />
+</PageLayout>

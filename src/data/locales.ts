@@ -108,6 +108,7 @@ export type LandingContent = {
     brandAlt: string;
     socials: { label: string; href: string }[];
     columns: FooterColumn[];
+    consentPreferences: string;
     copyright: string;
   };
   structuredData: {
@@ -336,7 +337,8 @@ export const landingContent = {
             { label: "About Us", href: "#" },
             { label: "Blog Node", href: "#" },
             { label: "Contact", href: "#" },
-            { label: "Privacy Policy", href: "#" },
+            { label: "Privacy Policy", href: "/privacy/" },
+            { label: "Cookie Policy", href: "/cookies/" },
             { label: "Terms of Service", href: "#" },
           ],
         },
@@ -353,6 +355,7 @@ export const landingContent = {
           ],
         },
       ],
+      consentPreferences: "Cookie Preferences",
       copyright: `© 2026 ${siteConfig.name} all rights reserved`,
     },
     structuredData: {
@@ -580,7 +583,8 @@ export const landingContent = {
             { label: "Про нас", href: "#" },
             { label: "Блог", href: "#" },
             { label: "Контакти", href: "#" },
-            { label: "Політика конфіденційності", href: "#" },
+            { label: "Політика конфіденційності", href: "/privacy/" },
+            { label: "Політика cookie", href: "/cookies/" },
             { label: "Умови використання", href: "#" },
           ],
         },
@@ -597,6 +601,7 @@ export const landingContent = {
           ],
         },
       ],
+      consentPreferences: "Налаштування cookie",
       copyright: `© 2026 ${siteConfig.name}. Усі права захищені`,
     },
     structuredData: {

@@ -1,0 +1,26 @@
+---
+import PageLayout from "../layouts/PageLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import PolicyDocument from "../components/PolicyDocument.astro";
+import policyHtml from "../components/policy-cookies.html?raw";
+import { siteConfig } from "../config/site";
+import { landingContent } from "../data/locales";
+
+const content = landingContent.en;
+const routePath = "/cookies/";
+---
+
+<PageLayout
+  title={`Cookie Policy — ${siteConfig.name}`}
+  description={`How ${siteConfig.name} uses cookies and similar technologies, and how you can control them.`}
+  canonicalPath="/cookies/"
+  routePath={routePath}
+  lang="en"
+>
+  <Header content={content} routePath={routePath} />
+  <main class="legal-page">
+    <PolicyDocument html={policyHtml} />
+  </main>
+  <Footer content={content} routePath={routePath} />
+</PageLayout>

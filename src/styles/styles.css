@@ -939,6 +939,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
   position: relative;
   z-index: 1;
 }
@@ -1451,5 +1453,50 @@ header {
 
   .hero-content {
     order: 0;
+  }
+}
+
+/* ── Legal / policy page ── */
+.legal-page {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 64px 9vw 100px;
+  min-height: 60vh;
+}
+
+.legal-placeholder {
+  color: #707070;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.legal-placeholder code {
+  background: rgba(8, 3, 27, 0.06);
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+/* Consent preferences trigger in the footer */
+.footer-consent {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.40);
+  transition: color 0.2s;
+}
+
+.footer-consent:hover {
+  color: white;
+}
+
+@media (max-width: 640px) {
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
   }
 }

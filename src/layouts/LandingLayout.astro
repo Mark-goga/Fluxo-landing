@@ -1,6 +1,7 @@
 ---
 import { absoluteUrl, pageAssetUrl, siteConfig, supportedLocales, xDefaultPath } from "../config/site";
 import type { LandingContent } from "../data/locales";
+import TrackingScripts from "../components/TrackingScripts.astro";
 import "../styles/styles.css";
 
 interface Props {
@@ -14,6 +15,8 @@ const canonicalUrl = absoluteUrl(canonicalPath);
 const heroImageUrl = absoluteUrl(siteConfig.heroImagePath);
 const heroImagePath = pageAssetUrl(routePath, siteConfig.heroImagePath);
 const scriptPath = pageAssetUrl(routePath, siteConfig.scriptPath);
+const favicon = pageAssetUrl(routePath, "assets/favicon.png");
+const faviconDark = pageAssetUrl(routePath, "assets/favicon-dark.png");
 const websiteJson = {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -22,11 +25,6 @@ const websiteJson = {
   url: canonicalUrl,
   inLanguage: content.lang,
 };
-const claritySnippet = `(function(c,l,a,r,i,t,y){
-    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-})(window, document, "clarity", "script", "${siteConfig.clarityProjectId}");`;
 ---
 
 <!doctype html>
@@ -35,18 +33,14 @@ const claritySnippet = `(function(c,l,a,r,i,t,y){
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{content.meta.title}</title>
-
-    <script
-      type="text/javascript"
-      src="https://app.termly.io/embed.min.js"
-      data-auto-block="on"
-      data-website-uuid="ТУТ_ТВІЙ_UUID_З_TERMLY"
-      is:inline
-    ></script>
+    <TrackingScripts />
 
     <meta name="description" content={content.meta.description} />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#4C27E3" />
+    <link rel="icon" type="image/png" href={favicon} />
+    <link rel="icon" type="image/png" href={faviconDark} media="(prefers-color-scheme: dark)" />
+    <link rel="apple-touch-icon" href={favicon} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -76,7 +70,6 @@ const claritySnippet = `(function(c,l,a,r,i,t,y){
     <meta name="twitter:image" content={heroImageUrl} />
 
     <script type="application/ld+json" set:html={JSON.stringify(websiteJson)}></script>
-    <script type="text/plain" data-categories="analytics" is:inline set:html={claritySnippet}></script>
   </head>
   <body>
     <slot />
