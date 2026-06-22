@@ -10,19 +10,18 @@ document.querySelectorAll("[data-clarity-event]").forEach((element) => {
   });
 });
 
-// Mobile navigation drawer
-const burger = document.querySelector(".burger");
-const mobileNav = document.getElementById("mobileNav");
+document.querySelectorAll(".burger").forEach((burger) => {
+  const mobileNav = burger.closest("header")?.querySelector(".mobile-nav");
 
-if (burger && mobileNav) {
+  if (!mobileNav) return;
+
   burger.addEventListener("click", () => {
     const isOpen = mobileNav.classList.toggle("open");
     burger.classList.toggle("open", isOpen);
     burger.setAttribute("aria-expanded", isOpen);
   });
-}
+});
 
-// FAQ accordion
 document.querySelectorAll(".faq-question").forEach((btn) => {
   btn.addEventListener("click", () => {
     const item = btn.closest(".faq-item");

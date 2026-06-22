@@ -1146,13 +1146,16 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
   padding: 14px 20px;
+  border: none;
   border-radius: 12px;
   font-family: 'Roboto Flex', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.4;
   text-decoration: none;
+  cursor: pointer;
   transition: background 0.2s, box-shadow 0.2s, opacity 0.2s;
   white-space: nowrap;
 }
@@ -1478,6 +1481,20 @@ header {
 }
 
 /* ── 404 page ── */
+/* Two localized versions live in the DOM; an inline script in 404.astro
+   adds .is-uk to <html> for /uk* paths. English is shown by default. */
+.locale-uk {
+  display: none;
+}
+
+html.is-uk .locale-uk {
+  display: block;
+}
+
+html.is-uk .locale-en {
+  display: none;
+}
+
 .notfound {
   min-height: 60vh;
   padding: 64px 9vw 100px;
@@ -1505,27 +1522,12 @@ header {
     0 0 16px rgba(186, 215, 255, 0.18);
 }
 
-.notfound-text {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
 .notfound-title {
   color: #383838;
   font-family: 'Roboto Flex', sans-serif;
   font-size: clamp(28px, 4vw, 40px);
   font-weight: 500;
   line-height: 1.1;
-  margin: 0;
-}
-
-.notfound-title-uk {
-  color: #545454;
-  font-family: 'Roboto Flex', sans-serif;
-  font-size: clamp(20px, 3vw, 28px);
-  font-weight: 400;
-  line-height: 1.2;
   margin: 0;
 }
 
@@ -1564,4 +1566,173 @@ header {
     flex-direction: column;
     gap: 12px;
   }
+}
+
+/* Lead modal */
+.lead-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.lead-modal[hidden] {
+  display: none;
+}
+
+.lead-modal--open {
+  opacity: 1;
+}
+
+.lead-modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 3, 27, 0.55);
+  backdrop-filter: blur(4px);
+}
+
+.lead-modal__dialog {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  background: white;
+  border-radius: 20px;
+  padding: 36px 32px 32px;
+  box-shadow: 0px 24px 60px rgba(8, 3, 27, 0.25);
+  transform: translateY(16px) scale(0.98);
+  transition: transform 0.25s ease;
+}
+
+.lead-modal--open .lead-modal__dialog {
+  transform: translateY(0) scale(1);
+}
+
+.lead-modal__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(8, 3, 27, 0.05);
+  color: #1C1C1C;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.lead-modal__close:hover {
+  background: rgba(8, 3, 27, 0.1);
+}
+
+.lead-modal__title {
+  margin: 0 0 12px;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #1C1C1C;
+}
+
+.lead-modal__desc {
+  margin: 0 0 24px;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(28, 28, 28, 0.65);
+}
+
+.lead-modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lead-modal__input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid rgba(8, 3, 27, 0.15);
+  border-radius: 12px;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #1C1C1C;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.lead-modal__input:focus {
+  border-color: #4C27E3;
+}
+
+.lead-modal__input::placeholder {
+  color: rgba(28, 28, 28, 0.4);
+}
+
+.lead-modal__submit {
+  width: 100%;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 12px;
+  background: #4C27E3;
+  box-shadow: 0px 4px 8px rgba(8, 3, 27, 0.2);
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s, opacity 0.2s;
+}
+
+.lead-modal__submit:hover {
+  background: #3D1FB6;
+}
+
+.lead-modal__submit:disabled,
+.cta-form button:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+/* Lead toast */
+.lead-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 28px;
+  z-index: 1100;
+  max-width: calc(100vw - 40px);
+  padding: 14px 20px;
+  border-radius: 12px;
+  background: #1C1C1C;
+  box-shadow: 0px 12px 32px rgba(8, 3, 27, 0.3);
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  color: white;
+  transform: translate(-50%, 16px);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.lead-toast[hidden] {
+  display: none;
+}
+
+.lead-toast--visible {
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+
+.lead-toast--error {
+  background: #C0392B;
 }

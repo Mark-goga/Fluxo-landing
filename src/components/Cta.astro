@@ -10,7 +10,7 @@ const { content } = Astro.props;
 
 <section class="cta" id="cta">
   <h2 class="cta-title" set:html={content.cta.titleHtml} />
-  <form class="cta-form" onsubmit="return false;">
+  <form class="cta-form" data-lead-form data-from="input-email" novalidate>
     <div class="cta-input-shell">
       <div class="cta-input-row">
         <svg class="cta-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,7 +34,7 @@ const { content } = Astro.props;
             <clipPath id="clip0"><rect width="20" height="20" fill="white"></rect></clipPath>
           </defs>
         </svg>
-        <input type="email" placeholder={content.cta.placeholder} />
+        <input type="email" name="email" placeholder={content.cta.placeholder} required autocomplete="email" />
       </div>
     </div>
     <button type="submit" data-clarity-event={content.cta.submit.clarityEvent}>{content.cta.submit.label}</button>

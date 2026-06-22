@@ -8,6 +8,14 @@ const claritySnippet = `(function(c,l,a,r,i,t,y){
     t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
     y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 })(window, document, "clarity", "script", "${siteConfig.clarityProjectId}");`;
+
+// Google Analytics (gtag.js). Like Clarity, both tags are `text/plain` +
+// `data-categories="analytics"` so Termly's auto-blocker keeps them disabled
+// until the visitor consents.
+const gaSnippet = `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${siteConfig.gaMeasurementId}');`;
 ---
 
 {
@@ -22,3 +30,17 @@ const claritySnippet = `(function(c,l,a,r,i,t,y){
   )
 }
 <script type="text/plain" data-categories="analytics" is:inline set:html={claritySnippet} />
+{
+  siteConfig.gaMeasurementId && (
+    <>
+      <script
+        type="text/plain"
+        data-categories="analytics"
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.gaMeasurementId}`}
+        is:inline
+      />
+      <script type="text/plain" data-categories="analytics" is:inline set:html={gaSnippet} />
+    </>
+  )
+}

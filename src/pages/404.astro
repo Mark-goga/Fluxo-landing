@@ -5,31 +5,64 @@ import Footer from "../components/Footer.astro";
 import { siteConfig } from "../config/site";
 import { landingContent } from "../data/locales";
 
-const content = landingContent.en;
 const routePath = "/";
+
+const notFound = {
+  en: {
+    content: landingContent.en,
+    title: "Page not found",
+    body: "The page you're looking for doesn't exist or has been moved.",
+    cta: "Back to home",
+  },
+  uk: {
+    content: landingContent.uk,
+    title: "Сторінку не знайдено",
+    body: "Сторінки, яку ви шукаєте, не існує або її переміщено.",
+    cta: "На головну",
+  },
+} as const;
 ---
 
 <PageLayout
-  title={`404 — Page not found — ${siteConfig.name}`}
-  description="The page you are looking for does not exist or has been moved."
+  title={`404 — ${notFound.en.title} — ${siteConfig.name}`}
+  description={notFound.en.body}
   canonicalPath="/"
   routePath={routePath}
   lang="en"
   baseHref="/"
   robots="noindex, follow"
 >
-  <Header content={content} routePath={routePath} />
-  <main class="notfound">
-    <p class="notfound-code">404</p>
-    <div class="notfound-text">
-      <h1 class="notfound-title">Page not found</h1>
-      <p class="notfound-title-uk" lang="uk">Сторінку не знайдено</p>
-    </div>
-    <p class="notfound-body">
-      The page you're looking for doesn't exist or has been moved.<br />
-      <span lang="uk">Сторінки, яку ви шукаєте, не існує або її переміщено.</span>
-    </p>
-    <a href="/" class="btn-primary notfound-cta">Back to home / На головну</a>
-  </main>
-  <Footer content={content} routePath={routePath} />
+  {/* Pick the locale from the URL before the page paints, so the matching
+      version is shown without a flash. /uk* → Ukrainian, everything else → English. */}
+  <script is:inline>
+    (function () {
+      var path = location.pathname;
+      if (path === "/uk" || path.indexOf("/uk/") === 0) {
+        var doc = document.documentElement;
+        doc.classList.add("is-uk");
+        doc.lang = "uk";
+        document.title = "404 — Сторінку не знайдено — Fluxo";
+      }
+    })();
+  </script>
+
+  {
+    (["en", "uk"] as const).map((locale) => {
+      const data = notFound[locale];
+      return (
+        <div class={`locale-block locale-${locale}`}>
+          <Header content={data.content} routePath={routePath} />
+          <main class="notfound">
+            <p class="notfound-code">404</p>
+            <h1 class="notfound-title">{data.title}</h1>
+            <p class="notfound-body">{data.body}</p>
+            <a href={data.content.path} class="btn-primary notfound-cta">
+              {data.cta}
+            </a>
+          </main>
+          <Footer content={data.content} routePath={routePath} />
+        </div>
+      );
+    })
+  }
 </PageLayout>

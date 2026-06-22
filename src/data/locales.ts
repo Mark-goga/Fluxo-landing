@@ -104,6 +104,17 @@ export type LandingContent = {
     submit: Action;
     noteHtml: string;
   };
+  modal: {
+    title: string;
+    description: string;
+    placeholder: string;
+    submit: string;
+    closeAria: string;
+  };
+  toast: {
+    success: string;
+    error: string;
+  };
   footer: {
     brandAlt: string;
     socials: { label: string; href: string }[];
@@ -313,6 +324,18 @@ export const landingContent = {
       placeholder: "Enter your email",
       submit: { label: "Get Early Access", href: "#", clarityEvent: "signup_submit" },
       noteHtml: `First 50 users get <strong>premium plus 60%</strong> discount`,
+    },
+    modal: {
+      title: "We haven't launched yet",
+      description:
+        "Fluxo isn't live yet — but the first members get exclusive early-bird discounts. Leave your email and we'll let you know the moment we launch.",
+      placeholder: "Enter your email",
+      submit: "Notify me",
+      closeAria: "Close",
+    },
+    toast: {
+      success: "Thanks! You're on the early-access list.",
+      error: "Something went wrong. Please try again.",
     },
     footer: {
       brandAlt: `${siteConfig.name}`,
@@ -559,6 +582,18 @@ export const landingContent = {
       placeholder: "Введіть ваш email",
       submit: { label: "Отримати ранній доступ", href: "#", clarityEvent: "signup_submit" },
       noteHtml: `Перші 50 користувачів отримають <strong>знижку 60% на Premium Plus</strong>`,
+    },
+    modal: {
+      title: "Ми ще не запустилися",
+      description:
+        "Fluxo поки не запущено — але перші учасники отримають ексклюзивні знижки. Залиш свій email, і ми повідомимо, щойно запустимося.",
+      placeholder: "Введіть ваш email",
+      submit: "Повідомити мене",
+      closeAria: "Закрити",
+    },
+    toast: {
+      success: "Дякуємо! Ти у списку раннього доступу.",
+      error: "Щось пішло не так. Спробуй ще раз.",
     },
     footer: {
       brandAlt: `${siteConfig.name}`,

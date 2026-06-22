@@ -14,14 +14,20 @@ const optionalEnv = (key: string) => import.meta.env[key] ?? process.env[key] ??
 
 const normalizeAssetPath = (path: string) => path.replace(/^\/+/, "");
 
+const stripTrailingSlash = (url: string) => url.replace(/\/+$/, "");
+
 export const siteConfig = {
   name: requiredEnv("SITE_NAME"),
   clarityProjectId: requiredEnv("CLARITY_PROJECT_ID"),
   heroImagePath: normalizeAssetPath(requiredEnv("HERO_IMAGE_PATH")),
   scriptPath: normalizeAssetPath(requiredEnv("SITE_SCRIPT_PATH")),
-  // Termly website UUID for the cookie-consent banner. Optional: when empty,
-  // the banner simply does not render (e.g. local builds without a Termly id).
+
   termlyUuid: optionalEnv("TERMLY_WEBSITE_UUID"),
+
+  gaMeasurementId: optionalEnv("GA_MEASUREMENT_ID"),
+
+  leadsApiUrl: stripTrailingSlash(requiredEnv("LEADS_API_URL")),
+  applicationId: requiredEnv("APPLICATION_ID"),
 };
 
 const rawSiteUrl = requiredEnv("SITE_URL");

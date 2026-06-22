@@ -6,6 +6,12 @@ interface Props {
 }
 
 const { content } = Astro.props;
+
+const leadFromByEvent: Record<string, string> = {
+  pricing_free_click: "price-card-free",
+  pricing_premium_click: "price-card-premium",
+  pricing_premium_plus_click: "price-card-premium-plus",
+};
 ---
 
 <section class="pricing" id="pricing">
@@ -35,13 +41,15 @@ const { content } = Astro.props;
               </li>
             ))}
           </ul>
-          <a
-            href={card.cta.href}
+          <button
+            type="button"
             class={`pricing-btn pricing-btn--${card.cta.variant}`}
             data-clarity-event={card.cta.clarityEvent}
+            data-modal-open
+            data-from={leadFromByEvent[card.cta.clarityEvent] ?? "price-card"}
           >
             {card.cta.label}
-          </a>
+          </button>
         </div>
       ))
     }

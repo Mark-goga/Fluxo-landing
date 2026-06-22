@@ -1,0 +1,102 @@
+---
+import PageLayout from "../layouts/PageLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { siteConfig } from "../config/site";
+import { landingContent } from "../data/locales";
+
+const content = landingContent.en;
+const routePath = "/unsubscribe/";
+
+const copy = {
+  title: "Unsubscribe from emails",
+  body: `Click the button below to stop receiving emails from ${siteConfig.name}.`,
+  button: "Unsubscribe",
+  invalid: "This unsubscribe link is invalid or has expired.",
+  done: "Unsubscribed",
+};
+
+const toast = {
+  success: `You've been unsubscribed. You won't receive these emails from ${siteConfig.name} anymore.`,
+  error: "Something went wrong. Please try again.",
+};
+---
+
+<PageLayout
+  title={`Unsubscribe — ${siteConfig.name}`}
+  description={`Unsubscribe from ${siteConfig.name} emails.`}
+  canonicalPath="/unsubscribe/"
+  routePath={routePath}
+  lang="en"
+  robots="noindex, nofollow"
+>
+  <Header content={content} routePath={routePath} />
+  <main class="notfound unsubscribe">
+    <h1 class="notfound-title">{copy.title}</h1>
+    <p class="notfound-body" data-unsubscribe-intro>{copy.body}</p>
+    <button type="button" class="btn-primary notfound-cta" data-unsubscribe>{copy.button}</button>
+  </main>
+  <Footer content={content} routePath={routePath} />
+
+  <div class="lead-toast" data-lead-toast role="status" aria-live="polite" hidden></div>
+
+  <script
+    define:vars={{
+      unsubscribeUrl: `${siteConfig.leadsApiUrl}/unsubscribe`,
+      copy,
+      toast,
+    }}
+  >
+    (() => {
+      const button = document.querySelector("[data-unsubscribe]");
+      const intro = document.querySelector("[data-unsubscribe-intro]");
+      const toastEl = document.querySelector("[data-lead-toast]");
+      const token = new URLSearchParams(location.search).get("token");
+      let toastTimer;
+
+      const showToast = (message, isError) => {
+        if (!toastEl) return;
+        toastEl.textContent = message;
+        toastEl.classList.toggle("lead-toast--error", Boolean(isError));
+        toastEl.hidden = false;
+        void toastEl.offsetWidth;
+        toastEl.classList.add("lead-toast--visible");
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => {
+          toastEl.classList.remove("lead-toast--visible");
+          setTimeout(() => {
+            toastEl.hidden = true;
+          }, 300);
+        }, 5000);
+      };
+
+      // No token in the link → nothing to act on.
+      if (!token) {
+        if (button) button.disabled = true;
+        if (intro) intro.textContent = copy.invalid;
+        return;
+      }
+
+      button.addEventListener("click", async () => {
+        button.disabled = true;
+        button.setAttribute("aria-busy", "true");
+
+        try {
+          const response = await fetch(unsubscribeUrl, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ token }),
+          });
+          if (!response.ok) throw new Error("Request failed with status " + response.status);
+          button.textContent = copy.done;
+          showToast(toast.success, false);
+        } catch (error) {
+          button.disabled = false;
+          showToast(toast.error, true);
+        } finally {
+          button.removeAttribute("aria-busy");
+        }
+      });
+    })();
+  </script>
+</PageLayout>
