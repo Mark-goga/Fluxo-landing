@@ -20,9 +20,12 @@ type FeatureCard = {
   title: string;
   desc: string;
   bg: string;
+  imageBg: string;
   sticker: "purple" | "green" | "yellow" | "blue";
   icon: string;
   iconAlt: string;
+  image: string;
+  imageAlt: string;
 };
 
 type PricingFeature = {
@@ -34,6 +37,7 @@ type PricingCard = {
   name: string;
   amount: string;
   period: string;
+  description?: string;
   featured: boolean;
   badge?: string;
   features: PricingFeature[];
@@ -150,23 +154,22 @@ export const landingContent = {
       nav: [
         { label: "Why Fluxo", href: "#why" },
         { label: "Features", href: "#features" },
-        { label: "How it works", href: "#features" },
         { label: "Pricing", href: "#pricing" },
         { label: "Contact us", href: "#cta" },
       ],
-      languageLink: { label: "UK", href: "/uk/", lang: "uk" },
+      languageLink: { label: "UA", href: "/uk/", lang: "uk" },
       cta: { label: "Get started", href: "#cta", clarityEvent: "header_cta_click" },
     },
     hero: {
       titleHtml: `Learn quickly. Keep <span class="hero-keyword">knowledge</span> fresh forever`,
       text:
         "Stop just scrolling past summaries. Fluxo captures what you study, structures custom knowledge nodes, and schedules active repetitions to lock ideas in your brain.",
-      primaryCta: { label: "Get started for free", href: "#cta", clarityEvent: "hero_primary_click" },
+      primaryCta: { label: "Get started", href: "#cta", clarityEvent: "hero_primary_click" },
       secondaryCta: { label: "How it works", href: "#features", clarityEvent: "hero_how_it_works" },
       imageAlt: "Fluxo in action",
     },
     whyFluxo: {
-      titleHtml: "AI can read everything for you, but learning happens in your mind",
+      titleHtml: `AI can read everything for you, but learning happens in your <span class="hero-keyword">mind</span>`,
       cards: [
         {
           title: "Save everything, remember nothing?",
@@ -192,7 +195,7 @@ export const landingContent = {
       ],
     },
     features: {
-      titleHtml: `Fluxo doesn't replace your<br/>brain. It trains it`,
+      titleHtml: `<span class="hero-keyword">Fluxo</span> doesn't replace your brain. It trains it`,
       aiBadge: "AI support",
       streakHtml: `4 day<br/>streak`,
       catAlt: "Fluxo cat",
@@ -202,41 +205,53 @@ export const landingContent = {
           desc:
             "Create a space for any topic — English, design, history, code. Your knowledge, organized the way your brain works.",
           bg: "#E0E1FF",
+          imageBg: "#F1F1FF",
           sticker: "purple",
           icon: "assets/tree-structure.svg",
           iconAlt: "Learning spaces",
+          image: "assets/Learning_spaces.png",
+          imageAlt: "Learning spaces interface",
         },
-        {
-          title: "Smart repetition & progress",
-          desc:
-            "Fluxo reminds you to review at the exact right moment. See your streaks, retention scores, and real growth — learning feels less like work when you can see it working.",
-          bg: "#D5FFB7",
-          sticker: "green",
-          icon: "assets/trend-up.svg",
-          iconAlt: "Smart repetition",
-        },
-      ],
-      rightCards: [
         {
           title: "Summaries Your way",
           desc:
             "Write your own or use an AI template. Either way, you capture what matters — in your words, on your terms.",
           bg: "#FEFFC2",
+          imageBg: "#FFFEE0",
           sticker: "yellow",
           icon: "assets/pencil-line.svg",
           iconAlt: "Summaries",
+          image: "assets/summaries _your_way.png",
+          imageAlt: "Summaries interface",
+        },
+      ],
+      rightCards: [
+        {
+          title: "Smart repetition & progress",
+          desc:
+            "Fluxo reminds you to review at the exact right moment. See your streaks, retention scores, and real growth — learning feels less like work when you can see it working.",
+          bg: "#D5FFB7",
+          imageBg: "#EAFFDA",
+          sticker: "green",
+          icon: "assets/trend-up.svg",
+          iconAlt: "Smart repetition",
+          image: "assets/smart_repetition.png",
+          imageAlt: "Smart repetition interface",
         },
         {
           title: "Works everywhere",
           desc:
             "iOS, Android, web, desktop. Fully synced, always up to date. Works offline — keep learning anywhere, your all updates syncs automatically when connection returns.",
           bg: "#E0F2FF",
+          imageBg: "#F0F8FF",
           sticker: "blue",
           icon: "assets/arrows-clockwise.svg",
           iconAlt: "Works everywhere",
+          image: "assets/works_everywhere.png",
+          imageAlt: "Works everywhere interface",
         },
       ],
-      cta: { label: "Get started for free", href: "#cta", clarityEvent: "features_cta_click" },
+      cta: { label: "Get started", href: "#cta", clarityEvent: "features_cta_click" },
     },
     pricing: {
       titleHtml: `Simple pricing tiers<br/>Find your pace`,
@@ -244,41 +259,50 @@ export const landingContent = {
         {
           name: "Free",
           amount: "$0",
-          period: "/ eternal",
+          period: "",
+          description: "Perfect for getting started with Fluxo.",
           featured: false,
           features: [
-            { text: "4 knowledge spaces", included: true },
-            { text: "Basic AI summaries (500 words)", included: true },
-            { text: "Limited training sessions", included: false },
-            { text: "Sync across 2 devices", included: true },
+            { text: "3 Knowledge Spaces", included: true },
+            { text: "Voice & Screenshot Capture", included: true },
+            { text: "Import from Notion, Obsidian, Markdown", included: true },
+            { text: "PDF & file import (up to 5MB)", included: true },
+            { text: "5 AI Summaries per month", included: true },
+            { text: "Training Sessions & Quizzes", included: true },
+            { text: "Sync across all devices", included: true },
           ],
           cta: { label: "Start Free", href: "#cta", clarityEvent: "pricing_free_click", variant: "secondary" },
         },
         {
           name: "Premium",
-          amount: "$9.99",
+          amount: "$9",
           period: "/ month",
+          description: "Unlock the full Fluxo experience",
           featured: true,
           badge: "Most Popular",
           features: [
-            { text: "Unlimited knowledge spaces", included: true },
-            { text: "Full AI summaries & axioms", included: true },
-            { text: "Unlimited training sessions", included: true },
-            { text: "Spaced repetition algorithm", included: true },
-            { text: "Sync across all devices", included: true },
+            { text: "Unlimited Knowledge Spaces & Notes", included: true },
+            { text: "Import & export without limits", included: true },
+            { text: "AI Summaries, Axioms & Key Insights", included: true },
+            { text: "AI Flashcard Generation from any note", included: true },
+            { text: "Spaced Repetition with trigger-based review", included: true },
+            { text: "Streak Freeze & Flexible Goals", included: true },
+            { text: "500 AI Credits/month", included: true },
           ],
           cta: { label: "Start Premium", href: "#cta", clarityEvent: "pricing_premium_click", variant: "primary" },
         },
         {
           name: "Premium Plus",
-          amount: "$19.99",
+          amount: "$20",
           period: "/ month",
+          description: "Full AI learning suite for serious learners.",
           featured: false,
           features: [
             { text: "Everything in Premium", included: true },
-            { text: "Analytics dashboard", included: true },
-            { text: "Export formats (Notion, CSV, Anki)", included: true },
-            { text: "Custom training intervals", included: true },
+            { text: "AI Answer Grading & Explanations", included: true },
+            { text: "Retention Dashboard & Progress Analytics", included: true },
+            { text: "Custom Training Intervals", included: true },
+            { text: "5,000 AI Credits/month", included: true },
           ],
           cta: {
             label: "Start Premium Plus",
@@ -328,7 +352,7 @@ export const landingContent = {
     modal: {
       title: "We haven't launched yet",
       description:
-        "Fluxo isn't live yet — but the first members get exclusive early-bird discounts. Leave your email and we'll let you know the moment we launch.",
+        "Fluxo isn't live yet – but the first members get exclusive early-bird discounts. Leave your email and we'll let you know the moment we launch.",
       placeholder: "Enter your email",
       submit: "Notify me",
       closeAria: "Close",
@@ -408,7 +432,6 @@ export const landingContent = {
       nav: [
         { label: "Чому Fluxo", href: "#why" },
         { label: "Можливості", href: "#features" },
-        { label: "Як це працює", href: "#features" },
         { label: "Тарифи", href: "#pricing" },
         { label: "Контакти", href: "#cta" },
       ],
@@ -424,7 +447,7 @@ export const landingContent = {
       imageAlt: "Fluxo у дії",
     },
     whyFluxo: {
-      titleHtml: "ШІ може прочитати все за тебе, але навчання відбувається у твоїй голові",
+      titleHtml: `ШІ може прочитати все за тебе, але навчання відбувається у твоїй <span class="hero-keyword">голові</span>`,
       cards: [
         {
           title: "Зберігаєш усе, не пам'ятаєш нічого?",
@@ -450,7 +473,7 @@ export const landingContent = {
       ],
     },
     features: {
-      titleHtml: `Fluxo не замінює твій<br/>мозок. Він його тренує`,
+      titleHtml: `<span class="hero-keyword">Fluxo</span> не замінює твій<br/>мозок. Він його тренує`,
       aiBadge: "Підтримка ШІ",
       streakHtml: `4 дні<br/>поспіль`,
       catAlt: "Котик Fluxo",
@@ -460,29 +483,38 @@ export const landingContent = {
           desc:
             "Створи простір для будь-якої теми — англійська, дизайн, історія, код. Твої знання, організовані так, як працює твій мозок.",
           bg: "#E0E1FF",
+          imageBg: "#F1F1FF",
           sticker: "purple",
           icon: "assets/tree-structure.svg",
           iconAlt: "Простори знань",
+          image: "assets/Learning_spaces.png",
+          imageAlt: "Інтерфейс просторів знань",
         },
-        {
-          title: "Розумне повторення та прогрес",
-          desc:
-            "Fluxo нагадає повторити саме в потрібний момент. Дивись свої серії, показники запам'ятовування та реальний ріст — навчання менше схоже на роботу, коли видно, що воно працює.",
-          bg: "#D5FFB7",
-          sticker: "green",
-          icon: "assets/trend-up.svg",
-          iconAlt: "Розумне повторення",
-        },
-      ],
-      rightCards: [
         {
           title: "Конспекти на твій лад",
           desc:
             "Пиши власні або використовуй ШІ-шаблон. У будь-якому разі ти фіксуєш головне — своїми словами, на своїх умовах.",
           bg: "#FEFFC2",
+          imageBg: "#FFFEE0",
           sticker: "yellow",
           icon: "assets/pencil-line.svg",
           iconAlt: "Конспекти",
+          image: "assets/summaries _your_way.png",
+          imageAlt: "Інтерфейс конспектів",
+        },
+      ],
+      rightCards: [
+        {
+          title: "Розумне повторення та прогрес",
+          desc:
+            "Fluxo нагадає повторити саме в потрібний момент. Дивись свої серії, показники запам'ятовування та реальний ріст — навчання менше схоже на роботу, коли видно, що воно працює.",
+          bg: "#D5FFB7",
+          imageBg: "#EAFFDA",
+          sticker: "green",
+          icon: "assets/trend-up.svg",
+          iconAlt: "Розумне повторення",
+          image: "assets/smart_repetition.png",
+          imageAlt: "Інтерфейс повторення",
         },
         {
           title: "Працює всюди",
@@ -492,6 +524,9 @@ export const landingContent = {
           sticker: "blue",
           icon: "assets/arrows-clockwise.svg",
           iconAlt: "Працює всюди",
+          imageBg: "#F0F8FF",
+          image: "assets/works_everywhere.png",
+          imageAlt: "Інтерфейс синхронізації",
         },
       ],
       cta: { label: "Почати безкоштовно", href: "#cta", clarityEvent: "features_cta_click" },

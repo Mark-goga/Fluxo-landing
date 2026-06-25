@@ -18,24 +18,32 @@ const logo = pageAssetUrl(routePath, "assets/logo-fluxo.png");
     </a>
     <nav class="nav">
       {content.header.nav.map((link) => <a href={link.href} class="nav-link">{link.label}</a>)}
-      <a href={content.header.languageLink.href} class="nav-link" lang={content.header.languageLink.lang}>
-        {content.header.languageLink.label}
-      </a>
     </nav>
-    <a href={content.header.cta.href} class="btn-secondary" data-clarity-event={content.header.cta.clarityEvent}>
-      {content.header.cta.label}
-    </a>
-    <button class="burger" aria-label="Menu" aria-expanded="false">
-      <span></span>
-      <span></span>
-    </button>
+    <div class="header-end">
+      <div class="header-right">
+        <a href={content.header.languageLink.href} class="nav-link" lang={content.header.languageLink.lang}>
+          {content.header.languageLink.label}
+        </a>
+        <a href={content.header.cta.href} class="btn-secondary" data-clarity-event={content.header.cta.clarityEvent}>
+          {content.header.cta.label}
+        </a>
+      </div>
+      <button class="burger" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </div>
+
+  <script>
+    const header = document.querySelector('header')!;
+    const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 80);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  </script>
 
   <nav class="mobile-nav" id="mobileNav">
     {content.header.nav.map((link) => <a href={link.href} class="nav-link">{link.label}</a>)}
-    <a href={content.header.languageLink.href} class="nav-link" lang={content.header.languageLink.lang}>
-      {content.header.languageLink.label}
-    </a>
     <a href={content.header.cta.href} class="btn-secondary" data-clarity-event={content.header.cta.clarityEvent}>
       {content.header.cta.label}
     </a>
