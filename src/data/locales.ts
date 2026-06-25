@@ -37,6 +37,7 @@ type PricingCard = {
   name: string;
   amount: string;
   period: string;
+  description?: string;
   featured: boolean;
   badge?: string;
   features: PricingFeature[];
@@ -163,7 +164,7 @@ export const landingContent = {
       titleHtml: `Learn quickly. Keep <span class="hero-keyword">knowledge</span> fresh forever`,
       text:
         "Stop just scrolling past summaries. Fluxo captures what you study, structures custom knowledge nodes, and schedules active repetitions to lock ideas in your brain.",
-      primaryCta: { label: "Get started for free", href: "#cta", clarityEvent: "hero_primary_click" },
+      primaryCta: { label: "Get started", href: "#cta", clarityEvent: "hero_primary_click" },
       secondaryCta: { label: "How it works", href: "#features", clarityEvent: "hero_how_it_works" },
       imageAlt: "Fluxo in action",
     },
@@ -194,7 +195,7 @@ export const landingContent = {
       ],
     },
     features: {
-      titleHtml: `<span class="hero-keyword">Fluxo</span> doesn't replace your<br/>brain. It trains it`,
+      titleHtml: `<span class="hero-keyword">Fluxo</span> doesn't replace your brain. It trains it`,
       aiBadge: "AI support",
       streakHtml: `4 day<br/>streak`,
       catAlt: "Fluxo cat",
@@ -250,7 +251,7 @@ export const landingContent = {
           imageAlt: "Works everywhere interface",
         },
       ],
-      cta: { label: "Get started for free", href: "#cta", clarityEvent: "features_cta_click" },
+      cta: { label: "Get started", href: "#cta", clarityEvent: "features_cta_click" },
     },
     pricing: {
       titleHtml: `Simple pricing tiers<br/>Find your pace`,
@@ -258,41 +259,50 @@ export const landingContent = {
         {
           name: "Free",
           amount: "$0",
-          period: "/ eternal",
+          period: "",
+          description: "Perfect for getting started with Fluxo.",
           featured: false,
           features: [
-            { text: "4 knowledge spaces", included: true },
-            { text: "Basic AI summaries (500 words)", included: true },
-            { text: "Limited training sessions", included: false },
-            { text: "Sync across 2 devices", included: true },
+            { text: "3 Knowledge Spaces", included: true },
+            { text: "Voice & Screenshot Capture", included: true },
+            { text: "Import from Notion, Obsidian, Markdown", included: true },
+            { text: "PDF & file import (up to 5MB)", included: true },
+            { text: "5 AI Summaries per month", included: true },
+            { text: "Training Sessions & Quizzes", included: true },
+            { text: "Sync across all devices", included: true },
           ],
           cta: { label: "Start Free", href: "#cta", clarityEvent: "pricing_free_click", variant: "secondary" },
         },
         {
           name: "Premium",
-          amount: "$9.99",
+          amount: "$9",
           period: "/ month",
+          description: "Unlock the full Fluxo experience",
           featured: true,
           badge: "Most Popular",
           features: [
-            { text: "Unlimited knowledge spaces", included: true },
-            { text: "Full AI summaries & axioms", included: true },
-            { text: "Unlimited training sessions", included: true },
-            { text: "Spaced repetition algorithm", included: true },
-            { text: "Sync across all devices", included: true },
+            { text: "Unlimited Knowledge Spaces & Notes", included: true },
+            { text: "Import & export without limits", included: true },
+            { text: "AI Summaries, Axioms & Key Insights", included: true },
+            { text: "AI Flashcard Generation from any note", included: true },
+            { text: "Spaced Repetition with trigger-based review", included: true },
+            { text: "Streak Freeze & Flexible Goals", included: true },
+            { text: "500 AI Credits/month", included: true },
           ],
           cta: { label: "Start Premium", href: "#cta", clarityEvent: "pricing_premium_click", variant: "primary" },
         },
         {
           name: "Premium Plus",
-          amount: "$19.99",
+          amount: "$20",
           period: "/ month",
+          description: "Full AI learning suite for serious learners.",
           featured: false,
           features: [
             { text: "Everything in Premium", included: true },
-            { text: "Analytics dashboard", included: true },
-            { text: "Export formats (Notion, CSV, Anki)", included: true },
-            { text: "Custom training intervals", included: true },
+            { text: "AI Answer Grading & Explanations", included: true },
+            { text: "Retention Dashboard & Progress Analytics", included: true },
+            { text: "Custom Training Intervals", included: true },
+            { text: "5,000 AI Credits/month", included: true },
           ],
           cta: {
             label: "Start Premium Plus",
@@ -342,7 +352,7 @@ export const landingContent = {
     modal: {
       title: "We haven't launched yet",
       description:
-        "Fluxo isn't live yet — but the first members get exclusive early-bird discounts. Leave your email and we'll let you know the moment we launch.",
+        "Fluxo isn't live yet – but the first members get exclusive early-bird discounts. Leave your email and we'll let you know the moment we launch.",
       placeholder: "Enter your email",
       submit: "Notify me",
       closeAria: "Close",

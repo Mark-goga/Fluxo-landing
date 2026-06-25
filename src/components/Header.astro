@@ -44,9 +44,6 @@ const logo = pageAssetUrl(routePath, "assets/logo-fluxo.png");
 
   <nav class="mobile-nav" id="mobileNav">
     {content.header.nav.map((link) => <a href={link.href} class="nav-link">{link.label}</a>)}
-    <a href={content.header.languageLink.href} class="nav-link" lang={content.header.languageLink.lang}>
-      {content.header.languageLink.label}
-    </a>
     <a href={content.header.cta.href} class="btn-secondary" data-clarity-event={content.header.cta.clarityEvent}>
       {content.header.cta.label}
     </a>
