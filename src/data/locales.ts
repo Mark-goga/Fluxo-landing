@@ -260,7 +260,7 @@ export const landingContent = {
           name: "Free",
           amount: "$0",
           period: "",
-          description: "Perfect for getting started with Fluxo.",
+          description: "Perfect for getting started with Fluxo",
           featured: false,
           features: [
             { text: "3 Knowledge Spaces", included: true },
@@ -295,7 +295,7 @@ export const landingContent = {
           name: "Premium Plus",
           amount: "$20",
           period: "/ month",
-          description: "Full AI learning suite for serious learners.",
+          description: "Full AI learning suite for serious learners",
           featured: false,
           features: [
             { text: "Everything in Premium", included: true },
