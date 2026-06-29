@@ -81,6 +81,156 @@ main {
   flex-shrink: 0;
 }
 
+/* ── Language switcher ── */
+.lang-switch {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.lang-switch-btn {
+  height: 44px;
+  padding: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 4px 7.5px rgba(8, 3, 27, 0.08);
+  border-radius: 12px;
+  outline: 1px solid white;
+  outline-offset: -1px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: none;
+  cursor: pointer;
+  color: #1C1C1C;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.lang-switch-btn:hover {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: none;
+}
+
+.lang-switch-globe {
+  width: 18px;
+  height: 18px;
+  color: #3D1FB6;
+}
+
+.lang-switch-code {
+  letter-spacing: 0.02em;
+}
+
+.lang-switch-chevron {
+  width: 12px;
+  height: 12px;
+  color: #6B6B6B;
+  transition: transform 0.2s;
+}
+
+.lang-switch.open .lang-switch-chevron {
+  transform: rotate(180deg);
+}
+
+.lang-switch-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 180px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0px 12px 30px rgba(8, 3, 27, 0.14);
+  border-radius: 14px;
+  outline: 1px solid rgba(255, 255, 255, 0.9);
+  outline-offset: -1px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: opacity 0.18s, transform 0.18s, visibility 0.18s;
+  z-index: 60;
+}
+
+.lang-switch.open .lang-switch-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.lang-switch-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #1C1C1C;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  transition: background 0.15s, color 0.15s;
+}
+
+.lang-switch-option:hover {
+  background: rgba(76, 39, 227, 0.08);
+  color: #3D1FB6;
+}
+
+.lang-switch-option.is-current {
+  background: rgba(76, 39, 227, 0.1);
+  color: #3D1FB6;
+  font-weight: 600;
+}
+
+.lang-switch-option-code {
+  min-width: 26px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #6B6B6B;
+}
+
+.lang-switch-option.is-current .lang-switch-option-code {
+  color: #3D1FB6;
+}
+
+.lang-switch-option-name {
+  flex: 1;
+}
+
+/* Language list inside the mobile drawer */
+.mobile-langs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 14px 9vw 4px;
+}
+
+.mobile-lang {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #1C1C1C;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 14px;
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.mobile-lang.is-current {
+  background: rgba(76, 39, 227, 0.12);
+  color: #3D1FB6;
+  font-weight: 600;
+}
+
 .header-wrapper .btn-secondary {
   padding: 12px 16px;
   background: rgba(255, 255, 255, 0.50);
@@ -1535,15 +1685,18 @@ main {
 /* ── 404 page ── */
 /* Two localized versions live in the DOM; an inline script in 404.astro
    adds .is-uk to <html> for /uk* paths. English is shown by default. */
-.locale-uk {
+.locale-uk,
+.locale-es {
   display: none;
 }
 
-html.is-uk .locale-uk {
+html.is-uk .locale-uk,
+html.is-es .locale-es {
   display: block;
 }
 
-html.is-uk .locale-en {
+html.is-uk .locale-en,
+html.is-es .locale-en {
   display: none;
 }
 

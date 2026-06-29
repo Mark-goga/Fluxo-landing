@@ -1,27 +1,42 @@
-import { absoluteUrl, supportedLocales, xDefaultPath } from "../config/site";
+import { absoluteUrl, supportedLocales, xDefaultPath, type LocaleKey } from "../config/site";
+import { blogContent, type BlogSlug } from "../data/locales";
 
-const standalonePaths = ["/privacy/", "/cookies/"];
+const blogSlugs = Object.keys(blogContent.en) as BlogSlug[];
+
+const alternateLinks = (hrefFor: (locale: (typeof supportedLocales)[number]) => string, xDefaultHref: string) =>
+  [
+    ...supportedLocales.map(
+      (alternate) => `    <xhtml:link rel="alternate" hreflang="${alternate.hreflang}" href="${hrefFor(alternate)}" />`,
+    ),
+    `    <xhtml:link rel="alternate" hreflang="x-default" href="${xDefaultHref}" />`,
+  ].join("\n");
 
 const localeUrls = supportedLocales
-  .map((locale) => {
-    const alternates = supportedLocales
+  .map(
+    (locale) => `  <url>
+    <loc>${absoluteUrl(locale.path)}</loc>
+${alternateLinks((alternate) => absoluteUrl(alternate.path), absoluteUrl(xDefaultPath))}
+  </url>`,
+  )
+  .join("\n");
+
+const blogUrls = blogSlugs
+  .map((slug) => {
+    const pathFor = (locale: LocaleKey) => (blogContent[locale] ?? blogContent.en)[slug].routePath;
+    const xDefaultHref = absoluteUrl(pathFor("en"));
+
+    return supportedLocales
       .map(
-        (alternate) =>
-          `    <xhtml:link rel="alternate" hreflang="${alternate.hreflang}" href="${absoluteUrl(
-            alternate.path,
-          )}" />`,
+        (locale) => `  <url>
+    <loc>${absoluteUrl(pathFor(locale.key))}</loc>
+${alternateLinks((alternate) => absoluteUrl(pathFor(alternate.key)), xDefaultHref)}
+  </url>`,
       )
       .join("\n");
-
-    return `  <url>
-    <loc>${absoluteUrl(locale.path)}</loc>
-${alternates}
-    <xhtml:link rel="alternate" hreflang="x-default" href="${absoluteUrl(xDefaultPath)}" />
-  </url>`;
   })
   .join("\n");
 
-const standaloneUrls = standalonePaths
+const standaloneUrls = ["/privacy/", "/cookies/"]
   .map(
     (path) => `  <url>
     <loc>${absoluteUrl(path)}</loc>
@@ -29,7 +44,7 @@ const standaloneUrls = standalonePaths
   )
   .join("\n");
 
-const urls = [localeUrls, standaloneUrls].join("\n");
+const urls = [localeUrls, blogUrls, standaloneUrls].join("\n");
 
 export function GET() {
   return new Response(`<?xml version="1.0" encoding="UTF-8"?>

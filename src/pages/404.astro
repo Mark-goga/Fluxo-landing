@@ -3,9 +3,10 @@ import PageLayout from "../layouts/PageLayout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { siteConfig } from "../config/site";
-import { landingContent } from "../data/locales";
+import { landingContent, landingLanguageNav } from "../data/locales";
 
 const routePath = "/";
+const languageNav = landingLanguageNav();
 
 const notFound = {
   en: {
@@ -19,6 +20,12 @@ const notFound = {
     title: "Сторінку не знайдено",
     body: "Сторінки, яку ви шукаєте, не існує або її переміщено.",
     cta: "На головну",
+  },
+  es: {
+    content: landingContent.es,
+    title: "Página no encontrada",
+    body: "La página que buscas no existe o se ha movido.",
+    cta: "Volver al inicio",
   },
 } as const;
 ---
@@ -37,21 +44,25 @@ const notFound = {
   <script is:inline>
     (function () {
       var path = location.pathname;
+      var doc = document.documentElement;
       if (path === "/uk" || path.indexOf("/uk/") === 0) {
-        var doc = document.documentElement;
         doc.classList.add("is-uk");
         doc.lang = "uk";
         document.title = "404 — Сторінку не знайдено — Fluxo";
+      } else if (path === "/es" || path.indexOf("/es/") === 0) {
+        doc.classList.add("is-es");
+        doc.lang = "es";
+        document.title = "404 — Página no encontrada — Fluxo";
       }
     })();
   </script>
 
   {
-    (["en", "uk"] as const).map((locale) => {
+    (["en", "uk", "es"] as const).map((locale) => {
       const data = notFound[locale];
       return (
         <div class={`locale-block locale-${locale}`}>
-          <Header content={data.content} routePath={routePath} />
+          <Header content={data.content} routePath={routePath} languageNav={languageNav} />
           <main class="notfound">
             <p class="notfound-code">404</p>
             <h1 class="notfound-title">{data.title}</h1>

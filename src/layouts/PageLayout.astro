@@ -11,9 +11,10 @@ interface Props {
   lang?: string;
   baseHref?: string;
   robots?: string;
+  alternates?: { hreflang: string; href: string }[];
 }
 
-const { title, description, canonicalPath, routePath, lang = "en", baseHref, robots = "index, follow" } = Astro.props;
+const { title, description, canonicalPath, routePath, lang = "en", baseHref, robots = "index, follow", alternates = [] } = Astro.props;
 const canonicalUrl = absoluteUrl(canonicalPath);
 const scriptPath = pageAssetUrl(routePath, siteConfig.scriptPath);
 const favicon = pageAssetUrl(routePath, "assets/favicon.png");
@@ -42,6 +43,7 @@ const faviconDark = pageAssetUrl(routePath, "assets/favicon-dark.png");
       rel="stylesheet"
     />
     <link rel="canonical" href={canonicalUrl} />
+    {alternates.map((alternate) => <link rel="alternate" hreflang={alternate.hreflang} href={alternate.href} />)}
   </head>
   <body>
     <slot />

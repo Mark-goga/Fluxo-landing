@@ -10,7 +10,7 @@ import Footer from "./Footer.astro";
 import Modal from "./Modal.astro";
 import LandingLayout from "../layouts/LandingLayout.astro";
 import { siteConfig, type LocaleKey } from "../config/site";
-import { landingContent } from "../data/locales";
+import { landingContent, landingLanguageNav } from "../data/locales";
 
 interface Props {
   locale: LocaleKey;
@@ -25,7 +25,7 @@ const pageRoutePath = routePath ?? content.path;
 ---
 
 <LandingLayout content={content} canonicalPath={pageCanonicalPath} routePath={pageRoutePath}>
-  <Header content={content} routePath={pageRoutePath} />
+  <Header content={content} routePath={pageRoutePath} languageNav={landingLanguageNav()} />
   <main>
     <Hero content={content} routePath={pageRoutePath} />
     <WhyFluxo content={content} routePath={pageRoutePath} />

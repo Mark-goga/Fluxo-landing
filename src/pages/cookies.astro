@@ -5,10 +5,11 @@ import Footer from "../components/Footer.astro";
 import PolicyDocument from "../components/PolicyDocument.astro";
 import policyHtml from "../components/policy-cookies.html?raw";
 import { siteConfig } from "../config/site";
-import { landingContent } from "../data/locales";
+import { landingContent, landingLanguageNav } from "../data/locales";
 
 const content = landingContent.en;
 const routePath = "/cookies/";
+const languageNav = landingLanguageNav();
 ---
 
 <PageLayout
@@ -18,7 +19,7 @@ const routePath = "/cookies/";
   routePath={routePath}
   lang="en"
 >
-  <Header content={content} routePath={routePath} />
+  <Header content={content} routePath={routePath} languageNav={languageNav} />
   <main class="legal-page">
     <PolicyDocument html={policyHtml} />
   </main>

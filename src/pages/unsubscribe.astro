@@ -3,10 +3,11 @@ import PageLayout from "../layouts/PageLayout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { siteConfig } from "../config/site";
-import { landingContent } from "../data/locales";
+import { landingContent, landingLanguageNav } from "../data/locales";
 
 const content = landingContent.en;
 const routePath = "/unsubscribe/";
+const languageNav = landingLanguageNav();
 
 const copy = {
   title: "Unsubscribe from emails",
@@ -30,7 +31,7 @@ const toast = {
   lang="en"
   robots="noindex, nofollow"
 >
-  <Header content={content} routePath={routePath} />
+  <Header content={content} routePath={routePath} languageNav={languageNav} />
   <main class="notfound unsubscribe">
     <h1 class="notfound-title">{copy.title}</h1>
     <p class="notfound-body" data-unsubscribe-intro>{copy.body}</p>
