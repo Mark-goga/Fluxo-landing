@@ -10,7 +10,7 @@ interface Props {
 const { content, routePath } = Astro.props;
 const logo = pageAssetUrl(routePath, "assets/LOGOFLUXOBlack.png");
 const tiktok = pageAssetUrl(routePath, "assets/TiktokLogo.svg");
-const xlogo = pageAssetUrl(routePath, "assets/XLogo.svg");
+const linkedin = pageAssetUrl(routePath, "assets/basil_linkedin-outline.svg");
 ---
 
 <footer class="footer">
@@ -22,7 +22,7 @@ const xlogo = pageAssetUrl(routePath, "assets/XLogo.svg");
           content.footer.socials.map((social) => (
             <a href={social.href} class="footer-social-btn" aria-label={social.label}>
               {social.label === "TikTok" && <img src={tiktok} alt="" />}
-              {social.label === "X" && <img src={xlogo} alt="" />}
+              {social.label === "X" && <img src={linkedin} alt="" />}
               {social.label === "Instagram" && (
                 <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="2.5" y="2.5" width="15" height="15" rx="4" stroke="white" stroke-width="1.4" />
