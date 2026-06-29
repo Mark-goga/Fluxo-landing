@@ -1,4 +1,4 @@
-export type LocaleKey = "en" | "uk" | "es";
+export type LocaleKey = "en" | "uk" | "es" | "de";
 
 const requiredEnv = (key: string) => {
   const value = import.meta.env[key] ?? process.env[key];
@@ -58,6 +58,11 @@ export const supportedLocales = [
     key: "es",
     hreflang: "es",
     path: "/es/",
+  },
+  {
+    key: "de",
+    hreflang: "de",
+    path: "/de/",
   },
 ] as const;
 

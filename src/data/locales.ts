@@ -955,15 +955,293 @@ export const landingContent = {
         "Fluxo es una app de aprendizaje que combina espacios de conocimiento estructurados, resúmenes con IA y repetición espaciada para convertir la lectura pasiva en memoria activa a largo plazo.",
     },
   },
+  de: {
+    key: "de",
+    lang: "de",
+    path: "/de/",
+    ogLocale: "de_DE",
+    ogLocaleAlternate: "en_US",
+    meta: {
+      title: `${siteConfig.name} — Schnell lernen, für immer behalten`,
+      description:
+        "Fluxo verwandelt passives Lesen in aktives Langzeitgedächtnis – mit strukturierten Wissensräumen, KI-Zusammenfassungen und verteiltem Wiederholen. Lerne schnell und halte dein Wissen für immer frisch.",
+      ogTitle: `${siteConfig.name} — Schnell lernen, für immer behalten`,
+      ogDescription:
+        "Halte fest, was du lernst, baue eigene Wissensknoten auf und lass verteiltes Wiederholen die Ideen in deinem Kopf verankern.",
+      twitterTitle: `${siteConfig.name} — Schnell lernen, für immer behalten`,
+      twitterDescription:
+        "Wissensräume, KI-Zusammenfassungen und verteiltes Wiederholen – sie machen aus Lesen bleibende Erinnerung.",
+    },
+    header: {
+      homeAria: `${siteConfig.name} Startseite`,
+      nav: [
+        { label: "Warum Fluxo", href: "#why" },
+        { label: "Funktionen", href: "#features" },
+        { label: "Preise", href: "#pricing" },
+        { label: "Über uns", href: "#cta" },
+      ],
+      languageAria: "Sprache wechseln",
+      cta: { label: "Loslegen", href: "#cta", clarityEvent: "header_cta_click" },
+    },
+    hero: {
+      titleHtml: `Schnell lernen. <span class="hero-keyword">Wissen</span> für immer frisch halten`,
+      text:
+        "Hör auf, nur durch fremde Zusammenfassungen zu scrollen. Fluxo erfasst, was du lernst, strukturiert deine eigenen Wissensknoten und plant aktive Wiederholungen, damit sich Ideen wirklich in deinem Kopf verankern.",
+      primaryCta: { label: "Kostenlos starten", href: "#cta", clarityEvent: "hero_primary_click" },
+      secondaryCta: { label: "So funktioniert's", href: "#features", clarityEvent: "hero_how_it_works" },
+      imageAlt: "Fluxo in Aktion",
+    },
+    whyFluxo: {
+      titleHtml: `KI kann alles für dich lesen, doch Lernen passiert in deinem <span class="hero-keyword">Kopf</span>`,
+      cards: [
+        {
+          title: "Alles gespeichert, nichts behalten?",
+          desc:
+            "Notizen und Lesezeichen – aber ohne strukturiertes Wiederholen kehrst du selten zu ihnen zurück. Wissen braucht Wiederholung, um zu Erinnerung zu werden.",
+          image: "assets/card-1.png",
+          imageAlt: "Alles gespeichert, nichts behalten?",
+        },
+        {
+          title: "KI ist schnell. Dein Gedächtnis nicht?",
+          desc:
+            "Sofortiger Zugriff auf Informationen heißt nicht, sie zu verstehen. Lernen braucht Zeit, Wiederholung und kontinuierliche Auseinandersetzung.",
+          image: "assets/card-2.png",
+          imageAlt: "KI ist schnell. Dein Gedächtnis nicht?",
+        },
+        {
+          title: "Endlose Zusammenfassungen, kein Behalten?",
+          desc:
+            "Du fasst alles zusammen und weißt nach einer Woche nichts mehr. Echtes Lernen braucht aktives Frage-und-Antwort.",
+          image: "assets/card-3.png",
+          imageAlt: "Endlose Zusammenfassungen, kein Behalten?",
+        },
+      ],
+    },
+    features: {
+      titleHtml: `<span class="hero-keyword">Fluxo</span> ersetzt dein Gehirn nicht. Es trainiert es`,
+      aiBadge: "KI-Unterstützung",
+      streakHtml: `4 Tage<br/>in Folge`,
+      catAlt: "Fluxo-Katze",
+      leftCards: [
+        {
+          title: "Lernräume",
+          desc:
+            "Erstelle einen Raum für jedes Thema – Englisch, Design, Geschichte, Code. Dein Wissen, so organisiert, wie dein Gehirn arbeitet.",
+          bg: "#E0E1FF",
+          imageBg: "#F1F1FF",
+          sticker: "purple",
+          icon: "assets/tree-structure.svg",
+          iconAlt: "Lernräume",
+          image: "assets/Learning_spaces.png",
+          imageAlt: "Oberfläche der Lernräume",
+        },
+        {
+          title: "Zusammenfassungen nach deinem Stil",
+          desc:
+            "Schreibe sie selbst oder nutze eine KI-Vorlage. So oder so hältst du fest, was wichtig ist – mit deinen Worten, zu deinen Bedingungen.",
+          bg: "#FEFFC2",
+          imageBg: "#FFFEE0",
+          sticker: "yellow",
+          icon: "assets/pencil-line.svg",
+          iconAlt: "Zusammenfassungen",
+          image: "assets/summaries _your_way.png",
+          imageAlt: "Oberfläche für Zusammenfassungen",
+        },
+      ],
+      rightCards: [
+        {
+          title: "Smartes Wiederholen & Fortschritt",
+          desc:
+            "Fluxo erinnert dich genau im richtigen Moment ans Wiederholen. Sieh deine Serien, deine Behaltensquote und echtes Wachstum – Lernen fühlt sich weniger nach Arbeit an, wenn du siehst, wie es wirkt.",
+          bg: "#D5FFB7",
+          imageBg: "#EAFFDA",
+          sticker: "green",
+          icon: "assets/trend-up.svg",
+          iconAlt: "Smartes Wiederholen",
+          image: "assets/smart_repetition.png",
+          imageAlt: "Oberfläche für Wiederholungen",
+        },
+        {
+          title: "Funktioniert überall",
+          desc:
+            "iOS, Android, Web, Desktop. Voll synchronisiert, immer aktuell. Funktioniert offline – lerne überall weiter, alle Updates synchronisieren sich automatisch, sobald die Verbindung wieder da ist.",
+          bg: "#E0F2FF",
+          imageBg: "#F0F8FF",
+          sticker: "blue",
+          icon: "assets/arrows-clockwise.svg",
+          iconAlt: "Funktioniert überall",
+          image: "assets/works_everywhere.png",
+          imageAlt: "Oberfläche für Synchronisierung",
+        },
+      ],
+      cta: { label: "Kostenlos starten", href: "#cta", clarityEvent: "features_cta_click" },
+    },
+    pricing: {
+      titleHtml: `Einfache Preispläne<br/>Finde dein Tempo`,
+      cards: [
+        {
+          name: "Kostenlos",
+          amount: "0 $",
+          period: "",
+          description: "Perfekt, um mit Fluxo zu starten",
+          featured: false,
+          features: [
+            { text: "3 Wissensräume", included: true },
+            { text: "Sprach- und Screenshot-Erfassung", included: true },
+            { text: "Import aus Notion, Obsidian, Markdown", included: true },
+            { text: "PDF- und Datei-Import (bis 5 MB)", included: true },
+            { text: "5 KI-Zusammenfassungen pro Monat", included: true },
+            { text: "Trainingseinheiten & Quizze", included: true },
+            { text: "Synchronisation auf allen Geräten", included: true },
+          ],
+          cta: { label: "Kostenlos starten", href: "#cta", clarityEvent: "pricing_free_click", variant: "secondary" },
+        },
+        {
+          name: "Premium",
+          amount: "9 $",
+          period: "/ Monat",
+          description: "Schalte das volle Fluxo-Erlebnis frei",
+          featured: true,
+          badge: "Am beliebtesten",
+          features: [
+            { text: "Unbegrenzte Wissensräume und Notizen", included: true },
+            { text: "Import & Export ohne Limits", included: true },
+            { text: "KI-Zusammenfassungen, Axiome & Kerneinsichten", included: true },
+            { text: "KI-Karteikarten aus jeder Notiz erzeugen", included: true },
+            { text: "Verteiltes Wiederholen mit Trigger-basiertem Repeat", included: true },
+            { text: "Streak-Freeze & flexible Ziele", included: true },
+            { text: "500 KI-Credits/Monat", included: true },
+          ],
+          cta: { label: "Premium starten", href: "#cta", clarityEvent: "pricing_premium_click", variant: "primary" },
+        },
+        {
+          name: "Premium Plus",
+          amount: "20 $",
+          period: "/ Monat",
+          description: "Komplette KI-Lernsuite für ernsthaft Lernende",
+          featured: false,
+          features: [
+            { text: "Alles aus Premium", included: true },
+            { text: "KI-Antwortbewertung & Erklärungen", included: true },
+            { text: "Retention-Dashboard & Fortschrittsanalysen", included: true },
+            { text: "Eigene Trainingsintervalle", included: true },
+            { text: "5.000 KI-Credits/Monat", included: true },
+          ],
+          cta: {
+            label: "Premium Plus starten",
+            href: "#cta",
+            clarityEvent: "pricing_premium_plus_click",
+            variant: "secondary",
+          },
+        },
+      ],
+    },
+    faq: {
+      titleHtml: "Fragen, die du dir vielleicht stellst",
+      items: [
+        {
+          question: "Was genau ist Fluxo?",
+          answer:
+            "Fluxo ist eine Lern-App, die dir hilft, das Gelernte wirklich zu behalten. Sie verbindet strukturierte Wissensräume, KI-gestützte Zusammenfassungen und verteiltes Wiederholen, um passives Lesen in aktives Langzeitgedächtnis zu verwandeln.",
+        },
+        {
+          question: "Ist Fluxo nur für Studierende?",
+          answer:
+            "Nein. Fluxo ist für alle, die etwas Neues lernen wollen – ob du dich auf Prüfungen vorbereitest, eine neue Fähigkeit im Job aufbaust oder ein Hobby vertiefst. Wenn du behalten willst, was du liest, ist Fluxo für dich.",
+        },
+        {
+          question: "Wie hilft mir Fluxo, schneller zu lernen und dranzubleiben?",
+          answer:
+            `Du legst deinen Rhythmus selbst fest – wie viel Zeit pro Woche und welche Themen dir wichtig sind. Den Rest übernimmt Fluxo: Es erinnert dich, wenn es Zeit zum Wiederholen ist, und gibt dir den kürzesten Weg von „App auf“ bis „fertig“. Kein Entscheiden, was du lernen sollst, kein Planen. Je nach Thema erstellt Fluxo automatisch ein Quiz, Karteikarten oder eine Zusammenfassung zum erneuten Lesen – so fühlt sich jede Sitzung anders an und du wiederholst nie zweimal dasselbe Format.`,
+        },
+        {
+          question: "Kann ich es offline oder auf dem Smartphone nutzen?",
+          answer:
+            "Ja. Fluxo bietet Offline-Zugriff in den mobilen Apps für iOS und Android. Egal ob unterwegs oder ohne WLAN – deine Notizen und Wiederholungen sind immer verfügbar. Sobald du wieder online bist, synchronisiert sich alles automatisch.",
+        },
+        {
+          question: "Ist Fluxo kostenlos?",
+          answer:
+            "Ja. Der Gratis-Tarif umfasst 4 Wissensräume, den Notiz-Editor, verteilte Wiederholungen und Sync zwischen Geräten. Du brauchst mehr? Premium schaltet unbegrenzte Räume, erweiterte Funktionen und Offline-Zugriff frei.",
+        },
+      ],
+    },
+    cta: {
+      titleHtml: `Bereit, das Gelernte<br/>wirklich zu <strong>behalten</strong>?`,
+      placeholder: "Gib deine E-Mail ein",
+      submit: { label: "Frühen Zugang sichern", href: "#", clarityEvent: "signup_submit" },
+      noteHtml: `Die ersten 50 Nutzer erhalten <strong>60 % Rabatt auf Premium Plus</strong>`,
+    },
+    modal: {
+      title: "Wir sind noch nicht gestartet",
+      description:
+        "Fluxo ist noch nicht live – aber die ersten Mitglieder bekommen exklusive Early-Bird-Rabatte. Lass uns deine E-Mail da, und wir melden uns, sobald wir starten.",
+      placeholder: "Gib deine E-Mail ein",
+      submit: "Benachrichtige mich",
+      closeAria: "Schließen",
+    },
+    toast: {
+      success: "Danke! Du bist auf der Early-Access-Liste.",
+      error: "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+    },
+    footer: {
+      brandAlt: `${siteConfig.name}`,
+      socials: [
+        { label: "TikTok", href: "#" },
+        { label: "Instagram", href: "#" },
+        { label: "X", href: "#" },
+      ],
+      columns: [
+        {
+          title: "Produkt",
+          links: [
+            { label: "Warum Fluxo", href: "#why" },
+            { label: "Funktionen", href: "#features" },
+            { label: "Preise", href: "#pricing" },
+            { label: "FAQ", href: "#faq" },
+          ],
+        },
+        {
+          title: "Unternehmen",
+          links: [
+            { label: "Über uns", href: "#" },
+            { label: "Kontakt", href: "#" },
+            { label: "Datenschutz", href: "/privacy/" },
+            { label: "Cookie-Richtlinie", href: "/cookies/" },
+            { label: "Nutzungsbedingungen", href: "#" },
+          ],
+        },
+        {
+          title: "Wissens-Hub",
+          links: [
+            { label: "Wie behältst du, was du lernst?", href: "/de/blog/how-to-remember-what-you-learn/" },
+            { label: "Wie lernen, ohne zu vergessen?", href: "/de/blog/how-to-learn-without-forgetting/" },
+            { label: "Die beste Lernroutine", href: "/de/blog/best-study-routine/" },
+            { label: "Das zweite Gehirn fürs Lernen", href: "/de/blog/the-second-brain-for-learning/" },
+            { label: "Wie verfolgst du deinen Lernfortschritt?", href: "/de/blog/how-to-track-learning-progress/" },
+            { label: "Der beste Weg, neue Vokabeln zu lernen", href: "/de/blog/best-way-to-learn-new-vocabulary/" },
+            { label: "Wie lernen neben einem Vollzeitjob?", href: "/de/blog/how-to-study-while-working-full-time/" },
+          ],
+        },
+      ],
+      consentPreferences: "Cookie-Einstellungen",
+      copyright: `© 2026 ${siteConfig.name}. Alle Rechte vorbehalten`,
+    },
+    structuredData: {
+      description:
+        "Fluxo ist eine Lern-App, die strukturierte Wissensräume, KI-Zusammenfassungen und verteiltes Wiederholen kombiniert, um passives Lesen in aktives Langzeitgedächtnis zu verwandeln.",
+    },
+  },
 } satisfies Record<LocaleKey, LandingContent>;
 
 export const localeMeta: Record<LocaleKey, { code: string; name: string }> = {
   en: { code: "EN", name: "English" },
   uk: { code: "UA", name: "Українська" },
   es: { code: "ES", name: "Español" },
+  de: { code: "DE", name: "Deutsch" },
 };
 
-const localeOrder: LocaleKey[] = ["en", "uk", "es"];
+const localeOrder: LocaleKey[] = ["en", "uk", "es", "de"];
 
 export type LanguageOption = {
   locale: LocaleKey;
@@ -1885,6 +2163,299 @@ export const blogContent = {
         <p>Esto convierte el seguimiento del progreso de una tarea pesada en algo que simplemente ocurre mientras aprendes. Tú estudias, Fluxo mide, y en cualquier momento puedes ver con claridad qué materias están sólidas y cuáles necesitan más trabajo.</p>
         <p>Aprender sin seguimiento es volar a ciegas. Hacer seguimiento sin medir la evocación te dice cosas equivocadas. Fluxo hace ambas.</p>
         <button type="button" class="btn-primary" data-modal-open data-from="article-cta">Empieza gratis</button>
+      `,
+    },
+  },
+  de: {
+    "best-study-routine": {
+      routePath: "/de/blog/best-study-routine/",
+      heroAsset: "assets/card-3.png",
+      heroAlt: "Die beste Lernroutine",
+      meta: {
+        title: "Die beste Lernroutine — Fluxo",
+        description:
+          "Die meisten bauen ihre Lernroutine falsch auf. Sie wählen eine Uhrzeit, schlagen ihre Notizen auf und beginnen zu lesen. Das ist keine Routine. Das ist nur die Angewohnheit, neben einem Buch zu sitzen.",
+      },
+      category: "Wissens-Hub",
+      title: "Die beste Lernroutine",
+      subtitle:
+        "Die meisten bauen ihre Lernroutine falsch auf. Sie wählen eine Uhrzeit, schlagen ihre Notizen auf und beginnen zu lesen. Das ist keine Routine. Das ist nur die Angewohnheit, neben einem Buch zu sitzen.",
+      author: "Fluxo-Team",
+      readTime: "5 Min. Lesezeit",
+      bodyHtml: `
+        <p>Eine echte Lernroutine ist darauf ausgelegt, wie das Gehirn Informationen kodiert und speichert. Der Zeitplan zählt. Und was du in jeder Sitzung tust, ebenso.</p>
+        <hr class="article-rule" />
+        <h2>Was eine Routine wirklich funktionieren lässt</h2>
+        <p><strong>Beständigkeit schlägt Dauer</strong></p>
+        <p>Eine Stunde am Tag, jeden Tag, schlägt eine sechsstündige Sitzung am Sonntag. Das ist kein Motivationsspruch – so funktioniert die Gedächtniskonsolidierung. Schlaf spielt eine zentrale Rolle dabei, Informationen vom Kurzzeit- ins Langzeitgedächtnis zu überführen, und dieser Prozess braucht Zeit zwischen den Sitzungen. Wenn du Stoff über mehrere Tage verteilst, hat dein Gehirn wiederholt die Chance, ihn zu festigen.</p>
+        <p><strong>Passe die Sitzung der kognitiven Anforderung an</strong></p>
+        <p>Nicht alle Aufgaben sind gleich. Etwas Neues zu lernen verlangt mehr kognitive Anstrengung als das Wiederholen von Stoff, den du schon teilweise kennst. Forschung zu zirkadianen Rhythmen zeigt, dass die meisten Menschen ihren natürlichen Höhepunkt bei Aufmerksamkeit und Arbeitsgedächtnis am späten Vormittag haben. Wenn du dieses Fenster für deinen schwierigsten Stoff reservierst und leichteres Wiederholen in Phasen mit weniger Energie legst, wird dieselbe Zeit effektiver.</p>
+        <p><strong>Nutze Umsetzungsabsichten</strong></p>
+        <p>Peter Gollwitzers Forschung an der NYU, <a href="https://doi.org/10.1002/ejsp.345" target="_blank" rel="noopener">zusammengefasst in einer Metaanalyse von 2006 mit Sheeran</a>, zeigte einen mittleren bis großen Effekt auf das Erreichen von Zielen, wenn Menschen konkrete „Wenn-dann"-Pläne formulierten: „Wenn es 20 Uhr an einem Wochentag ist, mache ich 20 Minuten Wiederholung am Schreibtisch." Die Konkretheit nimmt dir die tägliche Entscheidung ab, ob und wann du lernst. Du verhandelst nicht mit dir selbst – du folgst einfach dem Plan.</p>
+        <hr class="article-rule" />
+        <h2>Eine einfache Struktur, die funktioniert</h2>
+        <p>Eine Routine, die auf diesen Prinzipien aufbaut, hat drei Teile:</p>
+        <p><strong>Morgens (10 bis 20 Minuten):</strong> Wiederhole, was du gestern gelernt hast, bevor dein Gehirn ganz im Tag ankommt. Das ist die Zeit, in der verteiltes Wiederholen am besten wirkt – der Stoff wurde gerade über Nacht konsolidiert, und Wiederholung jetzt setzt ein längeres Intervall bis zum nächsten Mal.</p>
+        <p><strong>Block aktives Lernen (25 bis 45 Minuten):</strong> Das ist deine Hauptsitzung. Neuer Stoff, schwierige Themen, etwas in eigenen Worten formulieren oder Aufgaben lösen. Kein Wiederlesen. Teste dich selbst, fasse aus dem Gedächtnis zusammen, verknüpfe Ideen.</p>
+        <p><strong>Tagesabschluss (5 Minuten):</strong> Notiere alles Neue vom Tag, was es wert ist, festgehalten zu werden. Ein Begriff, ein Konzept, ein Aha-Moment aus einem Meeting. Das dauert fünf Minuten und hält den Input-Strom offen, ohne eine weitere komplette Lernsitzung zu verlangen.</p>
+        <hr class="article-rule" />
+        <h2>Der Teil, den die meisten Routinen auslassen</h2>
+        <p>Den Zeitplan zu bauen ist der leichte Teil. Schwierig ist das System, das zwischen den Sitzungen läuft. Zu wissen, was morgen dran ist, im Blick zu behalten, was fällig ist, und älteren Stoff nicht entgleiten zu lassen.</p>
+        <p><strong><a href="/de/">Fluxo</a></strong> erledigt das automatisch. Du konzentrierst dich aufs Lernen. Fluxo verfolgt, was wann zu wiederholen ist, sodass deine Routine beständig bleibt, ohne dass du sie manuell verwalten musst.</p>
+        <p>Eine gute Lernroutine muss nicht kompliziert sein. Sie muss beständig sein und darauf aufbauen, wie das Gehirn tatsächlich arbeitet.</p>
+        <button type="button" class="btn-primary" data-modal-open data-from="article-cta">Kostenlos starten</button>
+      `,
+    },
+    "best-way-to-learn-new-vocabulary": {
+      routePath: "/de/blog/best-way-to-learn-new-vocabulary/",
+      heroAsset: "assets/card-3.png",
+      heroAlt: "Der beste Weg, neue Vokabeln zu lernen",
+      meta: {
+        title: "Der beste Weg, neue Vokabeln zu lernen — Fluxo",
+        description:
+          "Ob du eine Fremdsprache lernst, Fachbegriffe für einen neuen Job aufnimmst oder Fachwissen in Medizin, Recht oder Design aufbaust – Vokabular ist die Grundlage.",
+      },
+      category: "Wissens-Hub",
+      title: "Der beste Weg, neue Vokabeln zu lernen",
+      subtitle:
+        "Ob du eine Fremdsprache lernst, Fachbegriffe für einen neuen Job aufnimmst oder Fachwissen in Medizin, Recht oder Design aufbaust – Vokabular ist die Grundlage.",
+      author: "Fluxo-Team",
+      readTime: "4 Min. Lesezeit",
+      bodyHtml: `
+        <p>Die Frage ist, welche Methode wirklich funktioniert und warum die meisten es nicht tun.</p>
+        <hr class="article-rule" />
+        <h2>Warum stures Auswendiglernen versagt</h2>
+        <p>Ein Wort zehnmal zu schreiben und zu hoffen, dass es hängen bleibt, ist ungefähr so effektiv wie es zehnmal zu lesen. Beides ist passiv. Dein Gehirn legt die Information als wenig wichtig ab, weil du nichts Forderndes mit ihr getan hast.</p>
+        <p>Die Illusion des Fortschritts ist Teil des Problems. Nach genug Wiederholungen wirkt ein Wort vertraut. Vertrautheit fühlt sich wie Wissen an. Aber Vertrautheit aktiviert nur Wiedererkennen, nicht Abrufen. Du erkennst das Wort vielleicht, wenn du es siehst, und hast keine Ahnung, was es bedeutet, wenn du es produzieren sollst.</p>
+        <hr class="article-rule" />
+        <h2>Was die Forschung zeigt</h2>
+        <p><strong>Verteiltes Wiederholen ist die effektivste Methode für Vokabel-Retention</strong></p>
+        <p>Eine Metaanalyse von 2022 von Kim und Webb, veröffentlicht in <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/lang.12479" target="_blank" rel="noopener"><em>Language Learning</em></a>, untersuchte 48 Experimente mit über 3.400 Teilnehmenden, die Vokabular einer Zweitsprache lernten. Der Befund war klar: Verteiltes Üben übertraf massiertes Üben durchgehend bei der langfristigen Retention. Wörter in wachsenden Intervallen zu wiederholen statt in einem Rutsch erzeugt mit der Zeit deutlich besseren Abruf.</p>
+        <p><strong>Aktives Abrufen schlägt passive Aufnahme</strong></p>
+        <p>Ein Wort und seine Definition zu sehen, ist passiv. Die Definition gezeigt zu bekommen und das Wort produzieren zu müssen, ist aktiv. Diese Abrufanstrengung – selbst wenn du daneben liegst – baut eine stärkere Gedächtnisspur auf als jede Menge passives Wiederholen. Das ist derselbe Test-Effekt, den <a href="https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x" target="_blank" rel="noopener">Roediger und Karpicke</a> dokumentiert haben und der für jedes Lernen gilt – beim Vokabular ist er besonders kraftvoll.</p>
+        <p><strong>Kontext zählt</strong></p>
+        <p>Einzelne Karteikarten wirken besser als das Wiederlesen von Wortlisten, aber sie wirken noch besser, wenn das Wort mit etwas Bedeutungsvollem verknüpft ist – einem Beispielsatz, einem realen Anwendungsfall, einem Konzept, das du bereits verstehst. Im Kontext gelernter Wortschatz hält länger und ist nutzbarer als Wortschatz, den du als abstraktes Symbol lernst.</p>
+        <hr class="article-rule" />
+        <h2>Praktische Anwendung</h2>
+        <p>Der beste Ansatz verbindet alle drei:</p>
+        <ol>
+          <li>Lerne das Wort mit Kontext, nicht nur mit einer Definition</li>
+          <li>Teste dich daran ab der ersten Sitzung, bevor du dich bereit fühlst</li>
+          <li>Wiederhole es in wachsenden Intervallen, nicht alles auf einmal</li>
+        </ol>
+        <p>Das gilt für jeden Wortschatz – nicht nur für Fremdsprachen. Fachbegriffe, Fachkonzepte und Berufsjargon folgen denselben Regeln.</p>
+        <hr class="article-rule" />
+        <h2>So bleibt es hängen, ohne dass es zur Last wird</h2>
+        <p>Das Schwierige ist nicht, die Methode zu kennen. Sondern das System des verteilten Wiederholens über Hunderte von Wörtern aufrechtzuerhalten, ohne dass es zu einem Vollzeitjob wird.</p>
+        <p><strong><a href="/de/">Fluxo</a></strong> übernimmt das automatisch. Du fügst Vokabeln deinem Raum hinzu – Wörter, Definitionen, Kontextsätze – und Fluxo plant deine Wiederholungen. Du verbringst ein paar Minuten am Tag mit Abrufübungen, und das System verfolgt, welche Wörter sitzen und welche mehr Aufmerksamkeit brauchen.</p>
+        <p>Die Wissenschaft zur Vokabel-Retention ist klar. Was meist scheitert, ist die Umsetzung. Fluxo macht die Umsetzung automatisch.</p>
+        <button type="button" class="btn-primary" data-modal-open data-from="article-cta">Kostenlos starten</button>
+      `,
+    },
+    "how-to-study-while-working-full-time": {
+      routePath: "/de/blog/how-to-study-while-working-full-time/",
+      heroAsset: "assets/card-1.png",
+      heroAlt: "Wie lernen neben einem Vollzeitjob",
+      meta: {
+        title: "Wie lernen neben einem Vollzeitjob — Fluxo",
+        description:
+          "Du willst etwas Neues lernen. Eine Sprache, eine Fähigkeit, ein Fach, das für deine Karriere oder einfach für dich wichtig ist. Und du hast vielleicht 45 Minuten am Tag, wenn alles glattläuft.",
+      },
+      category: "Wissens-Hub",
+      title: "Wie lernen neben einem Vollzeitjob?",
+      subtitle:
+        "Du willst etwas Neues lernen. Eine Sprache, eine Fähigkeit, ein Fach, das für deine Karriere oder einfach für dich wichtig ist. Und du hast vielleicht 45 Minuten am Tag, wenn alles glattläuft.",
+      author: "Fluxo-Team",
+      readTime: "5 Min. Lesezeit",
+      bodyHtml: `
+        <p>Das ist tatsächlich genug. Aber nur, wenn du diese Zeit anders nutzt als Studierende.</p>
+        <hr class="article-rule" />
+        <h2>Das falsche Modell</h2>
+        <p>Die meisten Lerntipps sind für Studierende gedacht – mit Vier-Stunden-Blöcken, Prüfungsterminen und Lernen als Hauptbeschäftigung. Wenn du Vollzeit arbeitest, scheitert dieses Modell nicht nur – es lässt dich permanent das Gefühl haben, im Rückstand zu sein.</p>
+        <p>Den Versuch, einen Studienplan in den Lücken eines Erwachsenenlebens nachzubauen, bedeutet meist einen konzentrierten Wochenend-Anlauf, gefolgt von zwei Wochen nichts. Unbeständigkeit killt Retention schneller als jeder Mangel an Talent.</p>
+        <hr class="article-rule" />
+        <h2>Warum kürzere, häufigere Sitzungen besser funktionieren</h2>
+        <p>Die Forschung dazu ist eindeutig. <a href="https://www.yorku.ca/ncepeda/publications/CPVWR2006.html" target="_blank" rel="noopener">Cepeda et al.s Metaanalyse von 2006</a> im <em>Psychological Bulletin</em> zeigte, dass das Verteilen von Lernen über mehrere Sitzungen bessere Retention erzeugt als dieselbe Gesamtzeit in einer Sitzung. Das ist nicht nur eine Annehmlichkeit – es ist ein struktureller Vorteil für Menschen mit begrenzten täglichen Zeitfenstern.</p>
+        <p>Kurze tägliche Sitzungen passen außerdem dazu, wie Gedächtniskonsolidierung funktioniert. Der Schlaf verarbeitet und festigt, was du tagsüber gelernt hast. Wenn du heute Abend 20 Minuten lernst und schläfst, arbeitet dein Gehirn an diesem Stoff, während du ruhst. Sieben 20-minütige Sitzungen über die Woche bringen bessere Retention als eine 140-minütige Sitzung am Samstag.</p>
+        <p>Dieser Ansatz hat in der Lernforschung sogar einen Namen: Microlearning. Eine <a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2025.1491265/full" target="_blank" rel="noopener">Übersichtsarbeit in <em>Frontiers in Psychology</em> (2025)</a> fand Microlearning wirksam, um Wissen und Fähigkeiten unter Zeitdruck aufzubauen – genau die Situation berufstätiger Lernender.</p>
+        <hr class="article-rule" />
+        <h2>Eine realistische Tagesstruktur</h2>
+        <p><strong>10 bis 15 Minuten morgens:</strong> Wiederholung mit verteiltem Wiederholen. Geh durch, was Fluxo oder deine App als fällig markiert. So fängst du Stoff ab, bevor er verblasst, und arbeitest mit der Gedächtniskonsolidierung der Nacht zusammen.</p>
+        <p><strong>20 bis 30 Minuten abends:</strong> Eine konzentrierte Lernsitzung. Neuer Stoff, Lesen mit aktiver Annotation oder ein Konzept durcharbeiten. Kein Multitasking. Benachrichtigungen aus.</p>
+        <p>Das war's. 30 bis 45 Minuten gesamt, keine großen Blöcke nötig.</p>
+        <p>Entscheidend ist, diese beiden Fenster zu schützen. Nicht zu erweitern – zu schützen. Beständigkeit vor Volumen.</p>
+        <hr class="article-rule" />
+        <h2>Das System zählt mehr als die Motivation</h2>
+        <p>Das Schwerste am Lernen neben einem Vollzeitjob ist nicht, Zeit zu finden. Es ist sicherzustellen, dass die gefundene Zeit für die richtigen Dinge genutzt wird. Ohne ein System, das dir sagt, was zu wiederholen und was als Nächstes zu lernen ist, fängst du jedes Mal von vorn an, deckst dasselbe Terrain ab oder liest einfach passiv.</p>
+        <p><strong><a href="/de/">Fluxo</a></strong> gibt berufstätigen Lernenden ein System, das sich selbst trägt. Du fügst hinzu, was du lernst, die KI erzeugt Zusammenfassungen, damit du weniger Zeit mit Verstehen und mehr mit Üben verbringst, und Fluxo zeigt dir jeden Tag genau, was in deiner verfügbaren Zeit dran ist.</p>
+        <p>Du brauchst keine Stunden. Du brauchst ein System, das in Minuten funktioniert.</p>
+        <button type="button" class="btn-primary" data-modal-open data-from="article-cta">Kostenlos starten</button>
+      `,
+    },
+    "the-second-brain-for-learning": {
+      routePath: "/de/blog/the-second-brain-for-learning/",
+      heroAsset: "assets/card-1.png",
+      heroAlt: "Das zweite Gehirn fürs Lernen",
+      meta: {
+        title: "Das zweite Gehirn fürs Lernen — Fluxo",
+        description:
+          "Jedes Jahr liest du Dutzende Artikel, machst Kurse, hörst Podcasts und sitzt in Meetings voller nützlicher Informationen. Und jedes Jahr ist fast nichts davon verfügbar, wenn du es wirklich brauchst.",
+      },
+      category: "Wissens-Hub",
+      title: "Das zweite Gehirn fürs Lernen",
+      subtitle:
+        "Jedes Jahr liest du Dutzende Artikel, machst Kurse, hörst Podcasts und sitzt in Meetings voller nützlicher Informationen. Und jedes Jahr ist fast nichts davon verfügbar, wenn du es wirklich brauchst.",
+      author: "Fluxo-Team",
+      readTime: "4 Min. Lesezeit",
+      bodyHtml: `
+        <p>Nicht weil du vergesslich bist. Sondern weil du kein System hast, um es zu behalten.</p>
+        <hr class="article-rule" />
+        <h2>Woher die Idee kommt</h2>
+        <p>Den Begriff „zweites Gehirn" prägte der Produktivitätsforscher Tiago Forte. Die Kernidee ist einfach: Dein biologisches Gehirn ist zum Denken und Erschaffen gebaut, nicht zum Speichern. Wenn du es als Festplatte zu nutzen versuchst – jeden Artikel, Fakt und Gedanken festzuhalten – erzeugst du mentales Chaos und verlierst trotzdem das meiste.</p>
+        <p>Ein zweites Gehirn ist ein externes System, meist digital, in dem du erfasst, ordnest und Gelerntes wieder durchgehst. Forte beschreibt den Prozess als CODE: Capture (erfassen), Organize (ordnen), Distill (verdichten), Express (ausdrücken). Ziel ist nicht, alles zu archivieren. Es ist, die wichtigen Ideen lange genug am Leben zu halten, um sie zu nutzen.</p>
+        <p>Das Konzept ist nicht neu. Commonplace Books – persönliche Sammlungen von Notizen, Zitaten und Ideen – nutzen Denker und Autoren seit Jahrhunderten. Digitale Werkzeuge machen das System einfach schneller und durchsuchbarer.</p>
+        <hr class="article-rule" />
+        <h2>Die Lücke der meisten zweiten Gehirne</h2>
+        <p>Hier ist das Problem der meisten Notiz-Systeme: Sie sind passiv.</p>
+        <p>Notion, Obsidian, Evernote – alles ausgezeichnete Werkzeuge zum Erfassen und Ordnen. Aber Informationen zu erfassen ist nicht dasselbe wie sie zu lernen. Du kannst 2.000 perfekt verschlagwortete Notizen haben und dich an fast keine erinnern, weil du nie aktiv etwas davon abgerufen hast.</p>
+        <p>Ein nützliches zweites Gehirn fürs Lernen braucht zwei Dinge, die den meisten Systemen fehlen: aktives Wiederholen und verteiltes Wiederholen. Nicht nur Speicherung. Training.</p>
+        <p>Forschung von Roediger und Karpicke an der Washington University, <a href="https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x" target="_blank" rel="noopener">veröffentlicht 2006</a>, zeigte, dass das Abrufen von Informationen aus dem Gedächtnis weit bessere Langzeit-Retention bringt als das Wiederlesen. Das Gehirn behält, was es zu holen übt.</p>
+        <hr class="article-rule" />
+        <h2>Wie ein aktives zweites Gehirn aussieht</h2>
+        <p>Ein wirksames zweites Gehirn fürs Lernen tut vier Dinge:</p>
+        <p><strong>Erfasst</strong> alles, was dir begegnet – Artikel, Notizen, Begriffe, Ideen – ohne Reibung. Je niedriger die Einstiegshürde, desto eher nutzt du es wirklich.</p>
+        <p><strong>Ordnet</strong> nach Thema, nicht nach Quelle. Wenn alles zu einem Thema beisammen liegt, ergeben sich Verbindungen von selbst.</p>
+        <p><strong>Verdichtet</strong> die Kernaussagen. Nicht jedes Wort jedes Artikels. Die ein, zwei Ideen, an die du dich in einem Jahr wirklich erinnern möchtest.</p>
+        <p><strong>Trainiert</strong> dein Gedächtnis mit diesen verdichteten Ideen in wachsenden Intervallen, sodass du vom Speichern zum echten Besitzen von Wissen kommst.</p>
+        <hr class="article-rule" />
+        <h2>Wie Fluxo hineinpasst</h2>
+        <p><strong><a href="/de/">Fluxo</a></strong> ist als aktives zweites Gehirn gebaut. Du fügst hinzu, was du lernst, die KI erzeugt eine Zusammenfassung der Kernideen, und Fluxo plant kurze Wiederholungseinheiten nach den Prinzipien des verteilten Wiederholens – du testest dich am Stoff in den richtigen Intervallen, statt ihn nur zu überfliegen.</p>
+        <p>Der Unterschied zwischen einer Notiz-App und Fluxo ist der Unterschied zwischen etwas aufschreiben und es wirklich üben. Beide erfassen. Nur eines trainiert dich.</p>
+        <button type="button" class="btn-primary" data-modal-open data-from="article-cta">Kostenlos starten</button>
+      `,
+    },
+    "how-to-learn-without-forgetting": {
+      routePath: "/de/blog/how-to-learn-without-forgetting/",
+      heroAsset: "assets/card-2.png",
+      heroAlt: "Wie lernen, ohne zu vergessen",
+      meta: {
+        title: "Wie lernen, ohne zu vergessen — Fluxo",
+        description:
+          "Du liest ein Buch zu Ende. Du sitzt ein Webinar aus. Du speicherst ein Dutzend Artikel. Und irgendwo zwischen der letzten Seite und dem echten Leben verschwindet fast alles.",
+      },
+      category: "Wissens-Hub",
+      title: "Wie lernen, ohne zu vergessen?",
+      subtitle:
+        "Du liest ein Buch zu Ende. Du sitzt ein Webinar aus. Du speicherst ein Dutzend Artikel. Und irgendwo zwischen der letzten Seite und dem echten Leben verschwindet fast alles.",
+      author: "Fluxo-Team",
+      readTime: "4 Min. Lesezeit",
+      bodyHtml: `
+        <p>Das ist keine Faulheit. Das Gehirn ist nicht dafür gebaut, rohe Informationen endlos zu halten. Es speichert, was es nutzt, und verwirft, was es nicht nutzt. Die Frage ist nicht, wie du mehr liest. Sondern wie du dein Gehirn dazu bringst, neue Informationen als bewahrenswert zu behandeln.</p>
+        <hr class="article-rule" />
+        <h2>Das eigentliche Problem: Passiver Konsum fühlt sich wie Lernen an</h2>
+        <p>Notizen wiederlesen, Text markieren, Vorlesungen zweimal schauen – das fühlt sich produktiv an. Die Forschung zeigt: meist ist es das nicht.</p>
+        <p>Eine Übersichtsarbeit von 2019 in <em>Frontiers in Education</em> fasste Jahrzehnte von Studien im Unterricht zusammen: Einen Text immer wieder zu lesen, erzeugt ein falsches Gefühl von Vertrautheit. Lernende meinen, den Stoff zu können, weil er vertraut wirkt – aber dieses Wiedererkennen übersetzt sich nicht in echten Abruf, wenn er gebraucht wird. Vertrautheit und Gedächtnis sind verschiedene Dinge.</p>
+        <p>Die Lösung verlangt aktive Verarbeitung, nicht mehr passive Aufnahme.</p>
+        <hr class="article-rule" />
+        <h2>Was Vergessen wirklich verhindert</h2>
+        <p><strong>Teste dich selbst, lies nicht wieder</strong></p>
+        <p>Das Wirksamste, was du tun kannst, ist zu versuchen, Informationen aus dem Gedächtnis abzurufen, bevor du dich bereit fühlst. Das nennt sich Abruf-Praxis und funktioniert, weil das Hervorholen aus dem Gedächtnis – auch wenn es schwerfällt – die neuronale Bahn stärkt, die es trägt.</p>
+        <p>Roediger und Karpicke an der Washington University zeigten das in <a href="https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x" target="_blank" rel="noopener">ihrer Studie von 2006</a> klar: Lernende, die sich nach dem Lesen testeten, behielten eine Woche später deutlich mehr als jene, die denselben Stoff nur wiederlasen – obwohl beide Gruppen dieselbe Gesamtzeit aufwandten.</p>
+        <p><strong>Verteile deine Wiederholungen</strong></p>
+        <p>Etwas einmal zu wiederholen und weiterzumachen, garantiert fast, dass du es vergisst. Es noch einmal kurz vor dem Verblassen zu wiederholen – und dann erneut in einem längeren Intervall – baut wirklich langfristige Retention auf. <a href="https://www.yorku.ca/ncepeda/publications/CPVWR2006.html" target="_blank" rel="noopener">Cepeda et al.s Metaanalyse von 254 Studien</a> im <em>Psychological Bulletin</em> bestätigte, dass das Verteilen von Übung in der Zeit jede Menge an Pauken übertrifft.</p>
+        <p><strong>Verknüpfe neues Wissen mit Bekanntem</strong></p>
+        <p>Wenn du etwas lernst, frage dich, wie es zu Dingen passt, die du schon verstehst. Das zwingt dein Gehirn, die neue Information tiefer zu verarbeiten, statt sie als isolierte Tatsache abzulegen. Dunlosky und Kollegen an der Kent State zählten diese „elaborative Interrogation" in ihrer <a href="https://journals.sagepub.com/doi/10.1177/1529100612453266" target="_blank" rel="noopener">Übersicht von 2013</a> zu den wirksamsten Lernstrategien.</p>
+        <hr class="article-rule" />
+        <h2>Das Beständigkeitsproblem</h2>
+        <p>Diese drei Techniken wirken. Das Problem ist, sie über alle Themen, die du lernst, beständig anzuwenden, ohne zu vergessen, was wann zu wiederholen ist.</p>
+        <p><strong><a href="/de/">Fluxo</a></strong> übernimmt die System-Seite. Du erfasst, was du lernst, die KI holt die Kerngedanken heraus und Fluxo plant Wiederholungseinheiten in den richtigen Intervallen. Du tauchst 10 Minuten auf, machst die Arbeit, der Rest läuft von selbst.</p>
+        <p>Lernen ohne zu vergessen ist keine Magie. Es ist ein System. Und Systeme funktionieren am besten, wenn sie nicht allein von Willenskraft abhängen.</p>
+        <button type="button" class="btn-primary" data-modal-open data-from="article-cta">Kostenlos starten</button>
+      `,
+    },
+    "how-to-remember-what-you-learn": {
+      routePath: "/de/blog/how-to-remember-what-you-learn/",
+      heroAsset: "assets/card-1.png",
+      heroAlt: "Notizen und Gedächtnis",
+      meta: {
+        title: "Wie behältst du, was du lernst — Fluxo",
+        description:
+          "Du liest. Du beendest einen Kurs. Du machst Notizen. Und eine Woche später ist alles weg. Das ist kein Gedächtnisproblem – es ist ein Systemproblem.",
+      },
+      category: "Wissens-Hub",
+      title: "Wie behältst du, was du lernst?",
+      subtitle:
+        "Du liest einen Artikel. Du beendest einen Kurs. Du machst Notizen. Und eine Woche später ist alles weg.",
+      author: "Fluxo-Team",
+      readTime: "6 Min. Lesezeit",
+      bodyHtml: `
+        <p>Das ist kein Gedächtnisproblem. Es ist ein Systemproblem. Die meisten konsumieren Informationen, ohne einen Prozess aufzubauen, sie wirklich zu behalten. Hier ist, was die Wissenschaft sagt – und was funktioniert.</p>
+        <hr class="article-rule" />
+        <h2>Warum du so schnell vergisst</h2>
+        <p>1885 wurde der deutsche Psychologe Hermann Ebbinghaus zum Ersten, der Gedächtnis wissenschaftlich erforschte. Er lernte über Jahre Listen sinnloser Silben auswendig und maß, wie schnell er sie nach verschiedenen Zeitabständen wieder abrufen konnte. Sein Befund wurde als <strong>Vergessenskurve</strong> bekannt: Das Gedächtnis fällt direkt nach dem Lernen steil ab und flacht dann aus. Ohne jede Wiederholung vergessen wir 50 bis 70 % neuer Informationen innerhalb eines einzigen Tages.</p>
+        <p>2015 veröffentlichten Murre und Dros eine direkte Replikation von Ebbinghaus' Originalexperimenten in <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4492928/" target="_blank" rel="noopener">PLOS ONE</a> und kamen über 130 Jahre später auf nahezu identische Zahlen. Es ist einer der am häufigsten replizierten Befunde der kognitiven Psychologie.</p>
+        <p>Die Kurve ist keine persönliche Schwäche. So funktioniert das Gehirn einfach im Standardmodus. Die gute Nachricht: Drei Techniken wirken direkt entgegen.</p>
+        <hr class="article-rule" />
+        <h2>3 Techniken, die wirklich funktionieren</h2>
+        <h3>1. Aktives Abrufen</h3>
+        <p>Statt deine Notizen wiederzulesen, schließe sie und versuche, die Information aus dem Gedächtnis zu holen. Schon das Bemühen, sich zu erinnern, stärkt neuronale Verbindungen mehr als passives Wiederholen.</p>
+        <p>2006 führten Henry Roediger und Jeffrey Karpicke an der Washington University ein heute klassisches Experiment durch. Lernende lasen einen Text entweder mehrmals durch oder testeten sich daran. In einem unmittelbaren Test schnitt das Wiederlesen leicht besser ab. Aber eine Woche später behielt die Selbsttest-Gruppe deutlich mehr. Ihre Arbeit <a href="https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x" target="_blank" rel="noopener">Test-Enhanced Learning</a> in <em>Psychological Science</em> kam zum Schluss: Sich selbst zu testen ist nicht nur eine Art zu prüfen, was du weißt. Es ist eine der wirksamsten Arten, überhaupt zu lernen.</p>
+        <h3>2. Verteiltes Wiederholen</h3>
+        <p>Stoff genau dann zu wiederholen, wenn du ihn fast vergisst, wirkt weit besser als ihn mehrmals am selben Tag durchzugehen. Forschende nennen das den Spacing-Effekt, und er wird seit über einem Jahrhundert untersucht.</p>
+        <p>2006 veröffentlichten Nicholas Cepeda und Kollegen an der UC San Diego eine <a href="https://www.yorku.ca/ncepeda/publications/CPVWR2006.html" target="_blank" rel="noopener">Metaanalyse von 254 Studien</a> mit über 14.000 Beobachtungen im <em>Psychological Bulletin</em>. Der Befund war klar: Übung in der Zeit zu verteilen brachte durchgehend bessere Langzeit-Retention als dieselbe Übungsmenge in einer einzigen Sitzung zu pauken. Der richtige Abstand zwischen Wiederholungen hängt davon ab, wie lange du den Stoff behalten willst. Je länger das Ziel, desto länger die Intervalle.</p>
+        <h3>3. Elaborative Interrogation</h3>
+        <p>Wenn du etwas Neues lernst, frage dich, <em>warum</em> es stimmt und wie es mit dem zusammenhängt, was du schon weißt. Das erzwingt tiefere Verarbeitung und verankert neues Wissen am bestehenden, statt es isoliert zu lassen. Eine <a href="https://journals.sagepub.com/doi/10.1177/1529100612453266" target="_blank" rel="noopener">Übersicht von 2013 von Dunlosky und Kollegen</a> an der Kent State zählte sie zu den wirksamsten Lernstrategien – neben Abruf-Praxis und verteiltem Wiederholen.</p>
+        <hr class="article-rule" />
+        <h2>Warum die meisten alle drei auslassen</h2>
+        <p>Weil es schmerzhaft ist, sie manuell zu machen.</p>
+        <p>Im Blick zu behalten, was wann zu wiederholen ist, über mehrere Themen, Artikel und Notizen, wird schnell zur Pflicht, die die meisten innerhalb einer Woche fallen lassen. Die Techniken wirken. Die Reibung drumherum nicht.</p>
+        <hr class="article-rule" />
+        <h2>Der einfachere Weg</h2>
+        <p><strong><a href="/de/">Fluxo</a></strong> ist genau um diese drei Prinzipien gebaut. Du speicherst, was du lernst – Artikel, Notizen, Vokabeln, Ideen – und ordnest nach Thema. Die KI erzeugt eine schnelle Zusammenfassung, damit du den Stoff schneller verstehst. Dann plant Fluxo kurze Trainingseinheiten in den richtigen Intervallen, sodass du jedes Element wiederholst, wenn dein Gehirn es wirklich braucht.</p>
+        <p>Keine Tabellen. Kein manuelles Tracking. Nur 5 bis 15 Minuten am Tag – und du behältst tatsächlich, was du lernst.</p>
+        <p>Die Wissenschaft ist seit über einem Jahrhundert klar. Das Schwierige war immer, es beständig zu tun. Genau dieses Problem löst Fluxo.</p>
+        <button type="button" class="btn-primary" data-modal-open data-from="article-cta">Kostenlos starten</button>
+      `,
+    },
+    "how-to-track-learning-progress": {
+      routePath: "/de/blog/how-to-track-learning-progress/",
+      heroAsset: "assets/card-2.png",
+      heroAlt: "Wie verfolgst du deinen Lernfortschritt",
+      meta: {
+        title: "Wie verfolgst du deinen Lernfortschritt — Fluxo",
+        description:
+          "Die meisten messen Lernen falsch. Sie zählen Lernstunden, gelesene Bücher oder Seiten. Diese Zahlen fühlen sich bedeutsam an, messen aber Input, nicht Ergebnis.",
+      },
+      category: "Wissens-Hub",
+      title: "Wie verfolgst du deinen Lernfortschritt?",
+      subtitle:
+        "Die meisten messen Lernen falsch. Sie zählen Lernstunden, gelesene Bücher oder Seiten. Diese Zahlen fühlen sich bedeutsam an, messen aber Input, nicht Ergebnis.",
+      author: "Fluxo-Team",
+      readTime: "4 Min. Lesezeit",
+      bodyHtml: `
+        <p>Die eigentliche Frage ist: Wie viel behältst du wirklich?</p>
+        <hr class="article-rule" />
+        <h2>Warum die meiste Erfassung scheitert</h2>
+        <p>Die Lernzeit hat fast keine Korrelation damit, wie viel du behältst. Eine Studie von 2006 von <a href="https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x" target="_blank" rel="noopener">Roediger und Karpicke an der Washington University</a> zeigte das direkt: Zwei Gruppen verbrachten dieselbe Zeit mit demselben Stoff. Eine las ihn wieder. Die andere testete sich. Eine Woche später erinnerte sich die Selbsttest-Gruppe an deutlich mehr – obwohl sie im klassischen Sinn weniger „lernte".</p>
+        <p>Erfasste Stunden sagen nichts darüber, ob gelernt wurde. Abruf schon.</p>
+        <hr class="article-rule" />
+        <h2>Was wirklich messenswert ist</h2>
+        <p><strong>Behaltensquote</strong></p>
+        <p>Kannst du diese Information abrufen, ohne nachzusehen? Das ist die einzige Kennzahl, die für langfristiges Lernen zählt. Alles andere – Zeit, Erledigung, Markierungen – ist ein Hilfsindikator, der dich oft glauben lässt, du hättest mehr gelernt als tatsächlich.</p>
+        <p><strong>Abruf-Schwierigkeit über die Zeit</strong></p>
+        <p>Wie schwer fällt es, sich nach einem Tag zu erinnern? Nach einer Woche? Nach einem Monat? Wird der Abruf in kürzeren Sitzungen über die Zeit leichter, festigt sich das Wissen. Bleibt er schwer, brauchst du mehr Wiederholung oder einen anderen Ansatz. Das über Themen hinweg zu verfolgen liefert ein echtes Signal, was funktioniert.</p>
+        <p><strong>Lücken, nicht nur Erfolge</strong></p>
+        <p>Die meisten Fortschritts-Tracker zeigen dir, was du erledigt hast. Nützlicher ist, zu verfolgen, was du vergessen oder falsch gemacht hast. Ein System, das deine schwächsten Bereiche aufdeckt und sie in Wiederholungen priorisiert, ist wertvoller als eines, das Serien und Abzeichen zählt.</p>
+        <hr class="article-rule" />
+        <h2>Das Problem manuellen Trackings</h2>
+        <p>Du kannst all das in einer Tabelle erfassen. Manche tun das. Die meisten brechen nach zwei Wochen ab, weil ihre Pflege so viel Energie kostet wie das Lernen selbst.</p>
+        <p>Der Nutzen, Lernfortschritt zu verfolgen, ist real – das Teaching and Learning Lab des MIT <a href="https://tll.mit.edu/teaching-resources/how-people-learn/metacognition/" target="_blank" rel="noopener">weist darauf hin, dass metakognitives Monitoring</a> die Lernergebnisse deutlich verbessert. Zu wissen, wo du stehst, was verblasst und was Aufmerksamkeit braucht, lässt dich deine Anstrengung dorthin lenken, wo sie zählt. Aber das funktioniert nur, wenn die Erfassung automatisch ist.</p>
+        <hr class="article-rule" />
+        <h2>Wie automatische Fortschrittserfassung aussieht</h2>
+        <p><strong><a href="/de/">Fluxo</a></strong> erfasst Retention, indem es misst, wie du in jeder Wiederholungseinheit abschneidest. Jedes Mal, wenn du etwas richtig abrufst oder dich quälst, passt Fluxo sein Modell deines Wissens an. Mit der Zeit siehst du deine Behaltensquote pro Thema – nicht wie viele Notizen du hast, sondern wie viel davon du tatsächlich abrufen kannst.</p>
+        <p>Das verwandelt Fortschrittserfassung von einer Pflicht in etwas, das beim Lernen einfach passiert. Du lernst, Fluxo misst, und du kannst jederzeit klar sehen, welche Fächer sitzen und welche mehr Arbeit brauchen.</p>
+        <p>Lernen ohne Erfassung ist Blindflug. Erfassung ohne Abruf-Messung sagt dir die falschen Dinge. Fluxo tut beides.</p>
+        <button type="button" class="btn-primary" data-modal-open data-from="article-cta">Kostenlos starten</button>
       `,
     },
   },
