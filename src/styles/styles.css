@@ -1037,7 +1037,7 @@ main {
   -webkit-backdrop-filter: blur(8px);
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 24px;
 }
 
 .pricing-card--featured {
@@ -1295,6 +1295,16 @@ main {
   .features-floating {
     display: none;
   }
+  .feat-card,
+  .feat-card:hover,
+  .feat-card:active,
+  .feat-card:nth-child(1):hover,
+  .feat-card:nth-child(2):hover,
+  .feat-card:nth-child(3):hover,
+  .feat-card:nth-child(4):hover {
+    transform: none;
+    transition: none;
+  }
   .feat-card-title {
     font-size: 20px;
     line-height: 20px;
@@ -1304,6 +1314,11 @@ main {
     flex-direction: column;
     gap: 40px;
     padding: 60px 32px 80px;
+  }
+
+  .hero h1 {
+    font-size: 54px;
+    line-height: 1;
   }
 
   .hero-content {
@@ -1408,6 +1423,21 @@ main {
   }
   .features-floating {
     display: none;
+  }
+  .feat-card,
+  .feat-card:hover,
+  .feat-card:active,
+  .feat-card:nth-child(1):hover,
+  .feat-card:nth-child(2):hover,
+  .feat-card:nth-child(3):hover,
+  .feat-card:nth-child(4):hover {
+    transform: none;
+    transition: none;
+  }
+
+  .hero h1 {
+    font-size: 54px;
+    line-height: 1;
   }
 
   .faq-layout {
