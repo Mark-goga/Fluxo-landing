@@ -50,8 +50,14 @@ const allCards = [...features.leftCards, ...features.rightCards];
   </div>
 
   <div class="features-cta">
-    <a href={features.cta.href} class="btn-primary" data-clarity-event={features.cta.clarityEvent}>
+    <button
+      type="button"
+      class="btn-primary"
+      data-clarity-event={features.cta.clarityEvent}
+      data-modal-open
+      data-from="features-cta"
+    >
       {features.cta.label}
-    </a>
+    </button>
   </div>
 </section>

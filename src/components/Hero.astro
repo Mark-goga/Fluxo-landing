@@ -18,9 +18,15 @@ const heroImage = pageAssetUrl(routePath, "assets/Photo_herosection_NEW.png");
       <p class="hero-body">{content.hero.text}</p>
     </div>
     <div class="hero-buttons">
-      <a href={content.hero.primaryCta.href} class="btn-primary" data-clarity-event={content.hero.primaryCta.clarityEvent}>
+      <button
+        type="button"
+        class="btn-primary"
+        data-clarity-event={content.hero.primaryCta.clarityEvent}
+        data-modal-open
+        data-from="hero-primary"
+      >
         {content.hero.primaryCta.label}
-      </a>
+      </button>
       <a
         href={content.hero.secondaryCta.href}
         class="btn-secondary btn-secondary-lg"

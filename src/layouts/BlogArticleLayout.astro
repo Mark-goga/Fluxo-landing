@@ -122,6 +122,22 @@ alternates.push({ hreflang: "x-default", href: absoluteUrl(blogContent.en[slug a
       if (e.key === "Escape" && modal && !modal.hidden) closeModal();
     });
 
+    const buildUtmMetadata = () => {
+      const params = new URLSearchParams(window.location.search);
+      return Object.fromEntries(Array.from(params.entries()).filter(([key]) => key.startsWith("utm_")));
+    };
+
+    const buildLeadMetadata = (from) => ({
+      from,
+      page: window.location.href,
+      path: window.location.pathname,
+      locale: document.documentElement.lang || "unknown",
+      referrer: document.referrer,
+      userAgent: navigator.userAgent,
+      timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+      utm: buildUtmMetadata(),
+    });
+
     document.querySelectorAll("[data-lead-form]").forEach((form) => {
       form.addEventListener("submit", async (e) => {
         e.preventDefault();
@@ -133,7 +149,11 @@ alternates.push({ hreflang: "x-default", href: absoluteUrl(blogContent.en[slug a
         if (button) button.disabled = true;
         form.setAttribute("aria-busy", "true");
         try {
-          const res = await fetch(leadsUrl, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email, applicationId, metadata: { from } }) });
+          const res = await fetch(leadsUrl, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email, applicationId, metadata: buildLeadMetadata(from) }),
+          });
           if (!res.ok) throw new Error();
           if (input) input.value = "";
           if (modal && form.closest("[data-lead-modal]")) closeModal();

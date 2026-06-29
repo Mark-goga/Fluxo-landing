@@ -11,6 +11,7 @@ const { content, routePath } = Astro.props;
 const logo = pageAssetUrl(routePath, "assets/LOGOFLUXOBlack.png");
 const tiktok = pageAssetUrl(routePath, "assets/TiktokLogo.svg");
 const linkedin = pageAssetUrl(routePath, "assets/basil_linkedin-outline.svg");
+const resolveFooterHref = (href: string) => (href.startsWith("#") && href.length > 1 ? `${content.path}${href}` : href);
 ---
 
 <footer class="footer">
@@ -43,7 +44,7 @@ const linkedin = pageAssetUrl(routePath, "assets/basil_linkedin-outline.svg");
             <ul class="footer-links">
               {column.links.map((link) => (
                 <li>
-                  <a href={link.href}>{link.label}</a>
+                  <a href={resolveFooterHref(link.href)}>{link.label}</a>
                 </li>
               ))}
             </ul>

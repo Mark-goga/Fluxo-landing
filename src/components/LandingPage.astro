@@ -105,6 +105,22 @@ const pageRoutePath = routePath ?? content.path;
       if (event.key === "Escape" && modal && !modal.hidden) closeModal();
     });
 
+    const buildUtmMetadata = () => {
+      const params = new URLSearchParams(window.location.search);
+      return Object.fromEntries(Array.from(params.entries()).filter(([key]) => key.startsWith("utm_")));
+    };
+
+    const buildLeadMetadata = (from) => ({
+      from,
+      page: window.location.href,
+      path: window.location.pathname,
+      locale: document.documentElement.lang || "unknown",
+      referrer: document.referrer,
+      userAgent: navigator.userAgent,
+      timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+      utm: buildUtmMetadata(),
+    });
+
     const submitLead = async (email, from) => {
       const response = await fetch(leadsUrl, {
         method: "POST",
@@ -112,7 +128,7 @@ const pageRoutePath = routePath ?? content.path;
         body: JSON.stringify({
           email,
           applicationId,
-          metadata: { from },
+          metadata: buildLeadMetadata(from),
         }),
       });
       if (!response.ok) throw new Error("Request failed with status " + response.status);
