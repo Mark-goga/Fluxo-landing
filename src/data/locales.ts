@@ -346,7 +346,7 @@ export const landingContent = {
     cta: {
       titleHtml: `Ready to actually<br/><strong>remember</strong> what you learn?`,
       placeholder: "Enter your email",
-      submit: { label: "Get Early Access", href: "#", clarityEvent: "signup_submit" },
+      submit: { label: "Get early access", href: "#", clarityEvent: "signup_submit" },
       noteHtml: `First 50 users get <strong>premium plus 60%</strong> discount`,
     },
     modal: {
@@ -1304,26 +1304,41 @@ export const blogContent = {
       author: "Fluxo Team",
       readTime: "5 min read",
       bodyHtml: `
-        <p>A real study routine is designed around how the brain encodes and stores information. The schedule matters. So does what you do during each session.</p>
+        <p>A real study routine is designed around how the brain encodes and stores information. The schedule matters. So does what you do during each session, and so does the order in which you study different topics. Get those three things right and the same hour of effort produces dramatically more retention.</p>
         <hr class="article-rule" />
         <h2>What Makes a Routine Actually Work</h2>
+        <p>The four ingredients below all have research behind them, and they work best combined rather than picked one at a time:</p>
+        <ol>
+          <li><strong>Consistency beats duration</strong></li>
+          <li><strong>Match the session to the cognitive demand</strong></li>
+          <li><strong>Use implementation intentions</strong></li>
+          <li><strong>Mix your topics instead of studying one thing to exhaustion</strong></li>
+        </ol>
         <p><strong>Consistency beats duration</strong></p>
-        <p>One hour a day, every day, outperforms a six-hour session on Sunday. This isn't a motivational claim — it's how memory consolidation works. Sleep plays a critical role in moving information from short-term to long-term memory, and that process needs time between sessions. Reviewing material across multiple days gives the brain repeated opportunities to consolidate it.</p>
+        <p>One hour a day, every day, outperforms a six-hour session on Sunday. This isn't a motivational claim — it's how memory consolidation works. Sleep plays a critical role in moving information from short-term to long-term memory, and that process needs time between sessions. Reviewing material across multiple days gives the brain repeated opportunities to consolidate it, rather than asking it to process a flood of new information in one sitting.</p>
         <p><strong>Match the session to the cognitive demand</strong></p>
-        <p>Not all tasks are equal. Learning something new requires more cognitive effort than reviewing something you already partially know. Research on circadian rhythms shows that most people have a natural peak in alertness and working memory during the mid-morning. Saving that window for your hardest material, and doing lighter review during lower-energy periods, makes the same amount of time more effective.</p>
+        <p>Not all tasks are equal. Learning something new requires more cognitive effort than reviewing something you already partially know. Research on circadian rhythms shows that most people have a natural peak in alertness and working memory during the mid-morning. Saving that high-alertness window for your hardest material, and doing lighter review during lower-energy periods, makes the same amount of time more effective without requiring you to study any longer.</p>
         <p><strong>Use implementation intentions</strong></p>
-        <p>Peter Gollwitzer's research at NYU, <a href="https://doi.org/10.1002/ejsp.345" target="_blank" rel="noopener">summarized in a 2006 meta-analysis with Sheeran</a>, found a medium-to-large effect on goal follow-through when people formed specific "if-then" plans: "If it is 8pm on a weekday, I will do 20 minutes of review at my desk." The specificity removes the daily decision of whether and when to study. You don't negotiate with yourself — you just follow the plan.</p>
+        <p>Peter Gollwitzer's research at NYU, <a href="https://doi.org/10.1002/ejsp.345" target="_blank" rel="noopener">summarized in a 2006 meta-analysis with Sheeran</a> covering 94 independent tests, found a medium-to-large effect on goal follow-through when people formed specific "if-then" plans: "If it is 8pm on a weekday, I will do 20 minutes of review at my desk." The specificity removes the daily decision of whether and when to study. You don't negotiate with yourself — you just follow the plan.</p>
+        <p><strong>Mix your topics instead of studying one thing to exhaustion</strong></p>
+        <p>It feels natural to fully finish one subject before moving to another. Research on interleaving suggests the opposite produces better retention. A <a href="https://www.innerdrive.co.uk/blog/interleaving-and-why-it-works/" target="_blank" rel="noopener">review from InnerDrive</a> covering the cognitive science literature found that students who interleaved topics within a study session performed close to twice as well on delayed tests compared to students who studied one topic at a time. Interleaving forces your brain to actively retrieve the right information for each topic rather than coasting on short-term recognition.</p>
         <hr class="article-rule" />
         <h2>A Simple Structure That Works</h2>
         <p>A routine built around these principles has three parts:</p>
-        <p><strong>Morning (10 to 20 minutes):</strong> Review what you learned yesterday before your brain fully shifts into the day. This is when spaced repetition does its best work — the material was recently consolidated overnight and reviewing it now sets a longer interval before the next review.</p>
-        <p><strong>Active learning block (25 to 45 minutes):</strong> This is your main session. New material, difficult topics, writing in your own words, or solving problems. No re-reading. Test yourself, summarize from memory, connect ideas.</p>
-        <p><strong>End-of-day capture (5 minutes):</strong> Write down anything new you encountered during the day worth keeping. A term, a concept, an insight from a meeting. It takes five minutes and keeps the input loop open without requiring another full study session.</p>
+        <ul>
+          <li><strong>Morning, 10 to 20 minutes.</strong> Review what you learned yesterday before your brain fully shifts into the day. This is when spaced repetition does its best work — the material was recently consolidated overnight and reviewing it now sets a longer interval before the next review.</li>
+          <li><strong>Active learning block, 25 to 45 minutes.</strong> This is your main session. New material, difficult topics, writing in your own words, or solving problems. No re-reading. Test yourself, summarize from memory, connect ideas to things you already know. If you're covering more than one subject, mix them rather than blocking through each one separately.</li>
+          <li><strong>End-of-day capture, 5 minutes.</strong> Write down anything new you encountered during the day worth keeping. A term, a concept, an insight from a meeting. It takes five minutes and keeps the input loop open without requiring another full study session.</li>
+        </ul>
+        <hr class="article-rule" />
+        <h2>A Realistic Example</h2>
+        <p>Say you're learning a new professional skill alongside a full schedule. Monday through Friday: 15 minutes of spaced review before breakfast, 30 minutes of focused new material after dinner, mixing two related subtopics rather than spending the whole session on one. Saturday: a slightly longer 45-minute session that combines review and new material. Sunday: rest, or a light 10-minute review only.</p>
+        <p>That's under three hours a week. Spread correctly, with active recall and mixed topics, it will outperform a single four-hour weekend session covering the same material.</p>
         <hr class="article-rule" />
         <h2>The Part Most Routines Skip</h2>
-        <p>Building the schedule is the easy part. The hard part is the system that runs between sessions. Knowing what to review tomorrow, keeping track of what's due, not letting older material slip.</p>
-        <p><strong><a href="/">Fluxo</a></strong> does that automatically. You focus on the learning. Fluxo tracks what needs reviewing and when, so your routine stays consistent without requiring you to manage it manually.</p>
-        <p>A good study routine doesn't need to be complicated. It needs to be consistent and designed around how the brain actually works.</p>
+        <p>Building the schedule is the easy part. The hard part is the system that runs between sessions: knowing what to review tomorrow, keeping track of what's due, not letting older material slip through the cracks while you focus on what's new.</p>
+        <p><strong><a href="/">Fluxo</a></strong> does that automatically. You focus on the learning. Fluxo tracks what needs reviewing and when, mixes topics the way interleaving research recommends, and adjusts intervals based on how well you're actually retaining each item.</p>
+        <p>A good study routine doesn't need to be complicated. It needs to be consistent, designed around how the brain actually works, and built on a system that remembers what you might forget to review.</p>
         <button type="button" class="btn-primary" data-modal-open data-from="article-cta">Start for free</button>
       `,
     },
@@ -1393,22 +1408,43 @@ export const blogContent = {
         <hr class="article-rule" />
         <h2>The Wrong Model</h2>
         <p>Most study advice is built for students with four-hour blocks, exam deadlines, and learning as a primary job. When you're working full time, that model doesn't just fail — it sets you up to feel like you're always behind.</p>
-        <p>Trying to recreate a student schedule in the gaps of an adult life usually means one focused weekend attempt followed by two weeks of nothing. The inconsistency kills retention faster than any lack of talent.</p>
+        <p>Trying to recreate a student schedule in the gaps of an adult life usually means one focused weekend attempt followed by two weeks of nothing. The inconsistency kills retention faster than any lack of talent or time.</p>
         <hr class="article-rule" />
         <h2>Why Shorter, More Frequent Sessions Work Better</h2>
         <p>The research on this is direct. <a href="https://www.yorku.ca/ncepeda/publications/CPVWR2006.html" target="_blank" rel="noopener">Cepeda et al.'s 2006 meta-analysis</a> in <em>Psychological Bulletin</em> showed that distributing learning across multiple sessions produces better retention than the same total time spent in a single sitting. This isn't just a convenience — it's a structural advantage for people with limited daily windows.</p>
-        <p>Short daily sessions also match how memory consolidation works. Sleep processes and reinforces what you learned during the day. If you study for 20 minutes tonight and sleep, your brain will work on that material while you rest. Seven 20-minute sessions across a week will produce better retention than one 140-minute session on Saturday.</p>
-        <p>This approach even has a name in learning research: microlearning. A <a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2025.1491265/full" target="_blank" rel="noopener">review published in <em>Frontiers in Psychology</em> (2025)</a> found microlearning effective for developing knowledge and skills in time-constrained contexts — exactly the situation of working professionals.</p>
+        <p>Short daily sessions also match how memory consolidation works. Sleep processes and reinforces what you learned during the day. If you study for 20 minutes tonight and sleep, your brain will work on that material while you rest. Seven 20-minute sessions across a week will produce better retention than one 140-minute session on Saturday, even though the total time is identical.</p>
+        <p>This approach even has a name in learning research: microlearning. A <a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2025.1491265/full" target="_blank" rel="noopener">review published in <em>Frontiers in Psychology</em> (2025)</a> found microlearning effective for developing knowledge and skills in time-constrained contexts — exactly the situation of working professionals balancing a job, a commute, and everything else.</p>
         <hr class="article-rule" />
         <h2>A Realistic Daily Structure</h2>
-        <p><strong>10 to 15 minutes in the morning:</strong> Spaced repetition review. Go through what Fluxo or your app says is due. This catches material before it fades and works with the memory consolidation that happened overnight.</p>
-        <p><strong>20 to 30 minutes in the evening:</strong> One focused learning session. New material, reading with active annotation, or working through a concept. No multitasking. Notifications off.</p>
-        <p>That's it. 30 to 45 minutes total, no large blocks required.</p>
-        <p>The key is protecting those two windows. Not expanding them — protecting them. Consistency over volume.</p>
+        <p>A workable routine for someone working full time has two short windows rather than one long block:</p>
+        <ul>
+          <li><strong>10 to 15 minutes in the morning</strong> for spaced repetition review. Go through what's due before your brain fully shifts into work mode. This catches material before it fades and works with the memory consolidation that happened overnight.</li>
+          <li><strong>20 to 30 minutes in the evening</strong> for one focused learning session. New material, reading with active annotation, or working through a concept. No multitasking, no notifications, just one block of attention.</li>
+        </ul>
+        <p>That's it. 30 to 45 minutes total, no large blocks required. The key is protecting those two windows rather than expanding them. Consistency over volume is what makes this approach work where a single weekend marathon fails.</p>
+        <hr class="article-rule" />
+        <h2>Where to Find the Time Without Disrupting Your Day</h2>
+        <p>Most working learners find usable minutes in places they're not currently using:</p>
+        <ul>
+          <li>The first 10 minutes after waking up, before checking email or messages</li>
+          <li>A commute, whether on transit or as a passenger, for audio review or a quick recall session</li>
+          <li>The last 15 minutes of a lunch break, when energy is moderate but focus is still available</li>
+          <li>The 20 minutes before winding down for bed, for a short, low-stakes review session</li>
+        </ul>
+        <p>None of these require giving up sleep, exercise, or time with family. They're gaps that already exist in most schedules, just not currently allocated to anything.</p>
+        <hr class="article-rule" />
+        <h2>What Tends to Derail Working Learners</h2>
+        <p>A few patterns show up repeatedly among people who start strong and then quietly stop:</p>
+        <ol>
+          <li>Setting an unrealistic daily goal, like an hour a day, that collapses the first time a work deadline runs long</li>
+          <li>Studying only when motivated, rather than at a fixed time, which means the habit disappears exactly when life gets busy</li>
+          <li>Trying to learn and organize at the same time, manually tracking what to review next instead of letting a system handle the scheduling</li>
+          <li>Treating a missed day as a failure rather than simply picking up the next day's session, which often leads to abandoning the routine entirely after one bad week</li>
+        </ol>
         <hr class="article-rule" />
         <h2>The System Matters More Than Motivation</h2>
-        <p>The hardest part of studying while working full time isn't finding time. It's making sure that the time you do find is used on the right things. Without a system telling you what to review and what to learn next, you default to starting over, covering the same ground, or just reading passively.</p>
-        <p><strong><a href="/">Fluxo</a></strong> gives working learners a system that runs itself. You add what you're learning, the AI generates summaries so you spend less time understanding and more time training, and every day Fluxo shows you exactly what to review in the time you have.</p>
+        <p>The hardest part of studying while working full time isn't finding time. It's making sure that the time you do find is used on the right things. Without a system telling you what to review and what to learn next, you default to starting over, covering the same ground repeatedly, or just reading passively because deciding what to do next takes more energy than you have left at the end of a workday.</p>
+        <p><strong><a href="/">Fluxo</a></strong> gives working learners a system that runs itself. You add what you're learning, the AI generates summaries so you spend less time understanding and more time training, and every day Fluxo shows you exactly what to review in the time you have — whether that's 10 minutes or 40.</p>
         <p>You don't need hours. You need a system that works in minutes.</p>
         <button type="button" class="btn-primary" data-modal-open data-from="article-cta">Start for free</button>
       `,
@@ -1429,29 +1465,38 @@ export const blogContent = {
       author: "Fluxo Team",
       readTime: "4 min read",
       bodyHtml: `
-        <p>Not because you're forgetful. Because you have no system for keeping it.</p>
+        <p>Not because you're forgetful. Because you have no system for keeping it. The information went in, and without a process to capture, organize, and revisit it, it came right back out.</p>
         <hr class="article-rule" />
         <h2>Where the Idea Comes From</h2>
-        <p>The term "second brain" was coined by productivity researcher Tiago Forte. The core idea is simple: your biological brain is built for thinking and creating, not storing. When you try to use it as a hard drive — holding onto every article, fact, and idea — you create mental clutter and still lose most of it.</p>
-        <p>A second brain is an external system, usually digital, where you capture, organize, and revisit what you've learned. Forte describes the process as CODE: Capture, Organize, Distill, Express. The goal isn't to archive everything. It's to keep the ideas that matter alive long enough to use them.</p>
-        <p>The concept isn't new. Commonplace books — personal collections of notes, quotes, and ideas — have been used by thinkers and writers for centuries. Digital tools just make the system faster and more searchable.</p>
+        <p>The term "second brain" was coined by productivity researcher Tiago Forte. The core idea is simple: your biological brain is built for thinking and creating, not storing. When you try to use it as a hard drive — holding onto every article, fact, and idea you encounter — you create mental clutter and still lose most of it.</p>
+        <p>A second brain is an external system, usually digital, where you capture, organize, and revisit what you've learned. Forte describes the process as CODE:</p>
+        <ol>
+          <li><strong>Capture</strong> — save what resonates with you as you encounter it</li>
+          <li><strong>Organize</strong> — sort it by how you'll use it, not where it came from</li>
+          <li><strong>Distill</strong> — boil it down to the essential points</li>
+          <li><strong>Express</strong> — actually use the knowledge, rather than letting it sit</li>
+        </ol>
+        <p>The goal isn't to archive everything. It's to keep the ideas that matter alive long enough to use them, while letting the rest fade without guilt.</p>
+        <p>The concept isn't new. Commonplace books — personal collections of notes, quotes, and ideas — have been used by thinkers and writers for centuries, long before anyone called it personal knowledge management. Digital tools just make the system faster, searchable, and far less likely to get lost in a drawer.</p>
         <hr class="article-rule" />
         <h2>The Gap Most Second Brains Have</h2>
         <p>Here's the problem with most note-taking systems: they're passive.</p>
-        <p>Notion, Obsidian, Evernote — all excellent tools for capturing and organizing. But capturing information is not the same as learning it. You can have 2,000 perfectly tagged notes and still remember almost none of them, because you never went back to actively recall any of it.</p>
+        <p>Notion, Obsidian, Evernote — all excellent tools for capturing and organizing. But capturing information is not the same as learning it. You can have 2,000 perfectly tagged notes and still remember almost none of them, because you never went back to actively recall any of it. The notes sit there, technically retrievable, practically invisible, until a search someday surfaces them again as if for the first time.</p>
         <p>A useful second brain for learning needs two things most systems don't have: active review and spaced repetition. Not just storage. Training.</p>
-        <p>Research by Roediger and Karpicke at Washington University <a href="https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x" target="_blank" rel="noopener">published in 2006</a> showed that retrieving information from memory produces far better long-term retention than re-reading it. The brain keeps what it practices pulling up.</p>
+        <p>Research by Roediger and Karpicke at Washington University, <a href="https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x" target="_blank" rel="noopener">published in 2006</a>, showed that retrieving information from memory produces far better long-term retention than re-reading it. The brain keeps what it practices pulling up, not what it merely files away.</p>
         <hr class="article-rule" />
         <h2>What an Active Second Brain Looks Like</h2>
         <p>An effective second brain for learning does four things:</p>
-        <p><strong>Captures</strong> what you encounter — articles, notes, terms, ideas — without friction. The lower the barrier to entry, the more you actually use it.</p>
-        <p><strong>Organizes</strong> by topic, not by source. When everything from the same subject lives together, connections emerge naturally.</p>
-        <p><strong>Distills</strong> the key points. Not every word of every article. The one or two ideas you'd actually want to remember in a year.</p>
-        <p><strong>Trains</strong> your memory on those distilled ideas at increasing intervals, so you move from storing knowledge to actually owning it.</p>
+        <ul>
+          <li><strong>Captures</strong> what you encounter — articles, notes, terms, ideas — without friction. The lower the barrier to entry, the more you actually use it. If capturing something takes more than a few seconds, most people simply stop doing it within a week.</li>
+          <li><strong>Organizes</strong> by topic, not by source. When everything from the same subject lives together, regardless of whether it came from a book, a podcast, or a work meeting, connections emerge naturally that wouldn't show up if material were filed by where it came from.</li>
+          <li><strong>Distills</strong> the key points. Not every word of every article — the one or two ideas you'd actually want to remember in a year.</li>
+          <li><strong>Trains</strong> your memory on those distilled ideas at increasing intervals, so you move from storing knowledge to actually owning it. This is the step that separates a second brain that helps you think from one that's just a very organized graveyard of good intentions.</li>
+        </ul>
         <hr class="article-rule" />
         <h2>How Fluxo Fits In</h2>
-        <p><strong><a href="/">Fluxo</a></strong> is built as an active second brain. You add what you're learning, AI generates a summary of the key ideas, and then Fluxo schedules short review sessions based on spaced repetition — so you test yourself on the material at the right intervals, not just browse it.</p>
-        <p>The difference between a note-taking app and Fluxo is the difference between writing something on a piece of paper and actually practicing it. Both capture. Only one trains you.</p>
+        <p><strong><a href="/">Fluxo</a></strong> is built as an active second brain. You add what you're learning, the AI generates a summary of the key ideas, and then Fluxo schedules short review sessions based on spaced repetition — so you test yourself on the material at the right intervals, not just browse it whenever you happen to remember it exists.</p>
+        <p>The difference between a note-taking app and Fluxo is the difference between writing something on a piece of paper and actually practicing it. Both capture. Only one trains you. If your current system has hundreds of notes you haven't opened in months, that's not a discipline problem. It's a missing step in the system itself.</p>
         <button type="button" class="btn-primary" data-modal-open data-from="article-cta">Start for free</button>
       `,
     },
@@ -1475,21 +1520,30 @@ export const blogContent = {
         <hr class="article-rule" />
         <h2>The Real Problem: Passive Consumption Feels Like Learning</h2>
         <p>Re-reading notes, highlighting text, watching lectures twice — these feel productive. Research shows they're mostly not.</p>
-        <p>A 2019 review published in <em>Frontiers in Education</em> summarized decades of classroom studies: reading a text over and over creates a false sense of familiarity. Students feel like they know the material because it looks familiar, but that recognition doesn't translate into actual recall when they need it. Familiarity and memory are different things.</p>
-        <p>The fix requires active processing, not more passive exposure.</p>
+        <p>A 2019 review published in <em>Frontiers in Education</em> summarized decades of classroom studies: reading a text over and over creates a false sense of familiarity. Students feel like they know the material because it looks familiar, but that recognition doesn't translate into actual recall when they need it. Familiarity and memory are different things, and most study habits optimize for the wrong one.</p>
+        <p>The fix requires active processing, not more passive exposure. That distinction sounds small, but it's the difference between knowledge that survives a week and knowledge that survives a year.</p>
         <hr class="article-rule" />
         <h2>What Actually Prevents Forgetting</h2>
+        <p>Four things work, and they reinforce each other:</p>
+        <ol>
+          <li>Test yourself instead of re-reading</li>
+          <li>Space your reviews out instead of cramming</li>
+          <li>Connect new knowledge to what you already know</li>
+          <li>Mix topics instead of studying one at a time</li>
+        </ol>
         <p><strong>Test yourself, don't re-read</strong></p>
         <p>The single most effective thing you can do is try to recall information from memory before you feel ready. This is called retrieval practice, and it works because the act of pulling something from memory, even when you struggle, strengthens the neural pathway that holds it.</p>
-        <p>Roediger and Karpicke at Washington University showed this clearly in <a href="https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x" target="_blank" rel="noopener">their 2006 study</a>: students who tested themselves after reading retained far more one week later than students who simply re-read the same material, even though both groups spent the same total time.</p>
+        <p>Roediger and Karpicke at Washington University showed this clearly in <a href="https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x" target="_blank" rel="noopener">their 2006 study</a>: students who tested themselves after reading retained far more one week later than students who simply re-read the same material, even though both groups spent the same total time. Confidence and actual recall, it turns out, are weakly correlated at best.</p>
         <p><strong>Space your reviews out</strong></p>
-        <p>Reviewing something once and moving on almost guarantees you'll forget it. Reviewing it again right before it fades — and then again at a longer interval — is what actually builds long-term retention. <a href="https://www.yorku.ca/ncepeda/publications/CPVWR2006.html" target="_blank" rel="noopener">Cepeda et al.'s meta-analysis of 254 studies</a>, published in <em>Psychological Bulletin</em>, confirmed that spreading practice over time consistently outperforms any amount of cramming.</p>
+        <p>Reviewing something once and moving on almost guarantees you'll forget it. Reviewing it again right before it fades — and then again at a longer interval — is what actually builds long-term retention. <a href="https://www.yorku.ca/ncepeda/publications/CPVWR2006.html" target="_blank" rel="noopener">Cepeda et al.'s meta-analysis of 254 studies</a>, published in <em>Psychological Bulletin</em>, confirmed that spreading practice over time consistently outperforms any amount of cramming, regardless of subject matter.</p>
         <p><strong>Connect new knowledge to what you already know</strong></p>
         <p>When you learn something, ask yourself how it relates to things you already understand. This forces your brain to process the new information more deeply, not just store it as an isolated fact. Dunlosky and colleagues at Kent State rated this — elaborative interrogation — among the <a href="https://journals.sagepub.com/doi/10.1177/1529100612453266" target="_blank" rel="noopener">most effective learning strategies</a> in their 2013 review.</p>
+        <p><strong>Mix what you're studying instead of focusing on one thing at a time</strong></p>
+        <p>It feels efficient to master one topic completely before moving to the next. Cognitive science says otherwise. Alternating between related topics forces your brain to actively distinguish between them and retrieve the right information each time, rather than coasting on short-term familiarity with whatever you just reviewed. This single-session comfort of blocked study is part of what makes it deceptive: it feels like progress while producing weaker long-term memory than the alternative.</p>
         <hr class="article-rule" />
         <h2>The Consistency Problem</h2>
-        <p>These three techniques work. The problem is doing them consistently across every topic you're learning, without forgetting what needs to be reviewed and when.</p>
-        <p><strong><a href="/">Fluxo</a></strong> handles the system side. You capture what you're learning, the AI pulls out the key ideas, and Fluxo schedules review sessions at the right intervals. You show up for 10 minutes, do the work, and the rest runs itself.</p>
+        <p>These techniques work. The problem is doing them consistently across every topic you're learning, without losing track of what needs to be reviewed and when. Most people who try to implement spaced repetition manually give up within two or three weeks. Not because the method failed, but because tracking it by hand becomes its own job.</p>
+        <p><strong><a href="/">Fluxo</a></strong> handles the system side. You capture what you're learning, the AI pulls out the key ideas, and Fluxo schedules review sessions at the right intervals, mixing topics so your brain keeps actively retrieving rather than passively recognizing. You show up for 10 minutes, do the work, and the rest runs itself.</p>
         <p>Learning without forgetting isn't magic. It's a system. And systems work best when they don't depend on willpower alone.</p>
         <button type="button" class="btn-primary" data-modal-open data-from="article-cta">Start for free</button>
       `,
@@ -1514,10 +1568,18 @@ export const blogContent = {
         <hr class="article-rule" />
         <h2>Why You Forget So Fast</h2>
         <p>In 1885, German psychologist Hermann Ebbinghaus became the first to study memory scientifically. He spent years memorizing lists of nonsense syllables, then measured how quickly he could recall them after different time intervals. What he found became known as the <strong>Forgetting Curve</strong>: memory drops steeply right after learning, then levels off. Without any review, we forget 50 to 70% of new information within a single day.</p>
-        <p>In 2015, Murre and Dros published a direct replication of Ebbinghaus's original experiments in <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4492928/" target="_blank" rel="noopener">PLOS ONE</a> and arrived at nearly identical numbers, over 130 years later. It's one of the most replicated findings in cognitive psychology.</p>
-        <p>The curve isn't a personal failure. It's just how the brain works by default. The good news: three techniques directly counter it.</p>
+        <p>In 2015, researchers Murre and Dros published a direct replication of Ebbinghaus's original experiments in <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4492928/" target="_blank" rel="noopener">PLOS ONE</a> and arrived at nearly identical numbers, over 130 years later. It's one of the most replicated findings in cognitive psychology.</p>
+        <p>The curve isn't a personal failure. It's just how the brain works by default. Memory is expensive to maintain, so the brain prunes whatever it doesn't think you'll need again. The good news: a handful of techniques directly counter this pruning process.</p>
         <hr class="article-rule" />
-        <h2>3 Techniques That Actually Work</h2>
+        <h2>4 Techniques That Actually Work</h2>
+        <p>In short, the four techniques below are:</p>
+        <ul>
+          <li><strong>Active recall</strong> — testing yourself instead of re-reading</li>
+          <li><strong>Spaced repetition</strong> — reviewing at increasing intervals</li>
+          <li><strong>Elaborative interrogation</strong> — asking "why" and "how" something connects</li>
+          <li><strong>Interleaving</strong> — mixing topics instead of studying one at a time</li>
+        </ul>
+        <p>Here's the research behind each one.</p>
         <h3>1. Active Recall</h3>
         <p>Instead of re-reading your notes, close them and try to pull the information from memory. Even struggling to remember strengthens neural connections more than passive review.</p>
         <p>In 2006, Henry Roediger and Jeffrey Karpicke at Washington University ran a now-classic experiment. Students either re-read a passage multiple times or tested themselves on it. On an immediate test, re-reading performed slightly better. But one week later, the self-testing group retained significantly more. Their paper, <a href="https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x" target="_blank" rel="noopener">Test-Enhanced Learning</a>, published in <em>Psychological Science</em>, concluded that testing yourself isn't just a way to check what you know. It's one of the most effective ways to learn in the first place.</p>
@@ -1526,14 +1588,18 @@ export const blogContent = {
         <p>In 2006, Nicholas Cepeda and colleagues at UC San Diego published a <a href="https://www.yorku.ca/ncepeda/publications/CPVWR2006.html" target="_blank" rel="noopener">meta-analysis of 254 studies</a> involving over 14,000 observations in <em>Psychological Bulletin</em>. The finding was clear: spreading practice over time consistently produced better long-term retention than cramming the same amount of practice into a single session. The right gap between reviews depends on how long you need to remember the material. The longer the goal, the longer the intervals should be.</p>
         <h3>3. Elaborative Interrogation</h3>
         <p>When you learn something new, ask yourself <em>why</em> it's true and how it connects to things you already know. This forces deeper processing and anchors new knowledge to your existing understanding rather than leaving it isolated. A <a href="https://journals.sagepub.com/doi/10.1177/1529100612453266" target="_blank" rel="noopener">2013 review by Dunlosky and colleagues</a> at Kent State University rated this among the most effective learning strategies, alongside retrieval practice and spaced repetition.</p>
+        <p>This technique works especially well for conceptual material. If you're learning a new framework, theory, or process, don't just memorize the steps. Ask why each step exists and what would happen if it were skipped.</p>
+        <h3>4. Interleaving</h3>
+        <p>Most people study one topic until it feels mastered, then move to the next. Researchers call this "blocking," and it turns out to be one of the least effective ways to build long-term memory, even though it feels the most productive in the moment.</p>
+        <p>Interleaving means mixing different topics or problem types within the same study session instead of working through one at a time. A widely cited <a href="https://www.innerdrive.co.uk/blog/interleaving-and-why-it-works/" target="_blank" rel="noopener">review by InnerDrive</a> found that students who interleaved their practice performed nearly twice as well on later tests as students who blocked their studying. The reason: when topics are mixed, your brain can't rely on short-term pattern matching. It has to actually retrieve the right method or fact each time.</p>
         <hr class="article-rule" />
-        <h2>Why Most People Skip All Three</h2>
-        <p>Because doing them manually is painful.</p>
-        <p>Tracking what to review and when, across multiple topics, articles, and notes, quickly becomes a chore that most people drop within a week. The techniques work. The friction around them doesn't.</p>
+        <h2>Why Most People Skip All Four</h2>
+        <p>Because they're inconvenient to do manually.</p>
+        <p>Keeping track of what to review and when, across dozens of topics, quickly turns into a spreadsheet project most people abandon within a week. Interleaving requires deliberately mixing subjects instead of following the comfortable, linear path. None of these techniques are hard to understand. They're hard to sustain without a system doing the bookkeeping for you.</p>
         <hr class="article-rule" />
         <h2>The Simpler Way</h2>
-        <p><strong><a href="/">Fluxo</a></strong> is built around exactly these three principles. You save what you're learning — articles, notes, vocabulary, ideas — and organize it by topic. The AI generates a quick summary so you understand the material faster. Then Fluxo schedules short training sessions at the right intervals, so you review each item when your brain actually needs it.</p>
-        <p>No spreadsheets. No manual tracking. Just 5 to 15 minutes a day, and you actually remember what you learn.</p>
+        <p><strong><a href="/">Fluxo</a></strong> is built around exactly these principles. You save what you're learning — articles, notes, vocabulary, ideas — and organize it by topic. The AI generates a quick summary so you understand the material faster. Then Fluxo schedules short training sessions at the right intervals, mixing topics the way interleaving research recommends, so you review each item when your brain actually needs it.</p>
+        <p>No spreadsheets. No manual scheduling. Just 5 to 15 minutes a day, and you actually remember what you learn.</p>
         <p>The science has been clear for over a century. The hard part was always doing it consistently. That's the problem Fluxo solves.</p>
         <button type="button" class="btn-primary" data-modal-open data-from="article-cta">Start for free</button>
       `,
@@ -1554,28 +1620,37 @@ export const blogContent = {
       author: "Fluxo Team",
       readTime: "4 min read",
       bodyHtml: `
-        <p>The real question is: how much do you actually retain?</p>
+        <p>The real question is: how much do you actually retain, and can you prove it to yourself without guessing?</p>
         <hr class="article-rule" />
         <h2>Why Most Tracking Fails</h2>
-        <p>Time spent studying has almost no correlation with how much you remember. A 2006 study by <a href="https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x" target="_blank" rel="noopener">Roediger and Karpicke at Washington University</a> demonstrated this directly: two groups of students spent identical time with the same material. One group re-read it. The other tested themselves. A week later, the self-testing group remembered significantly more, even though they "studied" less in the traditional sense.</p>
-        <p>Hours logged doesn't tell you whether learning happened. Recall does.</p>
+        <p>Time spent studying has almost no correlation with how much you remember. A 2006 study by <a href="https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x" target="_blank" rel="noopener">Roediger and Karpicke at Washington University</a> demonstrated this directly: two groups of students spent identical time with the same material. One group re-read it. The other tested themselves. A week later, the self-testing group remembered significantly more, even though they "studied" less in the traditional sense of turning pages and re-reading sentences.</p>
+        <p>Hours logged doesn't tell you whether learning happened. Recall does. And yet most apps, planners, and personal tracking systems default to logging hours, sessions completed, or streaks maintained — because those are easy to measure automatically. They're also nearly useless for telling you what you actually know.</p>
         <hr class="article-rule" />
         <h2>What's Actually Worth Measuring</h2>
+        <p>Four metrics matter more than the ones most trackers default to:</p>
+        <ul>
+          <li><strong>Retention rate</strong> — can you retrieve this without looking at it?</li>
+          <li><strong>Recall difficulty over time</strong> — is it getting easier to remember, or staying just as hard?</li>
+          <li><strong>Gaps, not just wins</strong> — what have you forgotten, not just what you've completed?</li>
+          <li><strong>Consistency over intensity</strong> — did you show up regularly, regardless of session length?</li>
+        </ul>
         <p><strong>Retention rate</strong></p>
-        <p>Can you retrieve this information without looking at it? That's the only metric that matters for long-term learning. Everything else — time, completion, highlights — is a proxy that often misleads you into thinking you've learned more than you have.</p>
+        <p>Can you retrieve this information without looking at it? That's the only metric that matters for long-term learning. Everything else — time, completion percentage, highlights made — is a proxy that often misleads you into thinking you've learned more than you have. A course you finished six months ago and a course you finished yesterday should not look the same on a progress tracker if you can no longer recall anything from the first one.</p>
         <p><strong>Recall difficulty over time</strong></p>
-        <p>How hard is it to remember something after one day? After one week? After one month? If recall gets easier over time with shorter sessions, the knowledge is consolidating. If it stays hard, you need more repetition or a different approach. Tracking this across topics gives you real signal about what's working.</p>
+        <p>How hard is it to remember something after one day? After one week? After one month? If recall gets easier over time with shorter sessions, the knowledge is consolidating properly. If it stays just as hard every time you review it, you need more repetition, a different explanation, or a stronger connection to something you already understand.</p>
         <p><strong>Gaps, not just wins</strong></p>
-        <p>Most progress tracking shows you what you've completed. More useful is tracking what you've forgotten or gotten wrong. A system that surfaces your weakest areas and prioritizes them in review sessions is more valuable than one that tracks streaks and badges.</p>
+        <p>Most progress tracking shows you what you've completed: chapters read, modules finished, badges earned. More useful is tracking what you've forgotten or gotten wrong. A system that surfaces your weakest areas and prioritizes them in review sessions is more valuable than one that only celebrates streaks, because the weak spots are exactly where your effort produces the most improvement per minute spent.</p>
+        <p><strong>Consistency over intensity</strong></p>
+        <p>A single intense study weekend looks impressive on a calendar but research on distributed practice consistently shows that consistency matters more than any individual session's length. Tracking whether you showed up regularly, even briefly, is often a better predictor of long-term retention than tracking total hours in any given week.</p>
         <hr class="article-rule" />
         <h2>The Problem With Manual Tracking</h2>
-        <p>You can build a spreadsheet to track all of this. Some people do. Most stop after two weeks because maintaining it takes as much energy as the learning itself.</p>
-        <p>The value of tracking learning progress is real — MIT's Teaching and Learning Lab <a href="https://tll.mit.edu/teaching-resources/how-people-learn/metacognition/" target="_blank" rel="noopener">notes that metacognitive monitoring</a> significantly improves learning outcomes. Knowing where you are, what's fading, and what needs attention lets you direct your effort where it matters. But that only works if the tracking is automatic.</p>
+        <p>You can build a spreadsheet to track all of this. Some people do, and a few even stick with it for a while. Most stop within a few weeks because maintaining the tracker takes nearly as much energy as the learning itself.</p>
+        <p>The value of tracking learning progress is real — MIT's Teaching and Learning Lab <a href="https://tll.mit.edu/teaching-resources/how-people-learn/metacognition/" target="_blank" rel="noopener">notes that metacognitive monitoring</a> significantly improves learning outcomes, partly because it lets learners redirect effort toward weak spots instead of spending more time on material they've already mastered. But that benefit only materializes if the tracking is accurate and effortless.</p>
         <hr class="article-rule" />
         <h2>What Automatic Progress Tracking Looks Like</h2>
-        <p><strong><a href="/">Fluxo</a></strong> tracks retention by measuring how you perform during each review session. Every time you recall something correctly or struggle with it, Fluxo adjusts its model of what you know. Over time, you can see your retention rate by topic — not how many notes you have, but how much of that material you can actually recall.</p>
-        <p>This turns progress tracking from a chore into something that just happens as you learn. You study, Fluxo measures, and at any point you can see clearly which subjects are solid and which need more work.</p>
-        <p>Learning without tracking is flying blind. Tracking without recall measurement tells you the wrong things. Fluxo does both.</p>
+        <p><strong><a href="/">Fluxo</a></strong> tracks retention by measuring how you perform during each review session. Every time you recall something correctly or struggle with it, Fluxo adjusts its model of what you know and how confident you should be about remembering it next time. Over weeks, you can see your retention rate by topic — not how many notes you have, but how much of that material you can actually recall on demand without prompting.</p>
+        <p>This turns progress tracking from a chore into something that just happens as you learn. You study, Fluxo measures, and at any point you can see clearly which subjects are solid and which need more work, without ever opening a spreadsheet or manually scoring yourself.</p>
+        <p>Learning without tracking is flying blind. Tracking without measuring recall tells you the wrong things, no matter how detailed the spreadsheet looks. Fluxo does both: it tracks automatically, and it tracks the thing that actually matters.</p>
         <button type="button" class="btn-primary" data-modal-open data-from="article-cta">Start for free</button>
       `,
     },

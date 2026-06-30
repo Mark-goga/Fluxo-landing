@@ -343,6 +343,28 @@ alternates.push({ hreflang: "x-default", href: absoluteUrl(blogContent.en[slug a
     word-break: break-all;
   }
 
+  .article-body :global(ul),
+  .article-body :global(ol) {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #1C1C1C;
+    margin: 0 0 28px;
+    padding-left: 28px;
+  }
+
+  .article-body :global(ul li),
+  .article-body :global(ol li) {
+    margin-bottom: 12px;
+    padding-left: 6px;
+  }
+
+  .article-body :global(ul li:last-child),
+  .article-body :global(ol li:last-child) {
+    margin-bottom: 0;
+  }
+
   @media (max-width: 768px) {
     .article {
       padding: 40px 20px 80px;
