@@ -50,6 +50,11 @@ const pageRoutePath = routePath ?? content.path;
     const toastEl = document.querySelector("[data-lead-toast]");
     let toastTimer;
     let lastFocused = null;
+    let currentFrom = "unknown";
+
+    const track = (name, params) => {
+      if (typeof window.fluxoTrack === "function") window.fluxoTrack(name, params || {});
+    };
 
     const showToast = (message, isError) => {
       if (!toastEl) return;
@@ -70,6 +75,7 @@ const pageRoutePath = routePath ?? content.path;
 
     const openModal = (from) => {
       if (!modal) return;
+      currentFrom = from || "unknown";
       const form = modal.querySelector("[data-lead-form]");
       if (form && from) form.setAttribute("data-from", from);
       lastFocused = document.activeElement;
@@ -79,6 +85,7 @@ const pageRoutePath = routePath ?? content.path;
       document.body.style.overflow = "hidden";
       const input = modal.querySelector("input");
       if (input) setTimeout(() => input.focus(), 50);
+      track("modal_open", { from: currentFrom });
     };
 
     const closeModal = () => {
@@ -91,18 +98,23 @@ const pageRoutePath = routePath ?? content.path;
       if (lastFocused && typeof lastFocused.focus === "function") lastFocused.focus();
     };
 
+    const userCloseModal = () => {
+      if (modal && !modal.hidden) track("modal_close", { from: currentFrom });
+      closeModal();
+    };
+
     document.querySelectorAll("[data-modal-open]").forEach((trigger) => {
       trigger.addEventListener("click", () => openModal(trigger.getAttribute("data-from")));
     });
 
     if (modal) {
       modal.querySelectorAll("[data-modal-close]").forEach((el) => {
-        el.addEventListener("click", closeModal);
+        el.addEventListener("click", userCloseModal);
       });
     }
 
     document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape" && modal && !modal.hidden) closeModal();
+      if (event.key === "Escape" && modal && !modal.hidden) userCloseModal();
     });
 
     const buildUtmMetadata = () => {
@@ -148,15 +160,19 @@ const pageRoutePath = routePath ?? content.path;
           return;
         }
 
+        track("lead_submit_attempt", { from });
+
         if (button) button.disabled = true;
         form.setAttribute("aria-busy", "true");
 
         try {
           await submitLead(email, from);
+          track("lead_submit_success", { from });
           if (input) input.value = "";
           if (modal && form.closest("[data-lead-modal]")) closeModal();
           showToast(toast.success, false);
         } catch (error) {
+          track("lead_submit_error", { from, reason: (error && error.message) || "unknown" });
           showToast(toast.error, true);
         } finally {
           if (button) button.disabled = false;

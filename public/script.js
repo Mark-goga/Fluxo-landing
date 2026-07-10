@@ -1,12 +1,22 @@
-const track = (eventName) => {
-  if (typeof window.clarity === "function" && eventName) {
-    window.clarity("event", eventName);
+const track = (name, params = {}) => {
+  if (!name) return;
+  if (typeof window.clarity === "function") {
+    window.clarity("event", name);
+    Object.entries(params).forEach(([key, value]) => {
+      if (value != null && value !== "") window.clarity("set", key, String(value));
+    });
+  }
+  if (typeof window.gtag === "function") {
+    window.gtag("event", name, params);
   }
 };
 
+window.fluxoTrack = track;
+
 document.querySelectorAll("[data-clarity-event]").forEach((element) => {
   element.addEventListener("click", () => {
-    track(element.getAttribute("data-clarity-event"));
+    const from = element.getAttribute("data-from");
+    track(element.getAttribute("data-clarity-event"), from ? { from } : {});
   });
 });
 

@@ -37,7 +37,7 @@ const { content } = Astro.props;
         <input type="email" name="email" placeholder={content.cta.placeholder} required autocomplete="email" />
       </div>
     </div>
-    <button type="submit" data-clarity-event={content.cta.submit.clarityEvent}>{content.cta.submit.label}</button>
+    <button type="submit">{content.cta.submit.label}</button>
   </form>
   <p class="cta-note" set:html={content.cta.noteHtml} />
 </section>
