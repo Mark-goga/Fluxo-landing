@@ -1,5 +1,6 @@
 ---
 import type { LandingContent } from "../data/locales";
+import { siteConfig } from "../config/site";
 
 interface Props {
   content: LandingContent;
@@ -37,6 +38,16 @@ const { content } = Astro.props;
         <input type="email" name="email" placeholder={content.cta.placeholder} required autocomplete="email" />
       </div>
     </div>
+    {
+      siteConfig.turnstileSiteKey && (
+        <div
+          class="cf-turnstile"
+          data-sitekey={siteConfig.turnstileSiteKey}
+          data-appearance="interaction-only"
+          data-size="flexible"
+        />
+      )
+    }
     <button type="submit">{content.cta.submit.label}</button>
   </form>
   <p class="cta-note" set:html={content.cta.noteHtml} />

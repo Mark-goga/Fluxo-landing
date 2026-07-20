@@ -1,5 +1,6 @@
 ---
 import type { LandingContent } from "../data/locales";
+import { siteConfig } from "../config/site";
 
 interface Props {
   content: LandingContent;
@@ -27,6 +28,16 @@ const { content } = Astro.props;
         required
         autocomplete="email"
       />
+      {
+        siteConfig.turnstileSiteKey && (
+          <div
+            class="cf-turnstile"
+            data-sitekey={siteConfig.turnstileSiteKey}
+            data-appearance="interaction-only"
+            data-size="flexible"
+          />
+        )
+      }
       <button type="submit" class="lead-modal__submit" data-lead-submit>{content.modal.submit}</button>
     </form>
   </div>

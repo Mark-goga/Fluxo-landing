@@ -1,6 +1,7 @@
 ---
 import { absoluteUrl, pageAssetUrl, siteConfig } from "../config/site";
 import TrackingScripts from "../components/TrackingScripts.astro";
+import TurnstileScript from "../components/TurnstileScript.astro";
 import "../styles/styles.css";
 
 interface Props {
@@ -29,6 +30,7 @@ const faviconDark = pageAssetUrl(routePath, "assets/favicon-dark.png");
     {baseHref && <base href={baseHref} />}
     <title>{title}</title>
     <TrackingScripts />
+    <TurnstileScript />
 
     <meta name="description" content={description} />
     <meta name="robots" content={robots} />

@@ -28,6 +28,8 @@ export const siteConfig = {
 
   leadsApiUrl: stripTrailingSlash(requiredEnv("LEADS_API_URL")),
   applicationId: requiredEnv("APPLICATION_ID"),
+
+  turnstileSiteKey: optionalEnv("TURNSTILE_SITE_KEY"),
 };
 
 const rawSiteUrl = requiredEnv("SITE_URL");

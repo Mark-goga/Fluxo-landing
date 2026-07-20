@@ -43,6 +43,7 @@ const pageRoutePath = routePath ?? content.path;
     leadsUrl: `${siteConfig.leadsApiUrl}/leads`,
     applicationId: siteConfig.applicationId,
     toast: content.toast,
+    turnstileEnabled: Boolean(siteConfig.turnstileSiteKey),
   }}
 >
   (() => {
@@ -133,7 +134,19 @@ const pageRoutePath = routePath ?? content.path;
       utm: buildUtmMetadata(),
     });
 
-    const submitLead = async (email, from) => {
+    // submit so tokens (single-use) are never reused.
+    const getTurnstileToken = (form) => {
+      const field = form.querySelector('[name="cf-turnstile-response"]');
+      return field ? field.value : "";
+    };
+
+    const resetTurnstile = (form) => {
+      if (!turnstileEnabled || typeof window.turnstile === "undefined") return;
+      const widget = form.querySelector(".cf-turnstile");
+      if (widget) window.turnstile.reset(widget);
+    };
+
+    const submitLead = async (email, from, turnstileToken) => {
       const response = await fetch(leadsUrl, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -141,6 +154,7 @@ const pageRoutePath = routePath ?? content.path;
           email,
           applicationId,
           metadata: buildLeadMetadata(from),
+          turnstileToken,
         }),
       });
       if (!response.ok) throw new Error("Request failed with status " + response.status);
@@ -160,13 +174,20 @@ const pageRoutePath = routePath ?? content.path;
           return;
         }
 
+        const turnstileToken = turnstileEnabled ? getTurnstileToken(form) : "";
+        if (turnstileEnabled && !turnstileToken) {
+          track("lead_submit_error", { from, reason: "turnstile_pending" });
+          showToast(toast.error, true);
+          return;
+        }
+
         track("lead_submit_attempt", { from });
 
         if (button) button.disabled = true;
         form.setAttribute("aria-busy", "true");
 
         try {
-          await submitLead(email, from);
+          await submitLead(email, from, turnstileToken);
           track("lead_submit_success", { from });
           if (input) input.value = "";
           if (modal && form.closest("[data-lead-modal]")) closeModal();
@@ -175,6 +196,7 @@ const pageRoutePath = routePath ?? content.path;
           track("lead_submit_error", { from, reason: (error && error.message) || "unknown" });
           showToast(toast.error, true);
         } finally {
+          resetTurnstile(form);
           if (button) button.disabled = false;
           form.removeAttribute("aria-busy");
         }

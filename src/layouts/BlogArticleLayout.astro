@@ -67,7 +67,7 @@ alternates.push({ hreflang: "x-default", href: absoluteUrl(blogContent.en[slug a
   <Modal content={content} />
 </PageLayout>
 
-<script define:vars={{ leadsUrl: `${siteConfig.leadsApiUrl}/leads`, applicationId: siteConfig.applicationId, toast: content.toast }}>
+<script define:vars={{ leadsUrl: `${siteConfig.leadsApiUrl}/leads`, applicationId: siteConfig.applicationId, toast: content.toast, turnstileEnabled: Boolean(siteConfig.turnstileSiteKey) }}>
   (() => {
     const modal = document.querySelector("[data-lead-modal]");
     const toastEl = document.querySelector("[data-lead-toast]");
@@ -138,6 +138,17 @@ alternates.push({ hreflang: "x-default", href: absoluteUrl(blogContent.en[slug a
       utm: buildUtmMetadata(),
     });
 
+    const getTurnstileToken = (form) => {
+      const field = form.querySelector('[name="cf-turnstile-response"]');
+      return field ? field.value : "";
+    };
+
+    const resetTurnstile = (form) => {
+      if (!turnstileEnabled || typeof window.turnstile === "undefined") return;
+      const widget = form.querySelector(".cf-turnstile");
+      if (widget) window.turnstile.reset(widget);
+    };
+
     document.querySelectorAll("[data-lead-form]").forEach((form) => {
       form.addEventListener("submit", async (e) => {
         e.preventDefault();
@@ -146,13 +157,15 @@ alternates.push({ hreflang: "x-default", href: absoluteUrl(blogContent.en[slug a
         const email = input ? input.value.trim() : "";
         const from = form.getAttribute("data-from") || "unknown";
         if (!input || !input.checkValidity() || !email) { if (input) input.reportValidity(); return; }
+        const turnstileToken = turnstileEnabled ? getTurnstileToken(form) : "";
+        if (turnstileEnabled && !turnstileToken) { showToast(toast.error, true); return; }
         if (button) button.disabled = true;
         form.setAttribute("aria-busy", "true");
         try {
           const res = await fetch(leadsUrl, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ email, applicationId, metadata: buildLeadMetadata(from) }),
+            body: JSON.stringify({ email, applicationId, metadata: buildLeadMetadata(from), turnstileToken }),
           });
           if (!res.ok) throw new Error();
           if (input) input.value = "";
@@ -161,6 +174,7 @@ alternates.push({ hreflang: "x-default", href: absoluteUrl(blogContent.en[slug a
         } catch {
           showToast(toast.error, true);
         } finally {
+          resetTurnstile(form);
           if (button) button.disabled = false;
           form.removeAttribute("aria-busy");
         }
