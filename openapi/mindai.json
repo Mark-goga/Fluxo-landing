@@ -12935,6 +12935,55 @@
               {
                 "type": "object",
                 "properties": {
+                  "faq": {
+                    "default": [],
+                    "maxItems": 5,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "question": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 180
+                        },
+                        "answer": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 1200
+                        }
+                      },
+                      "required": [
+                        "question",
+                        "answer"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "references": {
+                    "default": [],
+                    "maxItems": 12,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 240
+                        },
+                        "url": {
+                          "type": "string",
+                          "format": "uri"
+                        }
+                      },
+                      "required": [
+                        "label",
+                        "url"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
                   "pageType": {
                     "type": "string",
                     "const": "how_to"
@@ -12957,6 +13006,55 @@
               {
                 "type": "object",
                 "properties": {
+                  "faq": {
+                    "default": [],
+                    "maxItems": 5,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "question": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 180
+                        },
+                        "answer": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 1200
+                        }
+                      },
+                      "required": [
+                        "question",
+                        "answer"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "references": {
+                    "default": [],
+                    "maxItems": 12,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 240
+                        },
+                        "url": {
+                          "type": "string",
+                          "format": "uri"
+                        }
+                      },
+                      "required": [
+                        "label",
+                        "url"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
                   "pageType": {
                     "type": "string",
                     "const": "comparison"
@@ -12988,18 +13086,42 @@
               {
                 "type": "object",
                 "properties": {
-                  "pageType": {
-                    "type": "string",
-                    "const": "concept"
+                  "faq": {
+                    "default": [],
+                    "maxItems": 5,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "question": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 180
+                        },
+                        "answer": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 1200
+                        }
+                      },
+                      "required": [
+                        "question",
+                        "answer"
+                      ],
+                      "additionalProperties": false
+                    }
                   },
                   "references": {
+                    "default": [],
+                    "maxItems": 12,
                     "type": "array",
                     "items": {
                       "type": "object",
                       "properties": {
                         "label": {
                           "type": "string",
-                          "minLength": 1
+                          "minLength": 1,
+                          "maxLength": 240
                         },
                         "url": {
                           "type": "string",
@@ -13013,6 +13135,10 @@
                       "additionalProperties": false
                     }
                   },
+                  "pageType": {
+                    "type": "string",
+                    "const": "concept"
+                  },
                   "validationIssues": {
                     "type": "array",
                     "items": {
@@ -13024,14 +13150,62 @@
                   }
                 },
                 "required": [
-                  "pageType",
-                  "references"
+                  "pageType"
                 ],
                 "additionalProperties": false
               },
               {
                 "type": "object",
                 "properties": {
+                  "faq": {
+                    "default": [],
+                    "maxItems": 5,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "question": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 180
+                        },
+                        "answer": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 1200
+                        }
+                      },
+                      "required": [
+                        "question",
+                        "answer"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "references": {
+                    "default": [],
+                    "maxItems": 12,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 240
+                        },
+                        "url": {
+                          "type": "string",
+                          "format": "uri"
+                        }
+                      },
+                      "required": [
+                        "label",
+                        "url"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
                   "pageType": {
                     "type": "string",
                     "const": "video_summary"
@@ -13059,6 +13233,55 @@
               {
                 "type": "object",
                 "properties": {
+                  "faq": {
+                    "default": [],
+                    "maxItems": 5,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "question": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 180
+                        },
+                        "answer": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 1200
+                        }
+                      },
+                      "required": [
+                        "question",
+                        "answer"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "references": {
+                    "default": [],
+                    "maxItems": 12,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 240
+                        },
+                        "url": {
+                          "type": "string",
+                          "format": "uri"
+                        }
+                      },
+                      "required": [
+                        "label",
+                        "url"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
                   "pageType": {
                     "type": "string",
                     "const": "template"
@@ -13357,6 +13580,55 @@
                     {
                       "type": "object",
                       "properties": {
+                        "faq": {
+                          "default": [],
+                          "maxItems": 5,
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "question": {
+                                "type": "string",
+                                "minLength": 1,
+                                "maxLength": 180
+                              },
+                              "answer": {
+                                "type": "string",
+                                "minLength": 1,
+                                "maxLength": 1200
+                              }
+                            },
+                            "required": [
+                              "question",
+                              "answer"
+                            ],
+                            "additionalProperties": false
+                          }
+                        },
+                        "references": {
+                          "default": [],
+                          "maxItems": 12,
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "label": {
+                                "type": "string",
+                                "minLength": 1,
+                                "maxLength": 240
+                              },
+                              "url": {
+                                "type": "string",
+                                "format": "uri"
+                              }
+                            },
+                            "required": [
+                              "label",
+                              "url"
+                            ],
+                            "additionalProperties": false
+                          }
+                        },
                         "pageType": {
                           "type": "string",
                           "const": "how_to"
@@ -13379,6 +13651,55 @@
                     {
                       "type": "object",
                       "properties": {
+                        "faq": {
+                          "default": [],
+                          "maxItems": 5,
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "question": {
+                                "type": "string",
+                                "minLength": 1,
+                                "maxLength": 180
+                              },
+                              "answer": {
+                                "type": "string",
+                                "minLength": 1,
+                                "maxLength": 1200
+                              }
+                            },
+                            "required": [
+                              "question",
+                              "answer"
+                            ],
+                            "additionalProperties": false
+                          }
+                        },
+                        "references": {
+                          "default": [],
+                          "maxItems": 12,
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "label": {
+                                "type": "string",
+                                "minLength": 1,
+                                "maxLength": 240
+                              },
+                              "url": {
+                                "type": "string",
+                                "format": "uri"
+                              }
+                            },
+                            "required": [
+                              "label",
+                              "url"
+                            ],
+                            "additionalProperties": false
+                          }
+                        },
                         "pageType": {
                           "type": "string",
                           "const": "comparison"
@@ -13410,18 +13731,42 @@
                     {
                       "type": "object",
                       "properties": {
-                        "pageType": {
-                          "type": "string",
-                          "const": "concept"
+                        "faq": {
+                          "default": [],
+                          "maxItems": 5,
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "question": {
+                                "type": "string",
+                                "minLength": 1,
+                                "maxLength": 180
+                              },
+                              "answer": {
+                                "type": "string",
+                                "minLength": 1,
+                                "maxLength": 1200
+                              }
+                            },
+                            "required": [
+                              "question",
+                              "answer"
+                            ],
+                            "additionalProperties": false
+                          }
                         },
                         "references": {
+                          "default": [],
+                          "maxItems": 12,
                           "type": "array",
                           "items": {
                             "type": "object",
                             "properties": {
                               "label": {
                                 "type": "string",
-                                "minLength": 1
+                                "minLength": 1,
+                                "maxLength": 240
                               },
                               "url": {
                                 "type": "string",
@@ -13435,6 +13780,10 @@
                             "additionalProperties": false
                           }
                         },
+                        "pageType": {
+                          "type": "string",
+                          "const": "concept"
+                        },
                         "validationIssues": {
                           "type": "array",
                           "items": {
@@ -13446,14 +13795,62 @@
                         }
                       },
                       "required": [
-                        "pageType",
-                        "references"
+                        "pageType"
                       ],
                       "additionalProperties": false
                     },
                     {
                       "type": "object",
                       "properties": {
+                        "faq": {
+                          "default": [],
+                          "maxItems": 5,
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "question": {
+                                "type": "string",
+                                "minLength": 1,
+                                "maxLength": 180
+                              },
+                              "answer": {
+                                "type": "string",
+                                "minLength": 1,
+                                "maxLength": 1200
+                              }
+                            },
+                            "required": [
+                              "question",
+                              "answer"
+                            ],
+                            "additionalProperties": false
+                          }
+                        },
+                        "references": {
+                          "default": [],
+                          "maxItems": 12,
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "label": {
+                                "type": "string",
+                                "minLength": 1,
+                                "maxLength": 240
+                              },
+                              "url": {
+                                "type": "string",
+                                "format": "uri"
+                              }
+                            },
+                            "required": [
+                              "label",
+                              "url"
+                            ],
+                            "additionalProperties": false
+                          }
+                        },
                         "pageType": {
                           "type": "string",
                           "const": "video_summary"
@@ -13481,6 +13878,55 @@
                     {
                       "type": "object",
                       "properties": {
+                        "faq": {
+                          "default": [],
+                          "maxItems": 5,
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "question": {
+                                "type": "string",
+                                "minLength": 1,
+                                "maxLength": 180
+                              },
+                              "answer": {
+                                "type": "string",
+                                "minLength": 1,
+                                "maxLength": 1200
+                              }
+                            },
+                            "required": [
+                              "question",
+                              "answer"
+                            ],
+                            "additionalProperties": false
+                          }
+                        },
+                        "references": {
+                          "default": [],
+                          "maxItems": 12,
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "label": {
+                                "type": "string",
+                                "minLength": 1,
+                                "maxLength": 240
+                              },
+                              "url": {
+                                "type": "string",
+                                "format": "uri"
+                              }
+                            },
+                            "required": [
+                              "label",
+                              "url"
+                            ],
+                            "additionalProperties": false
+                          }
+                        },
                         "pageType": {
                           "type": "string",
                           "const": "template"
@@ -13925,6 +14371,55 @@
               {
                 "type": "object",
                 "properties": {
+                  "faq": {
+                    "default": [],
+                    "maxItems": 5,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "question": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 180
+                        },
+                        "answer": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 1200
+                        }
+                      },
+                      "required": [
+                        "question",
+                        "answer"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "references": {
+                    "default": [],
+                    "maxItems": 12,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 240
+                        },
+                        "url": {
+                          "type": "string",
+                          "format": "uri"
+                        }
+                      },
+                      "required": [
+                        "label",
+                        "url"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
                   "pageType": {
                     "type": "string",
                     "const": "how_to"
@@ -13947,6 +14442,55 @@
               {
                 "type": "object",
                 "properties": {
+                  "faq": {
+                    "default": [],
+                    "maxItems": 5,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "question": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 180
+                        },
+                        "answer": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 1200
+                        }
+                      },
+                      "required": [
+                        "question",
+                        "answer"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "references": {
+                    "default": [],
+                    "maxItems": 12,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 240
+                        },
+                        "url": {
+                          "type": "string",
+                          "format": "uri"
+                        }
+                      },
+                      "required": [
+                        "label",
+                        "url"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
                   "pageType": {
                     "type": "string",
                     "const": "comparison"
@@ -13978,18 +14522,42 @@
               {
                 "type": "object",
                 "properties": {
-                  "pageType": {
-                    "type": "string",
-                    "const": "concept"
+                  "faq": {
+                    "default": [],
+                    "maxItems": 5,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "question": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 180
+                        },
+                        "answer": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 1200
+                        }
+                      },
+                      "required": [
+                        "question",
+                        "answer"
+                      ],
+                      "additionalProperties": false
+                    }
                   },
                   "references": {
+                    "default": [],
+                    "maxItems": 12,
                     "type": "array",
                     "items": {
                       "type": "object",
                       "properties": {
                         "label": {
                           "type": "string",
-                          "minLength": 1
+                          "minLength": 1,
+                          "maxLength": 240
                         },
                         "url": {
                           "type": "string",
@@ -14003,6 +14571,10 @@
                       "additionalProperties": false
                     }
                   },
+                  "pageType": {
+                    "type": "string",
+                    "const": "concept"
+                  },
                   "validationIssues": {
                     "type": "array",
                     "items": {
@@ -14014,14 +14586,62 @@
                   }
                 },
                 "required": [
-                  "pageType",
-                  "references"
+                  "pageType"
                 ],
                 "additionalProperties": false
               },
               {
                 "type": "object",
                 "properties": {
+                  "faq": {
+                    "default": [],
+                    "maxItems": 5,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "question": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 180
+                        },
+                        "answer": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 1200
+                        }
+                      },
+                      "required": [
+                        "question",
+                        "answer"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "references": {
+                    "default": [],
+                    "maxItems": 12,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 240
+                        },
+                        "url": {
+                          "type": "string",
+                          "format": "uri"
+                        }
+                      },
+                      "required": [
+                        "label",
+                        "url"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
                   "pageType": {
                     "type": "string",
                     "const": "video_summary"
@@ -14049,6 +14669,55 @@
               {
                 "type": "object",
                 "properties": {
+                  "faq": {
+                    "default": [],
+                    "maxItems": 5,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "question": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 180
+                        },
+                        "answer": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 1200
+                        }
+                      },
+                      "required": [
+                        "question",
+                        "answer"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "references": {
+                    "default": [],
+                    "maxItems": 12,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 240
+                        },
+                        "url": {
+                          "type": "string",
+                          "format": "uri"
+                        }
+                      },
+                      "required": [
+                        "label",
+                        "url"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
                   "pageType": {
                     "type": "string",
                     "const": "template"
@@ -15511,6 +16180,51 @@
                       "type": "string",
                       "minLength": 1
                     },
+                    "faq": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "question": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 180
+                          },
+                          "answer": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 1200
+                          }
+                        },
+                        "required": [
+                          "question",
+                          "answer"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "references": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "label": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 240
+                          },
+                          "url": {
+                            "type": "string",
+                            "format": "uri"
+                          }
+                        },
+                        "required": [
+                          "label",
+                          "url"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
                     "createdAt": {
                       "type": "string",
                       "format": "date-time",
@@ -15690,6 +16404,8 @@
                     "title",
                     "metaDescription",
                     "bodyMdx",
+                    "faq",
+                    "references",
                     "createdAt",
                     "translationGroupId",
                     "author",
@@ -15729,6 +16445,51 @@
                     "bodyMdx": {
                       "type": "string",
                       "minLength": 1
+                    },
+                    "faq": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "question": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 180
+                          },
+                          "answer": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 1200
+                          }
+                        },
+                        "required": [
+                          "question",
+                          "answer"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "references": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "label": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 240
+                          },
+                          "url": {
+                            "type": "string",
+                            "format": "uri"
+                          }
+                        },
+                        "required": [
+                          "label",
+                          "url"
+                        ],
+                        "additionalProperties": false
+                      }
                     },
                     "createdAt": {
                       "type": "string",
@@ -15917,6 +16678,8 @@
                     "title",
                     "metaDescription",
                     "bodyMdx",
+                    "faq",
+                    "references",
                     "createdAt",
                     "translationGroupId",
                     "author",
@@ -15957,6 +16720,51 @@
                     "bodyMdx": {
                       "type": "string",
                       "minLength": 1
+                    },
+                    "faq": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "question": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 180
+                          },
+                          "answer": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 1200
+                          }
+                        },
+                        "required": [
+                          "question",
+                          "answer"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "references": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "label": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 240
+                          },
+                          "url": {
+                            "type": "string",
+                            "format": "uri"
+                          }
+                        },
+                        "required": [
+                          "label",
+                          "url"
+                        ],
+                        "additionalProperties": false
+                      }
                     },
                     "createdAt": {
                       "type": "string",
@@ -16127,27 +16935,6 @@
                     "pageType": {
                       "type": "string",
                       "const": "concept"
-                    },
-                    "references": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                          "label": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "url": {
-                            "type": "string",
-                            "format": "uri"
-                          }
-                        },
-                        "required": [
-                          "label",
-                          "url"
-                        ],
-                        "additionalProperties": false
-                      }
                     }
                   },
                   "required": [
@@ -16158,12 +16945,13 @@
                     "title",
                     "metaDescription",
                     "bodyMdx",
+                    "faq",
+                    "references",
                     "createdAt",
                     "translationGroupId",
                     "author",
                     "sources",
-                    "pageType",
-                    "references"
+                    "pageType"
                   ],
                   "additionalProperties": false
                 },
@@ -16198,6 +16986,51 @@
                     "bodyMdx": {
                       "type": "string",
                       "minLength": 1
+                    },
+                    "faq": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "question": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 180
+                          },
+                          "answer": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 1200
+                          }
+                        },
+                        "required": [
+                          "question",
+                          "answer"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "references": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "label": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 240
+                          },
+                          "url": {
+                            "type": "string",
+                            "format": "uri"
+                          }
+                        },
+                        "required": [
+                          "label",
+                          "url"
+                        ],
+                        "additionalProperties": false
+                      }
                     },
                     "createdAt": {
                       "type": "string",
@@ -16382,6 +17215,8 @@
                     "title",
                     "metaDescription",
                     "bodyMdx",
+                    "faq",
+                    "references",
                     "createdAt",
                     "translationGroupId",
                     "author",
@@ -16422,6 +17257,51 @@
                     "bodyMdx": {
                       "type": "string",
                       "minLength": 1
+                    },
+                    "faq": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "question": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 180
+                          },
+                          "answer": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 1200
+                          }
+                        },
+                        "required": [
+                          "question",
+                          "answer"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "references": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "label": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 240
+                          },
+                          "url": {
+                            "type": "string",
+                            "format": "uri"
+                          }
+                        },
+                        "required": [
+                          "label",
+                          "url"
+                        ],
+                        "additionalProperties": false
+                      }
                     },
                     "createdAt": {
                       "type": "string",
@@ -16618,6 +17498,8 @@
                     "title",
                     "metaDescription",
                     "bodyMdx",
+                    "faq",
+                    "references",
                     "createdAt",
                     "translationGroupId",
                     "author",
@@ -16984,6 +17866,55 @@
               {
                 "type": "object",
                 "properties": {
+                  "faq": {
+                    "default": [],
+                    "maxItems": 5,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "question": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 180
+                        },
+                        "answer": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 1200
+                        }
+                      },
+                      "required": [
+                        "question",
+                        "answer"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "references": {
+                    "default": [],
+                    "maxItems": 12,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 240
+                        },
+                        "url": {
+                          "type": "string",
+                          "format": "uri"
+                        }
+                      },
+                      "required": [
+                        "label",
+                        "url"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
                   "pageType": {
                     "type": "string",
                     "const": "how_to"
@@ -17006,6 +17937,55 @@
               {
                 "type": "object",
                 "properties": {
+                  "faq": {
+                    "default": [],
+                    "maxItems": 5,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "question": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 180
+                        },
+                        "answer": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 1200
+                        }
+                      },
+                      "required": [
+                        "question",
+                        "answer"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "references": {
+                    "default": [],
+                    "maxItems": 12,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 240
+                        },
+                        "url": {
+                          "type": "string",
+                          "format": "uri"
+                        }
+                      },
+                      "required": [
+                        "label",
+                        "url"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
                   "pageType": {
                     "type": "string",
                     "const": "comparison"
@@ -17037,18 +18017,42 @@
               {
                 "type": "object",
                 "properties": {
-                  "pageType": {
-                    "type": "string",
-                    "const": "concept"
+                  "faq": {
+                    "default": [],
+                    "maxItems": 5,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "question": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 180
+                        },
+                        "answer": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 1200
+                        }
+                      },
+                      "required": [
+                        "question",
+                        "answer"
+                      ],
+                      "additionalProperties": false
+                    }
                   },
                   "references": {
+                    "default": [],
+                    "maxItems": 12,
                     "type": "array",
                     "items": {
                       "type": "object",
                       "properties": {
                         "label": {
                           "type": "string",
-                          "minLength": 1
+                          "minLength": 1,
+                          "maxLength": 240
                         },
                         "url": {
                           "type": "string",
@@ -17062,6 +18066,10 @@
                       "additionalProperties": false
                     }
                   },
+                  "pageType": {
+                    "type": "string",
+                    "const": "concept"
+                  },
                   "validationIssues": {
                     "type": "array",
                     "items": {
@@ -17073,14 +18081,62 @@
                   }
                 },
                 "required": [
-                  "pageType",
-                  "references"
+                  "pageType"
                 ],
                 "additionalProperties": false
               },
               {
                 "type": "object",
                 "properties": {
+                  "faq": {
+                    "default": [],
+                    "maxItems": 5,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "question": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 180
+                        },
+                        "answer": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 1200
+                        }
+                      },
+                      "required": [
+                        "question",
+                        "answer"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "references": {
+                    "default": [],
+                    "maxItems": 12,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 240
+                        },
+                        "url": {
+                          "type": "string",
+                          "format": "uri"
+                        }
+                      },
+                      "required": [
+                        "label",
+                        "url"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
                   "pageType": {
                     "type": "string",
                     "const": "video_summary"
@@ -17108,6 +18164,55 @@
               {
                 "type": "object",
                 "properties": {
+                  "faq": {
+                    "default": [],
+                    "maxItems": 5,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "question": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 180
+                        },
+                        "answer": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 1200
+                        }
+                      },
+                      "required": [
+                        "question",
+                        "answer"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "references": {
+                    "default": [],
+                    "maxItems": 12,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 240
+                        },
+                        "url": {
+                          "type": "string",
+                          "format": "uri"
+                        }
+                      },
+                      "required": [
+                        "label",
+                        "url"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
                   "pageType": {
                     "type": "string",
                     "const": "template"

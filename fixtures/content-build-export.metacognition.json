@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "rebuild": {
+    "id": "019fabdc-9c29-7075-a5f0-309c3964ee77",
+    "applicationId": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
+    "createdAt": "2026-07-29T03:13:09.673Z"
+  },
+  "application": {
+    "id": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
+    "name": "Fluxo",
+    "domain": "fluxo.today",
+    "defaultLocale": "en"
+  },
+  "stats": { "totalPosts": 1, "includedPosts": 1 },
+  "posts": [{
+    "draftId": "019fabdc-9c29-7075-a5f0-309c3964ee77",
+    "includedInRebuild": true,
+    "slug": "metacognition-is-the-one-skill-ai-cannot-replace",
+    "locale": "en",
+    "pageType": "concept",
+    "title": "Metacognition Is the One Skill AI Cannot Replace",
+    "metaDescription": "Metacognition is the skill AI cannot replicate. Learn what it is, why it matters for your career as AI automation accelerates, and how to build it deliberately.",
+    "bodyMdx": "## What Metacognition Means\n\nMetacognition is thinking about thinking. More precisely, it is the capacity to observe your own cognitive processes, evaluate their quality, and adjust strategy in real time.\n\nPsychologist John Flavell introduced the term in 1979, defining it as knowledge and awareness of one's own cognitive processes. The mechanism splits into two components. **Metacognitive knowledge** is what you understand about how you learn. **Metacognitive regulation** is how you adjust your approach based on that understanding.\n\n## Why 30 to 50 Percent of Your Skills Will Expire Within Five Years\n\nWorkforce surveys projected that 30 to 50 percent of the skills needed to remain competitive would change within five years. Those projections predate the current acceleration. The actual rate is likely higher.\n\nWhat keeps people employed through cycles of automation is the class of work AI genuinely cannot do: deeply contextual, multifactorial decisions where no single answer exists and outcome quality depends on how every variable interacts with every other.\n\n## What AI Genuinely Cannot Do Yet\n\nCurrent large language models excel at pattern-matching across large distributions of text. What they cannot do reliably is reason through a genuinely novel decision where context is deeply embedded, variables interact in non-linear ways, and no comparable training example exists.\n\n## How Fluxo Builds Metacognition From Your Own Notes\n\nMost people accumulate notes that never become understanding. [Fluxo](https://fluxo.today) is built to close that gap. You write the notes. Fluxo generates flashcards, quizzes, and summaries directly from your structured content, then resurfaces them through spaced-repetition scheduling over time.\n\n## Tools That Support Metacognitive Learning\n\n| Tool | Core approach | Best for |\n|---|---|---|\n| **[Fluxo](https://fluxo.today)** | AI flashcards, quizzes, and summaries from your own notes | Self-learners who want relational practice |\n| **[Anki](https://apps.ankiweb.net)** | Manual flashcard creation and scheduling | Learners who want full control |\n| **[RemNote](https://www.remnote.com)** | Notes and flashcards in one interface | Students who want an integrated workflow |",
+    "faq": [
+      {
+        "question": "What is metacognition in simple terms?",
+        "answer": "Metacognition is awareness of your own thinking process: knowing when you understand something, recognizing when you do not, and adjusting how you learn based on that self-assessment."
+      },
+      {
+        "question": "How do I start practicing metacognition?",
+        "answer": "Test yourself before you feel ready, draw concept maps that show relationships rather than lists, and write down what you still cannot explain clearly after each study session."
+      },
+      {
+        "question": "Can AI help develop metacognition?",
+        "answer": "Yes, when it generates questions that force relational reasoning rather than simple recall. It gets in the way when it removes cognitive effort."
+      }
+    ],
+    "references": [
+      {
+        "url": "https://doi.org/10.1037/0003-066X.34.10.906",
+        "label": "Flavell 1979 - Metacognition and Cognitive Monitoring (American Psychologist)"
+      }
+    ],
+    "createdAt": "2026-07-29T03:13:09.673Z",
+    "translationGroupId": "019fabdc-9c29-7075-a5f0-309c3964ee77",
+    "author": {
+      "id": "019fabd0-900b-7357-88f7-6439b1b5f3b4",
+      "name": "Fluxo Editorial Team",
+      "role": "Learning research",
+      "photoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScNybmCsvJoEp6P_FK3iVMlQvcP7rNVxxf5JeULYZlH6k4R4B_9VZALOU5aM-JRXvGPB0eMSoB3PRfe3MkxCOs1CEM9SyOgqgdDMywcjRw9Q&s=10",
+      "bio": [{ "locale": "en", "text": "Research-backed learning guides from Fluxo." }],
+      "links": { "website": "https://fluxo.today" }
+    },
+    "sources": [{
+      "id": "019fa883-82ad-7558-86ca-d549d3849051",
+      "type": "youtube_video",
+      "title": "How To Become Dangerously Self Educated (with AI)",
+      "url": "https://www.youtube.com/watch?v=-Xc_ExgwLs8",
+      "creator": "Justin Sung",
+      "publishedAt": null
+    }]
+  }]
+}

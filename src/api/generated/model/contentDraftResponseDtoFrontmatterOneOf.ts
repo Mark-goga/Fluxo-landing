@@ -5,8 +5,14 @@
  * template-nest
  * OpenAPI spec version: 1.0
  */
+import type { ContentDraftResponseDtoFrontmatterOneOfFaqItem } from './contentDraftResponseDtoFrontmatterOneOfFaqItem';
+import type { ContentDraftResponseDtoFrontmatterOneOfReferencesItem } from './contentDraftResponseDtoFrontmatterOneOfReferencesItem';
 
 export type ContentDraftResponseDtoFrontmatterOneOf = {
+  /** @maxItems 5 */
+  faq?: ContentDraftResponseDtoFrontmatterOneOfFaqItem[];
+  /** @maxItems 12 */
+  references?: ContentDraftResponseDtoFrontmatterOneOfReferencesItem[];
   pageType: 'how_to';
   validationIssues?: string[];
   rejectionReason?: string;

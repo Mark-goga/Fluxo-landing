@@ -166,6 +166,12 @@ export const rebuildControllerExportResponsePostsItemLocaleMax = 8;
 
 
 
+export const rebuildControllerExportResponsePostsItemFaqItemQuestionMax = 180;
+
+export const rebuildControllerExportResponsePostsItemFaqItemAnswerMax = 1200;
+
+export const rebuildControllerExportResponsePostsItemReferencesItemLabelMax = 240;
+
 export const rebuildControllerExportResponsePostsItemCreatedAtRegExp = new RegExp('^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d(?::[0-5]\\d(?:\\.\\d+)?)?(?:Z))$');
 export const rebuildControllerExportResponsePostsItemTranslationGroupIdRegExp = new RegExp('^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$');
 export const rebuildControllerExportResponsePostsItemAuthorIdRegExp = new RegExp('^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$');
@@ -183,6 +189,12 @@ export const rebuildControllerExportResponsePostsItemLocaleMaxOne = 8;
 
 
 
+
+export const rebuildControllerExportResponsePostsItemFaqItemQuestionMaxOne = 180;
+
+export const rebuildControllerExportResponsePostsItemFaqItemAnswerMaxOne = 1200;
+
+export const rebuildControllerExportResponsePostsItemReferencesItemLabelMaxOne = 240;
 
 export const rebuildControllerExportResponsePostsItemCreatedAtRegExpOne = new RegExp('^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d(?::[0-5]\\d(?:\\.\\d+)?)?(?:Z))$');
 export const rebuildControllerExportResponsePostsItemTranslationGroupIdRegExpOne = new RegExp('^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$');
@@ -205,6 +217,12 @@ export const rebuildControllerExportResponsePostsItemLocaleMaxTwo = 8;
 
 
 
+export const rebuildControllerExportResponsePostsItemFaqItemQuestionMaxTwo = 180;
+
+export const rebuildControllerExportResponsePostsItemFaqItemAnswerMaxTwo = 1200;
+
+export const rebuildControllerExportResponsePostsItemReferencesItemLabelMaxTwo = 240;
+
 export const rebuildControllerExportResponsePostsItemCreatedAtRegExpTwo = new RegExp('^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d(?::[0-5]\\d(?:\\.\\d+)?)?(?:Z))$');
 export const rebuildControllerExportResponsePostsItemTranslationGroupIdRegExpTwo = new RegExp('^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$');
 export const rebuildControllerExportResponsePostsItemAuthorIdRegExpTwo = new RegExp('^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$');
@@ -215,7 +233,6 @@ export const rebuildControllerExportResponsePostsItemAuthorBioItemLocaleMaxTwo =
 
 export const rebuildControllerExportResponsePostsItemSourcesItemIdRegExpTwo = new RegExp('^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$');
 export const rebuildControllerExportResponsePostsItemSourcesItemPublishedAtRegExpSeven = new RegExp('^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d(?::[0-5]\\d(?:\\.\\d+)?)?(?:Z))$');
-
 export const rebuildControllerExportResponsePostsItemDraftIdRegExpThree = new RegExp('^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$');
 
 export const rebuildControllerExportResponsePostsItemLocaleMinThree = 2;
@@ -223,6 +240,12 @@ export const rebuildControllerExportResponsePostsItemLocaleMaxThree = 8;
 
 
 
+
+export const rebuildControllerExportResponsePostsItemFaqItemQuestionMaxThree = 180;
+
+export const rebuildControllerExportResponsePostsItemFaqItemAnswerMaxThree = 1200;
+
+export const rebuildControllerExportResponsePostsItemReferencesItemLabelMaxThree = 240;
 
 export const rebuildControllerExportResponsePostsItemCreatedAtRegExpThree = new RegExp('^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d(?::[0-5]\\d(?:\\.\\d+)?)?(?:Z))$');
 export const rebuildControllerExportResponsePostsItemTranslationGroupIdRegExpThree = new RegExp('^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$');
@@ -241,6 +264,12 @@ export const rebuildControllerExportResponsePostsItemLocaleMaxFour = 8;
 
 
 
+
+export const rebuildControllerExportResponsePostsItemFaqItemQuestionMaxFour = 180;
+
+export const rebuildControllerExportResponsePostsItemFaqItemAnswerMaxFour = 1200;
+
+export const rebuildControllerExportResponsePostsItemReferencesItemLabelMaxFour = 240;
 
 export const rebuildControllerExportResponsePostsItemCreatedAtRegExpFour = new RegExp('^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d(?::[0-5]\\d(?:\\.\\d+)?)?(?:Z))$');
 export const rebuildControllerExportResponsePostsItemTranslationGroupIdRegExpFour = new RegExp('^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$');
@@ -282,6 +311,14 @@ export const rebuildControllerExportResponse = zod.strictObject({
   "title": zod.string().min(1),
   "metaDescription": zod.string().min(1),
   "bodyMdx": zod.string().min(1),
+  "faq": zod.array(zod.strictObject({
+  "question": zod.string().min(1).max(rebuildControllerExportResponsePostsItemFaqItemQuestionMax),
+  "answer": zod.string().min(1).max(rebuildControllerExportResponsePostsItemFaqItemAnswerMax)
+})),
+  "references": zod.array(zod.strictObject({
+  "label": zod.string().min(1).max(rebuildControllerExportResponsePostsItemReferencesItemLabelMax),
+  "url": zod.url()
+})),
   "createdAt": zod.iso.datetime({}).regex(rebuildControllerExportResponsePostsItemCreatedAtRegExp),
   "translationGroupId": zod.uuid().regex(rebuildControllerExportResponsePostsItemTranslationGroupIdRegExp),
   "author": zod.strictObject({
@@ -317,6 +354,14 @@ export const rebuildControllerExportResponse = zod.strictObject({
   "title": zod.string().min(1),
   "metaDescription": zod.string().min(1),
   "bodyMdx": zod.string().min(1),
+  "faq": zod.array(zod.strictObject({
+  "question": zod.string().min(1).max(rebuildControllerExportResponsePostsItemFaqItemQuestionMaxOne),
+  "answer": zod.string().min(1).max(rebuildControllerExportResponsePostsItemFaqItemAnswerMaxOne)
+})),
+  "references": zod.array(zod.strictObject({
+  "label": zod.string().min(1).max(rebuildControllerExportResponsePostsItemReferencesItemLabelMaxOne),
+  "url": zod.url()
+})),
   "createdAt": zod.iso.datetime({}).regex(rebuildControllerExportResponsePostsItemCreatedAtRegExpOne),
   "translationGroupId": zod.uuid().regex(rebuildControllerExportResponsePostsItemTranslationGroupIdRegExpOne),
   "author": zod.strictObject({
@@ -353,6 +398,14 @@ export const rebuildControllerExportResponse = zod.strictObject({
   "title": zod.string().min(1),
   "metaDescription": zod.string().min(1),
   "bodyMdx": zod.string().min(1),
+  "faq": zod.array(zod.strictObject({
+  "question": zod.string().min(1).max(rebuildControllerExportResponsePostsItemFaqItemQuestionMaxTwo),
+  "answer": zod.string().min(1).max(rebuildControllerExportResponsePostsItemFaqItemAnswerMaxTwo)
+})),
+  "references": zod.array(zod.strictObject({
+  "label": zod.string().min(1).max(rebuildControllerExportResponsePostsItemReferencesItemLabelMaxTwo),
+  "url": zod.url()
+})),
   "createdAt": zod.iso.datetime({}).regex(rebuildControllerExportResponsePostsItemCreatedAtRegExpTwo),
   "translationGroupId": zod.uuid().regex(rebuildControllerExportResponsePostsItemTranslationGroupIdRegExpTwo),
   "author": zod.strictObject({
@@ -379,11 +432,7 @@ export const rebuildControllerExportResponse = zod.strictObject({
   "creator": zod.union([zod.string(),zod.null()]),
   "publishedAt": zod.union([zod.iso.datetime({}).regex(rebuildControllerExportResponsePostsItemSourcesItemPublishedAtRegExpSeven),zod.null()])
 })),
-  "pageType": zod.literal("concept"),
-  "references": zod.array(zod.strictObject({
-  "label": zod.string().min(1),
-  "url": zod.url()
-}))
+  "pageType": zod.literal("concept")
 }),zod.strictObject({
   "draftId": zod.uuid().regex(rebuildControllerExportResponsePostsItemDraftIdRegExpThree),
   "includedInRebuild": zod.boolean(),
@@ -392,6 +441,14 @@ export const rebuildControllerExportResponse = zod.strictObject({
   "title": zod.string().min(1),
   "metaDescription": zod.string().min(1),
   "bodyMdx": zod.string().min(1),
+  "faq": zod.array(zod.strictObject({
+  "question": zod.string().min(1).max(rebuildControllerExportResponsePostsItemFaqItemQuestionMaxThree),
+  "answer": zod.string().min(1).max(rebuildControllerExportResponsePostsItemFaqItemAnswerMaxThree)
+})),
+  "references": zod.array(zod.strictObject({
+  "label": zod.string().min(1).max(rebuildControllerExportResponsePostsItemReferencesItemLabelMaxThree),
+  "url": zod.url()
+})),
   "createdAt": zod.iso.datetime({}).regex(rebuildControllerExportResponsePostsItemCreatedAtRegExpThree),
   "translationGroupId": zod.uuid().regex(rebuildControllerExportResponsePostsItemTranslationGroupIdRegExpThree),
   "author": zod.strictObject({
@@ -428,6 +485,14 @@ export const rebuildControllerExportResponse = zod.strictObject({
   "title": zod.string().min(1),
   "metaDescription": zod.string().min(1),
   "bodyMdx": zod.string().min(1),
+  "faq": zod.array(zod.strictObject({
+  "question": zod.string().min(1).max(rebuildControllerExportResponsePostsItemFaqItemQuestionMaxFour),
+  "answer": zod.string().min(1).max(rebuildControllerExportResponsePostsItemFaqItemAnswerMaxFour)
+})),
+  "references": zod.array(zod.strictObject({
+  "label": zod.string().min(1).max(rebuildControllerExportResponsePostsItemReferencesItemLabelMaxFour),
+  "url": zod.url()
+})),
   "createdAt": zod.iso.datetime({}).regex(rebuildControllerExportResponsePostsItemCreatedAtRegExpFour),
   "translationGroupId": zod.uuid().regex(rebuildControllerExportResponsePostsItemTranslationGroupIdRegExpFour),
   "author": zod.strictObject({

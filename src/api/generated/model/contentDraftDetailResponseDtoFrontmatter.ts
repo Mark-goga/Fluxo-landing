@@ -6,9 +6,9 @@
  * OpenAPI spec version: 1.0
  */
 import type { ContentDraftDetailResponseDtoFrontmatterOneOf } from './contentDraftDetailResponseDtoFrontmatterOneOf';
-import type { ContentDraftDetailResponseDtoFrontmatterOneOfTwo } from './contentDraftDetailResponseDtoFrontmatterOneOfTwo';
-import type { ContentDraftDetailResponseDtoFrontmatterOneOfThree } from './contentDraftDetailResponseDtoFrontmatterOneOfThree';
-import type { ContentDraftDetailResponseDtoFrontmatterOneOfFive } from './contentDraftDetailResponseDtoFrontmatterOneOfFive';
-import type { ContentDraftDetailResponseDtoFrontmatterOneOfSix } from './contentDraftDetailResponseDtoFrontmatterOneOfSix';
+import type { ContentDraftDetailResponseDtoFrontmatterOneOfFour } from './contentDraftDetailResponseDtoFrontmatterOneOfFour';
+import type { ContentDraftDetailResponseDtoFrontmatterOneOfSeven } from './contentDraftDetailResponseDtoFrontmatterOneOfSeven';
+import type { ContentDraftDetailResponseDtoFrontmatterOneOfOnezero } from './contentDraftDetailResponseDtoFrontmatterOneOfOnezero';
+import type { ContentDraftDetailResponseDtoFrontmatterOneOfOnethree } from './contentDraftDetailResponseDtoFrontmatterOneOfOnethree';
 
-export type ContentDraftDetailResponseDtoFrontmatter = ContentDraftDetailResponseDtoFrontmatterOneOf | ContentDraftDetailResponseDtoFrontmatterOneOfTwo | ContentDraftDetailResponseDtoFrontmatterOneOfThree | ContentDraftDetailResponseDtoFrontmatterOneOfFive | ContentDraftDetailResponseDtoFrontmatterOneOfSix;
+export type ContentDraftDetailResponseDtoFrontmatter = ContentDraftDetailResponseDtoFrontmatterOneOf | ContentDraftDetailResponseDtoFrontmatterOneOfFour | ContentDraftDetailResponseDtoFrontmatterOneOfSeven | ContentDraftDetailResponseDtoFrontmatterOneOfOnezero | ContentDraftDetailResponseDtoFrontmatterOneOfOnethree;

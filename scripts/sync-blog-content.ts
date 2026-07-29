@@ -15,6 +15,7 @@ import {
 import type { ContentBuildExportDto } from "../src/api/generated/model";
 import { rebuildControllerExportResponse } from "../src/api/generated/content-publishing.zod";
 import { createContentPublishingRequestInit } from "../src/api/content-publishing-fetch";
+import { BLOG_HERO_IMAGES, isBlogHeroImage, type BlogHeroImage } from "../src/content/blog-hero-images";
 
 type BuildPost = ContentBuildExportDto["posts"][number];
 
@@ -61,8 +62,11 @@ const FRONTMATTER_KEY_ORDER = [
   "metaDescription",
   "createdAt",
   "translationGroupId",
-  "compared",
+  "heroImage",
+  "relatedPosts",
+  "faq",
   "references",
+  "compared",
   "videoUrl",
   "itemCount",
   "importUrl",
@@ -72,7 +76,24 @@ const FRONTMATTER_KEY_ORDER = [
 
 type Frontmatter = Record<string, unknown>;
 
-const orderedFrontmatter = (post: BuildPost): Frontmatter => {
+const selectHeroImage = async (post: BuildPost, managedRoot: string): Promise<BlogHeroImage | undefined> => {
+  if (post.pageType === "video_summary") return undefined;
+
+  const existingPath = path.join(managedRoot, post.locale, `${post.slug}.md`);
+  try {
+    const existing = parseMarkdown(await fs.readFile(existingPath, "utf8"));
+    if (typeof existing.data === "object" && existing.data !== null) {
+      const heroImage = (existing.data as Frontmatter).heroImage;
+      if (isBlogHeroImage(heroImage)) return heroImage;
+    }
+  } catch (error: unknown) {
+    if (!(error instanceof Error) || !("code" in error) || error.code !== "ENOENT") throw error;
+  }
+
+  return BLOG_HERO_IMAGES[Math.floor(Math.random() * BLOG_HERO_IMAGES.length)];
+};
+
+const orderedFrontmatter = (post: BuildPost, heroImage?: BlogHeroImage): Frontmatter => {
   const base: Frontmatter = {
     schemaVersion: 1,
     draftId: post.draftId,
@@ -83,11 +104,13 @@ const orderedFrontmatter = (post: BuildPost): Frontmatter => {
     metaDescription: post.metaDescription,
     createdAt: post.createdAt,
     translationGroupId: post.translationGroupId,
+    faq: post.faq,
+    references: post.references,
     author: post.author,
     sources: post.sources,
   };
+  if (heroImage) base.heroImage = heroImage;
   if (post.pageType === "comparison") base.compared = post.compared;
-  if (post.pageType === "concept") base.references = post.references;
   if (post.pageType === "video_summary") base.videoUrl = post.videoUrl;
   if (post.pageType === "template") {
     base.itemCount = post.itemCount;
@@ -100,8 +123,8 @@ const orderedFrontmatter = (post: BuildPost): Frontmatter => {
   return ordered;
 };
 
-const serializePost = (post: BuildPost): string => {
-  const yaml = YAML.stringify(orderedFrontmatter(post), {
+const serializePost = (post: BuildPost, heroImage?: BlogHeroImage): string => {
+  const yaml = YAML.stringify(orderedFrontmatter(post, heroImage), {
     defaultStringType: "QUOTE_DOUBLE",
     defaultKeyType: "PLAIN",
     lineWidth: 0,
@@ -125,10 +148,9 @@ const main = async (): Promise<void> => {
   const args = parseArgs(process.argv);
 
   const rebuildId = requireArg(args, "rebuild-id");
-  const apiKey = requireArg(args, "api-key", "PUBLISHING_API_KEY");
-  const backendUrl = requireArg(args, "backend-url", "BACKEND_URL");
   const managedRoot = path.resolve(requireArg(args, "managed-root"));
   const applicationId = requireArg(args, "application-id", "APPLICATION_ID");
+  const exportFile = args["export-file"];
 
   if (!managedRoot.replace(/\\/g, "/").endsWith("/content/blog/generated")) {
     throw new Error(
@@ -141,10 +163,15 @@ const main = async (): Promise<void> => {
   }
 
   const exportData = rebuildControllerExportResponse.parse(
-    await rebuildControllerExport(
-      rebuildId,
-      createContentPublishingRequestInit({ backendUrl, apiKey }),
-    ),
+    typeof exportFile === "string"
+      ? JSON.parse(await fs.readFile(path.resolve(exportFile), "utf8"))
+      : await rebuildControllerExport(
+          rebuildId,
+          createContentPublishingRequestInit({
+            backendUrl: requireArg(args, "backend-url", "BACKEND_URL"),
+            apiKey: requireArg(args, "api-key", "PUBLISHING_API_KEY"),
+          }),
+        ),
   );
   if (exportData.schemaVersion !== 1) throw new Error("schemaVersion mismatch");
   if (exportData.application.id !== applicationId) {
@@ -179,7 +206,8 @@ const main = async (): Promise<void> => {
       throw new Error(`Serialized path escaped managed root: ${dest}`);
     }
     await fs.mkdir(path.dirname(dest), { recursive: true });
-    const serialized = serializePost(post);
+    const heroImage = await selectHeroImage(post, managedRoot);
+    const serialized = serializePost(post, heroImage);
     await fs.writeFile(dest, serialized, { encoding: "utf8" });
     parseMarkdown(serialized);
     desired.push({ draftId: post.draftId, locale: post.locale, slug: post.slug });

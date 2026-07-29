@@ -8,7 +8,9 @@
     "build": "astro build && node scripts/fix-static-paths.mjs",
     "preview": "astro preview --host 0.0.0.0",
     "sync:blog": "tsx scripts/sync-blog-content.ts",
-    "test": "node --test scripts/sync-blog-content.test.mjs",
+    "sync:blog:demo": "tsx scripts/sync-blog-content.ts --export-file fixtures/content-build-export.metacognition.json --rebuild-id 019fabdc-9c29-7075-a5f0-309c3964ee77 --application-id 019e92d8-b331-7321-a2fc-a0f82fc0d2c3 --managed-root src/content/blog/generated",
+    "related:blog": "tsx scripts/assign-related-posts.ts --managed-root src/content/blog/generated",
+    "test": "node --test scripts/*.test.mjs",
     "contracts:generate": "orval --config orval.config.ts",
     "contracts:check": "npm run contracts:generate && git diff --exit-code -- src/api/generated",
     "contracts:sync": "node scripts/pull-mindai-spec.mjs"

@@ -19,6 +19,11 @@ const AUTHOR_ID = "cccccccc-cccc-4ccc-8ccc-cccccccccccc";
 const DRAFT_ID_A = "dddddddd-dddd-4ddd-8ddd-dddddddddddd";
 const DRAFT_ID_B = "eeeeeeee-eeee-4eee-8eee-eeeeeeeeeeee";
 const DRAFT_ID_C = "ffffffff-ffff-4fff-8fff-ffffffffffff";
+const BLOG_HERO_IMAGES = [
+  "/assets/card-1.png",
+  "/assets/card-2.png",
+  "/assets/card-3.png",
+];
 
 const buildAuthor = () => ({
   id: AUTHOR_ID,
@@ -37,6 +42,8 @@ const buildPost = (overrides = {}) => ({
   title: "Active Recall",
   metaDescription: "Guide to active recall for durable learning.",
   bodyMdx: "# Active Recall\n\nBody paragraph.",
+  faq: [],
+  references: [],
   createdAt: "2026-07-28T12:00:00.000Z",
   translationGroupId: DRAFT_ID_A,
   author: buildAuthor(),
@@ -178,6 +185,20 @@ describe("sync-blog-content", () => {
     assert.equal(manifest.posts.length, 2);
   });
 
+  it("preserves backend-owned Markdown exactly", async () => {
+    setResponse(
+      buildExport({
+        bodyMdx:
+          '# Active Recall\n\n> **Source:** An original video. https://example.com/video\n\n---\n\n> A meaningful quote that belongs to the article.\n\nBody paragraph.',
+      }),
+    );
+    const result = await invoke();
+    assert.equal(result.code, 0, `stderr=${result.stderr}`);
+    const body = await fs.readFile(path.join(managedRoot, "en", "active-recall.md"), "utf8");
+    assert.match(body, /\*\*Source:\*\*/);
+    assert.match(body, /> A meaningful quote that belongs to the article\./);
+  });
+
   it("re-run with identical export is byte-identical (idempotent serialization)", async () => {
     const before = await fs.readFile(path.join(managedRoot, "en", "active-recall.md"));
     const beforeManifest = await fs.readFile(path.join(managedRoot, "manifest.json"));
@@ -187,6 +208,39 @@ describe("sync-blog-content", () => {
     const afterManifest = await fs.readFile(path.join(managedRoot, "manifest.json"));
     assert.deepEqual(after, before);
     assert.deepEqual(afterManifest, beforeManifest);
+  });
+
+  it("selects one landing image for a new article and preserves it on later syncs", async () => {
+    setResponse(buildExport(buildPost({ draftId: DRAFT_ID_B, slug: "image-choice" })));
+    let result = await invoke();
+    assert.equal(result.code, 0, `stderr=${result.stderr}`);
+
+    const imagePath = path.join(managedRoot, "en", "image-choice.md");
+    const first = await fs.readFile(imagePath, "utf8");
+    const firstImage = first.match(/heroImage: "([^"]+)"/u)?.[1];
+    assert.ok(firstImage && BLOG_HERO_IMAGES.includes(firstImage));
+
+    result = await invoke();
+    assert.equal(result.code, 0, `stderr=${result.stderr}`);
+    const second = await fs.readFile(imagePath, "utf8");
+    assert.match(second, new RegExp(`heroImage: "${firstImage}"`, "u"));
+  });
+
+  it("does not assign a landing image to a video summary", async () => {
+    setResponse(
+      buildExport(
+        buildPost({
+          draftId: DRAFT_ID_C,
+          slug: "video-summary",
+          pageType: "video_summary",
+          videoUrl: "https://www.youtube.com/watch?v=abcdefghijk",
+        }),
+      ),
+    );
+    const result = await invoke();
+    assert.equal(result.code, 0, `stderr=${result.stderr}`);
+    const serialized = await fs.readFile(path.join(managedRoot, "en", "video-summary.md"), "utf8");
+    assert.doesNotMatch(serialized, /heroImage:/u);
   });
 
   it("removes managed files that disappear from the export", async () => {

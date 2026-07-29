@@ -6,9 +6,9 @@
  * OpenAPI spec version: 1.0
  */
 import type { PublicBlogPostDetailResponseDtoFrontmatterOneOf } from './publicBlogPostDetailResponseDtoFrontmatterOneOf';
-import type { PublicBlogPostDetailResponseDtoFrontmatterOneOfTwo } from './publicBlogPostDetailResponseDtoFrontmatterOneOfTwo';
-import type { PublicBlogPostDetailResponseDtoFrontmatterOneOfThree } from './publicBlogPostDetailResponseDtoFrontmatterOneOfThree';
-import type { PublicBlogPostDetailResponseDtoFrontmatterOneOfFive } from './publicBlogPostDetailResponseDtoFrontmatterOneOfFive';
-import type { PublicBlogPostDetailResponseDtoFrontmatterOneOfSix } from './publicBlogPostDetailResponseDtoFrontmatterOneOfSix';
+import type { PublicBlogPostDetailResponseDtoFrontmatterOneOfFour } from './publicBlogPostDetailResponseDtoFrontmatterOneOfFour';
+import type { PublicBlogPostDetailResponseDtoFrontmatterOneOfSeven } from './publicBlogPostDetailResponseDtoFrontmatterOneOfSeven';
+import type { PublicBlogPostDetailResponseDtoFrontmatterOneOfOnezero } from './publicBlogPostDetailResponseDtoFrontmatterOneOfOnezero';
+import type { PublicBlogPostDetailResponseDtoFrontmatterOneOfOnethree } from './publicBlogPostDetailResponseDtoFrontmatterOneOfOnethree';
 
-export type PublicBlogPostDetailResponseDtoFrontmatter = PublicBlogPostDetailResponseDtoFrontmatterOneOf | PublicBlogPostDetailResponseDtoFrontmatterOneOfTwo | PublicBlogPostDetailResponseDtoFrontmatterOneOfThree | PublicBlogPostDetailResponseDtoFrontmatterOneOfFive | PublicBlogPostDetailResponseDtoFrontmatterOneOfSix;
+export type PublicBlogPostDetailResponseDtoFrontmatter = PublicBlogPostDetailResponseDtoFrontmatterOneOf | PublicBlogPostDetailResponseDtoFrontmatterOneOfFour | PublicBlogPostDetailResponseDtoFrontmatterOneOfSeven | PublicBlogPostDetailResponseDtoFrontmatterOneOfOnezero | PublicBlogPostDetailResponseDtoFrontmatterOneOfOnethree;
