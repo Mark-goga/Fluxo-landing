@@ -70,6 +70,9 @@ jobs:
             --application-id "$APPLICATION_ID" > sync-result.json
           cat sync-result.json
 
+      - name: Assign related posts
+        run: npx tsx scripts/assign-related-posts.ts --managed-root src/content/blog/generated
+
       - name: Astro check
         run: npx astro check
 
