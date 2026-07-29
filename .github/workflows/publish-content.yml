@@ -73,9 +73,6 @@ jobs:
       - name: Astro check
         run: npx astro check
 
-      - name: Build
-        run: npm run build
-
       - name: Commit generated content
         id: commit
         run: |
