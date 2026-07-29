@@ -1,0 +1,53 @@
+---
+import { getCollection, type CollectionEntry } from "astro:content";
+import GeneratedBlogArticleLayout from "../../../layouts/GeneratedBlogArticleLayout.astro";
+import {
+  HUMAN_BLOG_SLUGS,
+  assertNoRouteCollision,
+} from "../../../config/generated-blog-collision";
+import type { LocaleKey } from "../../../config/site";
+
+const NON_ENGLISH_LOCALES: LocaleKey[] = ["uk", "es", "de"];
+
+export async function getStaticPaths() {
+  const all = await getCollection("blog");
+  const localized = all.filter((entry: CollectionEntry<"blog">) =>
+    NON_ENGLISH_LOCALES.includes(entry.data.locale as LocaleKey),
+  );
+
+  const nonColliding = localized.filter(
+    (entry: CollectionEntry<"blog">) => !HUMAN_BLOG_SLUGS.includes(entry.data.slug),
+  );
+
+  const generatedCollisions = localized.filter((entry: CollectionEntry<"blog">) =>
+    HUMAN_BLOG_SLUGS.includes(entry.data.slug),
+  );
+  assertNoRouteCollision(
+    generatedCollisions.map((e) => ({ locale: e.data.locale, slug: e.data.slug })),
+  );
+
+  const byGroup = new Map<string, CollectionEntry<"blog">[]>();
+  for (const e of all) {
+    const list = byGroup.get(e.data.translationGroupId) ?? [];
+    list.push(e);
+    byGroup.set(e.data.translationGroupId, list);
+  }
+
+  return nonColliding.map((entry: CollectionEntry<"blog">) => ({
+    params: { locale: entry.data.locale, slug: entry.data.slug },
+    props: {
+      entry,
+      translations: (byGroup.get(entry.data.translationGroupId) ?? []).filter(
+        (t: CollectionEntry<"blog">) => t.id !== entry.id,
+      ),
+    },
+  }));
+}
+
+const { entry, translations } = Astro.props as {
+  entry: CollectionEntry<"blog">;
+  translations: CollectionEntry<"blog">[];
+};
+---
+
+<GeneratedBlogArticleLayout entry={entry} translations={translations} />

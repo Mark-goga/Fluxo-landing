@@ -1,0 +1,154 @@
+name: Publish Content
+
+on:
+  workflow_dispatch:
+    inputs:
+      rebuildId:
+        description: "Content rebuild UUID from MindAI backend"
+        required: true
+        type: string
+      applicationId:
+        description: "Fluxo application UUID (must match secret)"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: content-publish-${{ inputs.applicationId }}
+  cancel-in-progress: false
+
+env:
+  NODE_VERSION: "22"
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+
+      - name: Verify application id
+        env:
+          EXPECTED: ${{ secrets.APPLICATION_ID }}
+          INCOMING: ${{ inputs.applicationId }}
+        run: |
+          if [ -z "$EXPECTED" ]; then
+            echo "APPLICATION_ID secret is not configured" >&2
+            exit 1
+          fi
+          if [ "$EXPECTED" != "$INCOMING" ]; then
+            echo "applicationId mismatch: input=$INCOMING expected=$EXPECTED" >&2
+            exit 1
+          fi
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Sync generated blog content
+        id: sync
+        env:
+          BACKEND_URL: ${{ secrets.BACKEND_URL }}
+          PUBLISHING_API_KEY: ${{ secrets.PUBLISHING_API_KEY }}
+          APPLICATION_ID: ${{ secrets.APPLICATION_ID }}
+        run: |
+          npx tsx scripts/sync-blog-content.ts \
+            --rebuild-id "${{ inputs.rebuildId }}" \
+            --api-key "$PUBLISHING_API_KEY" \
+            --backend-url "$BACKEND_URL" \
+            --managed-root "src/content/blog/generated" \
+            --application-id "$APPLICATION_ID" > sync-result.json
+          cat sync-result.json
+
+      - name: Astro check
+        run: npx astro check
+
+      - name: Build
+        run: npm run build
+
+      - name: Commit generated content
+        id: commit
+        run: |
+          set -eu
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Only the DB-managed content root is staged. Dynamic route files are
+          # human-authored and must be committed by a normal PR, not by this workflow.
+          git add src/content/blog/generated
+          if git diff --cached --quiet; then
+            echo "No content changes to commit."
+            echo "commit_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git commit -m "chore(content): publish rebuild ${{ inputs.rebuildId }}"
+          for attempt in 1 2 3; do
+            if git push origin main; then
+              echo "commit_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            echo "push attempt $attempt failed; rebasing" >&2
+            git pull --rebase origin main
+          done
+          echo "push failed after retries" >&2
+          exit 1
+
+      - name: Notify backend — complete
+        if: success()
+        env:
+          BACKEND_URL: ${{ secrets.BACKEND_URL }}
+          PUBLISHING_API_KEY: ${{ secrets.PUBLISHING_API_KEY }}
+          REBUILD_ID: ${{ inputs.rebuildId }}
+          COMMIT_SHA: ${{ steps.commit.outputs.commit_sha }}
+          RUN_ID: ${{ github.run_id }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          FILES=$(jq -c '.files' sync-result.json)
+          BODY=$(jq -nc \
+            --arg githubRunId "$RUN_ID" \
+            --arg githubRunUrl "$RUN_URL" \
+            --arg gitCommitSha "$COMMIT_SHA" \
+            --argjson files "$FILES" \
+            '{githubRunId:$githubRunId, githubRunUrl:$githubRunUrl, gitCommitSha:$gitCommitSha, files:$files}')
+          set +e
+          for attempt in 1 2 3; do
+            curl -sS --fail-with-body -X POST \
+              -H "X-API-Key: $PUBLISHING_API_KEY" \
+              -H "Content-Type: application/json" \
+              -d "$BODY" \
+              "${BACKEND_URL%/}/content-seo/rebuilds/${REBUILD_ID}/complete"
+            status=$?
+            if [ $status -eq 0 ]; then exit 0; fi
+            echo "complete callback attempt $attempt failed (exit=$status)" >&2
+            sleep $((attempt * 5))
+          done
+          exit 1
+
+      - name: Notify backend — fail
+        if: failure()
+        env:
+          BACKEND_URL: ${{ secrets.BACKEND_URL }}
+          PUBLISHING_API_KEY: ${{ secrets.PUBLISHING_API_KEY }}
+          REBUILD_ID: ${{ inputs.rebuildId }}
+          RUN_ID: ${{ github.run_id }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          BODY=$(jq -nc \
+            --arg githubRunId "$RUN_ID" \
+            --arg githubRunUrl "$RUN_URL" \
+            --arg errorMessage "Workflow failed. See GitHub Actions run for details." \
+            '{githubRunId:$githubRunId, githubRunUrl:$githubRunUrl, errorMessage:$errorMessage}')
+          curl -sS --fail-with-body -X POST \
+            -H "X-API-Key: $PUBLISHING_API_KEY" \
+            -H "Content-Type: application/json" \
+            -d "$BODY" \
+            "${BACKEND_URL%/}/content-seo/rebuilds/${REBUILD_ID}/fail" || true

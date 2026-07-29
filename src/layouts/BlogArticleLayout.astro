@@ -24,7 +24,7 @@ if (!article) {
 const routePath = article.routePath;
 const heroImage = pageAssetUrl(routePath, article.heroAsset);
 const languageNav = blogLanguageNav(slug as BlogSlug);
-const alternates = languageNav.map((option) => ({
+const alternates: Array<{ hreflang: string; href: string }> = languageNav.map((option) => ({
   hreflang: option.locale,
   href: absoluteUrl(option.href),
 }));
