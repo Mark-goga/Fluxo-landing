@@ -10,4 +10,5 @@ export const brandTokens: BrandTokens = {
   ogImagePath: "/assets/Photo_herosection_NEW.png",
   googleFontsUrl:
     "https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..900&display=swap",
+  logoPath: "assets/logo-fluxo.png",
 };

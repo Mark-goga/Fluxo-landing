@@ -21,14 +21,36 @@ document.querySelectorAll("[data-clarity-event]").forEach((element) => {
 });
 
 document.querySelectorAll(".burger").forEach((burger) => {
-  const mobileNav = burger.closest("header")?.querySelector(".mobile-nav");
+  const header = burger.closest("header");
+  const mobileNav = header?.querySelector(".mobile-nav");
 
   if (!mobileNav) return;
 
-  burger.addEventListener("click", () => {
-    const isOpen = mobileNav.classList.toggle("open");
-    burger.classList.toggle("open", isOpen);
-    burger.setAttribute("aria-expanded", isOpen);
+  const setOpen = (open) => {
+    mobileNav.classList.toggle("open", open);
+    burger.classList.toggle("open", open);
+    burger.setAttribute("aria-expanded", open);
+    document.body.style.overflow = open ? "hidden" : "";
+  };
+
+  burger.addEventListener("click", (event) => {
+    event.stopPropagation();
+    setOpen(!mobileNav.classList.contains("open"));
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!mobileNav.classList.contains("open")) return;
+    const target = event.target;
+    if (mobileNav.contains(target) || burger.contains(target)) return;
+    setOpen(false);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && mobileNav.classList.contains("open")) setOpen(false);
+  });
+
+  mobileNav.querySelectorAll("a, button").forEach((el) => {
+    el.addEventListener("click", () => setOpen(false));
   });
 });
 
