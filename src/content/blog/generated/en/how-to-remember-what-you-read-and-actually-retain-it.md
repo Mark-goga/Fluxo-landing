@@ -4,7 +4,7 @@ draftId: "019fabd6-77dc-70a3-98d8-c3a130a3151a"
 slug: "how-to-remember-what-you-read-and-actually-retain-it"
 locale: "en"
 pageType: "how_to"
-title: "How to Remember What You Read (and Actually Retain It)"
+title: "How to Remember What You Read (and Actually Retain It) Test"
 metaDescription: "Paper reading consistently outperforms screens for comprehension of informational text. Learn why the gap exists, what drives it, and how structured notes with spaced repetition close it for good."
 createdAt: "2026-07-29T03:06:27.163Z"
 translationGroupId: "019fabd6-77dc-70a3-98d8-c3a130a3151a"
@@ -21,9 +21,9 @@ faq:
 references: []
 author:
   id: "019fade3-c630-730b-bac0-1a3941a82bcf"
-  name: "Mark Gala"
+  name: "Markiian Halabut"
   role: "Founder of Fluxo"
-  photoUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScNybmCsvJoEp6P_FK3iVMlQvcP7rNVxxf5JeULYZlH6k4R4B_9VZALOU5aM-JRXvGPB0eMSoB3PRfe3MkxCOs1CEM9SyOgqgdDMywcjRw9Q&s=10"
+  photoUrl: ""
   bio:
     - locale: "en"
       text: "Mark builds Fluxo — a spaced-repetition tool that turns notes into flashcards. He self-taught programming with Anki and now writes about learning science, PKM, and study workflows for people teaching themselves complex topics."
@@ -39,8 +39,20 @@ sources:
     url: "https://www.youtube.com/watch?v=A9diICLQ9Ls"
     creator: "Justin Sung"
     publishedAt: "2026-06-20T02:54:24.000Z"
+relatedPosts:
+  - href: "/blog/how-to-remember-what-you-learn/"
+    title: "How to Remember What You Learn?"
+    metaDescription: "You read. You finish a course. You take notes. And a week later it's gone. This isn't a memory problem — it's a system problem."
+    heroImage: "/assets/card-1.png"
+  - href: "/blog/best-study-routine/"
+    title: "Best Study Routine"
+    metaDescription: "Most people build a study routine the wrong way. They pick a time, open their notes, and start reading. That's not a routine. It's just a habit of sitting near a book."
+    heroImage: "/assets/card-3.png"
+  - href: "/blog/how-to-study-while-working-full-time/"
+    title: "How to Study While Working Full Time?"
+    metaDescription: "You want to learn something new. A language, a skill, a subject that matters for your career or just for you. And you have maybe 45 minutes a day, if everything goes right."
+    heroImage: "/assets/card-1.png"
 ---
-
 Most people finish a chapter, close the book, and feel like they understood it. Two weeks later, they cannot recall a single specific idea. That gap between feeling informed and actually retaining knowledge is not a failure of intelligence. It is a failure of method.
 
 Decades of research on reading comprehension point to consistent, predictable patterns. Follow them, and retention improves dramatically. Ignore them, and you will keep re-reading the same material wondering why nothing sticks.
