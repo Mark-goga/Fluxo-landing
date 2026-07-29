@@ -18,7 +18,7 @@ and footer. All copy and SEO metadata live in `src/data/locales.ts` for both Eng
 - Generated `robots.txt` and `sitemap.xml`.
 - Microsoft Clarity loader and `data-clarity-event` click tracking.
 - Interactive mobile nav drawer and FAQ accordion in `public/script.js`.
-- Post-build relative asset paths (HTML and CSS), so `dist/index.html` can be opened directly in a browser.
+- Post-build relative asset paths (HTML and CSS), so `dist_archive/index.html` can be opened directly in a browser.
 
 ## Local Setup
 
@@ -55,7 +55,7 @@ Preview the build:
 npm run preview
 ```
 
-The build is written to `dist/`. You can also open `dist/index.html` directly because the build step rewrites local
+The build is written to `dist_archive/`. You can also open `dist_archive/index.html` directly because the build step rewrites local
 asset URLs to relative paths.
 
 ## Creating A New Landing
@@ -68,7 +68,7 @@ asset URLs to relative paths.
 6. Edit English and Ukrainian content in `src/data/locales.ts`.
 7. Add new components only when the landing needs more than the current header, hero, and footer.
 8. Run `npm run build`.
-9. Check `dist/index.html`, `dist/uk/index.html`, `dist/sitemap.xml`, and `dist/robots.txt`.
+9. Check `dist_archive/index.html`, `dist_archive/uk/index.html`, `dist_archive/sitemap.xml`, and `dist_archive/robots.txt`.
 
 ## File Map
 
@@ -161,7 +161,7 @@ Use short, stable event names:
 3. Add a matching content object in `src/data/locales.ts`.
 4. Create a page in `src/pages/<locale>/index.astro`.
 5. Update language links in each locale object.
-6. Run `npm run build` and inspect `dist/sitemap.xml`.
+6. Run `npm run build` and inspect `dist_archive/sitemap.xml`.
 
 Keep one canonical URL per language. Avoid alias routes unless you intentionally need a redirect or compatibility page.
 
@@ -181,7 +181,7 @@ This repository is a landing-page template, not a finished product landing. When
 
 ## Deployment
 
-Deploy the contents of `dist/` to any static host.
+Deploy the contents of `dist_archive/` to any static host.
 
 For a production domain:
 

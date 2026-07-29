@@ -1,4 +1,4 @@
-import { siteConfig, type LocaleKey } from "../config/site";
+import { siteConfig, type LocaleKey } from "@kit/config/site";
 
 type Link = {
   label: string;
@@ -81,7 +81,7 @@ export type LandingContent = {
     secondaryCta: Action;
     imageAlt: string;
   };
-  whyFluxo: {
+  why: {
     titleHtml: string;
     cards: WhyCard[];
   };
@@ -168,7 +168,7 @@ export const landingContent = {
       secondaryCta: { label: "How it works", href: "#features", clarityEvent: "hero_how_it_works" },
       imageAlt: "Fluxo in action",
     },
-    whyFluxo: {
+    why: {
       titleHtml: `AI can read everything for you, but learning happens in your <span class="hero-keyword">mind</span>`,
       cards: [
         {
@@ -445,7 +445,7 @@ export const landingContent = {
       secondaryCta: { label: "Як це працює", href: "#features", clarityEvent: "hero_how_it_works" },
       imageAlt: "Fluxo у дії",
     },
-    whyFluxo: {
+    why: {
       titleHtml: `ШІ може прочитати все за тебе, але навчання відбувається у твоїй <span class="hero-keyword">голові</span>`,
       cards: [
         {
@@ -714,7 +714,7 @@ export const landingContent = {
       secondaryCta: { label: "Cómo funciona", href: "#features", clarityEvent: "hero_how_it_works" },
       imageAlt: "Fluxo en acción",
     },
-    whyFluxo: {
+    why: {
       titleHtml: `La IA puede leerlo todo por ti, pero el aprendizaje ocurre en tu <span class="hero-keyword">mente</span>`,
       cards: [
         {
@@ -991,7 +991,7 @@ export const landingContent = {
       secondaryCta: { label: "So funktioniert's", href: "#features", clarityEvent: "hero_how_it_works" },
       imageAlt: "Fluxo in Aktion",
     },
-    whyFluxo: {
+    why: {
       titleHtml: `KI kann alles für dich lesen, doch Lernen passiert in deinem <span class="hero-keyword">Kopf</span>`,
       cards: [
         {

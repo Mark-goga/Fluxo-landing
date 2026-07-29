@@ -1,0 +1,3 @@
+[submodule "landing-kit"]
+	path = landing-kit
+	url = git@github.com:Mark-goga/landing-kit.git

@@ -1,8 +1,17 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@kit/*": ["./landing-kit/src/*"],
+      "@site/*": ["./src/*"]
+    },
     "types": ["astro/client"]
   },
-  "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist", "node_modules"]
+  "include": [".astro/types.d.ts", "**/*", "landing-kit/src/**/*"],
+  "exclude": [
+    "dist_archive",
+    "node_modules",
+    "landing-kit/node_modules"
+  ]
 }

@@ -1,11 +1,11 @@
 ---
-import PageLayout from "../layouts/PageLayout.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import PolicyDocument from "../components/PolicyDocument.astro";
-import policyHtml from "../components/policy-cookies.html?raw";
-import { siteConfig } from "../config/site";
-import { landingContent, landingLanguageNav } from "../data/locales";
+import PageLayout from "@kit/layouts/PageLayout.astro";
+import Header from "@kit/components/Header.astro";
+import Footer from "@kit/components/Footer.astro";
+import PolicyDocument from "@kit/components/PolicyDocument.astro";
+import policyHtml from "@site/policies/policy-cookies.html?raw";
+import { siteConfig } from "@kit/config/site";
+import { landingContent, landingLanguageNav } from "@site/data/locales";
 
 const content = landingContent.en;
 const routePath = "/cookies/";
