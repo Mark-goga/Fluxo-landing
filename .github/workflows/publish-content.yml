@@ -12,8 +12,13 @@ on:
         required: true
         type: string
 
+permissions:
+  contents: write
+
 jobs:
   publish:
+    permissions:
+      contents: write
     uses: Mark-goga/landing-kit/.github/workflows/publish-content.yml@main
     with:
       rebuildId: ${{ inputs.rebuildId }}
