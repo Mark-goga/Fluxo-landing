@@ -4,6 +4,12 @@
   "applicationId": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
   "posts": [
     {
+      "draftId": "019fabd6-77dc-70a3-98d8-c3a130a3151a",
+      "locale": "en",
+      "slug": "how-to-remember-what-you-read-and-actually-retain-it",
+      "path": "src/content/blog/generated/en/how-to-remember-what-you-read-and-actually-retain-it.md"
+    },
+    {
       "draftId": "019fb10a-53d8-770e-8672-9dc3c2f3f5a4",
       "locale": "en",
       "slug": "chatgpt-for-learning-without-losing-your-skills",
