@@ -1,5 +1,5 @@
-import type { LocaleKey } from "./site";
-
+// Human-authored blog slugs — dynamic route (`blog/[slug]`) refuses to build
+// generated posts that collide with any of these.
 export const HUMAN_BLOG_SLUGS: readonly string[] = [
   "best-study-routine",
   "best-way-to-learn-new-vocabulary",
@@ -9,23 +9,3 @@ export const HUMAN_BLOG_SLUGS: readonly string[] = [
   "how-to-remember-what-you-learn",
   "how-to-track-learning-progress",
 ] as const;
-
-export const HUMAN_LOCALES: readonly LocaleKey[] = ["en", "uk", "es", "de"] as const;
-
-export type GeneratedRouteEntry = { locale: LocaleKey; slug: string };
-
-export const isCollision = (entry: GeneratedRouteEntry): boolean =>
-  HUMAN_BLOG_SLUGS.includes(entry.slug);
-
-export const assertNoRouteCollision = (entries: readonly GeneratedRouteEntry[]): void => {
-  const collisions = entries.filter(isCollision);
-  if (collisions.length > 0) {
-    const list = collisions
-      .map((c) => `${c.locale}/${c.slug}`)
-      .join(", ");
-    throw new Error(
-      `Generated blog entries collide with human-authored routes: ${list}. ` +
-        `Rename the generated slug or remove the human page before publishing.`,
-    );
-  }
-};
