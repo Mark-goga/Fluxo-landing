@@ -1275,6 +1275,18 @@ export type BlogArticle = {
   author: string;
   readTime: string;
   bodyHtml: string;
+  publishedAt?: string;
+  modifiedAt?: string;
+};
+
+export const blogPublishDates: Record<BlogSlug, string> = {
+  "best-study-routine": "2026-07-01",
+  "best-way-to-learn-new-vocabulary": "2026-07-01",
+  "how-to-study-while-working-full-time": "2026-07-02",
+  "the-second-brain-for-learning": "2026-07-02",
+  "how-to-learn-without-forgetting": "2026-07-03",
+  "how-to-remember-what-you-learn": "2026-07-03",
+  "how-to-track-learning-progress": "2026-07-04",
 };
 
 export type BlogSlug =
