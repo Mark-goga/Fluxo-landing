@@ -1,0 +1,6 @@
+---
+import Page, { getStaticPaths as kitGetStaticPaths } from "@kit/pages/[locale]/blog/index.astro";
+
+export const getStaticPaths = kitGetStaticPaths;
+---
+<Page {...Astro.props} />

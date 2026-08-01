@@ -129,6 +129,29 @@ export type LandingContent = {
   structuredData: {
     description: string;
   };
+  blog: {
+    metaTitle: string;
+    metaDescription: string;
+    subtitle: string;
+    ui: {
+      title: string;
+      subtitle: string;
+      breadcrumbHome: string;
+      breadcrumbBlog: string;
+      tableOfContents: string;
+      searchPlaceholder: string;
+      searchAriaLabel: string;
+      featuredTag: string;
+      articleSingular: string;
+      articlePlural: string;
+      countSuffix: string;
+      matchedFor: string;
+      readMoreLabel: string;
+      emptyTitle: string;
+      emptyBody: string;
+      emptyClear: string;
+    };
+  };
 };
 
 export const landingContent = {
@@ -155,6 +178,7 @@ export const landingContent = {
         { label: "Why Fluxo", href: "#why" },
         { label: "Features", href: "#features" },
         { label: "Pricing", href: "#pricing" },
+        { label: "Blog", href: "/blog/" },
         { label: "About us", href: "#cta" },
       ],
       languageAria: "Change language",
@@ -408,6 +432,32 @@ export const landingContent = {
       description:
         "Fluxo is a learning app that combines structured knowledge spaces, AI summaries, and spaced repetition to turn passive reading into active long-term memory.",
     },
+    blog: {
+      metaTitle: `${siteConfig.name} Blog — Learning science, study workflows & spaced repetition`,
+      metaDescription:
+        "Practical, research-backed guides on how to study effectively, remember what you read, and build durable knowledge with spaced repetition.",
+      subtitle:
+        "Research-backed guides on studying, retention, and spaced repetition.",
+      ui: {
+        title: "Learning, better.",
+        subtitle:
+          "Research-backed guides on how to study, remember what you read, and turn notes into knowledge that sticks — from the team building Fluxo.",
+        breadcrumbHome: "Home",
+        breadcrumbBlog: "Blog",
+        tableOfContents: "Table of contents",
+        searchPlaceholder: "Search articles…",
+        searchAriaLabel: "Search articles",
+        featuredTag: "Featured",
+        articleSingular: "article",
+        articlePlural: "articles",
+        countSuffix: "articles",
+        matchedFor: "for",
+        readMoreLabel: "Read article",
+        emptyTitle: "No articles found",
+        emptyBody: "Nothing matches your search yet. Try another term.",
+        emptyClear: "Clear search",
+      },
+    },
   },
   uk: {
     key: "uk",
@@ -432,6 +482,7 @@ export const landingContent = {
         { label: "Чому Fluxo", href: "#why" },
         { label: "Можливості", href: "#features" },
         { label: "Тарифи", href: "#pricing" },
+        { label: "Блог", href: "/uk/blog/" },
         { label: "Контакти", href: "#cta" },
       ],
       languageAria: "Змінити мову",
@@ -677,6 +728,32 @@ export const landingContent = {
       description:
         "Fluxo — застосунок для навчання, що поєднує структуровані простори знань, ШІ-конспекти та інтервальне повторення, перетворюючи пасивне читання на активну довготривалу пам'ять.",
     },
+    blog: {
+      metaTitle: `Блог ${siteConfig.name} — наука навчання, робочі процеси та інтервальне повторення`,
+      metaDescription:
+        "Практичні гайди на основі досліджень: як ефективно вчитися, запам'ятовувати прочитане та будувати міцні знання через інтервальне повторення.",
+      subtitle:
+        "Гайди на основі досліджень про навчання, запам'ятовування та інтервальне повторення.",
+      ui: {
+        title: "Вчитися краще.",
+        subtitle:
+          "Гайди на основі досліджень: як вчитися, запам'ятовувати прочитане та перетворювати нотатки на знання, що залишаються — від команди Fluxo.",
+        breadcrumbHome: "Головна",
+        breadcrumbBlog: "Блог",
+        tableOfContents: "Зміст",
+        searchPlaceholder: "Пошук статей…",
+        searchAriaLabel: "Пошук статей",
+        featuredTag: "Рекомендовано",
+        articleSingular: "стаття",
+        articlePlural: "статей",
+        countSuffix: "статей",
+        matchedFor: "за запитом",
+        readMoreLabel: "Читати статтю",
+        emptyTitle: "Нічого не знайдено",
+        emptyBody: "Немає статей за цим запитом. Спробуйте інший.",
+        emptyClear: "Очистити пошук",
+      },
+    },
   },
   es: {
     key: "es",
@@ -701,6 +778,7 @@ export const landingContent = {
         { label: "Por qué Fluxo", href: "#why" },
         { label: "Funciones", href: "#features" },
         { label: "Precios", href: "#pricing" },
+        { label: "Blog", href: "/es/blog/" },
         { label: "Sobre nosotros", href: "#cta" },
       ],
       languageAria: "Cambiar idioma",
@@ -954,6 +1032,32 @@ export const landingContent = {
       description:
         "Fluxo es una app de aprendizaje que combina espacios de conocimiento estructurados, resúmenes con IA y repetición espaciada para convertir la lectura pasiva en memoria activa a largo plazo.",
     },
+    blog: {
+      metaTitle: `Blog ${siteConfig.name} — ciencia del aprendizaje, flujos de estudio y repetición espaciada`,
+      metaDescription:
+        "Guías prácticas y basadas en investigación sobre cómo estudiar de forma efectiva, recordar lo que lees y construir conocimiento duradero con repetición espaciada.",
+      subtitle:
+        "Guías basadas en investigación sobre estudio, retención y repetición espaciada.",
+      ui: {
+        title: "Aprender, mejor.",
+        subtitle:
+          "Guías basadas en investigación sobre cómo estudiar, recordar lo que lees y convertir apuntes en conocimiento que perdura — del equipo detrás de Fluxo.",
+        breadcrumbHome: "Inicio",
+        breadcrumbBlog: "Blog",
+        tableOfContents: "Tabla de contenidos",
+        searchPlaceholder: "Buscar artículos…",
+        searchAriaLabel: "Buscar artículos",
+        featuredTag: "Destacado",
+        articleSingular: "artículo",
+        articlePlural: "artículos",
+        countSuffix: "artículos",
+        matchedFor: "para",
+        readMoreLabel: "Leer artículo",
+        emptyTitle: "No se encontraron artículos",
+        emptyBody: "Nada coincide con tu búsqueda todavía. Prueba otro término.",
+        emptyClear: "Limpiar búsqueda",
+      },
+    },
   },
   de: {
     key: "de",
@@ -978,6 +1082,7 @@ export const landingContent = {
         { label: "Warum Fluxo", href: "#why" },
         { label: "Funktionen", href: "#features" },
         { label: "Preise", href: "#pricing" },
+        { label: "Blog", href: "/de/blog/" },
         { label: "Über uns", href: "#cta" },
       ],
       languageAria: "Sprache wechseln",
@@ -1231,6 +1336,32 @@ export const landingContent = {
       description:
         "Fluxo ist eine Lern-App, die strukturierte Wissensräume, KI-Zusammenfassungen und verteiltes Wiederholen kombiniert, um passives Lesen in aktives Langzeitgedächtnis zu verwandeln.",
     },
+    blog: {
+      metaTitle: `${siteConfig.name} Blog — Lernwissenschaft, Lern-Workflows & verteiltes Wiederholen`,
+      metaDescription:
+        "Praktische, forschungsbasierte Anleitungen: effektiv lernen, Gelesenes behalten und dauerhaftes Wissen mit verteiltem Wiederholen aufbauen.",
+      subtitle:
+        "Forschungsbasierte Anleitungen zu Lernen, Behalten und verteiltem Wiederholen.",
+      ui: {
+        title: "Besser lernen.",
+        subtitle:
+          "Forschungsbasierte Anleitungen: effektiv lernen, Gelesenes behalten und Notizen in bleibendes Wissen verwandeln — vom Team hinter Fluxo.",
+        breadcrumbHome: "Startseite",
+        breadcrumbBlog: "Blog",
+        tableOfContents: "Inhaltsverzeichnis",
+        searchPlaceholder: "Artikel suchen…",
+        searchAriaLabel: "Artikel suchen",
+        featuredTag: "Empfohlen",
+        articleSingular: "Artikel",
+        articlePlural: "Artikel",
+        countSuffix: "Artikel",
+        matchedFor: "für",
+        readMoreLabel: "Artikel lesen",
+        emptyTitle: "Keine Artikel gefunden",
+        emptyBody: "Nichts passt zu deiner Suche. Versuch einen anderen Begriff.",
+        emptyClear: "Suche zurücksetzen",
+      },
+    },
   },
 } satisfies Record<LocaleKey, LandingContent>;
 
@@ -1260,4 +1391,3 @@ const buildLanguageNav = (hrefFor: (locale: LocaleKey) => string): LanguageOptio
 
 export const landingLanguageNav = (): LanguageOption[] =>
   buildLanguageNav((locale) => landingContent[locale].path);
-
