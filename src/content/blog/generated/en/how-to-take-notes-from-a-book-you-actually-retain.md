@@ -1,0 +1,102 @@
+---
+schemaVersion: 1
+draftId: "019fbb63-1c27-7354-99f5-d160ac9e0994"
+slug: "how-to-take-notes-from-a-book-you-actually-retain"
+locale: "en"
+pageType: "how_to"
+title: "How to Take Notes from a Book You Actually Retain"
+metaDescription: "Learn how to take notes from a book using a three-phase system that builds lasting understanding. Covers reading order, commentary use, and spaced repetition review."
+createdAt: "2026-08-01T03:34:22.593Z"
+modifiedAt: "2026-08-01T14:51:43.943Z"
+translationGroupId: "019fbb63-1c27-7354-99f5-d160ac9e0994"
+heroImage: "/assets/card-17.webp"
+faq:
+  - question: "Should I read commentaries before or after the primary text?"
+    answer: "After. Reading the book independently first preserves your own interpretation as a baseline. You can then evaluate a commentary against something you actually developed rather than adopting the commentator's framing by default. The exception is a brief introduction, such as those in Penguin Classics editions, which can supply essential historical context without dictating how to interpret the work."
+  - question: "How many times should I reread a difficult book?"
+    answer: "There is no fixed number. Difficult books are intentionally designed to resist full understanding in a single reading. Many readers find two or three passes over several years necessary for the ideas to fully integrate, especially as life experience grows and earlier passages take on new meaning. The three-phase note-taking system helps each reread build on the previous one rather than starting over."
+  - question: "What is an atomic note and why does it matter for book retention?"
+    answer: "An atomic note captures one idea in a self-contained form, complete enough to understand months later without reopening the book. Unlike page-by-page summaries, atomic notes map directly onto spaced repetition flashcards. The constraint of one idea per note forces you to distill rather than transcribe, which is what makes the knowledge retrievable later without re-reading."
+references: []
+author:
+  id: "019faee1-9411-7438-a0d5-a441a9a771af"
+  name: "Markiian Halabut"
+  role: "Founder of Fluxo"
+  photoUrl: null
+  bio:
+    - locale: "en"
+      text: "Mark builds Fluxo — a spaced-repetition tool that turns notes into flashcards. He self-taught programming with Anki and now writes about learning science, PKM, and study workflows for people teaching themselves complex topics."
+  links:
+    website: "https://fluxo.today"
+sources:
+  - id: "019fb0f6-fb49-721b-b543-1b7932126610"
+    type: "youtube_video"
+    title: "How to Read Hard Books (and actually understand them)"
+    url: "https://www.youtube.com/watch?v=iZzMSfay1Fs"
+    creator: "Odysseas"
+    publishedAt: "2026-05-21T16:55:51.000Z"
+relatedPosts:
+  - href: "/blog/the-study-workflow-that-turns-notes-into-applied-knowledge/"
+    title: "The Study Workflow That Turns Notes Into Applied Knowledge"
+    metaDescription: "Most study workflows plateau at understanding and never reach application. This guide shows how to write to think, build atomic notes, and use spaced repetition to reach the knowledge tier that actually transfers to real problems."
+    heroImage: "/assets/card-11.webp"
+  - href: "/blog/the-second-brain-for-learning/"
+    title: "The Second Brain for Learning"
+    metaDescription: "Build a second brain for learning — a system that captures, organizes, and resurfaces what you read so knowledge is ready the moment you need it."
+    heroImage: "/assets/card-7.webp"
+  - href: "/blog/how-to-study-while-working-full-time/"
+    title: "How to Study While Working Full Time?"
+    metaDescription: "Study while working full time without burning out — a realistic 45-minute-a-day plan that turns limited hours into steady, measurable progress."
+    heroImage: "/assets/card-5.webp"
+---
+## Why Starting with the Author's Most Famous Work Is Usually Wrong
+
+Most readers reach for an author's most celebrated book first, and that instinct usually backfires. A magnum opus is the culmination of decades of thinking, not a doorway into it. The ideas it dramatizes and the vocabulary it assumes were built across earlier works the author treated as groundwork. Start at the peak and you miss the scaffolding that holds it up.
+
+Nietzsche's *Thus Spoke Zarathustra* shows the cost. Readers treat it as a standalone philosophical statement when it is really a dramatization of ideas Nietzsche spent several prior books constructing. *The Birth of Tragedy* introduces the Apollonian versus Dionysian distinction, and *The Genealogy of Morality* develops slave and master morality, the ascetic ideal, and the mechanics of ressentiment. Skip those and Zarathustra reads as poetic fog rather than argument.
+
+One caveat keeps this from hardening into a rule. An author's intellectual DNA does not run in strict chronological order, and the accessible, explanatory works can show up late in a career, after the major work is done. So read by conceptual dependency rather than publication date. Ask which books establish the pieces the famous one leans on, and start there.
+
+## The Presentism Trap: Reading the Past Through a Modern Filter
+
+Presentism means reading a historical text through today's values, projecting ideas the author could not have held and judging the work by standards it was never accountable to. It is one of the most common reasons a sharp reader finishes a classic, feels satisfied, and walks away with a distorted version of it.
+
+The trap works because modern moral intuitions feel like neutral ground rather than one perspective among many. They are so familiar that applying them to a 19th-century philosophical text feels like clarity when it is really displacement. You stop engaging with what the author meant and start engaging with what that author would mean writing for a 21st-century audience. The result is a work measured against a ruler it was never built to satisfy.
+
+Catching yourself in the act is the first move. The practical fix is historical context, which is exactly where commentaries earn their place.
+
+## How to Use Commentaries Without Outsourcing Your Interpretation
+
+Commentaries exist for a concrete reason: no modern reader can independently reconstruct what was happening when a book was written, what its specialist vocabulary meant, or which problems the author was answering. A good commentary supplies that background and closes the distance between you and a text written for a different intellectual world.
+
+The catch is that every commentary is also an argument. The commentator has a reading, and presenting context is never fully separable from presenting a point of view. Spend enough time inside one commentary before forming your own view and you absorb its framing without noticing. You close the primary text convinced you understood it yourself, when the scaffolding quietly decided what you saw.
+
+The better sequence is to read the book first, form your own reaction, then bring in the commentaries. Your interpretation becomes the baseline you can test the commentator's reading against, rather than the default you adopt without resistance. Penguin Classics introductions are a sensible minimum here, since they give historical and contextual framing without hammering you toward one reading of the major themes.
+
+## First Read-Through: Aim for Shape, Not Mastery
+
+On a first pass through a genuinely hard book, lower your expectations on purpose. Aim to grasp the overall arc and feel of the work, not to follow every argument or pin down every detail. That sounds like settling for less, but it is a precondition for comprehension, because the reader who demands full mastery before turning the page tends to stall halfway and quit.
+
+Difficult books often resist full understanding in one sitting by design. The ideas compound across chapters, so early sections only click once you have read what comes after. Grinding to master each page before moving on breeds frustration, and it tricks readers into blaming their own intelligence when the text was built to be hard.
+
+Rereading is not evidence that you failed the first time. It is the mechanism by which classics open their deeper layers. The same book yields different insights at different ages because experience and maturity activate meaning that was simply out of reach before. Treat the first pass as reconnaissance instead of completion and the whole experience of reading difficult works shifts.
+
+## Three-Phase Note-Taking System for Hard Books
+
+A structured system for how to take notes from a book prevents two failures at once: capturing nothing you can use, and capturing so much that nothing is retrievable. Across all three phases the goal stays the same, to pull ideas into a form you can actually reach for later rather than building a record for its own sake.
+
+**Phase 1: Margin notes while reading.** Mark what strikes you without breaking your reading flow. Scribble a question in the margin, underline a key term, drop a one-line reaction. These are raw and imprecise on purpose, material for Phase 2 rather than finished thoughts.
+
+**Phase 2: Expanded notes after finishing.** With the full shape of the book in view, go back through your margin notes and write them out in a dedicated tool. Expand single-word reactions into full sentences and map the connections between ideas you spotted in different chapters. You are converting rough impressions into a coherent account of what you actually think about the work.
+
+**Phase 3: Atomic notes for long-term retrieval.** From the expanded notes, distill the ideas that matter most. Each atomic note states one idea completely enough that you will understand it months later without reopening the book. This step is what turns a reading record into a knowledge base.
+
+There is a cost worth naming. Optimizing for volume, chasing hundreds of books a year, works against building real wisdom, because depth, repetition, and time to ruminate are what produce lasting understanding. The three-phase system runs slow on purpose, since slow comprehension is the entire point.
+
+## Turning Book Notes into Knowledge That Stays
+
+Doing all of this by hand has one gap that never quite closes. You build a careful stack of atomic notes from a hard book, and then they sit there. Six months later the insight you worked to extract has faded, and short of rereading the whole book, there is no reliable way to bring it back at the moment you are about to forget it.
+
+Picture the same notes feeding a review schedule instead. Each atomic idea resurfaces right before it slips, so the framework you built from a difficult book stays live in your head across months without you rereading a single chapter.
+
+That loop is what Fluxo is built around. You write your own notes inside its spaces and topics, and it generates flashcards, quizzes, and summaries from what you wrote, then schedules those cards with spaced repetition so the ideas resurface over time. It can also suggest adjacent topics when you want somewhere to go after a book. Fluxo will not write your notes for you: the learning and the writing stay yours, and the AI works only from your material, never from pre-built decks or ready-made courses. Write one note from the book you are reading now, let Fluxo turn it into a card, and watch it come back when it matters: https://fluxo.today

@@ -1,31 +1,49 @@
 {
   "schemaVersion": 1,
-  "rebuildId": "019fb2c5-4441-77f8-973e-1304260bf4c8",
+  "rebuildId": "019fbe50-982a-77a8-a390-685ab006e9e1",
   "applicationId": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
   "posts": [
     {
-      "draftId": "019fabd6-77dc-70a3-98d8-c3a130a3151a",
+      "draftId": "019fbb5b-05f5-71d8-be1b-9f49d0988b03",
       "locale": "en",
-      "slug": "how-to-remember-what-you-read-and-actually-retain-it",
-      "path": "src/content/blog/generated/en/how-to-remember-what-you-read-and-actually-retain-it.md"
+      "slug": "active-recall-why-retrieval-beats-re-reading",
+      "path": "src/content/blog/generated/en/active-recall-why-retrieval-beats-re-reading.md",
+      "includedInRebuild": true
     },
     {
       "draftId": "019fb10a-53d8-770e-8672-9dc3c2f3f5a4",
       "locale": "en",
       "slug": "chatgpt-for-learning-without-losing-your-skills",
-      "path": "src/content/blog/generated/en/chatgpt-for-learning-without-losing-your-skills.md"
+      "path": "src/content/blog/generated/en/chatgpt-for-learning-without-losing-your-skills.md",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "019fbb50-6290-7442-8da5-156bd8c6128f",
+      "locale": "en",
+      "slug": "how-to-make-a-study-schedule-that-actually-works",
+      "path": "src/content/blog/generated/en/how-to-make-a-study-schedule-that-actually-works.md",
+      "includedInRebuild": true
     },
     {
       "draftId": "019fb106-a552-7258-852c-a7a6eff0cb6f",
       "locale": "en",
       "slug": "how-to-study-effectively-for-long-term-retention",
-      "path": "src/content/blog/generated/en/how-to-study-effectively-for-long-term-retention.md"
+      "path": "src/content/blog/generated/en/how-to-study-effectively-for-long-term-retention.md",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "019fbb63-1c27-7354-99f5-d160ac9e0994",
+      "locale": "en",
+      "slug": "how-to-take-notes-from-a-book-you-actually-retain",
+      "path": "src/content/blog/generated/en/how-to-take-notes-from-a-book-you-actually-retain.md",
+      "includedInRebuild": true
     },
     {
       "draftId": "019fb111-3baf-73c9-8cd0-ca3545257ede",
       "locale": "en",
       "slug": "the-study-workflow-that-turns-notes-into-applied-knowledge",
-      "path": "src/content/blog/generated/en/the-study-workflow-that-turns-notes-into-applied-knowledge.md"
+      "path": "src/content/blog/generated/en/the-study-workflow-that-turns-notes-into-applied-knowledge.md",
+      "includedInRebuild": false
     }
   ]
 }

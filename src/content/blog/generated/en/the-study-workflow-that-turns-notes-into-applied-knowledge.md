@@ -7,21 +7,9 @@ pageType: "how_to"
 title: "The Study Workflow That Turns Notes Into Applied Knowledge"
 metaDescription: "Most study workflows plateau at understanding and never reach application. This guide shows how to write to think, build atomic notes, and use spaced repetition to reach the knowledge tier that actually transfers to real problems."
 createdAt: "2026-07-30T03:28:44.598Z"
+modifiedAt: "2026-07-30T03:28:44.598Z"
 translationGroupId: "019fb111-3baf-73c9-8cd0-ca3545257ede"
 heroImage: "/assets/card-11.webp"
-relatedPosts:
-  - href: "/blog/how-to-study-effectively-for-long-term-retention/"
-    title: "How to Study Effectively for Long-Term Retention"
-    metaDescription: "Stop relearning the same material. These cognitive science principles for how to study effectively build durable memories from the first pass, for self-directed learners."
-    heroImage: "/assets/card-10.webp"
-  - href: "/blog/how-to-remember-what-you-read-and-actually-retain-it/"
-    title: "How to Remember What You Read (and Actually Retain It) Test"
-    metaDescription: "Paper reading consistently outperforms screens for comprehension of informational text. Learn why the gap exists, what drives it, and how structured notes with spaced repetition close it for good."
-    heroImage: "/assets/card-9.webp"
-  - href: "/blog/chatgpt-for-learning-without-losing-your-skills/"
-    title: "ChatGPT for Learning Without Losing Your Skills"
-    metaDescription: "Using ChatGPT for learning without losing skill requires two practical rules grounded in cognitive science. Here's the research, the framework, and a workflow that keeps independent practice yours."
-    heroImage: "/assets/card-8.webp"
 faq:
   - question: "What makes atomic notes more effective than regular notes?"
     answer: "Atomic notes capture exactly one idea per note, making each note unambiguous and reusable across contexts. When you link atomic notes together, you surface relationships between ideas that no single comprehensive note could hold. The discipline of writing atomically also trains you to notice and capture ideas you would otherwise skip. Regular notes tend to bundle multiple ideas together, which makes them harder to reuse and harder to connect."
@@ -49,6 +37,7 @@ sources:
     url: "https://www.youtube.com/watch?v=suevuKwTMcU"
     creator: "Odysseas"
     publishedAt: "2026-07-08T19:58:21.000Z"
+relatedPosts: []
 ---
 ## Where These Ideas Come From
 
