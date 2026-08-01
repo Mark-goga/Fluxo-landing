@@ -50,28 +50,52 @@ relatedPosts:
     metaDescription: "Du willst etwas Neues lernen. Eine Sprache, eine Fähigkeit, ein Fach, das für deine Karriere oder einfach für dich wichtig ist. Und du hast vielleicht 45 Minuten am Tag, wenn alles glattläuft."
     heroImage: "/assets/card-5.webp"
 ---
-        <p>Das ist kein Gedächtnisproblem. Es ist ein Systemproblem. Die meisten konsumieren Informationen, ohne einen Prozess aufzubauen, sie wirklich zu behalten. Hier ist, was die Wissenschaft sagt – und was funktioniert.</p>
-        <hr class="article-rule" />
-        <h2>Warum du so schnell vergisst</h2>
-        <p>1885 wurde der deutsche Psychologe Hermann Ebbinghaus zum Ersten, der Gedächtnis wissenschaftlich erforschte. Er lernte über Jahre Listen sinnloser Silben auswendig und maß, wie schnell er sie nach verschiedenen Zeitabständen wieder abrufen konnte. Sein Befund wurde als <strong>Vergessenskurve</strong> bekannt: Das Gedächtnis fällt direkt nach dem Lernen steil ab und flacht dann aus. Ohne jede Wiederholung vergessen wir 50 bis 70 % neuer Informationen innerhalb eines einzigen Tages.</p>
-        <p>2015 veröffentlichten Murre und Dros eine direkte Replikation von Ebbinghaus' Originalexperimenten in <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4492928/" target="_blank" rel="noopener">PLOS ONE</a> und kamen über 130 Jahre später auf nahezu identische Zahlen. Es ist einer der am häufigsten replizierten Befunde der kognitiven Psychologie.</p>
-        <p>Die Kurve ist keine persönliche Schwäche. So funktioniert das Gehirn einfach im Standardmodus. Die gute Nachricht: Drei Techniken wirken direkt entgegen.</p>
-        <hr class="article-rule" />
-        <h2>3 Techniken, die wirklich funktionieren</h2>
-        <h3>1. Aktives Abrufen</h3>
-        <p>Statt deine Notizen wiederzulesen, schließe sie und versuche, die Information aus dem Gedächtnis zu holen. Schon das Bemühen, sich zu erinnern, stärkt neuronale Verbindungen mehr als passives Wiederholen.</p>
-        <p>2006 führten Henry Roediger und Jeffrey Karpicke an der Washington University ein heute klassisches Experiment durch. Lernende lasen einen Text entweder mehrmals durch oder testeten sich daran. In einem unmittelbaren Test schnitt das Wiederlesen leicht besser ab. Aber eine Woche später behielt die Selbsttest-Gruppe deutlich mehr. Ihre Arbeit <a href="https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x" target="_blank" rel="noopener">Test-Enhanced Learning</a> in <em>Psychological Science</em> kam zum Schluss: Sich selbst zu testen ist nicht nur eine Art zu prüfen, was du weißt. Es ist eine der wirksamsten Arten, überhaupt zu lernen.</p>
-        <h3>2. Verteiltes Wiederholen</h3>
-        <p>Stoff genau dann zu wiederholen, wenn du ihn fast vergisst, wirkt weit besser als ihn mehrmals am selben Tag durchzugehen. Forschende nennen das den Spacing-Effekt, und er wird seit über einem Jahrhundert untersucht.</p>
-        <p>2006 veröffentlichten Nicholas Cepeda und Kollegen an der UC San Diego eine <a href="https://www.yorku.ca/ncepeda/publications/CPVWR2006.html" target="_blank" rel="noopener">Metaanalyse von 254 Studien</a> mit über 14.000 Beobachtungen im <em>Psychological Bulletin</em>. Der Befund war klar: Übung in der Zeit zu verteilen brachte durchgehend bessere Langzeit-Retention als dieselbe Übungsmenge in einer einzigen Sitzung zu pauken. Der richtige Abstand zwischen Wiederholungen hängt davon ab, wie lange du den Stoff behalten willst. Je länger das Ziel, desto länger die Intervalle.</p>
-        <h3>3. Elaborative Interrogation</h3>
-        <p>Wenn du etwas Neues lernst, frage dich, <em>warum</em> es stimmt und wie es mit dem zusammenhängt, was du schon weißt. Das erzwingt tiefere Verarbeitung und verankert neues Wissen am bestehenden, statt es isoliert zu lassen. Eine <a href="https://journals.sagepub.com/doi/10.1177/1529100612453266" target="_blank" rel="noopener">Übersicht von 2013 von Dunlosky und Kollegen</a> an der Kent State zählte sie zu den wirksamsten Lernstrategien – neben Abruf-Praxis und verteiltem Wiederholen.</p>
-        <hr class="article-rule" />
-        <h2>Warum die meisten alle drei auslassen</h2>
-        <p>Weil es schmerzhaft ist, sie manuell zu machen.</p>
-        <p>Im Blick zu behalten, was wann zu wiederholen ist, über mehrere Themen, Artikel und Notizen, wird schnell zur Pflicht, die die meisten innerhalb einer Woche fallen lassen. Die Techniken wirken. Die Reibung drumherum nicht.</p>
-        <hr class="article-rule" />
-        <h2>Der einfachere Weg</h2>
-        <p><strong><a href="/de/">Fluxo</a></strong> ist genau um diese drei Prinzipien gebaut. Du speicherst, was du lernst – Artikel, Notizen, Vokabeln, Ideen – und ordnest nach Thema. Die KI erzeugt eine schnelle Zusammenfassung, damit du den Stoff schneller verstehst. Dann plant Fluxo kurze Trainingseinheiten in den richtigen Intervallen, sodass du jedes Element wiederholst, wenn dein Gehirn es wirklich braucht.</p>
-        <p>Keine Tabellen. Kein manuelles Tracking. Nur 5 bis 15 Minuten am Tag – und du behältst tatsächlich, was du lernst.</p>
-        <p>Die Wissenschaft ist seit über einem Jahrhundert klar. Das Schwierige war immer, es beständig zu tun. Genau dieses Problem löst Fluxo.</p>
+Das ist kein Gedächtnisproblem. Es ist ein Systemproblem. Die meisten konsumieren Informationen, ohne einen Prozess aufzubauen, sie wirklich zu behalten. Hier ist, was die Wissenschaft sagt – und was funktioniert.
+
+---
+
+## Warum du so schnell vergisst
+
+1885 wurde der deutsche Psychologe Hermann Ebbinghaus zum Ersten, der Gedächtnis wissenschaftlich erforschte. Er lernte über Jahre Listen sinnloser Silben auswendig und maß, wie schnell er sie nach verschiedenen Zeitabständen wieder abrufen konnte. Sein Befund wurde als **Vergessenskurve** bekannt: Das Gedächtnis fällt direkt nach dem Lernen steil ab und flacht dann aus. Ohne jede Wiederholung vergessen wir 50 bis 70 % neuer Informationen innerhalb eines einzigen Tages.
+
+2015 veröffentlichten Murre und Dros eine direkte Replikation von Ebbinghaus' Originalexperimenten in [PLOS ONE](https://pmc.ncbi.nlm.nih.gov/articles/PMC4492928/) und kamen über 130 Jahre später auf nahezu identische Zahlen. Es ist einer der am häufigsten replizierten Befunde der kognitiven Psychologie.
+
+Die Kurve ist keine persönliche Schwäche. So funktioniert das Gehirn einfach im Standardmodus. Die gute Nachricht: Drei Techniken wirken direkt entgegen.
+
+---
+
+## 3 Techniken, die wirklich funktionieren
+
+### 1. Aktives Abrufen
+
+Statt deine Notizen wiederzulesen, schließe sie und versuche, die Information aus dem Gedächtnis zu holen. Schon das Bemühen, sich zu erinnern, stärkt neuronale Verbindungen mehr als passives Wiederholen.
+
+2006 führten Henry Roediger und Jeffrey Karpicke an der Washington University ein heute klassisches Experiment durch. Lernende lasen einen Text entweder mehrmals durch oder testeten sich daran. In einem unmittelbaren Test schnitt das Wiederlesen leicht besser ab. Aber eine Woche später behielt die Selbsttest-Gruppe deutlich mehr. Ihre Arbeit [Test-Enhanced Learning](https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x) in *Psychological Science* kam zum Schluss: Sich selbst zu testen ist nicht nur eine Art zu prüfen, was du weißt. Es ist eine der wirksamsten Arten, überhaupt zu lernen.
+
+### 2. Verteiltes Wiederholen
+
+Stoff genau dann zu wiederholen, wenn du ihn fast vergisst, wirkt weit besser als ihn mehrmals am selben Tag durchzugehen. Forschende nennen das den Spacing-Effekt, und er wird seit über einem Jahrhundert untersucht.
+
+2006 veröffentlichten Nicholas Cepeda und Kollegen an der UC San Diego eine [Metaanalyse von 254 Studien](https://www.yorku.ca/ncepeda/publications/CPVWR2006.html) mit über 14.000 Beobachtungen im *Psychological Bulletin*. Der Befund war klar: Übung in der Zeit zu verteilen brachte durchgehend bessere Langzeit-Retention als dieselbe Übungsmenge in einer einzigen Sitzung zu pauken. Der richtige Abstand zwischen Wiederholungen hängt davon ab, wie lange du den Stoff behalten willst. Je länger das Ziel, desto länger die Intervalle.
+
+### 3. Elaborative Interrogation
+
+Wenn du etwas Neues lernst, frage dich, *warum* es stimmt und wie es mit dem zusammenhängt, was du schon weißt. Das erzwingt tiefere Verarbeitung und verankert neues Wissen am bestehenden, statt es isoliert zu lassen. Eine [Übersicht von 2013 von Dunlosky und Kollegen](https://journals.sagepub.com/doi/10.1177/1529100612453266) an der Kent State zählte sie zu den wirksamsten Lernstrategien – neben Abruf-Praxis und verteiltem Wiederholen.
+
+---
+
+## Warum die meisten alle drei auslassen
+
+Weil es schmerzhaft ist, sie manuell zu machen.
+
+Im Blick zu behalten, was wann zu wiederholen ist, über mehrere Themen, Artikel und Notizen, wird schnell zur Pflicht, die die meisten innerhalb einer Woche fallen lassen. Die Techniken wirken. Die Reibung drumherum nicht.
+
+---
+
+## Der einfachere Weg
+
+**[Fluxo](/de/)** ist genau um diese drei Prinzipien gebaut. Du speicherst, was du lernst – Artikel, Notizen, Vokabeln, Ideen – und ordnest nach Thema. Die KI erzeugt eine schnelle Zusammenfassung, damit du den Stoff schneller verstehst. Dann plant Fluxo kurze Trainingseinheiten in den richtigen Intervallen, sodass du jedes Element wiederholst, wenn dein Gehirn es wirklich braucht.
+
+Keine Tabellen. Kein manuelles Tracking. Nur 5 bis 15 Minuten am Tag – und du behältst tatsächlich, was du lernst.
+
+Die Wissenschaft ist seit über einem Jahrhundert klar. Das Schwierige war immer, es beständig zu tun. Genau dieses Problem löst Fluxo.

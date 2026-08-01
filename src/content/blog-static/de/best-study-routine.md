@@ -50,23 +50,42 @@ relatedPosts:
     metaDescription: "Ob du eine Fremdsprache lernst, Fachbegriffe für einen neuen Job aufnimmst oder Fachwissen in Medizin, Recht oder Design aufbaust – Vokabular ist die Grundlage."
     heroImage: "/assets/card-2.png"
 ---
-        <p>Eine echte Lernroutine ist darauf ausgelegt, wie das Gehirn Informationen kodiert und speichert. Der Zeitplan zählt. Und was du in jeder Sitzung tust, ebenso.</p>
-        <hr class="article-rule" />
-        <h2>Was eine Routine wirklich funktionieren lässt</h2>
-        <p><strong>Beständigkeit schlägt Dauer</strong></p>
-        <p>Eine Stunde am Tag, jeden Tag, schlägt eine sechsstündige Sitzung am Sonntag. Das ist kein Motivationsspruch – so funktioniert die Gedächtniskonsolidierung. Schlaf spielt eine zentrale Rolle dabei, Informationen vom Kurzzeit- ins Langzeitgedächtnis zu überführen, und dieser Prozess braucht Zeit zwischen den Sitzungen. Wenn du Stoff über mehrere Tage verteilst, hat dein Gehirn wiederholt die Chance, ihn zu festigen.</p>
-        <p><strong>Passe die Sitzung der kognitiven Anforderung an</strong></p>
-        <p>Nicht alle Aufgaben sind gleich. Etwas Neues zu lernen verlangt mehr kognitive Anstrengung als das Wiederholen von Stoff, den du schon teilweise kennst. Forschung zu zirkadianen Rhythmen zeigt, dass die meisten Menschen ihren natürlichen Höhepunkt bei Aufmerksamkeit und Arbeitsgedächtnis am späten Vormittag haben. Wenn du dieses Fenster für deinen schwierigsten Stoff reservierst und leichteres Wiederholen in Phasen mit weniger Energie legst, wird dieselbe Zeit effektiver.</p>
-        <p><strong>Nutze Umsetzungsabsichten</strong></p>
-        <p>Peter Gollwitzers Forschung an der NYU, <a href="https://doi.org/10.1002/ejsp.345" target="_blank" rel="noopener">zusammengefasst in einer Metaanalyse von 2006 mit Sheeran</a>, zeigte einen mittleren bis großen Effekt auf das Erreichen von Zielen, wenn Menschen konkrete „Wenn-dann"-Pläne formulierten: „Wenn es 20 Uhr an einem Wochentag ist, mache ich 20 Minuten Wiederholung am Schreibtisch." Die Konkretheit nimmt dir die tägliche Entscheidung ab, ob und wann du lernst. Du verhandelst nicht mit dir selbst – du folgst einfach dem Plan.</p>
-        <hr class="article-rule" />
-        <h2>Eine einfache Struktur, die funktioniert</h2>
-        <p>Eine Routine, die auf diesen Prinzipien aufbaut, hat drei Teile:</p>
-        <p><strong>Morgens (10 bis 20 Minuten):</strong> Wiederhole, was du gestern gelernt hast, bevor dein Gehirn ganz im Tag ankommt. Das ist die Zeit, in der verteiltes Wiederholen am besten wirkt – der Stoff wurde gerade über Nacht konsolidiert, und Wiederholung jetzt setzt ein längeres Intervall bis zum nächsten Mal.</p>
-        <p><strong>Block aktives Lernen (25 bis 45 Minuten):</strong> Das ist deine Hauptsitzung. Neuer Stoff, schwierige Themen, etwas in eigenen Worten formulieren oder Aufgaben lösen. Kein Wiederlesen. Teste dich selbst, fasse aus dem Gedächtnis zusammen, verknüpfe Ideen.</p>
-        <p><strong>Tagesabschluss (5 Minuten):</strong> Notiere alles Neue vom Tag, was es wert ist, festgehalten zu werden. Ein Begriff, ein Konzept, ein Aha-Moment aus einem Meeting. Das dauert fünf Minuten und hält den Input-Strom offen, ohne eine weitere komplette Lernsitzung zu verlangen.</p>
-        <hr class="article-rule" />
-        <h2>Der Teil, den die meisten Routinen auslassen</h2>
-        <p>Den Zeitplan zu bauen ist der leichte Teil. Schwierig ist das System, das zwischen den Sitzungen läuft. Zu wissen, was morgen dran ist, im Blick zu behalten, was fällig ist, und älteren Stoff nicht entgleiten zu lassen.</p>
-        <p><strong><a href="/de/">Fluxo</a></strong> erledigt das automatisch. Du konzentrierst dich aufs Lernen. Fluxo verfolgt, was wann zu wiederholen ist, sodass deine Routine beständig bleibt, ohne dass du sie manuell verwalten musst.</p>
-        <p>Eine gute Lernroutine muss nicht kompliziert sein. Sie muss beständig sein und darauf aufbauen, wie das Gehirn tatsächlich arbeitet.</p>
+Eine echte Lernroutine ist darauf ausgelegt, wie das Gehirn Informationen kodiert und speichert. Der Zeitplan zählt. Und was du in jeder Sitzung tust, ebenso.
+
+---
+
+## Was eine Routine wirklich funktionieren lässt
+
+**Beständigkeit schlägt Dauer**
+
+Eine Stunde am Tag, jeden Tag, schlägt eine sechsstündige Sitzung am Sonntag. Das ist kein Motivationsspruch – so funktioniert die Gedächtniskonsolidierung. Schlaf spielt eine zentrale Rolle dabei, Informationen vom Kurzzeit- ins Langzeitgedächtnis zu überführen, und dieser Prozess braucht Zeit zwischen den Sitzungen. Wenn du Stoff über mehrere Tage verteilst, hat dein Gehirn wiederholt die Chance, ihn zu festigen.
+
+**Passe die Sitzung der kognitiven Anforderung an**
+
+Nicht alle Aufgaben sind gleich. Etwas Neues zu lernen verlangt mehr kognitive Anstrengung als das Wiederholen von Stoff, den du schon teilweise kennst. Forschung zu zirkadianen Rhythmen zeigt, dass die meisten Menschen ihren natürlichen Höhepunkt bei Aufmerksamkeit und Arbeitsgedächtnis am späten Vormittag haben. Wenn du dieses Fenster für deinen schwierigsten Stoff reservierst und leichteres Wiederholen in Phasen mit weniger Energie legst, wird dieselbe Zeit effektiver.
+
+**Nutze Umsetzungsabsichten**
+
+Peter Gollwitzers Forschung an der NYU, [zusammengefasst in einer Metaanalyse von 2006 mit Sheeran](https://doi.org/10.1002/ejsp.345), zeigte einen mittleren bis großen Effekt auf das Erreichen von Zielen, wenn Menschen konkrete „Wenn-dann"-Pläne formulierten: „Wenn es 20 Uhr an einem Wochentag ist, mache ich 20 Minuten Wiederholung am Schreibtisch." Die Konkretheit nimmt dir die tägliche Entscheidung ab, ob und wann du lernst. Du verhandelst nicht mit dir selbst – du folgst einfach dem Plan.
+
+---
+
+## Eine einfache Struktur, die funktioniert
+
+Eine Routine, die auf diesen Prinzipien aufbaut, hat drei Teile:
+
+**Morgens (10 bis 20 Minuten):** Wiederhole, was du gestern gelernt hast, bevor dein Gehirn ganz im Tag ankommt. Das ist die Zeit, in der verteiltes Wiederholen am besten wirkt – der Stoff wurde gerade über Nacht konsolidiert, und Wiederholung jetzt setzt ein längeres Intervall bis zum nächsten Mal.
+
+**Block aktives Lernen (25 bis 45 Minuten):** Das ist deine Hauptsitzung. Neuer Stoff, schwierige Themen, etwas in eigenen Worten formulieren oder Aufgaben lösen. Kein Wiederlesen. Teste dich selbst, fasse aus dem Gedächtnis zusammen, verknüpfe Ideen.
+
+**Tagesabschluss (5 Minuten):** Notiere alles Neue vom Tag, was es wert ist, festgehalten zu werden. Ein Begriff, ein Konzept, ein Aha-Moment aus einem Meeting. Das dauert fünf Minuten und hält den Input-Strom offen, ohne eine weitere komplette Lernsitzung zu verlangen.
+
+---
+
+## Der Teil, den die meisten Routinen auslassen
+
+Den Zeitplan zu bauen ist der leichte Teil. Schwierig ist das System, das zwischen den Sitzungen läuft. Zu wissen, was morgen dran ist, im Blick zu behalten, was fällig ist, und älteren Stoff nicht entgleiten zu lassen.
+
+**[Fluxo](/de/)** erledigt das automatisch. Du konzentrierst dich aufs Lernen. Fluxo verfolgt, was wann zu wiederholen ist, sodass deine Routine beständig bleibt, ohne dass du sie manuell verwalten musst.
+
+Eine gute Lernroutine muss nicht kompliziert sein. Sie muss beständig sein und darauf aufbauen, wie das Gehirn tatsächlich arbeitet.

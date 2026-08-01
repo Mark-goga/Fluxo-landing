@@ -50,30 +50,50 @@ relatedPosts:
     metaDescription: "Die meisten bauen ihre Lernroutine falsch auf. Sie wählen eine Uhrzeit, schlagen ihre Notizen auf und beginnen zu lesen. Das ist keine Routine. Das ist nur die Angewohnheit, neben einem Buch zu sitzen."
     heroImage: "/assets/card-1.png"
 ---
-        <p>Die Frage ist, welche Methode wirklich funktioniert und warum die meisten es nicht tun.</p>
-        <hr class="article-rule" />
-        <h2>Warum stures Auswendiglernen versagt</h2>
-        <p>Ein Wort zehnmal zu schreiben und zu hoffen, dass es hängen bleibt, ist ungefähr so effektiv wie es zehnmal zu lesen. Beides ist passiv. Dein Gehirn legt die Information als wenig wichtig ab, weil du nichts Forderndes mit ihr getan hast.</p>
-        <p>Die Illusion des Fortschritts ist Teil des Problems. Nach genug Wiederholungen wirkt ein Wort vertraut. Vertrautheit fühlt sich wie Wissen an. Aber Vertrautheit aktiviert nur Wiedererkennen, nicht Abrufen. Du erkennst das Wort vielleicht, wenn du es siehst, und hast keine Ahnung, was es bedeutet, wenn du es produzieren sollst.</p>
-        <hr class="article-rule" />
-        <h2>Was die Forschung zeigt</h2>
-        <p><strong>Verteiltes Wiederholen ist die effektivste Methode für Vokabel-Retention</strong></p>
-        <p>Eine Metaanalyse von 2022 von Kim und Webb, veröffentlicht in <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/lang.12479" target="_blank" rel="noopener"><em>Language Learning</em></a>, untersuchte 48 Experimente mit über 3.400 Teilnehmenden, die Vokabular einer Zweitsprache lernten. Der Befund war klar: Verteiltes Üben übertraf massiertes Üben durchgehend bei der langfristigen Retention. Wörter in wachsenden Intervallen zu wiederholen statt in einem Rutsch erzeugt mit der Zeit deutlich besseren Abruf.</p>
-        <p><strong>Aktives Abrufen schlägt passive Aufnahme</strong></p>
-        <p>Ein Wort und seine Definition zu sehen, ist passiv. Die Definition gezeigt zu bekommen und das Wort produzieren zu müssen, ist aktiv. Diese Abrufanstrengung – selbst wenn du daneben liegst – baut eine stärkere Gedächtnisspur auf als jede Menge passives Wiederholen. Das ist derselbe Test-Effekt, den <a href="https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x" target="_blank" rel="noopener">Roediger und Karpicke</a> dokumentiert haben und der für jedes Lernen gilt – beim Vokabular ist er besonders kraftvoll.</p>
-        <p><strong>Kontext zählt</strong></p>
-        <p>Einzelne Karteikarten wirken besser als das Wiederlesen von Wortlisten, aber sie wirken noch besser, wenn das Wort mit etwas Bedeutungsvollem verknüpft ist – einem Beispielsatz, einem realen Anwendungsfall, einem Konzept, das du bereits verstehst. Im Kontext gelernter Wortschatz hält länger und ist nutzbarer als Wortschatz, den du als abstraktes Symbol lernst.</p>
-        <hr class="article-rule" />
-        <h2>Praktische Anwendung</h2>
-        <p>Der beste Ansatz verbindet alle drei:</p>
-        <ol>
-          <li>Lerne das Wort mit Kontext, nicht nur mit einer Definition</li>
-          <li>Teste dich daran ab der ersten Sitzung, bevor du dich bereit fühlst</li>
-          <li>Wiederhole es in wachsenden Intervallen, nicht alles auf einmal</li>
-        </ol>
-        <p>Das gilt für jeden Wortschatz – nicht nur für Fremdsprachen. Fachbegriffe, Fachkonzepte und Berufsjargon folgen denselben Regeln.</p>
-        <hr class="article-rule" />
-        <h2>So bleibt es hängen, ohne dass es zur Last wird</h2>
-        <p>Das Schwierige ist nicht, die Methode zu kennen. Sondern das System des verteilten Wiederholens über Hunderte von Wörtern aufrechtzuerhalten, ohne dass es zu einem Vollzeitjob wird.</p>
-        <p><strong><a href="/de/">Fluxo</a></strong> übernimmt das automatisch. Du fügst Vokabeln deinem Raum hinzu – Wörter, Definitionen, Kontextsätze – und Fluxo plant deine Wiederholungen. Du verbringst ein paar Minuten am Tag mit Abrufübungen, und das System verfolgt, welche Wörter sitzen und welche mehr Aufmerksamkeit brauchen.</p>
-        <p>Die Wissenschaft zur Vokabel-Retention ist klar. Was meist scheitert, ist die Umsetzung. Fluxo macht die Umsetzung automatisch.</p>
+Die Frage ist, welche Methode wirklich funktioniert und warum die meisten es nicht tun.
+
+---
+
+## Warum stures Auswendiglernen versagt
+
+Ein Wort zehnmal zu schreiben und zu hoffen, dass es hängen bleibt, ist ungefähr so effektiv wie es zehnmal zu lesen. Beides ist passiv. Dein Gehirn legt die Information als wenig wichtig ab, weil du nichts Forderndes mit ihr getan hast.
+
+Die Illusion des Fortschritts ist Teil des Problems. Nach genug Wiederholungen wirkt ein Wort vertraut. Vertrautheit fühlt sich wie Wissen an. Aber Vertrautheit aktiviert nur Wiedererkennen, nicht Abrufen. Du erkennst das Wort vielleicht, wenn du es siehst, und hast keine Ahnung, was es bedeutet, wenn du es produzieren sollst.
+
+---
+
+## Was die Forschung zeigt
+
+**Verteiltes Wiederholen ist die effektivste Methode für Vokabel-Retention**
+
+Eine Metaanalyse von 2022 von Kim und Webb, veröffentlicht in [*Language Learning*](https://onlinelibrary.wiley.com/doi/abs/10.1111/lang.12479), untersuchte 48 Experimente mit über 3.400 Teilnehmenden, die Vokabular einer Zweitsprache lernten. Der Befund war klar: Verteiltes Üben übertraf massiertes Üben durchgehend bei der langfristigen Retention. Wörter in wachsenden Intervallen zu wiederholen statt in einem Rutsch erzeugt mit der Zeit deutlich besseren Abruf.
+
+**Aktives Abrufen schlägt passive Aufnahme**
+
+Ein Wort und seine Definition zu sehen, ist passiv. Die Definition gezeigt zu bekommen und das Wort produzieren zu müssen, ist aktiv. Diese Abrufanstrengung – selbst wenn du daneben liegst – baut eine stärkere Gedächtnisspur auf als jede Menge passives Wiederholen. Das ist derselbe Test-Effekt, den [Roediger und Karpicke](https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x) dokumentiert haben und der für jedes Lernen gilt – beim Vokabular ist er besonders kraftvoll.
+
+**Kontext zählt**
+
+Einzelne Karteikarten wirken besser als das Wiederlesen von Wortlisten, aber sie wirken noch besser, wenn das Wort mit etwas Bedeutungsvollem verknüpft ist – einem Beispielsatz, einem realen Anwendungsfall, einem Konzept, das du bereits verstehst. Im Kontext gelernter Wortschatz hält länger und ist nutzbarer als Wortschatz, den du als abstraktes Symbol lernst.
+
+---
+
+## Praktische Anwendung
+
+Der beste Ansatz verbindet alle drei:
+
+1. Lerne das Wort mit Kontext, nicht nur mit einer Definition
+1. Teste dich daran ab der ersten Sitzung, bevor du dich bereit fühlst
+1. Wiederhole es in wachsenden Intervallen, nicht alles auf einmal
+
+Das gilt für jeden Wortschatz – nicht nur für Fremdsprachen. Fachbegriffe, Fachkonzepte und Berufsjargon folgen denselben Regeln.
+
+---
+
+## So bleibt es hängen, ohne dass es zur Last wird
+
+Das Schwierige ist nicht, die Methode zu kennen. Sondern das System des verteilten Wiederholens über Hunderte von Wörtern aufrechtzuerhalten, ohne dass es zu einem Vollzeitjob wird.
+
+**[Fluxo](/de/)** übernimmt das automatisch. Du fügst Vokabeln deinem Raum hinzu – Wörter, Definitionen, Kontextsätze – und Fluxo plant deine Wiederholungen. Du verbringst ein paar Minuten am Tag mit Abrufübungen, und das System verfolgt, welche Wörter sitzen und welche mehr Aufmerksamkeit brauchen.
+
+Die Wissenschaft zur Vokabel-Retention ist klar. Was meist scheitert, ist die Umsetzung. Fluxo macht die Umsetzung automatisch.

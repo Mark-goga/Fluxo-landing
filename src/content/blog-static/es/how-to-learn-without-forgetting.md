@@ -50,23 +50,42 @@ relatedPosts:
     metaDescription: "Cada año lees decenas de artículos, haces cursos, escuchas pódcasts y asistes a reuniones llenas de información útil. Y cada año, casi nada está disponible cuando de verdad lo necesitas."
     heroImage: "/assets/card-7.webp"
 ---
-        <p>Esto no es pereza. El cerebro no está hecho para retener información en bruto de forma indefinida. Almacena lo que usa y descarta lo que no. La pregunta no es cómo leer más. Es cómo hacer que tu cerebro trate la información nueva como algo que vale la pena conservar.</p>
-        <hr class="article-rule" />
-        <h2>El verdadero problema: el consumo pasivo parece aprendizaje</h2>
-        <p>Releer apuntes, subrayar texto, ver clases dos veces: todo eso parece productivo. La investigación muestra que en su mayoría no lo es.</p>
-        <p>Una revisión de 2019 publicada en <em>Frontiers in Education</em> resumió décadas de estudios en el aula: leer un texto una y otra vez crea una falsa sensación de familiaridad. Los estudiantes sienten que conocen el material porque les resulta familiar, pero ese reconocimiento no se traduce en evocación real cuando la necesitan. La familiaridad y la memoria son cosas distintas.</p>
-        <p>La solución exige procesamiento activo, no más exposición pasiva.</p>
-        <hr class="article-rule" />
-        <h2>Lo que de verdad evita el olvido</h2>
-        <p><strong>Ponte a prueba, no releas</strong></p>
-        <p>Lo más eficaz que puedes hacer es intentar evocar la información de memoria antes de sentirte listo. Se llama práctica de recuperación, y funciona porque el acto de extraer algo de la memoria, incluso cuando te cuesta, refuerza la vía neuronal que lo sostiene.</p>
-        <p>Roediger y Karpicke, de la Universidad de Washington, lo mostraron con claridad en <a href="https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x" target="_blank" rel="noopener">su estudio de 2006</a>: los estudiantes que se autoevaluaron tras leer retuvieron mucho más una semana después que quienes simplemente releyeron el mismo material, aunque ambos grupos dedicaron el mismo tiempo total.</p>
-        <p><strong>Espacia tus repasos</strong></p>
-        <p>Repasar algo una vez y seguir adelante casi garantiza que lo olvidarás. Repasarlo de nuevo justo antes de que se desvanezca —y luego otra vez a un intervalo más largo— es lo que de verdad construye la retención a largo plazo. El <a href="https://www.yorku.ca/ncepeda/publications/CPVWR2006.html" target="_blank" rel="noopener">metaanálisis de 254 estudios de Cepeda et al.</a>, publicado en <em>Psychological Bulletin</em>, confirmó que distribuir la práctica en el tiempo supera de forma constante a cualquier cantidad de estudio intensivo de última hora.</p>
-        <p><strong>Conecta el conocimiento nuevo con lo que ya sabes</strong></p>
-        <p>Cuando aprendas algo, pregúntate cómo se relaciona con lo que ya entiendes. Esto obliga a tu cerebro a procesar la información nueva con más profundidad, en vez de almacenarla como un dato aislado. Dunlosky y sus colegas en Kent State situaron esta técnica —la interrogación elaborativa— entre las <a href="https://journals.sagepub.com/doi/10.1177/1529100612453266" target="_blank" rel="noopener">estrategias de aprendizaje más eficaces</a> en su revisión de 2013.</p>
-        <hr class="article-rule" />
-        <h2>El problema de la constancia</h2>
-        <p>Estas tres técnicas funcionan. El problema es aplicarlas con constancia en cada tema que aprendes, sin olvidar qué hay que repasar y cuándo.</p>
-        <p><strong><a href="/es/">Fluxo</a></strong> se encarga de la parte del sistema. Capturas lo que estás aprendiendo, la IA extrae las ideas clave y Fluxo programa sesiones de repaso a los intervalos adecuados. Apareces 10 minutos, haces el trabajo y el resto funciona solo.</p>
-        <p>Aprender sin olvidar no es magia. Es un sistema. Y los sistemas funcionan mejor cuando no dependen solo de la fuerza de voluntad.</p>
+Esto no es pereza. El cerebro no está hecho para retener información en bruto de forma indefinida. Almacena lo que usa y descarta lo que no. La pregunta no es cómo leer más. Es cómo hacer que tu cerebro trate la información nueva como algo que vale la pena conservar.
+
+---
+
+## El verdadero problema: el consumo pasivo parece aprendizaje
+
+Releer apuntes, subrayar texto, ver clases dos veces: todo eso parece productivo. La investigación muestra que en su mayoría no lo es.
+
+Una revisión de 2019 publicada en *Frontiers in Education* resumió décadas de estudios en el aula: leer un texto una y otra vez crea una falsa sensación de familiaridad. Los estudiantes sienten que conocen el material porque les resulta familiar, pero ese reconocimiento no se traduce en evocación real cuando la necesitan. La familiaridad y la memoria son cosas distintas.
+
+La solución exige procesamiento activo, no más exposición pasiva.
+
+---
+
+## Lo que de verdad evita el olvido
+
+**Ponte a prueba, no releas**
+
+Lo más eficaz que puedes hacer es intentar evocar la información de memoria antes de sentirte listo. Se llama práctica de recuperación, y funciona porque el acto de extraer algo de la memoria, incluso cuando te cuesta, refuerza la vía neuronal que lo sostiene.
+
+Roediger y Karpicke, de la Universidad de Washington, lo mostraron con claridad en [su estudio de 2006](https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x): los estudiantes que se autoevaluaron tras leer retuvieron mucho más una semana después que quienes simplemente releyeron el mismo material, aunque ambos grupos dedicaron el mismo tiempo total.
+
+**Espacia tus repasos**
+
+Repasar algo una vez y seguir adelante casi garantiza que lo olvidarás. Repasarlo de nuevo justo antes de que se desvanezca —y luego otra vez a un intervalo más largo— es lo que de verdad construye la retención a largo plazo. El [metaanálisis de 254 estudios de Cepeda et al.](https://www.yorku.ca/ncepeda/publications/CPVWR2006.html), publicado en *Psychological Bulletin*, confirmó que distribuir la práctica en el tiempo supera de forma constante a cualquier cantidad de estudio intensivo de última hora.
+
+**Conecta el conocimiento nuevo con lo que ya sabes**
+
+Cuando aprendas algo, pregúntate cómo se relaciona con lo que ya entiendes. Esto obliga a tu cerebro a procesar la información nueva con más profundidad, en vez de almacenarla como un dato aislado. Dunlosky y sus colegas en Kent State situaron esta técnica —la interrogación elaborativa— entre las [estrategias de aprendizaje más eficaces](https://journals.sagepub.com/doi/10.1177/1529100612453266) en su revisión de 2013.
+
+---
+
+## El problema de la constancia
+
+Estas tres técnicas funcionan. El problema es aplicarlas con constancia en cada tema que aprendes, sin olvidar qué hay que repasar y cuándo.
+
+**[Fluxo](/es/)** se encarga de la parte del sistema. Capturas lo que estás aprendiendo, la IA extrae las ideas clave y Fluxo programa sesiones de repaso a los intervalos adecuados. Apareces 10 minutos, haces el trabajo y el resto funciona solo.
+
+Aprender sin olvidar no es magia. Es un sistema. Y los sistemas funcionan mejor cuando no dependen solo de la fuerza de voluntad.

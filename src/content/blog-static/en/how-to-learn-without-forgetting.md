@@ -50,32 +50,53 @@ relatedPosts:
     metaDescription: "Most people build a study routine the wrong way. They pick a time, open their notes, and start reading. That's not a routine. It's just a habit of sitting near a book."
     heroImage: "/assets/card-1.png"
 ---
-        <p>This isn't laziness. The brain isn't built to hold raw information indefinitely. It stores what it uses and discards what it doesn't. The question isn't how to read more. It's how to make your brain treat new information as worth keeping.</p>
-        <hr class="article-rule" />
-        <h2>The Real Problem: Passive Consumption Feels Like Learning</h2>
-        <p>Re-reading notes, highlighting text, watching lectures twice — these feel productive. Research shows they're mostly not.</p>
-        <p>A 2019 review published in <em>Frontiers in Education</em> summarized decades of classroom studies: reading a text over and over creates a false sense of familiarity. Students feel like they know the material because it looks familiar, but that recognition doesn't translate into actual recall when they need it. Familiarity and memory are different things, and most study habits optimize for the wrong one.</p>
-        <p>The fix requires active processing, not more passive exposure. That distinction sounds small, but it's the difference between knowledge that survives a week and knowledge that survives a year.</p>
-        <hr class="article-rule" />
-        <h2>What Actually Prevents Forgetting</h2>
-        <p>Four things work, and they reinforce each other:</p>
-        <ol>
-          <li>Test yourself instead of re-reading</li>
-          <li>Space your reviews out instead of cramming</li>
-          <li>Connect new knowledge to what you already know</li>
-          <li>Mix topics instead of studying one at a time</li>
-        </ol>
-        <p><strong>Test yourself, don't re-read</strong></p>
-        <p>The single most effective thing you can do is try to recall information from memory before you feel ready. This is called retrieval practice, and it works because the act of pulling something from memory, even when you struggle, strengthens the neural pathway that holds it.</p>
-        <p>Roediger and Karpicke at Washington University showed this clearly in <a href="https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x" target="_blank" rel="noopener">their 2006 study</a>: students who tested themselves after reading retained far more one week later than students who simply re-read the same material, even though both groups spent the same total time. Confidence and actual recall, it turns out, are weakly correlated at best.</p>
-        <p><strong>Space your reviews out</strong></p>
-        <p>Reviewing something once and moving on almost guarantees you'll forget it. Reviewing it again right before it fades — and then again at a longer interval — is what actually builds long-term retention. <a href="https://www.yorku.ca/ncepeda/publications/CPVWR2006.html" target="_blank" rel="noopener">Cepeda et al.'s meta-analysis of 254 studies</a>, published in <em>Psychological Bulletin</em>, confirmed that spreading practice over time consistently outperforms any amount of cramming, regardless of subject matter.</p>
-        <p><strong>Connect new knowledge to what you already know</strong></p>
-        <p>When you learn something, ask yourself how it relates to things you already understand. This forces your brain to process the new information more deeply, not just store it as an isolated fact. Dunlosky and colleagues at Kent State rated this — elaborative interrogation — among the <a href="https://journals.sagepub.com/doi/10.1177/1529100612453266" target="_blank" rel="noopener">most effective learning strategies</a> in their 2013 review.</p>
-        <p><strong>Mix what you're studying instead of focusing on one thing at a time</strong></p>
-        <p>It feels efficient to master one topic completely before moving to the next. Cognitive science says otherwise. Alternating between related topics forces your brain to actively distinguish between them and retrieve the right information each time, rather than coasting on short-term familiarity with whatever you just reviewed. This single-session comfort of blocked study is part of what makes it deceptive: it feels like progress while producing weaker long-term memory than the alternative.</p>
-        <hr class="article-rule" />
-        <h2>The Consistency Problem</h2>
-        <p>These techniques work. The problem is doing them consistently across every topic you're learning, without losing track of what needs to be reviewed and when. Most people who try to implement spaced repetition manually give up within two or three weeks. Not because the method failed, but because tracking it by hand becomes its own job.</p>
-        <p><strong><a href="/">Fluxo</a></strong> handles the system side. You capture what you're learning, the AI pulls out the key ideas, and Fluxo schedules review sessions at the right intervals, mixing topics so your brain keeps actively retrieving rather than passively recognizing. You show up for 10 minutes, do the work, and the rest runs itself.</p>
-        <p>Learning without forgetting isn't magic. It's a system. And systems work best when they don't depend on willpower alone.</p>
+This isn't laziness. The brain isn't built to hold raw information indefinitely. It stores what it uses and discards what it doesn't. The question isn't how to read more. It's how to make your brain treat new information as worth keeping.
+
+---
+
+## The Real Problem: Passive Consumption Feels Like Learning
+
+Re-reading notes, highlighting text, watching lectures twice — these feel productive. Research shows they're mostly not.
+
+A 2019 review published in *Frontiers in Education* summarized decades of classroom studies: reading a text over and over creates a false sense of familiarity. Students feel like they know the material because it looks familiar, but that recognition doesn't translate into actual recall when they need it. Familiarity and memory are different things, and most study habits optimize for the wrong one.
+
+The fix requires active processing, not more passive exposure. That distinction sounds small, but it's the difference between knowledge that survives a week and knowledge that survives a year.
+
+---
+
+## What Actually Prevents Forgetting
+
+Four things work, and they reinforce each other:
+
+1. Test yourself instead of re-reading
+1. Space your reviews out instead of cramming
+1. Connect new knowledge to what you already know
+1. Mix topics instead of studying one at a time
+
+**Test yourself, don't re-read**
+
+The single most effective thing you can do is try to recall information from memory before you feel ready. This is called retrieval practice, and it works because the act of pulling something from memory, even when you struggle, strengthens the neural pathway that holds it.
+
+Roediger and Karpicke at Washington University showed this clearly in [their 2006 study](https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x): students who tested themselves after reading retained far more one week later than students who simply re-read the same material, even though both groups spent the same total time. Confidence and actual recall, it turns out, are weakly correlated at best.
+
+**Space your reviews out**
+
+Reviewing something once and moving on almost guarantees you'll forget it. Reviewing it again right before it fades — and then again at a longer interval — is what actually builds long-term retention. [Cepeda et al.'s meta-analysis of 254 studies](https://www.yorku.ca/ncepeda/publications/CPVWR2006.html), published in *Psychological Bulletin*, confirmed that spreading practice over time consistently outperforms any amount of cramming, regardless of subject matter.
+
+**Connect new knowledge to what you already know**
+
+When you learn something, ask yourself how it relates to things you already understand. This forces your brain to process the new information more deeply, not just store it as an isolated fact. Dunlosky and colleagues at Kent State rated this — elaborative interrogation — among the [most effective learning strategies](https://journals.sagepub.com/doi/10.1177/1529100612453266) in their 2013 review.
+
+**Mix what you're studying instead of focusing on one thing at a time**
+
+It feels efficient to master one topic completely before moving to the next. Cognitive science says otherwise. Alternating between related topics forces your brain to actively distinguish between them and retrieve the right information each time, rather than coasting on short-term familiarity with whatever you just reviewed. This single-session comfort of blocked study is part of what makes it deceptive: it feels like progress while producing weaker long-term memory than the alternative.
+
+---
+
+## The Consistency Problem
+
+These techniques work. The problem is doing them consistently across every topic you're learning, without losing track of what needs to be reviewed and when. Most people who try to implement spaced repetition manually give up within two or three weeks. Not because the method failed, but because tracking it by hand becomes its own job.
+
+**[Fluxo](/)** handles the system side. You capture what you're learning, the AI pulls out the key ideas, and Fluxo schedules review sessions at the right intervals, mixing topics so your brain keeps actively retrieving rather than passively recognizing. You show up for 10 minutes, do the work, and the rest runs itself.
+
+Learning without forgetting isn't magic. It's a system. And systems work best when they don't depend on willpower alone.

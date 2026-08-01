@@ -50,35 +50,52 @@ relatedPosts:
     metaDescription: "Most study workflows plateau at understanding and never reach application. This guide shows how to write to think, build atomic notes, and use spaced repetition to reach the knowledge tier that actually transfers to real problems."
     heroImage: "/assets/card-11.webp"
 ---
-        <p>Not because you're forgetful. Because you have no system for keeping it. The information went in, and without a process to capture, organize, and revisit it, it came right back out.</p>
-        <hr class="article-rule" />
-        <h2>Where the Idea Comes From</h2>
-        <p>The term "second brain" was coined by productivity researcher Tiago Forte. The core idea is simple: your biological brain is built for thinking and creating, not storing. When you try to use it as a hard drive — holding onto every article, fact, and idea you encounter — you create mental clutter and still lose most of it.</p>
-        <p>A second brain is an external system, usually digital, where you capture, organize, and revisit what you've learned. Forte describes the process as CODE:</p>
-        <ol>
-          <li><strong>Capture</strong> — save what resonates with you as you encounter it</li>
-          <li><strong>Organize</strong> — sort it by how you'll use it, not where it came from</li>
-          <li><strong>Distill</strong> — boil it down to the essential points</li>
-          <li><strong>Express</strong> — actually use the knowledge, rather than letting it sit</li>
-        </ol>
-        <p>The goal isn't to archive everything. It's to keep the ideas that matter alive long enough to use them, while letting the rest fade without guilt.</p>
-        <p>The concept isn't new. Commonplace books — personal collections of notes, quotes, and ideas — have been used by thinkers and writers for centuries, long before anyone called it personal knowledge management. Digital tools just make the system faster, searchable, and far less likely to get lost in a drawer.</p>
-        <hr class="article-rule" />
-        <h2>The Gap Most Second Brains Have</h2>
-        <p>Here's the problem with most note-taking systems: they're passive.</p>
-        <p>Notion, Obsidian, Evernote — all excellent tools for capturing and organizing. But capturing information is not the same as learning it. You can have 2,000 perfectly tagged notes and still remember almost none of them, because you never went back to actively recall any of it. The notes sit there, technically retrievable, practically invisible, until a search someday surfaces them again as if for the first time.</p>
-        <p>A useful second brain for learning needs two things most systems don't have: active review and spaced repetition. Not just storage. Training.</p>
-        <p>Research by Roediger and Karpicke at Washington University, <a href="https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x" target="_blank" rel="noopener">published in 2006</a>, showed that retrieving information from memory produces far better long-term retention than re-reading it. The brain keeps what it practices pulling up, not what it merely files away.</p>
-        <hr class="article-rule" />
-        <h2>What an Active Second Brain Looks Like</h2>
-        <p>An effective second brain for learning does four things:</p>
-        <ul>
-          <li><strong>Captures</strong> what you encounter — articles, notes, terms, ideas — without friction. The lower the barrier to entry, the more you actually use it. If capturing something takes more than a few seconds, most people simply stop doing it within a week.</li>
-          <li><strong>Organizes</strong> by topic, not by source. When everything from the same subject lives together, regardless of whether it came from a book, a podcast, or a work meeting, connections emerge naturally that wouldn't show up if material were filed by where it came from.</li>
-          <li><strong>Distills</strong> the key points. Not every word of every article — the one or two ideas you'd actually want to remember in a year.</li>
-          <li><strong>Trains</strong> your memory on those distilled ideas at increasing intervals, so you move from storing knowledge to actually owning it. This is the step that separates a second brain that helps you think from one that's just a very organized graveyard of good intentions.</li>
-        </ul>
-        <hr class="article-rule" />
-        <h2>How Fluxo Fits In</h2>
-        <p><strong><a href="/">Fluxo</a></strong> is built as an active second brain. You add what you're learning, the AI generates a summary of the key ideas, and then Fluxo schedules short review sessions based on spaced repetition — so you test yourself on the material at the right intervals, not just browse it whenever you happen to remember it exists.</p>
-        <p>The difference between a note-taking app and Fluxo is the difference between writing something on a piece of paper and actually practicing it. Both capture. Only one trains you. If your current system has hundreds of notes you haven't opened in months, that's not a discipline problem. It's a missing step in the system itself.</p>
+Not because you're forgetful. Because you have no system for keeping it. The information went in, and without a process to capture, organize, and revisit it, it came right back out.
+
+---
+
+## Where the Idea Comes From
+
+The term "second brain" was coined by productivity researcher Tiago Forte. The core idea is simple: your biological brain is built for thinking and creating, not storing. When you try to use it as a hard drive — holding onto every article, fact, and idea you encounter — you create mental clutter and still lose most of it.
+
+A second brain is an external system, usually digital, where you capture, organize, and revisit what you've learned. Forte describes the process as CODE:
+
+1. **Capture** — save what resonates with you as you encounter it
+1. **Organize** — sort it by how you'll use it, not where it came from
+1. **Distill** — boil it down to the essential points
+1. **Express** — actually use the knowledge, rather than letting it sit
+
+The goal isn't to archive everything. It's to keep the ideas that matter alive long enough to use them, while letting the rest fade without guilt.
+
+The concept isn't new. Commonplace books — personal collections of notes, quotes, and ideas — have been used by thinkers and writers for centuries, long before anyone called it personal knowledge management. Digital tools just make the system faster, searchable, and far less likely to get lost in a drawer.
+
+---
+
+## The Gap Most Second Brains Have
+
+Here's the problem with most note-taking systems: they're passive.
+
+Notion, Obsidian, Evernote — all excellent tools for capturing and organizing. But capturing information is not the same as learning it. You can have 2,000 perfectly tagged notes and still remember almost none of them, because you never went back to actively recall any of it. The notes sit there, technically retrievable, practically invisible, until a search someday surfaces them again as if for the first time.
+
+A useful second brain for learning needs two things most systems don't have: active review and spaced repetition. Not just storage. Training.
+
+Research by Roediger and Karpicke at Washington University, [published in 2006](https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x), showed that retrieving information from memory produces far better long-term retention than re-reading it. The brain keeps what it practices pulling up, not what it merely files away.
+
+---
+
+## What an Active Second Brain Looks Like
+
+An effective second brain for learning does four things:
+
+- **Captures** what you encounter — articles, notes, terms, ideas — without friction. The lower the barrier to entry, the more you actually use it. If capturing something takes more than a few seconds, most people simply stop doing it within a week.
+- **Organizes** by topic, not by source. When everything from the same subject lives together, regardless of whether it came from a book, a podcast, or a work meeting, connections emerge naturally that wouldn't show up if material were filed by where it came from.
+- **Distills** the key points. Not every word of every article — the one or two ideas you'd actually want to remember in a year.
+- **Trains** your memory on those distilled ideas at increasing intervals, so you move from storing knowledge to actually owning it. This is the step that separates a second brain that helps you think from one that's just a very organized graveyard of good intentions.
+
+---
+
+## How Fluxo Fits In
+
+**[Fluxo](/)** is built as an active second brain. You add what you're learning, the AI generates a summary of the key ideas, and then Fluxo schedules short review sessions based on spaced repetition — so you test yourself on the material at the right intervals, not just browse it whenever you happen to remember it exists.
+
+The difference between a note-taking app and Fluxo is the difference between writing something on a piece of paper and actually practicing it. Both capture. Only one trains you. If your current system has hundreds of notes you haven't opened in months, that's not a discipline problem. It's a missing step in the system itself.

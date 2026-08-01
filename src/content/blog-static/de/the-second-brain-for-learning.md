@@ -50,26 +50,48 @@ relatedPosts:
     metaDescription: "Du willst etwas Neues lernen. Eine Sprache, eine Fähigkeit, ein Fach, das für deine Karriere oder einfach für dich wichtig ist. Und du hast vielleicht 45 Minuten am Tag, wenn alles glattläuft."
     heroImage: "/assets/card-5.webp"
 ---
-        <p>Nicht weil du vergesslich bist. Sondern weil du kein System hast, um es zu behalten.</p>
-        <hr class="article-rule" />
-        <h2>Woher die Idee kommt</h2>
-        <p>Den Begriff „zweites Gehirn" prägte der Produktivitätsforscher Tiago Forte. Die Kernidee ist einfach: Dein biologisches Gehirn ist zum Denken und Erschaffen gebaut, nicht zum Speichern. Wenn du es als Festplatte zu nutzen versuchst – jeden Artikel, Fakt und Gedanken festzuhalten – erzeugst du mentales Chaos und verlierst trotzdem das meiste.</p>
-        <p>Ein zweites Gehirn ist ein externes System, meist digital, in dem du erfasst, ordnest und Gelerntes wieder durchgehst. Forte beschreibt den Prozess als CODE: Capture (erfassen), Organize (ordnen), Distill (verdichten), Express (ausdrücken). Ziel ist nicht, alles zu archivieren. Es ist, die wichtigen Ideen lange genug am Leben zu halten, um sie zu nutzen.</p>
-        <p>Das Konzept ist nicht neu. Commonplace Books – persönliche Sammlungen von Notizen, Zitaten und Ideen – nutzen Denker und Autoren seit Jahrhunderten. Digitale Werkzeuge machen das System einfach schneller und durchsuchbarer.</p>
-        <hr class="article-rule" />
-        <h2>Die Lücke der meisten zweiten Gehirne</h2>
-        <p>Hier ist das Problem der meisten Notiz-Systeme: Sie sind passiv.</p>
-        <p>Notion, Obsidian, Evernote – alles ausgezeichnete Werkzeuge zum Erfassen und Ordnen. Aber Informationen zu erfassen ist nicht dasselbe wie sie zu lernen. Du kannst 2.000 perfekt verschlagwortete Notizen haben und dich an fast keine erinnern, weil du nie aktiv etwas davon abgerufen hast.</p>
-        <p>Ein nützliches zweites Gehirn fürs Lernen braucht zwei Dinge, die den meisten Systemen fehlen: aktives Wiederholen und verteiltes Wiederholen. Nicht nur Speicherung. Training.</p>
-        <p>Forschung von Roediger und Karpicke an der Washington University, <a href="https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x" target="_blank" rel="noopener">veröffentlicht 2006</a>, zeigte, dass das Abrufen von Informationen aus dem Gedächtnis weit bessere Langzeit-Retention bringt als das Wiederlesen. Das Gehirn behält, was es zu holen übt.</p>
-        <hr class="article-rule" />
-        <h2>Wie ein aktives zweites Gehirn aussieht</h2>
-        <p>Ein wirksames zweites Gehirn fürs Lernen tut vier Dinge:</p>
-        <p><strong>Erfasst</strong> alles, was dir begegnet – Artikel, Notizen, Begriffe, Ideen – ohne Reibung. Je niedriger die Einstiegshürde, desto eher nutzt du es wirklich.</p>
-        <p><strong>Ordnet</strong> nach Thema, nicht nach Quelle. Wenn alles zu einem Thema beisammen liegt, ergeben sich Verbindungen von selbst.</p>
-        <p><strong>Verdichtet</strong> die Kernaussagen. Nicht jedes Wort jedes Artikels. Die ein, zwei Ideen, an die du dich in einem Jahr wirklich erinnern möchtest.</p>
-        <p><strong>Trainiert</strong> dein Gedächtnis mit diesen verdichteten Ideen in wachsenden Intervallen, sodass du vom Speichern zum echten Besitzen von Wissen kommst.</p>
-        <hr class="article-rule" />
-        <h2>Wie Fluxo hineinpasst</h2>
-        <p><strong><a href="/de/">Fluxo</a></strong> ist als aktives zweites Gehirn gebaut. Du fügst hinzu, was du lernst, die KI erzeugt eine Zusammenfassung der Kernideen, und Fluxo plant kurze Wiederholungseinheiten nach den Prinzipien des verteilten Wiederholens – du testest dich am Stoff in den richtigen Intervallen, statt ihn nur zu überfliegen.</p>
-        <p>Der Unterschied zwischen einer Notiz-App und Fluxo ist der Unterschied zwischen etwas aufschreiben und es wirklich üben. Beide erfassen. Nur eines trainiert dich.</p>
+Nicht weil du vergesslich bist. Sondern weil du kein System hast, um es zu behalten.
+
+---
+
+## Woher die Idee kommt
+
+Den Begriff „zweites Gehirn" prägte der Produktivitätsforscher Tiago Forte. Die Kernidee ist einfach: Dein biologisches Gehirn ist zum Denken und Erschaffen gebaut, nicht zum Speichern. Wenn du es als Festplatte zu nutzen versuchst – jeden Artikel, Fakt und Gedanken festzuhalten – erzeugst du mentales Chaos und verlierst trotzdem das meiste.
+
+Ein zweites Gehirn ist ein externes System, meist digital, in dem du erfasst, ordnest und Gelerntes wieder durchgehst. Forte beschreibt den Prozess als CODE: Capture (erfassen), Organize (ordnen), Distill (verdichten), Express (ausdrücken). Ziel ist nicht, alles zu archivieren. Es ist, die wichtigen Ideen lange genug am Leben zu halten, um sie zu nutzen.
+
+Das Konzept ist nicht neu. Commonplace Books – persönliche Sammlungen von Notizen, Zitaten und Ideen – nutzen Denker und Autoren seit Jahrhunderten. Digitale Werkzeuge machen das System einfach schneller und durchsuchbarer.
+
+---
+
+## Die Lücke der meisten zweiten Gehirne
+
+Hier ist das Problem der meisten Notiz-Systeme: Sie sind passiv.
+
+Notion, Obsidian, Evernote – alles ausgezeichnete Werkzeuge zum Erfassen und Ordnen. Aber Informationen zu erfassen ist nicht dasselbe wie sie zu lernen. Du kannst 2.000 perfekt verschlagwortete Notizen haben und dich an fast keine erinnern, weil du nie aktiv etwas davon abgerufen hast.
+
+Ein nützliches zweites Gehirn fürs Lernen braucht zwei Dinge, die den meisten Systemen fehlen: aktives Wiederholen und verteiltes Wiederholen. Nicht nur Speicherung. Training.
+
+Forschung von Roediger und Karpicke an der Washington University, [veröffentlicht 2006](https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x), zeigte, dass das Abrufen von Informationen aus dem Gedächtnis weit bessere Langzeit-Retention bringt als das Wiederlesen. Das Gehirn behält, was es zu holen übt.
+
+---
+
+## Wie ein aktives zweites Gehirn aussieht
+
+Ein wirksames zweites Gehirn fürs Lernen tut vier Dinge:
+
+**Erfasst** alles, was dir begegnet – Artikel, Notizen, Begriffe, Ideen – ohne Reibung. Je niedriger die Einstiegshürde, desto eher nutzt du es wirklich.
+
+**Ordnet** nach Thema, nicht nach Quelle. Wenn alles zu einem Thema beisammen liegt, ergeben sich Verbindungen von selbst.
+
+**Verdichtet** die Kernaussagen. Nicht jedes Wort jedes Artikels. Die ein, zwei Ideen, an die du dich in einem Jahr wirklich erinnern möchtest.
+
+**Trainiert** dein Gedächtnis mit diesen verdichteten Ideen in wachsenden Intervallen, sodass du vom Speichern zum echten Besitzen von Wissen kommst.
+
+---
+
+## Wie Fluxo hineinpasst
+
+**[Fluxo](/de/)** ist als aktives zweites Gehirn gebaut. Du fügst hinzu, was du lernst, die KI erzeugt eine Zusammenfassung der Kernideen, und Fluxo plant kurze Wiederholungseinheiten nach den Prinzipien des verteilten Wiederholens – du testest dich am Stoff in den richtigen Intervallen, statt ihn nur zu überfliegen.
+
+Der Unterschied zwischen einer Notiz-App und Fluxo ist der Unterschied zwischen etwas aufschreiben und es wirklich üben. Beide erfassen. Nur eines trainiert dich.

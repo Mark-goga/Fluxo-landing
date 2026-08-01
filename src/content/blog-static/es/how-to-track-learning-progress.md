@@ -50,25 +50,46 @@ relatedPosts:
     metaDescription: "Quieres aprender algo nuevo. Un idioma, una habilidad, una materia que importa para tu carrera o solo para ti. Y tienes quizá 45 minutos al día, si todo sale bien."
     heroImage: "/assets/card-5.webp"
 ---
-        <p>La verdadera pregunta es: ¿cuánto retienes en realidad?</p>
-        <hr class="article-rule" />
-        <h2>Por qué falla la mayoría del seguimiento</h2>
-        <p>El tiempo dedicado a estudiar casi no se correlaciona con cuánto recuerdas. Un estudio de 2006 de <a href="https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x" target="_blank" rel="noopener">Roediger y Karpicke, de la Universidad de Washington</a>, lo demostró directamente: dos grupos de estudiantes dedicaron el mismo tiempo al mismo material. Un grupo lo releyó. El otro se puso a prueba. Una semana después, el grupo que se autoevaluó recordaba bastante más, aunque «estudió» menos en el sentido tradicional.</p>
-        <p>Las horas registradas no te dicen si hubo aprendizaje. La evocación sí.</p>
-        <hr class="article-rule" />
-        <h2>Lo que de verdad vale la pena medir</h2>
-        <p><strong>Tasa de retención</strong></p>
-        <p>¿Puedes recuperar esta información sin mirarla? Esa es la única métrica que importa para el aprendizaje a largo plazo. Todo lo demás —tiempo, finalización, subrayados— es un indicador indirecto que a menudo te engaña haciéndote creer que has aprendido más de lo que has aprendido.</p>
-        <p><strong>Dificultad de evocación con el tiempo</strong></p>
-        <p>¿Cuánto cuesta recordar algo al cabo de un día? ¿De una semana? ¿De un mes? Si la evocación se vuelve más fácil con el tiempo y con sesiones más cortas, el conocimiento se está consolidando. Si sigue costando, necesitas más repetición o un enfoque distinto. Hacer este seguimiento por temas te da una señal real de qué está funcionando.</p>
-        <p><strong>Lagunas, no solo aciertos</strong></p>
-        <p>La mayoría de los seguimientos de progreso te muestran lo que has completado. Más útil es registrar lo que has olvidado o has fallado. Un sistema que saca a la luz tus áreas más débiles y las prioriza en los repasos es más valioso que uno que cuenta rachas e insignias.</p>
-        <hr class="article-rule" />
-        <h2>El problema del seguimiento manual</h2>
-        <p>Puedes montar una hoja de cálculo para registrar todo esto. Algunas personas lo hacen. La mayoría lo deja a las dos semanas porque mantenerla consume tanta energía como el propio aprendizaje.</p>
-        <p>El valor de medir el progreso de aprendizaje es real: el Laboratorio de Enseñanza y Aprendizaje del MIT <a href="https://tll.mit.edu/teaching-resources/how-people-learn/metacognition/" target="_blank" rel="noopener">señala que la supervisión metacognitiva</a> mejora notablemente los resultados de aprendizaje. Saber dónde estás, qué se está desvaneciendo y qué necesita atención te permite dirigir el esfuerzo donde importa. Pero eso solo funciona si el seguimiento es automático.</p>
-        <hr class="article-rule" />
-        <h2>Cómo es el seguimiento automático del progreso</h2>
-        <p><strong><a href="/es/">Fluxo</a></strong> mide la retención evaluando cómo rindes en cada sesión de repaso. Cada vez que evocas algo correctamente o te cuesta, Fluxo ajusta su modelo de lo que sabes. Con el tiempo, puedes ver tu tasa de retención por tema: no cuántas notas tienes, sino cuánto de ese material puedes evocar de verdad.</p>
-        <p>Esto convierte el seguimiento del progreso de una tarea pesada en algo que simplemente ocurre mientras aprendes. Tú estudias, Fluxo mide, y en cualquier momento puedes ver con claridad qué materias están sólidas y cuáles necesitan más trabajo.</p>
-        <p>Aprender sin seguimiento es volar a ciegas. Hacer seguimiento sin medir la evocación te dice cosas equivocadas. Fluxo hace ambas.</p>
+La verdadera pregunta es: ¿cuánto retienes en realidad?
+
+---
+
+## Por qué falla la mayoría del seguimiento
+
+El tiempo dedicado a estudiar casi no se correlaciona con cuánto recuerdas. Un estudio de 2006 de [Roediger y Karpicke, de la Universidad de Washington](https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x), lo demostró directamente: dos grupos de estudiantes dedicaron el mismo tiempo al mismo material. Un grupo lo releyó. El otro se puso a prueba. Una semana después, el grupo que se autoevaluó recordaba bastante más, aunque «estudió» menos en el sentido tradicional.
+
+Las horas registradas no te dicen si hubo aprendizaje. La evocación sí.
+
+---
+
+## Lo que de verdad vale la pena medir
+
+**Tasa de retención**
+
+¿Puedes recuperar esta información sin mirarla? Esa es la única métrica que importa para el aprendizaje a largo plazo. Todo lo demás —tiempo, finalización, subrayados— es un indicador indirecto que a menudo te engaña haciéndote creer que has aprendido más de lo que has aprendido.
+
+**Dificultad de evocación con el tiempo**
+
+¿Cuánto cuesta recordar algo al cabo de un día? ¿De una semana? ¿De un mes? Si la evocación se vuelve más fácil con el tiempo y con sesiones más cortas, el conocimiento se está consolidando. Si sigue costando, necesitas más repetición o un enfoque distinto. Hacer este seguimiento por temas te da una señal real de qué está funcionando.
+
+**Lagunas, no solo aciertos**
+
+La mayoría de los seguimientos de progreso te muestran lo que has completado. Más útil es registrar lo que has olvidado o has fallado. Un sistema que saca a la luz tus áreas más débiles y las prioriza en los repasos es más valioso que uno que cuenta rachas e insignias.
+
+---
+
+## El problema del seguimiento manual
+
+Puedes montar una hoja de cálculo para registrar todo esto. Algunas personas lo hacen. La mayoría lo deja a las dos semanas porque mantenerla consume tanta energía como el propio aprendizaje.
+
+El valor de medir el progreso de aprendizaje es real: el Laboratorio de Enseñanza y Aprendizaje del MIT [señala que la supervisión metacognitiva](https://tll.mit.edu/teaching-resources/how-people-learn/metacognition/) mejora notablemente los resultados de aprendizaje. Saber dónde estás, qué se está desvaneciendo y qué necesita atención te permite dirigir el esfuerzo donde importa. Pero eso solo funciona si el seguimiento es automático.
+
+---
+
+## Cómo es el seguimiento automático del progreso
+
+**[Fluxo](/es/)** mide la retención evaluando cómo rindes en cada sesión de repaso. Cada vez que evocas algo correctamente o te cuesta, Fluxo ajusta su modelo de lo que sabes. Con el tiempo, puedes ver tu tasa de retención por tema: no cuántas notas tienes, sino cuánto de ese material puedes evocar de verdad.
+
+Esto convierte el seguimiento del progreso de una tarea pesada en algo que simplemente ocurre mientras aprendes. Tú estudias, Fluxo mide, y en cualquier momento puedes ver con claridad qué materias están sólidas y cuáles necesitan más trabajo.
+
+Aprender sin seguimiento es volar a ciegas. Hacer seguimiento sin medir la evocación te dice cosas equivocadas. Fluxo hace ambas.

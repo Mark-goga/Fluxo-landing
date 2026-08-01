@@ -50,23 +50,42 @@ relatedPosts:
     metaDescription: "Lees. Terminas un curso. Tomas notas. Y una semana después ha desaparecido. No es un problema de memoria, es un problema de sistema."
     heroImage: "/assets/card-4.webp"
 ---
-        <p>Una rutina de estudio de verdad se diseña en torno a cómo el cerebro codifica y almacena la información. El horario importa. Y también lo que haces en cada sesión.</p>
-        <hr class="article-rule" />
-        <h2>Qué hace que una rutina funcione de verdad</h2>
-        <p><strong>La constancia gana a la duración</strong></p>
-        <p>Una hora al día, todos los días, supera a una sesión de seis horas el domingo. No es una frase motivacional: así funciona la consolidación de la memoria. El sueño cumple un papel clave al pasar la información de la memoria a corto plazo a la de largo plazo, y ese proceso necesita tiempo entre sesiones. Repasar el material a lo largo de varios días le da al cerebro oportunidades repetidas para consolidarlo.</p>
-        <p><strong>Ajusta la sesión a la exigencia cognitiva</strong></p>
-        <p>No todas las tareas son iguales. Aprender algo nuevo exige más esfuerzo cognitivo que repasar algo que ya conoces en parte. La investigación sobre los ritmos circadianos muestra que la mayoría de las personas tiene un pico natural de alerta y memoria de trabajo a media mañana. Reservar esa franja para el material más difícil y dejar el repaso ligero para los momentos de menos energía hace que el mismo tiempo rinda más.</p>
-        <p><strong>Usa intenciones de implementación</strong></p>
-        <p>La investigación de Peter Gollwitzer en la NYU, <a href="https://doi.org/10.1002/ejsp.345" target="_blank" rel="noopener">resumida en un metaanálisis de 2006 junto a Sheeran</a>, halló un efecto de medio a grande en el cumplimiento de objetivos cuando las personas formulaban planes concretos de «si... entonces»: «Si son las 8 de la tarde de un día laborable, haré 20 minutos de repaso en mi escritorio». La concreción elimina la decisión diaria de si estudiar y cuándo. No negocias contigo mismo: simplemente sigues el plan.</p>
-        <hr class="article-rule" />
-        <h2>Una estructura simple que funciona</h2>
-        <p>Una rutina construida sobre estos principios tiene tres partes:</p>
-        <p><strong>Mañana (10 a 20 minutos):</strong> Repasa lo que aprendiste ayer antes de que tu cerebro entre del todo en el día. Es cuando la repetición espaciada rinde más: el material se consolidó hace poco durante la noche y repasarlo ahora fija un intervalo más largo hasta el próximo repaso.</p>
-        <p><strong>Bloque de aprendizaje activo (25 a 45 minutos):</strong> Es tu sesión principal. Material nuevo, temas difíciles, escribir con tus palabras o resolver problemas. Sin releer. Ponte a prueba, resume de memoria, conecta ideas.</p>
-        <p><strong>Captura de fin de día (5 minutos):</strong> Anota cualquier cosa nueva que hayas encontrado durante el día y valga la pena guardar. Un término, un concepto, una idea de una reunión. Lleva cinco minutos y mantiene abierto el flujo de entrada sin exigir otra sesión completa de estudio.</p>
-        <hr class="article-rule" />
-        <h2>La parte que casi todas las rutinas se saltan</h2>
-        <p>Montar el horario es lo fácil. Lo difícil es el sistema que funciona entre sesiones. Saber qué repasar mañana, llevar la cuenta de lo que toca y no dejar que el material más antiguo se escape.</p>
-        <p><strong><a href="/es/">Fluxo</a></strong> lo hace automáticamente. Tú te concentras en aprender. Fluxo controla qué hay que repasar y cuándo, para que tu rutina siga siendo constante sin que tengas que gestionarla a mano.</p>
-        <p>Una buena rutina de estudio no tiene por qué ser complicada. Tiene que ser constante y estar diseñada en torno a cómo funciona realmente el cerebro.</p>
+Una rutina de estudio de verdad se diseña en torno a cómo el cerebro codifica y almacena la información. El horario importa. Y también lo que haces en cada sesión.
+
+---
+
+## Qué hace que una rutina funcione de verdad
+
+**La constancia gana a la duración**
+
+Una hora al día, todos los días, supera a una sesión de seis horas el domingo. No es una frase motivacional: así funciona la consolidación de la memoria. El sueño cumple un papel clave al pasar la información de la memoria a corto plazo a la de largo plazo, y ese proceso necesita tiempo entre sesiones. Repasar el material a lo largo de varios días le da al cerebro oportunidades repetidas para consolidarlo.
+
+**Ajusta la sesión a la exigencia cognitiva**
+
+No todas las tareas son iguales. Aprender algo nuevo exige más esfuerzo cognitivo que repasar algo que ya conoces en parte. La investigación sobre los ritmos circadianos muestra que la mayoría de las personas tiene un pico natural de alerta y memoria de trabajo a media mañana. Reservar esa franja para el material más difícil y dejar el repaso ligero para los momentos de menos energía hace que el mismo tiempo rinda más.
+
+**Usa intenciones de implementación**
+
+La investigación de Peter Gollwitzer en la NYU, [resumida en un metaanálisis de 2006 junto a Sheeran](https://doi.org/10.1002/ejsp.345), halló un efecto de medio a grande en el cumplimiento de objetivos cuando las personas formulaban planes concretos de «si... entonces»: «Si son las 8 de la tarde de un día laborable, haré 20 minutos de repaso en mi escritorio». La concreción elimina la decisión diaria de si estudiar y cuándo. No negocias contigo mismo: simplemente sigues el plan.
+
+---
+
+## Una estructura simple que funciona
+
+Una rutina construida sobre estos principios tiene tres partes:
+
+**Mañana (10 a 20 minutos):** Repasa lo que aprendiste ayer antes de que tu cerebro entre del todo en el día. Es cuando la repetición espaciada rinde más: el material se consolidó hace poco durante la noche y repasarlo ahora fija un intervalo más largo hasta el próximo repaso.
+
+**Bloque de aprendizaje activo (25 a 45 minutos):** Es tu sesión principal. Material nuevo, temas difíciles, escribir con tus palabras o resolver problemas. Sin releer. Ponte a prueba, resume de memoria, conecta ideas.
+
+**Captura de fin de día (5 minutos):** Anota cualquier cosa nueva que hayas encontrado durante el día y valga la pena guardar. Un término, un concepto, una idea de una reunión. Lleva cinco minutos y mantiene abierto el flujo de entrada sin exigir otra sesión completa de estudio.
+
+---
+
+## La parte que casi todas las rutinas se saltan
+
+Montar el horario es lo fácil. Lo difícil es el sistema que funciona entre sesiones. Saber qué repasar mañana, llevar la cuenta de lo que toca y no dejar que el material más antiguo se escape.
+
+**[Fluxo](/es/)** lo hace automáticamente. Tú te concentras en aprender. Fluxo controla qué hay que repasar y cuándo, para que tu rutina siga siendo constante sin que tengas que gestionarla a mano.
+
+Una buena rutina de estudio no tiene por qué ser complicada. Tiene que ser constante y estar diseñada en torno a cómo funciona realmente el cerebro.

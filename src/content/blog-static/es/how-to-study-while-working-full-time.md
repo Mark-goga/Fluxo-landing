@@ -50,24 +50,44 @@ relatedPosts:
     metaDescription: "Lees. Terminas un curso. Tomas notas. Y una semana después ha desaparecido. No es un problema de memoria, es un problema de sistema."
     heroImage: "/assets/card-4.webp"
 ---
-        <p>En realidad es suficiente. Pero solo si lo usas de forma distinta a como lo hacen los estudiantes.</p>
-        <hr class="article-rule" />
-        <h2>El modelo equivocado</h2>
-        <p>La mayoría de los consejos de estudio están pensados para estudiantes con bloques de cuatro horas, fechas de examen y el aprendizaje como ocupación principal. Cuando trabajas a tiempo completo, ese modelo no solo falla: hace que sientas que siempre vas con retraso.</p>
-        <p>Intentar recrear un horario de estudiante en los huecos de una vida adulta suele significar un intento concentrado un fin de semana seguido de dos semanas de nada. La inconstancia mata la retención más rápido que cualquier falta de talento.</p>
-        <hr class="article-rule" />
-        <h2>Por qué funcionan mejor las sesiones más cortas y frecuentes</h2>
-        <p>La investigación al respecto es directa. El <a href="https://www.yorku.ca/ncepeda/publications/CPVWR2006.html" target="_blank" rel="noopener">metaanálisis de Cepeda et al. de 2006</a> en <em>Psychological Bulletin</em> demostró que distribuir el aprendizaje en varias sesiones produce mejor retención que el mismo tiempo total en una sola sentada. No es solo una comodidad: es una ventaja estructural para quienes tienen ventanas diarias limitadas.</p>
-        <p>Las sesiones cortas diarias también encajan con cómo funciona la consolidación de la memoria. El sueño procesa y refuerza lo que aprendiste durante el día. Si estudias 20 minutos esta noche y duermes, tu cerebro trabajará ese material mientras descansas. Siete sesiones de 20 minutos a lo largo de una semana producirán mejor retención que una sesión de 140 minutos el sábado.</p>
-        <p>Este enfoque hasta tiene nombre en la investigación del aprendizaje: microaprendizaje. Una <a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2025.1491265/full" target="_blank" rel="noopener">revisión publicada en <em>Frontiers in Psychology</em> (2025)</a> halló que el microaprendizaje es eficaz para desarrollar conocimientos y habilidades en contextos con poco tiempo, justo la situación de los profesionales que trabajan.</p>
-        <hr class="article-rule" />
-        <h2>Una estructura diaria realista</h2>
-        <p><strong>10 a 15 minutos por la mañana:</strong> Repaso con repetición espaciada. Repasa lo que Fluxo o tu app marca como pendiente. Esto atrapa el material antes de que se desvanezca y aprovecha la consolidación de la memoria que ocurrió durante la noche.</p>
-        <p><strong>20 a 30 minutos por la tarde:</strong> Una sesión de aprendizaje concentrada. Material nuevo, lectura con anotación activa o trabajar un concepto. Sin multitarea. Notificaciones apagadas.</p>
-        <p>Eso es todo. De 30 a 45 minutos en total, sin necesidad de grandes bloques.</p>
-        <p>La clave es proteger esas dos ventanas. No ampliarlas: protegerlas. Constancia por encima de volumen.</p>
-        <hr class="article-rule" />
-        <h2>El sistema importa más que la motivación</h2>
-        <p>Lo más difícil de estudiar mientras trabajas a tiempo completo no es encontrar tiempo. Es asegurarte de que el tiempo que encuentras se use en lo correcto. Sin un sistema que te diga qué repasar y qué aprender a continuación, acabas empezando de cero, repasando lo mismo o leyendo de forma pasiva.</p>
-        <p><strong><a href="/es/">Fluxo</a></strong> da a quien aprende mientras trabaja un sistema que se gestiona solo. Añades lo que estás aprendiendo, la IA genera resúmenes para que dediques menos tiempo a entender y más a entrenar, y cada día Fluxo te muestra exactamente qué repasar en el tiempo que tienes.</p>
-        <p>No necesitas horas. Necesitas un sistema que funcione en minutos.</p>
+En realidad es suficiente. Pero solo si lo usas de forma distinta a como lo hacen los estudiantes.
+
+---
+
+## El modelo equivocado
+
+La mayoría de los consejos de estudio están pensados para estudiantes con bloques de cuatro horas, fechas de examen y el aprendizaje como ocupación principal. Cuando trabajas a tiempo completo, ese modelo no solo falla: hace que sientas que siempre vas con retraso.
+
+Intentar recrear un horario de estudiante en los huecos de una vida adulta suele significar un intento concentrado un fin de semana seguido de dos semanas de nada. La inconstancia mata la retención más rápido que cualquier falta de talento.
+
+---
+
+## Por qué funcionan mejor las sesiones más cortas y frecuentes
+
+La investigación al respecto es directa. El [metaanálisis de Cepeda et al. de 2006](https://www.yorku.ca/ncepeda/publications/CPVWR2006.html) en *Psychological Bulletin* demostró que distribuir el aprendizaje en varias sesiones produce mejor retención que el mismo tiempo total en una sola sentada. No es solo una comodidad: es una ventaja estructural para quienes tienen ventanas diarias limitadas.
+
+Las sesiones cortas diarias también encajan con cómo funciona la consolidación de la memoria. El sueño procesa y refuerza lo que aprendiste durante el día. Si estudias 20 minutos esta noche y duermes, tu cerebro trabajará ese material mientras descansas. Siete sesiones de 20 minutos a lo largo de una semana producirán mejor retención que una sesión de 140 minutos el sábado.
+
+Este enfoque hasta tiene nombre en la investigación del aprendizaje: microaprendizaje. Una [revisión publicada en *Frontiers in Psychology* (2025)](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2025.1491265/full) halló que el microaprendizaje es eficaz para desarrollar conocimientos y habilidades en contextos con poco tiempo, justo la situación de los profesionales que trabajan.
+
+---
+
+## Una estructura diaria realista
+
+**10 a 15 minutos por la mañana:** Repaso con repetición espaciada. Repasa lo que Fluxo o tu app marca como pendiente. Esto atrapa el material antes de que se desvanezca y aprovecha la consolidación de la memoria que ocurrió durante la noche.
+
+**20 a 30 minutos por la tarde:** Una sesión de aprendizaje concentrada. Material nuevo, lectura con anotación activa o trabajar un concepto. Sin multitarea. Notificaciones apagadas.
+
+Eso es todo. De 30 a 45 minutos en total, sin necesidad de grandes bloques.
+
+La clave es proteger esas dos ventanas. No ampliarlas: protegerlas. Constancia por encima de volumen.
+
+---
+
+## El sistema importa más que la motivación
+
+Lo más difícil de estudiar mientras trabajas a tiempo completo no es encontrar tiempo. Es asegurarte de que el tiempo que encuentras se use en lo correcto. Sin un sistema que te diga qué repasar y qué aprender a continuación, acabas empezando de cero, repasando lo mismo o leyendo de forma pasiva.
+
+**[Fluxo](/es/)** da a quien aprende mientras trabaja un sistema que se gestiona solo. Añades lo que estás aprendiendo, la IA genera resúmenes para que dediques menos tiempo a entender y más a entrenar, y cada día Fluxo te muestra exactamente qué repasar en el tiempo que tienes.
+
+No necesitas horas. Necesitas un sistema que funcione en minutos.

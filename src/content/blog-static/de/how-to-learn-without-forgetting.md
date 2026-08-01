@@ -50,23 +50,42 @@ relatedPosts:
     metaDescription: "Du willst etwas Neues lernen. Eine Sprache, eine Fähigkeit, ein Fach, das für deine Karriere oder einfach für dich wichtig ist. Und du hast vielleicht 45 Minuten am Tag, wenn alles glattläuft."
     heroImage: "/assets/card-5.webp"
 ---
-        <p>Das ist keine Faulheit. Das Gehirn ist nicht dafür gebaut, rohe Informationen endlos zu halten. Es speichert, was es nutzt, und verwirft, was es nicht nutzt. Die Frage ist nicht, wie du mehr liest. Sondern wie du dein Gehirn dazu bringst, neue Informationen als bewahrenswert zu behandeln.</p>
-        <hr class="article-rule" />
-        <h2>Das eigentliche Problem: Passiver Konsum fühlt sich wie Lernen an</h2>
-        <p>Notizen wiederlesen, Text markieren, Vorlesungen zweimal schauen – das fühlt sich produktiv an. Die Forschung zeigt: meist ist es das nicht.</p>
-        <p>Eine Übersichtsarbeit von 2019 in <em>Frontiers in Education</em> fasste Jahrzehnte von Studien im Unterricht zusammen: Einen Text immer wieder zu lesen, erzeugt ein falsches Gefühl von Vertrautheit. Lernende meinen, den Stoff zu können, weil er vertraut wirkt – aber dieses Wiedererkennen übersetzt sich nicht in echten Abruf, wenn er gebraucht wird. Vertrautheit und Gedächtnis sind verschiedene Dinge.</p>
-        <p>Die Lösung verlangt aktive Verarbeitung, nicht mehr passive Aufnahme.</p>
-        <hr class="article-rule" />
-        <h2>Was Vergessen wirklich verhindert</h2>
-        <p><strong>Teste dich selbst, lies nicht wieder</strong></p>
-        <p>Das Wirksamste, was du tun kannst, ist zu versuchen, Informationen aus dem Gedächtnis abzurufen, bevor du dich bereit fühlst. Das nennt sich Abruf-Praxis und funktioniert, weil das Hervorholen aus dem Gedächtnis – auch wenn es schwerfällt – die neuronale Bahn stärkt, die es trägt.</p>
-        <p>Roediger und Karpicke an der Washington University zeigten das in <a href="https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x" target="_blank" rel="noopener">ihrer Studie von 2006</a> klar: Lernende, die sich nach dem Lesen testeten, behielten eine Woche später deutlich mehr als jene, die denselben Stoff nur wiederlasen – obwohl beide Gruppen dieselbe Gesamtzeit aufwandten.</p>
-        <p><strong>Verteile deine Wiederholungen</strong></p>
-        <p>Etwas einmal zu wiederholen und weiterzumachen, garantiert fast, dass du es vergisst. Es noch einmal kurz vor dem Verblassen zu wiederholen – und dann erneut in einem längeren Intervall – baut wirklich langfristige Retention auf. <a href="https://www.yorku.ca/ncepeda/publications/CPVWR2006.html" target="_blank" rel="noopener">Cepeda et al.s Metaanalyse von 254 Studien</a> im <em>Psychological Bulletin</em> bestätigte, dass das Verteilen von Übung in der Zeit jede Menge an Pauken übertrifft.</p>
-        <p><strong>Verknüpfe neues Wissen mit Bekanntem</strong></p>
-        <p>Wenn du etwas lernst, frage dich, wie es zu Dingen passt, die du schon verstehst. Das zwingt dein Gehirn, die neue Information tiefer zu verarbeiten, statt sie als isolierte Tatsache abzulegen. Dunlosky und Kollegen an der Kent State zählten diese „elaborative Interrogation" in ihrer <a href="https://journals.sagepub.com/doi/10.1177/1529100612453266" target="_blank" rel="noopener">Übersicht von 2013</a> zu den wirksamsten Lernstrategien.</p>
-        <hr class="article-rule" />
-        <h2>Das Beständigkeitsproblem</h2>
-        <p>Diese drei Techniken wirken. Das Problem ist, sie über alle Themen, die du lernst, beständig anzuwenden, ohne zu vergessen, was wann zu wiederholen ist.</p>
-        <p><strong><a href="/de/">Fluxo</a></strong> übernimmt die System-Seite. Du erfasst, was du lernst, die KI holt die Kerngedanken heraus und Fluxo plant Wiederholungseinheiten in den richtigen Intervallen. Du tauchst 10 Minuten auf, machst die Arbeit, der Rest läuft von selbst.</p>
-        <p>Lernen ohne zu vergessen ist keine Magie. Es ist ein System. Und Systeme funktionieren am besten, wenn sie nicht allein von Willenskraft abhängen.</p>
+Das ist keine Faulheit. Das Gehirn ist nicht dafür gebaut, rohe Informationen endlos zu halten. Es speichert, was es nutzt, und verwirft, was es nicht nutzt. Die Frage ist nicht, wie du mehr liest. Sondern wie du dein Gehirn dazu bringst, neue Informationen als bewahrenswert zu behandeln.
+
+---
+
+## Das eigentliche Problem: Passiver Konsum fühlt sich wie Lernen an
+
+Notizen wiederlesen, Text markieren, Vorlesungen zweimal schauen – das fühlt sich produktiv an. Die Forschung zeigt: meist ist es das nicht.
+
+Eine Übersichtsarbeit von 2019 in *Frontiers in Education* fasste Jahrzehnte von Studien im Unterricht zusammen: Einen Text immer wieder zu lesen, erzeugt ein falsches Gefühl von Vertrautheit. Lernende meinen, den Stoff zu können, weil er vertraut wirkt – aber dieses Wiedererkennen übersetzt sich nicht in echten Abruf, wenn er gebraucht wird. Vertrautheit und Gedächtnis sind verschiedene Dinge.
+
+Die Lösung verlangt aktive Verarbeitung, nicht mehr passive Aufnahme.
+
+---
+
+## Was Vergessen wirklich verhindert
+
+**Teste dich selbst, lies nicht wieder**
+
+Das Wirksamste, was du tun kannst, ist zu versuchen, Informationen aus dem Gedächtnis abzurufen, bevor du dich bereit fühlst. Das nennt sich Abruf-Praxis und funktioniert, weil das Hervorholen aus dem Gedächtnis – auch wenn es schwerfällt – die neuronale Bahn stärkt, die es trägt.
+
+Roediger und Karpicke an der Washington University zeigten das in [ihrer Studie von 2006](https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x) klar: Lernende, die sich nach dem Lesen testeten, behielten eine Woche später deutlich mehr als jene, die denselben Stoff nur wiederlasen – obwohl beide Gruppen dieselbe Gesamtzeit aufwandten.
+
+**Verteile deine Wiederholungen**
+
+Etwas einmal zu wiederholen und weiterzumachen, garantiert fast, dass du es vergisst. Es noch einmal kurz vor dem Verblassen zu wiederholen – und dann erneut in einem längeren Intervall – baut wirklich langfristige Retention auf. [Cepeda et al.s Metaanalyse von 254 Studien](https://www.yorku.ca/ncepeda/publications/CPVWR2006.html) im *Psychological Bulletin* bestätigte, dass das Verteilen von Übung in der Zeit jede Menge an Pauken übertrifft.
+
+**Verknüpfe neues Wissen mit Bekanntem**
+
+Wenn du etwas lernst, frage dich, wie es zu Dingen passt, die du schon verstehst. Das zwingt dein Gehirn, die neue Information tiefer zu verarbeiten, statt sie als isolierte Tatsache abzulegen. Dunlosky und Kollegen an der Kent State zählten diese „elaborative Interrogation" in ihrer [Übersicht von 2013](https://journals.sagepub.com/doi/10.1177/1529100612453266) zu den wirksamsten Lernstrategien.
+
+---
+
+## Das Beständigkeitsproblem
+
+Diese drei Techniken wirken. Das Problem ist, sie über alle Themen, die du lernst, beständig anzuwenden, ohne zu vergessen, was wann zu wiederholen ist.
+
+**[Fluxo](/de/)** übernimmt die System-Seite. Du erfasst, was du lernst, die KI holt die Kerngedanken heraus und Fluxo plant Wiederholungseinheiten in den richtigen Intervallen. Du tauchst 10 Minuten auf, machst die Arbeit, der Rest läuft von selbst.
+
+Lernen ohne zu vergessen ist keine Magie. Es ist ein System. Und Systeme funktionieren am besten, wenn sie nicht allein von Willenskraft abhängen.

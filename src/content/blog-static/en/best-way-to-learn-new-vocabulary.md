@@ -50,30 +50,50 @@ relatedPosts:
     metaDescription: "You read. You finish a course. You take notes. And a week later it's gone. This isn't a memory problem — it's a system problem."
     heroImage: "/assets/card-4.webp"
 ---
-        <p>The question is which method actually works, and why most don't.</p>
-        <hr class="article-rule" />
-        <h2>Why Rote Memorization Fails</h2>
-        <p>Writing a word ten times and hoping it sticks is about as effective as reading it ten times. Both are passive. Your brain files the information as low-priority because you haven't done anything demanding with it.</p>
-        <p>The illusion of progress is part of the problem. After enough repetitions, a word starts to look familiar. Familiarity feels like knowing. But familiarity only activates recognition, not recall. You might recognize the word when you see it and have no idea what it means when you need to produce it.</p>
-        <hr class="article-rule" />
-        <h2>What the Research Shows</h2>
-        <p><strong>Spaced repetition is the most effective method for vocabulary retention</strong></p>
-        <p>A 2022 meta-analysis by Kim and Webb, published in <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/lang.12479" target="_blank" rel="noopener"><em>Language Learning</em></a>, analyzed 48 experiments involving over 3,400 participants learning second-language vocabulary. The finding was clear: spaced practice consistently outperformed massed practice for long-term retention. Reviewing words at increasing intervals, rather than in one sitting, produces significantly better recall over time.</p>
-        <p><strong>Active recall beats passive exposure</strong></p>
-        <p>Seeing a word and its definition is passive. Being shown the definition and having to produce the word is active. That retrieval effort, even when you get it wrong, builds a stronger memory trace than any amount of passive review. This is the same testing effect documented by <a href="https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x" target="_blank" rel="noopener">Roediger and Karpicke</a> that applies to all learning, and it's especially powerful for vocabulary.</p>
-        <p><strong>Context matters</strong></p>
-        <p>Isolated flashcards work better than re-reading word lists, but they work even better when the word is connected to something meaningful — an example sentence, a real use case, a concept you already understand. Vocabulary learned in context is more durable and more usable than vocabulary learned as an abstract symbol.</p>
-        <hr class="article-rule" />
-        <h2>Practical Application</h2>
-        <p>The best approach combines all three:</p>
-        <ol>
-          <li>Learn the word with context, not just a definition</li>
-          <li>Test yourself on it from the first session, before you feel ready</li>
-          <li>Review it again at increasing intervals, not all at once</li>
-        </ol>
-        <p>This works for any vocabulary — not just foreign language. Technical terms, domain-specific concepts, and professional jargon all follow the same rules.</p>
-        <hr class="article-rule" />
-        <h2>Making It Stick Without the Overhead</h2>
-        <p>The hard part isn't knowing the method. It's maintaining the spaced review system across hundreds of words without it becoming a full-time job.</p>
-        <p><strong><a href="/">Fluxo</a></strong> handles this automatically. You add vocabulary to your space — words, definitions, context sentences — and Fluxo schedules your reviews. You spend a few minutes a day on retrieval practice, and the system tracks which words are solid and which need more attention.</p>
-        <p>The science on vocabulary retention is clear. The execution is what usually breaks down. Fluxo makes the execution automatic.</p>
+The question is which method actually works, and why most don't.
+
+---
+
+## Why Rote Memorization Fails
+
+Writing a word ten times and hoping it sticks is about as effective as reading it ten times. Both are passive. Your brain files the information as low-priority because you haven't done anything demanding with it.
+
+The illusion of progress is part of the problem. After enough repetitions, a word starts to look familiar. Familiarity feels like knowing. But familiarity only activates recognition, not recall. You might recognize the word when you see it and have no idea what it means when you need to produce it.
+
+---
+
+## What the Research Shows
+
+**Spaced repetition is the most effective method for vocabulary retention**
+
+A 2022 meta-analysis by Kim and Webb, published in [*Language Learning*](https://onlinelibrary.wiley.com/doi/abs/10.1111/lang.12479), analyzed 48 experiments involving over 3,400 participants learning second-language vocabulary. The finding was clear: spaced practice consistently outperformed massed practice for long-term retention. Reviewing words at increasing intervals, rather than in one sitting, produces significantly better recall over time.
+
+**Active recall beats passive exposure**
+
+Seeing a word and its definition is passive. Being shown the definition and having to produce the word is active. That retrieval effort, even when you get it wrong, builds a stronger memory trace than any amount of passive review. This is the same testing effect documented by [Roediger and Karpicke](https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x) that applies to all learning, and it's especially powerful for vocabulary.
+
+**Context matters**
+
+Isolated flashcards work better than re-reading word lists, but they work even better when the word is connected to something meaningful — an example sentence, a real use case, a concept you already understand. Vocabulary learned in context is more durable and more usable than vocabulary learned as an abstract symbol.
+
+---
+
+## Practical Application
+
+The best approach combines all three:
+
+1. Learn the word with context, not just a definition
+1. Test yourself on it from the first session, before you feel ready
+1. Review it again at increasing intervals, not all at once
+
+This works for any vocabulary — not just foreign language. Technical terms, domain-specific concepts, and professional jargon all follow the same rules.
+
+---
+
+## Making It Stick Without the Overhead
+
+The hard part isn't knowing the method. It's maintaining the spaced review system across hundreds of words without it becoming a full-time job.
+
+**[Fluxo](/)** handles this automatically. You add vocabulary to your space — words, definitions, context sentences — and Fluxo schedules your reviews. You spend a few minutes a day on retrieval practice, and the system tracks which words are solid and which need more attention.
+
+The science on vocabulary retention is clear. The execution is what usually breaks down. Fluxo makes the execution automatic.

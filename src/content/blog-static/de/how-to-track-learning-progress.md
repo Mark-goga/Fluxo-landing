@@ -50,25 +50,46 @@ relatedPosts:
     metaDescription: "Ob du eine Fremdsprache lernst, Fachbegriffe für einen neuen Job aufnimmst oder Fachwissen in Medizin, Recht oder Design aufbaust – Vokabular ist die Grundlage."
     heroImage: "/assets/card-2.png"
 ---
-        <p>Die eigentliche Frage ist: Wie viel behältst du wirklich?</p>
-        <hr class="article-rule" />
-        <h2>Warum die meiste Erfassung scheitert</h2>
-        <p>Die Lernzeit hat fast keine Korrelation damit, wie viel du behältst. Eine Studie von 2006 von <a href="https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x" target="_blank" rel="noopener">Roediger und Karpicke an der Washington University</a> zeigte das direkt: Zwei Gruppen verbrachten dieselbe Zeit mit demselben Stoff. Eine las ihn wieder. Die andere testete sich. Eine Woche später erinnerte sich die Selbsttest-Gruppe an deutlich mehr – obwohl sie im klassischen Sinn weniger „lernte".</p>
-        <p>Erfasste Stunden sagen nichts darüber, ob gelernt wurde. Abruf schon.</p>
-        <hr class="article-rule" />
-        <h2>Was wirklich messenswert ist</h2>
-        <p><strong>Behaltensquote</strong></p>
-        <p>Kannst du diese Information abrufen, ohne nachzusehen? Das ist die einzige Kennzahl, die für langfristiges Lernen zählt. Alles andere – Zeit, Erledigung, Markierungen – ist ein Hilfsindikator, der dich oft glauben lässt, du hättest mehr gelernt als tatsächlich.</p>
-        <p><strong>Abruf-Schwierigkeit über die Zeit</strong></p>
-        <p>Wie schwer fällt es, sich nach einem Tag zu erinnern? Nach einer Woche? Nach einem Monat? Wird der Abruf in kürzeren Sitzungen über die Zeit leichter, festigt sich das Wissen. Bleibt er schwer, brauchst du mehr Wiederholung oder einen anderen Ansatz. Das über Themen hinweg zu verfolgen liefert ein echtes Signal, was funktioniert.</p>
-        <p><strong>Lücken, nicht nur Erfolge</strong></p>
-        <p>Die meisten Fortschritts-Tracker zeigen dir, was du erledigt hast. Nützlicher ist, zu verfolgen, was du vergessen oder falsch gemacht hast. Ein System, das deine schwächsten Bereiche aufdeckt und sie in Wiederholungen priorisiert, ist wertvoller als eines, das Serien und Abzeichen zählt.</p>
-        <hr class="article-rule" />
-        <h2>Das Problem manuellen Trackings</h2>
-        <p>Du kannst all das in einer Tabelle erfassen. Manche tun das. Die meisten brechen nach zwei Wochen ab, weil ihre Pflege so viel Energie kostet wie das Lernen selbst.</p>
-        <p>Der Nutzen, Lernfortschritt zu verfolgen, ist real – das Teaching and Learning Lab des MIT <a href="https://tll.mit.edu/teaching-resources/how-people-learn/metacognition/" target="_blank" rel="noopener">weist darauf hin, dass metakognitives Monitoring</a> die Lernergebnisse deutlich verbessert. Zu wissen, wo du stehst, was verblasst und was Aufmerksamkeit braucht, lässt dich deine Anstrengung dorthin lenken, wo sie zählt. Aber das funktioniert nur, wenn die Erfassung automatisch ist.</p>
-        <hr class="article-rule" />
-        <h2>Wie automatische Fortschrittserfassung aussieht</h2>
-        <p><strong><a href="/de/">Fluxo</a></strong> erfasst Retention, indem es misst, wie du in jeder Wiederholungseinheit abschneidest. Jedes Mal, wenn du etwas richtig abrufst oder dich quälst, passt Fluxo sein Modell deines Wissens an. Mit der Zeit siehst du deine Behaltensquote pro Thema – nicht wie viele Notizen du hast, sondern wie viel davon du tatsächlich abrufen kannst.</p>
-        <p>Das verwandelt Fortschrittserfassung von einer Pflicht in etwas, das beim Lernen einfach passiert. Du lernst, Fluxo misst, und du kannst jederzeit klar sehen, welche Fächer sitzen und welche mehr Arbeit brauchen.</p>
-        <p>Lernen ohne Erfassung ist Blindflug. Erfassung ohne Abruf-Messung sagt dir die falschen Dinge. Fluxo tut beides.</p>
+Die eigentliche Frage ist: Wie viel behältst du wirklich?
+
+---
+
+## Warum die meiste Erfassung scheitert
+
+Die Lernzeit hat fast keine Korrelation damit, wie viel du behältst. Eine Studie von 2006 von [Roediger und Karpicke an der Washington University](https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x) zeigte das direkt: Zwei Gruppen verbrachten dieselbe Zeit mit demselben Stoff. Eine las ihn wieder. Die andere testete sich. Eine Woche später erinnerte sich die Selbsttest-Gruppe an deutlich mehr – obwohl sie im klassischen Sinn weniger „lernte".
+
+Erfasste Stunden sagen nichts darüber, ob gelernt wurde. Abruf schon.
+
+---
+
+## Was wirklich messenswert ist
+
+**Behaltensquote**
+
+Kannst du diese Information abrufen, ohne nachzusehen? Das ist die einzige Kennzahl, die für langfristiges Lernen zählt. Alles andere – Zeit, Erledigung, Markierungen – ist ein Hilfsindikator, der dich oft glauben lässt, du hättest mehr gelernt als tatsächlich.
+
+**Abruf-Schwierigkeit über die Zeit**
+
+Wie schwer fällt es, sich nach einem Tag zu erinnern? Nach einer Woche? Nach einem Monat? Wird der Abruf in kürzeren Sitzungen über die Zeit leichter, festigt sich das Wissen. Bleibt er schwer, brauchst du mehr Wiederholung oder einen anderen Ansatz. Das über Themen hinweg zu verfolgen liefert ein echtes Signal, was funktioniert.
+
+**Lücken, nicht nur Erfolge**
+
+Die meisten Fortschritts-Tracker zeigen dir, was du erledigt hast. Nützlicher ist, zu verfolgen, was du vergessen oder falsch gemacht hast. Ein System, das deine schwächsten Bereiche aufdeckt und sie in Wiederholungen priorisiert, ist wertvoller als eines, das Serien und Abzeichen zählt.
+
+---
+
+## Das Problem manuellen Trackings
+
+Du kannst all das in einer Tabelle erfassen. Manche tun das. Die meisten brechen nach zwei Wochen ab, weil ihre Pflege so viel Energie kostet wie das Lernen selbst.
+
+Der Nutzen, Lernfortschritt zu verfolgen, ist real – das Teaching and Learning Lab des MIT [weist darauf hin, dass metakognitives Monitoring](https://tll.mit.edu/teaching-resources/how-people-learn/metacognition/) die Lernergebnisse deutlich verbessert. Zu wissen, wo du stehst, was verblasst und was Aufmerksamkeit braucht, lässt dich deine Anstrengung dorthin lenken, wo sie zählt. Aber das funktioniert nur, wenn die Erfassung automatisch ist.
+
+---
+
+## Wie automatische Fortschrittserfassung aussieht
+
+**[Fluxo](/de/)** erfasst Retention, indem es misst, wie du in jeder Wiederholungseinheit abschneidest. Jedes Mal, wenn du etwas richtig abrufst oder dich quälst, passt Fluxo sein Modell deines Wissens an. Mit der Zeit siehst du deine Behaltensquote pro Thema – nicht wie viele Notizen du hast, sondern wie viel davon du tatsächlich abrufen kannst.
+
+Das verwandelt Fortschrittserfassung von einer Pflicht in etwas, das beim Lernen einfach passiert. Du lernst, Fluxo misst, und du kannst jederzeit klar sehen, welche Fächer sitzen und welche mehr Arbeit brauchen.
+
+Lernen ohne Erfassung ist Blindflug. Erfassung ohne Abruf-Messung sagt dir die falschen Dinge. Fluxo tut beides.

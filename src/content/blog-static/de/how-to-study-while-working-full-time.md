@@ -50,24 +50,44 @@ relatedPosts:
     metaDescription: "Du liest ein Buch zu Ende. Du sitzt ein Webinar aus. Du speicherst ein Dutzend Artikel. Und irgendwo zwischen der letzten Seite und dem echten Leben verschwindet fast alles."
     heroImage: "/assets/card-3.png"
 ---
-        <p>Das ist tatsächlich genug. Aber nur, wenn du diese Zeit anders nutzt als Studierende.</p>
-        <hr class="article-rule" />
-        <h2>Das falsche Modell</h2>
-        <p>Die meisten Lerntipps sind für Studierende gedacht – mit Vier-Stunden-Blöcken, Prüfungsterminen und Lernen als Hauptbeschäftigung. Wenn du Vollzeit arbeitest, scheitert dieses Modell nicht nur – es lässt dich permanent das Gefühl haben, im Rückstand zu sein.</p>
-        <p>Den Versuch, einen Studienplan in den Lücken eines Erwachsenenlebens nachzubauen, bedeutet meist einen konzentrierten Wochenend-Anlauf, gefolgt von zwei Wochen nichts. Unbeständigkeit killt Retention schneller als jeder Mangel an Talent.</p>
-        <hr class="article-rule" />
-        <h2>Warum kürzere, häufigere Sitzungen besser funktionieren</h2>
-        <p>Die Forschung dazu ist eindeutig. <a href="https://www.yorku.ca/ncepeda/publications/CPVWR2006.html" target="_blank" rel="noopener">Cepeda et al.s Metaanalyse von 2006</a> im <em>Psychological Bulletin</em> zeigte, dass das Verteilen von Lernen über mehrere Sitzungen bessere Retention erzeugt als dieselbe Gesamtzeit in einer Sitzung. Das ist nicht nur eine Annehmlichkeit – es ist ein struktureller Vorteil für Menschen mit begrenzten täglichen Zeitfenstern.</p>
-        <p>Kurze tägliche Sitzungen passen außerdem dazu, wie Gedächtniskonsolidierung funktioniert. Der Schlaf verarbeitet und festigt, was du tagsüber gelernt hast. Wenn du heute Abend 20 Minuten lernst und schläfst, arbeitet dein Gehirn an diesem Stoff, während du ruhst. Sieben 20-minütige Sitzungen über die Woche bringen bessere Retention als eine 140-minütige Sitzung am Samstag.</p>
-        <p>Dieser Ansatz hat in der Lernforschung sogar einen Namen: Microlearning. Eine <a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2025.1491265/full" target="_blank" rel="noopener">Übersichtsarbeit in <em>Frontiers in Psychology</em> (2025)</a> fand Microlearning wirksam, um Wissen und Fähigkeiten unter Zeitdruck aufzubauen – genau die Situation berufstätiger Lernender.</p>
-        <hr class="article-rule" />
-        <h2>Eine realistische Tagesstruktur</h2>
-        <p><strong>10 bis 15 Minuten morgens:</strong> Wiederholung mit verteiltem Wiederholen. Geh durch, was Fluxo oder deine App als fällig markiert. So fängst du Stoff ab, bevor er verblasst, und arbeitest mit der Gedächtniskonsolidierung der Nacht zusammen.</p>
-        <p><strong>20 bis 30 Minuten abends:</strong> Eine konzentrierte Lernsitzung. Neuer Stoff, Lesen mit aktiver Annotation oder ein Konzept durcharbeiten. Kein Multitasking. Benachrichtigungen aus.</p>
-        <p>Das war's. 30 bis 45 Minuten gesamt, keine großen Blöcke nötig.</p>
-        <p>Entscheidend ist, diese beiden Fenster zu schützen. Nicht zu erweitern – zu schützen. Beständigkeit vor Volumen.</p>
-        <hr class="article-rule" />
-        <h2>Das System zählt mehr als die Motivation</h2>
-        <p>Das Schwerste am Lernen neben einem Vollzeitjob ist nicht, Zeit zu finden. Es ist sicherzustellen, dass die gefundene Zeit für die richtigen Dinge genutzt wird. Ohne ein System, das dir sagt, was zu wiederholen und was als Nächstes zu lernen ist, fängst du jedes Mal von vorn an, deckst dasselbe Terrain ab oder liest einfach passiv.</p>
-        <p><strong><a href="/de/">Fluxo</a></strong> gibt berufstätigen Lernenden ein System, das sich selbst trägt. Du fügst hinzu, was du lernst, die KI erzeugt Zusammenfassungen, damit du weniger Zeit mit Verstehen und mehr mit Üben verbringst, und Fluxo zeigt dir jeden Tag genau, was in deiner verfügbaren Zeit dran ist.</p>
-        <p>Du brauchst keine Stunden. Du brauchst ein System, das in Minuten funktioniert.</p>
+Das ist tatsächlich genug. Aber nur, wenn du diese Zeit anders nutzt als Studierende.
+
+---
+
+## Das falsche Modell
+
+Die meisten Lerntipps sind für Studierende gedacht – mit Vier-Stunden-Blöcken, Prüfungsterminen und Lernen als Hauptbeschäftigung. Wenn du Vollzeit arbeitest, scheitert dieses Modell nicht nur – es lässt dich permanent das Gefühl haben, im Rückstand zu sein.
+
+Den Versuch, einen Studienplan in den Lücken eines Erwachsenenlebens nachzubauen, bedeutet meist einen konzentrierten Wochenend-Anlauf, gefolgt von zwei Wochen nichts. Unbeständigkeit killt Retention schneller als jeder Mangel an Talent.
+
+---
+
+## Warum kürzere, häufigere Sitzungen besser funktionieren
+
+Die Forschung dazu ist eindeutig. [Cepeda et al.s Metaanalyse von 2006](https://www.yorku.ca/ncepeda/publications/CPVWR2006.html) im *Psychological Bulletin* zeigte, dass das Verteilen von Lernen über mehrere Sitzungen bessere Retention erzeugt als dieselbe Gesamtzeit in einer Sitzung. Das ist nicht nur eine Annehmlichkeit – es ist ein struktureller Vorteil für Menschen mit begrenzten täglichen Zeitfenstern.
+
+Kurze tägliche Sitzungen passen außerdem dazu, wie Gedächtniskonsolidierung funktioniert. Der Schlaf verarbeitet und festigt, was du tagsüber gelernt hast. Wenn du heute Abend 20 Minuten lernst und schläfst, arbeitet dein Gehirn an diesem Stoff, während du ruhst. Sieben 20-minütige Sitzungen über die Woche bringen bessere Retention als eine 140-minütige Sitzung am Samstag.
+
+Dieser Ansatz hat in der Lernforschung sogar einen Namen: Microlearning. Eine [Übersichtsarbeit in *Frontiers in Psychology* (2025)](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2025.1491265/full) fand Microlearning wirksam, um Wissen und Fähigkeiten unter Zeitdruck aufzubauen – genau die Situation berufstätiger Lernender.
+
+---
+
+## Eine realistische Tagesstruktur
+
+**10 bis 15 Minuten morgens:** Wiederholung mit verteiltem Wiederholen. Geh durch, was Fluxo oder deine App als fällig markiert. So fängst du Stoff ab, bevor er verblasst, und arbeitest mit der Gedächtniskonsolidierung der Nacht zusammen.
+
+**20 bis 30 Minuten abends:** Eine konzentrierte Lernsitzung. Neuer Stoff, Lesen mit aktiver Annotation oder ein Konzept durcharbeiten. Kein Multitasking. Benachrichtigungen aus.
+
+Das war's. 30 bis 45 Minuten gesamt, keine großen Blöcke nötig.
+
+Entscheidend ist, diese beiden Fenster zu schützen. Nicht zu erweitern – zu schützen. Beständigkeit vor Volumen.
+
+---
+
+## Das System zählt mehr als die Motivation
+
+Das Schwerste am Lernen neben einem Vollzeitjob ist nicht, Zeit zu finden. Es ist sicherzustellen, dass die gefundene Zeit für die richtigen Dinge genutzt wird. Ohne ein System, das dir sagt, was zu wiederholen und was als Nächstes zu lernen ist, fängst du jedes Mal von vorn an, deckst dasselbe Terrain ab oder liest einfach passiv.
+
+**[Fluxo](/de/)** gibt berufstätigen Lernenden ein System, das sich selbst trägt. Du fügst hinzu, was du lernst, die KI erzeugt Zusammenfassungen, damit du weniger Zeit mit Verstehen und mehr mit Üben verbringst, und Fluxo zeigt dir jeden Tag genau, was in deiner verfügbaren Zeit dran ist.
+
+Du brauchst keine Stunden. Du brauchst ein System, das in Minuten funktioniert.

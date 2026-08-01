@@ -50,34 +50,57 @@ relatedPosts:
     metaDescription: "You finish a book. You sit through a webinar. You save a dozen articles. And somewhere between the last page and real life, almost everything disappears."
     heroImage: "/assets/card-3.png"
 ---
-        <p>The real question is: how much do you actually retain, and can you prove it to yourself without guessing?</p>
-        <hr class="article-rule" />
-        <h2>Why Most Tracking Fails</h2>
-        <p>Time spent studying has almost no correlation with how much you remember. A 2006 study by <a href="https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x" target="_blank" rel="noopener">Roediger and Karpicke at Washington University</a> demonstrated this directly: two groups of students spent identical time with the same material. One group re-read it. The other tested themselves. A week later, the self-testing group remembered significantly more, even though they "studied" less in the traditional sense of turning pages and re-reading sentences.</p>
-        <p>Hours logged doesn't tell you whether learning happened. Recall does. And yet most apps, planners, and personal tracking systems default to logging hours, sessions completed, or streaks maintained — because those are easy to measure automatically. They're also nearly useless for telling you what you actually know.</p>
-        <hr class="article-rule" />
-        <h2>What's Actually Worth Measuring</h2>
-        <p>Four metrics matter more than the ones most trackers default to:</p>
-        <ul>
-          <li><strong>Retention rate</strong> — can you retrieve this without looking at it?</li>
-          <li><strong>Recall difficulty over time</strong> — is it getting easier to remember, or staying just as hard?</li>
-          <li><strong>Gaps, not just wins</strong> — what have you forgotten, not just what you've completed?</li>
-          <li><strong>Consistency over intensity</strong> — did you show up regularly, regardless of session length?</li>
-        </ul>
-        <p><strong>Retention rate</strong></p>
-        <p>Can you retrieve this information without looking at it? That's the only metric that matters for long-term learning. Everything else — time, completion percentage, highlights made — is a proxy that often misleads you into thinking you've learned more than you have. A course you finished six months ago and a course you finished yesterday should not look the same on a progress tracker if you can no longer recall anything from the first one.</p>
-        <p><strong>Recall difficulty over time</strong></p>
-        <p>How hard is it to remember something after one day? After one week? After one month? If recall gets easier over time with shorter sessions, the knowledge is consolidating properly. If it stays just as hard every time you review it, you need more repetition, a different explanation, or a stronger connection to something you already understand.</p>
-        <p><strong>Gaps, not just wins</strong></p>
-        <p>Most progress tracking shows you what you've completed: chapters read, modules finished, badges earned. More useful is tracking what you've forgotten or gotten wrong. A system that surfaces your weakest areas and prioritizes them in review sessions is more valuable than one that only celebrates streaks, because the weak spots are exactly where your effort produces the most improvement per minute spent.</p>
-        <p><strong>Consistency over intensity</strong></p>
-        <p>A single intense study weekend looks impressive on a calendar but research on distributed practice consistently shows that consistency matters more than any individual session's length. Tracking whether you showed up regularly, even briefly, is often a better predictor of long-term retention than tracking total hours in any given week.</p>
-        <hr class="article-rule" />
-        <h2>The Problem With Manual Tracking</h2>
-        <p>You can build a spreadsheet to track all of this. Some people do, and a few even stick with it for a while. Most stop within a few weeks because maintaining the tracker takes nearly as much energy as the learning itself.</p>
-        <p>The value of tracking learning progress is real — MIT's Teaching and Learning Lab <a href="https://tll.mit.edu/teaching-resources/how-people-learn/metacognition/" target="_blank" rel="noopener">notes that metacognitive monitoring</a> significantly improves learning outcomes, partly because it lets learners redirect effort toward weak spots instead of spending more time on material they've already mastered. But that benefit only materializes if the tracking is accurate and effortless.</p>
-        <hr class="article-rule" />
-        <h2>What Automatic Progress Tracking Looks Like</h2>
-        <p><strong><a href="/">Fluxo</a></strong> tracks retention by measuring how you perform during each review session. Every time you recall something correctly or struggle with it, Fluxo adjusts its model of what you know and how confident you should be about remembering it next time. Over weeks, you can see your retention rate by topic — not how many notes you have, but how much of that material you can actually recall on demand without prompting.</p>
-        <p>This turns progress tracking from a chore into something that just happens as you learn. You study, Fluxo measures, and at any point you can see clearly which subjects are solid and which need more work, without ever opening a spreadsheet or manually scoring yourself.</p>
-        <p>Learning without tracking is flying blind. Tracking without measuring recall tells you the wrong things, no matter how detailed the spreadsheet looks. Fluxo does both: it tracks automatically, and it tracks the thing that actually matters.</p>
+The real question is: how much do you actually retain, and can you prove it to yourself without guessing?
+
+---
+
+## Why Most Tracking Fails
+
+Time spent studying has almost no correlation with how much you remember. A 2006 study by [Roediger and Karpicke at Washington University](https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2006.01693.x) demonstrated this directly: two groups of students spent identical time with the same material. One group re-read it. The other tested themselves. A week later, the self-testing group remembered significantly more, even though they "studied" less in the traditional sense of turning pages and re-reading sentences.
+
+Hours logged doesn't tell you whether learning happened. Recall does. And yet most apps, planners, and personal tracking systems default to logging hours, sessions completed, or streaks maintained — because those are easy to measure automatically. They're also nearly useless for telling you what you actually know.
+
+---
+
+## What's Actually Worth Measuring
+
+Four metrics matter more than the ones most trackers default to:
+
+- **Retention rate** — can you retrieve this without looking at it?
+- **Recall difficulty over time** — is it getting easier to remember, or staying just as hard?
+- **Gaps, not just wins** — what have you forgotten, not just what you've completed?
+- **Consistency over intensity** — did you show up regularly, regardless of session length?
+
+**Retention rate**
+
+Can you retrieve this information without looking at it? That's the only metric that matters for long-term learning. Everything else — time, completion percentage, highlights made — is a proxy that often misleads you into thinking you've learned more than you have. A course you finished six months ago and a course you finished yesterday should not look the same on a progress tracker if you can no longer recall anything from the first one.
+
+**Recall difficulty over time**
+
+How hard is it to remember something after one day? After one week? After one month? If recall gets easier over time with shorter sessions, the knowledge is consolidating properly. If it stays just as hard every time you review it, you need more repetition, a different explanation, or a stronger connection to something you already understand.
+
+**Gaps, not just wins**
+
+Most progress tracking shows you what you've completed: chapters read, modules finished, badges earned. More useful is tracking what you've forgotten or gotten wrong. A system that surfaces your weakest areas and prioritizes them in review sessions is more valuable than one that only celebrates streaks, because the weak spots are exactly where your effort produces the most improvement per minute spent.
+
+**Consistency over intensity**
+
+A single intense study weekend looks impressive on a calendar but research on distributed practice consistently shows that consistency matters more than any individual session's length. Tracking whether you showed up regularly, even briefly, is often a better predictor of long-term retention than tracking total hours in any given week.
+
+---
+
+## The Problem With Manual Tracking
+
+You can build a spreadsheet to track all of this. Some people do, and a few even stick with it for a while. Most stop within a few weeks because maintaining the tracker takes nearly as much energy as the learning itself.
+
+The value of tracking learning progress is real — MIT's Teaching and Learning Lab [notes that metacognitive monitoring](https://tll.mit.edu/teaching-resources/how-people-learn/metacognition/) significantly improves learning outcomes, partly because it lets learners redirect effort toward weak spots instead of spending more time on material they've already mastered. But that benefit only materializes if the tracking is accurate and effortless.
+
+---
+
+## What Automatic Progress Tracking Looks Like
+
+**[Fluxo](/)** tracks retention by measuring how you perform during each review session. Every time you recall something correctly or struggle with it, Fluxo adjusts its model of what you know and how confident you should be about remembering it next time. Over weeks, you can see your retention rate by topic — not how many notes you have, but how much of that material you can actually recall on demand without prompting.
+
+This turns progress tracking from a chore into something that just happens as you learn. You study, Fluxo measures, and at any point you can see clearly which subjects are solid and which need more work, without ever opening a spreadsheet or manually scoring yourself.
+
+Learning without tracking is flying blind. Tracking without measuring recall tells you the wrong things, no matter how detailed the spreadsheet looks. Fluxo does both: it tracks automatically, and it tracks the thing that actually matters.
