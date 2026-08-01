@@ -293,93 +293,71 @@ const alternates = supportedLocales
 
 ---
 
-### 🟡 19. `timeRequired` (ISO 8601) відсутнє
-**File:** `BlogArticleLayout.astro:73-93`
+### 🟡 19. `timeRequired` (ISO 8601) відсутнє ✅
+**File:** `BlogArticleLayout.astro:68-72, 93`
 
-`readTime` в static зберігається як `"5 хв читання"` — не machine-readable. Додати в schema:
-```js
-timeRequired: "PT5M"
-```
-
-Треба або парсити `readTime` регексом, або зберігати число хвилин окремим полем.
+**Status:** Fixed для static — `timeRequired: "PT{N}M"` в schema, N парситься з `article.readTime` через `Number.parseInt`. Generated posts не мають поля `readTime` (не в generated schema) → пропущено; треба додавати спочатку в контент-модель.
 
 ---
 
-### 🟡 20. `dateModified === datePublished` fallback
-`article.modifiedAt` рідко заповнюється. Коли пост реально оновлюється — треба bumpити `modifiedAt`, інакше Google не помітить fresh content.
-
-Convention: sync-скрипт має ставити `modifiedAt = now()` при кожному rebuild.
+### 🟡 20. `dateModified === datePublished` fallback ✅
+**Status:** Fixed на бекенді через content-hash flow (див. content-seo `rebuild.service.ts:publishIncludedDrafts` + нова колонка `content_draft.published_modified_at`). Rebuild bumpає `publishedModifiedAt` тільки якщо SHA256(body+title+meta+outline+frontmatter) відрізняється від попередньо опублікованого. Build-export (`build-export.service.ts:109`) експортує `publishedModifiedAt ?? updatedAt`. Landing sync-script пише в frontmatter `modifiedAt = post.updatedAt`. Status-only changes (approve/reject) більше не забруднюють freshness signal. Для static — bump `modifiedAt` вручну при реальній правці md.
 
 ---
 
 ## Sitemap
 
-### 🔴 15. `<lastmod>` відсутній
+### 🔴 15. `<lastmod>` відсутній ✅
 **File:** `landing-kit/src/pages/sitemap.xml.ts`
 
-Sitemap не пише `<lastmod>` для жодного URL. Гуглу важко зрозуміти свіжість → рідший recrawl.
+**Status:** Fixed. Static URLs: `modifiedAt ?? publishedAt` (date-only входи нормалізуються до `T09:00:00Z`, як в layout). Generated URLs: `modifiedAt ?? updatedAt ?? createdAt` (всі ISO datetime). Homepage/privacy/cookies залишаються без lastmod (нема надійного джерела дати).
 
-**Fix:**
-```xml
-<url>
-  <loc>${loc}</loc>
-  <lastmod>${entry.data.modifiedAt ?? entry.data.publishedAt}</lastmod>
-  ...
-</url>
-```
-
-Для generated — `data.createdAt` (краще додати `updatedAt` в схему).
+Verified: `npm run build` + `head dist/sitemap.xml` — 32 lastmod / 38 URL (blog: усі, локалі та standalone: без).
 
 ---
 
-### 🟠 16. Немає `<image:image>` в sitemap
+### 🟠 16. Немає `<image:image>` в sitemap ✅
 **File:** `landing-kit/src/pages/sitemap.xml.ts`
 
-Додати namespace `xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"` і для кожного article URL:
+**Status:** Fixed. Namespace `xmlns:image` додано, кожен blog URL має `<image:image>` з `<image:loc>` (абсолютний heroAsset/heroImage). Static — плюс `<image:title>` (`entry.data.title`) і `<image:caption>` (`heroAlt`). Generated — `<image:title>` = `data.title`, caption опущено (нема `heroAlt` у generated schema).
 
-```xml
-<url>
-  <loc>...</loc>
-  <lastmod>...</lastmod>
-  <image:image>
-    <image:loc>${heroImageAbsolute}</image:loc>
-    <image:title>${title}</image:title>
-    <image:caption>${heroAlt}</image:caption>
-  </image:image>
-</url>
-```
-
-Google Images ранжує через це.
+Verified: 32 `<image:image>` = 28 static + 4 generated blog URLs. Image URLs вказують на реальні `/assets/card-*.png|.webp` (перевірено `test -f` у `dist/`).
 
 ---
 
-### 🔵 17. `<priority>` / `<changefreq>` опціонально
-Google ignores, але Bing/Yandex ще читають. Index page priority 1.0, articles 0.7, cookies/privacy 0.3.
+### 🔵 17. `<priority>` / `<changefreq>` опціонально ✅
+**Status:** Fixed з чесними значеннями (Google ігнорує ці поля, але Bing/Yandex ще читають — залишаємо як recrawl hint).
+- Locale homepages: `priority=1.0, changefreq=monthly` (лендінг рідко міняється)
+- Blog index (`/blog/`, `/{locale}/blog/`): `priority=0.9, changefreq=weekly` (нові пости додаються часто)
+- Blog articles: `priority=0.7, changefreq=yearly` (evergreen; реальна свіжість тримається через `<lastmod>`)
+- Privacy/cookies: `priority=0.3, changefreq=yearly`
+
+### Bonus: blog index pages + unified sort ✅
+**Files:** `landing-kit/src/pages/sitemap.xml.ts`, `landing-kit/src/lib/blog-list.ts`
+
+Sitemap раніше пропускав hub-сторінки `/blog/`, `/uk/blog/`, `/es/blog/`, `/de/blog/`. Тепер додано з `<lastmod>` = найсвіжіший `<lastmod>` серед постів тієї локалі + `<xhtml:link>` alternates між локалями. Priority 0.9, changefreq weekly.
+
+Sort уніфіковано: `getBlogCards()` тепер сортує за `freshnessAt` (`modifiedAt ?? updatedAt ?? publishedAt`) desc, tiebreaker — title asc. Sitemap blog entries сортуються за таким самим `freshnessKey` desc, tiebreaker — loc asc. Blog index UI і sitemap видають ідентичний порядок постів → Google і користувач бачать одне джерело правди про "що свіже".
 
 ---
 
 ## Static markdown вміст
 
-### 🟠 18. `metaDescription === subtitle` дословно
-Приклад `src/content/blog-static/uk/best-study-routine.md`:
-```yaml
-subtitle: "Більшість людей вибудовують розклад..."
-metaDescription: "Більшість людей вибудовують розклад..."
-```
+### 🟠 18. `metaDescription === subtitle` дословно ✅
+**Files:** `src/content/blog-static/{en,uk,es,de}/*.md` (28 файлів)
 
-Google може вважати duplicate content signal. `metaDescription` має бути:
-- ≤160 символів
-- Містити primary keyword
-- Мати CTA / hook, не переказувати subtitle
+**Status:** Fixed. Всі 28 `metaDescription` переписано вручну — keyword-front-loaded, CTA/hook, ≤152 символів кожен, унікальні від subtitle. Скрипт `/tmp/rewrite-meta.py` містить всі 28 значень (по 7 slugs × 4 locales), assertion гарантує ≤160 chars, regex sub замінює тільки поле `metaDescription:`. Verified `subtitle != metaDescription` для всіх EN файлів.
 
-**Fix:** переписати всі `metaDescription` окремо. Це ручна робота копірайтера.
+Приклад (before/after):
+- before: `"Most people build a study routine the wrong way. They pick a time, open their notes, and start reading..."` (duplicate subtitle)
+- after: `"Build a study routine that actually improves recall, not just seat time — a four-step plan (prime, focus, practice, review) that top learners use."`
 
 ---
 
 ## Компоненти / accessibility
 
-### 🔵 21. `KeepReading.astro:23` — `alt=""` на related-post thumbs
-Якщо картинка декоративна і поруч є title — OK, але додати `role="presentation"` для явності. Або (краще для SEO images) — використати `alt={post.title}`.
+### 🔵 21. `KeepReading.astro:23` — `alt=""` на related-post thumbs ✅
+**Status:** Fixed — `alt={post.title}`. Related-post thumbs тепер описові для screen readers і Google Images.
 
 ### 🔵 22. Footer social icons `alt=""` + `aria-hidden="true"`
 OK, label поруч є. Залишити.
@@ -387,8 +365,8 @@ OK, label поруч є. Залишити.
 ### 🔵 23. `Header.astro:25` logo alt = `content.footer.brandAlt`
 Використовує *footer* key для *header* — плутанина, функціонально працює. Rename `content.brand.logoAlt` для обох.
 
-### 🟡 24. Немає `<link rel="preload">` для hero image
-Пункт 2 (LCP fix). Preload зменшує LCP на 200-500 ms.
+### 🟡 24. Немає `<link rel="preload">` для hero image ✅
+**Status:** Fixed в обох layouts. `BlogArticleLayout.astro:148` та `GeneratedBlogArticleLayout.astro:173` мають `<link rel="preload" as="image" href={heroImage} fetchpriority="high" />` в `<head>`. Генеровані пости preloadyуть тільки коли `data.heroImage` є.
 
 ---
 

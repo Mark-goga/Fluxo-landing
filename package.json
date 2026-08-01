@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "npm run covers:generate && astro build && node landing-kit/src/scripts/fix-static-paths.mjs",
+    "build": "astro build && node landing-kit/src/scripts/fix-static-paths.mjs",
     "preview": "astro preview --host 0.0.0.0",
     "sync:blog": "tsx landing-kit/src/scripts/sync-blog-content.ts",
     "sync:blog:demo": "tsx landing-kit/src/scripts/sync-blog-content.ts --export-file fixtures/content-build-export.metacognition.json --rebuild-id 019fabdc-9c29-7075-a5f0-309c3964ee77 --application-id 019e92d8-b331-7321-a2fc-a0f82fc0d2c3 --managed-root src/content/blog/generated",

@@ -9,7 +9,7 @@ This document describes the DB → Git publishing pipeline that turns editoriall
 3. GitHub Actions (`.github/workflows/publish-content.yml`) checks out `main`, verifies `applicationId` matches `secrets.APPLICATION_ID`, and runs `scripts/sync-blog-content.ts` via `tsx`.
 4. The sync script `GET`s `${BACKEND_URL}/content-seo/rebuilds/${rebuildId}/export` using `X-API-Key`, validates the payload with a Zod schema mirroring the backend contract, and writes each post as `.md` under `src/content/blog/generated/{en,uk,es,de}/`.
 5. Files are staged into a sibling temp dir and swapped atomically. Round-trip parsing is verified per file. A `manifest.json` is written alongside.
-6. `npx astro check` and `npm run build` guarantee the site still compiles.
+6. The workflow generates OG covers, then runs `npx astro check` and `npm run build`. Vercel only builds the already-committed static site; it never syncs content from the backend.
 7. Only `src/content/blog/generated/**` and the two dynamic route files (`src/pages/blog/[slug].astro`, `src/pages/[locale]/blog/[slug].astro`) are committed. Human-authored blog pages are never touched.
 8. Workflow POSTs `.../rebuilds/${rebuildId}/complete` (or `.../fail`) with the resulting commit SHA and file map so the backend can mark the rebuild done.
 
