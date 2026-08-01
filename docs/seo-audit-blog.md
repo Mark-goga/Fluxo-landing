@@ -232,6 +232,8 @@ const ogCoverPath = locale === "en"
 ### 🟠 11. `publisher` без `logo`
 **Files:** обидва blog layouts
 
+**Статус:** ⏸️ Не реалізовано. Потрібен окремий контрастний public logo asset для Google rich results; наявні favicon-варіанти призначені для browser UI, а поточний `logo-fluxo.png` білий на transparent background і не є надійним на світлому фоні результатів пошуку.
+
 Google Article Rich Results вимагає:
 ```js
 publisher: {

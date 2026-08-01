@@ -2,6 +2,7 @@ import { defineConfig } from "astro/config";
 import { loadEnv } from "vite";
 import { fileURLToPath } from "node:url";
 import { resolve } from "node:path";
+import { verifyOgCovers } from "./landing-kit/src/scripts/verify-og-covers.mjs";
 
 const requiredEnv = (env, key) => {
   const value = env[key] ?? process.env[key];
@@ -22,6 +23,19 @@ export default defineConfig(({ mode }) => {
     output: "static",
     site: requiredEnv(env, "SITE_URL"),
     base: requiredEnv(env, "ASTRO_BASE_PATH"),
+    integrations: [
+      {
+        name: "verify-og-covers",
+        hooks: {
+          "astro:build:done": ({ dir }) => {
+            verifyOgCovers({
+              outDir: fileURLToPath(dir),
+              publicDir: resolve(projectRoot, "public"),
+            });
+          },
+        },
+      },
+    ],
     vite: {
       resolve: {
         preserveSymlinks: true,
