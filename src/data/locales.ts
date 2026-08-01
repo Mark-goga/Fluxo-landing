@@ -128,6 +128,26 @@ export type LandingContent = {
   };
   structuredData: {
     description: string;
+    searchUrlTemplate?: string;
+    organization?: {
+      logoPath: string;
+      sameAs?: string[];
+      contactEmail?: string;
+    };
+    software?: {
+      category: string;
+      operatingSystem: string;
+      offers?: Array<{
+        name: string;
+        price: string;
+        priceCurrency: string;
+        description?: string;
+      }>;
+      aggregateRating?: {
+        ratingValue: string;
+        ratingCount: string;
+      };
+    };
   };
   blog: {
     metaTitle: string;
@@ -431,6 +451,19 @@ export const landingContent = {
     structuredData: {
       description:
         "Fluxo is a learning app that combines structured knowledge spaces, AI summaries, and spaced repetition to turn passive reading into active long-term memory.",
+      searchUrlTemplate: "/blog/?q={search_term_string}",
+      organization: {
+        logoPath: "/assets/logo-fluxo.png",
+      },
+      software: {
+        category: "EducationalApplication",
+        operatingSystem: "Web, iOS, Android",
+        offers: [
+          { name: "Free", price: "0", priceCurrency: "USD", description: "Perfect for getting started with Fluxo — 3 knowledge spaces, capture, imports, and 5 AI summaries per month." },
+          { name: "Premium", price: "9", priceCurrency: "USD", description: "Unlock the full Fluxo experience — unlimited spaces, AI summaries, flashcards, spaced repetition, 500 AI credits/month." },
+          { name: "Premium Plus", price: "20", priceCurrency: "USD", description: "Full AI learning suite for serious learners — everything in Premium, plus AI grading, retention analytics, and 5,000 AI credits/month." },
+        ],
+      },
     },
     blog: {
       metaTitle: `${siteConfig.name} Blog — Learning science, study workflows & spaced repetition`,
@@ -727,6 +760,19 @@ export const landingContent = {
     structuredData: {
       description:
         "Fluxo — застосунок для навчання, що поєднує структуровані простори знань, ШІ-конспекти та інтервальне повторення, перетворюючи пасивне читання на активну довготривалу пам'ять.",
+      searchUrlTemplate: "/uk/blog/?q={search_term_string}",
+      organization: {
+        logoPath: "/assets/logo-fluxo.png",
+      },
+      software: {
+        category: "EducationalApplication",
+        operatingSystem: "Web, iOS, Android",
+        offers: [
+          { name: "Безкоштовно", price: "0", priceCurrency: "USD", description: "Ідеально, щоб почати з Fluxo — 4 простори знань, базові ШІ-конспекти, синхронізація на 2 пристроях." },
+          { name: "Premium", price: "9.99", priceCurrency: "USD", description: "Повний досвід Fluxo — необмежені простори, повні ШІ-конспекти, необмежені тренування, інтервальне повторення." },
+          { name: "Premium Plus", price: "19.99", priceCurrency: "USD", description: "Усе з Premium плюс панель аналітики, експорт (Notion, CSV, Anki) та власні інтервали тренувань." },
+        ],
+      },
     },
     blog: {
       metaTitle: `Блог ${siteConfig.name} — наука навчання, робочі процеси та інтервальне повторення`,
@@ -1031,6 +1077,19 @@ export const landingContent = {
     structuredData: {
       description:
         "Fluxo es una app de aprendizaje que combina espacios de conocimiento estructurados, resúmenes con IA y repetición espaciada para convertir la lectura pasiva en memoria activa a largo plazo.",
+      searchUrlTemplate: "/es/blog/?q={search_term_string}",
+      organization: {
+        logoPath: "/assets/logo-fluxo.png",
+      },
+      software: {
+        category: "EducationalApplication",
+        operatingSystem: "Web, iOS, Android",
+        offers: [
+          { name: "Free", price: "0", priceCurrency: "USD", description: "Perfecto para empezar con Fluxo — espacios de conocimiento, capturas e importaciones básicas." },
+          { name: "Premium", price: "9", priceCurrency: "USD", description: "Desbloquea la experiencia completa — espacios ilimitados, resúmenes con IA, flashcards y repetición espaciada." },
+          { name: "Premium Plus", price: "20", priceCurrency: "USD", description: "Suite completa de aprendizaje con IA — todo lo de Premium más analítica de retención y 5.000 créditos de IA al mes." },
+        ],
+      },
     },
     blog: {
       metaTitle: `Blog ${siteConfig.name} — ciencia del aprendizaje, flujos de estudio y repetición espaciada`,
@@ -1335,6 +1394,19 @@ export const landingContent = {
     structuredData: {
       description:
         "Fluxo ist eine Lern-App, die strukturierte Wissensräume, KI-Zusammenfassungen und verteiltes Wiederholen kombiniert, um passives Lesen in aktives Langzeitgedächtnis zu verwandeln.",
+      searchUrlTemplate: "/de/blog/?q={search_term_string}",
+      organization: {
+        logoPath: "/assets/logo-fluxo.png",
+      },
+      software: {
+        category: "EducationalApplication",
+        operatingSystem: "Web, iOS, Android",
+        offers: [
+          { name: "Free", price: "0", priceCurrency: "USD", description: "Perfekt für den Einstieg in Fluxo — Wissensräume, Erfassung und einfache Importe." },
+          { name: "Premium", price: "9", priceCurrency: "USD", description: "Das volle Fluxo-Erlebnis — unbegrenzte Wissensräume, KI-Zusammenfassungen, Karteikarten und verteiltes Wiederholen." },
+          { name: "Premium Plus", price: "20", priceCurrency: "USD", description: "Vollständige KI-Lernsuite — alles aus Premium plus Retentions-Dashboard und 5.000 KI-Credits pro Monat." },
+        ],
+      },
     },
     blog: {
       metaTitle: `${siteConfig.name} Blog — Lernwissenschaft, Lern-Workflows & verteiltes Wiederholen`,
