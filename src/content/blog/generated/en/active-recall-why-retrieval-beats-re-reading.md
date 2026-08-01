@@ -7,7 +7,7 @@ pageType: "concept"
 title: "Active Recall: Why Retrieval Beats Re-Reading"
 metaDescription: "Active recall uses memory retrieval, not recognition, to build durable knowledge. Learn the research behind it, why re-reading fails, and how to apply it."
 createdAt: "2026-08-01T03:25:32.627Z"
-modifiedAt: "2026-08-01T14:50:38.038Z"
+modifiedAt: "2026-08-01T17:14:12.574Z"
 translationGroupId: "019fbb5b-05f5-71d8-be1b-9f49d0988b03"
 heroImage: "/assets/card-14.webp"
 faq:
@@ -52,10 +52,10 @@ relatedPosts:
     title: "The Study Workflow That Turns Notes Into Applied Knowledge"
     metaDescription: "Most study workflows plateau at understanding and never reach application. This guide shows how to write to think, build atomic notes, and use spaced repetition to reach the knowledge tier that actually transfers to real problems."
     heroImage: "/assets/card-11.webp"
-  - href: "/blog/how-to-take-notes-from-a-book-you-actually-retain/"
-    title: "How to Take Notes from a Book You Actually Retain"
-    metaDescription: "Learn how to take notes from a book using a three-phase system that builds lasting understanding. Covers reading order, commentary use, and spaced repetition review."
-    heroImage: "/assets/card-17.webp"
+  - href: "/blog/how-to-remember-what-you-read-and-actually-retain-it/"
+    title: "How to Remember What You Read (and Actually Retain It)"
+    metaDescription: "Paper reading consistently outperforms screens for comprehension of informational text. Learn why the gap exists, what drives it, and how structured notes with spaced repetition close it for good."
+    heroImage: "/assets/card-9.webp"
 ---
 Active recall means pulling information out of memory without looking at the source, and decades of cognitive research back it as one of the best ways to build knowledge that lasts. Most people re-read, highlight, and rewatch review videos instead, because those feel productive. But recognition, the sense that material looks familiar, is not the same as retrieval, the ability to rebuild knowledge from nothing, and only one of them holds up on exam day.
 

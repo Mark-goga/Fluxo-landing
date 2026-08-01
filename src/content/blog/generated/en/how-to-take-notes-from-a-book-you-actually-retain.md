@@ -7,7 +7,7 @@ pageType: "how_to"
 title: "How to Take Notes from a Book You Actually Retain"
 metaDescription: "Learn how to take notes from a book using a three-phase system that builds lasting understanding. Covers reading order, commentary use, and spaced repetition review."
 createdAt: "2026-08-01T03:34:22.593Z"
-modifiedAt: "2026-08-01T14:51:43.943Z"
+modifiedAt: "2026-08-01T17:14:12.574Z"
 translationGroupId: "019fbb63-1c27-7354-99f5-d160ac9e0994"
 heroImage: "/assets/card-17.webp"
 faq:

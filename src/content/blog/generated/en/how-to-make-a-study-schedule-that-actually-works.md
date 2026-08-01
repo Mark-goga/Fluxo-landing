@@ -7,7 +7,7 @@ pageType: "how_to"
 title: "How to Make a Study Schedule That Actually Works"
 metaDescription: "A practical guide to building a study schedule that fits a busy life, using research on focus limits, break timing, and spaced repetition to make every study hour count."
 createdAt: "2026-08-01T03:13:55.438Z"
-modifiedAt: "2026-08-01T09:09:53.286Z"
+modifiedAt: "2026-08-01T17:14:12.574Z"
 translationGroupId: "019fbb50-6290-7442-8da5-156bd8c6128f"
 heroImage: "/assets/card-15.webp"
 faq:

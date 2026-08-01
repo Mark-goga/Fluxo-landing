@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rebuildId": "019fbe50-982a-77a8-a390-685ab006e9e1",
+  "rebuildId": "019fbe6e-9e06-724f-ba73-a6382e4810dd",
   "applicationId": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
   "posts": [
     {
@@ -8,7 +8,7 @@
       "locale": "en",
       "slug": "active-recall-why-retrieval-beats-re-reading",
       "path": "src/content/blog/generated/en/active-recall-why-retrieval-beats-re-reading.md",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fb10a-53d8-770e-8672-9dc3c2f3f5a4",
@@ -22,6 +22,13 @@
       "locale": "en",
       "slug": "how-to-make-a-study-schedule-that-actually-works",
       "path": "src/content/blog/generated/en/how-to-make-a-study-schedule-that-actually-works.md",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "019fabd6-77dc-70a3-98d8-c3a130a3151a",
+      "locale": "en",
+      "slug": "how-to-remember-what-you-read-and-actually-retain-it",
+      "path": "src/content/blog/generated/en/how-to-remember-what-you-read-and-actually-retain-it.md",
       "includedInRebuild": true
     },
     {
@@ -36,7 +43,7 @@
       "locale": "en",
       "slug": "how-to-take-notes-from-a-book-you-actually-retain",
       "path": "src/content/blog/generated/en/how-to-take-notes-from-a-book-you-actually-retain.md",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fb111-3baf-73c9-8cd0-ca3545257ede",
