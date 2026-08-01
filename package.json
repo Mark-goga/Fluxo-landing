@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node landing-kit/src/scripts/fix-static-paths.mjs",
+    "build": "npm run covers:generate && astro build && node landing-kit/src/scripts/fix-static-paths.mjs",
     "preview": "astro preview --host 0.0.0.0",
     "sync:blog": "tsx landing-kit/src/scripts/sync-blog-content.ts",
     "sync:blog:demo": "tsx landing-kit/src/scripts/sync-blog-content.ts --export-file fixtures/content-build-export.metacognition.json --rebuild-id 019fabdc-9c29-7075-a5f0-309c3964ee77 --application-id 019e92d8-b331-7321-a2fc-a0f82fc0d2c3 --managed-root src/content/blog/generated",
     "related:blog": "tsx landing-kit/src/scripts/assign-related-posts.ts --managed-root src/content/blog/generated",
+    "covers:generate": "node landing-kit/src/scripts/generate-cover.mjs --all",
     "test": "node --test landing-kit/src/scripts/*.test.mjs",
     "contracts:generate": "orval --config landing-kit/orval.config.ts",
     "contracts:check": "npm run contracts:generate && git diff --exit-code -- landing-kit/src/api/generated",
