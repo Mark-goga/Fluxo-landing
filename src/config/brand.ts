@@ -4,6 +4,7 @@ import type { BrandTokens } from "@kit/config/site";
 // Every landing implements this at `@site/config/brand.ts`.
 export const brandTokens: BrandTokens = {
   themeColor: "#4C27E3",
+  themeColorDark: "#0A0716",
   trackingGlobal: "fluxoTrack",
   faviconPath: "assets/favicon.png",
   faviconDarkPath: "assets/favicon-dark.png",

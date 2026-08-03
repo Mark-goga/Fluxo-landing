@@ -1968,3 +1968,414 @@ html.is-es .locale-en {
 .lead-toast--error {
   background: #C0392B;
 }
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  scrollbar-color: #7C5CFF #151129;
+
+  /* Blog / article theme vars — read by kit components
+     (Breadcrumb, TableOfContents, KeepReading, BlogIndex,
+     BlogArticleLayout, GeneratedBlogArticleLayout). Kit uses
+     var(--article-*, #fallback) so overrides here cascade
+     into scoped component styles without specificity fights. */
+  --article-bg: #151129;
+  --article-heading: #F5F2FF;
+  --article-text: #E4DDF2;
+  --article-text-secondary: #C8BEDA;
+  --article-text-muted: #8B7DA8;
+  --article-accent: #9377FF;
+  --article-accent-tint: rgba(124, 92, 255, 0.18);
+  --article-border: rgba(255, 255, 255, 0.08);
+  --article-border-strong: rgba(255, 255, 255, 0.15);
+  --article-hover-bg: rgba(124, 92, 255, 0.14);
+  --article-th-bg: rgba(255, 255, 255, 0.04);
+  --article-input-bg: rgba(255, 255, 255, 0.04);
+}
+
+html[data-theme="dark"] body {
+  background: #0A0716;
+}
+
+html[data-theme="dark"] ::-webkit-scrollbar-track {
+  background: #151129;
+}
+html[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  border: 3px solid #151129;
+  background: #7C5CFF;
+}
+html[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background: #9377FF;
+}
+
+/* Header */
+html[data-theme="dark"] header {
+  background: rgba(10, 7, 22, 0.78);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+html[data-theme="dark"] header.scrolled {
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+/* Logo — swap to pre-generated white variant on dark. `content: url()`
+   replaces the image source at the CSS layer, preserving intrinsic
+   dimensions and alt text. Pre-generated with the FLUXO letters and
+   O ring inverted to white while preserving the cat's grayscale
+   details (glasses, eyes, ears). See scripts/gen-dark-logo.mjs. */
+html[data-theme="dark"] .logo img {
+  content: url("/assets/logo-fluxo-white.png");
+}
+
+/* Nav links */
+html[data-theme="dark"] .nav-link {
+  color: #F5F2FF;
+}
+html[data-theme="dark"] .nav-link:hover {
+  color: #9377FF;
+}
+html[data-theme="dark"] .nav-link:active {
+  color: #7C5CFF;
+}
+
+/* Secondary / ghost surfaces (buttons, burger, language switcher trigger) */
+html[data-theme="dark"] .btn-secondary,
+html[data-theme="dark"] .header-wrapper .btn-secondary,
+html[data-theme="dark"] .burger,
+html[data-theme="dark"] .lang-switch-btn,
+html[data-theme="dark"] .pricing-btn--secondary {
+  background: rgba(255, 255, 255, 0.05);
+  outline-color: rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+  color: #F5F2FF;
+}
+html[data-theme="dark"] .btn-secondary:hover,
+html[data-theme="dark"] .header-wrapper .btn-secondary:hover,
+html[data-theme="dark"] .burger:hover,
+html[data-theme="dark"] .lang-switch-btn:hover,
+html[data-theme="dark"] .pricing-btn--secondary:hover {
+  background: rgba(255, 255, 255, 0.09);
+  outline-color: rgba(255, 255, 255, 0.18);
+}
+html[data-theme="dark"] .burger span {
+  background: #F5F2FF;
+}
+
+/* Language switcher menu */
+html[data-theme="dark"] .lang-switch-globe {
+  color: #9377FF;
+}
+html[data-theme="dark"] .lang-switch-chevron {
+  color: #B8ABD6;
+}
+html[data-theme="dark"] .lang-switch-menu {
+  background: rgba(21, 17, 41, 0.98);
+  outline-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.55);
+}
+html[data-theme="dark"] .lang-switch-option {
+  color: #F5F2FF;
+}
+html[data-theme="dark"] .lang-switch-option:hover {
+  background: rgba(124, 92, 255, 0.14);
+  color: #9377FF;
+}
+html[data-theme="dark"] .lang-switch-option.is-current {
+  background: rgba(124, 92, 255, 0.18);
+  color: #9377FF;
+}
+html[data-theme="dark"] .lang-switch-option-code {
+  color: #8B7DA8;
+}
+html[data-theme="dark"] .lang-switch-option.is-current .lang-switch-option-code {
+  color: #9377FF;
+}
+html[data-theme="dark"] .mobile-lang {
+  color: #F5F2FF;
+  background: rgba(255, 255, 255, 0.05);
+}
+html[data-theme="dark"] .mobile-lang.is-current {
+  background: rgba(124, 92, 255, 0.18);
+  color: #9377FF;
+}
+
+/* Mobile nav drawer */
+html[data-theme="dark"] .mobile-nav {
+  background: rgba(10, 7, 22, 0.95);
+  border-top-color: rgba(255, 255, 255, 0.08);
+}
+html[data-theme="dark"] .mobile-nav .nav-link {
+  border-bottom-color: rgba(255, 255, 255, 0.06);
+}
+
+/* Hero */
+html[data-theme="dark"] .hero h1 {
+  color: #F5F2FF;
+}
+html[data-theme="dark"] .hero-body {
+  color: #B8ABD6;
+}
+html[data-theme="dark"] .hero-keyword {
+  background: radial-gradient(ellipse at 50% 50%, #886CF7 0%, #B7A9F4 50%, #886CF7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Primary buttons — brighter fill for dark bg */
+html[data-theme="dark"] .btn-primary,
+html[data-theme="dark"] .pricing-btn--primary,
+html[data-theme="dark"] .lead-modal__submit {
+  background: #6B4BE8;
+  outline-color: #886CF7;
+  box-shadow: 0px 4px 14px rgba(76, 39, 227, 0.4);
+}
+html[data-theme="dark"] .btn-primary:hover,
+html[data-theme="dark"] .pricing-btn--primary:hover,
+html[data-theme="dark"] .lead-modal__submit:hover {
+  background: #886CF7;
+  outline-color: #886CF7;
+  box-shadow: 0px 4px 20px rgba(124, 92, 255, 0.55);
+}
+html[data-theme="dark"] .btn-primary:active,
+html[data-theme="dark"] .pricing-btn--primary:active {
+  background: #4C27E3;
+  outline-color: #6B4BE8;
+}
+
+/* Section headings */
+html[data-theme="dark"] .section-title {
+  color: #F5F2FF;
+}
+
+/* Generic cards (Why-Fluxo etc.) */
+html[data-theme="dark"] .card {
+  background: rgba(255, 255, 255, 0.04);
+  outline-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.35);
+}
+html[data-theme="dark"] .card-title {
+  color: #F5F2FF;
+}
+html[data-theme="dark"] .card-desc {
+  color: #B8ABD6;
+}
+
+/* Feature cards — .feat-card-title / .feat-card-desc kept in light
+   colors because these cards use fixed color-illustration backgrounds
+   (purple / green / yellow / blue) that stay the same across themes. */
+html[data-theme="dark"] .feat-card {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+}
+html[data-theme="dark"] .feat-ai-badge {
+  background: rgba(255, 255, 255, 0.05);
+  outline-color: rgba(255, 255, 255, 0.08);
+  color: #B8ABD6;
+  box-shadow: none;
+}
+html[data-theme="dark"] .feat-sticker {
+  outline-color: #0A0716;
+}
+
+/* FAQ */
+html[data-theme="dark"] .faq-item {
+  background: rgba(255, 255, 255, 0.04);
+  outline-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+}
+html[data-theme="dark"] .faq-item.open {
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.45);
+}
+html[data-theme="dark"] .faq-question {
+  color: #F5F2FF;
+}
+html[data-theme="dark"] .faq-answer-inner p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* CTA — flip gradient to bright brand accent from dark base */
+html[data-theme="dark"] .cta {
+  background: linear-gradient(180deg, #0A0716 0%, #2A158A 55%, #7C5CFF 100%);
+}
+html[data-theme="dark"] .cta-form {
+  background: rgba(255, 255, 255, 0.12);
+  outline-color: rgba(255, 255, 255, 0.18);
+}
+
+/* Pricing */
+html[data-theme="dark"] .pricing-subtitle {
+  color: #B8ABD6;
+}
+html[data-theme="dark"] .pricing-card {
+  background: rgba(255, 255, 255, 0.04);
+  outline-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.35);
+}
+html[data-theme="dark"] .pricing-card--featured {
+  background: linear-gradient(180deg, #2A158A 0%, #1C1040 100%);
+  outline-color: rgba(255, 255, 255, 0.14);
+  box-shadow: 0px 8px 28px rgba(76, 39, 227, 0.35);
+}
+html[data-theme="dark"] .pricing-tier-label {
+  color: #8B7DA8;
+}
+html[data-theme="dark"] .pricing-name {
+  color: #F5F2FF;
+}
+html[data-theme="dark"] .pricing-desc {
+  color: #B8ABD6;
+}
+html[data-theme="dark"] .pricing-amount {
+  color: #F5F2FF;
+}
+html[data-theme="dark"] .pricing-period {
+  color: #8B7DA8;
+}
+html[data-theme="dark"] .pricing-divider {
+  background: rgba(255, 255, 255, 0.08);
+}
+html[data-theme="dark"] .pricing-features li {
+  color: #B8ABD6;
+}
+html[data-theme="dark"] .pricing-features li .check--yes {
+  background: rgba(124, 92, 255, 0.18);
+  color: #9377FF;
+}
+html[data-theme="dark"] .pricing-features li .check--no {
+  background: rgba(255, 255, 255, 0.06);
+  color: #6B6280;
+}
+
+/* Legal + 404 pages */
+html[data-theme="dark"] .legal-placeholder {
+  color: #B8ABD6;
+}
+html[data-theme="dark"] .legal-placeholder code {
+  background: rgba(255, 255, 255, 0.08);
+}
+html[data-theme="dark"] .notfound-title {
+  color: #F5F2FF;
+}
+html[data-theme="dark"] .notfound-body {
+  color: #B8ABD6;
+}
+
+/* Lead modal */
+html[data-theme="dark"] .lead-modal__overlay {
+  background: rgba(0, 0, 0, 0.75);
+}
+html[data-theme="dark"] .lead-modal__dialog {
+  background: #151129;
+  box-shadow: 0px 24px 60px rgba(0, 0, 0, 0.55);
+}
+html[data-theme="dark"] .lead-modal__close {
+  background: rgba(255, 255, 255, 0.06);
+  color: #F5F2FF;
+}
+html[data-theme="dark"] .lead-modal__close:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+html[data-theme="dark"] .lead-modal__title {
+  color: #F5F2FF;
+}
+html[data-theme="dark"] .lead-modal__desc {
+  color: #B8ABD6;
+}
+html[data-theme="dark"] .lead-modal__input {
+  border-color: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.03);
+  color: #F5F2FF;
+}
+html[data-theme="dark"] .lead-modal__input:focus {
+  border-color: #7C5CFF;
+}
+html[data-theme="dark"] .lead-modal__input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* ── Blog: hardcoded (non-var) color overrides for kit components ──
+   Kit uses fixed placeholder colors in these spots; override them
+   for dark. Selector specificity `html[data-theme="dark"] .x` beats
+   Astro's `.x[data-astro-cid-hash]` scoped rule (extra type + attr). */
+html[data-theme="dark"] .blog-featured-media,
+html[data-theme="dark"] .blog-card-media {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+html[data-theme="dark"] .blog-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+html[data-theme="dark"] .blog-featured:hover {
+  box-shadow: 0 4px 12px rgba(124, 92, 255, 0.2),
+    0 18px 44px rgba(124, 92, 255, 0.15);
+}
+html[data-theme="dark"] .related-post-thumb {
+  background: rgba(124, 92, 255, 0.14);
+}
+html[data-theme="dark"] .article-meta-dot {
+  color: rgba(255, 255, 255, 0.3);
+}
+html[data-theme="dark"] .source-creator {
+  color: #8B7DA8;
+}
+/* Blog title (BlogIndex) uses .blog-title with color inherited from
+   .blog-hub { color: var(--ink) } — already covered by --article-heading.
+   Article body <p> etc. inherit --article-text via kit rules. */
+
+/* Theme toggle (injected into .header-right by public/script.js).
+   Visual language matches .lang-switch-btn / .btn-secondary — same pill,
+   same border, same translucent-white surface in light mode; flips to
+   the translucent-white-on-dark treatment in dark mode. */
+.theme-toggle {
+  flex-shrink: 0;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.5);
+  color: #1C1C1C;
+  outline: 1px solid white;
+  outline-offset: -1px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 7.5px rgba(8, 3, 27, 0.08);
+  transition: background 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: none;
+}
+.theme-toggle svg {
+  width: 20px;
+  height: 20px;
+}
+.theme-toggle .theme-toggle-icon--sun {
+  display: none;
+}
+html[data-theme="dark"] .theme-toggle {
+  background: rgba(255, 255, 255, 0.05);
+  outline-color: rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+  color: #F5F2FF;
+}
+html[data-theme="dark"] .theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.09);
+  outline-color: rgba(255, 255, 255, 0.18);
+}
+html[data-theme="dark"] .theme-toggle .theme-toggle-icon--moon {
+  display: none;
+}
+html[data-theme="dark"] .theme-toggle .theme-toggle-icon--sun {
+  display: block;
+}
+/* Mobile drawer variant: full-width row with label-like footprint */
+.theme-toggle--mobile {
+  width: 100%;
+  height: 44px;
+  border-radius: 10px;
+  margin: 8px 16px 4px;
+  width: calc(100% - 32px);
+}
