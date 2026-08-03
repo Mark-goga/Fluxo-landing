@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rebuildId": "019fbe6e-9e06-724f-ba73-a6382e4810dd",
+  "rebuildId": "019fc7d0-d36c-769a-99dd-5587f8dc2080",
   "applicationId": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
   "posts": [
     {
@@ -9,6 +9,20 @@
       "slug": "active-recall-why-retrieval-beats-re-reading",
       "path": "src/content/blog/generated/en/active-recall-why-retrieval-beats-re-reading.md",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "019fc5cc-bcdc-742c-ae4b-fa88399f65c1",
+      "locale": "en",
+      "slug": "anki-alternatives-for-self-learners-who-take-notes",
+      "path": "src/content/blog/generated/en/anki-alternatives-for-self-learners-who-take-notes.md",
+      "includedInRebuild": true
+    },
+    {
+      "draftId": "019fc5d8-758f-763c-a870-01959d28d0a7",
+      "locale": "en",
+      "slug": "best-flashcard-app-in-2026-fluxo-anki-remnote-mochi-and-quizlet-compared",
+      "path": "src/content/blog/generated/en/best-flashcard-app-in-2026-fluxo-anki-remnote-mochi-and-quizlet-compared.md",
+      "includedInRebuild": true
     },
     {
       "draftId": "019fb10a-53d8-770e-8672-9dc3c2f3f5a4",
@@ -29,7 +43,7 @@
       "locale": "en",
       "slug": "how-to-remember-what-you-read-and-actually-retain-it",
       "path": "src/content/blog/generated/en/how-to-remember-what-you-read-and-actually-retain-it.md",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fb106-a552-7258-852c-a7a6eff0cb6f",
@@ -44,6 +58,13 @@
       "slug": "how-to-take-notes-from-a-book-you-actually-retain",
       "path": "src/content/blog/generated/en/how-to-take-notes-from-a-book-you-actually-retain.md",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "019fc5e1-295c-731d-bb15-ee3ddc1d6e1e",
+      "locale": "en",
+      "slug": "how-to-use-spaced-repetition-for-language-learning",
+      "path": "src/content/blog/generated/en/how-to-use-spaced-repetition-for-language-learning.md",
+      "includedInRebuild": true
     },
     {
       "draftId": "019fb111-3baf-73c9-8cd0-ca3545257ede",

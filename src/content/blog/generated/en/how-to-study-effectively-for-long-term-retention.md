@@ -42,14 +42,14 @@ relatedPosts:
     title: "The Study Workflow That Turns Notes Into Applied Knowledge"
     metaDescription: "Most study workflows plateau at understanding and never reach application. This guide shows how to write to think, build atomic notes, and use spaced repetition to reach the knowledge tier that actually transfers to real problems."
     heroImage: "/assets/card-11.webp"
+  - href: "/blog/how-to-use-spaced-repetition-for-language-learning/"
+    title: "How to Use Spaced Repetition for Language Learning"
+    metaDescription: "Learn how spaced repetition accelerates language learning. Master Anki's algorithm, card types, daily review habits, and vocabulary mining for lasting retention."
+    heroImage: "/assets/card-13.webp"
   - href: "/blog/how-to-take-notes-from-a-book-you-actually-retain/"
     title: "How to Take Notes from a Book You Actually Retain"
     metaDescription: "Learn how to take notes from a book using a three-phase system that builds lasting understanding. Covers reading order, commentary use, and spaced repetition review."
     heroImage: "/assets/card-17.webp"
-  - href: "/blog/how-to-study-while-working-full-time/"
-    title: "How to Study While Working Full Time?"
-    metaDescription: "Study while working full time without burning out — a realistic 45-minute-a-day plan that turns limited hours into steady, measurable progress."
-    heroImage: "/assets/card-5.webp"
 ---
 ## Where These Principles Come From
 

@@ -44,18 +44,18 @@ sources:
     creator: "Justin Sung"
     publishedAt: "2026-06-06T00:54:01.000Z"
 relatedPosts:
+  - href: "/blog/anki-alternatives-for-self-learners-who-take-notes/"
+    title: "Anki Alternatives for Self-Learners Who Take Notes"
+    metaDescription: "Most Anki alternatives just swap one card-first app for another. Compare Fluxo, RemNote, Mochi, and Quizlet for learners who want review built from their own notes."
+    heroImage: "/assets/card-16.webp"
+  - href: "/blog/best-flashcard-app-in-2026-fluxo-anki-remnote-mochi-and-quizlet-compared/"
+    title: "Best Flashcard App in 2026: Fluxo, Anki, RemNote, Mochi, and Quizlet Compared"
+    metaDescription: "The five best flashcard apps compared: Fluxo, Anki, RemNote, Mochi, and Quizlet. Card creation time, AI features, pricing, and which workflow each app fits."
+    heroImage: "/assets/card-1.png"
   - href: "/blog/how-to-study-effectively-for-long-term-retention/"
     title: "How to Study Effectively for Long-Term Retention"
     metaDescription: "Stop relearning the same material. These cognitive science principles for how to study effectively build durable memories from the first pass, for self-directed learners."
     heroImage: "/assets/card-10.webp"
-  - href: "/blog/the-study-workflow-that-turns-notes-into-applied-knowledge/"
-    title: "The Study Workflow That Turns Notes Into Applied Knowledge"
-    metaDescription: "Most study workflows plateau at understanding and never reach application. This guide shows how to write to think, build atomic notes, and use spaced repetition to reach the knowledge tier that actually transfers to real problems."
-    heroImage: "/assets/card-11.webp"
-  - href: "/blog/how-to-remember-what-you-read-and-actually-retain-it/"
-    title: "How to Remember What You Read (and Actually Retain It)"
-    metaDescription: "Paper reading consistently outperforms screens for comprehension of informational text. Learn why the gap exists, what drives it, and how structured notes with spaced repetition close it for good."
-    heroImage: "/assets/card-9.webp"
 ---
 Active recall means pulling information out of memory without looking at the source, and decades of cognitive research back it as one of the best ways to build knowledge that lasts. Most people re-read, highlight, and rewatch review videos instead, because those feel productive. But recognition, the sense that material looks familiar, is not the same as retrieval, the ability to rebuild knowledge from nothing, and only one of them holds up on exam day.
 
