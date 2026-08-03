@@ -63,11 +63,13 @@ header {
   left: 0;
   right: 0;
   z-index: 100;
-  background: #F2F2F2;
+  background: rgba(242, 242, 242, 0.78);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 header.scrolled {
-  box-shadow: 0 1px 0 rgba(0,0,0,0.08);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
 }
 
 main {
