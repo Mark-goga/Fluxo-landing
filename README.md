@@ -4,6 +4,53 @@ Static Astro landing page for Fluxo — a learning app that turns passive readin
 Built on a multilingual SEO foundation: SEO metadata, hreflang, sitemap, robots.txt, JSON-LD, Open Graph,
 Twitter cards, Microsoft Clarity events, and file-friendly static build output.
 
+## Shared code — `landing-kit` submodule
+
+> ⚠️ **Read before editing `landing-kit/`.** The `landing-kit/` directory is a **git submodule** shared with **Dzing** and every future landing. A change committed inside `landing-kit/` and pushed to its `main` will land in every other landing the next time they bump the submodule pointer — and can break their build or their live site.
+
+**Docs (in the kit itself):**
+
+- [`landing-kit/README.md`](./landing-kit/README.md) — overview
+- [`landing-kit/docs/ARCHITECTURE.md`](./landing-kit/docs/ARCHITECTURE.md) — layout, boundary, data flow
+- [`landing-kit/docs/CONSUMERS.md`](./landing-kit/docs/CONSUMERS.md) — how a landing wires the kit in
+- [`landing-kit/docs/CONTRIBUTING.md`](./landing-kit/docs/CONTRIBUTING.md) — **golden rules for shared changes**
+
+**Rules for edits under `landing-kit/`:**
+
+1. **Assume every other landing is watching.** Never hardcode Fluxo copy, brand tokens, env values, or paths in kit code.
+2. **Multi-consumer test before push.** Pull the kit change into Dzing (`cd ../dzing-landing && git -C landing-kit checkout <sha> && npm run build`) and eyeball the site. Green Fluxo build alone is not enough.
+3. **No renames / no deletions of public exports** (components, layouts, pages, `siteConfig`, `LandingContent` shape, generated API) without a deprecation path and updating every consumer in the same session.
+4. **New required env var = update every consumer's `.env.example`, README, and deployment in the same PR.** Optional with a safe default is fine.
+5. **Never hand-edit `landing-kit/src/api/generated/**`.** Regenerate via `npm run contracts:generate`.
+6. **Submodule pointer bumps go through the consumer repo, not the kit.** Push kit to its own remote first, then in the consumer: `git add landing-kit && git commit`.
+
+Full blast-radius checklist in [`CONTRIBUTING.md`](./landing-kit/docs/CONTRIBUTING.md).
+
+### Working with the submodule
+
+Fresh clone:
+
+```bash
+git clone --recurse-submodules <this-repo>
+# or, after a plain clone:
+git submodule update --init --recursive
+```
+
+Pull latest kit:
+
+```bash
+git submodule update --remote landing-kit
+```
+
+Bump kit to a specific sha:
+
+```bash
+cd landing-kit && git fetch origin && git checkout <sha> && cd ..
+npm run build   # must be green
+git add landing-kit
+git commit -m "chore: bump landing-kit to <sha>"
+```
+
 The landing is split into purpose-specific sections: header, hero, "Why Fluxo", features, pricing, FAQ, CTA,
 and footer. All copy and SEO metadata live in `src/data/locales.ts` for both English and Ukrainian.
 

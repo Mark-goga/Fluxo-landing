@@ -11,4 +11,6 @@ export const brandTokens: BrandTokens = {
   googleFontsUrl:
     "https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..900&display=swap",
   logoPath: "assets/logo-fluxo.png",
+  twitterSite: "@fluxo_app",
+  twitterCreator: "@fluxo_app",
 };
