@@ -38,6 +38,10 @@ sources:
     creator: "Scott Young"
     publishedAt: "2026-07-22T13:47:37.000Z"
 relatedPosts:
+  - href: "/blog/best-flashcard-app-in-2026-fluxo-anki-remnote-mochi-and-quizlet-compared/"
+    title: "Best Flashcard App in 2026: Fluxo, Anki, RemNote, Mochi, and Quizlet Compared"
+    metaDescription: "The five best flashcard apps compared: Fluxo, Anki, RemNote, Mochi, and Quizlet. Card creation time, AI features, pricing, and which workflow each app fits."
+    heroImage: "/assets/card-1.png"
   - href: "/blog/how-to-study-effectively-for-long-term-retention/"
     title: "How to Study Effectively for Long-Term Retention"
     metaDescription: "Stop relearning the same material. These cognitive science principles for how to study effectively build durable memories from the first pass, for self-directed learners."
@@ -46,10 +50,6 @@ relatedPosts:
     title: "Active Recall: Why Retrieval Beats Re-Reading"
     metaDescription: "Active recall uses memory retrieval, not recognition, to build durable knowledge. Learn the research behind it, why re-reading fails, and how to apply it."
     heroImage: "/assets/card-14.webp"
-  - href: "/blog/the-study-workflow-that-turns-notes-into-applied-knowledge/"
-    title: "The Study Workflow That Turns Notes Into Applied Knowledge"
-    metaDescription: "Most study workflows plateau at understanding and never reach application. This guide shows how to write to think, build atomic notes, and use spaced repetition to reach the knowledge tier that actually transfers to real problems."
-    heroImage: "/assets/card-11.webp"
 ---
 ## What the Research Behind These Rules Actually Shows
 

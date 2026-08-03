@@ -1,0 +1,106 @@
+---
+schemaVersion: 1
+draftId: "019fc5e1-295c-731d-bb15-ee3ddc1d6e1e"
+slug: "how-to-use-spaced-repetition-for-language-learning"
+locale: "en"
+pageType: "how_to"
+title: "How to Use Spaced Repetition for Language Learning"
+metaDescription: "Learn how spaced repetition accelerates language learning. Master Anki's algorithm, card types, daily review habits, and vocabulary mining for lasting retention."
+createdAt: "2026-08-03T04:28:15.714Z"
+modifiedAt: "2026-08-03T09:31:01.559Z"
+translationGroupId: "019fc5e1-295c-731d-bb15-ee3ddc1d6e1e"
+heroImage: "/assets/card-13.webp"
+faq:
+  - question: "Should I use Anki's Easy and Hard buttons?"
+    answer: "Avoid the Easy and Hard buttons entirely. The Easy button extends a card's interval too aggressively, and Hard compresses it too much, making the overall schedule erratic. Use only Good and Again to give Anki consistent recall signal and produce more predictable review intervals over time."
+  - question: "What FSRS desired retention setting should I use in Anki?"
+    answer: "Set desired retention to 85%. At 90% or above, Anki schedules reviews so frequently that daily counts become unsustainable for most learners. At 85%, you accept a small increase in the chance of forgetting a card in exchange for a manageable queue you can realistically clear each day."
+  - question: "How many new Anki cards should I add per day?"
+    answer: "Start with 10 new cards per day. Review debt accumulates from every card you add, so starting too high creates a backlog that overtakes your available study time within weeks. Ten cards per day builds toward a working vocabulary over 18 to 24 months while keeping daily sessions under 30 minutes."
+  - question: "What is the difference between vocabulary cards and sentence cards in Anki?"
+    answer: "Vocabulary cards show a word in isolation and are fast to review, making them useful for building raw word count. Sentence cards embed one unknown word in a comprehensible sentence, following Krashen's i+1 principle, and produce stronger memory encoding because the context shows how the word functions in real use. Most learners benefit from using both types, starting with vocabulary cards and adding sentence cards as reading ability grows."
+references:
+  - label: "Anki official website and spaced repetition documentation"
+    url: "https://apps.ankiweb.net"
+  - label: "Yomitan browser extension for one-click vocabulary mining"
+    url: "https://github.com/themoeway/yomitan"
+author:
+  id: "019faee1-9411-7438-a0d5-a441a9a771af"
+  name: "Markiian Halabut"
+  role: "Founder of Fluxo"
+  photoUrl: null
+  bio:
+    - locale: "en"
+      text: "Mark builds Fluxo — a spaced-repetition tool that turns notes into flashcards. He self-taught programming with Anki and now writes about learning science, PKM, and study workflows for people teaching themselves complex topics."
+  links:
+    website: "https://fluxo.today"
+sources:
+  - id: "019fc590-b51c-770e-8420-c78b42565d85"
+    type: "youtube_video"
+    title: "You Should Be Using Anki"
+    url: "https://www.youtube.com/watch?v=_MWtbI4IwfU"
+    creator: "Trenton"
+    publishedAt: "1970-01-01T00:00:00.000Z"
+relatedPosts:
+  - href: "/blog/the-study-workflow-that-turns-notes-into-applied-knowledge/"
+    title: "The Study Workflow That Turns Notes Into Applied Knowledge"
+    metaDescription: "Most study workflows plateau at understanding and never reach application. This guide shows how to write to think, build atomic notes, and use spaced repetition to reach the knowledge tier that actually transfers to real problems."
+    heroImage: "/assets/card-11.webp"
+  - href: "/blog/the-second-brain-for-learning/"
+    title: "The Second Brain for Learning"
+    metaDescription: "Build a second brain for learning — a system that captures, organizes, and resurfaces what you read so knowledge is ready the moment you need it."
+    heroImage: "/assets/card-7.webp"
+---
+## Why Vocabulary Is Your Biggest Bottleneck
+
+Limited vocabulary stops comprehension cold, and beginners feel it hardest because the most common words appear in every sentence. When three or four unknown words pile into a single clause, you lose the surrounding context you would need to guess any of them, and meaning falls apart. Build a large vocabulary base and progress speeds up across reading, listening, speaking, and writing, because recognition turns automatic and frees your attention for grammar and structure.
+
+Most learners badly underestimate how many words they need before real material opens up. Second-language research puts the threshold for basic conversational comprehension somewhere around 2,000 to 3,000 high-frequency words. Below that line, unknown words come so thick in normal speech and text that guessing from context fails more often than it works, which turns immersion into a chore instead of a payoff.
+
+## How Anki's Spaced Repetition Algorithm Works
+
+Anki schedules each review at a longer interval based on how confidently you recalled the card last time. Rate a card "Good" and the next showing might land in two days, then five, then two weeks, then a month. Because it tracks every card's interval separately, each one resurfaces just before you would have forgotten it. That targeting is what makes spaced repetition for language learning far more efficient than rereading a fixed vocabulary list every day.
+
+### The FSRS Upgrade in Anki 23.1
+
+Anki 23.1 added FSRS, the Free Spaced Repetition Scheduler, which models forgetting more precisely than the old SM-2 scheduler. For most learners it cuts the number of reviews needed to hold a given retention level, so the same study time buys wider vocabulary coverage. The setting that matters most is desired retention. Push it above 90% and your daily review count climbs sharply, because the algorithm keeps every card on a tight leash to prevent any lapse. Set it to 85% and you accept a slightly higher miss rate in exchange for a queue that stays workable across months of practice.
+
+### Which Buttons Actually Help Your Schedule
+
+The Easy and Hard buttons throw oversized jumps and cuts into a card's interval, and over weeks that makes your schedule lurch around. Stick to Good and Again and the algorithm gets a clean signal, producing intervals that grow in a steady, predictable curve. Pressing two buttons instead of four is the rare habit change that improves retention on its own, with nothing else touched.
+
+## Vocabulary Cards vs. Sentence Cards
+
+A vocabulary card shows one word and asks for its meaning. These are quick to make and quick to review, which makes them the practical choice for stacking up raw word count early on. Their weakness is thin context: you might nail the word on a card yet blank on it mid-sentence, where it sits in a different grammatical slot.
+
+Sentence cards fix that by using Stephen Krashen's i+1 principle. Each card holds exactly one unknown word inside an otherwise fully comprehensible sentence, so the context feeds you natural meaning cues and shows the word doing real work in real syntax. They take longer to review than plain vocabulary cards, but the richer encoding makes the word far easier to pull up when you actually read or listen.
+
+### When to Switch to Monolingual Cards
+
+Once you have a working base in the language, monolingual cards start to pay off. A monolingual card defines the new word using other words in your target language, holding onto distinctions and connotations that a translation quietly drops. Render a Spanish word as one English word and you flatten its register, its emotional weight, and the collocations native speakers hear around it; a target-language definition keeps those layers intact. This only works on top of a solid foundation, which is why it fits intermediate and advanced learners rather than beginners.
+
+## Anki's True Purpose in Your Learning System
+
+Anki hands you a rough meaning so you can recognize a word when it turns up during immersion. It does not train speech, does not give you natural pronunciation in context, and does not build the fluency that comes from processing large volumes of authentic input. Learners who pour all their time into flashcards and skip real immersion see little real-world gain, because clean recall in a controlled deck does not transfer neatly to spontaneous comprehension.
+
+So treat Anki as preparation for immersion. Flashcards clear the recognition bottleneck, and then when a word shows up in a film, a podcast, or an article, you already have a foothold on it. The immersion is what deepens the meaning, through repeated encounters in shifting contexts, until recall becomes the automatic kind that real conversation demands.
+
+## Building a Sustainable Daily Practice
+
+Start with 10 new cards a day. Review debt compounds: after six months at that rate, your daily queue settles around 100 cards and takes 20 to 30 minutes to clear. Jump to 30 new cards a day from the start and the queue grows faster than you can empty it, which is how backlog turns into burnout. The learner who built a 15,000-card Japanese deck held a pace of just 10 to 15 new words a day for years, proof that a modest steady rate beats an unsustainable sprint.
+
+### Recovering from a Break
+
+Missing several days does not wreck your progress, but how you come back decides a lot. On your return, stop adding new cards and pour everything into clearing the review backlog before you resume your normal new-card rate. Run both at full volume at once and the daily load balloons into the exact wall that makes most learners quit, whereas draining the backlog first usually brings the queue back to something manageable inside a week.
+
+### Mining Vocabulary Without Breaking Immersion
+
+The AnkiConnect add-on paired with the Yomitan browser extension makes mining fast enough to fold straight into normal reading. Hit an unknown word on any webpage and one click sends a card, complete with context sentence, definition, and audio, into your deck. Your deck fills up with words from content you actually wanted to read, which kills the motivation problem that comes from grinding abstract word lists with no connection to anything real.
+
+## Turning Your Own Notes Into Review Cards
+
+Doing all of this by hand carries a hidden tax. Your grammar notes live in one app, your vocabulary lists in another, your example sentences in a third, and rebuilding them into review cards means retyping the same material into yet another tool. The scatter is where consistency quietly dies.
+
+Picture the same study session with the seams gone: you write your notes once, in one place, and the review cards come out of exactly what you wrote. Fluxo organizes your study material into spaces and topics, each holding rich-text notes you write yourself, then turns those notes into flashcards, quizzes, and summaries and schedules them for spaced-repetition review that resurfaces the material over time. Write your notes in the target language and the generated cards behave like the monolingual cards worth graduating to. A companion mascot, streaks, and gamified sessions give you a reason to show up daily, and AI topic suggestions point you toward related vocabulary and grammar you have not covered yet.
+
+One thing Fluxo will not do is write your notes for you. You do the learning, the notes stay yours, and the cards are only as good as what you put in, which is the whole point. Write one note today, then let Fluxo turn it into your first review card at https://fluxo.today.
