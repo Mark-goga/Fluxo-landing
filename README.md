@@ -63,6 +63,7 @@ and footer. All copy and SEO metadata live in `src/data/locales.ts` for both Eng
 - Centralized SEO and localized copy in `src/data/locales.ts`.
 - Environment-driven site config in `src/config/site.ts`.
 - Generated `robots.txt` and `sitemap.xml`.
+- MDX-generated blog articles with shared editorial callout components.
 - Microsoft Clarity loader and `data-clarity-event` click tracking.
 - Interactive mobile nav drawer and FAQ accordion in `public/script.js`.
 - Post-build relative asset paths (HTML and CSS), so `dist_archive/index.html` can be opened directly in a browser.
@@ -163,6 +164,9 @@ asset URLs to relative paths.
 
 - `src/pages/robots.txt.ts`  
   Generates robots.txt with the configured sitemap URL.
+
+- `src/content/blog/generated/**/*.{md,mdx}`
+  Backend-managed blog corpus. Existing Markdown and MDX are both supported; new posts from the publishing sync are emitted as MDX and may use the documented shared article components.
 
 - `scripts/fix-static-paths.mjs`  
   Rewrites local asset paths in built HTML so static files work from `file://` and regular hosting.

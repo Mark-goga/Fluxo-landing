@@ -2,6 +2,7 @@ import { defineConfig } from "astro/config";
 import { loadEnv } from "vite";
 import { fileURLToPath } from "node:url";
 import { resolve } from "node:path";
+import mdx from "@astrojs/mdx";
 import { verifyOgCovers } from "./landing-kit/src/scripts/verify-og-covers.mjs";
 import rehypeLazyImages from "./landing-kit/src/lib/rehype-lazy-images.mjs";
 
@@ -17,10 +18,9 @@ const requiredEnv = (env, key) => {
 
 const projectRoot = fileURLToPath(new URL(".", import.meta.url));
 
-export default defineConfig(({ mode }) => {
-  const env = loadEnv(mode, process.cwd(), "");
+const env = loadEnv(process.env.NODE_ENV ?? "development", process.cwd(), "");
 
-  return {
+export default defineConfig({
     output: "static",
     site: requiredEnv(env, "SITE_URL"),
     base: requiredEnv(env, "ASTRO_BASE_PATH"),
@@ -28,6 +28,7 @@ export default defineConfig(({ mode }) => {
       rehypePlugins: [rehypeLazyImages],
     },
     integrations: [
+      mdx(),
       {
         name: "verify-og-covers",
         hooks: {
@@ -49,5 +50,4 @@ export default defineConfig(({ mode }) => {
         },
       },
     },
-  };
 });

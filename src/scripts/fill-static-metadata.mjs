@@ -290,8 +290,8 @@ for (const locale of readdirSync(GENERATED_ROOT)) {
   const dir = join(GENERATED_ROOT, locale);
   try { if (!statSync(dir).isDirectory()) continue; } catch { continue; }
   for (const name of readdirSync(dir)) {
-    if (!name.endsWith(".md")) continue;
-    const slug = name.replace(/\.md$/, "");
+    if (!name.endsWith(".md") && !name.endsWith(".mdx")) continue;
+    const slug = name.replace(/\.mdx?$/, "");
     const file = join(dir, name);
     const parsed = splitFrontmatter(readFileSync(file, "utf8"));
     if (!parsed) continue;
