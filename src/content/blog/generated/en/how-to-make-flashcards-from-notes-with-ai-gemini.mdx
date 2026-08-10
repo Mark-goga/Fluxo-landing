@@ -1,0 +1,110 @@
+---
+schemaVersion: 1
+draftId: "019fe9b2-580f-72b9-a0db-833d4bc86f37"
+slug: "how-to-make-flashcards-from-notes-with-ai-gemini"
+locale: "en"
+pageType: "how_to"
+title: "How to Make Flashcards From Notes With AI (Gemini)"
+metaDescription: "Generate AI flashcards from your notes, videos, and PDFs using Gemini. Import into Anki for free spaced-repetition study."
+createdAt: "2026-08-10T03:23:27.243Z"
+modifiedAt: "2026-08-10T13:01:07.207Z"
+translationGroupId: "019fe9b2-580f-72b9-a0db-833d4bc86f37"
+heroImage: "/assets/card-12.webp"
+faq:
+  - question: "Can I use ChatGPT instead of Gemini?"
+    answer: "ChatGPT cannot download or watch videos; it relies on transcripts alone, missing visual details. Gemini watches the actual video content, making it better for this workflow. Both are free, but Gemini's video analysis is the key advantage here."
+  - question: "Do I need to pay for Google AI Studio?"
+    answer: "No. Google AI Studio is free and requires only a Google account. No API key, billing, or subscription needed."
+  - question: "Why can't I paste flashcards directly into Anki?"
+    answer: "Anki requires a file import, not pasted text. Create a .txt file with your flashcards using a free tool like texteditor.co, then import that file. This ensures proper formatting and separator recognition."
+  - question: "What separator should I use if my flashcards don't import correctly?"
+    answer: "Check your separator character. Use a pipe (|) for standard material. For math-heavy content, use a semicolon (;) instead, since equations often contain pipe symbols that break the import. Make sure your prompt told Gemini which separator to use."
+references:
+  - label: "Anki documentation and add-ons"
+    url: "https://apps.ankiweb.net"
+  - label: "Google AI Studio"
+    url: "https://aistudio.google.com"
+  - label: "Free text editor for creating flashcard files"
+    url: "https://texteditor.co"
+author:
+  id: "019faee1-9411-7438-a0d5-a441a9a771af"
+  name: "Markiian Halabut"
+  role: "Founder of Fluxo"
+  photoUrl: null
+  bio:
+    - locale: "en"
+      text: "Mark builds Fluxo — a spaced-repetition tool that turns notes into flashcards. He self-taught programming with Anki and now writes about learning science, PKM, and study workflows for people teaching themselves complex topics."
+  links:
+    website: "https://fluxo.today"
+sources:
+  - id: "019fcfe0-c2f5-720d-a701-6400d85fa136"
+    type: "youtube_video"
+    title: "How to Make Anki Flashcards 10x Faster with AI (for free!)"
+    url: "https://www.youtube.com/watch?v=ziPwestGTxI"
+    creator: "Ray Amjad"
+    publishedAt: "1970-01-01T00:00:00.000Z"
+---
+
+<KeyTakeaways items={["Gemini watches videos; ChatGPT reads transcripts only", "Semicolon separator for math; pipe breaks equations", "Generate cards before studying, not after", "Anki imports .txt files only, not pasted text"]} />
+
+## Where This Method Comes From and Why It Beats Manual Cards
+
+Building flashcards by hand means reading a source, screenshotting what matters, and typing each card one at a time. Gemini automates that step. It generates cards directly from videos, PDFs, or other material, which drops the work from a few hours to a few minutes.
+
+Anki is the target app worth pointing all of this at. It's free, it has a deep library of community add-ons, and its scheduling engine swallows large imports without complaint. Other study apps bolt AI onto their features, but Anki's open ecosystem makes it easier to build decks you'll still maintain three months into a course.
+
+## Setting Up Google AI Studio and Choosing the Right Gemini Model
+
+Google AI Studio gives you free access to Gemini models with no API setup. Go to https://aistudio.google.com and sign in with your Google account.
+
+Here is where Gemini pulls ahead of ChatGPT: it can watch video directly. Paste a YouTube link or upload a video file, and Gemini analyzes the actual footage rather than a transcript of it. ChatGPT can't download or watch video, so it works from text alone and misses the diagrams, charts, and on-screen detail that often carry the hardest concepts.
+
+For the model itself, pick Gemini 2.5 Pro. It's the strongest option for pulling concepts, equations, and facts out of dense material.
+
+## The Prompt Template That Extracts Concepts Into Q&A Cards
+
+This workflow lives or dies on the prompt. You want one that tells Gemini exactly how to shape each card. Build a prompt that instructs it to:
+
+- Identify key concepts, definitions, equations, and facts
+- Write a question and answer for each item
+- Put every card on its own line
+- Separate question and answer with a pipe character (|)
+- Add a timestamp when the source is a video, marking where each concept appears
+
+The timestamp is optional, but it earns its place. Later you can use it to jump straight to the moment a concept was explained, which makes adding the right diagram or screenshot to a specific card much faster.
+
+## Generating Flashcards From Videos, Recordings, and PDFs
+
+Google AI Studio takes several kinds of input, and each one has its own quirk. For YouTube videos, paste the link straight into your prompt and Gemini watches it. For personal lecture recordings or other footage, upload the file itself, and Gemini handles MP4, WebM, and other common formats. For PDFs, upload lecture notes, textbooks, or course handouts, and it pulls flashcard content out of the pages.
+
+Long PDFs are the one case that needs a tweak. Add a page range to your prompt, like extract flashcards from pages 1-15 only. That speeds up generation and keeps the output tied to the material you actually care about.
+
+## Formatting the Output and Importing It Into Anki
+
+Anki won't import text you paste in directly, which trips up a lot of first-timers. Drop Gemini's output into a free tool like texteditor.co, save it as a .txt file, then import that file.
+
+The separator you choose matters more than it looks. By default, use a pipe character (|) between question and answer, since that's what your prompt told Gemini to produce. For math-heavy material, switch to a semicolon (;) instead: equations often contain pipe symbols, and those stray pipes split your cards in the wrong places and corrupt the import.
+
+Inside Anki, go to File > Import, pick your .txt file, and set the field separator to match what you used. Anki maps the question to the front of the card and the answer to the back.
+
+## Current Limitation: Images Aren't Attached Automatically
+
+Gemini can't yet pull an image out of a video or PDF and pin it to the right flashcard on its own. That part stays manual for now, so plan to add screenshots after the import.
+
+This is where those timestamps pay off. Use them to jump to the exact spot in the video, capture the diagram or figure you need, and attach it to the matching card in Anki.
+
+## Recommended Study Workflow for Best Retention
+
+Generate your flashcards before you watch or read the source. Having the questions in hand first primes your brain to notice the answers when they turn up.
+
+Then watch the video or read the document straight through, without stopping to take notes. The cards already capture the key points, so you can give your full attention to understanding the material instead of transcribing it.
+
+Review the cards once you're done. That's the moment to add screenshots using the timestamps and hand the deck to Anki's spaced repetition, which resurfaces each card on a schedule so the material sticks instead of fading after a week.
+
+## Keeping One Review Queue Instead of Juggling Decks
+
+The Gemini-to-Anki pipeline shines for video- and PDF-heavy courses. It gets clumsy the moment your source is your own writing. Running notes you already typed back through Gemini, exporting a .txt, and importing yet another Anki deck stacks up steps for material you understand well enough to just study.
+
+Picture the notes you write yourself turning into flashcards, quizzes, and summaries with no export-and-import detour, all sitting in one review schedule rather than scattered across decks. That's the gap Fluxo fills: it generates flashcards, quizzes, and summaries straight from the notes you write in its spaces and topics, then runs spaced-repetition review that resurfaces them over time, with a companion mascot and streaks to keep the sessions going.
+
+Keep the Gemini workflow for lectures and PDFs, and lean on Fluxo for the notes you've structured yourself. Write those notes with clear headings and consistent formatting and the Gemini prompt works better too, which trims the manual cleanup on both sides.

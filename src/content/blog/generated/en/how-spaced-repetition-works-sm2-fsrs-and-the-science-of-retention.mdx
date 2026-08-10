@@ -1,0 +1,153 @@
+---
+schemaVersion: 1
+draftId: "019fe9a7-d14a-7515-bb1d-ab5fff357769"
+slug: "how-spaced-repetition-works-sm2-fsrs-and-the-science-of-retention"
+locale: "en"
+pageType: "concept"
+title: "How Spaced Repetition Works: SM2, FSRS, and the Science of Retention"
+metaDescription: "Learn how spaced repetition algorithms schedule reviews to maximize retention. Understand SM2, FSRS, and why timing matters more than repetition."
+createdAt: "2026-08-10T03:11:57.403Z"
+modifiedAt: "2026-08-10T13:05:02.177Z"
+translationGroupId: "019fe9a7-d14a-7515-bb1d-ab5fff357769"
+heroImage: "/assets/card-6.webp"
+faq:
+  - question: "How is spaced repetition different from cramming?"
+    answer: "Cramming packs all study into a short period, which creates temporary memory that fades quickly. Spaced repetition spreads reviews across days or weeks, arriving when you are about to forget. This creates stronger, longer-lasting memory with less total study time."
+  - question: "Why does SM2 fail when you fall behind on reviews?"
+    answer: "SM2 calculates intervals assuming reviews happen on the scheduled date. If you review late, SM2 still schedules the next card as if the previous review was on time. This causes increasingly unrealistic intervals when you fall behind, and the schedule breaks down."
+  - question: "How does FSRS fix SM2's problem?"
+    answer: "FSRS models a complete forgetting curve and accounts for actual elapsed time. When you review a card late, FSRS recalibrates the card's stability based on the fact that you remembered it despite the delay. This keeps the schedule realistic even when reviews are missed or delayed."
+  - question: "Do I have to manually write flashcards for spaced repetition to work?"
+    answer: "No. Tools like Fluxo and RemNote generate flashcards automatically from your own notes. Tools like Anki and Quizlet allow both manual creation and imported decks. The scheduling principle works regardless of how the cards are created."
+  - question: "How often should I review cards?"
+    answer: "A spaced-repetition algorithm calculates this for you based on each card's difficulty and your target recall probability. Most systems aim for 85-95% accuracy per review. You review easy cards less often (weeks or months apart) and hard cards more often (days apart)."
+references:
+  - label: "The Spacing Effect in Learning: A Meta-Analysis"
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9892402/"
+  - label: "Forgetting Curves in Learning Science"
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8759977/"
+  - label: "The Spacing Effect Explained"
+    url: "https://thedecisionlab.com/biases/spacing-effect"
+  - label: "Using the Spacing Effect for Long-Term Retention"
+    url: "https://readingraphics.com/case-study-using-the-spacing-effect-for-long-term-memory-retention/"
+author:
+  id: "019faee1-9411-7438-a0d5-a441a9a771af"
+  name: "Markiian Halabut"
+  role: "Founder of Fluxo"
+  photoUrl: null
+  bio:
+    - locale: "en"
+      text: "Mark builds Fluxo — a spaced-repetition tool that turns notes into flashcards. He self-taught programming with Anki and now writes about learning science, PKM, and study workflows for people teaching themselves complex topics."
+  links:
+    website: "https://fluxo.today"
+sources:
+  - id: "019fc590-db6c-7149-9387-2e32dad47c39"
+    type: "youtube_video"
+    title: "FSRS vs SM2: How Spaced Repetition Algorithms Work"
+    url: "https://www.youtube.com/watch?v=v2asudkSFek"
+    creator: "StackWild"
+    publishedAt: "1970-01-01T00:00:00.000Z"
+---
+
+## What Is Spaced Repetition?
+
+Spaced repetition schedules reviews of material at the moment you are about to forget it. Review a fact too early and you waste effort on something you still know cold. Review it too late and you have already forgotten, so you pay to relearn from scratch. Hit the timing right and each review buys you the most retention for the least study time.
+
+Cramming does the opposite. It packs everything into one session, and most of it drains away within days. Spaced repetition spreads the same material across days and weeks, which produces stronger, longer-lasting memory. The spacing effect behind this has held up in research for over a century: distributed practice beats massed practice, consistently.
+
+## Why Spaced Repetition Works
+
+Memory fades on a curve. The longer you go without touching a fact, the closer it drifts to gone, and once it slips past that edge you are relearning it rather than reinforcing it.
+
+A good spaced-repetition system rides that curve deliberately. It waits until your memory of a card has weakened to the point where recall is still possible but no longer automatic, then puts the card back in front of you. That effortful retrieval is where your brain does the most work to lock the memory in, so a single well-timed review moves the needle far more than an easy one.
+
+Reviewing something you still know perfectly is close to wasted effort. The card is fresh, retrieval costs nothing, and you learn almost nothing new. Scheduling every review to land at the hard-but-possible moment is the whole point.
+
+## The SM2 Algorithm
+
+SM2 launched the modern era of spaced repetition. It was designed in the late 1980s for SuperMemo, one of the first digital flashcard systems, and it still runs under the hood of many learning tools today.
+
+SM2 tracks two numbers per card:
+
+- **Interval (I):** days until the next review.
+- **Easing Factor (EF):** a difficulty value starting at 2.5. Harder cards drift lower, easier cards climb higher.
+
+The early intervals are fixed. The first review comes after a day, the second after 6 days, and from there the interval grows by multiplying the previous one by the easing factor. A card sitting at 2.5 runs 1 day, 6 days, 15 days, 38 days, and onward, stretching further each time.
+
+After every review you grade yourself from 0 to 5. A grade of 4 means you recalled it and the easing factor holds steady. Anything below 4 signals the card was harder than expected and pulls the factor down, shortening future intervals. Anything above 4 pushes the factor up and stretches them out. That loop tunes each card to its own difficulty: the easy ones fade into the background while the stubborn ones keep coming back.
+
+## The Problem With SM2
+
+SM2 behaves when you review on schedule. Real study rarely cooperates. You get busy, skip a week, and come back to a pile of overdue cards.
+
+Here is the flaw that bites: SM2 ignores how late a review actually was. Suppose a card was due on day 15 and you got to it on day 20. SM2 scores it as if you had reviewed on day 15 and computes the next interval from there, pretending the five-day slip never happened.
+
+That pretense compounds. You fall behind, every card gets reviewed later than intended, and SM2 keeps handing out longer and longer intervals built on the assumption that you were on time. Cards you are actively forgetting end up scheduled weeks or months out. Your queue fills with overdue material, you slip further behind, and the schedule quietly falls apart.
+
+## The FSRS Algorithm
+
+FSRS (Free Spaced Repetition Scheduler) is a newer algorithm built to fix exactly that. Rather than lean on a single easing number, it models a full forgetting curve for each card: a mathematical description of how your odds of recall drop as time passes.
+
+FSRS works with three quantities:
+
+- **Difficulty (D):** how hard the card is for you.
+- **Stability (S):** how durable the memory is. Higher stability means recall stays high for longer before it decays.
+- **Retrievability (R):** your estimated probability of recalling the card right now.
+
+Instead of a fixed interval formula, FSRS uses the forgetting-curve equation to describe how retrievability falls given a card's current stability. You pick a target retrievability, commonly 0.9, meaning you want a 90% chance of recall at review time. The algorithm then solves the equation for the interval that lands you on that target: given your stability and the recall probability you are willing to accept, how many days should pass?
+
+Late and early reviews stop being a problem here. FSRS feeds the real elapsed time back in to update stability, so reviewing a card a week late does not corrupt the schedule, it informs it. Remembering the card despite the extra wait tells FSRS the memory was more stable than it assumed, and the next interval reflects that.
+
+The curve itself has changed across versions. Early FSRS used an exponential decay function; later versions switched to a power function. That switch had nothing to do with theory. Power-law decay simply predicted real review outcomes more accurately, so it won.
+
+## Training FSRS Parameters
+
+FSRS carries a set of tunable weights that govern how difficulty and stability update after each review. Those weights are fit to you personally, using your own review history as training data.
+
+The mechanics look a lot like training a neural network. Each past review is a data point. The algorithm checks how well the current weights predicted whether you got that card right, then nudges them to shrink the prediction error. It needs only a few hundred reviews to converge on weights that match your patterns.
+
+The payoff is personalization. Weights trained on a biology student's history land in a different place than weights trained on a language learner's, because each history carries its own difficulty spread and retention rhythm.
+
+## Terminology: DSR and DHP
+
+FSRS calls its model DSR, for Difficulty, Stability, Retrievability. The academic literature describes an equivalent model as DHP, for Difficulty, Half-life, Probability. Same machinery, different label.
+
+The one real difference is where each anchors the curve. DSR defines stability at a 90% recall target. DHP's half-life marks the point where recall has dropped to 50%. Both trace the identical forgetting curve; they just take their measurement at different heights on it.
+
+## How Fluxo Applies Spaced Repetition
+
+Fluxo starts somewhere most flashcard tools do not: your own notes. There is no deck to hunt down and no stack of cards to hand-write before you can study.
+
+You write structured notes on whatever you are learning, whether that is programming concepts, a spoken language, or history. Fluxo's AI reads those notes and generates flashcards, quizzes, and summaries from them, anchored to your own words and examples rather than generic test-prep filler.
+
+Those generated cards then go on a spaced-repetition schedule. Fluxo resurfaces them at intervals meant to maximize retention, and as you review it picks up which topics run harder for you and adjusts the timing to match. Your notes stay organized into spaces and topics so the material stays searchable, and the streaks, companion mascot, and gamified sessions give you a reason to keep showing up. Reviewing cards tied to your own explanations tends to stick better than grinding through a stranger's deck.
+
+## Tools That Use Spaced Repetition
+
+Several tools run on spaced-repetition scheduling, and each makes a different bet.
+
+**Anki** is the veteran. It is open-source, runs a version of SM2, and gives you near-total control over cards and scheduling. That power comes with a steep learning curve and a lot of manual card-making, which its devoted users happily accept.
+
+**RemNote** folds spaced repetition into note-taking for students and researchers. Like Fluxo, it turns your notes into flashcards, though it leans harder toward tight integration with a writing workflow.
+
+**Mochi** keeps things minimal: clean, markdown-based flashcards where design and simplicity matter more than algorithmic depth.
+
+**Quizlet** is the mass-market pick, hosting millions of user-made study sets plus flashcard games and group study. Its edge is scale and accessibility rather than scheduling precision.
+
+**Fluxo** sits between note-taking and spaced repetition, generating cards from your notes with AI so you skip the manual writing, then scheduling reviews with forgetting-curve-based timing in the spirit of FSRS.
+
+Read the lineup as five philosophies: raw power with Anki, note-first workflows with RemNote, simplicity with Mochi, community and scale with Quizlet, and AI-assisted personal study with Fluxo.
+
+## The Science Ahead
+
+The research has not stopped. One active direction frames scheduling as a stochastic shortest-path problem: instead of aiming at a fixed recall target like 0.9, it treats scheduling as cost minimization and optimizes toward the longest-lasting memory for the study time you have.
+
+That work is still experimental and not yet in production schedulers. It points somewhere interesting, though, toward scheduling that adapts to cost rather than holding a single recall number fixed for everyone.
+
+## Getting Started With Spaced Repetition
+
+The best spaced-repetition system is the one you actually open. Study regularly, trust the schedule, and the specific algorithm behind it (SM2, FSRS, or some variant) matters far less than whether you keep showing up.
+
+Match the tool to how you like to work. Want manual control and do not mind the learning curve? Anki is the standard. Want your cards built from your own notes in a modern interface? Fluxo or RemNote fit. After community decks and games? Quizlet is the obvious call.
+
+The principle underneath all of them holds steady. Let the algorithm space your reviews, show up to your sessions, and lean on the fact that distributed practice beats cramming. A century of research backs it, and your memory will be the stronger for it.

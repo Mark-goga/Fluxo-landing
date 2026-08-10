@@ -1,76 +1,118 @@
 {
   "schemaVersion": 1,
-  "rebuildId": "019fc7d0-d36c-769a-99dd-5587f8dc2080",
+  "rebuildId": "019febee-49f5-7508-a9df-ed23c6bac172",
   "applicationId": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
   "posts": [
     {
       "draftId": "019fbb5b-05f5-71d8-be1b-9f49d0988b03",
       "locale": "en",
       "slug": "active-recall-why-retrieval-beats-re-reading",
-      "path": "src/content/blog/generated/en/active-recall-why-retrieval-beats-re-reading.md",
+      "path": "src/content/blog/generated/en/active-recall-why-retrieval-beats-re-reading.mdx",
       "includedInRebuild": false
     },
     {
       "draftId": "019fc5cc-bcdc-742c-ae4b-fa88399f65c1",
       "locale": "en",
       "slug": "anki-alternatives-for-self-learners-who-take-notes",
-      "path": "src/content/blog/generated/en/anki-alternatives-for-self-learners-who-take-notes.md",
-      "includedInRebuild": true
+      "path": "src/content/blog/generated/en/anki-alternatives-for-self-learners-who-take-notes.mdx",
+      "includedInRebuild": false
     },
     {
       "draftId": "019fc5d8-758f-763c-a870-01959d28d0a7",
       "locale": "en",
       "slug": "best-flashcard-app-in-2026-fluxo-anki-remnote-mochi-and-quizlet-compared",
-      "path": "src/content/blog/generated/en/best-flashcard-app-in-2026-fluxo-anki-remnote-mochi-and-quizlet-compared.md",
-      "includedInRebuild": true
+      "path": "src/content/blog/generated/en/best-flashcard-app-in-2026-fluxo-anki-remnote-mochi-and-quizlet-compared.mdx",
+      "includedInRebuild": false
     },
     {
       "draftId": "019fb10a-53d8-770e-8672-9dc3c2f3f5a4",
       "locale": "en",
       "slug": "chatgpt-for-learning-without-losing-your-skills",
-      "path": "src/content/blog/generated/en/chatgpt-for-learning-without-losing-your-skills.md",
+      "path": "src/content/blog/generated/en/chatgpt-for-learning-without-losing-your-skills.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "019fe9ba-35c6-7316-9dc9-2c5d35489fcc",
+      "locale": "en",
+      "slug": "how-chunking-memory-helps-you-learn-and-remember-more",
+      "path": "src/content/blog/generated/en/how-chunking-memory-helps-you-learn-and-remember-more.mdx",
+      "includedInRebuild": true
+    },
+    {
+      "draftId": "019fe9a7-d14a-7515-bb1d-ab5fff357769",
+      "locale": "en",
+      "slug": "how-spaced-repetition-works-sm2-fsrs-and-the-science-of-retention",
+      "path": "src/content/blog/generated/en/how-spaced-repetition-works-sm2-fsrs-and-the-science-of-retention.mdx",
+      "includedInRebuild": true
+    },
+    {
+      "draftId": "019fe9c4-87d6-71d7-bc31-40d1fa604c78",
+      "locale": "en",
+      "slug": "how-to-learn-programming-faster",
+      "path": "src/content/blog/generated/en/how-to-learn-programming-faster.mdx",
+      "includedInRebuild": true
     },
     {
       "draftId": "019fbb50-6290-7442-8da5-156bd8c6128f",
       "locale": "en",
       "slug": "how-to-make-a-study-schedule-that-actually-works",
-      "path": "src/content/blog/generated/en/how-to-make-a-study-schedule-that-actually-works.md",
+      "path": "src/content/blog/generated/en/how-to-make-a-study-schedule-that-actually-works.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "019fe9b2-580f-72b9-a0db-833d4bc86f37",
+      "locale": "en",
+      "slug": "how-to-make-flashcards-from-notes-with-ai-gemini",
+      "path": "src/content/blog/generated/en/how-to-make-flashcards-from-notes-with-ai-gemini.mdx",
+      "includedInRebuild": true
+    },
+    {
+      "draftId": "019fe9ca-04d4-753b-8a02-baeacb1cf889",
+      "locale": "en",
+      "slug": "how-to-read-academic-papers-efficiently",
+      "path": "src/content/blog/generated/en/how-to-read-academic-papers-efficiently.mdx",
+      "includedInRebuild": true
     },
     {
       "draftId": "019fabd6-77dc-70a3-98d8-c3a130a3151a",
       "locale": "en",
       "slug": "how-to-remember-what-you-read-and-actually-retain-it",
-      "path": "src/content/blog/generated/en/how-to-remember-what-you-read-and-actually-retain-it.md",
+      "path": "src/content/blog/generated/en/how-to-remember-what-you-read-and-actually-retain-it.mdx",
       "includedInRebuild": false
     },
     {
       "draftId": "019fb106-a552-7258-852c-a7a6eff0cb6f",
       "locale": "en",
       "slug": "how-to-study-effectively-for-long-term-retention",
-      "path": "src/content/blog/generated/en/how-to-study-effectively-for-long-term-retention.md",
+      "path": "src/content/blog/generated/en/how-to-study-effectively-for-long-term-retention.mdx",
       "includedInRebuild": false
     },
     {
       "draftId": "019fbb63-1c27-7354-99f5-d160ac9e0994",
       "locale": "en",
       "slug": "how-to-take-notes-from-a-book-you-actually-retain",
-      "path": "src/content/blog/generated/en/how-to-take-notes-from-a-book-you-actually-retain.md",
+      "path": "src/content/blog/generated/en/how-to-take-notes-from-a-book-you-actually-retain.mdx",
       "includedInRebuild": false
     },
     {
       "draftId": "019fc5e1-295c-731d-bb15-ee3ddc1d6e1e",
       "locale": "en",
       "slug": "how-to-use-spaced-repetition-for-language-learning",
-      "path": "src/content/blog/generated/en/how-to-use-spaced-repetition-for-language-learning.md",
+      "path": "src/content/blog/generated/en/how-to-use-spaced-repetition-for-language-learning.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "019fe9ad-199a-76ca-8907-98e8bc1fe20c",
+      "locale": "en",
+      "slug": "the-feynman-technique-explain-to-learn",
+      "path": "src/content/blog/generated/en/the-feynman-technique-explain-to-learn.mdx",
       "includedInRebuild": true
     },
     {
       "draftId": "019fb111-3baf-73c9-8cd0-ca3545257ede",
       "locale": "en",
       "slug": "the-study-workflow-that-turns-notes-into-applied-knowledge",
-      "path": "src/content/blog/generated/en/the-study-workflow-that-turns-notes-into-applied-knowledge.md",
+      "path": "src/content/blog/generated/en/the-study-workflow-that-turns-notes-into-applied-knowledge.mdx",
       "includedInRebuild": false
     }
   ]
