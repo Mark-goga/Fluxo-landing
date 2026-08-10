@@ -6,48 +6,49 @@ import mdx from "@astrojs/mdx";
 import { verifyOgCovers } from "./landing-kit/src/scripts/verify-og-covers.mjs";
 import rehypeLazyImages from "./landing-kit/src/lib/rehype-lazy-images.mjs";
 
-const requiredEnv = (env, key) => {
-  const value = env[key] ?? process.env[key];
+const env = loadEnv(process.env.NODE_ENV || "production", process.cwd(), "");
+const astroCommand = process.argv[2] ?? "";
+const isBuildLike = astroCommand === "build" || astroCommand === "preview";
 
-  if (!value) {
+const requiredEnv = (key, placeholder) => {
+  const value = env[key] ?? process.env[key];
+  if (value) return value;
+  if (isBuildLike) {
     throw new Error(`Missing required environment variable: ${key}`);
   }
-
-  return value;
+  return placeholder;
 };
 
 const projectRoot = fileURLToPath(new URL(".", import.meta.url));
 
-const env = loadEnv(process.env.NODE_ENV ?? "development", process.cwd(), "");
-
 export default defineConfig({
-    output: "static",
-    site: requiredEnv(env, "SITE_URL"),
-    base: requiredEnv(env, "ASTRO_BASE_PATH"),
-    markdown: {
-      rehypePlugins: [rehypeLazyImages],
-    },
-    integrations: [
-      mdx(),
-      {
-        name: "verify-og-covers",
-        hooks: {
-          "astro:build:done": ({ dir }) => {
-            verifyOgCovers({
-              outDir: fileURLToPath(dir),
-              publicDir: resolve(projectRoot, "public"),
-            });
-          },
-        },
-      },
-    ],
-    vite: {
-      resolve: {
-        preserveSymlinks: true,
-        alias: {
-          "@site": resolve(projectRoot, "src"),
-          "@kit": resolve(projectRoot, "landing-kit/src"),
+  output: "static",
+  site: requiredEnv("SITE_URL", "http://localhost:4321"),
+  base: requiredEnv("ASTRO_BASE_PATH", "/"),
+  markdown: {
+    rehypePlugins: [rehypeLazyImages],
+  },
+  integrations: [
+    mdx(),
+    {
+      name: "verify-og-covers",
+      hooks: {
+        "astro:build:done": ({ dir }) => {
+          verifyOgCovers({
+            outDir: fileURLToPath(dir),
+            publicDir: resolve(projectRoot, "public"),
+          });
         },
       },
     },
+  ],
+  vite: {
+    resolve: {
+      preserveSymlinks: true,
+      alias: {
+        "@site": resolve(projectRoot, "src"),
+        "@kit": resolve(projectRoot, "landing-kit/src"),
+      },
+    },
+  },
 });
