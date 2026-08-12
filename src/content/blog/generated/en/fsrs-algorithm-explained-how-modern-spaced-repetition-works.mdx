@@ -1,0 +1,151 @@
+---
+schemaVersion: 1
+draftId: "019ff423-185b-7118-9620-409e0c1811e4"
+slug: "fsrs-algorithm-explained-how-modern-spaced-repetition-works"
+locale: "en"
+pageType: "concept"
+title: "FSRS Algorithm Explained: How Modern Spaced Repetition Works"
+metaDescription: "FSRS is a modern spaced-repetition algorithm that schedules reviews based on difficulty, stability, and retrievability. Learn how it works and why it cuts study time compared to SM-2."
+createdAt: "2026-08-12T04:02:48.535Z"
+modifiedAt: "2026-08-12T11:23:10.348Z"
+translationGroupId: "019ff423-185b-7118-9620-409e0c1811e4"
+heroImage: "/assets/card-5.webp"
+faq:
+  - question: "Does FSRS require me to manually tune settings?"
+    answer: "No. FSRS automatically calculates review dates based on your target retention rate (e.g., 90% or 97%). You set the retention goal; the algorithm adjusts the schedule. Anki power users can fine-tune parameters if desired, but the defaults work well. Fluxo handles scheduling automatically with no tuning required."
+  - question: "Can I switch from SM-2 to FSRS without losing my progress?"
+    answer: "Yes. Anki lets you switch scheduling algorithms without deleting your cards. Your existing review history helps FSRS learn your difficulty and stability profile faster. However, your first reviews under FSRS may feel different until the algorithm calibrates to your data."
+  - question: "What retention rate should I target?"
+    answer: "It depends on your goals. A 90% retention rate is a common default that balances review time and learning confidence. If you want high confidence on critical material (medical exams, language proficiency), aim for 95-97%. If you want to minimize study time and tolerate occasional gaps, try 80-85%. FSRS scales your review load to match your target automatically."
+  - question: "Why does FSRS predict recall better than SM-2?"
+    answer: "FSRS separates difficulty (how hard an item is) from stability (how long it stays retrievable). SM-2 uses a single ease factor for both. This separation lets FSRS recognize that an item can be hard to learn but, once mastered, stay in memory for weeks. Benchmark testing shows FSRS achieves roughly 4% error predicting recall, versus 14% for SM-2."
+references: []
+author:
+  id: "019faee1-9411-7438-a0d5-a441a9a771af"
+  name: "Markiian Halabut"
+  role: "Founder of Fluxo"
+  photoUrl: null
+  bio:
+    - locale: "en"
+      text: "Mark builds Fluxo — a spaced-repetition tool that turns notes into flashcards. He self-taught programming with Anki and now writes about learning science, PKM, and study workflows for people teaching themselves complex topics."
+  links:
+    website: "https://fluxo.today"
+sources:
+  - id: "019fc590-e0ee-7140-a9f9-002c15cd1014"
+    type: "youtube_video"
+    title: "Anki FSRS Algorithm vs SM-2 Algorithm Pros and Cons (New Algorithm vs. Old Algorithm)"
+    url: "https://www.youtube.com/watch?v=9FP-ld743TQ"
+    creator: "FixerMed"
+    publishedAt: "1970-01-01T00:00:00.000Z"
+---
+
+## What Is the FSRS Algorithm?
+
+FSRS stands for Free Spaced Repetition Scheduler, an algorithm that decides when you should review a card to keep it in long-term memory without burning time on cards you already know.
+
+Older schedulers lean on a single multiplier. FSRS instead models three separate parts of memory: how hard an item is to learn (difficulty), how long it stays retrievable in your brain (stability), and the odds you'll recall it right now (retrievability). Splitting memory this way lets it predict when you'll forget something more accurately than earlier methods.
+
+The payoff is concrete: studies show FSRS cuts daily review counts by 20-30% compared to SM-2, Anki's original scheduler, at the same retention rate.
+
+## Understanding the DSR Model
+
+Those three factors have a name: DSR, for difficulty, stability, and retrievability. Each one changes how FSRS spaces your reviews, so it helps to take them one at a time.
+
+### Difficulty
+
+Difficulty rates how hard an item is to recall on a 1-10 scale. A simple fact might score 1 or 2, while a tangled concept lands at 8 or 9. Harder items don't just come back more often; they also gain stability more slowly when you answer them correctly, so FSRS uses difficulty to personalize how much each good review strengthens your memory.
+
+This is also where FSRS draws its main criticism. Difficulty isn't precisely defined in memory research, so the metric leans on heuristics from user behavior rather than one unified model of how recall works. That makes FSRS harder to reason about, even though it predicts performance better in practice.
+
+### Stability
+
+Stability is how long an item stays at least 90% recallable, the point where you'd reliably remember it under test. A card with 10 days of stability has roughly a 90% chance of correct recall after 10 days without review.
+
+Answer a card correctly and its stability climbs. The harder the card, the slower that climb, so easy facts firm up quickly while complex ideas need more spaced reviews to reach the same stability.
+
+Stability is also why two cards can need very different intervals. Basic addition might come back once a month once it's stable, while a card on quantum mechanics still needs review every two weeks at the same stability level, because its higher difficulty makes retrievability decay faster.
+
+### Retrievability
+
+Retrievability is the probability you'll recall an item right this moment. Get a card right today and it sits high; as days pass without review, it slides down. Once it drops far enough that forgetting gets likely, FSRS schedules the next review.
+
+The goal is to hold retrievability near a target, commonly 90%, between reviews. That keeps you from drilling cards you'd obviously remember while also stopping you from waiting so long the card is gone by the next session.
+
+Your target depends on the stakes. A high-pressure exam might justify 95-97% retrievability, while casual learning is fine at 80-85%. FSRS takes that number and adjusts review frequency to hit it.
+
+## How FSRS Works in Anki
+
+Anki is the most popular open-source flashcard app, and in 2023 it added FSRS as an optional scheduler alongside its original SM-2 engine.
+
+Every time you review a card, you grade your recall with one of four choices:
+
+- Again (you failed to recall)
+- Hard (correct, but a struggle)
+- Good (correct, as expected)
+- Easy (correct, no effort)
+
+FSRS feeds those grades into each card's difficulty, stability, and retrievability, then sets the next review date to hit your target retention. The default is 90%, but you can push it to 85%, 95%, or 97% depending on your goals and how much time you have.
+
+A higher target like 97% means more frequent reviews and fewer lapses. A lower one like 85% trims review time and accepts the occasional miss. FSRS scales the daily load to whatever target you pick, so you trade review time for retention on your own terms.
+
+Say you're using Fluxo to study medical terminology at a 90% target. FSRS schedules the difficult terms every few days and the easy ones every few weeks, spacing each to sit near 90% retrievability the next time it appears. Bump the same deck to 95% and every interval shrinks: more reviews per day, fewer forgotten terms.
+
+## FSRS vs. SM-2: The Modern vs. the Classic
+
+### Why FSRS Predicts Recall Better
+
+SM-2 dates to the late 1980s, built for SuperMemo, the first spaced-repetition software. Its logic is deliberately plain: multiply a card's current interval by a fixed ease factor that rises when you rate a card easy and falls when you rate it hard. One number runs the whole schedule.
+
+FSRS breaks difficulty and stability into separate models. That lets it treat a card as hard to learn yet, once learned, stable for a long stretch. SM-2 can't draw that line: a hard card gets a low ease factor and stays far apart even after you've mastered it.
+
+On benchmark datasets, FSRS predicts recall probability with roughly 4% mean absolute error against about 14% for SM-2. That 10-point gap is what turns into the 20-30% fewer reviews people report after switching at the same retention target.
+
+Picture a tough card under SM-2 with a low ease of 1.3. Its intervals crawl: 1 day, 1 day, 2 days, 2 days, 3 days. The same card under FSRS gets a high difficulty rating, but its stability still grows on schedule, so once you've mastered it the intervals jump to weeks instead of days. Fewer reviews, same retention.
+
+### When SM-2's Simplicity Is an Advantage
+
+SM-2's real strength is customizability. You control the learning-step intervals, meaning how soon a new card reappears after a failure, along with the starting ease factor. Anki's version gives you four answer choices and one fail option, against SuperMemo's original six answer choices and three fail levels, and that trimmed-down design lets you tune every parameter without drowning in them.
+
+If you like adjusting settings and don't mind a few extra reviews, SM-2's transparency can feel less like a black box than FSRS. Some power users would rather debug a scheduler they fully understand than trust a more accurate one they can't see into.
+
+## The SM-2 Algorithm and Its Weaknesses
+
+### How SM-2 Schedules Reviews
+
+On Anki's default SM-2 settings, a new card opens with a one-day interval. After your first successful pass, usually rated good twice, that stretches to six days. From there the ease factor takes over: each interval is the previous one times the ease factor, 2.5 by default. So six days becomes 15, then about 37, and it keeps climbing.
+
+Rate a card hard, though, and the ease factor drops, pulling the next interval down sharply. That's where SM-2's best-known weakness shows up.
+
+### Low-Interval Hell
+
+When a card is genuinely hard and you keep failing it, SM-2 locks it in a loop. Every failure cuts the ease factor and shrinks the interval, so the card resurfaces every day or two, burning review time without ever giving you enough spacing to actually learn it.
+
+Walk through it. A stubborn vocabulary word starts at ease 2.5 and comes back in 6 days, but you rate it Again. SM-2 resets the interval close to zero on failure, so you see it tomorrow rather than in 12 days. You fail again and ease slides to 1.5, another day passes with another failure, and the ease factor bottoms out. Now you're reviewing that one word every single day for weeks, making almost no progress because the intervals never leave room to forget and relearn.
+
+FSRS sidesteps this. A failed card doesn't get branded unforgettable; the algorithm resets stability toward zero and waits long enough to rebuild it before the next attempt. Hard cards still take a while to master, but they never grind in place at one-day intervals.
+
+## Fluxo and FSRS: Matching Algorithm to Learning Style
+
+Fluxo lets you write structured study notes, then turns them into AI flashcards, quizzes, and summaries built from your own material. Its review scheduling runs on FSRS, so you get modern accuracy without hand-tuning parameters.
+
+FSRS pays off most for people with dense, self-authored material: programmers learning a new language, medical students working through biochemistry, language learners building vocabulary from real context. Your review load scales to your retention target automatically, so a 97% goal keeps you reviewing until the material sticks, while dropping to 85% cuts review time in proportion.
+
+Because Fluxo builds cards from your notes rather than a pre-made deck, FSRS has real material to work with. It can separate topics that are hard for you specifically from ones that are hard for everyone, then adjust to your personal profile.
+
+Fluxo also pairs FSRS with AI summaries and quizzes drawn from those same notes. FSRS handles timing; the generated content handles breadth. You write clear, organized notes, and the system takes care of expanding them and scheduling the reviews.
+
+## Tools That Use Spaced Repetition
+
+Plenty of study apps schedule with spaced repetition, but they aim at different users:
+
+**Fluxo** (https://fluxo.today): AI generates flashcards and quizzes from your own study notes, and scheduling runs on FSRS to keep daily review load low while hitting your retention target. You write the material; Fluxo generates the questions and manages timing.
+
+**Anki**: The manual flashcard app with decades of history. It offers both SM-2 and FSRS scheduling, with a steep learning curve but deep customization. Best for learners who want complete control.
+
+**RemNote**: A notes-first platform for students. It folds flashcards into a note-taking workflow with built-in spaced-repetition review, which suits people who want notes and cards tightly linked.
+
+**Mochi**: Markdown-based flashcards with a clean design. It emphasizes fast card creation and review, and runs lighter than Anki.
+
+**Quizlet**: Mass-market study sets and games. It leans more on social study and gamification than on scheduling, so it fits casual group studying.
+
+Each app strikes its own balance between algorithm sophistication, interface, and features. Fluxo's edge is turning your own structured notes into personalized study material, then using FSRS to time the reviews. Anki gives power users the most control, while RemNote, Mochi, and Quizlet trade some scheduling depth for easier onboarding and social features.

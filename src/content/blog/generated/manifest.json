@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rebuildId": "019febee-49f5-7508-a9df-ed23c6bac172",
+  "rebuildId": "019ff5b7-6eea-716a-be2d-815152952b26",
   "applicationId": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
   "posts": [
     {
@@ -18,6 +18,13 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "019ff414-28ea-730c-b215-6c3c530e36ed",
+      "locale": "en",
+      "slug": "anki-vs-quizlet-which-flashcard-app-fits-you",
+      "path": "src/content/blog/generated/en/anki-vs-quizlet-which-flashcard-app-fits-you.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "019fc5d8-758f-763c-a870-01959d28d0a7",
       "locale": "en",
       "slug": "best-flashcard-app-in-2026-fluxo-anki-remnote-mochi-and-quizlet-compared",
@@ -32,25 +39,32 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "019ff423-185b-7118-9620-409e0c1811e4",
+      "locale": "en",
+      "slug": "fsrs-algorithm-explained-how-modern-spaced-repetition-works",
+      "path": "src/content/blog/generated/en/fsrs-algorithm-explained-how-modern-spaced-repetition-works.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "019fe9ba-35c6-7316-9dc9-2c5d35489fcc",
       "locale": "en",
       "slug": "how-chunking-memory-helps-you-learn-and-remember-more",
       "path": "src/content/blog/generated/en/how-chunking-memory-helps-you-learn-and-remember-more.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fe9a7-d14a-7515-bb1d-ab5fff357769",
       "locale": "en",
       "slug": "how-spaced-repetition-works-sm2-fsrs-and-the-science-of-retention",
       "path": "src/content/blog/generated/en/how-spaced-repetition-works-sm2-fsrs-and-the-science-of-retention.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fe9c4-87d6-71d7-bc31-40d1fa604c78",
       "locale": "en",
       "slug": "how-to-learn-programming-faster",
       "path": "src/content/blog/generated/en/how-to-learn-programming-faster.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fbb50-6290-7442-8da5-156bd8c6128f",
@@ -64,14 +78,14 @@
       "locale": "en",
       "slug": "how-to-make-flashcards-from-notes-with-ai-gemini",
       "path": "src/content/blog/generated/en/how-to-make-flashcards-from-notes-with-ai-gemini.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fe9ca-04d4-753b-8a02-baeacb1cf889",
       "locale": "en",
       "slug": "how-to-read-academic-papers-efficiently",
       "path": "src/content/blog/generated/en/how-to-read-academic-papers-efficiently.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fabd6-77dc-70a3-98d8-c3a130a3151a",
@@ -106,7 +120,7 @@
       "locale": "en",
       "slug": "the-feynman-technique-explain-to-learn",
       "path": "src/content/blog/generated/en/the-feynman-technique-explain-to-learn.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fb111-3baf-73c9-8cd0-ca3545257ede",
