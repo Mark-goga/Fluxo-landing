@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rebuildId": "019ff5b7-6eea-716a-be2d-815152952b26",
+  "rebuildId": "019ffa4e-044a-71b6-89e1-d51463ab8b02",
   "applicationId": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
   "posts": [
     {
@@ -22,6 +22,13 @@
       "locale": "en",
       "slug": "anki-vs-quizlet-which-flashcard-app-fits-you",
       "path": "src/content/blog/generated/en/anki-vs-quizlet-which-flashcard-app-fits-you.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "019fd5d3-d5ae-767d-af45-7d89c06f0cdb",
+      "locale": "en",
+      "slug": "anki-vs-remnote-which-fits-your-study-stack",
+      "path": "src/content/blog/generated/en/anki-vs-remnote-which-fits-your-study-stack.mdx",
       "includedInRebuild": true
     },
     {
@@ -32,6 +39,13 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "019fd5d9-49c2-76bb-bde5-be790d4c5577",
+      "locale": "en",
+      "slug": "best-note-taking-app-for-students-fluxo-vs-anki-vs-remnote-vs-mochi-vs-quizlet",
+      "path": "src/content/blog/generated/en/best-note-taking-app-for-students-fluxo-vs-anki-vs-remnote-vs-mochi-vs-quizlet.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "019fb10a-53d8-770e-8672-9dc3c2f3f5a4",
       "locale": "en",
       "slug": "chatgpt-for-learning-without-losing-your-skills",
@@ -39,11 +53,25 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "019ff92c-b436-735d-a45f-77d37bbf6e13",
+      "locale": "en",
+      "slug": "deliberate-practice-the-framework-for-building-real-expertise",
+      "path": "src/content/blog/generated/en/deliberate-practice-the-framework-for-building-real-expertise.mdx",
+      "includedInRebuild": true
+    },
+    {
+      "draftId": "019ff923-1ff2-73bb-b8eb-04ac8cd5cff1",
+      "locale": "en",
+      "slug": "forgetting-curve-explained-why-memory-fades-fast",
+      "path": "src/content/blog/generated/en/forgetting-curve-explained-why-memory-fades-fast.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "019ff423-185b-7118-9620-409e0c1811e4",
       "locale": "en",
       "slug": "fsrs-algorithm-explained-how-modern-spaced-repetition-works",
       "path": "src/content/blog/generated/en/fsrs-algorithm-explained-how-modern-spaced-repetition-works.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fe9ba-35c6-7316-9dc9-2c5d35489fcc",
@@ -114,6 +142,27 @@
       "slug": "how-to-use-spaced-repetition-for-language-learning",
       "path": "src/content/blog/generated/en/how-to-use-spaced-repetition-for-language-learning.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "019ff926-8980-7414-8212-1da6626be901",
+      "locale": "en",
+      "slug": "interleaving-practice-a-smarter-way-to-study",
+      "path": "src/content/blog/generated/en/interleaving-practice-a-smarter-way-to-study.mdx",
+      "includedInRebuild": true
+    },
+    {
+      "draftId": "019ff41c-f37a-7769-97e6-4b120e203487",
+      "locale": "en",
+      "slug": "obsidian-vs-notion-for-students-plus-fluxo-and-4-alternatives",
+      "path": "src/content/blog/generated/en/obsidian-vs-notion-for-students-plus-fluxo-and-4-alternatives.mdx",
+      "includedInRebuild": true
+    },
+    {
+      "draftId": "019fd5ce-554c-717d-86c8-96ce88925ac1",
+      "locale": "en",
+      "slug": "remnote-alternative-6-tools-for-note-takers-who-study",
+      "path": "src/content/blog/generated/en/remnote-alternative-6-tools-for-note-takers-who-study.mdx",
+      "includedInRebuild": true
     },
     {
       "draftId": "019fe9ad-199a-76ca-8907-98e8bc1fe20c",
