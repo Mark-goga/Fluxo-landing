@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rebuildId": "019ffa4e-044a-71b6-89e1-d51463ab8b02",
+  "rebuildId": "019fff39-cbb0-712a-92bf-028c305c12ae",
   "applicationId": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
   "posts": [
     {
@@ -29,7 +29,7 @@
       "locale": "en",
       "slug": "anki-vs-remnote-which-fits-your-study-stack",
       "path": "src/content/blog/generated/en/anki-vs-remnote-which-fits-your-study-stack.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fc5d8-758f-763c-a870-01959d28d0a7",
@@ -43,7 +43,7 @@
       "locale": "en",
       "slug": "best-note-taking-app-for-students-fluxo-vs-anki-vs-remnote-vs-mochi-vs-quizlet",
       "path": "src/content/blog/generated/en/best-note-taking-app-for-students-fluxo-vs-anki-vs-remnote-vs-mochi-vs-quizlet.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fb10a-53d8-770e-8672-9dc3c2f3f5a4",
@@ -53,18 +53,25 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "019ffe54-0efb-7071-8919-c0c636629944",
+      "locale": "en",
+      "slug": "cognitive-load-theory-and-the-limits-of-working-memory",
+      "path": "src/content/blog/generated/en/cognitive-load-theory-and-the-limits-of-working-memory.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "019ff92c-b436-735d-a45f-77d37bbf6e13",
       "locale": "en",
       "slug": "deliberate-practice-the-framework-for-building-real-expertise",
       "path": "src/content/blog/generated/en/deliberate-practice-the-framework-for-building-real-expertise.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019ff923-1ff2-73bb-b8eb-04ac8cd5cff1",
       "locale": "en",
       "slug": "forgetting-curve-explained-why-memory-fades-fast",
       "path": "src/content/blog/generated/en/forgetting-curve-explained-why-memory-fades-fast.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019ff423-185b-7118-9620-409e0c1811e4",
@@ -148,6 +155,13 @@
       "locale": "en",
       "slug": "interleaving-practice-a-smarter-way-to-study",
       "path": "src/content/blog/generated/en/interleaving-practice-a-smarter-way-to-study.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "019ffe5f-38f2-774c-80d7-e8d73b9ead28",
+      "locale": "en",
+      "slug": "memory-palace-method-explained-how-to-build-use-and-master-this-ancient-technique",
+      "path": "src/content/blog/generated/en/memory-palace-method-explained-how-to-build-use-and-master-this-ancient-technique.mdx",
       "includedInRebuild": true
     },
     {
@@ -155,14 +169,14 @@
       "locale": "en",
       "slug": "obsidian-vs-notion-for-students-plus-fluxo-and-4-alternatives",
       "path": "src/content/blog/generated/en/obsidian-vs-notion-for-students-plus-fluxo-and-4-alternatives.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fd5ce-554c-717d-86c8-96ce88925ac1",
       "locale": "en",
       "slug": "remnote-alternative-6-tools-for-note-takers-who-study",
       "path": "src/content/blog/generated/en/remnote-alternative-6-tools-for-note-takers-who-study.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fe9ad-199a-76ca-8907-98e8bc1fe20c",
@@ -177,6 +191,13 @@
       "slug": "the-study-workflow-that-turns-notes-into-applied-knowledge",
       "path": "src/content/blog/generated/en/the-study-workflow-that-turns-notes-into-applied-knowledge.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "019ffe58-ec69-72e7-ac79-186bdd5bb90e",
+      "locale": "en",
+      "slug": "what-is-metacognition-and-why-it-improves-learning",
+      "path": "src/content/blog/generated/en/what-is-metacognition-and-why-it-improves-learning.mdx",
+      "includedInRebuild": true
     }
   ]
 }
