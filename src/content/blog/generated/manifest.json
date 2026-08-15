@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rebuildId": "019fff39-cbb0-712a-92bf-028c305c12ae",
+  "rebuildId": "01a0045e-0a74-74f7-834b-56d6bc08cf88",
   "applicationId": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
   "posts": [
     {
@@ -46,6 +46,13 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a00382-a3f4-744f-b7e6-f5e8f6962225",
+      "locale": "en",
+      "slug": "building-a-second-brain-from-your-notes",
+      "path": "src/content/blog/generated/en/building-a-second-brain-from-your-notes.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "019fb10a-53d8-770e-8672-9dc3c2f3f5a4",
       "locale": "en",
       "slug": "chatgpt-for-learning-without-losing-your-skills",
@@ -57,6 +64,13 @@
       "locale": "en",
       "slug": "cognitive-load-theory-and-the-limits-of-working-memory",
       "path": "src/content/blog/generated/en/cognitive-load-theory-and-the-limits-of-working-memory.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a00376-1c76-72af-bee3-2a01013c0d32",
+      "locale": "en",
+      "slug": "cornell-notes-method-a-step-by-step-how-to-guide",
+      "path": "src/content/blog/generated/en/cornell-notes-method-a-step-by-step-how-to-guide.mdx",
       "includedInRebuild": true
     },
     {
@@ -162,7 +176,7 @@
       "locale": "en",
       "slug": "memory-palace-method-explained-how-to-build-use-and-master-this-ancient-technique",
       "path": "src/content/blog/generated/en/memory-palace-method-explained-how-to-build-use-and-master-this-ancient-technique.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019ff41c-f37a-7769-97e6-4b120e203487",
@@ -197,6 +211,13 @@
       "locale": "en",
       "slug": "what-is-metacognition-and-why-it-improves-learning",
       "path": "src/content/blog/generated/en/what-is-metacognition-and-why-it-improves-learning.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a0037c-4df5-7372-9c09-61b691e04c47",
+      "locale": "en",
+      "slug": "zettelkasten-method-a-guide-for-note-takers",
+      "path": "src/content/blog/generated/en/zettelkasten-method-a-guide-for-note-takers.mdx",
       "includedInRebuild": true
     }
   ]
