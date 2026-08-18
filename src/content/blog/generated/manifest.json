@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rebuildId": "01a0045e-0a74-74f7-834b-56d6bc08cf88",
+  "rebuildId": "01a01632-135c-775e-9cb1-1a1f92837f5d",
   "applicationId": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
   "posts": [
     {
@@ -50,7 +50,7 @@
       "locale": "en",
       "slug": "building-a-second-brain-from-your-notes",
       "path": "src/content/blog/generated/en/building-a-second-brain-from-your-notes.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fb10a-53d8-770e-8672-9dc3c2f3f5a4",
@@ -71,7 +71,7 @@
       "locale": "en",
       "slug": "cornell-notes-method-a-step-by-step-how-to-guide",
       "path": "src/content/blog/generated/en/cornell-notes-method-a-step-by-step-how-to-guide.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019ff92c-b436-735d-a45f-77d37bbf6e13",
@@ -107,6 +107,13 @@
       "slug": "how-spaced-repetition-works-sm2-fsrs-and-the-science-of-retention",
       "path": "src/content/blog/generated/en/how-spaced-repetition-works-sm2-fsrs-and-the-science-of-retention.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "01a012f5-33b6-7229-a2a1-ee09c0d7f5ff",
+      "locale": "en",
+      "slug": "how-to-build-notion-flashcards-that-reveal-on-check",
+      "path": "src/content/blog/generated/en/how-to-build-notion-flashcards-that-reveal-on-check.mdx",
+      "includedInRebuild": true
     },
     {
       "draftId": "019fe9c4-87d6-71d7-bc31-40d1fa604c78",
@@ -156,6 +163,20 @@
       "slug": "how-to-take-notes-from-a-book-you-actually-retain",
       "path": "src/content/blog/generated/en/how-to-take-notes-from-a-book-you-actually-retain.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "01a012ea-be6b-720a-b277-2a15015f914f",
+      "locale": "en",
+      "slug": "how-to-take-notes-from-video-lectures-that-actually-stick",
+      "path": "src/content/blog/generated/en/how-to-take-notes-from-video-lectures-that-actually-stick.mdx",
+      "includedInRebuild": true
+    },
+    {
+      "draftId": "01a012f0-f968-7469-91f2-f0bfa3cc2135",
+      "locale": "en",
+      "slug": "how-to-take-notes-in-class-5-proven-methods",
+      "path": "src/content/blog/generated/en/how-to-take-notes-in-class-5-proven-methods.mdx",
+      "includedInRebuild": true
     },
     {
       "draftId": "019fc5e1-295c-731d-bb15-ee3ddc1d6e1e",
@@ -218,7 +239,7 @@
       "locale": "en",
       "slug": "zettelkasten-method-a-guide-for-note-takers",
       "path": "src/content/blog/generated/en/zettelkasten-method-a-guide-for-note-takers.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     }
   ]
 }

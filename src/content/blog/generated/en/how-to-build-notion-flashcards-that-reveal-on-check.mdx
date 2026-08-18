@@ -1,0 +1,116 @@
+---
+schemaVersion: 1
+draftId: "01a012f5-33b6-7229-a2a1-ee09c0d7f5ff"
+slug: "how-to-build-notion-flashcards-that-reveal-on-check"
+locale: "en"
+pageType: "how_to"
+title: "How to Build Notion Flashcards That Reveal on Check"
+metaDescription: "Create a reveal-on-check flashcard system in Notion using native database properties, formulas, and views. Perfect for any subject without plugins."
+createdAt: "2026-08-18T03:40:54.710Z"
+modifiedAt: "2026-08-18T18:46:09.973Z"
+translationGroupId: "01a012f5-33b6-7229-a2a1-ee09c0d7f5ff"
+heroImage: "/assets/card-11.webp"
+faq:
+  - question: "What properties do I need to create in my Notion database for flashcards?"
+    answer: "Add a Question or Word property for the prompt, a Reveal checkbox to control visibility, a formula property (Answer) that displays content only when the checkbox is checked, an optional Example property for language learning, a Difficulty select property with options (new, difficult, moderate, easy), and an Archive checkbox to mark learned cards. The formula syntax is IF(Reveal == true, English, \"\") where English is the name of your answer text property."
+  - question: "How do I hide the answer until I check the reveal checkbox?"
+    answer: "Use a formula property with this syntax: IF(Reveal == true, English, \"\"). This compares the Reveal checkbox to true and shows the answer only when checked, otherwise displays nothing. You can add a decorative arrow with IF(Reveal == true, \"→ \" + English, \"\") to make the revealed answer more visually distinct."
+  - question: "Can I use this flashcard system for subjects other than language learning?"
+    answer: "Yes. This system works for any subject—history, math, science, general knowledge, or simple question-and-answer review. The example sentence property is useful mainly for language learning and can be omitted entirely for other flashcard types."
+  - question: "How do I organize flashcards by difficulty level?"
+    answer: "Switch to Board view and set the group property to your Difficulty select field. Notion automatically sorts cards into columns for each difficulty level (new, difficult, moderate, easy). Add background colors to each column for visual scanning—gray for new, red for difficult, yellow for moderate, and green for easy."
+references:
+  - label: "Fluxo: AI-powered spaced repetition and flashcard generation"
+    url: "https://fluxo.today"
+  - label: "Anki: Open-source flashcard software with powerful scheduling"
+    url: "https://apps.ankiweb.net"
+  - label: "RemNote: Notes-first flashcard platform for students"
+    url: "https://www.remnote.com"
+  - label: "Mochi: Markdown flashcards with clean design"
+    url: "https://mochi.cards"
+  - label: "Quizlet: Study sets and flashcard games"
+    url: "https://quizlet.com"
+author:
+  id: "019faee1-9411-7438-a0d5-a441a9a771af"
+  name: "Markiian Halabut"
+  role: "Founder of Fluxo"
+  photoUrl: null
+  bio:
+    - locale: "en"
+      text: "Mark builds Fluxo — a spaced-repetition tool that turns notes into flashcards. He self-taught programming with Anki and now writes about learning science, PKM, and study workflows for people teaching themselves complex topics."
+  links:
+    website: "https://fluxo.today"
+sources:
+  - id: "01a012e3-5a46-71de-aaf1-6d739c4fed9e"
+    type: "youtube_video"
+    title: "How To Make Flashcards In Notion | Notion for Students"
+    url: "https://www.youtube.com/watch?v=pU3SSyCd0zQ"
+    creator: "Creative Cove"
+    publishedAt: "1970-01-01T00:00:00.000Z"
+---
+
+Notion flashcards can quiz you before they show the answer, and you build the whole system from native database properties and formulas. No plugins, no extensions. Cards sort themselves by difficulty, mastered ones move to an archive, and the reveal trick is one checkbox wired to a formula.
+
+## Where This Notion Flashcard System Comes From
+
+The whole setup runs on three built-in pieces: database properties, formula fields, and filtered views. Nothing gets installed. It fits any subject, from vocabulary drills to history dates to math facts to plain question-and-answer review. The core move is a checkbox that toggles answer visibility, and a formula decides what shows based on whether that box is checked.
+
+## Set Up Your Flashcard Database Properties
+
+Create a new Notion database and give each flashcard these properties:
+
+**Question** (or Word, for language study): A text property holding what you're testing. This is the prompt you see first.
+
+**Reveal** (Checkbox): Controls whether the answer shows. Leave it unchecked so the answer stays hidden until you want it.
+
+**Answer** (or English, Formula): The formula property you'll build in the next section. It shows the answer only when Reveal is checked, and stays blank otherwise.
+
+**Example** (optional, Text): Worth adding only for language cards where you want a sentence using the word. Skip it everywhere else.
+
+**Difficulty** (Select): Four options: new, difficult, moderate, easy. This tracks how well you know each card.
+
+**Archive** (Checkbox): Marks a card as learned. Checked cards drop out of your active deck but stay around for reference.
+
+## Build the Reveal-on-Check Formula
+
+The reveal formula is a single IF statement that checks the box and returns content to match. Create a formula property called Answer with this syntax:
+
+```
+IF(Reveal == true, English, "")
+```
+
+Swap "English" for whatever you named your answer text property. Read it plainly: if Reveal is checked, show the answer text; if not, show an empty string. Notion reads a checked box as true and an unchecked one as false, so the comparison works with no extra setup.
+
+Want the revealed answer to stand out? Add a decorative arrow by concatenating it in front:
+
+```
+IF(Reveal == true, "→ " + English, "")
+```
+
+The plus sign joins the arrow string to your answer text. Checked, the field reads "→ Answer"; unchecked, it stays empty.
+
+## Group and Color-Code Cards by Difficulty
+
+Switch the database to Board layout and group by the Difficulty property. Notion drops each card into a column for new, difficult, moderate, and easy. Color the columns so you can scan them fast: gray for new, red for difficult, yellow for moderate, green for easy.
+
+To set a color, open the three-dot menu on a column header and pick a background. Now a glance tells you where your study time is going and which cards are almost done.
+
+## Split Active and Archived Views
+
+You want two filtered views of the same database: one for the cards you're studying, one for the cards you've retired. Duplicate your board view. On the first copy, filter for Archive unchecked, which leaves only active cards. On the second copy, filter for Archive checked to get the learned ones.
+
+Give the archived view a Gallery layout with grouping set to none and card preview set to none. That strips the extra columns and whitespace so old cards sit compactly. From here one click flips you between the active deck and the archive, keeping your study space clean without throwing away what you've already learned.
+
+## Bulk-Fill Repeated Values Fast
+
+Add a batch of cards at once and you'll usually want the same value on several of them, like tagging ten new cards as difficult or archiving a stack of mastered ones. Clicking each card is the slow way.
+
+Instead, set the value on one card, then grab the small fill handle at the bottom-right corner of that cell and drag it down through the rows below. Notion copies the value to every card you cross. Ten clicks becomes one drag, which adds up quickly during bulk tagging or archiving.
+
+## When Manual Review Starts to Drag
+
+This checkbox-and-formula setup is a genuinely good free base if you already keep notes in Notion. The reveal mechanic feels like flipping a physical card, and the difficulty columns push you toward the cards that need the most work. The catch is scheduling: nothing tells you when a card is due. You track that yourself, card by card, and once your deck runs past a few hundred cards that bookkeeping turns into real work.
+
+Picture the same deck where the review timing handles itself. Cards you barely know come back often, cards you've nailed fade into the background, and your time goes to recalling answers instead of managing a list of due dates.
+
+Fluxo covers that part. It schedules spaced-repetition review that resurfaces material based on how well you know it, and it builds flashcards, quizzes, and summaries from the notes you write yourself. Start in Notion for a small deck beside your notes, and reach for Fluxo when the manual scheduling stops being worth the effort.
