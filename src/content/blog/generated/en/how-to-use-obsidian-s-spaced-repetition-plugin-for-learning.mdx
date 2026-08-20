@@ -1,0 +1,137 @@
+---
+schemaVersion: 1
+draftId: "01a01d34-5cb6-778b-85d4-6bbf24a08a70"
+slug: "how-to-use-obsidian-s-spaced-repetition-plugin-for-learning"
+locale: "en"
+pageType: "how_to"
+title: "How to Use Obsidian's Spaced Repetition Plugin for Learning"
+metaDescription: "Set up Obsidian's Spaced Repetition plugin, write flashcards in the right syntax, and review on a spaced schedule. Step-by-step guide with examples for better retention."
+createdAt: "2026-08-20T03:26:06.131Z"
+modifiedAt: "2026-08-20T07:42:14.500Z"
+translationGroupId: "01a01d34-5cb6-778b-85d4-6bbf24a08a70"
+heroImage: "/assets/card-12.webp"
+faq:
+  - question: "Can I use the Spaced Repetition plugin without writing notes first?"
+    answer: "The plugin converts text in your Obsidian notes into flashcards. You must write or paste content first, add flashcard syntax, tag it with #flashcards, and the plugin creates the cards. If you don't have existing notes, you'll need to create them before using the plugin to review."
+  - question: "How often should I review my cards?"
+    answer: "Consistent daily review is far more effective than cramming. Open your review panel for ten to fifteen minutes each day. The plugin's scheduling algorithm is designed to resurface cards at the right time intervals. Regular short sessions outperform occasional long sessions."
+  - question: "What happens to my cards if I remove the #flashcards tag from a note?"
+    answer: "Removing the #flashcards tag removes all flashcards from that note from your review queue. The cards aren't permanently deleted—if you add the tag back to the note, the cards reappear. You can safely experiment with tagging and untagging notes."
+  - question: "Which card format should I use: single-line, bidirectional, or multi-line?"
+    answer: "Use single-line cards for concise facts, definitions, and vocabulary. Use bidirectional cards when you need to test knowledge in both directions, like foreign language terms or concept pairs. Use multi-line cards for longer answers, such as code snippets or detailed explanations. The plugin supports all three—pick based on your content."
+references:
+  - label: "Obsidian Help and Guides"
+    url: "https://help.obsidian.md"
+  - label: "Fluxo: AI-Powered Study Platform"
+    url: "https://fluxo.today"
+author:
+  id: "019faee1-9411-7438-a0d5-a441a9a771af"
+  name: "Markiian Halabut"
+  role: "Founder of Fluxo"
+  photoUrl: null
+  bio:
+    - locale: "en"
+      text: "Mark builds Fluxo — a spaced-repetition tool that turns notes into flashcards. He self-taught programming with Anki and now writes about learning science, PKM, and study workflows for people teaching themselves complex topics."
+  links:
+    website: "https://fluxo.today"
+sources:
+  - id: "019fcfe3-429d-7481-86ef-a361dbf9201c"
+    type: "youtube_video"
+    title: "Master Anything Faster with Obsidian Flashcards (Step-by-Step Guide!)"
+    url: "https://www.youtube.com/watch?v=NLpGJ1CU9fA"
+    creator: "codersmanual"
+    publishedAt: "1970-01-01T00:00:00.000Z"
+---
+
+## What this plugin actually does
+
+Obsidian's Spaced Repetition plugin, built by developer Stephen, turns notes you already wrote into a review system. Spacing your reviews out over days beats cramming them into one session, and the plugin handles the scheduling part so you only decide how well you remembered each card. The rest of this guide covers enabling it, writing cards in the right syntax, running a review session, and reading what the algorithm does with your ratings.
+
+## Enabling the Spaced Repetition plugin
+
+Obsidian ships with restricted mode on, which blocks third-party plugins from running at all. Turn it off first or the plugin never loads, no matter how many times you click install.
+
+Open Settings and pick "Community Plugins" in the left sidebar. The "Restricted Mode" toggle sits at the top of that panel: click it off and accept the warning Obsidian shows you.
+
+With restricted mode off, the browse button goes live. Click it, search "Spaced Repetition," and the plugin by Stephen shows up in the results. Install it, enable it, and its icon lands in your sidebar, usually near the bottom of the icon strip.
+
+## Writing flashcards in Obsidian's syntax
+
+The plugin scans your notes for specific text patterns and turns each match into a card. Start with the single-line format, which covers question-answer pairs short enough to fit on one line.
+
+A single-line card separates question from answer with a double colon:
+
+```
+What is the chemical formula for water::H2O
+Photosynthesis converts light energy and water into::Glucose and oxygen
+The capital of Japan::Tokyo
+Define osmosis::The movement of water across a semipermeable membrane
+```
+
+During review you see only the left side. Think through your answer, reveal the right side, compare, then rate the card Hard, Good, or Easy so the plugin knows when to bring it back. Definitions, dates, vocabulary, and short facts all belong in this format.
+
+### Cards that test both directions
+
+Language vocabulary is the obvious case: you need to produce the Spanish word from English and the English word from Spanish, and a one-way card only trains half of that. Concept pairs and cause-effect relationships have the same problem.
+
+A three-column format solves it. Write three columns separated by `::` instead of two, and the plugin generates two cards from that single line, one per direction. You write the pair once.
+
+```
+English::Spanish::cat||gato
+```
+
+That produces a card showing "English: cat" asking for the Spanish, and another showing "Spanish: gato" asking for the English.
+
+### Multi-line cards for longer answers
+
+Code blocks, multi-step processes, and detailed explanations refuse to sit on one line. The multi-line basic card format exists for exactly these: a question line, a delimiter marking where the answer begins, then the answer content below it. LeetCode solutions and system-design notes fit this shape well.
+
+```
+## LeetCode Two Sum Solution
+
+Given an array of integers and a target sum, return indices of two numbers that add up to target.
+
+**Answer:**
+
+Use a hash map to store each number and its index. Loop through the array once, checking if (target - current_number) exists in the map. Time: O(n), Space: O(n).
+```
+
+Multi-line bidirectional cards work too, for when both sides of a long pair need recalling.
+
+## Turning a note into a deck with #flashcards
+
+No separate flashcards file, no dedicated folder. Add the `#flashcards` tag to any note in your vault and the plugin scans it for every line matching flashcard syntax, single-line or bidirectional or multi-line, then builds a deck named after the note. Pull the tag off and those cards leave your queue.
+
+Your learning notes and your review material end up in the same file, which is the whole point. Tag as many notes as you want and each one becomes its own deck.
+
+## Running a review session
+
+Click the plugin icon in the sidebar to open the review panel. It lists your decks with the count of new cards waiting and the total cards in each.
+
+Pick a deck and the plugin serves one card at a time, front side first. Recall your answer before you reveal anything: peeking early trains recognition instead of recall, which is the weaker skill.
+
+Then rate what happened. Hard means you struggled or missed it, Good means you got there but it took work, Easy means it came instantly. That single button press is the only input the scheduler gets from you.
+
+## What the scheduling algorithm does with your rating
+
+Each rating produces an interval, and that interval is the whole mechanism. Easy pushes the card further out, maybe a few days or longer depending on how many times you've already seen it. Good typically brings it back the next day. Hard puts it back in front of you quickly so you get another attempt before the memory fades.
+
+Reviewing right at the edge of forgetting builds more durable memory than running through the same material five times in one sitting. Intervals also fit your pace better the longer you use the plugin, because every rating you give feeds the next calculation.
+
+## Writing cards worth reviewing
+
+One idea per card. When a line packs two questions or a compound answer, split it, because failing half of a card gives you no useful signal about which half you actually forgot.
+
+Phrasing matters as much as scope. "What are the three steps of photosynthesis?" forces you to pull the answer out of memory; "Photosynthesis has three steps: ___, ___, and ___" lets you coast on recognition. Write the version that makes you work.
+
+## Fitting this into your study routine
+
+Ten or fifteen minutes in the review panel daily beats an hour-long batch every Sunday, and the plugin's intervals assume you show up roughly that often. LeetCode problems, system-design concepts, language vocabulary: anything where you need recall rather than a place to look it up is worth tagging.
+
+## Reviewing without maintaining the syntax yourself
+
+The friction with the Obsidian setup is upkeep. Every card is something you formatted by hand, with the right separator in the right place, and a note full of prose gives you nothing until you go back and rewrite it into question-answer lines. Study material grows faster than most people convert it.
+
+The alternative is writing your notes normally and getting cards out of them anyway, with the review schedule already running.
+
+[Fluxo](https://fluxo.today) works that way: you organize your own notes into spaces and topics, and its AI generates flashcards, quizzes, and summaries from what you wrote. Reviews resurface on a spaced schedule, with streaks and a companion mascot along for the sessions, and it suggests topics worth exploring next. You do the learning. Fluxo makes sure it sticks.

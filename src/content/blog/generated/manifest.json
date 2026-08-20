@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rebuildId": "01a01632-135c-775e-9cb1-1a1f92837f5d",
+  "rebuildId": "01a01e1e-fb99-700c-9e12-591f21c6ac1c",
   "applicationId": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
   "posts": [
     {
@@ -9,6 +9,13 @@
       "slug": "active-recall-why-retrieval-beats-re-reading",
       "path": "src/content/blog/generated/en/active-recall-why-retrieval-beats-re-reading.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "01a01d3a-f36a-74ef-96f3-6cc450fd3c9b",
+      "locale": "en",
+      "slug": "ai-flashcard-generator-chatgpt-to-anki-cloze-cards",
+      "path": "src/content/blog/generated/en/ai-flashcard-generator-chatgpt-to-anki-cloze-cards.mdx",
+      "includedInRebuild": true
     },
     {
       "draftId": "019fc5cc-bcdc-742c-ae4b-fa88399f65c1",
@@ -109,11 +116,18 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a01d40-7a30-70eb-acba-18d9d3250c3c",
+      "locale": "en",
+      "slug": "how-to-build-an-ai-study-assistant-with-a-custom-gpt",
+      "path": "src/content/blog/generated/en/how-to-build-an-ai-study-assistant-with-a-custom-gpt.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "01a012f5-33b6-7229-a2a1-ee09c0d7f5ff",
       "locale": "en",
       "slug": "how-to-build-notion-flashcards-that-reveal-on-check",
       "path": "src/content/blog/generated/en/how-to-build-notion-flashcards-that-reveal-on-check.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fe9c4-87d6-71d7-bc31-40d1fa604c78",
@@ -169,13 +183,20 @@
       "locale": "en",
       "slug": "how-to-take-notes-from-video-lectures-that-actually-stick",
       "path": "src/content/blog/generated/en/how-to-take-notes-from-video-lectures-that-actually-stick.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a012f0-f968-7469-91f2-f0bfa3cc2135",
       "locale": "en",
       "slug": "how-to-take-notes-in-class-5-proven-methods",
       "path": "src/content/blog/generated/en/how-to-take-notes-in-class-5-proven-methods.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a01d34-5cb6-778b-85d4-6bbf24a08a70",
+      "locale": "en",
+      "slug": "how-to-use-obsidian-s-spaced-repetition-plugin-for-learning",
+      "path": "src/content/blog/generated/en/how-to-use-obsidian-s-spaced-repetition-plugin-for-learning.mdx",
       "includedInRebuild": true
     },
     {
