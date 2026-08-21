@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rebuildId": "01a01e1e-fb99-700c-9e12-591f21c6ac1c",
+  "rebuildId": "01a02348-55c7-70a3-bf4a-7965e736f622",
   "applicationId": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
   "posts": [
     {
@@ -15,7 +15,7 @@
       "locale": "en",
       "slug": "ai-flashcard-generator-chatgpt-to-anki-cloze-cards",
       "path": "src/content/blog/generated/en/ai-flashcard-generator-chatgpt-to-anki-cloze-cards.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fc5cc-bcdc-742c-ae4b-fa88399f65c1",
@@ -116,11 +116,18 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a0225f-5664-77de-8925-da229a85b7cb",
+      "locale": "en",
+      "slug": "how-to-build-an-ai-quiz-generator-from-notes-with-a-local-llm",
+      "path": "src/content/blog/generated/en/how-to-build-an-ai-quiz-generator-from-notes-with-a-local-llm.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "01a01d40-7a30-70eb-acba-18d9d3250c3c",
       "locale": "en",
       "slug": "how-to-build-an-ai-study-assistant-with-a-custom-gpt",
       "path": "src/content/blog/generated/en/how-to-build-an-ai-study-assistant-with-a-custom-gpt.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a012f5-33b6-7229-a2a1-ee09c0d7f5ff",
@@ -193,11 +200,18 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a02263-13f6-73ca-a968-365f17335960",
+      "locale": "en",
+      "slug": "how-to-turn-lecture-recordings-into-study-material-with-otter-ai-and-fluxo",
+      "path": "src/content/blog/generated/en/how-to-turn-lecture-recordings-into-study-material-with-otter-ai-and-fluxo.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "01a01d34-5cb6-778b-85d4-6bbf24a08a70",
       "locale": "en",
       "slug": "how-to-use-obsidian-s-spaced-repetition-plugin-for-learning",
       "path": "src/content/blog/generated/en/how-to-use-obsidian-s-spaced-repetition-plugin-for-learning.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fc5e1-295c-731d-bb15-ee3ddc1d6e1e",
@@ -205,6 +219,13 @@
       "slug": "how-to-use-spaced-repetition-for-language-learning",
       "path": "src/content/blog/generated/en/how-to-use-spaced-repetition-for-language-learning.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "01a02268-3e42-76a9-afa7-2df85e65d3ba",
+      "locale": "en",
+      "slug": "how-to-use-the-pomodoro-technique-to-study-effectively",
+      "path": "src/content/blog/generated/en/how-to-use-the-pomodoro-technique-to-study-effectively.mdx",
+      "includedInRebuild": true
     },
     {
       "draftId": "019ff926-8980-7414-8212-1da6626be901",

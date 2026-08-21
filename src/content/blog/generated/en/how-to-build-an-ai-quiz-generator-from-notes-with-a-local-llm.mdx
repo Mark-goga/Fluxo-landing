@@ -1,0 +1,108 @@
+---
+schemaVersion: 1
+draftId: "01a0225f-5664-77de-8925-da229a85b7cb"
+slug: "how-to-build-an-ai-quiz-generator-from-notes-with-a-local-llm"
+locale: "en"
+pageType: "how_to"
+title: "How to Build an AI Quiz Generator From Notes With a Local LLM"
+metaDescription: "Learn how to build an AI quiz generator from notes using FastAPI, Ollama, and Llama 3.2. Understand PDF extraction, JSON parsing, and quiz validation techniques."
+createdAt: "2026-08-21T03:31:08.661Z"
+modifiedAt: "2026-08-21T07:45:33.079Z"
+translationGroupId: "01a0225f-5664-77de-8925-da229a85b7cb"
+heroImage: "/assets/card-9.webp"
+faq:
+  - question: "Do I need to install Ollama separately from the app?"
+    answer: "Yes. Ollama and the AI quiz generator are separate installations. You download Ollama from ollama.com, pull a model like Llama 3.2, and run it in its own terminal. The quiz app backend communicates with the running Ollama instance. If you close the Ollama terminal, the model stops and quiz generation fails until you restart it."
+  - question: "Why use temperature 0.3 instead of a lower value?"
+    answer: "Temperature 0.3 balances accuracy with reasonable variety in question phrasing. Extremely low temperatures make output repetitive; higher values increase hallucinations. For educational quizzes, 0.3 keeps answers focused and correct, which matters more than creative variation, since wrong answers in spaced-repetition review waste study time."
+  - question: "What happens if PDF extraction fails on the first try?"
+    answer: "The system falls back to PyPDF2 automatically. Different PDFs are created with different tools and compressions, so pdfplumber sometimes fails. PyPDF2 handles many cases pdfplumber misses. If both fail, quiz generation cannot proceed and the user is notified."
+  - question: "Can I generate quizzes without uploading a file?"
+    answer: "Yes. Users can type a topic request like 'make MCQs on photosynthesis' and generate quizzes with no file input. The backend skips PDF extraction and text chunking, sending the topic directly to the AI model."
+references:
+  - label: "FastAPI Framework Documentation"
+    url: "https://fastapi.tiangolo.com/"
+  - label: "Ollama: Run Large Language Models Locally"
+    url: "https://ollama.com/"
+  - label: "pdfplumber: Extracting Text and Tables from PDF"
+    url: "https://github.com/jsvine/pdfplumber"
+  - label: "Pydantic: Data Validation Using Python Type Hints"
+    url: "https://docs.pydantic.dev/"
+  - label: "Uvicorn ASGI Server"
+    url: "https://www.uvicorn.org/"
+author:
+  id: "019faee1-9411-7438-a0d5-a441a9a771af"
+  name: "Markiian Halabut"
+  role: "Founder of Fluxo"
+  photoUrl: null
+  bio:
+    - locale: "en"
+      text: "Mark builds Fluxo — a spaced-repetition tool that turns notes into flashcards. He self-taught programming with Anki and now writes about learning science, PKM, and study workflows for people teaching themselves complex topics."
+  links:
+    website: "https://fluxo.today"
+sources:
+  - id: "01a01d2c-582c-74c7-9c82-be7726b1b81d"
+    type: "youtube_video"
+    title: "Build an AI MCQ Generator from Notes | NLP Project Tutorial"
+    url: "https://www.youtube.com/watch?v=alNZWOXRzt4"
+    creator: "LetsUpgrade"
+    publishedAt: "1970-01-01T00:00:00.000Z"
+---
+
+<KeyTakeaways items={["Local generation sidesteps cloud rate limits entirely","Fallback strategies handle inconsistent PDFs and unreliable LLM output","Temperature and chunking trade quantity for quiz accuracy","The full stack runs completely self-hosted with no API costs"]} />
+
+## Why Developers Are Building Local AI Quiz Generators From Notes
+
+ChatGPT, Perplexity, and Gemini all work fine for turning study notes into practice questions until you hit a request cap halfway through a session. That interruption is why a growing number of developers build their own quiz generator instead. Running the language model locally through Ollama removes the cap, the network round-trip, and the per-request cost in one move. Generate 20 questions or 200, at 2am, offline, for free.
+
+## Inside the Open-Source Local MCQ Generator Stack
+
+An AI quiz generator from notes needs three layers: something the user clicks, something that coordinates uploads and AI calls, and a model that does the actual generating. Here that means plain HTML, CSS, and JavaScript on the front, a Python FastAPI backend in the middle, Uvicorn serving it, and Meta's Llama running through Ollama underneath.
+
+### FastAPI and Uvicorn Power the Backend
+
+FastAPI gives you fast Python APIs with automatic documentation and native async support, which matters when a single request can sit waiting on a local model for a minute or more. In development the backend runs under Uvicorn with `--reload`, so every code change restarts the server and you see the effect immediately. Turn that flag off in production. Restarts triggered by file changes on a live server mean downtime nobody asked for.
+
+## From Notes to Clean Text: PDF Extraction and Validation
+
+PDFs lie about being a text format. Different creation tools, compression methods, and character encodings mean extraction succeeds on one file and returns empty strings on the next, with no obvious reason why. The fix here is redundancy: pdfplumber runs first, and if it comes back with nothing usable, PyPDF2 takes a second pass instead of letting the request crash.
+
+Before any of that runs, Pydantic checks the incoming request against a strict schema. Images, CSVs, and malformed uploads get rejected at the door rather than failing three steps later inside the extraction pipeline, where the error message would tell you far less about what went wrong.
+
+## Chunking Notes and Running Llama 3.2 via Ollama
+
+Meta's open-source Llama 3.2 weighs in around 2GB, small enough that most consumer machines download and run it without complaint. On low-end hardware a smaller lightweight variant does the job with less memory, producing shorter but still usable quiz content.
+
+No model reads unlimited text at once. Every one has a ceiling on how much it can attend to in a single request, so the extracted notes get split into chunks of roughly 2,500 characters (about 625 tokens), with a cap of five questions per chunk. That cap does more than respect the context window: it forces each question to come from a specific passage, which is what keeps the output tied to your actual notes instead of drifting into generic textbook trivia.
+
+## Tuning Accuracy: Temperature, Timeouts, and JSON Parsing
+
+Three settings decide whether the generated quiz is worth reviewing.
+
+**Temperature controls randomness in AI output.** This project pins it at 0.3, low enough to keep answers focused and accurate. Push it toward 1 and you get more creative phrasing along with more confident nonsense. For quiz generation the math is simple: a wrong answer that enters a spaced-repetition rotation teaches you the wrong thing for weeks, so accuracy beats variety every time.
+
+**Timeouts prevent requests from hanging indefinitely.** The backend gives the local Ollama model 120 seconds to respond. Past that, the request fails cleanly instead of leaving a spinner turning on the frontend forever.
+
+**JSON parsing must handle real-world messiness.** Local models return broken JSON often enough that clean parsing alone will fail you: unclosed brackets, JSON buried in a markdown code block, JSON with a chatty sentence glued to the front. So the backend tries three things in order. Straight JSON parse first; then a search for a fenced code block to extract the JSON from; then isolating the valid JSON out of surrounding text. Each fallback exists because a local LLM produced exactly that failure at some point.
+
+## Validating MCQs and Choosing How to Generate Them
+
+Plenty of generated questions arrive unusable, so every MCQ passes a check before a user ever sees it: the question field must exist, there must be exactly four options, and the answer index has to land in 0 through 3. Anything failing those conditions gets dropped rather than patched.
+
+Input is flexible in a way that matters day to day. Upload a PDF, paste text straight into the form, or skip the file entirely and type something like "make MCQs on C++". The backend reads which of those it got and routes accordingly, so PDFs go through extraction, pasted text jumps ahead to chunking, and a bare topic request goes directly to the model.
+
+## Securing the API With CORS
+
+CORS is the browser rule deciding which websites are allowed to call your API. Development usually runs with a wildcard because it saves you from fighting the browser while you build, and that setting quietly becomes a security hole the moment you deploy. Whitelist your specific frontend domains in production so only applications you control can reach the backend.
+
+## Our Take: What Makes This Local-First Approach Work
+
+For anyone self-teaching programming, a language, or an exam subject, the value of a local quiz generator is that nothing stops you mid-session. The design choices here (two PDF libraries, three JSON parsing attempts, temperature at 0.3, five questions per chunk) are less about elegance and more about what real notes and local models actually do when you point them at each other. You get fewer questions per session, and the ones you get are accurate enough to trust in review, which is the whole point.
+
+## Turning Your Own Notes Into Review That Sticks
+
+Building this yourself means maintaining it: the model updates, a PDF library changes behavior, the parsing fallbacks need a fourth branch. And once questions are generated, you still have to decide what to review today and what can wait a week, which is a scheduling problem your generator does not solve. Picture the other version instead, where you write your notes, questions appear from them, and the right ones come back on the right day without you tracking any of it.
+
+That is what Fluxo does. You organize your own notes into spaces and topics, write them in rich text, and Fluxo generates flashcards, quizzes, and summaries from what you wrote, then schedules the review with spaced repetition, streaks, a companion mascot, and suggestions for topics worth exploring next. What it will not do is write the notes for you or hand you a ready-made course, because the learning happens while you write and the tool only makes sure it sticks.
+
+<MidCta heading="Your notes, back as quizzes that stick" body="Write one topic's notes in Fluxo and generate a quiz from them." actionLabel="Open Fluxo" href="https://fluxo.today" />
