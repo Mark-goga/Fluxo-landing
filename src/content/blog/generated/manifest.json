@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rebuildId": "01a02348-55c7-70a3-bf4a-7965e736f622",
+  "rebuildId": "01a02994-a583-7519-a18f-36d57442bf1e",
   "applicationId": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
   "posts": [
     {
@@ -120,7 +120,7 @@
       "locale": "en",
       "slug": "how-to-build-an-ai-quiz-generator-from-notes-with-a-local-llm",
       "path": "src/content/blog/generated/en/how-to-build-an-ai-quiz-generator-from-notes-with-a-local-llm.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a01d40-7a30-70eb-acba-18d9d3250c3c",
@@ -172,11 +172,25 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a0278e-acc8-7718-8c00-a9d261acc490",
+      "locale": "en",
+      "slug": "how-to-stop-procrastinating-on-studying-by-fixing-the-root-cause",
+      "path": "src/content/blog/generated/en/how-to-stop-procrastinating-on-studying-by-fixing-the-root-cause.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "019fb106-a552-7258-852c-a7a6eff0cb6f",
       "locale": "en",
       "slug": "how-to-study-effectively-for-long-term-retention",
       "path": "src/content/blog/generated/en/how-to-study-effectively-for-long-term-retention.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "01a02793-7867-75f8-8626-572d213fd717",
+      "locale": "en",
+      "slug": "how-to-take-notes-for-programming-in-obsidian",
+      "path": "src/content/blog/generated/en/how-to-take-notes-for-programming-in-obsidian.mdx",
+      "includedInRebuild": true
     },
     {
       "draftId": "019fbb63-1c27-7354-99f5-d160ac9e0994",
@@ -204,7 +218,7 @@
       "locale": "en",
       "slug": "how-to-turn-lecture-recordings-into-study-material-with-otter-ai-and-fluxo",
       "path": "src/content/blog/generated/en/how-to-turn-lecture-recordings-into-study-material-with-otter-ai-and-fluxo.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a01d34-5cb6-778b-85d4-6bbf24a08a70",
@@ -225,7 +239,7 @@
       "locale": "en",
       "slug": "how-to-use-the-pomodoro-technique-to-study-effectively",
       "path": "src/content/blog/generated/en/how-to-use-the-pomodoro-technique-to-study-effectively.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019ff926-8980-7414-8212-1da6626be901",
@@ -268,6 +282,13 @@
       "slug": "the-study-workflow-that-turns-notes-into-applied-knowledge",
       "path": "src/content/blog/generated/en/the-study-workflow-that-turns-notes-into-applied-knowledge.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "01a0278a-d503-76cd-a0f7-6da42f901a31",
+      "locale": "en",
+      "slug": "weekly-review-for-students-a-simple-system-to-stay-on-track",
+      "path": "src/content/blog/generated/en/weekly-review-for-students-a-simple-system-to-stay-on-track.mdx",
+      "includedInRebuild": true
     },
     {
       "draftId": "019ffe58-ec69-72e7-ac79-186bdd5bb90e",

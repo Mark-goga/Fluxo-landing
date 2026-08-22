@@ -1,0 +1,102 @@
+---
+schemaVersion: 1
+draftId: "01a02793-7867-75f8-8626-572d213fd717"
+slug: "how-to-take-notes-for-programming-in-obsidian"
+locale: "en"
+pageType: "how_to"
+title: "How to Take Notes for Programming in Obsidian"
+metaDescription: "Learn how to structure programming notes in Obsidian, capture bugs efficiently, and turn notes into spaced-repetition flashcards for long-term retention."
+createdAt: "2026-08-22T03:46:11.276Z"
+modifiedAt: "2026-08-22T13:06:37.342Z"
+translationGroupId: "01a02793-7867-75f8-8626-572d213fd717"
+heroImage: "/assets/card-11.webp"
+faq:
+  - question: "Why should I use Obsidian instead of Notion or Apple Notes?"
+    answer: "Obsidian stores notes as Markdown files, an open format that stays readable long-term even if Obsidian changes. Apple Notes and Notion use proprietary formats that lock notes into their systems. Obsidian is also free for personal use, works fully offline, and has a large plugin ecosystem if you need custom workflows later."
+  - question: "How do I avoid folders getting messy and disorganized?"
+    answer: "Use a hybrid approach: prefix top-level folders with numbers (100 for frontend, 200 for backend, etc.) so you can search by number to find related notes quickly. Keep new notes in an unsorted index folder until they mature, then move permanent notes to the right numbered folder. This reduces pressure to perfectly organize every note immediately."
+  - question: "What should I actually write down as a programmer?"
+    answer: "Focus on what you'll need later: bug reproduction steps, platform-specific issues, troubleshooting solutions. Skip over-polishing lecture-style notes. Document the hard problems you've solved so you can reference or publish those solutions later. Developers benefit most from notes about bugs, errors, and fixes—not summaries of concepts you can google."
+  - question: "Can I turn my Obsidian notes into a study system?"
+    answer: "Yes. Fluxo generates AI flashcards and quizzes directly from your own notes, then schedules them through spaced repetition. If you use numbered folders and keep notes structured, Fluxo has clean material to work with and can create more accurate flashcards from years of your programming experience."
+references:
+  - label: "Obsidian getting started guide for beginners"
+    url: "https://obsidian.rocks/getting-started-with-obsidian-a-beginners-guide/"
+  - label: "Effortless Academic: Getting started with Obsidian"
+    url: "https://effortlessacademic.com/getting-started-with-obsidian-for-beginners/"
+  - label: "Kev's Robots: Creating your first Obsidian vault"
+    url: "https://www.kevsrobots.com/learn/obsidian/02_first_vault.html"
+  - label: "Stephango: Understanding vaults and the Zettelkasten method"
+    url: "https://stephango.com/vault"
+author:
+  id: "019faee1-9411-7438-a0d5-a441a9a771af"
+  name: "Markiian Halabut"
+  role: "Founder of Fluxo"
+  photoUrl: null
+  bio:
+    - locale: "en"
+      text: "Mark builds Fluxo — a spaced-repetition tool that turns notes into flashcards. He self-taught programming with Anki and now writes about learning science, PKM, and study workflows for people teaching themselves complex topics."
+  links:
+    website: "https://fluxo.today"
+sources:
+  - id: "01a012e3-b2d4-72c6-b9e5-c4844278362a"
+    type: "youtube_video"
+    title: "How To Take Notes as a Programmer"
+    url: "https://www.youtube.com/watch?v=fVMlUd9orf4"
+    creator: "isak"
+    publishedAt: "1970-01-01T00:00:00.000Z"
+---
+
+Two problems keep developers from having notes worth reading: picking a tool, and knowing what deserves to be written down. Most people grab whatever is open (Apple Notes, a scratch file, a comment buried in code) and lose the thing within weeks. The bug comes back in March and you debug it from zero, again. Most note apps were built for students and writers, not for engineers tracking technical problems across years.
+
+Programmers need two systems, and they should not be the same system. One holds ideas and bugs you will want months from now. The other holds today's tasks. What follows is the first one: how to take notes for programming in Obsidian, from folder structure to capture speed to what actually earns a place in the vault.
+
+## Why Obsidian for Programming Notes
+
+Apple Notes looks fine until you think about who owns the format. Apple does. If their position on data portability shifts, years of debugging sessions and deployment playbooks become someone else's decision to make. Obsidian sidesteps this by storing notes as Markdown, an open formatting standard, and a Markdown file opens in any text editor. That matters most at 3 AM, when the note you need is a reference you wrote two years ago.
+
+Obsidian's client app is not open source, but it is free, works fully offline, and sells optional paid cloud storage if you want sync. For engineers, that trade lands in a reasonable place: the files are yours, the app runs without a network, and nothing forces you into a subscription.
+
+The community plugin ecosystem is large, with some plugins reaching millions of downloads. That is worth more than it sounds. When you eventually want to export to another format, run analysis across your notes, or wire up a workflow nobody else asked for, the odds are good that someone already built most of it.
+
+## Organize Notes by Linking, Not Folders
+
+The Zettelkasten method organizes notes purely through linking, with no folders involved. Rather than forcing each note into one category, you write it and connect it. Technical material takes to this well: a note on database indexing links out to query optimization and performance tuning without you deciding in advance which folder owns it.
+
+In practice most programmers run a hybrid. Keep the linking for depth, and prefix top-level folders with numbers (100, 200, 300) for browsing speed. Give each number a domain: 100 frontend, 200 backend, 300 databases. Now searching "200" surfaces every backend note without you recalling a single file name, and a new domain costs you one new folder.
+
+New notes land in an unsorted index folder by default. When a note becomes permanent, move it into a numbered folder; drafts, half-thoughts, and things you are still working out stay in the index. That default is what makes fast capture possible, because nothing has to be filed the moment you write it.
+
+## Speed Up Capture With Keyboard Shortcuts
+
+Three shortcuts carry most of the weight here. Wrap text in double brackets and hit Cmd+Enter: if a note with that title exists you jump to it, and if it does not, Obsidian creates it. That is the fastest way to link or spin up a note without leaving the sentence you are in the middle of.
+
+The quick switcher (Cmd+O) searches your existing notes as you type. Type a title that does not exist yet, press enter, and you get a new note instead of a dead end. When a similarly named note already exists and you want a fresh one anyway, Cmd+Shift+Enter forces the creation rather than auto-matching to the old note.
+
+Vim motions pay off once note-taking gets heavy, since the movement and editing commands live in muscle memory instead of your hands leaving the keyboard. If Neovim is already your editor, the obsidian-neovim plugin opens your whole vault through it, so there is no second set of keybindings to learn.
+
+## What Developers Should Log
+
+Student habits do not transfer. Lecture notes get polished and then never reread; the value was in writing them, because writing held attention during the lecture. Copying that ritual into a dev vault produces beautiful notes nobody opens.
+
+What pays instead is a running bullet-point log of active bugs: how to reproduce them, which platform they show up on, what the error said. Three months later, when the same thing surfaces, that log is the difference between recognition and a cold start.
+
+Do the same for hard problems the moment you solve them. Deleting a custom domain from a DigitalOcean project is the kind of task with six non-obvious steps you will not retain, so write the steps down. Later you can publish the fix, hand it to a teammate, or (most often) use it yourself.
+
+## Daily To-Dos Belong on Paper
+
+For what is due today, paper still beats every app. Writing a to-do by hand is the most reliable way to remember it, and a small notebook costs nothing to keep beside the keyboard. Obsidian holds the archive; paper holds the day.
+
+## One System Long-Term Beats Switching Apps
+
+Most programmers try four apps before settling on one, and every switch resets the folders, the habits, and the search history. Go from Apple Notes to Notion to Obsidian and you no longer have years of notes, you have three disconnected piles you can only search one at a time.
+
+Staying put compounds instead. Search a single term across a vault you have kept for years and 26 results come back: bug fixes, deployment notes, troubleshooting sessions, all feeding whatever you are doing now. Which tool you picked matters far less than the fact that you stopped picking.
+
+## Turning Years of Notes Into Recall You Can Count On
+
+The gap in this system is review. A structured vault makes anything findable, but finding requires remembering that the note exists, and the fix you documented in 2023 only helps if something reminds you it is there. Rereading the whole vault is not a plan.
+
+Picture the other version: the DigitalOcean steps and the platform-specific bug come back to you on a schedule, weeks apart, until they are yours without lookup. Your notes stop being an archive you search and start being material you know.
+
+That is the part Fluxo handles. It builds AI flashcards, quizzes, and summaries from the notes you wrote yourself, organizes them into spaces and topics, and schedules them back through spaced repetition so material resurfaces over time.
