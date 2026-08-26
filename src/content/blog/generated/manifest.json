@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rebuildId": "01a02994-a583-7519-a18f-36d57442bf1e",
+  "rebuildId": "01a03d04-6575-747a-87f4-70cee2fbd697",
   "applicationId": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
   "posts": [
     {
@@ -37,6 +37,13 @@
       "slug": "anki-vs-remnote-which-fits-your-study-stack",
       "path": "src/content/blog/generated/en/anki-vs-remnote-which-fits-your-study-stack.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "01a03c23-2280-705c-acf1-7b18548eb2fe",
+      "locale": "en",
+      "slug": "best-anki-add-ons-for-beginners-5-essential-tools-to-speed-up-learning",
+      "path": "src/content/blog/generated/en/best-anki-add-ons-for-beginners-5-essential-tools-to-speed-up-learning.mdx",
+      "includedInRebuild": true
     },
     {
       "draftId": "019fc5d8-758f-763c-a870-01959d28d0a7",
@@ -158,6 +165,20 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a03c17-bd9d-7407-b748-a21cc3d8890e",
+      "locale": "en",
+      "slug": "how-to-memorize-vocabulary-with-mnemonic-associations",
+      "path": "src/content/blog/generated/en/how-to-memorize-vocabulary-with-mnemonic-associations.mdx",
+      "includedInRebuild": true
+    },
+    {
+      "draftId": "01a03c1c-d802-75dd-93d3-e914af4b582a",
+      "locale": "en",
+      "slug": "how-to-read-a-textbook-a-research-backed-method-for-better-retention",
+      "path": "src/content/blog/generated/en/how-to-read-a-textbook-a-research-backed-method-for-better-retention.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "019fe9ca-04d4-753b-8a02-baeacb1cf889",
       "locale": "en",
       "slug": "how-to-read-academic-papers-efficiently",
@@ -176,7 +197,7 @@
       "locale": "en",
       "slug": "how-to-stop-procrastinating-on-studying-by-fixing-the-root-cause",
       "path": "src/content/blog/generated/en/how-to-stop-procrastinating-on-studying-by-fixing-the-root-cause.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fb106-a552-7258-852c-a7a6eff0cb6f",
@@ -190,7 +211,7 @@
       "locale": "en",
       "slug": "how-to-take-notes-for-programming-in-obsidian",
       "path": "src/content/blog/generated/en/how-to-take-notes-for-programming-in-obsidian.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fbb63-1c27-7354-99f5-d160ac9e0994",
@@ -288,7 +309,7 @@
       "locale": "en",
       "slug": "weekly-review-for-students-a-simple-system-to-stay-on-track",
       "path": "src/content/blog/generated/en/weekly-review-for-students-a-simple-system-to-stay-on-track.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019ffe58-ec69-72e7-ac79-186bdd5bb90e",
