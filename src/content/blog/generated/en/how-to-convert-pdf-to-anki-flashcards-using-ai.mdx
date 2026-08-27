@@ -1,0 +1,86 @@
+---
+schemaVersion: 1
+draftId: "01a04142-1bf7-76bc-8a28-9436c68315b8"
+slug: "how-to-convert-pdf-to-anki-flashcards-using-ai"
+locale: "en"
+pageType: "how_to"
+title: "How to Convert PDF to Anki Flashcards Using AI"
+metaDescription: "Turn PDF lecture notes and textbook chapters into Anki flashcards using AI. Under a minute per chapter with this step-by-step workflow."
+createdAt: "2026-08-27T03:27:26.815Z"
+modifiedAt: "2026-08-27T13:04:46.682Z"
+translationGroupId: "01a04142-1bf7-76bc-8a28-9436c68315b8"
+heroImage: "/assets/card-16.webp"
+faq:
+  - question: "Do I need a paid ChatGPT or Gemini account to use this workflow?"
+    answer: "No. The workflow uses the free tiers of ChatGPT and Google Gemini, both of which have sufficient capacity for converting textbook chapters and lecture notes into flashcards. You will need a free OpenAI account and a free Google account to access both tools."
+  - question: "What should I do if my PDF is scanned or contains only images of text?"
+    answer: "This workflow requires PDFs with selectable text. Scanned PDFs or images of textbook pages cannot be processed by Gemini or ChatGPT, as the AI tools cannot extract text directly from images. If you have a scanned PDF, you will need to run it through optical character recognition (OCR) software first to make the text selectable."
+  - question: "Can I edit or delete flashcards after importing them into Anki?"
+    answer: "Yes. Once imported into Anki, every flashcard is fully editable. You can change the card text, add or remove fields, adjust difficulty ratings, add audio or images, or delete cards entirely. Anki's batch editor (Cmd+Shift+B) allows you to make changes to many cards at once."
+  - question: "Is the AnKing Overhaul note type required, or can I use the standard Cloze type?"
+    answer: "The standard Cloze note type works well for most studying and is simpler to use. AnKing Overhaul is a specialized note type designed for medical students preparing for licensing exams, as it includes extra fields for medical-specific data. Unless you're studying medicine, the standard Cloze note type is sufficient."
+references:
+  - label: "Anki Official: Cloze Templates and Generation"
+    url: "https://docs.ankiweb.net/templates/generation.html?highlight=cloze"
+author:
+  id: "019faee1-9411-7438-a0d5-a441a9a771af"
+  name: "Markiian Halabut"
+  role: "Founder of Fluxo"
+  photoUrl: null
+  bio:
+    - locale: "en"
+      text: "Mark builds Fluxo — a spaced-repetition tool that turns notes into flashcards. He self-taught programming with Anki and now writes about learning science, PKM, and study workflows for people teaching themselves complex topics."
+  links:
+    website: "https://fluxo.today"
+sources:
+  - id: "01a04133-3f67-716f-8ebf-97c513740f94"
+    type: "youtube_video"
+    title: "PDF to Anki with AI (free)"
+    url: "https://www.youtube.com/watch?v=HKTbIop5qXg"
+    creator: "Varun Ajmera"
+    publishedAt: "1970-01-01T00:00:00.000Z"
+---
+
+## Turn Any PDF Into Flashcards in Under a Minute
+
+A textbook chapter or a stack of lecture notes becomes a finished Anki deck in about six clicks, usually under a minute. The speed comes from putting AI at two separate points in the pipeline instead of typing cards by hand. Summarizing first and generating cloze cards second stops the AI from dropping details, and it keeps every card tied to a concept that actually appeared in your source.
+
+## The Three Tools You Need: Gemini, ChatGPT, and Google Sheets
+
+Three tools, one job each. Google Gemini reads the PDF and pulls out the key points; ChatGPT turns those points into cloze deletion cards, the fill-in-the-blank kind; Google Sheets is the staging area where the card text sits before it becomes a file Anki can swallow. Nothing here is exotic, and the handoffs between them are copy-paste, which is why the whole thing moves so fast.
+
+## Step 1: Summarize the PDF Into Bullet Points With Gemini
+
+Open Gemini, upload the PDF, and give it a prompt that asks for a bulleted summary of the key points. What comes back is a structured list: main concepts, definitions, the facts worth remembering. A large chapter usually lands around 40 bullet points.
+
+That middle step is doing more work than it looks like. The model is no longer parsing a PDF and inventing card format at the same time, so it works from explicit statements instead of guessing at structure. Copy the whole bullet list once Gemini finishes.
+
+## Step 2: Generate Cloze Deletion Flashcards With ChatGPT
+
+Drop the bullets into ChatGPT with a second prompt that asks for cloze deletion flashcards. Each bullet becomes a card with a key term or phrase hidden inside curly braces, so you supply the missing piece when you review. Forty bullets give you roughly 40 cards.
+
+Cloze is the format worth using here. Hiding a term inside a full statement forces you to recall the specific claim, not just recognize it on a page. The output arrives numbered and grouped under section headings, which is exactly the shape you want for the next step. Copy all of it, numbers and headings included.
+
+## Step 3: Export the Flashcards as a CSV File
+
+Paste ChatGPT's output into the first column of a new Google Sheet, headings and numbering intact. You are not formatting anything here, only holding the card text in a structured place. Go to File > Download > Comma-Separated Values (.csv) and save it somewhere you'll find it again. That CSV is what Anki's importer reads.
+
+## Importing the CSV Into Anki
+
+Open Anki on desktop, go to File > Import, and pick the CSV you just saved. One setting decides whether this works: the field separator. Anki defaults to comma, your file needs semicolon, and getting it wrong breaks the import outright rather than half-working. Then pick a note type. AnKing Overhaul carries extra fields aimed at USMLE study, but plain Cloze handles a non-USMLE deck just as well.
+
+### Organizing Cards With Tags and Source Screenshots
+
+With the cards in, tag them by topic or chapter. Select everything you just imported and use the colon-colon syntax, like `pathology::chapter1` or `microbiology::chapter2`, which builds a hierarchy instead of a flat pile of labels. Related cards stay grouped as your collection grows past a few chapters.
+
+Screenshots from the source are worth the extra thirty seconds. Select all cards in Browse with Cmd+A, open the batch editor with Cmd+Shift+B, and add an image field carrying a screenshot of the original page. Reviewing a card then puts the source paragraph right next to the question, so a half-remembered fact has somewhere to reconnect.
+
+## Skipping the Copy-Paste Loop Entirely
+
+The workflow above works, but you are still the glue between three tabs. Every chapter means another upload, another paste, another CSV, another import dialog with a separator setting you have to remember. Multiply that by a semester of material and the minute-per-chapter math stops feeling as clean as it sounded.
+
+The version without friction looks different: you write your notes once, in one place, and the cards appear from what you wrote. That's how Fluxo works. You keep rich-text notes organized into spaces and topics, and its AI generates flashcards, quizzes, and summaries from those notes, then schedules the reviews so material resurfaces over time instead of sitting in a deck you forgot to open. A mascot, streaks, and gamified sessions handle the part where you have to actually show up, and the AI suggests topics worth exploring next.
+
+One thing Fluxo deliberately does not do: hand you ready-made courses or a library of shared decks. You write the notes. That constraint is the point, because recall practice built on your own phrasing beats a generic deck someone else made.
+
+<MidCta heading="Turn Your Notes Into Cards That Stick" body="Write one topic's notes in Fluxo and generate a flashcard set from them." actionLabel="Open Fluxo" href="https://fluxo.today" />

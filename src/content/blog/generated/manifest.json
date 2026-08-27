@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rebuildId": "01a03d04-6575-747a-87f4-70cee2fbd697",
+  "rebuildId": "01a04353-6db5-7696-a47c-10922ab064ae",
   "applicationId": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
   "posts": [
     {
@@ -16,6 +16,13 @@
       "slug": "ai-flashcard-generator-chatgpt-to-anki-cloze-cards",
       "path": "src/content/blog/generated/en/ai-flashcard-generator-chatgpt-to-anki-cloze-cards.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "01a0414b-079e-7539-b2ee-244afcbc1f88",
+      "locale": "en",
+      "slug": "ai-flashcard-generator-from-pdf-fluxo-vs-anki-vs-remnote-vs-mochi-vs-quizlet",
+      "path": "src/content/blog/generated/en/ai-flashcard-generator-from-pdf-fluxo-vs-anki-vs-remnote-vs-mochi-vs-quizlet.mdx",
+      "includedInRebuild": true
     },
     {
       "draftId": "019fc5cc-bcdc-742c-ae4b-fa88399f65c1",
@@ -43,7 +50,7 @@
       "locale": "en",
       "slug": "best-anki-add-ons-for-beginners-5-essential-tools-to-speed-up-learning",
       "path": "src/content/blog/generated/en/best-anki-add-ons-for-beginners-5-essential-tools-to-speed-up-learning.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fc5d8-758f-763c-a870-01959d28d0a7",
@@ -109,6 +116,13 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a0413c-0f9c-7260-a634-0831333e806e",
+      "locale": "en",
+      "slug": "fsrs-vs-sm-2-which-spaced-repetition-algorithm-fits-your-learning",
+      "path": "src/content/blog/generated/en/fsrs-vs-sm-2-which-spaced-repetition-algorithm-fits-your-learning.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "019fe9ba-35c6-7316-9dc9-2c5d35489fcc",
       "locale": "en",
       "slug": "how-chunking-memory-helps-you-learn-and-remember-more",
@@ -144,6 +158,13 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a04142-1bf7-76bc-8a28-9436c68315b8",
+      "locale": "en",
+      "slug": "how-to-convert-pdf-to-anki-flashcards-using-ai",
+      "path": "src/content/blog/generated/en/how-to-convert-pdf-to-anki-flashcards-using-ai.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "019fe9c4-87d6-71d7-bc31-40d1fa604c78",
       "locale": "en",
       "slug": "how-to-learn-programming-faster",
@@ -169,14 +190,14 @@
       "locale": "en",
       "slug": "how-to-memorize-vocabulary-with-mnemonic-associations",
       "path": "src/content/blog/generated/en/how-to-memorize-vocabulary-with-mnemonic-associations.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a03c1c-d802-75dd-93d3-e914af4b582a",
       "locale": "en",
       "slug": "how-to-read-a-textbook-a-research-backed-method-for-better-retention",
       "path": "src/content/blog/generated/en/how-to-read-a-textbook-a-research-backed-method-for-better-retention.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fe9ca-04d4-753b-8a02-baeacb1cf889",

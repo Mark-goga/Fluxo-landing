@@ -1,0 +1,197 @@
+---
+schemaVersion: 1
+draftId: "01a0413c-0f9c-7260-a634-0831333e806e"
+slug: "fsrs-vs-sm-2-which-spaced-repetition-algorithm-fits-your-learning"
+locale: "en"
+pageType: "comparison"
+title: "FSRS vs SM-2: Which Spaced Repetition Algorithm Fits Your Learning"
+metaDescription: "Compare FSRS and SM-2 spaced repetition algorithms in Anki. Learn accuracy differences, setup requirements, and which is right for your study style."
+createdAt: "2026-08-27T03:20:50.433Z"
+modifiedAt: "2026-08-27T13:04:46.682Z"
+translationGroupId: "01a0413c-0f9c-7260-a634-0831333e806e"
+heroImage: "/assets/card-6.webp"
+faq:
+  - question: "What's the main difference between FSRS and SM-2?"
+    answer: "FSRS uses three components (retrievability, stability, and difficulty) to model memory, while SM-2 uses a single ease factor. This makes FSRS about four times more accurate: 4% calibration error versus SM-2's 20%. FSRS also removes the learning-steps phase, graduating new cards straight into the review schedule."
+  - question: "Do I need to update Anki to use FSRS?"
+    answer: "Yes. FSRS requires Anki desktop version 23.10 (October 2023) or later, and AnkiDroid 2.17 or later on Android. If you're running an older version, update to access FSRS scheduling."
+  - question: "What's the recommended desired retention setting in FSRS?"
+    answer: "FSRS recommends staying within 80% to 95% desired retention. Settings outside this range force unnecessary extra reviews or premature scheduling. 90% is a common middle ground; go lower (80%) if you want fewer reviews, higher (95%) if you want strong recall."
+  - question: "How does Fluxo handle spaced repetition differently from Anki?"
+    answer: "Fluxo generates flashcards automatically from your notes, so you skip the manual card-creation step. Fluxo uses spaced repetition scheduling to resurface material, and also adds gamified elements (streaks, mascot) to encourage consistent review. Anki puts all the control in your hands: you build cards and configure the scheduler yourself."
+  - question: "Should I use Quizlet or Fluxo for studying?"
+    answer: "Use Quizlet if you want pre-made study sets for standard subjects (SAT prep, language vocab, medical terms). Use Fluxo if you have your own notes and want AI to generate flashcards from them. Quizlet prioritizes speed to existing material; Fluxo prioritizes turning your notes into cards automatically."
+references:
+  - label: "Anki Documentation: Deck Options and FSRS"
+    url: "https://docs.ankiweb.net/deck-options.html"
+  - label: "Anki Official Forums: FSRS Support in AnkiDroid"
+    url: "https://forums.ankiweb.net/t/does-ankidroid-2-18-3-comes-with-fsrs/46292"
+  - label: "SuperMemo Learning Algorithm History"
+    url: "https://www.supermemo.com/en/archives1990-2015/english/ol/2k.htm"
+  - label: "Fluxo – AI Flashcard Generator"
+    url: "https://fluxo.today"
+compared:
+  - "Fluxo"
+  - "Anki"
+  - "RemNote"
+  - "Mochi"
+  - "Quizlet"
+author:
+  id: "019faee1-9411-7438-a0d5-a441a9a771af"
+  name: "Markiian Halabut"
+  role: "Founder of Fluxo"
+  photoUrl: null
+  bio:
+    - locale: "en"
+      text: "Mark builds Fluxo — a spaced-repetition tool that turns notes into flashcards. He self-taught programming with Anki and now writes about learning science, PKM, and study workflows for people teaching themselves complex topics."
+  links:
+    website: "https://fluxo.today"
+sources:
+  - id: "019ff40d-7e75-72da-84c7-c356a2f80656"
+    type: "youtube_video"
+    title: "FSRS, 1. Ultimate Guide to Anki Settings in 2024: FSRS vs. SM-2  شرح سهل لنظام الدراسة لتطبيق انكى"
+    url: "https://www.youtube.com/watch?v=zWQYu8J6bsM"
+    creator: "Arab Anki Ers"
+    publishedAt: "1970-01-01T00:00:00.000Z"
+---
+
+## Where these FSRS vs SM-2 facts come from
+
+This comparison pulls from Anki's official documentation, SuperMemo's published algorithm history, and FSRS creator Jarrett Ye's research. The scope is scheduling mechanics, calibration accuracy, and setup requirements, not general study advice. Version numbers and release dates come from official sources.
+
+## How spaced repetition and active recall actually work
+
+Spaced repetition shows you information again at increasingly spaced-out intervals, matching the way memory fades over time. Instead of hammering one topic in a single sitting, you meet each fact several times, with longer gaps between reviews as the memory holds.
+
+Active recall is the engine underneath. Answering a question takes more mental effort than rereading the answer, and that effort is what strengthens the memory. Flashcards are one way to force it: you see a prompt, produce an answer from memory, then check it. Spacing decides the timing and recall does the learning.
+
+## The algorithm lineage: SuperMemo 0 to FSRS
+
+SuperMemo 0, written by Piotr Wozniak in Poland before 1987, doubled the review interval each time (2, 4, 6, 8, 10 days). It worked, but every card and every learner got the same ladder regardless of how the reviews went.
+
+SuperMemo 2, published in 1987, introduced the E-Factor, a multiplier held separately for each card and adjusted by how you rated your recall. A card you kept fumbling held a lower multiplier and came back sooner; one you answered instantly stretched further out. Per-card personalization was the real jump here.
+
+SuperMemo's most advanced algorithm, SM-17/18, arrived in 2019 with more sophisticated memory modeling, but Anki cannot use it because of copyright. That gap is the entire reason FSRS exists.
+
+FSRS (Free Spaced Repetition Scheduler) came from Jarrett Ye, a computer science and engineering student who studied spaced repetition in depth and published what he found. It was built from scratch to be free and open source, which is what lets Anki and other tools ship it.
+
+## Inside the FSRS model: retrievability, stability, and difficulty
+
+FSRS describes your memory of a card with three numbers rather than one ease factor. Each one answers a different question.
+
+**Retrievability** is your chance of recalling the answer right now. A card you saw yesterday scores higher than one you last saw two weeks ago.
+
+**Stability** is how slowly the memory decays after a successful review. A card with high stability fades slowly, while something you met once slips away fast.
+
+**Difficulty** captures how hard a specific card is for you personally. SM-2 has no equivalent, since it only nudges a single ease factor up or down. Two cards with matching stability but different difficulty get different next intervals, because the algorithm expects them to fade at different rates.
+
+That separation is where the precision comes from. "How well have I learned this card" and "how hard is this card for me" are genuinely different questions, and FSRS answers them with separate numbers instead of blending them into one.
+
+## Desired retention settings compared
+
+Both classic Anki with SM-2 and FSRS expose a desired retention setting: the probability you should still recall a card when it comes due. The default in both is 90%, so the scheduler aims to show each card while you still have a nine-in-ten chance of getting it. Failing some cards is designed in, not a sign you configured something wrong.
+
+FSRS recommends staying between roughly 80% and 95%. Push outside that band and the workload climbs without buying you anything. Inside it you can tune to taste: 80% if you want fewer reviews and can live with more forgetting, 95% if you want high recall and accept the extra volume.
+
+## Accuracy: FSRS vs SM-2 calibration data
+
+Calibration accuracy asks a narrow question: when the algorithm schedules a card, how close is its predicted recall probability to what actually happens. In calibration testing, FSRS version 4 landed around 4% error against real recall probability. SuperMemo 2 sat near 20% and FSRS version 3 near 12%, which puts v4's predictions roughly five times closer than SM-2's.
+
+The practical payoff is fewer wasted reviews. Cards stop coming back while you still remember them perfectly, and they stop sitting untouched until the memory is gone. Across a few hundred cards and several months of study, that difference in timing compounds.
+
+## Setting up FSRS in Anki: requirements and workflow
+
+FSRS needs Anki desktop 23.10 (October 2023) or later, plus AnkiDroid 2.17 or later on Android. Turn it on and the traditional learning steps phase disappears entirely. Older Anki pushed new cards through that phase before graduating them into normal review; FSRS graduates them straight in and lets the three-component model set the first interval.
+
+Once you have roughly 1,000 past reviews or more, the optimizer calculates parameters tuned to your memory instead of an average one. With less history it falls back on defaults, and the personalization sharpens as your review count grows. The separate FSRS Helper add-on layers on rescheduling, advanced postponement, load balancing for heavy days, and reserved days off.
+
+## Comparison table: FSRS vs SM-2, plus Fluxo and other study tools
+
+| Aspect | Fluxo | Anki (FSRS) | Anki (SM-2) | RemNote | Mochi | Quizlet |
+|--------|-------|-----------|-----------|---------|-------|----------|
+| **Flashcard source** | AI-generated from your notes | Manual creation only | Manual creation only | Manual, notes-based | Manual, markdown | Pre-made or manual |
+| **Spaced repetition algorithm** | Spaced repetition, details not published | FSRS (4% calibration error) | SM-2 (20% error) | Not specified | Not specified | Not specified |
+| **Note-taking built-in** | Yes, rich-text | No | No | Yes | No | No |
+| **AI features** | Flashcards, quizzes and summaries from your notes; topic suggestions | Requires add-ons | Requires add-ons | Depends on plan | Not verified | Limited |
+| **Platforms** | Not specified | Desktop, mobile, web | Desktop, mobile, web | Web, mobile | Web, mobile | Web, mobile |
+| **Best suited for** | Self-learners generating cards from structured notes | Power users willing to build decks manually | Budget learners; simple schedules | Students preferring notes-first workflows | Minimalist, markdown-heavy creators | Mass-market study sets; games |
+| **Learning curve** | Low (AI generates cards) | Steep (many settings, plugins) | Medium (fewer settings) | Medium | Low | Very low |
+| **Ideal for technical/dense material** | Yes, cards follow the nuance in your notes | Yes, with careful card design | Yes, with careful card design | Yes | Yes | Moderate (less control) |
+
+## Per-competitor snapshot
+
+### Anki: manual control, steep setup
+
+Anki is the most widely used open-source flashcard tool, and you build every card by hand. That is slow, and it also means nothing lands in your deck that you did not decide to put there. Both FSRS and SM-2 ship with it, so a write-my-own-cards habit gets the newest scheduling research at no cost.
+
+The price is configuration. Interval modifiers, ease factors, retention targets, deck presets: you need a working model of all of it to tune a deck properly. FSRS removes some of those knobs, though desired retention and historical retention still land on your desk.
+
+Anki rewards people who enjoy the engineering side of studying, building deck hierarchies and wiring up plugins until everything behaves. It frustrates anyone who wants to write notes and find flashcards waiting for them.
+
+### RemNote: notes-first, student-friendly
+
+RemNote starts from your notes rather than a deck. You write in a rich editor, mark the concepts that matter, and cards come out of those marks. The product leans on knowledge graphs and hierarchical relationships between notes, aimed squarely at students.
+
+The positioning is that notes are primary and cards are a by-product. If you are building a personal knowledge base and want review material to fall out of it, RemNote fits that shape. Card creation stays closer to manual curation than to automatic generation.
+
+### Mochi: markdown, minimal friction
+
+Mochi keeps the surface small. You write flashcards in markdown and it handles the rest, with a clean interface and far fewer settings than Anki puts in front of you. For someone who wants a little control and not a control panel, that is a reasonable middle ground.
+
+The scheduling side is less transparent. Mochi does not document its algorithm the way Anki and FSRS do, so you take the intervals on trust.
+
+### Quizlet: mass-market study sets, social
+
+Quizlet is a library of pre-made study sets, and the supply is enormous: biology terms, SAT vocab, Spanish verbs, most standard subjects. The catch is that you are reviewing someone else's card design, which may not match how you think about the material. Gamified modes like Quizlet Live and Match keep students coming back.
+
+Its spaced repetition exists but is not documented in detail. The platform optimizes for breadth and easy onboarding rather than scheduling precision.
+
+## Our take: what FSRS means for note-based studying in Fluxo
+
+Cards generated automatically from a set of notes come out uneven. Some capture a date or a definition, others compress a whole causal chain, and a single ease factor treats both the same way until enough failures pile up. The separate difficulty term in FSRS models that spread directly, so a dense card and a trivial one drift apart in scheduling even on a day you answer both correctly.
+
+The 4% calibration figure matters most on dense material: programming, mathematics, languages, technical writing. Fewer mistimed cards means less grinding through things you already own, and fewer gaps where a concept has quietly gone missing since the last review. That is the argument for caring about the scheduler at all once a deck gets large.
+
+In Fluxo the same logic applies to review sessions built from your own rich-text notes, with streaks and a companion mascot carrying the motivation side that no scheduler touches. Motivation is the part most algorithm comparisons ignore, and it decides whether the deck gets opened on a bad week.
+
+## How we tested and compared
+
+This comparison rests on published calibration results, official Anki documentation, and Jarrett Ye's research on FSRS. Competitor sections draw on public feature descriptions, official websites, and common use cases. We did not run head-to-head trials across every platform, so coverage stays on scheduling mechanics, setup requirements, and best-fit use cases where the details are publicly documented.
+
+## Where Fluxo falls short
+
+Fluxo is built for people who write their own notes and want practice material generated from them. That focus rules out several things you might reasonably want.
+
+**No manual flashcard entry.** Cards follow from content you have written or pasted, so there is no route to typing a card straight into a deck. If that is how you like to work, Anki or Mochi fits better.
+
+**No pre-made course library.** There is no marketplace, no shared decks, no ready-built curricula, so you always start from your own notes. Studying a standard subject like SAT prep or medical school anatomy from expert-curated decks is far faster on Quizlet.
+
+**No collaborative decks or classroom features.** Teachers managing a class and study groups sharing material are not supported. It is a single-user tool.
+
+**Limited to spaced repetition.** The product covers notes, generated practice, and review scheduling. Practice problem sets, essay grading, and multimedia libraries sit outside what it does.
+
+**Algorithm transparency.** Fluxo does not expose its scheduling internals the way Anki does, so you cannot inspect how intervals get calculated or set a desired retention number yourself. If tuning the scheduler is part of the appeal, Anki with FSRS gives you much more to work with.
+
+These gaps are not bugs, they are trade-offs. The product buys speed and a short settings list, and pays for it with no pre-made material and no classroom support.
+
+## Decision framework: which tool for your learning
+
+**Choose FSRS if you already use Anki and want the most accurate scheduling.** A large existing deck is exactly where the gap shows: 4% error against SM-2's 20% means noticeably fewer mistimed reviews month after month. Setup costs you an upgrade to Anki 23.10 or later, after which FSRS handles the scheduling by default.
+
+**Stick with SM-2 if you prefer the simpler mental model.** For a small deck or casual review the extra precision buys little, since prediction error only compounds once reviews stretch across months. The older scheduler gives you fewer settings to reason about.
+
+**Use Fluxo if you write notes and want the cards to follow.** The card-creation step disappears: you write in rich text, and flashcards, quizzes, and summaries get generated from what you wrote. Your time goes into the material instead of into deck building.
+
+**Use Anki if you are a power user or study something niche.** Optimizing a deck is its own hobby, and Anki is the one tool here that rewards it properly. Its plugin ecosystem also reaches subjects no pre-made library covers.
+
+**Use RemNote if you are a student building a knowledge graph.** Linked notes come first and cards emerge from them, which suits an outline-first way of working. People maintaining a long-running note system get the most out of it.
+
+**Use Quizlet if your material is standard.** SAT vocab, biology terms and foreign-language verbs already exist there in bulk, so you can start reviewing within minutes. The card design is someone else's, which matters less when the content is generic.
+
+## Where your study time actually goes
+
+The FSRS vs SM-2 question only starts paying off after the cards exist. Writing them is the part that quietly eats an evening: rereading your own notes, deciding which sentences are testable, splitting one dense paragraph into four cards that each ask a single thing. Plenty of people stall right there and never reach the point where scheduling precision changes anything.
+
+Picture the other version of that evening. You finish the notes and the practice material is already sitting there, drawn from what you wrote, coming back on a schedule you never have to maintain by hand. The review session becomes the only work left.
+
+That is the shape of Fluxo: spaces and topics for your own rich-text notes, AI-generated flashcards, quizzes and summaries built from those notes, and spaced-repetition review that resurfaces them over time. Streaks and a companion mascot cover the part where you have to show up, and topic suggestions point at what to write next.
