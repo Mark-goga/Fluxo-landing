@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rebuildId": "01a04353-6db5-7696-a47c-10922ab064ae",
+  "rebuildId": "01a04757-0cf6-722d-9857-b9b442a09146",
   "applicationId": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
   "posts": [
     {
@@ -22,7 +22,7 @@
       "locale": "en",
       "slug": "ai-flashcard-generator-from-pdf-fluxo-vs-anki-vs-remnote-vs-mochi-vs-quizlet",
       "path": "src/content/blog/generated/en/ai-flashcard-generator-from-pdf-fluxo-vs-anki-vs-remnote-vs-mochi-vs-quizlet.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fc5cc-bcdc-742c-ae4b-fa88399f65c1",
@@ -30,6 +30,13 @@
       "slug": "anki-alternatives-for-self-learners-who-take-notes",
       "path": "src/content/blog/generated/en/anki-alternatives-for-self-learners-who-take-notes.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "01a04680-3290-73ca-aa8a-2c382bd99617",
+      "locale": "en",
+      "slug": "anki-sentence-mining-a-step-by-step-workflow-for-language-learners",
+      "path": "src/content/blog/generated/en/anki-sentence-mining-a-step-by-step-workflow-for-language-learners.mdx",
+      "includedInRebuild": true
     },
     {
       "draftId": "019ff414-28ea-730c-b215-6c3c530e36ed",
@@ -120,7 +127,7 @@
       "locale": "en",
       "slug": "fsrs-vs-sm-2-which-spaced-repetition-algorithm-fits-your-learning",
       "path": "src/content/blog/generated/en/fsrs-vs-sm-2-which-spaced-repetition-algorithm-fits-your-learning.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fe9ba-35c6-7316-9dc9-2c5d35489fcc",
@@ -162,7 +169,7 @@
       "locale": "en",
       "slug": "how-to-convert-pdf-to-anki-flashcards-using-ai",
       "path": "src/content/blog/generated/en/how-to-convert-pdf-to-anki-flashcards-using-ai.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fe9c4-87d6-71d7-bc31-40d1fa604c78",
@@ -226,6 +233,13 @@
       "slug": "how-to-study-effectively-for-long-term-retention",
       "path": "src/content/blog/generated/en/how-to-study-effectively-for-long-term-retention.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "01a0467b-2c47-710b-96e1-198ce3f6c0bb",
+      "locale": "en",
+      "slug": "how-to-sync-obsidian-to-anki-automatically-complete-plugin-guide",
+      "path": "src/content/blog/generated/en/how-to-sync-obsidian-to-anki-automatically-complete-plugin-guide.mdx",
+      "includedInRebuild": true
     },
     {
       "draftId": "01a02793-7867-75f8-8626-572d213fd717",
@@ -303,6 +317,13 @@
       "slug": "obsidian-vs-notion-for-students-plus-fluxo-and-4-alternatives",
       "path": "src/content/blog/generated/en/obsidian-vs-notion-for-students-plus-fluxo-and-4-alternatives.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "01a04683-c11c-724b-9668-491765c00c14",
+      "locale": "en",
+      "slug": "para-method-for-students-organize-your-study-notes-for-better-retention",
+      "path": "src/content/blog/generated/en/para-method-for-students-organize-your-study-notes-for-better-retention.mdx",
+      "includedInRebuild": true
     },
     {
       "draftId": "019fd5ce-554c-717d-86c8-96ce88925ac1",

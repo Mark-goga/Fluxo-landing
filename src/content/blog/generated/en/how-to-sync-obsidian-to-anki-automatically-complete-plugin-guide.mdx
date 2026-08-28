@@ -1,0 +1,146 @@
+---
+schemaVersion: 1
+draftId: "01a0467b-2c47-710b-96e1-198ce3f6c0bb"
+slug: "how-to-sync-obsidian-to-anki-automatically-complete-plugin-guide"
+locale: "en"
+pageType: "how_to"
+title: "How to Sync Obsidian to Anki Automatically: Complete Plugin Guide"
+metaDescription: "Sync Obsidian to Anki automatically with the community plugin: AnkiConnect setup, deck targeting, card formats, and fixes for connection errors."
+createdAt: "2026-08-28T03:47:52.643Z"
+modifiedAt: "2026-08-28T07:47:55.615Z"
+translationGroupId: "01a0467b-2c47-710b-96e1-198ce3f6c0bb"
+heroImage: "/assets/card-4.webp"
+faq:
+  - question: "Do I need Anki running for the sync to work?"
+    answer: "Yes. The Obsidian-to-Anki plugin communicates with Anki via AnkiConnect, which only runs when Anki is open. Start Anki before running the sync command in Obsidian."
+  - question: "Can I use the same deck for multiple note files?"
+    answer: "Yes. Add the same Target Deck name at the top of multiple note files and all cards will merge into that single Anki deck. If the deck doesn't exist, Anki creates it automatically."
+  - question: "What happens if I edit a card after it syncs?"
+    answer: "Edit the text in your Obsidian note and sync again. The plugin uses the card's ID to locate it in Anki and updates the content. The ID stays in your note—don't remove it."
+  - question: "Is Anki free on all devices?"
+    answer: "Anki desktop and the Android app are free. The iPhone version is paid. The price funds the open-source project."
+references:
+  - label: "Anki official website"
+    url: "https://apps.ankiweb.net"
+  - label: "AnkiConnect GitHub repository"
+    url: "https://github.com/FooSoft/anki-connect"
+  - label: "Obsidian community plugins directory"
+    url: "https://obsidian.md/plugins"
+author:
+  id: "019faee1-9411-7438-a0d5-a441a9a771af"
+  name: "Markiian Halabut"
+  role: "Founder of Fluxo"
+  photoUrl: null
+  bio:
+    - locale: "en"
+      text: "Mark builds Fluxo — a spaced-repetition tool that turns notes into flashcards. He self-taught programming with Anki and now writes about learning science, PKM, and study workflows for people teaching themselves complex topics."
+  links:
+    website: "https://fluxo.today"
+sources:
+  - id: "01a04133-50fb-707c-8985-0d556ec1d680"
+    type: "youtube_video"
+    title: "How To Sync Obsidian With Anki Automatically / Plugin Walkthrough"
+    url: "https://www.youtube.com/watch?v=PXyv6pnVGhA"
+    creator: "Santi Younger"
+    publishedAt: "1970-01-01T00:00:00.000Z"
+---
+
+## Why Sync Obsidian Notes to Anki
+
+Obsidian is where you write things down, and Anki is where you make sure they stay. Retyping a note into a flashcard by hand kills most of the reason you took the note at all, and it is the step people quietly stop doing after a couple of weeks. The obsidian to anki plugin deletes that step: notes sync straight into your Anki decks, so you write once and review on a schedule.
+
+The plugin started life as a Python script before it became an Obsidian community plugin, and the setup still carries some of that DIY character. Once it runs, note-taking and active recall stop being two separate chores competing for the same hour.
+
+## How Anki's Spaced Repetition Works
+
+Spaced repetition resurfaces material right around the point you would lose it, and Anki handles that timing without being asked. Cramming buys you a day; the schedule keeps handing the card back long after the exam would have wiped it. The plugin pipes your Obsidian notes into that same engine, so whatever you capture in the vault joins the queue with everything else.
+
+## Download and Install Anki
+
+Anki desktop comes from ankiweb.net and costs nothing on desktop or on Android. The iPhone app is the exception, and that purchase price is what funds the open-source project. Install the desktop app first, because the plugin needs a running copy of Anki on the same machine to talk to.
+
+## Install and Configure AnkiConnect
+
+The plugin has no direct line into Anki. It works through AnkiConnect, an add-on that sits inside Anki and listens for requests, so that piece goes in before anything else.
+
+In Anki, open Tools > Add-ons and press Get Add-ons. Copy the add-on code from the AnkiConnect page on GitHub, paste it into the box, and press OK. Anki installs the add-on and asks for a restart.
+
+After the restart, go back to Tools > Add-ons, right-click AnkiConnect and choose Config. You need one extra webCorsOriginList line here so Obsidian is allowed to connect, and AnkiConnect's documentation gives the exact format. Copy it verbatim rather than typing it out, save the config, and close Anki.
+
+## Install the Obsidian-to-Anki Plugin
+
+In Obsidian, open Settings, go to Community Plugins and turn off safe mode if it is still on. Browse for "Obsidian to Anki", install it, then enable it.
+
+Switch every other plugin off while you set this up. Conflicts are a common reason the sync refuses to run, and with a clean slate any error you see belongs to this plugin. Restart both Obsidian and Anki after the install, and bring your other plugins back one at a time once the first sync goes through.
+
+## Format Notes for Deck Assignment
+
+Every note that produces cards has to say where they land. Put this at the very top of the file:
+
+```
+Target Deck: MyDeckName
+```
+
+Swap MyDeckName for the deck you want. All cards from that note go there, Anki creates the deck if it does not exist yet, and if it already does, the new cards merge in alongside what is sitting there.
+
+## Choose and Configure Card Format
+
+Two formats do the job. The default wraps each card in START and END markers:
+
+```
+START
+Front of card
+END
+Back of card
+```
+
+The Neuro cache style puts the question on one line with a #flashcard tag and the answer underneath:
+
+```
+Front text #flashcard
+Back text
+```
+
+Neuro cache syntax is the cleaner of the two and worth its one extra setup step: open the plugin settings, find the Note Type Table, and paste in the regex from the plugin wiki. That regex teaches the plugin to read the tag. Both formats behave the same once configured, so pick based on how much markup you want living in your notes.
+
+## Run the Sync
+
+With the notes formatted and AnkiConnect configured, open the command palette and run scan vault, or click the scan icon in the sidebar. The plugin reports whether it reached Anki and how many cards went across.
+
+Each new card comes back with a generated ID written into the note:
+
+```
+Front text #flashcard <!--ID: 12345-->
+Back text
+```
+
+That ID is the thread connecting a line in your vault to a card in Anki. Leave it alone. Edit or delete one and the plugin loses track of which note owns which card, which is the messiest way to break an obsidian to anki setup.
+
+## Manage and Delete Cards
+
+Deleting a card from Anki does not mean deleting the note. Write DELETE above its ID:
+
+```
+Front text #flashcard <!--DELETE-->
+Back text
+```
+
+Sync the vault again and the card leaves Anki. Clean the DELETE marker and the leftover ID out of the note afterwards, or you are carrying dead syntax around. Ordinary edits need no marker at all: change the text in Obsidian, sync, and the card updates itself.
+
+## Troubleshooting Connection Issues
+
+A connection error from scan vault almost always traces back to one of three things. Check that the AnkiConnect config actually saved with the webCorsOriginList line intact. Confirm Anki is open. Then restart both programs, because the handshake occasionally needs a clean start before Obsidian gets let through.
+
+If it still refuses, go back to disabling other plugins until the culprit shows itself. Re-enable them one by one once the sync works again.
+
+## How This Plugin Compares to Neuro Cache
+
+Neuro cache does the same job: notes out of Obsidian, cards into Anki. On overall workflow and features this plugin comes out ahead, which is why it is the one to set up first. Its card syntax is the weaker half of the bargain, and the regex setting lets you borrow Neuro cache's format anyway, so you can have both. If you cannot decide, run each of them for a week and keep whichever syntax you stop noticing.
+
+## Getting the Review Without Maintaining the Pipeline
+
+The chain above works as long as you keep it fed. You still author every card by hand in the vault, the IDs have to survive your editing, and a plugin update or a stray config line can quietly cut the link between the two apps until you go looking for it. That is real maintenance for something whose only job is moving text across a gap.
+
+The version without the plumbing reads differently: you write the note, and the questions come out of it already scheduled. No IDs to protect, no add-on config buried two apps deep.
+
+Fluxo sits on that side of the line. Your notes live in spaces and topics you write yourself, and it generates flashcards, quizzes, and summaries out of that material, then schedules the review so each piece comes back before it fades, with streaks and a companion mascot keeping the sessions light.
