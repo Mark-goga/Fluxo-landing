@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rebuildId": "01a04c90-d458-7041-be45-c58a4be91923",
+  "rebuildId": "01a051a2-dd88-73fc-aada-7193ffad1211",
   "applicationId": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
   "posts": [
     {
@@ -23,6 +23,13 @@
       "slug": "ai-flashcard-generator-from-pdf-fluxo-vs-anki-vs-remnote-vs-mochi-vs-quizlet",
       "path": "src/content/blog/generated/en/ai-flashcard-generator-from-pdf-fluxo-vs-anki-vs-remnote-vs-mochi-vs-quizlet.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "01a050c0-5774-7078-915a-a59484f77e5d",
+      "locale": "en",
+      "slug": "ai-flashcards-vs-premade-decks-which-method-actually-sticks",
+      "path": "src/content/blog/generated/en/ai-flashcards-vs-premade-decks-which-method-actually-sticks.mdx",
+      "includedInRebuild": true
     },
     {
       "draftId": "019fc5cc-bcdc-742c-ae4b-fa88399f65c1",
@@ -130,6 +137,13 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a050c8-de5c-748a-bcfe-7e2faa8c88e4",
+      "locale": "en",
+      "slug": "how-ai-flashcard-generators-compare-anki-workflows-vs-fluxo-and-alternatives",
+      "path": "src/content/blog/generated/en/how-ai-flashcard-generators-compare-anki-workflows-vs-fluxo-and-alternatives.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "019fe9ba-35c6-7316-9dc9-2c5d35489fcc",
       "locale": "en",
       "slug": "how-chunking-memory-helps-you-learn-and-remember-more",
@@ -204,7 +218,7 @@
       "locale": "en",
       "slug": "how-to-overcome-anki-burnout-clear-your-review-backlog-and-study-sustainably",
       "path": "src/content/blog/generated/en/how-to-overcome-anki-burnout-clear-your-review-backlog-and-study-sustainably.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a03c1c-d802-75dd-93d3-e914af4b582a",
@@ -288,7 +302,7 @@
       "locale": "en",
       "slug": "how-to-use-notion-for-studying-with-the-kassa-method",
       "path": "src/content/blog/generated/en/how-to-use-notion-for-studying-with-the-kassa-method.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a01d34-5cb6-778b-85d4-6bbf24a08a70",
@@ -326,6 +340,13 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a050d1-938a-771a-a635-679c94885e45",
+      "locale": "en",
+      "slug": "mochi-vs-anki-which-flashcard-tool-fits-your-workflow",
+      "path": "src/content/blog/generated/en/mochi-vs-anki-which-flashcard-tool-fits-your-workflow.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "019ff41c-f37a-7769-97e6-4b120e203487",
       "locale": "en",
       "slug": "obsidian-vs-notion-for-students-plus-fluxo-and-4-alternatives",
@@ -351,7 +372,7 @@
       "locale": "en",
       "slug": "retrieval-practice-vs-rereading-what-actually-works-better",
       "path": "src/content/blog/generated/en/retrieval-practice-vs-rereading-what-actually-works-better.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fe9ad-199a-76ca-8907-98e8bc1fe20c",
