@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rebuildId": "01a051a2-dd88-73fc-aada-7193ffad1211",
+  "rebuildId": "01a05dc9-8243-74d0-a8b1-a9a31a4783d0",
   "applicationId": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
   "posts": [
     {
@@ -29,7 +29,7 @@
       "locale": "en",
       "slug": "ai-flashcards-vs-premade-decks-which-method-actually-sticks",
       "path": "src/content/blog/generated/en/ai-flashcards-vs-premade-decks-which-method-actually-sticks.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fc5cc-bcdc-742c-ae4b-fa88399f65c1",
@@ -79,6 +79,13 @@
       "slug": "best-note-taking-app-for-students-fluxo-vs-anki-vs-remnote-vs-mochi-vs-quizlet",
       "path": "src/content/blog/generated/en/best-note-taking-app-for-students-fluxo-vs-anki-vs-remnote-vs-mochi-vs-quizlet.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "01a05b09-e5cb-713d-8ae5-60143319c3c4",
+      "locale": "en",
+      "slug": "build-ai-flashcards-for-language-learning-with-anki",
+      "path": "src/content/blog/generated/en/build-ai-flashcards-for-language-learning-with-anki.mdx",
+      "includedInRebuild": true
     },
     {
       "draftId": "01a00382-a3f4-744f-b7e6-f5e8f6962225",
@@ -141,7 +148,7 @@
       "locale": "en",
       "slug": "how-ai-flashcard-generators-compare-anki-workflows-vs-fluxo-and-alternatives",
       "path": "src/content/blog/generated/en/how-ai-flashcard-generators-compare-anki-workflows-vs-fluxo-and-alternatives.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fe9ba-35c6-7316-9dc9-2c5d35489fcc",
@@ -170,6 +177,13 @@
       "slug": "how-to-build-an-ai-study-assistant-with-a-custom-gpt",
       "path": "src/content/blog/generated/en/how-to-build-an-ai-study-assistant-with-a-custom-gpt.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "01a05b06-c702-777b-ad16-6cba2f853f08",
+      "locale": "en",
+      "slug": "how-to-build-an-ai-study-plan-from-your-syllabus",
+      "path": "src/content/blog/generated/en/how-to-build-an-ai-study-plan-from-your-syllabus.mdx",
+      "includedInRebuild": true
     },
     {
       "draftId": "01a012f5-33b6-7229-a2a1-ee09c0d7f5ff",
@@ -233,6 +247,13 @@
       "slug": "how-to-read-academic-papers-efficiently",
       "path": "src/content/blog/generated/en/how-to-read-academic-papers-efficiently.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "01a055fa-b6c2-7048-94c3-6a8d698bf6ec",
+      "locale": "en",
+      "slug": "how-to-remember-what-you-learn-from-online-courses",
+      "path": "src/content/blog/generated/en/how-to-remember-what-you-learn-from-online-courses.mdx",
+      "includedInRebuild": true
     },
     {
       "draftId": "019fabd6-77dc-70a3-98d8-c3a130a3151a",
@@ -344,6 +365,13 @@
       "locale": "en",
       "slug": "mochi-vs-anki-which-flashcard-tool-fits-your-workflow",
       "path": "src/content/blog/generated/en/mochi-vs-anki-which-flashcard-tool-fits-your-workflow.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a055f4-7f52-768a-8020-951574eb5196",
+      "locale": "en",
+      "slug": "note-taking-app-with-spaced-repetition-anki-vs-remnote-vs-fluxo",
+      "path": "src/content/blog/generated/en/note-taking-app-with-spaced-repetition-anki-vs-remnote-vs-fluxo.mdx",
       "includedInRebuild": true
     },
     {
@@ -368,6 +396,13 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a055ef-c16b-7536-aa43-d07d0c9b1af5",
+      "locale": "en",
+      "slug": "remnote-vs-obsidian-vs-fluxo-which-study-tool-fits-your-workflow",
+      "path": "src/content/blog/generated/en/remnote-vs-obsidian-vs-fluxo-which-study-tool-fits-your-workflow.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "01a04ba3-ea77-76f4-91ab-13901d904e0a",
       "locale": "en",
       "slug": "retrieval-practice-vs-rereading-what-actually-works-better",
@@ -387,6 +422,13 @@
       "slug": "the-study-workflow-that-turns-notes-into-applied-knowledge",
       "path": "src/content/blog/generated/en/the-study-workflow-that-turns-notes-into-applied-knowledge.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "01a05b03-22d5-730e-8e16-16344e6b189b",
+      "locale": "en",
+      "slug": "turn-a-textbook-into-anki-flashcards-automated-pdf-extraction-with-python",
+      "path": "src/content/blog/generated/en/turn-a-textbook-into-anki-flashcards-automated-pdf-extraction-with-python.mdx",
+      "includedInRebuild": true
     },
     {
       "draftId": "01a0278a-d503-76cd-a0f7-6da42f901a31",

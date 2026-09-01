@@ -1,0 +1,112 @@
+---
+schemaVersion: 1
+draftId: "01a05b03-22d5-730e-8e16-16344e6b189b"
+slug: "turn-a-textbook-into-anki-flashcards-automated-pdf-extraction-with-python"
+locale: "en"
+pageType: "how_to"
+title: "Turn a Textbook Into Anki Flashcards: Automated PDF Extraction With Python"
+metaDescription: "Learn how to convert a textbook into Anki flashcards automatically using Python scripts. Extract text, images, and build study-ready material from any PDF."
+createdAt: "2026-09-01T03:28:47.398Z"
+modifiedAt: "2026-09-01T16:24:23.280Z"
+translationGroupId: "01a05b03-22d5-730e-8e16-16344e6b189b"
+heroImage: "/assets/card-3.png"
+faq:
+  - question: "What if images aren't displaying in my Anki flashcards?"
+    answer: "Make sure the Anki field holding images has the HTML-support checkbox enabled. Without HTML support enabled, image tags won't render—you'll see raw HTML code instead of pictures."
+  - question: "How do I handle pages with multiple cases?"
+    answer: "Adjust your regex patterns to split on case identifiers rather than page boundaries. This lets the scripts correctly extract multiple cases from the same page without merging or dropping content."
+  - question: "What if my textbook's formatting changes between editions?"
+    answer: "Build a uniform tagging system that labels extracted data consistently across all books. By tagging data instead of relying on exact formatting, the same scripts work across multiple editions and textbooks without modification."
+  - question: "Can I use this workflow with Fluxo instead of Anki?"
+    answer: "This workflow uses Anki. However, if you have structured study notes in Fluxo, you can use Fluxo's AI to generate flashcards automatically without needing Python scripts or manual setup."
+references:
+  - label: "PyMuPDF Documentation"
+    url: "https://pymupdf.readthedocs.io/"
+  - label: "Anki User Manual"
+    url: "https://docs.ankiweb.net/"
+  - label: "Fluxo - AI-Powered Flashcard Generation"
+    url: "https://fluxo.today"
+author:
+  id: "019faee1-9411-7438-a0d5-a441a9a771af"
+  name: "Markiian Halabut"
+  role: "Founder of Fluxo"
+  photoUrl: null
+  bio:
+    - locale: "en"
+      text: "Mark builds Fluxo — a spaced-repetition tool that turns notes into flashcards. He self-taught programming with Anki and now writes about learning science, PKM, and study workflows for people teaching themselves complex topics."
+  links:
+    website: "https://fluxo.today"
+sources:
+  - id: "01a04133-3d1a-7536-8d51-879c0dbd90e5"
+    type: "youtube_video"
+    title: "Turning a whole textbook into Anki flashcards with one click (including images)"
+    url: "https://www.youtube.com/watch?v=miq9z2Nkngo"
+    creator: "Jake Romm "
+    publishedAt: "1970-01-01T00:00:00.000Z"
+---
+
+Turning a medical textbook, legal casebook, or thick study guide into flashcards by hand is punishing work. You copy hundreds of passages, hunt down the images that go with each one, format everything, then import it and fix what broke. That is hours of clerical labor before a single card gets reviewed. The whole thing can run automatically instead: text and images pulled from the PDF, formatted, and dropped into Anki in one click.
+
+The stack is small. Python, PyMuPDF, regular expressions, and Anki's own import system are enough to move structured textbook content into review-ready cards. The edge cases that usually kill these projects (multiple cases crammed onto one page, image galleries, randomly inverted colors) get handled inside the scripts once you solve them.
+
+<KeyTakeaways items={["PyMuPDF extracts text and images from PDFs; regex patterns segment content by consistent formatting", "Anki's HTML-enabled fields and unlimited custom fields make bulk image import possible", "Automated tagging systems let one script handle multiple textbooks without format-specific rewrites", "The same extraction principles apply to your own study notes in Fluxo"]} />
+
+## Why Bulk Extraction Became Necessary
+
+The old approach was feeding content to a custom AI app piece by piece. Custom GPTs at the time could chew through one to three case-review entries per pass, which is fine for a chapter and useless for a book with hundreds of cases. Every batch needed manual cleanup afterward. Writing purpose-built extractor scripts instead took about a week, a few hours each morning before work, and after that a whole textbook processed in a single run.
+
+The trade-off is obvious once you see the numbers: a week of scripting against an indefinite number of evenings spent babysitting an AI through small batches. You pull the raw data out of the PDF yourself and transform it in bulk, so the model's throughput limit stops mattering.
+
+## Extracting Text and Images Using PyMuPDF
+
+Everything starts with getting text and images out of the PDF. PyMuPDF is a Python library built for exactly this: it reads the file and hands back the text content, coordinate information, and the embedded images from every page. You need three things to work with it: a code editor, a current stable Python, and PyMuPDF installed via pip.
+
+The interesting part is not the extraction, it is recognizing the formatting the textbook already follows. Medical textbooks label entries as "Case 1:" and then run symptoms into diagnosis. Legal casebooks put case names, citations, and holdings in the same order every time. Regular expressions are how you target and segment that text, matching a pattern like "Case [number]:" and splitting the document at each hit.
+
+That pattern-first approach is what keeps the script alive across editions. Hard-coded page numbers and visual heuristics break the moment a publisher reflows a chapter, while a regex tied to the document's own labeling convention keeps working.
+
+## Handling Pages With Multiple Cases
+
+The first version of the script assumed one case per page, and it was fine until it hit a page holding two. Then cases merged into each other, text went missing, and image counts lined up with the wrong entries. The bug was structural: page boundaries had been standing in for case boundaries.
+
+The fix meant redesigning how the script split text. Instead of cutting at page breaks, it had to find case delimiters inside the page and split there, which is a regex change on the surface and a change in the script's core assumption underneath. Two or three cases stacked on one page then parsed cleanly.
+
+Expect this shape of problem in any bulk-extraction project. Version one handles the format you looked at; the real book supplies the exceptions that force you to rewrite the splitting logic.
+
+## Auto-Populating Flashcard Images in Anki
+
+Images are where bulk conversion gets genuinely tricky. Pulling them out of the PDF is easy. Getting Anki to display the right ones on the right card, without dragging files around by hand, takes a specific setup.
+
+Two scripts handle it together. The image extractor counts how many images belong to each case and writes those counts to a JSON file. The text extractor reads that JSON and generates exactly that many HTML image links per case, embedding them in the CSV you import. On import, Anki matches each link to a file in the collection.media folder by filename and embeds it, so the filenames have to match exactly. Note types support essentially unlimited custom fields, which means you can give images their own dedicated fields instead of jamming them somewhere.
+
+One detail sinks people here. The field holding those image tags needs its HTML-support option enabled, and without it the card shows raw HTML code instead of a picture.
+
+## Grouping Extracted Images Into an In-Card Gallery
+
+With images importing correctly, the next problem is arrangement. A JavaScript gallery script can lay out multiple images per card, but it has to know which images belong together in the first place.
+
+You tell it by assigning a shared class attribute to related images in the CSV before import. The gallery script reads the card, finds every image carrying the same class, and renders them as one set. Five radiology images belonging to "Case 007" all get a class like "case-007-radiology", and the script displays the five as a group instead of five loose pictures.
+
+## Fixing Randomly Inverted Images
+
+Some extracted images came out with their colors inverted, and there was no pattern to which ones. Chasing it inside the extraction script was a dead end, because you cannot write a rule for something unpredictable.
+
+So the fix moved to the card. A manual inversion toggle button sits on each flashcard, and one click flips the colors on an image that looks wrong. It turned out to be worth keeping for its own sake: practicing pathology identification in both normal and inverted color spaces is a real radiology review technique, so the workaround earned a permanent place.
+
+<PullQuote text="Rather than fixing extraction, add a manual inversion toggle button to the flashcard: it doubles as a useful study feature." />
+
+## Generalizing Scripts Across an Entire Textbook Series
+
+One textbook is a script. A whole series without rewrites is an abstraction, and the abstraction is a uniform tagging system that labels extracted data the same way every time.
+
+Rather than keying off each book's formatting, which shifts between editions, publishers, and even chapters, you tag the data to a standard scheme. Case numbers, headers, image groups, and content blocks all get the same labels regardless of source. The scripts then read tags instead of formatting, which makes them format-agnostic: one set of scripts, many books, no publisher-specific hunting.
+
+The finished application packages the extraction and formatting scripts together. One click converts an entire textbook into Anki flashcards, with text, images, galleries, and the edge cases above handled along the way.
+
+## Getting the Same Result Without Writing Python
+
+Everything above assumes you have a PDF with consistent formatting and a week to spend on regex. Most study material is not like that. When the source is your own notes, there is no "Case [number]:" convention to match against, no collection.media folder to populate, and no tagging scheme unless you invent and maintain one yourself. You end up writing the note, then writing the card, then deciding when to see it again.
+
+Picture the same material with that middle layer gone: you write the note once, and the cards, quiz questions, and summary come out of it, already scheduled for the days you are most likely to forget them.
+
+That is where Fluxo sits. You write rich-text notes and organize them into spaces and topics, and Fluxo generates flashcards, quizzes, and summaries from what you wrote, then uses spaced repetition to resurface it over time. Streaks, a companion mascot, and gamified review sessions carry the daily habit, and it suggests new topics when you are ready for them. No Python, no tagging system to maintain: https://fluxo.today
