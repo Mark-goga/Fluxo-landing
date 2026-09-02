@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rebuildId": "01a05dc9-8243-74d0-a8b1-a9a31a4783d0",
+  "rebuildId": "01a0616f-8e28-73ed-b0a5-68ce0e20d1e3",
   "applicationId": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
   "posts": [
     {
@@ -85,7 +85,7 @@
       "locale": "en",
       "slug": "build-ai-flashcards-for-language-learning-with-anki",
       "path": "src/content/blog/generated/en/build-ai-flashcards-for-language-learning-with-anki.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a00382-a3f4-744f-b7e6-f5e8f6962225",
@@ -183,7 +183,7 @@
       "locale": "en",
       "slug": "how-to-build-an-ai-study-plan-from-your-syllabus",
       "path": "src/content/blog/generated/en/how-to-build-an-ai-study-plan-from-your-syllabus.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a012f5-33b6-7229-a2a1-ee09c0d7f5ff",
@@ -253,7 +253,7 @@
       "locale": "en",
       "slug": "how-to-remember-what-you-learn-from-online-courses",
       "path": "src/content/blog/generated/en/how-to-remember-what-you-learn-from-online-courses.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fabd6-77dc-70a3-98d8-c3a130a3151a",
@@ -312,6 +312,13 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a0602e-66f0-75c0-bef7-8f1bf3c91a34",
+      "locale": "en",
+      "slug": "how-to-take-notes-while-learning-to-code-a-cornell-method-guide",
+      "path": "src/content/blog/generated/en/how-to-take-notes-while-learning-to-code-a-cornell-method-guide.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "01a02263-13f6-73ca-a968-365f17335960",
       "locale": "en",
       "slug": "how-to-turn-lecture-recordings-into-study-material-with-otter-ai-and-fluxo",
@@ -354,6 +361,13 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a06033-396d-700a-a46e-0d597ef17671",
+      "locale": "en",
+      "slug": "interleaving-vs-blocked-practice-why-harder-learning-produces-better-long-term-retention",
+      "path": "src/content/blog/generated/en/interleaving-vs-blocked-practice-why-harder-learning-produces-better-long-term-retention.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "019ffe5f-38f2-774c-80d7-e8d73b9ead28",
       "locale": "en",
       "slug": "memory-palace-method-explained-how-to-build-use-and-master-this-ancient-technique",
@@ -372,7 +386,7 @@
       "locale": "en",
       "slug": "note-taking-app-with-spaced-repetition-anki-vs-remnote-vs-fluxo",
       "path": "src/content/blog/generated/en/note-taking-app-with-spaced-repetition-anki-vs-remnote-vs-fluxo.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019ff41c-f37a-7769-97e6-4b120e203487",
@@ -400,7 +414,7 @@
       "locale": "en",
       "slug": "remnote-vs-obsidian-vs-fluxo-which-study-tool-fits-your-workflow",
       "path": "src/content/blog/generated/en/remnote-vs-obsidian-vs-fluxo-which-study-tool-fits-your-workflow.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a04ba3-ea77-76f4-91ab-13901d904e0a",
@@ -408,6 +422,13 @@
       "slug": "retrieval-practice-vs-rereading-what-actually-works-better",
       "path": "src/content/blog/generated/en/retrieval-practice-vs-rereading-what-actually-works-better.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "01a06037-c87d-74eb-bcc9-3ceabd6e6f43",
+      "locale": "en",
+      "slug": "testing-effect-why-retrieval-beats-rereading",
+      "path": "src/content/blog/generated/en/testing-effect-why-retrieval-beats-rereading.mdx",
+      "includedInRebuild": true
     },
     {
       "draftId": "019fe9ad-199a-76ca-8907-98e8bc1fe20c",
@@ -428,7 +449,7 @@
       "locale": "en",
       "slug": "turn-a-textbook-into-anki-flashcards-automated-pdf-extraction-with-python",
       "path": "src/content/blog/generated/en/turn-a-textbook-into-anki-flashcards-automated-pdf-extraction-with-python.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a0278a-d503-76cd-a0f7-6da42f901a31",
