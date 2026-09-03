@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rebuildId": "01a0616f-8e28-73ed-b0a5-68ce0e20d1e3",
+  "rebuildId": "01a06698-50dc-7489-8272-2fe62a7f9605",
   "applicationId": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
   "posts": [
     {
@@ -121,6 +121,13 @@
       "slug": "deliberate-practice-the-framework-for-building-real-expertise",
       "path": "src/content/blog/generated/en/deliberate-practice-the-framework-for-building-real-expertise.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "01a06550-6a41-75c6-a68e-f2988b1ba89a",
+      "locale": "en",
+      "slug": "dunning-kruger-effect-in-learning-why-confidence-doesn-t-equal-competence",
+      "path": "src/content/blog/generated/en/dunning-kruger-effect-in-learning-why-confidence-doesn-t-equal-competence.mdx",
+      "includedInRebuild": true
     },
     {
       "draftId": "019ff923-1ff2-73bb-b8eb-04ac8cd5cff1",
@@ -277,6 +284,13 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a0655a-05d9-7255-a134-8f7a6dfa0eff",
+      "locale": "en",
+      "slug": "how-to-study-when-you-have-no-motivation-four-proven-techniques",
+      "path": "src/content/blog/generated/en/how-to-study-when-you-have-no-motivation-four-proven-techniques.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "01a0467b-2c47-710b-96e1-198ce3f6c0bb",
       "locale": "en",
       "slug": "how-to-sync-obsidian-to-anki-automatically-complete-plugin-guide",
@@ -316,7 +330,7 @@
       "locale": "en",
       "slug": "how-to-take-notes-while-learning-to-code-a-cornell-method-guide",
       "path": "src/content/blog/generated/en/how-to-take-notes-while-learning-to-code-a-cornell-method-guide.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a02263-13f6-73ca-a968-365f17335960",
@@ -365,7 +379,7 @@
       "locale": "en",
       "slug": "interleaving-vs-blocked-practice-why-harder-learning-produces-better-long-term-retention",
       "path": "src/content/blog/generated/en/interleaving-vs-blocked-practice-why-harder-learning-produces-better-long-term-retention.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019ffe5f-38f2-774c-80d7-e8d73b9ead28",
@@ -387,6 +401,13 @@
       "slug": "note-taking-app-with-spaced-repetition-anki-vs-remnote-vs-fluxo",
       "path": "src/content/blog/generated/en/note-taking-app-with-spaced-repetition-anki-vs-remnote-vs-fluxo.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "01a06562-c54a-73ea-b780-abc69643010d",
+      "locale": "en",
+      "slug": "note-taking-apps-that-generate-flashcards-fluxo-vs-anki-vs-remnote-vs-mochi-vs-quizlet",
+      "path": "src/content/blog/generated/en/note-taking-apps-that-generate-flashcards-fluxo-vs-anki-vs-remnote-vs-mochi-vs-quizlet.mdx",
+      "includedInRebuild": true
     },
     {
       "draftId": "019ff41c-f37a-7769-97e6-4b120e203487",
@@ -428,7 +449,7 @@
       "locale": "en",
       "slug": "testing-effect-why-retrieval-beats-rereading",
       "path": "src/content/blog/generated/en/testing-effect-why-retrieval-beats-rereading.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fe9ad-199a-76ca-8907-98e8bc1fe20c",
