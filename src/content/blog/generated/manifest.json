@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rebuildId": "01a06698-50dc-7489-8272-2fe62a7f9605",
+  "rebuildId": "01a06b55-74bd-70db-a0f9-677a7307bbe1",
   "applicationId": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
   "posts": [
     {
@@ -81,6 +81,13 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a06a74-4778-7629-9872-972ef60358fe",
+      "locale": "en",
+      "slug": "best-spaced-repetition-software-compared-2026",
+      "path": "src/content/blog/generated/en/best-spaced-repetition-software-compared-2026.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "01a05b09-e5cb-713d-8ae5-60143319c3c4",
       "locale": "en",
       "slug": "build-ai-flashcards-for-language-learning-with-anki",
@@ -127,7 +134,7 @@
       "locale": "en",
       "slug": "dunning-kruger-effect-in-learning-why-confidence-doesn-t-equal-competence",
       "path": "src/content/blog/generated/en/dunning-kruger-effect-in-learning-why-confidence-doesn-t-equal-competence.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019ff923-1ff2-73bb-b8eb-04ac8cd5cff1",
@@ -270,6 +277,13 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a06a78-14a4-707f-96f9-272150e03c29",
+      "locale": "en",
+      "slug": "how-to-retain-information-long-term-8-proven-methods",
+      "path": "src/content/blog/generated/en/how-to-retain-information-long-term-8-proven-methods.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "01a0278e-acc8-7718-8c00-a9d261acc490",
       "locale": "en",
       "slug": "how-to-stop-procrastinating-on-studying-by-fixing-the-root-cause",
@@ -288,7 +302,7 @@
       "locale": "en",
       "slug": "how-to-study-when-you-have-no-motivation-four-proven-techniques",
       "path": "src/content/blog/generated/en/how-to-study-when-you-have-no-motivation-four-proven-techniques.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a0467b-2c47-710b-96e1-198ce3f6c0bb",
@@ -407,7 +421,7 @@
       "locale": "en",
       "slug": "note-taking-apps-that-generate-flashcards-fluxo-vs-anki-vs-remnote-vs-mochi-vs-quizlet",
       "path": "src/content/blog/generated/en/note-taking-apps-that-generate-flashcards-fluxo-vs-anki-vs-remnote-vs-mochi-vs-quizlet.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019ff41c-f37a-7769-97e6-4b120e203487",
@@ -422,6 +436,13 @@
       "slug": "para-method-for-students-organize-your-study-notes-for-better-retention",
       "path": "src/content/blog/generated/en/para-method-for-students-organize-your-study-notes-for-better-retention.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "01a06a82-446e-73fd-bc40-62aa95197932",
+      "locale": "en",
+      "slug": "quizlet-alternatives-compared-anki-remnote-mochi-and-fluxo",
+      "path": "src/content/blog/generated/en/quizlet-alternatives-compared-anki-remnote-mochi-and-fluxo.mdx",
+      "includedInRebuild": true
     },
     {
       "draftId": "019fd5ce-554c-717d-86c8-96ce88925ac1",
