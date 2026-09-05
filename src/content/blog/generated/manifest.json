@@ -1,8 +1,15 @@
 {
   "schemaVersion": 1,
-  "rebuildId": "01a06b55-74bd-70db-a0f9-677a7307bbe1",
+  "rebuildId": "01a0706d-91b0-701c-b2bf-895effdbadc5",
   "applicationId": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
   "posts": [
+    {
+      "draftId": "01a06f9f-a66b-70e8-b989-21003e8a9101",
+      "locale": "en",
+      "slug": "active-recall-for-programming-learn-faster-by-testing-yourself",
+      "path": "src/content/blog/generated/en/active-recall-for-programming-learn-faster-by-testing-yourself.mdx",
+      "includedInRebuild": true
+    },
     {
       "draftId": "019fbb5b-05f5-71d8-be1b-9f49d0988b03",
       "locale": "en",
@@ -85,7 +92,7 @@
       "locale": "en",
       "slug": "best-spaced-repetition-software-compared-2026",
       "path": "src/content/blog/generated/en/best-spaced-repetition-software-compared-2026.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a05b09-e5cb-713d-8ae5-60143319c3c4",
@@ -235,6 +242,13 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a06f9b-0faf-747c-845e-b6ebcabfd0b9",
+      "locale": "en",
+      "slug": "how-to-make-good-flashcards-that-actually-stick",
+      "path": "src/content/blog/generated/en/how-to-make-good-flashcards-that-actually-stick.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "01a03c17-bd9d-7407-b748-a21cc3d8890e",
       "locale": "en",
       "slug": "how-to-memorize-vocabulary-with-mnemonic-associations",
@@ -281,7 +295,7 @@
       "locale": "en",
       "slug": "how-to-retain-information-long-term-8-proven-methods",
       "path": "src/content/blog/generated/en/how-to-retain-information-long-term-8-proven-methods.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a0278e-acc8-7718-8c00-a9d261acc490",
@@ -442,7 +456,7 @@
       "locale": "en",
       "slug": "quizlet-alternatives-compared-anki-remnote-mochi-and-fluxo",
       "path": "src/content/blog/generated/en/quizlet-alternatives-compared-anki-remnote-mochi-and-fluxo.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fd5ce-554c-717d-86c8-96ce88925ac1",
@@ -506,6 +520,13 @@
       "slug": "what-is-metacognition-and-why-it-improves-learning",
       "path": "src/content/blog/generated/en/what-is-metacognition-and-why-it-improves-learning.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "01a06fa4-3632-744c-80a6-ae7d4c57489c",
+      "locale": "en",
+      "slug": "why-do-i-forget-everything-i-learn",
+      "path": "src/content/blog/generated/en/why-do-i-forget-everything-i-learn.mdx",
+      "includedInRebuild": true
     },
     {
       "draftId": "01a0037c-4df5-7372-9c09-61b691e04c47",
