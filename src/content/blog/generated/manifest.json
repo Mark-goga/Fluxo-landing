@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rebuildId": "01a0706d-91b0-701c-b2bf-895effdbadc5",
+  "rebuildId": "01a07833-b0a7-715f-b9f4-e47189656f63",
   "applicationId": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
   "posts": [
     {
@@ -8,7 +8,7 @@
       "locale": "en",
       "slug": "active-recall-for-programming-learn-faster-by-testing-yourself",
       "path": "src/content/blog/generated/en/active-recall-for-programming-learn-faster-by-testing-yourself.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fbb5b-05f5-71d8-be1b-9f49d0988b03",
@@ -51,6 +51,13 @@
       "slug": "anki-sentence-mining-a-step-by-step-workflow-for-language-learners",
       "path": "src/content/blog/generated/en/anki-sentence-mining-a-step-by-step-workflow-for-language-learners.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "01a074d8-a040-7214-bfd3-c4df407062ee",
+      "locale": "en",
+      "slug": "anki-too-complicated-here-s-a-simpler-alternative",
+      "path": "src/content/blog/generated/en/anki-too-complicated-here-s-a-simpler-alternative.mdx",
+      "includedInRebuild": true
     },
     {
       "draftId": "019ff414-28ea-730c-b215-6c3c530e36ed",
@@ -235,6 +242,13 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a074d3-a97a-726b-a74f-8a78a1ec019d",
+      "locale": "en",
+      "slug": "how-to-make-flashcards-from-notes-fast",
+      "path": "src/content/blog/generated/en/how-to-make-flashcards-from-notes-fast.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "019fe9b2-580f-72b9-a0db-833d4bc86f37",
       "locale": "en",
       "slug": "how-to-make-flashcards-from-notes-with-ai-gemini",
@@ -246,7 +260,7 @@
       "locale": "en",
       "slug": "how-to-make-good-flashcards-that-actually-stick",
       "path": "src/content/blog/generated/en/how-to-make-good-flashcards-that-actually-stick.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a03c17-bd9d-7407-b748-a21cc3d8890e",
@@ -526,6 +540,13 @@
       "locale": "en",
       "slug": "why-do-i-forget-everything-i-learn",
       "path": "src/content/blog/generated/en/why-do-i-forget-everything-i-learn.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a074db-dcb0-761a-9b6b-9a0fc27a7485",
+      "locale": "en",
+      "slug": "why-rereading-notes-doesn-t-work-and-what-does",
+      "path": "src/content/blog/generated/en/why-rereading-notes-doesn-t-work-and-what-does.mdx",
       "includedInRebuild": true
     },
     {
