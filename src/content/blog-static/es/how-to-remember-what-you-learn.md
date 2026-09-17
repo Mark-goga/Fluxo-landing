@@ -46,10 +46,10 @@ relatedPosts:
     title: "¿Cómo medir tu progreso de aprendizaje?"
     metaDescription: "La mayoría mide el aprendizaje de la forma equivocada. Cuentan horas de estudio, libros terminados o páginas leídas. Esos números parecen significativos, pero miden la entrada, no el resultado."
     heroImage: "/assets/card-6.webp"
-  - href: "/es/blog/best-way-to-learn-new-vocabulary/"
-    title: "La mejor forma de aprender vocabulario"
-    metaDescription: "Ya sea que aprendas un idioma extranjero, adquieras términos técnicos para un nuevo trabajo o construyas conocimiento especializado en medicina, derecho o diseño, el vocabulario es la base."
-    heroImage: "/assets/card-2.png"
+  - href: "/es/blog/the-second-brain-for-learning/"
+    title: "El segundo cerebro para aprender"
+    metaDescription: "Construye un segundo cerebro para aprender — un sistema que captura, organiza y devuelve lo leído justo cuando lo necesitas."
+    heroImage: "/assets/card-7.webp"
 ---
 Esto no es un problema de memoria. Es un problema de sistema. La mayoría consume información sin construir un proceso para conservarla de verdad. Esto es lo que dice la ciencia, y lo que funciona.
 

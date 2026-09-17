@@ -38,10 +38,6 @@ faq:
   - question: "Wann erinnere ich mich wirklich an ein neues Wort?"
     answer: "Etwa sieben korrekt abgerufene Wiederholungen über Wochen verlagern es ins Langzeitgedächtnis. Die ersten drei innerhalb einer Woche; spätere dehnen sich auf Monate aus."
 relatedPosts:
-  - href: "/de/blog/how-to-remember-what-you-learn/"
-    title: "Wie behältst du, was du lernst?"
-    metaDescription: "Du liest. Du beendest einen Kurs. Du machst Notizen. Und eine Woche später ist alles weg. Das ist kein Gedächtnisproblem – es ist ein Systemproblem."
-    heroImage: "/assets/card-4.webp"
   - href: "/de/blog/how-to-learn-without-forgetting/"
     title: "Wie lernen, ohne zu vergessen?"
     metaDescription: "Du liest ein Buch zu Ende. Du sitzt ein Webinar aus. Du speicherst ein Dutzend Artikel. Und irgendwo zwischen der letzten Seite und dem echten Leben verschwindet fast alles."
@@ -50,6 +46,10 @@ relatedPosts:
     title: "Die beste Lernroutine"
     metaDescription: "Die meisten bauen ihre Lernroutine falsch auf. Sie wählen eine Uhrzeit, schlagen ihre Notizen auf und beginnen zu lesen. Das ist keine Routine. Das ist nur die Angewohnheit, neben einem Buch zu sitzen."
     heroImage: "/assets/card-1.png"
+  - href: "/de/blog/the-second-brain-for-learning/"
+    title: "Das zweite Gehirn fürs Lernen"
+    metaDescription: "Baue ein zweites Gehirn fürs Lernen — ein System, das erfasst, ordnet und Gelesenes genau dann zurückbringt, wenn du es brauchst."
+    heroImage: "/assets/card-7.webp"
 ---
 Die Frage ist, welche Methode wirklich funktioniert und warum die meisten es nicht tun.
 

@@ -46,10 +46,10 @@ relatedPosts:
     title: "Der beste Weg, neue Vokabeln zu lernen"
     metaDescription: "Ob du eine Fremdsprache lernst, Fachbegriffe für einen neuen Job aufnimmst oder Fachwissen in Medizin, Recht oder Design aufbaust – Vokabular ist die Grundlage."
     heroImage: "/assets/card-2.png"
-  - href: "/de/blog/how-to-study-while-working-full-time/"
-    title: "Wie lernen neben einem Vollzeitjob?"
-    metaDescription: "Du willst etwas Neues lernen. Eine Sprache, eine Fähigkeit, ein Fach, das für deine Karriere oder einfach für dich wichtig ist. Und du hast vielleicht 45 Minuten am Tag, wenn alles glattläuft."
-    heroImage: "/assets/card-5.webp"
+  - href: "/de/blog/how-to-track-learning-progress/"
+    title: "Wie verfolgst du deinen Lernfortschritt?"
+    metaDescription: "Miss deinen Lernfortschritt am Ergebnis, nicht an Stunden — einfache Kennzahlen (Abruf, Anwendung, Transfer) zeigen echten Fortschritt."
+    heroImage: "/assets/card-6.webp"
 ---
 Das ist keine Faulheit. Das Gehirn ist nicht dafür gebaut, rohe Informationen endlos zu halten. Es speichert, was es nutzt, und verwirft, was es nicht nutzt. Die Frage ist nicht, wie du mehr liest. Sondern wie du dein Gehirn dazu bringst, neue Informationen als bewahrenswert zu behandeln.
 

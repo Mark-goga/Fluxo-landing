@@ -46,10 +46,10 @@ relatedPosts:
     title: "Das zweite Gehirn fürs Lernen"
     metaDescription: "Jedes Jahr liest du Dutzende Artikel, machst Kurse, hörst Podcasts und sitzt in Meetings voller nützlicher Informationen. Und jedes Jahr ist fast nichts davon verfügbar, wenn du es wirklich brauchst."
     heroImage: "/assets/card-7.webp"
-  - href: "/de/blog/how-to-study-while-working-full-time/"
-    title: "Wie lernen neben einem Vollzeitjob?"
-    metaDescription: "Du willst etwas Neues lernen. Eine Sprache, eine Fähigkeit, ein Fach, das für deine Karriere oder einfach für dich wichtig ist. Und du hast vielleicht 45 Minuten am Tag, wenn alles glattläuft."
-    heroImage: "/assets/card-5.webp"
+  - href: "/de/blog/how-to-track-learning-progress/"
+    title: "Wie verfolgst du deinen Lernfortschritt?"
+    metaDescription: "Miss deinen Lernfortschritt am Ergebnis, nicht an Stunden — einfache Kennzahlen (Abruf, Anwendung, Transfer) zeigen echten Fortschritt."
+    heroImage: "/assets/card-6.webp"
 ---
 Das ist kein Gedächtnisproblem. Es ist ein Systemproblem. Die meisten konsumieren Informationen, ohne einen Prozess aufzubauen, sie wirklich zu behalten. Hier ist, was die Wissenschaft sagt – und was funktioniert.
 
