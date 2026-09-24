@@ -426,7 +426,7 @@ export const landingContent = {
           title: "Company",
           links: [
             { label: "About Us", href: "#" },
-            { label: "Contact", href: "#" },
+            { label: "Contact", href: "/support/" },
             { label: "Privacy Policy", href: "/privacy/" },
             { label: "Cookie Policy", href: "/cookies/" },
             { label: "Terms of Service", href: "#" },
@@ -735,7 +735,7 @@ export const landingContent = {
           links: [
             { label: "Про нас", href: "#" },
             { label: "Блог", href: "#" },
-            { label: "Контакти", href: "#" },
+            { label: "Контакти", href: "/support/" },
             { label: "Політика конфіденційності", href: "/privacy/" },
             { label: "Політика cookie", href: "/cookies/" },
             { label: "Умови використання", href: "#" },
@@ -1052,7 +1052,7 @@ export const landingContent = {
           title: "Empresa",
           links: [
             { label: "Sobre nosotros", href: "#" },
-            { label: "Contacto", href: "#" },
+            { label: "Contacto", href: "/support/" },
             { label: "Política de privacidad", href: "/privacy/" },
             { label: "Política de cookies", href: "/cookies/" },
             { label: "Términos del servicio", href: "#" },
@@ -1369,7 +1369,7 @@ export const landingContent = {
           title: "Unternehmen",
           links: [
             { label: "Über uns", href: "#" },
-            { label: "Kontakt", href: "#" },
+            { label: "Kontakt", href: "/support/" },
             { label: "Datenschutz", href: "/privacy/" },
             { label: "Cookie-Richtlinie", href: "/cookies/" },
             { label: "Nutzungsbedingungen", href: "#" },
