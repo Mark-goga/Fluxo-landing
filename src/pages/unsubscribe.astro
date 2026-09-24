@@ -15,10 +15,11 @@ const copy = {
   button: "Unsubscribe",
   invalid: "This unsubscribe link is invalid or has expired.",
   done: "Unsubscribed",
+  doneTitle: "You're unsubscribed",
+  doneBody: `You won't receive these emails from ${siteConfig.name} anymore. You can close this page.`,
 };
 
 const toast = {
-  success: `You've been unsubscribed. You won't receive these emails from ${siteConfig.name} anymore.`,
   error: "Something went wrong. Please try again.",
 };
 ---
@@ -33,7 +34,7 @@ const toast = {
 >
   <Header content={content} routePath={routePath} languageNav={languageNav} />
   <main class="notfound unsubscribe">
-    <h1 class="notfound-title">{copy.title}</h1>
+    <h1 class="notfound-title" data-unsubscribe-title>{copy.title}</h1>
     <p class="notfound-body" data-unsubscribe-intro>{copy.body}</p>
     <button type="button" class="btn-primary notfound-cta" data-unsubscribe>{copy.button}</button>
   </main>
@@ -51,6 +52,7 @@ const toast = {
     (() => {
       const button = document.querySelector("[data-unsubscribe]");
       const intro = document.querySelector("[data-unsubscribe-intro]");
+      const title = document.querySelector("[data-unsubscribe-title]");
       const toastEl = document.querySelector("[data-lead-toast]");
       const token = new URLSearchParams(location.search).get("token");
       let toastTimer;
@@ -90,7 +92,8 @@ const toast = {
           });
           if (!response.ok) throw new Error("Request failed with status " + response.status);
           button.textContent = copy.done;
-          showToast(toast.success, false);
+          if (title) title.textContent = copy.doneTitle;
+          if (intro) intro.textContent = copy.doneBody;
         } catch (error) {
           button.disabled = false;
           showToast(toast.error, true);
