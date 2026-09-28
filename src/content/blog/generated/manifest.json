@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rebuildId": "01a07833-b0a7-715f-b9f4-e47189656f63",
+  "rebuildId": "01a0e96b-3e27-73a2-8849-99343cc879f6",
   "applicationId": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
   "posts": [
     {
@@ -57,7 +57,7 @@
       "locale": "en",
       "slug": "anki-too-complicated-here-s-a-simpler-alternative",
       "path": "src/content/blog/generated/en/anki-too-complicated-here-s-a-simpler-alternative.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019ff414-28ea-730c-b215-6c3c530e36ed",
@@ -246,7 +246,7 @@
       "locale": "en",
       "slug": "how-to-make-flashcards-from-notes-fast",
       "path": "src/content/blog/generated/en/how-to-make-flashcards-from-notes-fast.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fe9b2-580f-72b9-a0db-833d4bc86f37",
@@ -289,6 +289,13 @@
       "slug": "how-to-read-academic-papers-efficiently",
       "path": "src/content/blog/generated/en/how-to-read-academic-papers-efficiently.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "01a079ed-b13e-74ee-9c48-546721394f53",
+      "locale": "en",
+      "slug": "how-to-remember-books-long-term-the-page-one-review-method",
+      "path": "src/content/blog/generated/en/how-to-remember-books-long-term-the-page-one-review-method.mdx",
+      "includedInRebuild": true
     },
     {
       "draftId": "01a055fa-b6c2-7048-94c3-6a8d698bf6ec",
@@ -452,6 +459,13 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a079e8-63e2-77c8-9a47-d00bd7609232",
+      "locale": "en",
+      "slug": "notes-scattered-across-apps-fix-it-with-one-system",
+      "path": "src/content/blog/generated/en/notes-scattered-across-apps-fix-it-with-one-system.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "019ff41c-f37a-7769-97e6-4b120e203487",
       "locale": "en",
       "slug": "obsidian-vs-notion-for-students-plus-fluxo-and-4-alternatives",
@@ -543,11 +557,18 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a079f3-36cb-710e-92ee-2558adf2a95c",
+      "locale": "en",
+      "slug": "why-premade-flashcards-don-t-work-and-what-does",
+      "path": "src/content/blog/generated/en/why-premade-flashcards-don-t-work-and-what-does.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "01a074db-dcb0-761a-9b6b-9a0fc27a7485",
       "locale": "en",
       "slug": "why-rereading-notes-doesn-t-work-and-what-does",
       "path": "src/content/blog/generated/en/why-rereading-notes-doesn-t-work-and-what-does.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a0037c-4df5-7372-9c09-61b691e04c47",
