@@ -49,7 +49,8 @@ document.querySelectorAll(".burger").forEach((burger) => {
     if (event.key === "Escape" && mobileNav.classList.contains("open")) setOpen(false);
   });
 
-  mobileNav.querySelectorAll("a, button").forEach((el) => {
+  // Links and actions close the menu; the theme switch stays in place so you can see the change.
+  mobileNav.querySelectorAll("a, button:not([data-theme-toggle])").forEach((el) => {
     el.addEventListener("click", () => setOpen(false));
   });
 });
@@ -86,3 +87,97 @@ document.querySelectorAll("[data-faq-accordion]").forEach((accordion) => {
     });
   });
 });
+
+// Scroll reveal — blocks fade/slide in as they enter the viewport.
+(() => {
+  if (typeof window === "undefined" || !("IntersectionObserver" in window)) return;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  const observer = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        obs.unobserve(entry.target);
+      });
+    },
+    { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
+  );
+
+  const reveal = (el, delay) => {
+    if (!(el instanceof HTMLElement) || el.classList.contains("reveal")) return;
+    el.classList.add("reveal");
+    if (delay) el.style.setProperty("--reveal-delay", delay + "s");
+    observer.observe(el);
+  };
+
+  const revealAll = (selector) => {
+    document.querySelectorAll(selector).forEach((el) => reveal(el));
+  };
+
+  const revealStaggered = (selector, step = 0.08, max = 0.4) => {
+    document.querySelectorAll(selector).forEach((el, i) => reveal(el, Math.min(i * step, max)));
+  };
+
+  // Section headings / block sections.
+  [
+    ".hero",
+    ".why-fluxo > .section-title",
+    ".features > .section-title",
+    ".pricing-header",
+    ".pricing-billing",
+    ".faq-header",
+    ".cta-title",
+    ".cta-form",
+    ".cta-note",
+  ].forEach(revealAll);
+
+  // Repeating cards reveal one after another for a lively cascade.
+  revealStaggered(".cards-grid > .card");
+  revealStaggered(".features-grid > .feat-card");
+  revealStaggered(".pricing-grid > .pricing-card-wrap");
+  revealStaggered(".faq-item", 0.05, 0.3);
+})();
+
+// Footer CTA photo fades/zooms in when the section scrolls into view.
+(() => {
+  const cta = document.querySelector(".cta");
+  if (!cta || !("IntersectionObserver" in window)) return;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  cta.classList.add("cta--bg-anim");
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        cta.classList.add("is-bg-visible");
+        observer.disconnect();
+      });
+    },
+    { threshold: 0.2 }
+  );
+  observer.observe(cta);
+})();
+
+// Smooth, inertial wheel/trackpad scrolling (Lenis, vendored in /vendor).
+// Touch keeps native scrolling; skipped entirely for reduced-motion users.
+(() => {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const self = document.currentScript;
+  if (!(self instanceof HTMLScriptElement)) return;
+
+  const lib = document.createElement("script");
+  lib.src = new URL("vendor/lenis-1.3.26.min.js", self.src).href;
+  lib.async = true;
+  lib.onload = () => {
+    if (typeof window.Lenis !== "function") return;
+    const lenis = new window.Lenis({ autoRaf: true, lerp: 0.1, anchors: true });
+    window.fluxoLenis = lenis;
+
+    // The lead modal and mobile nav lock the page via body overflow; pause with them.
+    const sync = () => (document.body.style.overflow === "hidden" ? lenis.stop() : lenis.start());
+    new MutationObserver(sync).observe(document.body, { attributes: true, attributeFilter: ["style"] });
+    sync();
+  };
+  document.head.append(lib);
+})();

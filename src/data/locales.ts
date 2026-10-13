@@ -33,6 +33,19 @@ type PricingFeature = {
   included: boolean;
 };
 
+type PricingImage = {
+  src: string;
+  alt: string;
+};
+
+type PricingBillingOption = {
+  label: string;
+  amount: string;
+  period: string;
+  note?: string;
+  saveLabel?: string;
+};
+
 type PricingCard = {
   name: string;
   amount: string;
@@ -40,6 +53,18 @@ type PricingCard = {
   description?: string;
   featured: boolean;
   badge?: string;
+  /** Image label pinned to the card edge (e.g. the BOOST tag). */
+  tag?: PricingImage;
+  /** Mascot peeking out from behind the card. */
+  mascot?: PricingImage;
+  /** Monthly/yearly switch; `amount`/`period` should mirror the monthly option. */
+  billing?: {
+    ariaLabel: string;
+    defaultPlan?: "monthly" | "yearly";
+    monthly: PricingBillingOption;
+    yearly: PricingBillingOption;
+  };
+  footnote?: string;
   features: PricingFeature[];
   cta: Action & { variant: "primary" | "secondary" };
 };
@@ -195,11 +220,10 @@ export const landingContent = {
     header: {
       homeAria: `${siteConfig.name} home`,
       nav: [
-        { label: "Why Fluxo", href: "#why" },
         { label: "Features", href: "#features" },
         { label: "Pricing", href: "#pricing" },
         { label: "Blog", href: "/blog/" },
-        { label: "About us", href: "#cta" },
+        { label: "About us", href: "/about/" },
       ],
       languageAria: "Change language",
       cta: { label: "Get started", href: "#cta", clarityEvent: "header_cta_click" },
@@ -318,42 +342,28 @@ export const landingContent = {
           cta: { label: "Start Free", href: "#cta", clarityEvent: "pricing_free_click", variant: "secondary" },
         },
         {
-          name: "Premium",
-          amount: "$9",
+          name: "Boost",
+          amount: "$9.99",
           period: "/ month",
-          description: "Unlock the full Fluxo experience",
+          description: "Unlock your full learning potential",
           featured: true,
-          badge: "Most Popular",
-          features: [
-            { text: "Unlimited Knowledge Spaces & Notes", included: true },
-            { text: "Import & export without limits", included: true },
-            { text: "AI Summaries, Axioms & Key Insights", included: true },
-            { text: "AI Flashcard Generation from any note", included: true },
-            { text: "Spaced Repetition with trigger-based review", included: true },
-            { text: "Streak Freeze & Flexible Goals", included: true },
-            { text: "500 AI Credits/month", included: true },
-          ],
-          cta: { label: "Start Premium", href: "#cta", clarityEvent: "pricing_premium_click", variant: "primary" },
-        },
-        {
-          name: "Premium Plus",
-          amount: "$20",
-          period: "/ month",
-          description: "Full AI learning suite for serious learners",
-          featured: false,
-          features: [
-            { text: "Everything in Premium", included: true },
-            { text: "AI Answer Grading & Explanations", included: true },
-            { text: "Retention Dashboard & Progress Analytics", included: true },
-            { text: "Custom Training Intervals", included: true },
-            { text: "5,000 AI Credits/month", included: true },
-          ],
-          cta: {
-            label: "Start Premium Plus",
-            href: "#cta",
-            clarityEvent: "pricing_premium_plus_click",
-            variant: "secondary",
+          tag: { src: "assets/boost-tag.png", alt: "Boost" },
+          mascot: { src: "assets/cat-boost.png", alt: "Fluxo cat in star-shaped Boost glasses" },
+          billing: {
+            ariaLabel: "Billing period",
+            defaultPlan: "monthly",
+            monthly: { label: "Monthly", amount: "$9.99", period: "/ month", note: "Billed monthly" },
+            yearly: { label: "Yearly", amount: "$95.90", period: "/ year", note: "Just $7.99/month", saveLabel: "−20%" },
           },
+          features: [
+            { text: "Unlimited Knowledge Spaces & notes", included: true },
+            { text: "Smarter reviews based on what you know, forget and get wrong", included: true },
+            { text: "Unlimited AI tutor chat, quizzes, flashcards & summaries", included: true },
+            { text: "Advanced insights: progress, weak areas & retention", included: true },
+            { text: "Make Fluxo yours: new mascot accessories & styles", included: true },
+          ],
+          cta: { label: "Start 7 days free", href: "#cta", clarityEvent: "pricing_boost_click", variant: "primary" },
+          footnote: "7 days free, then billed. Cancel anytime.",
         },
       ],
     },
@@ -383,7 +393,7 @@ export const landingContent = {
         {
           question: "Is Fluxo free?",
           answer:
-            "Yes. The free plan includes 4 Knowledge Spaces, note editor, spaced repetition reviews, and cross-device sync. Need more? Premium unlocks unlimited Spaces, advanced features, and offline access.",
+            "Yes. The free plan includes 4 Knowledge Spaces, note editor, spaced repetition reviews, and cross-device sync. Need more? Boost unlocks unlimited Spaces, advanced features, and offline access.",
         },
       ],
     },
@@ -391,7 +401,7 @@ export const landingContent = {
       titleHtml: `Ready to actually<br/><strong>remember</strong> what you learn?`,
       placeholder: "Enter your email",
       submit: { label: "Get early access", href: "#", clarityEvent: "signup_submit" },
-      noteHtml: `First 50 users get <strong>premium plus 60%</strong> discount`,
+      noteHtml: `First 50 users get <strong>60% off Boost</strong>`,
     },
     modal: {
       title: "We haven't launched yet",
@@ -425,7 +435,7 @@ export const landingContent = {
         {
           title: "Company",
           links: [
-            { label: "About Us", href: "#" },
+            { label: "About Us", href: "/about/" },
             { label: "Contact", href: "/support/" },
             { label: "Privacy Policy", href: "/privacy/" },
             { label: "Cookie Policy", href: "/cookies/" },
@@ -460,8 +470,8 @@ export const landingContent = {
         operatingSystem: "Web, iOS, Android",
         offers: [
           { name: "Free", price: "0", priceCurrency: "USD", description: "Perfect for getting started with Fluxo — 3 knowledge spaces, capture, imports, and 5 AI summaries per month." },
-          { name: "Premium", price: "9", priceCurrency: "USD", description: "Unlock the full Fluxo experience — unlimited spaces, AI summaries, flashcards, spaced repetition, 500 AI credits/month." },
-          { name: "Premium Plus", price: "20", priceCurrency: "USD", description: "Full AI learning suite for serious learners — everything in Premium, plus AI grading, retention analytics, and 5,000 AI credits/month." },
+          { name: "Boost (monthly)", price: "9.99", priceCurrency: "USD", description: "Unlimited Knowledge Spaces, smarter reviews, unlimited AI activities and advanced learning insights. 7 days free." },
+          { name: "Boost (yearly)", price: "95.90", priceCurrency: "USD", description: "Boost billed yearly — $7.99/month, save 20%. 7 days free." },
         ],
       },
     },
@@ -512,7 +522,6 @@ export const landingContent = {
     header: {
       homeAria: `${siteConfig.name} home`,
       nav: [
-        { label: "Чому Fluxo", href: "#why" },
         { label: "Можливості", href: "#features" },
         { label: "Тарифи", href: "#pricing" },
         { label: "Блог", href: "/uk/blog/" },
@@ -631,37 +640,28 @@ export const landingContent = {
           cta: { label: "Почати безкоштовно", href: "#cta", clarityEvent: "pricing_free_click", variant: "secondary" },
         },
         {
-          name: "Premium",
+          name: "Boost",
           amount: "$9.99",
           period: "/ місяць",
+          description: "Розкрий свій повний потенціал у навчанні",
           featured: true,
-          badge: "Найпопулярніший",
-          features: [
-            { text: "Необмежені простори знань", included: true },
-            { text: "Повні ШІ-конспекти та аксіоми", included: true },
-            { text: "Необмежені тренування", included: true },
-            { text: "Алгоритм інтервального повторення", included: true },
-            { text: "Синхронізація на всіх пристроях", included: true },
-          ],
-          cta: { label: "Обрати Premium", href: "#cta", clarityEvent: "pricing_premium_click", variant: "primary" },
-        },
-        {
-          name: "Premium Plus",
-          amount: "$19.99",
-          period: "/ місяць",
-          featured: false,
-          features: [
-            { text: "Усе з Premium", included: true },
-            { text: "Панель аналітики", included: true },
-            { text: "Експорт (Notion, CSV, Anki)", included: true },
-            { text: "Власні інтервали тренувань", included: true },
-          ],
-          cta: {
-            label: "Обрати Premium Plus",
-            href: "#cta",
-            clarityEvent: "pricing_premium_plus_click",
-            variant: "secondary",
+          tag: { src: "assets/boost-tag.png", alt: "Boost" },
+          mascot: { src: "assets/cat-boost.png", alt: "Котик Fluxo в окулярах-зірочках Boost" },
+          billing: {
+            ariaLabel: "Період оплати",
+            defaultPlan: "monthly",
+            monthly: { label: "Щомісяця", amount: "$9.99", period: "/ місяць", note: "Оплата щомісяця" },
+            yearly: { label: "Щороку", amount: "$95.90", period: "/ рік", note: "Лише $7.99/місяць", saveLabel: "−20%" },
           },
+          features: [
+            { text: "Необмежені простори знань і нотатки", included: true },
+            { text: "Розумні повторення з урахуванням того, що ти знаєш, забуваєш і де помиляєшся", included: true },
+            { text: "Необмежений ШІ-тьютор, квізи, картки та конспекти", included: true },
+            { text: "Розширена аналітика: прогрес, слабкі місця, запам'ятовування", included: true },
+            { text: "Зроби Fluxo своїм: нові аксесуари й стилі маскота", included: true },
+          ],
+          cta: { label: "7 днів безкоштовно", href: "#cta", clarityEvent: "pricing_boost_click", variant: "primary" },
+          footnote: "7 днів безкоштовно, далі за тарифом. Скасувати можна будь-коли.",
         },
       ],
     },
@@ -691,7 +691,7 @@ export const landingContent = {
         {
           question: "Fluxo безкоштовний?",
           answer:
-            "Так. Безкоштовний план включає 4 простори знань, редактор нотаток, інтервальні повторення та синхронізацію між пристроями. Потрібно більше? Premium відкриває необмежені простори, розширені функції та офлайн-доступ.",
+            "Так. Безкоштовний план включає 4 простори знань, редактор нотаток, інтервальні повторення та синхронізацію між пристроями. Потрібно більше? Boost відкриває необмежені простори, розширені функції та офлайн-доступ.",
         },
       ],
     },
@@ -699,7 +699,7 @@ export const landingContent = {
       titleHtml: `Готовий справді<br/><strong>пам'ятати</strong> те, що вивчаєш?`,
       placeholder: "Введіть ваш email",
       submit: { label: "Отримати ранній доступ", href: "#", clarityEvent: "signup_submit" },
-      noteHtml: `Перші 50 користувачів отримають <strong>знижку 60% на Premium Plus</strong>`,
+      noteHtml: `Перші 50 користувачів отримають <strong>знижку 60% на Boost</strong>`,
     },
     modal: {
       title: "Ми ще не запустилися",
@@ -733,7 +733,7 @@ export const landingContent = {
         {
           title: "Компанія",
           links: [
-            { label: "Про нас", href: "#" },
+            { label: "Про нас", href: "/about/" },
             { label: "Блог", href: "#" },
             { label: "Контакти", href: "/support/" },
             { label: "Політика конфіденційності", href: "/privacy/" },
@@ -769,8 +769,8 @@ export const landingContent = {
         operatingSystem: "Web, iOS, Android",
         offers: [
           { name: "Безкоштовно", price: "0", priceCurrency: "USD", description: "Ідеально, щоб почати з Fluxo — 4 простори знань, базові ШІ-конспекти, синхронізація на 2 пристроях." },
-          { name: "Premium", price: "9.99", priceCurrency: "USD", description: "Повний досвід Fluxo — необмежені простори, повні ШІ-конспекти, необмежені тренування, інтервальне повторення." },
-          { name: "Premium Plus", price: "19.99", priceCurrency: "USD", description: "Усе з Premium плюс панель аналітики, експорт (Notion, CSV, Anki) та власні інтервали тренувань." },
+          { name: "Boost (щомісяця)", price: "9.99", priceCurrency: "USD", description: "Необмежені простори знань, розумні повторення, необмежені ШІ-активності та розширена аналітика. 7 днів безкоштовно." },
+          { name: "Boost (щороку)", price: "95.90", priceCurrency: "USD", description: "Boost з оплатою за рік — $7.99/місяць, економія 20%. 7 днів безкоштовно." },
         ],
       },
     },
@@ -821,11 +821,10 @@ export const landingContent = {
     header: {
       homeAria: `Inicio de ${siteConfig.name}`,
       nav: [
-        { label: "Por qué Fluxo", href: "#why" },
         { label: "Funciones", href: "#features" },
         { label: "Precios", href: "#pricing" },
         { label: "Blog", href: "/es/blog/" },
-        { label: "Sobre nosotros", href: "#cta" },
+        { label: "Sobre nosotros", href: "/about/" },
       ],
       languageAria: "Cambiar idioma",
       cta: { label: "Empieza ahora", href: "#cta", clarityEvent: "header_cta_click" },
@@ -944,42 +943,28 @@ export const landingContent = {
           cta: { label: "Empezar gratis", href: "#cta", clarityEvent: "pricing_free_click", variant: "secondary" },
         },
         {
-          name: "Premium",
-          amount: "$9",
+          name: "Boost",
+          amount: "$9.99",
           period: "/ mes",
-          description: "Desbloquea toda la experiencia Fluxo",
+          description: "Desbloquea todo tu potencial de aprendizaje",
           featured: true,
-          badge: "Más popular",
+          tag: { src: "assets/boost-tag.png", alt: "Boost" },
+          mascot: { src: "assets/cat-boost.png", alt: "Gato de Fluxo con gafas de estrella Boost" },
+          billing: {
+            ariaLabel: "Periodo de facturación",
+            defaultPlan: "monthly",
+            monthly: { label: "Mensual", amount: "$9.99", period: "/ mes", note: "Facturación mensual" },
+            yearly: { label: "Anual", amount: "$95.90", period: "/ año", note: "Solo $7.99/mes", saveLabel: "−20%" },
+          },
           features: [
             { text: "Espacios de conocimiento y notas ilimitados", included: true },
-            { text: "Importación y exportación sin límites", included: true },
-            { text: "Resúmenes, axiomas e ideas clave con IA", included: true },
-            { text: "Generación de tarjetas con IA desde cualquier nota", included: true },
-            { text: "Repetición espaciada con repaso por activadores", included: true },
-            { text: "Congelar racha y metas flexibles", included: true },
-            { text: "500 créditos de IA al mes", included: true },
+            { text: "Repasos más inteligentes según lo que sabes, olvidas y fallas", included: true },
+            { text: "Tutor de IA, cuestionarios, tarjetas y resúmenes ilimitados", included: true },
+            { text: "Analítica avanzada: progreso, puntos débiles y retención", included: true },
+            { text: "Haz tuyo Fluxo: nuevos accesorios y estilos para la mascota", included: true },
           ],
-          cta: { label: "Empezar Premium", href: "#cta", clarityEvent: "pricing_premium_click", variant: "primary" },
-        },
-        {
-          name: "Premium Plus",
-          amount: "$20",
-          period: "/ mes",
-          description: "Suite completa de aprendizaje con IA para quienes van en serio",
-          featured: false,
-          features: [
-            { text: "Todo lo de Premium", included: true },
-            { text: "Corrección y explicaciones de respuestas con IA", included: true },
-            { text: "Panel de retención y analítica de progreso", included: true },
-            { text: "Intervalos de entrenamiento personalizados", included: true },
-            { text: "5000 créditos de IA al mes", included: true },
-          ],
-          cta: {
-            label: "Empezar Premium Plus",
-            href: "#cta",
-            clarityEvent: "pricing_premium_plus_click",
-            variant: "secondary",
-          },
+          cta: { label: "Empieza 7 días gratis", href: "#cta", clarityEvent: "pricing_boost_click", variant: "primary" },
+          footnote: "7 días gratis y luego se factura. Cancela cuando quieras.",
         },
       ],
     },
@@ -1009,7 +994,7 @@ export const landingContent = {
         {
           question: "¿Fluxo es gratis?",
           answer:
-            "Sí. El plan gratuito incluye 4 espacios de conocimiento, editor de notas, repasos con repetición espaciada y sincronización entre dispositivos. ¿Necesitas más? Premium desbloquea espacios ilimitados, funciones avanzadas y acceso sin conexión.",
+            "Sí. El plan gratuito incluye 4 espacios de conocimiento, editor de notas, repasos con repetición espaciada y sincronización entre dispositivos. ¿Necesitas más? Boost desbloquea espacios ilimitados, funciones avanzadas y acceso sin conexión.",
         },
       ],
     },
@@ -1017,7 +1002,7 @@ export const landingContent = {
       titleHtml: `¿Listo para recordar de verdad<br/>lo que <strong>aprendes</strong>?`,
       placeholder: "Introduce tu email",
       submit: { label: "Consigue acceso anticipado", href: "#", clarityEvent: "signup_submit" },
-      noteHtml: `Los primeros 50 usuarios consiguen un <strong>60% de descuento en Premium Plus</strong>`,
+      noteHtml: `Los primeros 50 usuarios consiguen un <strong>60% de descuento en Boost</strong>`,
     },
     modal: {
       title: "Aún no hemos lanzado",
@@ -1051,7 +1036,7 @@ export const landingContent = {
         {
           title: "Empresa",
           links: [
-            { label: "Sobre nosotros", href: "#" },
+            { label: "Sobre nosotros", href: "/about/" },
             { label: "Contacto", href: "/support/" },
             { label: "Política de privacidad", href: "/privacy/" },
             { label: "Política de cookies", href: "/cookies/" },
@@ -1086,8 +1071,8 @@ export const landingContent = {
         operatingSystem: "Web, iOS, Android",
         offers: [
           { name: "Free", price: "0", priceCurrency: "USD", description: "Perfecto para empezar con Fluxo — espacios de conocimiento, capturas e importaciones básicas." },
-          { name: "Premium", price: "9", priceCurrency: "USD", description: "Desbloquea la experiencia completa — espacios ilimitados, resúmenes con IA, flashcards y repetición espaciada." },
-          { name: "Premium Plus", price: "20", priceCurrency: "USD", description: "Suite completa de aprendizaje con IA — todo lo de Premium más analítica de retención y 5.000 créditos de IA al mes." },
+          { name: "Boost (mensual)", price: "9.99", priceCurrency: "USD", description: "Espacios ilimitados, repasos más inteligentes, actividades de IA ilimitadas y analítica avanzada. 7 días gratis." },
+          { name: "Boost (anual)", price: "95.90", priceCurrency: "USD", description: "Boost con pago anual — $7.99/mes, ahorra un 20%. 7 días gratis." },
         ],
       },
     },
@@ -1138,11 +1123,10 @@ export const landingContent = {
     header: {
       homeAria: `${siteConfig.name} Startseite`,
       nav: [
-        { label: "Warum Fluxo", href: "#why" },
         { label: "Funktionen", href: "#features" },
         { label: "Preise", href: "#pricing" },
         { label: "Blog", href: "/de/blog/" },
-        { label: "Über uns", href: "#cta" },
+        { label: "Über uns", href: "/about/" },
       ],
       languageAria: "Sprache wechseln",
       cta: { label: "Loslegen", href: "#cta", clarityEvent: "header_cta_click" },
@@ -1261,42 +1245,28 @@ export const landingContent = {
           cta: { label: "Kostenlos starten", href: "#cta", clarityEvent: "pricing_free_click", variant: "secondary" },
         },
         {
-          name: "Premium",
-          amount: "9 $",
+          name: "Boost",
+          amount: "9,99 $",
           period: "/ Monat",
-          description: "Schalte das volle Fluxo-Erlebnis frei",
+          description: "Schöpfe dein volles Lernpotenzial aus",
           featured: true,
-          badge: "Am beliebtesten",
+          tag: { src: "assets/boost-tag.png", alt: "Boost" },
+          mascot: { src: "assets/cat-boost.png", alt: "Fluxo-Katze mit Boost-Sternbrille" },
+          billing: {
+            ariaLabel: "Abrechnungszeitraum",
+            defaultPlan: "monthly",
+            monthly: { label: "Monatlich", amount: "9,99 $", period: "/ Monat", note: "Monatliche Abrechnung" },
+            yearly: { label: "Jährlich", amount: "95,90 $", period: "/ Jahr", note: "Nur 7,99 $/Monat", saveLabel: "−20 %" },
+          },
           features: [
             { text: "Unbegrenzte Wissensräume und Notizen", included: true },
-            { text: "Import & Export ohne Limits", included: true },
-            { text: "KI-Zusammenfassungen, Axiome & Kerneinsichten", included: true },
-            { text: "KI-Karteikarten aus jeder Notiz erzeugen", included: true },
-            { text: "Verteiltes Wiederholen mit Trigger-basiertem Repeat", included: true },
-            { text: "Streak-Freeze & flexible Ziele", included: true },
-            { text: "500 KI-Credits/Monat", included: true },
+            { text: "Klügere Wiederholungen nach dem, was du weißt, vergisst und falsch machst", included: true },
+            { text: "Unbegrenzt KI-Tutor, Quizze, Karteikarten & Zusammenfassungen", included: true },
+            { text: "Erweiterte Einblicke: Fortschritt, Schwächen & Behaltensrate", included: true },
+            { text: "Mach Fluxo zu deinem: neue Maskottchen-Accessoires & Styles", included: true },
           ],
-          cta: { label: "Premium starten", href: "#cta", clarityEvent: "pricing_premium_click", variant: "primary" },
-        },
-        {
-          name: "Premium Plus",
-          amount: "20 $",
-          period: "/ Monat",
-          description: "Komplette KI-Lernsuite für ernsthaft Lernende",
-          featured: false,
-          features: [
-            { text: "Alles aus Premium", included: true },
-            { text: "KI-Antwortbewertung & Erklärungen", included: true },
-            { text: "Retention-Dashboard & Fortschrittsanalysen", included: true },
-            { text: "Eigene Trainingsintervalle", included: true },
-            { text: "5.000 KI-Credits/Monat", included: true },
-          ],
-          cta: {
-            label: "Premium Plus starten",
-            href: "#cta",
-            clarityEvent: "pricing_premium_plus_click",
-            variant: "secondary",
-          },
+          cta: { label: "7 Tage kostenlos starten", href: "#cta", clarityEvent: "pricing_boost_click", variant: "primary" },
+          footnote: "7 Tage kostenlos, danach kostenpflichtig. Jederzeit kündbar.",
         },
       ],
     },
@@ -1326,7 +1296,7 @@ export const landingContent = {
         {
           question: "Ist Fluxo kostenlos?",
           answer:
-            "Ja. Der Gratis-Tarif umfasst 4 Wissensräume, den Notiz-Editor, verteilte Wiederholungen und Sync zwischen Geräten. Du brauchst mehr? Premium schaltet unbegrenzte Räume, erweiterte Funktionen und Offline-Zugriff frei.",
+            "Ja. Der Gratis-Tarif umfasst 4 Wissensräume, den Notiz-Editor, verteilte Wiederholungen und Sync zwischen Geräten. Du brauchst mehr? Boost schaltet unbegrenzte Räume, erweiterte Funktionen und Offline-Zugriff frei.",
         },
       ],
     },
@@ -1334,7 +1304,7 @@ export const landingContent = {
       titleHtml: `Bereit, das Gelernte<br/>wirklich zu <strong>behalten</strong>?`,
       placeholder: "Gib deine E-Mail ein",
       submit: { label: "Frühen Zugang sichern", href: "#", clarityEvent: "signup_submit" },
-      noteHtml: `Die ersten 50 Nutzer erhalten <strong>60 % Rabatt auf Premium Plus</strong>`,
+      noteHtml: `Die ersten 50 Nutzer erhalten <strong>60 % Rabatt auf Boost</strong>`,
     },
     modal: {
       title: "Wir sind noch nicht gestartet",
@@ -1368,7 +1338,7 @@ export const landingContent = {
         {
           title: "Unternehmen",
           links: [
-            { label: "Über uns", href: "#" },
+            { label: "Über uns", href: "/about/" },
             { label: "Kontakt", href: "/support/" },
             { label: "Datenschutz", href: "/privacy/" },
             { label: "Cookie-Richtlinie", href: "/cookies/" },
@@ -1403,8 +1373,8 @@ export const landingContent = {
         operatingSystem: "Web, iOS, Android",
         offers: [
           { name: "Free", price: "0", priceCurrency: "USD", description: "Perfekt für den Einstieg in Fluxo — Wissensräume, Erfassung und einfache Importe." },
-          { name: "Premium", price: "9", priceCurrency: "USD", description: "Das volle Fluxo-Erlebnis — unbegrenzte Wissensräume, KI-Zusammenfassungen, Karteikarten und verteiltes Wiederholen." },
-          { name: "Premium Plus", price: "20", priceCurrency: "USD", description: "Vollständige KI-Lernsuite — alles aus Premium plus Retentions-Dashboard und 5.000 KI-Credits pro Monat." },
+          { name: "Boost (monatlich)", price: "9.99", priceCurrency: "USD", description: "Unbegrenzte Wissensräume, klügere Wiederholungen, unbegrenzte KI-Aktivitäten und erweiterte Lern-Einblicke. 7 Tage kostenlos." },
+          { name: "Boost (jährlich)", price: "95.90", priceCurrency: "USD", description: "Boost mit jährlicher Abrechnung — 7,99 $/Monat, 20 % gespart. 7 Tage kostenlos." },
         ],
       },
     },

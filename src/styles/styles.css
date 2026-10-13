@@ -610,8 +610,8 @@ main {
 }
 
 .feat-cat-mini {
-  background: radial-gradient(ellipse 100.27% 100.27% at 63.28% 100%, #04010E 0%, #231358 100%);
   border-radius: 16px;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.18);
   width: 64px;
   height: 64px;
   position: absolute;
@@ -624,13 +624,13 @@ main {
   animation-delay: -0.8s;
 }
 
+/* Full app-icon image; swapped via CSS since Features.astro lives in landing-kit. */
 .feat-cat-mini img {
-  position: absolute;
-  top: -2px;
-  left: -10px;
-  width: 116px;
-  max-width: none;
-  height: auto;
+  content: url("/assets/Cat_box.png");
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .feat-ai-badge {
@@ -921,7 +921,7 @@ main {
 /* ── CTA section ── */
 .cta {
   padding: 100px 9vw;
-  background: linear-gradient(180deg, #F3F3F3 0%, #7C5CFF 50%, #312174 75%, #040013 100%);
+  background: #B4C6F0;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -1848,27 +1848,51 @@ html.is-es .locale-en {
 
 .lead-modal__close {
   position: absolute;
-  top: 16px;
-  right: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
+  top: 10px;
+  right: 10px;
+  width: 44px;
+  height: 44px;
+  padding: 0;
   border: none;
-  border-radius: 10px;
-  background: rgba(8, 3, 27, 0.05);
+  border-radius: 12px;
+  background: transparent;
   color: #1C1C1C;
   cursor: pointer;
   transition: background 0.2s;
 }
 
 .lead-modal__close:hover {
-  background: rgba(8, 3, 27, 0.1);
+  background: rgba(8, 3, 27, 0.05);
+}
+
+.lead-modal__close:focus-visible {
+  outline: 2px solid #4C27E3;
+  outline-offset: 2px;
+}
+
+/* Cross drawn exactly like the open burger: two 20×2px rounded bars at ±45° */
+.lead-modal__close span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 2px;
+  margin: -1px 0 0 -10px;
+  border-radius: 2px;
+  background: currentColor;
+}
+
+.lead-modal__close span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.lead-modal__close span:nth-child(2) {
+  transform: rotate(-45deg);
 }
 
 .lead-modal__title {
   margin: 0 0 12px;
+  padding-right: 40px; /* keep long titles clear of the close button */
   font-family: 'Roboto Flex', sans-serif;
   font-size: 24px;
   font-weight: 600;
@@ -2019,13 +2043,11 @@ html[data-theme="dark"] header.scrolled {
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
-/* Logo — swap to pre-generated white variant on dark. `content: url()`
-   replaces the image source at the CSS layer, preserving intrinsic
-   dimensions and alt text. Pre-generated with the FLUXO letters and
-   O ring inverted to white while preserving the cat's grayscale
-   details (glasses, eyes, ears). See scripts/gen-dark-logo.mjs. */
+/* Logo — on dark, use the same white-letters / purple-cat logo as the
+   footer. `content: url()` swaps the source at the CSS layer, keeping
+   the element's sizing and alt text. */
 html[data-theme="dark"] .logo img {
-  content: url("/assets/logo-fluxo-white.png");
+  content: url("/assets/LOGOFLUXOBlack.png");
 }
 
 /* Nav links */
@@ -2198,7 +2220,7 @@ html[data-theme="dark"] .faq-answer-inner p {
 
 /* CTA — flip gradient to bright brand accent from dark base */
 html[data-theme="dark"] .cta {
-  background: linear-gradient(180deg, #0A0716 0%, #2A158A 55%, #7C5CFF 100%);
+  background: #1C1040;
 }
 html[data-theme="dark"] .cta-form {
   background: rgba(255, 255, 255, 0.12);
@@ -2272,11 +2294,11 @@ html[data-theme="dark"] .lead-modal__dialog {
   box-shadow: 0px 24px 60px rgba(0, 0, 0, 0.55);
 }
 html[data-theme="dark"] .lead-modal__close {
-  background: rgba(255, 255, 255, 0.06);
+  background: transparent;
   color: #F5F2FF;
 }
 html[data-theme="dark"] .lead-modal__close:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.08);
 }
 html[data-theme="dark"] .lead-modal__title {
   color: #F5F2FF;
@@ -2380,4 +2402,936 @@ html[data-theme="dark"] .theme-toggle .theme-toggle-icon--sun {
   border-radius: 10px;
   margin: 8px 16px 4px;
   width: calc(100% - 32px);
+}
+
+/* ============================================================
+   Scroll reveal — blocks fade/slide in as they enter view.
+   Base hidden state is applied by JS (adds .reveal) so that
+   content stays visible if JS is disabled or fails.
+   ============================================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0s);
+  will-change: opacity, transform;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ============================================================
+   Pricing — Free + Boost layout, billing toggle, tag & mascot
+   ============================================================ */
+/* Mascot peeks past the card edge; never let it cause sideways scroll. */
+.pricing {
+  overflow-x: clip;
+}
+
+.pricing-card-wrap {
+  position: relative;
+  display: flex;
+}
+
+.pricing-card-wrap > .pricing-card {
+  flex: 1;
+  min-width: 0;
+}
+
+@media (min-width: 1025px) {
+  .pricing-grid--count-2 {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 820px;
+    margin-inline: auto;
+  }
+}
+
+/* Shared billing toggle, centred above the cards. */
+.pricing-billing {
+  display: flex;
+  justify-content: center;
+  margin: -24px 0 40px;
+}
+
+.pricing-toggle {
+  position: relative;
+  display: inline-flex;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0px 4px 7.5px rgba(8, 3, 27, 0.08);
+  outline: 1px solid white;
+  outline-offset: -1px;
+}
+
+.pricing-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 128px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: #6B6B6B;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.3;
+  cursor: pointer;
+  transition: background 0.25s, color 0.25s, box-shadow 0.25s;
+}
+
+.pricing-toggle-btn:hover {
+  color: #1C1C1C;
+}
+
+.pricing-toggle-btn[aria-checked="true"] {
+  background: #F4F4F4;
+  color: #1C1C1C;
+}
+
+.pricing-toggle-btn:focus-visible {
+  outline: 2px solid #4C27E3;
+  outline-offset: 2px;
+}
+
+/* Brand badge (Figma "Size=XS, Color=Brand"). */
+.pricing-save {
+  padding: 4px 8px;
+  border-radius: 8px;
+  background: #DBD4F9;
+  color: #2E1788;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 12px;
+}
+
+html[data-theme="dark"] .pricing-toggle {
+  background: rgba(255, 255, 255, 0.04);
+  outline-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.35);
+}
+html[data-theme="dark"] .pricing-toggle-btn {
+  color: #B8ABD6;
+}
+html[data-theme="dark"] .pricing-toggle-btn:hover {
+  color: #F5F2FF;
+}
+html[data-theme="dark"] .pricing-toggle-btn[aria-checked="true"] {
+  background: rgba(255, 255, 255, 0.10);
+  color: #F5F2FF;
+}
+
+/* BOOST label straddling the card's top edge. */
+.pricing-tag {
+  position: absolute;
+  top: -21px;
+  right: 24px;
+  height: 42px;
+  width: auto;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Sits before the card in the DOM, so the card hides the part tucked behind it.
+   Leans diagonally out of the right edge: body runs down-left behind the card,
+   head pokes out to the right. */
+.pricing-mascot {
+  --mascot-size: 200px;
+  position: absolute;
+  top: calc(50% - var(--mascot-size) * 0.58);
+  right: calc(var(--mascot-size) * -0.59);
+  width: var(--mascot-size);
+  height: auto;
+  transform: rotate(40deg);
+  transform-origin: 50% 50%;
+  filter: drop-shadow(0px 8px 16px rgba(28, 16, 64, 0.18));
+  pointer-events: none;
+  user-select: none;
+}
+
+/* No room beside the card on narrow screens: peek over its top edge instead. */
+@media (max-width: 1024px) {
+  .pricing-card-wrap--mascot {
+    margin-top: 112px;
+  }
+
+  .pricing-mascot {
+    top: -116px;
+    right: auto;
+    left: 24px;
+    width: 132px;
+    transform: rotate(-6deg);
+  }
+}
+
+.pricing-note {
+  margin: 6px 0 0;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #6B6B6B;
+}
+
+.pricing-card--featured .pricing-note {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.pricing-footnote {
+  margin: 0;
+  text-align: center;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #6B6B6B;
+}
+
+.pricing-card--featured .pricing-footnote {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+/* Equal-width digits so the rolling price doesn't jitter sideways. */
+.pricing-plan .pricing-amount {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Free card: soft translucent white, dimmer than its solid-white CTA (light theme only). */
+html:not([data-theme="dark"]) .pricing-card-wrap .pricing-card:not(.pricing-card--featured) {
+  background: rgba(255, 255, 255, 0.32);
+}
+
+html:not([data-theme="dark"]) .pricing-card-wrap .pricing-btn--secondary {
+  background: white;
+}
+
+/* Boost card: radial gradient from the Figma paywall frame, both themes. */
+.pricing-card-wrap .pricing-card--featured,
+html[data-theme="dark"] .pricing-card-wrap .pricing-card--featured {
+  padding-top: 32px;
+  background: radial-gradient(ellipse 190% 75% at 98% 22%, #2E1788 0%, #080417 100%);
+}
+
+/* Rolling price: each character sits in a slot that clips it vertically. */
+.pricing-digit {
+  position: relative;
+  display: inline-block;
+  clip-path: inset(-0.1em -0.25em);
+}
+
+.pricing-digit-char {
+  display: inline-block;
+}
+
+.pricing-digit-char--out {
+  position: absolute;
+  inset: 0;
+}
+
+/* Sliding pill behind the active toggle option (positioned by JS). */
+.pricing-toggle-indicator {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 0;
+  width: 0;
+  border-radius: 10px;
+  background: #F4F4F4;
+  opacity: 0;
+  transition:
+    transform 0.45s cubic-bezier(0.34, 1.25, 0.64, 1),
+    width 0.45s cubic-bezier(0.34, 1.25, 0.64, 1);
+  pointer-events: none;
+}
+
+.pricing-toggle.has-indicator .pricing-toggle-indicator {
+  opacity: 1;
+}
+
+.pricing-toggle-btn {
+  position: relative;
+  z-index: 1;
+}
+
+.pricing-toggle.has-indicator .pricing-toggle-btn[aria-checked="true"] {
+  background: transparent;
+  box-shadow: none;
+}
+
+html[data-theme="dark"] .pricing-toggle-indicator {
+  background: rgba(255, 255, 255, 0.10);
+}
+
+/* Monthly/yearly blocks share one cell and cross-fade instead of popping. */
+.pricing-plans {
+  display: grid;
+}
+
+.pricing-plan {
+  grid-area: 1 / 1;
+}
+
+.pricing-plan .pricing-period,
+.pricing-plan .pricing-note {
+  transition:
+    opacity 0.35s ease,
+    filter 0.35s ease,
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.pricing-plan[data-active="false"] {
+  visibility: hidden;
+  transition: visibility 0s linear 0.35s;
+  pointer-events: none;
+}
+
+.pricing-plan[data-active="false"] .pricing-period,
+.pricing-plan[data-active="false"] .pricing-note {
+  opacity: 0;
+  filter: blur(4px);
+  transform: translateY(-6px);
+}
+
+.pricing-plan[data-active="true"] .pricing-period,
+.pricing-plan[data-active="true"] .pricing-note {
+  transition-delay: 0.08s;
+}
+
+/* The amount rolls on its own, so the outgoing one just disappears. */
+.pricing-plan[data-active="false"] .pricing-amount {
+  opacity: 0;
+}
+
+/* CheckFat icon instead of the round check badge, tinted per card. */
+.pricing-card-wrap .pricing-features li .check--yes {
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  border-radius: 0;
+  font-size: 0;
+  color: transparent;
+  background: #4C27E3;
+  -webkit-mask: url("/assets/CheckFat/bold.svg") center / contain no-repeat;
+  mask: url("/assets/CheckFat/bold.svg") center / contain no-repeat;
+}
+
+.pricing-card-wrap .pricing-card--featured .pricing-features li .check--yes,
+html[data-theme="dark"] .pricing-card-wrap .pricing-card--featured .pricing-features li .check--yes {
+  background: white;
+}
+
+html[data-theme="dark"] .pricing-card-wrap .pricing-features li .check--yes {
+  background: #9377FF;
+}
+
+/* ============================================================
+   CTA photo → footer: soft fade into the footer colour,
+   white footer in light theme, original dark footer in dark.
+   ============================================================ */
+.cta {
+  --cta-fade-to: #F3F3F3;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 260px;
+}
+
+/* Photo on its own layer so it can animate in independently of the text. */
+.cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/assets/footer-bg-light.jpg") center 60% / cover no-repeat;
+  transform-origin: 50% 70%;
+  pointer-events: none;
+}
+
+html[data-theme="dark"] .cta::before {
+  background-image: url("/assets/footer-bg-dark.jpg");
+}
+
+/* JS adds .cta--bg-anim (so no-JS keeps the photo visible), then .is-bg-visible on scroll. */
+.cta--bg-anim::before {
+  opacity: 0;
+  transform: scale(1.08);
+  filter: blur(6px);
+  transition:
+    opacity 0.9s ease,
+    transform 1.4s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 1s ease;
+}
+
+.cta--bg-anim.is-bg-visible::before {
+  opacity: 1;
+  transform: none;
+  filter: none;
+}
+
+html[data-theme="dark"] .cta {
+  --cta-fade-to: #040013;
+}
+
+/* Fade rectangle along the bottom edge of the photo. */
+.cta::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 320px;
+  /* Starts from a transparent grass green and eases into the page grey;
+     extra stops approximate an ease-in-out curve so there's no visible band. */
+  background: linear-gradient(
+    to bottom,
+    rgba(120, 168, 76, 0) 0%,
+    rgba(138, 178, 98, 0.06) 12%,
+    rgba(160, 192, 126, 0.16) 26%,
+    rgba(186, 207, 160, 0.32) 40%,
+    rgba(208, 220, 192, 0.5) 54%,
+    rgba(225, 231, 217, 0.68) 67%,
+    rgba(236, 238, 233, 0.84) 80%,
+    rgba(242, 242, 241, 0.95) 91%,
+    var(--cta-fade-to) 100%
+  );
+  pointer-events: none;
+}
+
+html[data-theme="dark"] .cta::after {
+  background: linear-gradient(to bottom, rgba(4, 0, 19, 0) 0%, var(--cta-fade-to) 100%);
+}
+
+.cta > * {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 640px) {
+  .cta {
+    padding-bottom: 200px;
+  }
+
+  .cta::after {
+    height: 240px;
+  }
+}
+
+/* Light theme footer: page background (#F3F3F3) with dark text and black logo. */
+html:not([data-theme="dark"]) .footer {
+  background: #F3F3F3;
+  color: rgba(28, 28, 28, 0.55);
+}
+
+html:not([data-theme="dark"]) .footer-brand > img {
+  content: url("/assets/logo-fluxo.png");
+}
+
+html:not([data-theme="dark"]) .footer-col-title {
+  color: rgba(28, 28, 28, 0.45);
+}
+
+html:not([data-theme="dark"]) .footer-links li a {
+  color: #545454;
+}
+
+html:not([data-theme="dark"]) .footer-links li a:hover {
+  color: #1C1C1C;
+}
+
+html:not([data-theme="dark"]) .footer-copy,
+html:not([data-theme="dark"]) .footer-consent {
+  color: rgba(28, 28, 28, 0.45);
+}
+
+html:not([data-theme="dark"]) .footer-consent:hover {
+  color: #1C1C1C;
+}
+
+/* Icons ship white; turn them dark on the light footer. */
+html:not([data-theme="dark"]) .footer-social-btn img {
+  filter: brightness(0);
+}
+
+html:not([data-theme="dark"]) .footer-social-btn svg [stroke] {
+  stroke: #1C1C1C;
+}
+
+html:not([data-theme="dark"]) .footer-social-btn svg [fill]:not([fill="none"]) {
+  fill: #1C1C1C;
+}
+
+/* Note sits 16px under the email field (section gap is 32px). */
+.cta-note {
+  margin-top: -16px;
+}
+
+/* Light theme: the photo is bright, so lift CTA text contrast. */
+html:not([data-theme="dark"]) .cta-note {
+  color: #FFFFFF;
+}
+
+html:not([data-theme="dark"]) .cta-form input::placeholder {
+  color: rgba(255, 255, 255, 0.80);
+}
+
+/* Footer social buttons — same look as the header's icon buttons
+   (theme toggle / language switch) for consistency. Default = dark footer. */
+.footer-social-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  outline: 1px solid rgba(255, 255, 255, 0.1);
+  outline-offset: -1px;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  transition: background 0.2s ease, outline-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.footer-social-btn svg,
+.footer-social-btn img,
+.footer-social-btn:hover svg,
+.footer-social-btn:hover img {
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+}
+
+.footer-social-btn:hover {
+  background: rgba(255, 255, 255, 0.09);
+  outline: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+html:not([data-theme="dark"]) .footer-social-btn {
+  background: rgba(255, 255, 255, 0.5);
+  outline: 1px solid white;
+  box-shadow: 0px 4px 7.5px rgba(8, 3, 27, 0.08);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+html:not([data-theme="dark"]) .footer-social-btn:hover {
+  background: rgba(255, 255, 255, 1);
+  outline-color: white;
+  box-shadow: none;
+}
+
+.footer-social-btn:focus-visible {
+  outline: 2px solid #4C27E3;
+  outline-offset: 2px;
+}
+
+/* Header utility buttons (language, theme, burger) — tertiary hierarchy:
+   no fill, no outline; only a faint hover fill, so "Get started" stays the focal point. */
+.lang-switch-btn,
+.theme-toggle,
+.burger,
+html[data-theme="dark"] .lang-switch-btn,
+html[data-theme="dark"] .theme-toggle,
+html[data-theme="dark"] .burger {
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.lang-switch-btn,
+.theme-toggle,
+.burger,
+html[data-theme="dark"] .lang-switch-btn,
+html[data-theme="dark"] .theme-toggle,
+html[data-theme="dark"] .burger {
+  outline: none;
+}
+
+.lang-switch-btn:hover,
+.theme-toggle:hover,
+.burger:hover {
+  background: rgba(8, 3, 27, 0.05);
+  box-shadow: none;
+}
+
+html[data-theme="dark"] .lang-switch-btn:hover,
+html[data-theme="dark"] .theme-toggle:hover,
+html[data-theme="dark"] .burger:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.lang-switch-btn:focus-visible,
+.theme-toggle:focus-visible,
+.burger:focus-visible {
+  outline: 2px solid #4C27E3;
+  outline-offset: 2px;
+}
+
+/* Language + theme sit flush as one tertiary cluster; keep a gap before the CTA. */
+.header-right {
+  gap: 0;
+}
+
+.header-right > .btn-secondary {
+  margin-left: 8px;
+}
+
+/* While the inline nav is visible, give the logo side the same width as the
+   actions side so the nav sits truly centred instead of drifting left. */
+@media (min-width: 992px) {
+  .header-wrapper {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+  }
+
+  .header-wrapper > .logo {
+    justify-self: start;
+  }
+
+  .header-wrapper > .header-end {
+    justify-self: end;
+  }
+}
+
+/* Lenis smooth scroll — required base styles (from lenis/dist/lenis.css). */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis:not(.lenis-autoToggle).lenis-stopped {
+  overflow: clip;
+}
+
+.lenis [data-lenis-prevent],
+.lenis [data-lenis-prevent-wheel],
+.lenis [data-lenis-prevent-touch] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* ============================================================
+   Tablet + mobile header (≤991px), modelled on relume.ai:
+   compact bar (smaller logo, 32px CTA, burger) and a full-screen
+   menu with links, the theme switch and two actions pinned to the
+   bottom. Theme toggle lives in the menu here, not in the bar.
+   ============================================================ */
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 64px;
+    padding: 0 20px;
+  }
+
+  .logo {
+    padding-right: 0;
+  }
+
+  .logo img {
+    width: auto;
+    height: 30px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .header-end {
+    gap: 4px;
+  }
+
+  .header-right > .theme-toggle {
+    display: none;
+  }
+
+  /* Compact CTA: smaller than desktop but still an easy tap target */
+  .header-wrapper .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    height: 36px;
+    padding: 0 14px;
+    border-radius: 10px;
+    font-size: 15px;
+  }
+
+  .header-right > .btn-secondary {
+    margin-left: 4px;
+  }
+
+  .lang-switch-btn {
+    height: 36px;
+  }
+
+  /* Burger: 44px hit area. Whole-pixel bars (2px + 6px gap = 10px, centred in 44px)
+     so both lines land on the pixel grid and render with identical weight. */
+  .burger {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .burger span {
+    flex: none;
+    width: 20px;
+    height: 2px;
+  }
+
+  .burger.open span:nth-child(1) { transform: translateY(4px) rotate(45deg); }
+  .burger.open span:nth-child(2) { transform: translateY(-4px) rotate(-45deg); }
+
+  /* While the menu is open the bar turns solid so it reads as the menu's top row, and
+     drops its backdrop-filter — a filter would make the header the containing block for
+     the fixed menu, so it couldn't cover the whole screen. */
+  header {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  header:has(.mobile-nav.open) {
+    background: #f3f3f3;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  html[data-theme="dark"] header:has(.mobile-nav.open) {
+    background: #0a0716;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  /* Full-screen sheet: edge to edge, no rounding, sits under the header bar (z-index -1
+     inside the header's stacking context) so the bar stays on top as its first row.
+     Always rendered; opened/closed with opacity + a small slide so it never jumps. */
+  .mobile-nav {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100dvh;
+    padding: calc(64px + 24px) 20px calc(16px + env(safe-area-inset-bottom));
+    border: 0;
+    border-radius: 0;
+    background: #f3f3f3;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition:
+      opacity 0.28s ease,
+      visibility 0s linear 0.28s;
+  }
+
+  html[data-theme="dark"] .mobile-nav {
+    background: #0a0716;
+  }
+
+  .mobile-nav.open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition:
+      opacity 0.28s ease,
+      visibility 0s linear 0s;
+  }
+
+  /* Hairline under the bar while open */
+  .mobile-nav::before {
+    content: "";
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: rgba(8, 3, 27, 0.06);
+  }
+
+  html[data-theme="dark"] .mobile-nav::before {
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  /* Content glides in after the sheet, top to bottom; on close it simply fades with it. */
+  .mobile-nav-links > *,
+  .mobile-nav-theme,
+  .mobile-nav-actions {
+    opacity: 0;
+    transform: translateY(10px);
+    transition:
+      opacity 0.2s ease,
+      transform 0.2s ease;
+  }
+
+  .mobile-nav.open .mobile-nav-links > *,
+  .mobile-nav.open .mobile-nav-theme,
+  .mobile-nav.open .mobile-nav-actions {
+    opacity: 1;
+    transform: none;
+    transition:
+      opacity 0.4s ease,
+      transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .mobile-nav.open .mobile-nav-links > :nth-child(1) { transition-delay: 0.06s; }
+  .mobile-nav.open .mobile-nav-links > :nth-child(2) { transition-delay: 0.1s; }
+  .mobile-nav.open .mobile-nav-links > :nth-child(3) { transition-delay: 0.14s; }
+  .mobile-nav.open .mobile-nav-links > :nth-child(4) { transition-delay: 0.18s; }
+  .mobile-nav.open .mobile-nav-links > :nth-child(5) { transition-delay: 0.22s; }
+  .mobile-nav.open .mobile-nav-theme { transition-delay: 0.24s; }
+  .mobile-nav.open .mobile-nav-actions { transition-delay: 0.28s; }
+
+  .mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mobile-nav .nav-link {
+    padding: 0;
+    border: 0;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .mobile-nav-theme {
+    margin-top: 32px;
+  }
+
+  .mobile-nav-theme .theme-toggle {
+    margin-left: -10px;
+    background: transparent;
+    box-shadow: none;
+    outline: none;
+  }
+
+  /* Actions pinned to the bottom of the menu */
+  .mobile-nav-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: auto;
+    padding-top: 24px;
+  }
+
+  .mobile-nav-actions .btn-primary,
+  .mobile-nav-actions .btn-secondary {
+    justify-content: center;
+    width: 100%;
+    height: 44px;
+    padding: 0 16px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .mobile-nav-actions .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+  }
+}
+
+/* ============================================================
+   Responsive type + button scale. Desktop sizes stay as they are;
+   tablet and mobile step everything down so the page isn't bulky.
+   ============================================================ */
+@media (max-width: 991px) {
+  .hero h1 {
+    font-size: 44px;
+    line-height: 1.08;
+  }
+
+  .hero-body {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .section-title,
+  .cta-title {
+    font-size: 36px;
+    line-height: 1.1;
+  }
+
+  /* Large CTAs (hero + "Get started" under Features): 50px instead of 60px */
+  .hero-buttons .btn-primary,
+  .hero-buttons .btn-secondary,
+  .features-cta .btn-primary {
+    padding: 12px 22px;
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .pricing-amount {
+    font-size: 42px;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero h1 {
+    font-size: 36px;
+    line-height: 1.1;
+  }
+
+  .hero-body {
+    font-size: 15px;
+  }
+
+  .section-title,
+  .cta-title,
+  .pricing-header .section-title,
+  .faq-header .section-title {
+    font-size: 30px;
+    line-height: 1.15;
+  }
+
+  /* 48px tall, 16px text */
+  .hero-buttons .btn-primary,
+  .hero-buttons .btn-secondary,
+  .features-cta .btn-primary {
+    padding: 12px 20px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .features-cta .btn-primary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .pricing-name {
+    font-size: 22px;
+  }
+
+  .pricing-amount {
+    font-size: 38px;
+  }
+
+  .faq-question {
+    font-size: 16px;
+  }
 }
