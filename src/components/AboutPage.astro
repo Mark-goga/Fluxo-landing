@@ -870,16 +870,24 @@ const isBold = (r: AboutParagraph[number]): r is { b: string } => typeof r !== "
     color: #545454;
   }
 
-  @media (max-width: 960px) {
+  @media (max-width: 1023px) {
     .about-people {
       flex-wrap: wrap;
       gap: 32px 20px;
       min-height: 0;
     }
 
+    /* Text takes the whole first row (its 520px desktop cap would otherwise let a note
+       squeeze in beside it); the two notes sit side by side on the row below. */
     .about-people-center {
       flex: 1 0 100%;
+      max-width: 100%;
       padding-top: 0;
+    }
+
+    .about-people-quote {
+      max-width: 520px;
+      margin-inline: auto;
     }
 
     .about-note {
