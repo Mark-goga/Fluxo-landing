@@ -748,7 +748,11 @@ const isBold = (r: AboutParagraph[number]): r is { b: string } => typeof r !== "
   .about-people::before {
     top: 0;
     bottom: 0;
-    background: url("/assets/footer-bg-light.jpg") center 60% / cover no-repeat;
+    /* Zoomed in on the field and the tree-lined slope: the image is ~1.9× the block's
+       height and anchored to its bottom, so the horizon sits about a quarter of the way
+       down with only a sliver of sky above it — the page opens on the sky (hero) and
+       closes on the grass. */
+    background: url("/assets/footer-bg-light.jpg") 70% 100% / auto 190% no-repeat;
     -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 180px);
     mask-image: linear-gradient(to bottom, transparent 0, #000 180px);
   }
