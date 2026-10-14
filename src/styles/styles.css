@@ -2988,12 +2988,13 @@ html[data-theme="dark"] .burger:hover {
   margin-left: 8px;
 }
 
-/* While the inline nav is visible, give the logo side the same width as the
-   actions side so the nav sits truly centred instead of drifting left. */
-@media (min-width: 1024px) {
+/* While the inline nav is visible (≥920px — the narrowest width where the full desktop
+   header fits in every locale), give both sides equal columns so the nav sits truly
+   centred; minmax(max-content, 1fr) keeps it from ever overlapping. */
+@media (min-width: 920px) {
   .header-wrapper {
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: minmax(max-content, 1fr) auto minmax(max-content, 1fr);
   }
 
   .header-wrapper > .logo {
@@ -3026,7 +3027,7 @@ html.lenis body {
 }
 
 /* ============================================================
-   Mobile header (≤767px), modelled on relume.ai:
+   Burger header (≤919px), modelled on relume.ai:
    compact bar (smaller logo, 32px CTA, burger) and a full-screen
    menu with links, the theme switch and two actions pinned to the
    bottom. Theme toggle lives in the menu here, not in the bar.
@@ -3035,7 +3036,7 @@ html.lenis body {
   display: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 919px) {
   .header-wrapper {
     display: flex;
     justify-content: space-between;
@@ -3333,63 +3334,5 @@ html.lenis body {
 
   .faq-question {
     font-size: 16px;
-  }
-}
-
-/* ============================================================
-   Tablet header (768–1023px): keep the inline nav, just tighter —
-   compact logo/CTA, side padding and link spacing — so the burger is
-   only needed on phones. Side columns are minmax(max-content, 1fr):
-   the nav sits dead centre whenever there's room, and only drifts
-   (never overlaps) when a long locale needs the space.
-   ============================================================ */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .header-wrapper {
-    display: grid;
-    grid-template-columns: minmax(max-content, 1fr) auto minmax(max-content, 1fr);
-    align-items: center;
-    column-gap: 16px;
-    box-sizing: border-box;
-    height: 64px;
-    padding: 0 24px;
-  }
-
-  .header-wrapper > .logo {
-    justify-self: start;
-    padding-right: 0;
-  }
-
-  .header-wrapper > .header-end {
-    justify-self: end;
-  }
-
-  .logo img {
-    width: auto;
-    height: 30px;
-  }
-
-  .nav {
-    gap: 20px;
-  }
-
-  .header-end {
-    gap: 4px;
-  }
-
-  .header-wrapper .btn-secondary {
-    display: inline-flex;
-    align-items: center;
-    height: 36px;
-    padding: 0 14px;
-    border-radius: 10px;
-    font-size: 15px;
-  }
-
-  .header-right > .btn-secondary {
-    margin-left: 4px;
-  }
-
-  .burger {
-    display: none;
   }
 }
