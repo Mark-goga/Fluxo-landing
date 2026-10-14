@@ -22,6 +22,7 @@ export type AboutContent = {
   why: AboutParagraph[];
   peopleQuote: string;
   peopleLabel: string;
+  // Job titles use non-breaking spaces (\u00a0) so they wrap as a whole, never mid-title.
   founders: [{ name: string; role: string }, { name: string; role: string }];
 };
 
@@ -87,8 +88,8 @@ export const aboutContent: Record<LocaleKey, AboutContent> = {
     peopleQuote: "Born from our needs and shaped by yours",
     peopleLabel: "The people behind Fluxo",
     founders: [
-      { name: "Sofiya", role: "Co-founder & UX/UI Designer" },
-      { name: "Markiian", role: "Co-founder & Developer" },
+      { name: "Sofiya", role: "Co-founder & Product\u00a0Designer" },
+      { name: "Markiian", role: "Co-founder & Full\u00a0Stack\u00a0Developer" },
     ],
   },
 
@@ -140,8 +141,8 @@ export const aboutContent: Record<LocaleKey, AboutContent> = {
     peopleQuote: "Народжений з наших потреб і сформований вашими",
     peopleLabel: "Люди, які стоять за Fluxo",
     founders: [
-      { name: "Софія", role: "Співзасновниця, UX/UI-дизайнерка" },
-      { name: "Маркіян", role: "Співзасновник, розробник" },
+      { name: "Софія", role: "Співзасновниця, Product\u00a0Designer" },
+      { name: "Маркіян", role: "Співзасновник, Full\u00a0Stack\u00a0Developer" },
     ],
   },
 
@@ -193,8 +194,8 @@ export const aboutContent: Record<LocaleKey, AboutContent> = {
     peopleQuote: "Nacido de nuestras necesidades, moldeado por las tuyas",
     peopleLabel: "Las personas detrás de Fluxo",
     founders: [
-      { name: "Sofiya", role: "Cofundadora y diseñadora UX/UI" },
-      { name: "Markiian", role: "Cofundador y desarrollador" },
+      { name: "Sofiya", role: "Cofundadora y Product\u00a0Designer" },
+      { name: "Markiian", role: "Cofundador y Full\u00a0Stack\u00a0Developer" },
     ],
   },
 
@@ -246,8 +247,8 @@ export const aboutContent: Record<LocaleKey, AboutContent> = {
     peopleQuote: "Aus unseren Bedürfnissen entstanden, von deinen geprägt",
     peopleLabel: "Die Menschen hinter Fluxo",
     founders: [
-      { name: "Sofiya", role: "Mitgründerin & UX/UI-Designerin" },
-      { name: "Markiian", role: "Mitgründer & Entwickler" },
+      { name: "Sofiya", role: "Mitgründerin & Product\u00a0Designer" },
+      { name: "Markiian", role: "Mitgründer & Full\u00a0Stack\u00a0Developer" },
     ],
   },
 };
