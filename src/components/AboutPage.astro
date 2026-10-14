@@ -712,15 +712,76 @@ const isBold = (r: AboutParagraph[number]): r is { b: string } => typeof r !== "
 
 
   /* ── People ──────────────────────────────── */
+  /* Same artwork + fade as the block above the footer on the homepage (.cta): the sky/
+     field photo bleeds edge to edge, fades in from the page at the top and into the
+     footer colour at the bottom. Text on it is white, like on the homepage. */
   .about-people {
+    --people-fade-to: #f3f3f3;
+    --text: #ffffff;
+    --text-tertiary: rgba(255, 255, 255, 0.85);
     position: relative;
+    isolation: isolate;
     max-width: 1072px;
-    min-height: 480px;
+    min-height: 600px;
     margin: 0 auto;
-    padding: 40px 24px 160px;
+    padding: 160px 24px 260px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
+  }
+
+  :global(html[data-theme="dark"]) .about-people {
+    --people-fade-to: #040013;
+  }
+
+  .about-people::before,
+  .about-people::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 100vw;
+    translate: -50% 0;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  .about-people::before {
+    top: 0;
+    bottom: 0;
+    background: url("/assets/footer-bg-light.jpg") center 60% / cover no-repeat;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 180px);
+    mask-image: linear-gradient(to bottom, transparent 0, #000 180px);
+  }
+
+  :global(html[data-theme="dark"]) .about-people::before {
+    background-image: url("/assets/footer-bg-dark.jpg");
+  }
+
+  /* Bottom fade into the footer — same eased stops as the homepage */
+  .about-people::after {
+    bottom: -1px;
+    height: 320px;
+    background: linear-gradient(
+      to bottom,
+      rgba(120, 168, 76, 0) 0%,
+      rgba(138, 178, 98, 0.06) 12%,
+      rgba(160, 192, 126, 0.16) 26%,
+      rgba(186, 207, 160, 0.32) 40%,
+      rgba(208, 220, 192, 0.5) 54%,
+      rgba(225, 231, 217, 0.68) 67%,
+      rgba(236, 238, 233, 0.84) 80%,
+      rgba(242, 242, 241, 0.95) 91%,
+      var(--people-fade-to) 100%
+    );
+  }
+
+  :global(html[data-theme="dark"]) .about-people::after {
+    background: linear-gradient(to bottom, rgba(4, 0, 19, 0) 0%, var(--people-fade-to) 100%);
+  }
+
+  .about-people-quote,
+  .about-people-label {
+    text-shadow: 0 1px 18px rgba(38, 44, 120, 0.32);
   }
 
   .about-people-center {
@@ -812,14 +873,14 @@ const isBold = (r: AboutParagraph[number]): r is { b: string } => typeof r !== "
   .about-note--left {
     --tilt: -7deg;
     left: calc(50% - 470px);
-    top: 72px;
+    top: 192px;
     background: #e0e1ff;
   }
 
   .about-note--right {
     --tilt: 6deg;
     right: calc(50% - 470px);
-    top: 150px;
+    top: 270px;
     background: #feffc2;
   }
 
@@ -962,7 +1023,11 @@ const isBold = (r: AboutParagraph[number]): r is { b: string } => typeof r !== "
 
 
     .about-people {
-      padding: 24px 16px 112px;
+      padding: 120px 16px 200px;
+    }
+
+    .about-people::after {
+      height: 240px;
     }
 
 
