@@ -3336,3 +3336,27 @@ html.lenis body {
     font-size: 16px;
   }
 }
+
+/* Blog index title: same type as the homepage H1 (.hero h1) instead of the kit's
+   heavy 800 display weight. Extra `main` keeps it above the kit's scoped rule. */
+main .blog-hub .blog-title {
+  font-size: clamp(40px, 5vw, 64px);
+  font-weight: 450;
+  font-variation-settings: normal;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 991px) {
+  main .blog-hub .blog-title {
+    font-size: 44px;
+    line-height: 1.08;
+  }
+}
+
+@media (max-width: 640px) {
+  main .blog-hub .blog-title {
+    font-size: 36px;
+    line-height: 1.1;
+  }
+}
