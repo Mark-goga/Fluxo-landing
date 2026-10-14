@@ -525,7 +525,7 @@ export const landingContent = {
         { label: "Можливості", href: "#features" },
         { label: "Тарифи", href: "#pricing" },
         { label: "Блог", href: "/uk/blog/" },
-        { label: "Про нас", href: "/about/" },
+        { label: "Про нас", href: "/uk/about/" },
       ],
       languageAria: "Змінити мову",
       cta: { label: "Почати", href: "#cta", clarityEvent: "header_cta_click" },
@@ -733,7 +733,7 @@ export const landingContent = {
         {
           title: "Компанія",
           links: [
-            { label: "Про нас", href: "/about/" },
+            { label: "Про нас", href: "/uk/about/" },
             { label: "Блог", href: "/uk/blog/" },
             { label: "Контакти", href: "/support/" },
             { label: "Політика конфіденційності", href: "/privacy/" },
@@ -824,7 +824,7 @@ export const landingContent = {
         { label: "Funciones", href: "#features" },
         { label: "Precios", href: "#pricing" },
         { label: "Blog", href: "/es/blog/" },
-        { label: "Sobre nosotros", href: "/about/" },
+        { label: "Sobre nosotros", href: "/es/about/" },
       ],
       languageAria: "Cambiar idioma",
       cta: { label: "Empieza ahora", href: "#cta", clarityEvent: "header_cta_click" },
@@ -1036,7 +1036,7 @@ export const landingContent = {
         {
           title: "Empresa",
           links: [
-            { label: "Sobre nosotros", href: "/about/" },
+            { label: "Sobre nosotros", href: "/es/about/" },
             { label: "Contacto", href: "/support/" },
             { label: "Política de privacidad", href: "/privacy/" },
             { label: "Política de cookies", href: "/cookies/" },
@@ -1126,7 +1126,7 @@ export const landingContent = {
         { label: "Funktionen", href: "#features" },
         { label: "Preise", href: "#pricing" },
         { label: "Blog", href: "/de/blog/" },
-        { label: "Über uns", href: "/about/" },
+        { label: "Über uns", href: "/de/about/" },
       ],
       languageAria: "Sprache wechseln",
       cta: { label: "Loslegen", href: "#cta", clarityEvent: "header_cta_click" },
@@ -1338,7 +1338,7 @@ export const landingContent = {
         {
           title: "Unternehmen",
           links: [
-            { label: "Über uns", href: "/about/" },
+            { label: "Über uns", href: "/de/about/" },
             { label: "Kontakt", href: "/support/" },
             { label: "Datenschutz", href: "/privacy/" },
             { label: "Cookie-Richtlinie", href: "/cookies/" },
