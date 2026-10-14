@@ -2,6 +2,7 @@
 import PageLayout from "@kit/layouts/PageLayout.astro";
 import Header from "@kit/components/Header.astro";
 import Footer from "@kit/components/Footer.astro";
+import LeadModal from "@kit/components/LeadModal.astro";
 import Breadcrumb, { type BreadcrumbItem } from "@kit/components/Breadcrumb.astro";
 import { siteConfig } from "@kit/config/site";
 import { landingContent, landingLanguageNav } from "@site/data/locales";
@@ -169,6 +170,7 @@ const founders = [
   </main>
 
   <Footer content={content} routePath={ABOUT_PATH} />
+  <LeadModal content={content} />
 </PageLayout>
 
 <script>

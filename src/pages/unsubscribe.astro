@@ -2,6 +2,7 @@
 import PageLayout from "@kit/layouts/PageLayout.astro";
 import Header from "@kit/components/Header.astro";
 import Footer from "@kit/components/Footer.astro";
+import LeadModal from "@kit/components/LeadModal.astro";
 import { siteConfig } from "@kit/config/site";
 import { landingContent, landingLanguageNav } from "@site/data/locales";
 
@@ -39,6 +40,7 @@ const toast = {
     <button type="button" class="btn-primary notfound-cta" data-unsubscribe>{copy.button}</button>
   </main>
   <Footer content={content} routePath={routePath} />
+  <LeadModal content={content} />
 
   <div class="lead-toast" data-lead-toast role="status" aria-live="polite" hidden></div>
 

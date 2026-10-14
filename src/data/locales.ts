@@ -525,7 +525,7 @@ export const landingContent = {
         { label: "Можливості", href: "#features" },
         { label: "Тарифи", href: "#pricing" },
         { label: "Блог", href: "/uk/blog/" },
-        { label: "Контакти", href: "#cta" },
+        { label: "Про нас", href: "/about/" },
       ],
       languageAria: "Змінити мову",
       cta: { label: "Почати", href: "#cta", clarityEvent: "header_cta_click" },
@@ -734,7 +734,7 @@ export const landingContent = {
           title: "Компанія",
           links: [
             { label: "Про нас", href: "/about/" },
-            { label: "Блог", href: "#" },
+            { label: "Блог", href: "/uk/blog/" },
             { label: "Контакти", href: "/support/" },
             { label: "Політика конфіденційності", href: "/privacy/" },
             { label: "Політика cookie", href: "/cookies/" },

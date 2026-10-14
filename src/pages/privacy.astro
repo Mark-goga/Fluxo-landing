@@ -2,6 +2,7 @@
 import PageLayout from "@kit/layouts/PageLayout.astro";
 import Header from "@kit/components/Header.astro";
 import Footer from "@kit/components/Footer.astro";
+import LeadModal from "@kit/components/LeadModal.astro";
 import PolicyDocument from "@kit/components/PolicyDocument.astro";
 import policyHtml from "@site/policies/policy-privacy.html?raw";
 import { siteConfig } from "@kit/config/site";
@@ -24,4 +25,5 @@ const languageNav = landingLanguageNav();
     <PolicyDocument html={policyHtml} />
   </main>
   <Footer content={content} routePath={routePath} />
+  <LeadModal content={content} />
 </PageLayout>
