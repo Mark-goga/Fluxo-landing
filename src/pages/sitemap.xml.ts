@@ -22,8 +22,15 @@ ${aboutAlternates}
   )
   .join("\n");
 
+// The kit lists /privacy/ and /cookies/ but not /terms/, which this site adds.
+const termsUrl = `  <url>
+    <loc>${absoluteUrl("/terms/")}</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>`;
+
 export async function GET() {
   const response = await kitSitemap();
-  const xml = (await response.text()).replace("</urlset>", `${aboutUrls}\n</urlset>`);
+  const xml = (await response.text()).replace("</urlset>", `${aboutUrls}\n${termsUrl}\n</urlset>`);
   return new Response(xml, { headers: response.headers });
 }

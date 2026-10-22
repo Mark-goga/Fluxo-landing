@@ -157,7 +157,7 @@ const isBold = (r: AboutParagraph[number]): r is { b: string } => typeof r !== "
   </main>
 
   <Footer content={content} routePath={ABOUT_PATH} />
-  <LeadModal content={content} />
+  <LeadModal content={content} routePath={ABOUT_PATH} />
 </PageLayout>
 
 <script>

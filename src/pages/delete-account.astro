@@ -1,0 +1,35 @@
+---
+import Page from "@kit/pages/delete-account.astro";
+import type { AccountDataItem } from "@kit/lib/account-deletion";
+
+const deletedData: AccountDataItem[] = [
+  { title: "Account profile", detail: "your name, email address, profile photo and the dates the account was created and last updated." },
+  { title: "Sign-in methods", detail: "your password (stored only as a hash) and your Google or Apple sign-in identifiers. If you used Sign in with Apple, we also revoke Fluxo's access with Apple." },
+  { title: "Sessions", detail: "sign-in tokens, device ID, platform and browser or app details for every device you signed in on." },
+  { title: "Onboarding answers and settings", detail: "the answers you gave during onboarding, your learning schedule and your other app settings." },
+  { title: "Notes, spaces and folders", detail: "every note with its text and structure, and the spaces and folders you organised them in." },
+  { title: "Images and files", detail: "the photos, images and files attached to your notes, removed from our cloud storage." },
+  { title: "Learning progress", detail: "your review history, quiz and flashcard results, activity days and streaks." },
+  { title: "AI study materials and credits", detail: "the summaries, quizzes and flashcards generated for your notes, and your AI credit balance." },
+  { title: "Content of AI requests", detail: "the note text we sent to our AI providers and the results they returned." },
+  { title: "Subscription records", detail: "the Fluxo subscription status we keep for your account: plan, store, status, trial and renewal dates, and the purchase events our billing provider sent us." },
+  { title: "Notification settings", detail: "registered notification devices (device token, platform, app version, language) and notifications addressed to you." },
+  { title: "Feedback and support requests", detail: "everything you sent us from the app, including the contact email and details attached to it." },
+  { title: "Early-access sign-up", detail: "the Fluxo waitlist entry for the same email address." },
+];
+
+const keptData: AccountDataItem[] = [
+  { title: "Email opt-out", detail: "if you unsubscribed from Fluxo emails, we keep your email address on the Fluxo opt-out list so we never email you again. It holds nothing else and is kept for as long as we send emails." },
+  { title: "Anonymous AI usage", detail: "for each past AI request we keep only the provider, model, token count, cost and date, with no content and no link to you, so that we can account for our AI costs." },
+  { title: "AI providers", detail: "OpenAI, Anthropic and TypeSafe AI may keep the requests we sent them for a limited time under their own policies, for example for abuse monitoring. They do not use them to train their models." },
+  { title: "Content on your devices", detail: "deleting the account in the app also erases your notes and files on that device. A request from this page cannot reach your devices — uninstall Fluxo or clear its data to remove the copy stored there." },
+  { title: "Purchase records", detail: "Apple App Store, Google Play and our billing provider RevenueCat keep their own transaction records under their policies and legal obligations. Deleting your account does not cancel an active subscription — cancel it in your store account first." },
+  { title: "Diagnostics", detail: "crash reports (Sentry) and usage analytics (Microsoft Clarity) are kept only for those providers' configured retention periods and are then deleted automatically." },
+];
+---
+<Page
+  supportEmail="fluxo.admin@gmail.com"
+  inAppOutcome="Confirm. Your account is deleted immediately, together with your notes, files and learning progress on our servers and on that device."
+  deletedData={deletedData}
+  keptData={keptData}
+/>

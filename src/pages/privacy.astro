@@ -3,8 +3,8 @@ import PageLayout from "@kit/layouts/PageLayout.astro";
 import Header from "@kit/components/Header.astro";
 import Footer from "@kit/components/Footer.astro";
 import LeadModal from "@kit/components/LeadModal.astro";
-import PolicyDocument from "@kit/components/PolicyDocument.astro";
-import policyHtml from "@site/policies/policy-privacy.html?raw";
+import PolicyMarkdownDocument from "@kit/components/PolicyMarkdownDocument.astro";
+import { Content } from "../legal/privacy.md";
 import { siteConfig } from "@kit/config/site";
 import { landingContent, landingLanguageNav } from "@site/data/locales";
 
@@ -22,8 +22,10 @@ const languageNav = landingLanguageNav();
 >
   <Header content={content} routePath={routePath} languageNav={languageNav} />
   <main class="legal-page">
-    <PolicyDocument html={policyHtml} />
+    <PolicyMarkdownDocument>
+      <Content />
+    </PolicyMarkdownDocument>
   </main>
   <Footer content={content} routePath={routePath} />
-  <LeadModal content={content} />
+  <LeadModal content={content} routePath={routePath} />
 </PageLayout>

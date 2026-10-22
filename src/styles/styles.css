@@ -1694,8 +1694,87 @@ main {
 .legal-page {
   max-width: 880px;
   margin: 0 auto;
-  padding: 64px 9vw 100px;
+  padding: 80px 9vw 100px;
   min-height: 60vh;
+}
+
+/* Markdown-rendered prose (terms / privacy) — consumed tokens only, dark mode
+   follows automatically via the html[data-theme="dark"] override. */
+.legal-page .legal-prose {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--article-text, #1C1C1C);
+}
+
+.legal-page .legal-prose h1,
+.legal-page .legal-prose h2,
+.legal-page .legal-prose h3 {
+  color: var(--article-heading, #0E0E0E);
+  font-weight: 500;
+  line-height: 1.25;
+  margin: 1.5em 0 0.5em;
+}
+
+.legal-page .legal-prose h1:first-child {
+  margin-top: 0;
+}
+
+.legal-page .legal-prose h1 {
+  font-size: 1.75rem;
+}
+
+.legal-page .legal-prose h2 {
+  font-size: 1.375rem;
+}
+
+.legal-page .legal-prose h3 {
+  font-size: 1.125rem;
+}
+
+.legal-page .legal-prose p {
+  color: var(--article-text, #1C1C1C);
+  margin: 0 0 16px;
+}
+
+.legal-page .legal-prose ul,
+.legal-page .legal-prose ol {
+  color: var(--article-text, #1C1C1C);
+  margin: 0 0 16px;
+  padding-left: 24px;
+}
+
+.legal-page .legal-prose li {
+  color: var(--article-text, #1C1C1C);
+  margin: 0 0 8px;
+}
+
+.legal-page .legal-prose a {
+  color: var(--article-accent, #4C27E3);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--article-accent, #4C27E3) 40%, transparent);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.15s, color 0.15s;
+}
+
+.legal-page .legal-prose a:hover {
+  text-decoration-color: var(--article-accent, #4C27E3);
+}
+
+.legal-page .legal-prose strong {
+  color: var(--article-heading, #0E0E0E);
+  font-weight: 600;
+}
+
+.legal-page .legal-prose em {
+  color: var(--article-text, #1C1C1C);
+  font-style: italic;
+}
+
+.legal-page .legal-prose hr {
+  border: 0;
+  border-top: 1px solid var(--article-border, #E8E8E8);
+  margin: 24px 0;
 }
 
 .legal-placeholder {

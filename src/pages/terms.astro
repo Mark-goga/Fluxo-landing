@@ -1,0 +1,31 @@
+---
+import PageLayout from "@kit/layouts/PageLayout.astro";
+import Header from "@kit/components/Header.astro";
+import Footer from "@kit/components/Footer.astro";
+import LeadModal from "@kit/components/LeadModal.astro";
+import PolicyMarkdownDocument from "@kit/components/PolicyMarkdownDocument.astro";
+import { Content } from "../legal/terms.md";
+import { siteConfig } from "@kit/config/site";
+import { landingContent, landingLanguageNav } from "@site/data/locales";
+
+const content = landingContent.en;
+const routePath = "/terms/";
+const languageNav = landingLanguageNav();
+---
+
+<PageLayout
+  title={`Terms of Use — ${siteConfig.name}`}
+  description={`The terms that govern your access to and use of ${siteConfig.name}.`}
+  canonicalPath="/terms/"
+  routePath={routePath}
+  lang="en"
+>
+  <Header content={content} routePath={routePath} languageNav={languageNav} />
+  <main class="legal-page">
+    <PolicyMarkdownDocument>
+      <Content />
+    </PolicyMarkdownDocument>
+  </main>
+  <Footer content={content} routePath={routePath} />
+  <LeadModal content={content} routePath={routePath} />
+</PageLayout>

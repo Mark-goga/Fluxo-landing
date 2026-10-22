@@ -139,6 +139,10 @@ export type LandingContent = {
     placeholder: string;
     submit: string;
     closeAria: string;
+    /** Small line above the store name on each store button. */
+    downloadOn: string;
+    appStoreLabel: string;
+    googlePlayLabel: string;
   };
   toast: {
     success: string;
@@ -410,6 +414,9 @@ export const landingContent = {
       placeholder: "Enter your email",
       submit: "Notify me",
       closeAria: "Close",
+      downloadOn: "Download on the",
+      appStoreLabel: "App Store",
+      googlePlayLabel: "Google Play",
     },
     toast: {
       success: "Thanks! You're on the early-access list.",
@@ -439,7 +446,7 @@ export const landingContent = {
             { label: "Contact", href: "/support/" },
             { label: "Privacy Policy", href: "/privacy/" },
             { label: "Cookie Policy", href: "/cookies/" },
-            { label: "Terms of Service", href: "#" },
+            { label: "Terms of Service", href: "/terms/" },
           ],
         },
         {
@@ -708,6 +715,9 @@ export const landingContent = {
       placeholder: "Введіть ваш email",
       submit: "Повідомити мене",
       closeAria: "Закрити",
+      downloadOn: "Завантажити з",
+      appStoreLabel: "App Store",
+      googlePlayLabel: "Google Play",
     },
     toast: {
       success: "Дякуємо! Ти у списку раннього доступу.",
@@ -738,7 +748,7 @@ export const landingContent = {
             { label: "Контакти", href: "/support/" },
             { label: "Політика конфіденційності", href: "/privacy/" },
             { label: "Політика cookie", href: "/cookies/" },
-            { label: "Умови використання", href: "#" },
+            { label: "Умови використання", href: "/terms/" },
           ],
         },
         {
@@ -1011,6 +1021,9 @@ export const landingContent = {
       placeholder: "Introduce tu email",
       submit: "Avísame",
       closeAria: "Cerrar",
+      downloadOn: "Descárgalo en",
+      appStoreLabel: "App Store",
+      googlePlayLabel: "Google Play",
     },
     toast: {
       success: "¡Gracias! Estás en la lista de acceso anticipado.",
@@ -1040,7 +1053,7 @@ export const landingContent = {
             { label: "Contacto", href: "/support/" },
             { label: "Política de privacidad", href: "/privacy/" },
             { label: "Política de cookies", href: "/cookies/" },
-            { label: "Términos del servicio", href: "#" },
+            { label: "Términos del servicio", href: "/terms/" },
           ],
         },
         {
@@ -1313,6 +1326,9 @@ export const landingContent = {
       placeholder: "Gib deine E-Mail ein",
       submit: "Benachrichtige mich",
       closeAria: "Schließen",
+      downloadOn: "Lade es im",
+      appStoreLabel: "App Store",
+      googlePlayLabel: "Google Play",
     },
     toast: {
       success: "Danke! Du bist auf der Early-Access-Liste.",
@@ -1342,7 +1358,7 @@ export const landingContent = {
             { label: "Kontakt", href: "/support/" },
             { label: "Datenschutz", href: "/privacy/" },
             { label: "Cookie-Richtlinie", href: "/cookies/" },
-            { label: "Nutzungsbedingungen", href: "#" },
+            { label: "Nutzungsbedingungen", href: "/terms/" },
           ],
         },
         {
