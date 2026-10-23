@@ -357,7 +357,7 @@ export const landingContent = {
             ariaLabel: "Billing period",
             defaultPlan: "monthly",
             monthly: { label: "Monthly", amount: "$9.99", period: "/ month", note: "Billed monthly" },
-            yearly: { label: "Yearly", amount: "$95.90", period: "/ year", note: "Just $7.99/month", saveLabel: "−20%" },
+            yearly: { label: "Yearly", amount: "$95,99", period: "/ year", note: "Just $7.99/month", saveLabel: "−20%" },
           },
           features: [
             { text: "Unlimited Knowledge Spaces & notes", included: true },
