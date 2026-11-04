@@ -1164,6 +1164,26 @@ main {
   z-index: 1;
 }
 
+.footer-badges {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-badges img {
+  display: block;
+  height: auto;
+}
+
+.footer-badges .footer-badge-light,
+html[data-theme="light"] .footer-badges .footer-badge-dark {
+  display: none;
+}
+
+html[data-theme="light"] .footer-badges .footer-badge-light {
+  display: block;
+}
+
 .footer-copy {
   font-family: 'Roboto Flex', sans-serif;
   font-size: 14px;

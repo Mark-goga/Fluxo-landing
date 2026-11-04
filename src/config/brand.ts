@@ -14,4 +14,13 @@ export const brandTokens: BrandTokens = {
   logoPath: "assets/logo-fluxo.png",
   twitterSite: "@fluxo_app",
   twitterCreator: "@fluxo_app",
+  footerBadges: [
+    {
+      href: "https://fazier.com",
+      imageUrl: "https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=dark",
+      imageUrlLight: "https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=light",
+      alt: "Fazier badge",
+      width: 120,
+    },
+  ],
 };
