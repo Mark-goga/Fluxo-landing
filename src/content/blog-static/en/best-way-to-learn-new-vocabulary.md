@@ -41,7 +41,7 @@ relatedPosts:
   - href: "/blog/how-to-study-effectively-for-long-term-retention/"
     title: "How to Study Effectively for Long-Term Retention"
     metaDescription: "Stop relearning the same material. These cognitive science principles for how to study effectively build durable memories from the first pass, for self-directed learners."
-    heroImage: "/assets/card-10.webp"
+    heroImage: "/assets/blog/card-10.webp"
   - href: "/blog/how-to-learn-without-forgetting/"
     title: "How to Learn Without Forgetting?"
     metaDescription: "You finish a book. You sit through a webinar. You save a dozen articles. And somewhere between the last page and real life, almost everything disappears."

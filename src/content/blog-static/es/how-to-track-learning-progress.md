@@ -42,14 +42,14 @@ relatedPosts:
     title: "¿Cómo recordar lo que aprendes?"
     metaDescription: "Lees. Terminas un curso. Tomas notas. Y una semana después ha desaparecido. No es un problema de memoria, es un problema de sistema."
     heroImage: "/assets/card-4.webp"
-  - href: "/es/blog/how-to-learn-without-forgetting/"
-    title: "¿Cómo aprender sin olvidar?"
-    metaDescription: "Terminas un libro. Asistes a un webinar. Guardas una docena de artículos. Y en algún punto entre la última página y la vida real, casi todo desaparece."
-    heroImage: "/assets/card-3.png"
   - href: "/es/blog/how-to-study-while-working-full-time/"
     title: "¿Cómo estudiar trabajando a tiempo completo?"
     metaDescription: "Quieres aprender algo nuevo. Un idioma, una habilidad, una materia que importa para tu carrera o solo para ti. Y tienes quizá 45 minutos al día, si todo sale bien."
     heroImage: "/assets/card-5.webp"
+  - href: "/es/blog/how-to-study-effectively-for-long-term-retention/"
+    title: "Cómo estudiar bien: recuerdo activo, espaciado e intercalado"
+    metaDescription: "Aprende cómo estudiar bien con recuerdo activo, repetición espaciada e intercalado, y aplícalo a tus propios apuntes en Fluxo para retener más."
+    heroImage: "/assets/blog/card-10.webp"
 ---
 La verdadera pregunta es: ¿cuánto retienes en realidad?
 

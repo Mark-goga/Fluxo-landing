@@ -45,11 +45,11 @@ relatedPosts:
   - href: "/blog/how-to-study-effectively-for-long-term-retention/"
     title: "How to Study Effectively for Long-Term Retention"
     metaDescription: "Stop relearning the same material. These cognitive science principles for how to study effectively build durable memories from the first pass, for self-directed learners."
-    heroImage: "/assets/card-10.webp"
+    heroImage: "/assets/blog/card-10.webp"
   - href: "/blog/how-to-remember-what-you-read-and-actually-retain-it/"
     title: "How to Remember What You Read (and Actually Retain It) Test"
     metaDescription: "Paper reading consistently outperforms screens for comprehension of informational text. Learn why the gap exists, what drives it, and how structured notes with spaced repetition close it for good."
-    heroImage: "/assets/card-9.webp"
+    heroImage: "/assets/blog/card-9.webp"
 ---
 That's actually enough. But only if you use it differently than students do.
 

@@ -41,7 +41,7 @@ relatedPosts:
   - href: "/blog/how-to-study-effectively-for-long-term-retention/"
     title: "How to Study Effectively for Long-Term Retention"
     metaDescription: "Stop relearning the same material. These cognitive science principles for how to study effectively build durable memories from the first pass, for self-directed learners."
-    heroImage: "/assets/card-10.webp"
+    heroImage: "/assets/blog/card-10.webp"
   - href: "/blog/how-to-study-while-working-full-time/"
     title: "How to Study While Working Full Time?"
     metaDescription: "You want to learn something new. A language, a skill, a subject that matters for your career or just for you. And you have maybe 45 minutes a day, if everything goes right."

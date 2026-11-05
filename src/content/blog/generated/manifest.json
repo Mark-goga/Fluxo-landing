@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rebuildId": "01a0e96b-3e27-73a2-8849-99343cc879f6",
+  "rebuildId": "01a1abe2-2fec-7739-9614-085020346743",
   "applicationId": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
   "posts": [
     {
@@ -295,7 +295,7 @@
       "locale": "en",
       "slug": "how-to-remember-books-long-term-the-page-one-review-method",
       "path": "src/content/blog/generated/en/how-to-remember-books-long-term-the-page-one-review-method.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a055fa-b6c2-7048-94c3-6a8d698bf6ec",
@@ -309,7 +309,7 @@
       "locale": "en",
       "slug": "how-to-remember-what-you-read-and-actually-retain-it",
       "path": "src/content/blog/generated/en/how-to-remember-what-you-read-and-actually-retain-it.mdx",
-      "includedInRebuild": false
+      "includedInRebuild": true
     },
     {
       "draftId": "01a06a78-14a4-707f-96f9-272150e03c29",
@@ -330,7 +330,7 @@
       "locale": "en",
       "slug": "how-to-study-effectively-for-long-term-retention",
       "path": "src/content/blog/generated/en/how-to-study-effectively-for-long-term-retention.mdx",
-      "includedInRebuild": false
+      "includedInRebuild": true
     },
     {
       "draftId": "01a0655a-05d9-7255-a134-8f7a6dfa0eff",
@@ -463,7 +463,7 @@
       "locale": "en",
       "slug": "notes-scattered-across-apps-fix-it-with-one-system",
       "path": "src/content/blog/generated/en/notes-scattered-across-apps-fix-it-with-one-system.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019ff41c-f37a-7769-97e6-4b120e203487",
@@ -561,7 +561,7 @@
       "locale": "en",
       "slug": "why-premade-flashcards-don-t-work-and-what-does",
       "path": "src/content/blog/generated/en/why-premade-flashcards-don-t-work-and-what-does.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a074db-dcb0-761a-9b6b-9a0fc27a7485",
@@ -576,6 +576,20 @@
       "slug": "zettelkasten-method-a-guide-for-note-takers",
       "path": "src/content/blog/generated/en/zettelkasten-method-a-guide-for-note-takers.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1aa59-10c5-7199-aa85-e5ba3d21b50f",
+      "locale": "es",
+      "slug": "how-to-remember-what-you-read-and-actually-retain-it",
+      "path": "src/content/blog/generated/es/how-to-remember-what-you-read-and-actually-retain-it.mdx",
+      "includedInRebuild": true
+    },
+    {
+      "draftId": "01a1aa5d-0438-753d-a905-556a7e6d1749",
+      "locale": "es",
+      "slug": "how-to-study-effectively-for-long-term-retention",
+      "path": "src/content/blog/generated/es/how-to-study-effectively-for-long-term-retention.mdx",
+      "includedInRebuild": true
     }
   ]
 }

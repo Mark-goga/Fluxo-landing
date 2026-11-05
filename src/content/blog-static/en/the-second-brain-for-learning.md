@@ -49,7 +49,7 @@ relatedPosts:
   - href: "/blog/the-study-workflow-that-turns-notes-into-applied-knowledge/"
     title: "The Study Workflow That Turns Notes Into Applied Knowledge"
     metaDescription: "Most study workflows plateau at understanding and never reach application. This guide shows how to write to think, build atomic notes, and use spaced repetition to reach the knowledge tier that actually transfers to real problems."
-    heroImage: "/assets/card-11.webp"
+    heroImage: "/assets/blog/card-11.webp"
 ---
 Not because you're forgetful. Because you have no system for keeping it. The information went in, and without a process to capture, organize, and revisit it, it came right back out.
 

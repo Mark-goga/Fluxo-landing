@@ -45,7 +45,7 @@ relatedPosts:
   - href: "/blog/how-to-study-effectively-for-long-term-retention/"
     title: "How to Study Effectively for Long-Term Retention"
     metaDescription: "Stop relearning the same material. These cognitive science principles for how to study effectively build durable memories from the first pass, for self-directed learners."
-    heroImage: "/assets/card-10.webp"
+    heroImage: "/assets/blog/card-10.webp"
   - href: "/blog/best-study-routine/"
     title: "Best Study Routine"
     metaDescription: "Most people build a study routine the wrong way. They pick a time, open their notes, and start reading. That's not a routine. It's just a habit of sitting near a book."

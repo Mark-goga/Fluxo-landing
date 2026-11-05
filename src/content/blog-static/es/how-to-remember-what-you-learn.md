@@ -42,14 +42,14 @@ relatedPosts:
     title: "¿Cómo aprender sin olvidar?"
     metaDescription: "Terminas un libro. Asistes a un webinar. Guardas una docena de artículos. Y en algún punto entre la última página y la vida real, casi todo desaparece."
     heroImage: "/assets/card-3.png"
-  - href: "/es/blog/how-to-track-learning-progress/"
-    title: "¿Cómo medir tu progreso de aprendizaje?"
-    metaDescription: "La mayoría mide el aprendizaje de la forma equivocada. Cuentan horas de estudio, libros terminados o páginas leídas. Esos números parecen significativos, pero miden la entrada, no el resultado."
-    heroImage: "/assets/card-6.webp"
   - href: "/es/blog/the-second-brain-for-learning/"
     title: "El segundo cerebro para aprender"
     metaDescription: "Construye un segundo cerebro para aprender — un sistema que captura, organiza y devuelve lo leído justo cuando lo necesitas."
     heroImage: "/assets/card-7.webp"
+  - href: "/es/blog/how-to-remember-what-you-read-and-actually-retain-it/"
+    title: "Cómo recordar lo que lees: un método práctico"
+    metaDescription: "Aprende una rutina práctica para recordar lo que lees: protege tu atención, toma notas activas, evoca tras cada sesión y espacia tus repasos."
+    heroImage: "/assets/blog/card-9.webp"
 ---
 Esto no es un problema de memoria. Es un problema de sistema. La mayoría consume información sin construir un proceso para conservarla de verdad. Esto es lo que dice la ciencia, y lo que funciona.
 
