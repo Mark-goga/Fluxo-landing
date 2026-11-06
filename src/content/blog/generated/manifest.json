@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rebuildId": "01a1abe2-2fec-7739-9614-085020346743",
+  "rebuildId": "01a1afd7-936c-71b2-980a-07446d7b1fa2",
   "applicationId": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
   "posts": [
     {
@@ -78,7 +78,7 @@
       "locale": "en",
       "slug": "best-anki-add-ons-for-beginners-5-essential-tools-to-speed-up-learning",
       "path": "src/content/blog/generated/en/best-anki-add-ons-for-beginners-5-essential-tools-to-speed-up-learning.mdx",
-      "includedInRebuild": false
+      "includedInRebuild": true
     },
     {
       "draftId": "019fc5d8-758f-763c-a870-01959d28d0a7",
@@ -309,14 +309,14 @@
       "locale": "en",
       "slug": "how-to-remember-what-you-read-and-actually-retain-it",
       "path": "src/content/blog/generated/en/how-to-remember-what-you-read-and-actually-retain-it.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a06a78-14a4-707f-96f9-272150e03c29",
       "locale": "en",
       "slug": "how-to-retain-information-long-term-8-proven-methods",
       "path": "src/content/blog/generated/en/how-to-retain-information-long-term-8-proven-methods.mdx",
-      "includedInRebuild": false
+      "includedInRebuild": true
     },
     {
       "draftId": "01a0278e-acc8-7718-8c00-a9d261acc490",
@@ -330,7 +330,7 @@
       "locale": "en",
       "slug": "how-to-study-effectively-for-long-term-retention",
       "path": "src/content/blog/generated/en/how-to-study-effectively-for-long-term-retention.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a0655a-05d9-7255-a134-8f7a6dfa0eff",
@@ -578,10 +578,24 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a1af77-e3e7-731a-9576-0d454fb5015d",
+      "locale": "es",
+      "slug": "best-anki-add-ons-for-beginners-5-essential-tools-to-speed-up-learning",
+      "path": "src/content/blog/generated/es/best-anki-add-ons-for-beginners-5-essential-tools-to-speed-up-learning.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "01a1aa59-10c5-7199-aa85-e5ba3d21b50f",
       "locale": "es",
       "slug": "how-to-remember-what-you-read-and-actually-retain-it",
       "path": "src/content/blog/generated/es/how-to-remember-what-you-read-and-actually-retain-it.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1af7b-ed37-74c6-bcf2-d638a291b5dd",
+      "locale": "es",
+      "slug": "how-to-retain-information-long-term-8-proven-methods",
+      "path": "src/content/blog/generated/es/how-to-retain-information-long-term-8-proven-methods.mdx",
       "includedInRebuild": true
     },
     {
@@ -589,7 +603,7 @@
       "locale": "es",
       "slug": "how-to-study-effectively-for-long-term-retention",
       "path": "src/content/blog/generated/es/how-to-study-effectively-for-long-term-retention.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     }
   ]
 }

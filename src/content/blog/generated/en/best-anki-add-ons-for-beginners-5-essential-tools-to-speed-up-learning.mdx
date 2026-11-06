@@ -4,10 +4,10 @@ draftId: "01a03c23-2280-705c-acf1-7b18548eb2fe"
 slug: "best-anki-add-ons-for-beginners-5-essential-tools-to-speed-up-learning"
 locale: "en"
 pageType: "how_to"
-title: "Best Anki Add-ons for Beginners: 5 Essential Tools to Speed Up Learning"
-metaDescription: "Learn the 5 best Anki add-ons for beginners. Install flashcard creation tools, organize cards, and manage review load without steep learning curve."
+title: "Best Anki Add-ons: Install and Configure a 40+ Add-on Pack"
+metaDescription: "Install and configure a 40+ Anki add-on pack, merge it with add-ons you already use, fix night mode and dictionary display issues, and resolve tag conflicts."
 createdAt: "2026-08-26T03:35:30.862Z"
-modifiedAt: "2026-08-26T07:42:39.430Z"
+modifiedAt: "2026-11-06T07:51:39.052Z"
 translationGroupId: "01a03c23-2280-705c-acf1-7b18548eb2fe"
 heroImage: "/assets/blog/card-13.webp"
 relatedPosts:
@@ -24,21 +24,21 @@ relatedPosts:
     metaDescription: "Create a reveal-on-check flashcard system in Notion using native database properties, formulas, and views. Perfect for any subject without plugins."
     heroImage: "/assets/blog/card-11.webp"
 faq:
-  - question: "What is the fastest way to install Anki add-ons as a beginner?"
-    answer: "Butler installs over 60 recommended add-ons and configures them automatically in a single step. Install Butler via Tools > Add-ons > Get Add-ons, search for \"Butler\", click Install, restart Anki, and follow the setup wizard. For individual add-ons, select Tools > Add-ons, click Get Add-ons, search by name, and click Install."
-  - question: "What happens if an add-on breaks after I update Anki?"
-    answer: "Add-ons do not update automatically when Anki updates. If an add-on stops working, contact its author for an updated version, or downgrade Anki to a prior version if you need the add-on urgently. To remove a broken add-on immediately, select it in the Add-ons menu and click Delete."
-  - question: "What does 'mature card' mean in Anki?"
-    answer: "A mature card has a review interval of 21 days or more. Mature cards have demonstrated retention and are generally safe targets for bulk rescheduling using the ReMemorize add-on, especially when managing review spikes from bulk imports."
-  - question: "Can I resize images while reviewing without leaving the review screen?"
-    answer: "Yes, with the Edit Field During Review add-on. While reviewing a card with an image, hold Cmd (Mac) or Ctrl (Windows), click the image, and drag to resize it. Double-click the image to restore its original size. Stay in review mode the entire time."
+  - question: "Which Anki version does the add-on pack need?"
+    answer: "As of the source's publication, the pack targeted Anki 2.1, which the creators described as the only version still supported going forward. The bulk install method works only on Anki 2.1. Updating Anki can break older add-ons, so if one stops working, report it to its author or stay on an older Anki version until the add-on is updated."
+  - question: "What should I do if two add-ons conflict?"
+    answer: "The pack turns off some incompatible add-ons by default, because only one add-on in a conflicting pair should be active. Keep one add-on from the pair active, restart Anki after the change, and check the add-on section of the creators' FAQ for the specific conflict."
+  - question: "Does Fluxo replace this Anki add-on pack?"
+    answer: "No. Fluxo's listed features include no Anki integration, so it neither replaces nor extends this pack. Fluxo generates flashcards, quizzes, and summaries from notes you write yourself, and it schedules reviews with spaced repetition."
 references:
-  - label: "Anki add-ons official documentation"
-    url: "https://docs.ankiweb.net/addons.html"
-  - label: "AnkiWeb add-ons repository"
-    url: "https://apps.ankiweb.net/"
-  - label: "Anki Windows installation guide"
-    url: "https://docs.ankiweb.net/platform/windows/installing.html"
+  - label: "Anki Manual: Add-ons"
+    url: "https://docs.ankiweb.net/manual/addons"
+  - label: "Anki Manual: Add-ons (community mirror)"
+    url: "https://noobj2.github.io/anki-manual/addons.html"
+  - label: "Anki add-on guide (community reference)"
+    url: "https://docs.ncnynl.com/en/anki/addons.html"
+  - label: "The best Anki add-ons (community review)"
+    url: "https://facedragons.com/foss/the-best-anki-add-ons/"
 author:
   id: "019faee1-9411-7438-a0d5-a441a9a771af"
   name: "Markiian Halabut"
@@ -50,89 +50,100 @@ author:
   links:
     website: "https://fluxo.today"
 sources:
-  - id: "01a03c10-97d0-737f-8cfd-14db20e6e91b"
+  - id: "01a1af73-4793-73b3-96af-dca9c7e77b53"
     type: "youtube_video"
-    title: "5 Must Have Add-ons for Anki"
-    url: "https://www.youtube.com/watch?v=KDlCfHfRSb8"
+    title: "Anki: Install 40+ Add-ons in 5 minutes"
+    url: "https://www.youtube.com/watch?v=UEL5Ru5kkQY"
     creator: "The AnKing"
     publishedAt: "1970-01-01T00:00:00.000Z"
 ---
 
-Two things break Anki for new users. Turning a textbook chapter into cards eats an evening, and once a deck passes 200-300 cards the default browser stops helping you find anything. Add-ons fix both problems. The five below come from The AnKing, who runs more than 60 add-ons in his own setup and picked these as the ones that pay off no matter what you study.
+Most advice on the best Anki add-ons has you install them one at a time and find the conflicts yourself. A bundled pack of 40+ add-ons skips that work and gives a new profile a working setup in one install. That only pays off if you understand what the pack changes, because an add-on doing something you didn't expect looks a lot like a broken Anki.
 
-## Where This Anki Add-on List Comes From
+## Where this add-on pack comes from and who it was built for
 
-Sixty-plus add-ons is a power user's toolkit, not a starting point. The five here target the friction beginners actually hit: turning existing material (textbooks, diagrams, notes) into cards, finding cards once the collection grows, and surviving the review spike that follows a bulk import.
+The pack comes from its creators' website, which lists every included add-on. They picked the add-ons for their own needs as medical students, so the defaults lean toward medical study. If you study languages or another subject, expect to want a different mix. Use the pack as a configured starting point and plan to trim it once you see what you actually use.
 
-Everything installs through Anki's built-in browser at Tools > Add-ons > Get Add-ons. Butler is the exception, and it handles the rest of them for you.
+## What the bundled pack includes
 
-## Butler: Install All Recommended Add-ons at Once
+As of publication, three properties of the pack shape how you install it:
 
-The manual loop is tedious. Open Tools > Add-ons, click Get Add-ons, type a name, click Install, restart Anki, repeat 10-20 times. Butler turns that into one action.
+- It targets Anki 2.1, which the creators described as the only version still supported going forward.
+- It contains more than 40 add-ons and is designed to install in under five minutes.
+- It is pre-configured so its add-ons do not conflict with each other.
 
-It installs over 60 recommended add-ons and pre-configures their settings in a single step. Instead of an afternoon of searching and restarting, you get a working setup and move on to studying.
+The version requirement decides your install method. The bulk method described for the pack only works on Anki 2.1, so check your version before you touch any folders. A few add-ons in the pack conflict with each other, and the creators switched those off by default because only one add-on from each pair should run. If you want one of the disabled add-ons, turn off its partner first.
 
-Installation: open Anki, go to Tools > Add-ons, click Get Add-ons, search "Butler", install, restart. A setup wizard appears on launch and walks you through installing and configuring the recommended set.
+## How to install the add-on pack step by step
 
-## Image Occlusion for Instant Visual Flashcards
+Replacing the add-ons folder is the fastest route on a fresh profile. These steps assume you have no add-ons worth keeping, and if you do, the merge instructions in the next section are the safer path.
 
-Anatomy, chemistry, and anything else built on diagrams punish manual card creation. One circulatory system image can justify 15-20 cards: one per major vessel, one per chamber, one per valve. Typing those out by hand costs more time than the studying itself.
+1. Open Tools > Add-ons, then click View Files. This opens the add-ons folder.
+2. Go up one folder. The method describes this as reaching the profile's add-ons folder, so confirm where you are before going further. The target is the folder that holds your installed add-on folders.
+3. Copy the existing add-ons folder somewhere safe as a backup.
+4. Drag the pack's add-ons folder into that location and replace the existing one.
+5. Restart Anki, which you need to do after every add-on change.
 
-Image Occlusion collapses that. Import an image from disk or paste a screenshot from your clipboard, drag boxes over the regions you want tested, and each box becomes its own flashcard. The front shows the image with that region hidden; the back can carry your notes.
+### Why a full folder replacement works for a clean profile
 
-The pattern holds for any labeled visual: medical diagrams, historical maps, circuit schematics, syntax diagrams, architectural plans. In Anki's Add Card window, find the Image Occlusion button, load your image, draw your rectangles, and click Generate. One picture becomes a full study set.
+Replacing the whole folder hands you the pack's full configuration in one drag, with no decisions about individual add-ons. The cost is that everything already in that folder disappears, so the backup in step 3 is the one step you should never skip, even on a profile you think is empty. Save this route for clean profiles. If a profile has even a few add-ons you value, the merge method keeps them intact.
 
-## Edit Field During Review for Quick Image Resizing
+## Keeping the add-ons you already use
 
-An image that's too small to read or too big for the card taxes attention you should be spending on recall. Without this add-on you either squint through it or quit the review session, hand-edit the card's HTML, and start over.
+### Merging the pack into an existing add-ons folder
 
-Edit Field During Review keeps you in the reviewer. Hold Cmd (Mac) or Ctrl (Windows), click the image, and drag its edges to the size you want. Double-click restores the original. The session never breaks.
+If you already use add-ons you want to keep, leave the existing directory in place. Copy the individual add-on folders from the pack into your current add-ons folder, and when the duplicates prompt appears, choose to skip or replace each one. Restart Anki once the copy finishes.
 
-## Keeping Tags and the Sidebar Organized
+### Replacing Better Tags with the pack's tag add-on
 
-Past 500 cards, Anki's sidebar turns into one long flat scroll of tags with no structure to grab onto. Two add-ons bring it back under control.
+The pack ships a hierarchical tags add-on instead of Better Tags. If Better Tags is part of your workflow, swap it back in this order:
 
-Hierarchical Tags (free) nests tags into a tree in the browser sidebar. Rather than scrolling past Anatomy, AnatomyMuscles, AnatomyNerves, and AnatomyVessels as four separate entries, you get Anatomy with Muscles, Nerves, and Vessels folded underneath it.
+1. Remove Better Tags from your add-ons folder.
+2. Delete the pack's hierarchical tags add-on.
+3. Put Better Tags back, then restart Anki.
 
-Customize Sidebar handles the rest of the clutter. Add shortcuts such as a Flags section for priority cards, and collapse decks or note types you aren't touching. Together the two turn a scroll-hunt into a hierarchy you can actually read: collapse everything inactive, leave only the decks you're studying this month.
+## Fixing night mode and pop-up dictionary display problems
 
-## Better Search for Advanced Browser Queries
+Night mode can produce display errors, and one you may hit is a browser sidebar stuck in a dark style. The creators avoid this by disabling night mode in dialogs and unchecking certain styling options. It also blocks the pop-up dictionary unless you change one setting.
 
-Anki's built-in search reads card content and stops there. Better Search (formerly Browser Search Box) extends it to deck and tag names, plus filters based on card properties.
+**The pop-up dictionary only works when 'reviewer cards' is unchecked in Night Mode's styling options.** Here is how to change it:
 
-- `prop:due` targets cards by when they're due
-- `prop:ivl` targets cards by review interval, which is how you find mature cards
-- `suspended:true` pulls up suspended cards
-- `field:Definition` searches only inside the Definition field of a given note type
+1. Click Config for the Night Mode add-on in the add-ons dialog.
+2. Open the 'choose what to style' settings and uncheck 'reviewer cards'.
+3. Restart Anki.
 
-On its own that's faster browsing. Paired with ReMemorize, it becomes a way to grab a specific slice of your collection and reschedule the whole thing at once.
+If the browser sidebar still looks wrong afterward, compare your styling options with the creators' documentation before you decide the add-on is broken. Changing one checkbox at a time, with a restart after each change, shows you which option causes the problem.
 
-## ReMemorize for Manual Card Rescheduling
+## Customized keyboard shortcuts in the pack
 
-Import 100 new cards and Anki hands all 100 to you on day one, well past whatever daily limit you set. ReMemorize lets you push individual cards, or a whole selection, to a date you choose, straight from the reviewer.
+As of publication, the pack ships with customized keyboard shortcuts:
 
-The number you enter behaves differently depending on its sign. A negative number moves only the due date, which works like a temporary bury when you want to see something later. A positive number moves the due date and the card's future interval together, spacing it the way a normal review would.
+- Close is always C1.
+- Undo uses Z instead of Ctrl+Z, which suits controller use.
+- The JKL keys support right-handed review.
 
-Combine it with Better Search and the workflow scales. Select cards with a query like `prop:due` or `prop:ivl`, then redistribute them across future days, randomized if you want the spread uneven. Anki treats a card as mature once its interval hits 21 days or more, and those are the safest ones to move in bulk since they've already proven you remember them. A 100-card batch spreads across two weeks instead of landing in one brutal session.
+Run a few practice cards with these keys before a real session, so habits from other apps don't trigger the wrong action mid-review. Write down the shortcuts you depend on, because a later pack update could change them.
 
-## Installing Anki Add-ons: Procedure and Boundaries
+## Learning what each add-on does before you rely on it
 
-Add-ons install through Tools > Add-ons > Get Add-ons: search by name, click Install, restart Anki. You can also browse ankiweb.net/shared/addons in a web browser and install from there.
+As of publication, the creators' website lists every included add-on with a changelog and links each one to its own explainer video. Watch that playlist before you depend on any add-on's behavior, even if you run it at 2x speed. Many people install add-ons and then get confused by behavior they never asked for. Frozen Fields is one add-on that catches people this way.
 
-One caveat worth knowing before you build a workflow around any of these. Add-ons don't update alongside Anki, so an Anki update can break one until its author ships a fix. Your options are to wait for that fix or roll Anki back to a prior version if you need the add-on immediately. Configuring each add-on's advanced settings is a separate exercise: Butler does it automatically, everything else is manual.
+### Using the FAQ and handling breakage after updates
 
-To remove a broken add-on, select it in the Add-ons window and click Delete.
+The FAQ page has an add-on section on conflicts and other issues, and as of publication the creators plan to expand it. Check it first when two add-ons behave oddly together.
 
-## Connecting Add-ons to Spaced Repetition Workflows
+Anki updates can break compatibility with older add-ons. When one stops working after an update, report the problem to the add-on's author or stay on the older Anki version until the add-on is updated. To remove a malfunctioning add-on, find the Delete option in its menu and confirm you have the right add-on selected before you delete anything.
 
-Every flashcard system runs on two mechanisms: turning knowledge into a question with a testable answer, and spacing the review of that question over time. These add-ons split cleanly along that line. Image Occlusion and Edit Field During Review handle creation and cleanup; Better Search and ReMemorize handle timing and load.
+## Our take: adapting a medical-student pack to your own notes
 
-Which ones matter depends on what you're studying. Visual subjects like anatomy, chemistry, or history save hours through Image Occlusion. Large imported sets need Better Search and ReMemorize to flatten the spike. The 21-day maturity threshold is your guide to which cards can safely be moved when the queue gets ugly.
+Treat the pack as a base configuration and then trim it. A programmer, a language learner, and someone studying a dense technical subject will each use some of these add-ons and ignore the rest. Before you cut or keep one, read its changelog and watch its explainer video, since those show how it behaves in practice.
 
-## Studying instead of maintaining your deck
+The default-off conflicting pairs tell you something useful: the creators already did the compatibility sorting, so keep one add-on from each pair and leave the other off. While you trim, write down every shortcut and styling option you change. That list lets you rebuild the same setup on a new profile without guessing.
 
-The add-ons above fix Anki's rough edges, but the underlying work stays yours. You still write every question and answer, still decide what's worth testing, still rebuild your tag structure when a subject grows past what you planned for. Beginners often spend more of week one configuring their setup than reviewing anything in it.
+## Getting from your notes to review cards without the setup work
 
-Picture the other version. You take notes on a chapter the way you normally would, and the cards, quizzes, and summaries come out of those notes without a separate card-writing session. Review timing sorts itself out in the background.
+Everything above is configuration: folders to drag, pairs to disable, checkboxes to uncheck, and a playlist to watch before you trust any of it. All of that happens before you make a single card, and Anki still expects you to write each card by hand.
 
-That's the shape of [Fluxo](https://fluxo.today): spaces and topics for your own rich-text notes, AI-generated flashcards, quizzes, and summaries built from what you wrote, and spaced-repetition scheduling that brings material back on its own. No ready-made courses and no shared deck library, since the notes are yours to write. A mascot, streaks, and gamified sessions keep the review habit going, and AI suggestions point at topics worth covering next.
+The other approach starts from the material itself. You write notes on a topic, and flashcards and quizzes come out of those notes, already scheduled to resurface over time, with no add-on folder to manage.
+
+That is the workflow Fluxo is built around. You organize your own notes in spaces and topics, and it generates flashcards, quizzes, and summaries from them, with spaced-repetition scheduling and streaks for review sessions. It does not connect to Anki or this pack, and it has no ready-made courses or shared decks, so the notes are always yours to write.
