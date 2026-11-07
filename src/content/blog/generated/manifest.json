@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rebuildId": "01a1afd7-936c-71b2-980a-07446d7b1fa2",
+  "rebuildId": "01a1b530-2d74-736a-841a-16b17a200195",
   "applicationId": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
   "posts": [
     {
@@ -78,7 +78,7 @@
       "locale": "en",
       "slug": "best-anki-add-ons-for-beginners-5-essential-tools-to-speed-up-learning",
       "path": "src/content/blog/generated/en/best-anki-add-ons-for-beginners-5-essential-tools-to-speed-up-learning.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fc5d8-758f-763c-a870-01959d28d0a7",
@@ -155,7 +155,7 @@
       "locale": "en",
       "slug": "forgetting-curve-explained-why-memory-fades-fast",
       "path": "src/content/blog/generated/en/forgetting-curve-explained-why-memory-fades-fast.mdx",
-      "includedInRebuild": false
+      "includedInRebuild": true
     },
     {
       "draftId": "019ff423-185b-7118-9620-409e0c1811e4",
@@ -316,7 +316,7 @@
       "locale": "en",
       "slug": "how-to-retain-information-long-term-8-proven-methods",
       "path": "src/content/blog/generated/en/how-to-retain-information-long-term-8-proven-methods.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a0278e-acc8-7718-8c00-a9d261acc490",
@@ -568,7 +568,7 @@
       "locale": "en",
       "slug": "why-rereading-notes-doesn-t-work-and-what-does",
       "path": "src/content/blog/generated/en/why-rereading-notes-doesn-t-work-and-what-does.mdx",
-      "includedInRebuild": false
+      "includedInRebuild": true
     },
     {
       "draftId": "01a0037c-4df5-7372-9c09-61b691e04c47",
@@ -582,6 +582,13 @@
       "locale": "es",
       "slug": "best-anki-add-ons-for-beginners-5-essential-tools-to-speed-up-learning",
       "path": "src/content/blog/generated/es/best-anki-add-ons-for-beginners-5-essential-tools-to-speed-up-learning.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1b49f-57aa-71ec-aaf4-0aa72806c8a9",
+      "locale": "es",
+      "slug": "forgetting-curve-explained-why-memory-fades-fast",
+      "path": "src/content/blog/generated/es/forgetting-curve-explained-why-memory-fades-fast.mdx",
       "includedInRebuild": true
     },
     {
@@ -596,7 +603,7 @@
       "locale": "es",
       "slug": "how-to-retain-information-long-term-8-proven-methods",
       "path": "src/content/blog/generated/es/how-to-retain-information-long-term-8-proven-methods.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a1aa5d-0438-753d-a905-556a7e6d1749",
@@ -604,6 +611,13 @@
       "slug": "how-to-study-effectively-for-long-term-retention",
       "path": "src/content/blog/generated/es/how-to-study-effectively-for-long-term-retention.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1b4a3-0d24-738a-ae27-23cc57647cb3",
+      "locale": "es",
+      "slug": "why-rereading-notes-doesn-t-work-and-what-does",
+      "path": "src/content/blog/generated/es/why-rereading-notes-doesn-t-work-and-what-does.mdx",
+      "includedInRebuild": true
     }
   ]
 }
