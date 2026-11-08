@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rebuildId": "01a1b530-2d74-736a-841a-16b17a200195",
+  "rebuildId": "01a1ba61-f2ac-712a-81af-883f1589f223",
   "applicationId": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
   "posts": [
     {
@@ -36,7 +36,7 @@
       "locale": "en",
       "slug": "ai-flashcards-vs-premade-decks-which-method-actually-sticks",
       "path": "src/content/blog/generated/en/ai-flashcards-vs-premade-decks-which-method-actually-sticks.mdx",
-      "includedInRebuild": false
+      "includedInRebuild": true
     },
     {
       "draftId": "019fc5cc-bcdc-742c-ae4b-fa88399f65c1",
@@ -113,7 +113,7 @@
       "locale": "en",
       "slug": "building-a-second-brain-from-your-notes",
       "path": "src/content/blog/generated/en/building-a-second-brain-from-your-notes.mdx",
-      "includedInRebuild": false
+      "includedInRebuild": true
     },
     {
       "draftId": "019fb10a-53d8-770e-8672-9dc3c2f3f5a4",
@@ -155,7 +155,7 @@
       "locale": "en",
       "slug": "forgetting-curve-explained-why-memory-fades-fast",
       "path": "src/content/blog/generated/en/forgetting-curve-explained-why-memory-fades-fast.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019ff423-185b-7118-9620-409e0c1811e4",
@@ -568,7 +568,7 @@
       "locale": "en",
       "slug": "why-rereading-notes-doesn-t-work-and-what-does",
       "path": "src/content/blog/generated/en/why-rereading-notes-doesn-t-work-and-what-does.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a0037c-4df5-7372-9c09-61b691e04c47",
@@ -578,6 +578,13 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a1b9ca-6cd8-74e3-9a58-562580e588b6",
+      "locale": "es",
+      "slug": "ai-flashcards-vs-premade-decks-which-method-actually-sticks",
+      "path": "src/content/blog/generated/es/ai-flashcards-vs-premade-decks-which-method-actually-sticks.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "01a1af77-e3e7-731a-9576-0d454fb5015d",
       "locale": "es",
       "slug": "best-anki-add-ons-for-beginners-5-essential-tools-to-speed-up-learning",
@@ -585,11 +592,18 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a1b9c5-3d62-74f6-82f8-46f092f83402",
+      "locale": "es",
+      "slug": "building-a-second-brain-from-your-notes",
+      "path": "src/content/blog/generated/es/building-a-second-brain-from-your-notes.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "01a1b49f-57aa-71ec-aaf4-0aa72806c8a9",
       "locale": "es",
       "slug": "forgetting-curve-explained-why-memory-fades-fast",
       "path": "src/content/blog/generated/es/forgetting-curve-explained-why-memory-fades-fast.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a1aa59-10c5-7199-aa85-e5ba3d21b50f",
@@ -617,7 +631,7 @@
       "locale": "es",
       "slug": "why-rereading-notes-doesn-t-work-and-what-does",
       "path": "src/content/blog/generated/es/why-rereading-notes-doesn-t-work-and-what-does.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     }
   ]
 }
