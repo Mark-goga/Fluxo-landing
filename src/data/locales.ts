@@ -213,7 +213,7 @@ export const landingContent = {
     meta: {
       title: `${siteConfig.name} — Learn quickly, remember forever`,
       description:
-        "Fluxo turns passive reading into active long-term memory with structured knowledge spaces, AI summaries, and spaced repetition. Learn quickly and keep knowledge fresh forever.",
+        "Fluxo turns passive reading into long-term memory with knowledge spaces, AI summaries and spaced repetition. Learn quickly and remember what you learn.",
       ogTitle: `${siteConfig.name} — Learn quickly, remember forever`,
       ogDescription:
         "Capture what you study, structure custom knowledge nodes, and let spaced repetition lock ideas in your brain.",
@@ -483,7 +483,7 @@ export const landingContent = {
       },
     },
     blog: {
-      metaTitle: `${siteConfig.name} Blog — Learning science, study workflows & spaced repetition`,
+      metaTitle: `${siteConfig.name} Blog — Study science & spaced repetition`,
       metaDescription:
         "Practical, research-backed guides on how to study effectively, remember what you read, and build durable knowledge with spaced repetition.",
       subtitle:
@@ -518,7 +518,7 @@ export const landingContent = {
     meta: {
       title: `${siteConfig.name} — Вчись швидко, пам'ятай завжди`,
       description:
-        "Fluxo перетворює пасивне читання на активну довготривалу пам'ять завдяки структурованим просторам знань, ШІ-конспектам та інтервальному повторенню. Вчись швидко й тримай знання свіжими назавжди.",
+        "Fluxo перетворює читання на довготривалу пам'ять: простори знань, ШІ-конспекти та інтервальне повторення. Вчись швидко й пам'ятай вивчене.",
       ogTitle: `${siteConfig.name} — Вчись швидко, пам'ятай завжди`,
       ogDescription:
         "Фіксуй те, що вивчаєш, структуруй власні вузли знань, а інтервальне повторення закріпить ідеї в пам'яті.",
@@ -785,7 +785,7 @@ export const landingContent = {
       },
     },
     blog: {
-      metaTitle: `Блог ${siteConfig.name} — наука навчання, робочі процеси та інтервальне повторення`,
+      metaTitle: `Блог ${siteConfig.name} — наука навчання та інтервальне повторення`,
       metaDescription:
         "Практичні гайди на основі досліджень: як ефективно вчитися, запам'ятовувати прочитане та будувати міцні знання через інтервальне повторення.",
       subtitle:
@@ -820,7 +820,7 @@ export const landingContent = {
     meta: {
       title: `${siteConfig.name} — Aprende rápido, recuerda para siempre`,
       description:
-        "Fluxo convierte la lectura pasiva en memoria activa a largo plazo con espacios de conocimiento estructurados, resúmenes con IA y repetición espaciada. Aprende rápido y mantén tu conocimiento fresco para siempre.",
+        "Fluxo convierte la lectura en memoria a largo plazo con espacios de conocimiento, resúmenes con IA y repetición espaciada. Aprende rápido y no olvides.",
       ogTitle: `${siteConfig.name} — Aprende rápido, recuerda para siempre`,
       ogDescription:
         "Captura lo que estudias, estructura tus propios nodos de conocimiento y deja que la repetición espaciada fije las ideas en tu cerebro.",
@@ -1090,9 +1090,9 @@ export const landingContent = {
       },
     },
     blog: {
-      metaTitle: `Blog ${siteConfig.name} — ciencia del aprendizaje, flujos de estudio y repetición espaciada`,
+      metaTitle: `Blog ${siteConfig.name} — cómo estudiar y repetición espaciada`,
       metaDescription:
-        "Guías prácticas y basadas en investigación sobre cómo estudiar de forma efectiva, recordar lo que lees y construir conocimiento duradero con repetición espaciada.",
+        "Guías prácticas basadas en investigación: cómo estudiar de forma efectiva, recordar lo que lees y construir conocimiento duradero con repetición espaciada.",
       subtitle:
         "Guías basadas en investigación sobre estudio, retención y repetición espaciada.",
       ui: {
@@ -1125,7 +1125,7 @@ export const landingContent = {
     meta: {
       title: `${siteConfig.name} — Schnell lernen, für immer behalten`,
       description:
-        "Fluxo verwandelt passives Lesen in aktives Langzeitgedächtnis – mit strukturierten Wissensräumen, KI-Zusammenfassungen und verteiltem Wiederholen. Lerne schnell und halte dein Wissen für immer frisch.",
+        "Fluxo macht aus passivem Lesen Langzeitwissen: Wissensräume, KI-Zusammenfassungen und verteiltes Wiederholen. Schnell lernen, dauerhaft behalten.",
       ogTitle: `${siteConfig.name} — Schnell lernen, für immer behalten`,
       ogDescription:
         "Halte fest, was du lernst, baue eigene Wissensknoten auf und lass verteiltes Wiederholen die Ideen in deinem Kopf verankern.",
@@ -1395,7 +1395,7 @@ export const landingContent = {
       },
     },
     blog: {
-      metaTitle: `${siteConfig.name} Blog — Lernwissenschaft, Lern-Workflows & verteiltes Wiederholen`,
+      metaTitle: `${siteConfig.name} Blog — Lernwissenschaft & verteiltes Wiederholen`,
       metaDescription:
         "Praktische, forschungsbasierte Anleitungen: effektiv lernen, Gelesenes behalten und dauerhaftes Wissen mit verteiltem Wiederholen aufbauen.",
       subtitle:
