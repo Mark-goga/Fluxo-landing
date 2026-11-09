@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Last updated: October 22, 2026**
+**Last updated: November 5, 2026**
 
 This Privacy Policy explains how **Fluxo**, operated by **Markiian Halabut** ("Fluxo", "we", "us", or "our"), collects, uses, stores, and shares personal information when you use:
 
@@ -106,7 +106,11 @@ Depending on the platform and configuration, RevenueCat and the relevant app sto
 
 We also keep a record of your AI credit balance and its usage so that we can provide AI features included in your plan.
 
-We do not receive your complete payment-card details from Apple, Google, or RevenueCat.
+If you purchase a subscription on the Fluxo website, the order is processed by **Paddle.com**, our online reseller and the Merchant of Record for website orders. Paddle collects the information needed to complete and support the purchase, such as your email address, country, postal code where required, and payment details, and processes it under its own privacy notice.
+
+We receive from Paddle and RevenueCat the information needed to provide your subscription, such as your email address, the plan purchased, its price and currency, your country, and the subscription's status and renewal dates.
+
+We do not receive your complete payment-card details from Apple, Google, Paddle, or RevenueCat.
 
 ### 2.7 Crash and Diagnostic Information
 
@@ -280,9 +284,15 @@ Privacy information: https://sentry.io/privacy/
 
 ### RevenueCat
 
-Used to manage mobile subscription status, purchase information, and entitlements.
+Used to manage subscription status, purchase information, and entitlements across the mobile apps and the website.
 
 Privacy information: https://www.revenuecat.com/privacy/
+
+### Paddle
+
+Used to sell and bill subscriptions purchased on the Fluxo website, as our reseller and Merchant of Record.
+
+Privacy information: https://www.paddle.com/legal/privacy
 
 ### Apple
 

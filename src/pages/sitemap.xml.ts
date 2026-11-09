@@ -22,15 +22,19 @@ ${aboutAlternates}
   )
   .join("\n");
 
-// The kit lists /privacy/ and /cookies/ but not /terms/, which this site adds.
-const termsUrl = `  <url>
-    <loc>${absoluteUrl("/terms/")}</loc>
+// The kit lists /privacy/ and /cookies/ but not /terms/ or /refund/, which this site adds.
+const legalUrls = ["/terms/", "/refund/"]
+  .map(
+    (path) => `  <url>
+    <loc>${absoluteUrl(path)}</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
-  </url>`;
+  </url>`,
+  )
+  .join("\n");
 
 export async function GET() {
   const response = await kitSitemap();
-  const xml = (await response.text()).replace("</urlset>", `${aboutUrls}\n${termsUrl}\n</urlset>`);
+  const xml = (await response.text()).replace("</urlset>", `${aboutUrls}\n${legalUrls}\n</urlset>`);
   return new Response(xml, { headers: response.headers });
 }

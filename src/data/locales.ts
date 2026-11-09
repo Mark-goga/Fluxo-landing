@@ -447,6 +447,7 @@ export const landingContent = {
             { label: "Privacy Policy", href: "/privacy/" },
             { label: "Cookie Policy", href: "/cookies/" },
             { label: "Terms of Service", href: "/terms/" },
+            { label: "Refund Policy", href: "/refund/" },
           ],
         },
         {
@@ -749,6 +750,7 @@ export const landingContent = {
             { label: "Політика конфіденційності", href: "/privacy/" },
             { label: "Політика cookie", href: "/cookies/" },
             { label: "Умови використання", href: "/terms/" },
+            { label: "Політика повернення коштів", href: "/refund/" },
           ],
         },
         {
@@ -1054,6 +1056,7 @@ export const landingContent = {
             { label: "Política de privacidad", href: "/privacy/" },
             { label: "Política de cookies", href: "/cookies/" },
             { label: "Términos del servicio", href: "/terms/" },
+            { label: "Política de reembolso", href: "/refund/" },
           ],
         },
         {
@@ -1359,6 +1362,7 @@ export const landingContent = {
             { label: "Datenschutz", href: "/privacy/" },
             { label: "Cookie-Richtlinie", href: "/cookies/" },
             { label: "Nutzungsbedingungen", href: "/terms/" },
+            { label: "Rückerstattungsrichtlinie", href: "/refund/" },
           ],
         },
         {

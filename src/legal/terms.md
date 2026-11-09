@@ -1,6 +1,6 @@
 # Terms of Use
 
-**Last updated: October 22, 2026**
+**Last updated: November 5, 2026**
 
 These Terms of Use ("Terms") govern your access to and use of **Fluxo**, an educational note-taking and learning application operated by **Markiian Halabut** ("Fluxo", "we", "us", or "our").
 
@@ -158,13 +158,25 @@ Refund eligibility is governed by Google Play's refund rules and applicable law.
 
 Fluxo does not guarantee refunds outside the rights provided by applicable law or the relevant Google Play policies.
 
-### 8.3 RevenueCat
+### 8.3 Purchases on the Fluxo website
 
-We may use RevenueCat to manage subscription entitlements and synchronize purchase status.
+Subscriptions purchased on the Fluxo website are sold by our online reseller **Paddle.com**, which is the Merchant of Record for these orders. Paddle processes the payment, collects any applicable sales tax, issues the receipt, and handles billing support and refunds.
 
-RevenueCat does not replace Apple or Google as the billing platform for purchases made through their respective stores.
+These purchases are also subject to the [Paddle Buyer Terms](https://www.paddle.com/legal/checkout-buyer-terms).
 
-### 8.4 Trials and promotional offers
+Unless otherwise stated at the time of purchase, a website subscription renews for additional billing periods until cancelled. You can cancel it through the link in the receipt email from Paddle or at https://paddle.net.
+
+Deleting your Fluxo account does not automatically cancel a website subscription.
+
+Refunds for website purchases are described in our [Refund Policy](/refund/) and the [Paddle Refund Policy](https://www.paddle.com/legal/refund-policy).
+
+### 8.4 RevenueCat
+
+We may use RevenueCat to manage subscription entitlements and synchronize purchase status across platforms.
+
+RevenueCat does not replace Apple, Google, or Paddle as the billing platform for purchases made through them.
+
+### 8.5 Trials and promotional offers
 
 Fluxo may offer trials, discounts, or promotional subscription terms.
 
@@ -236,6 +248,7 @@ Fluxo may depend on or integrate with third-party services, including services p
 * TypeSafe AI;
 * Cloudflare;
 * RevenueCat;
+* Paddle;
 * Sentry;
 * Google Analytics;
 * Microsoft; and
