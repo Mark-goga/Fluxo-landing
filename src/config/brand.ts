@@ -22,5 +22,11 @@ export const brandTokens: BrandTokens = {
       alt: "Fazier badge",
       width: 120,
     },
+    {
+      href: "https://tinylaunch.com",
+      imageUrl: "https://tinylaunch.com/tinylaunch_badge_launching_soon.svg",
+      alt: "TinyLaunch Badge",
+      width: 168,
+    },
   ],
 };
