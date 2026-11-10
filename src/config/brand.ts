@@ -29,7 +29,7 @@ export const brandTokens: BrandTokens = {
       width: 168,
     },
     {
-      href: "https://startupfa.me/s/fluxo?utm_source=fluxo.today",
+      href: "https://startupfa.me",
       imageUrl: "https://startupfa.me/badge?t=classic&theme=dark",
       imageUrlLight: "https://startupfa.me/badge?t=classic&theme=light",
       alt: "Fluxo - Featured on Startup Fame",
