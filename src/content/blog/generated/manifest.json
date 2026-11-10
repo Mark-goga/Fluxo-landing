@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rebuildId": "01a1c119-a511-7195-935a-d3bba097e2c2",
+  "rebuildId": "01a1c476-83ef-73d2-95ec-e11aceb05030",
   "applicationId": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
   "posts": [
     {
@@ -57,7 +57,7 @@
       "locale": "en",
       "slug": "active-recall-for-programming-learn-faster-by-testing-yourself",
       "path": "src/content/blog/generated/en/active-recall-for-programming-learn-faster-by-testing-yourself.mdx",
-      "includedInRebuild": false
+      "includedInRebuild": true
     },
     {
       "draftId": "019fbb5b-05f5-71d8-be1b-9f49d0988b03",
@@ -113,7 +113,7 @@
       "locale": "en",
       "slug": "anki-vs-quizlet-which-flashcard-app-fits-you",
       "path": "src/content/blog/generated/en/anki-vs-quizlet-which-flashcard-app-fits-you.mdx",
-      "includedInRebuild": false
+      "includedInRebuild": true
     },
     {
       "draftId": "019fd5d3-d5ae-767d-af45-7d89c06f0cdb",
@@ -330,7 +330,7 @@
       "locale": "en",
       "slug": "how-to-make-good-flashcards-that-actually-stick",
       "path": "src/content/blog/generated/en/how-to-make-good-flashcards-that-actually-stick.mdx",
-      "includedInRebuild": false
+      "includedInRebuild": true
     },
     {
       "draftId": "01a03c17-bd9d-7407-b748-a21cc3d8890e",
@@ -652,7 +652,7 @@
       "locale": "en",
       "slug": "why-do-i-forget-everything-i-learn",
       "path": "src/content/blog/generated/en/why-do-i-forget-everything-i-learn.mdx",
-      "includedInRebuild": false
+      "includedInRebuild": true
     },
     {
       "draftId": "01a079f3-36cb-710e-92ee-2558adf2a95c",
@@ -676,11 +676,25 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a1c412-d524-7655-9a62-f618eeec8948",
+      "locale": "es",
+      "slug": "active-recall-for-programming-learn-faster-by-testing-yourself",
+      "path": "src/content/blog/generated/es/active-recall-for-programming-learn-faster-by-testing-yourself.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "01a1b9ca-6cd8-74e3-9a58-562580e588b6",
       "locale": "es",
       "slug": "ai-flashcards-vs-premade-decks-which-method-actually-sticks",
       "path": "src/content/blog/generated/es/ai-flashcards-vs-premade-decks-which-method-actually-sticks.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1beeb-1dff-7613-af67-ad3ef6af372f",
+      "locale": "es",
+      "slug": "anki-vs-quizlet-which-flashcard-app-fits-you",
+      "path": "src/content/blog/generated/es/anki-vs-quizlet-which-flashcard-app-fits-you.mdx",
+      "includedInRebuild": true
     },
     {
       "draftId": "01a1af77-e3e7-731a-9576-0d454fb5015d",
@@ -711,6 +725,13 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a1c418-cae1-70ff-9892-7e54a363729e",
+      "locale": "es",
+      "slug": "deliberate-practice-the-framework-for-building-real-expertise",
+      "path": "src/content/blog/generated/es/deliberate-practice-the-framework-for-building-real-expertise.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "01a1b49f-57aa-71ec-aaf4-0aa72806c8a9",
       "locale": "es",
       "slug": "forgetting-curve-explained-why-memory-fades-fast",
@@ -723,6 +744,13 @@
       "slug": "how-to-learn-without-forgetting",
       "path": "src/content/blog/generated/es/how-to-learn-without-forgetting.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1beef-7112-74cb-a3f2-d5ee29636cc3",
+      "locale": "es",
+      "slug": "how-to-make-good-flashcards-that-actually-stick",
+      "path": "src/content/blog/generated/es/how-to-make-good-flashcards-that-actually-stick.mdx",
+      "includedInRebuild": true
     },
     {
       "draftId": "01a1c0a5-16a6-70ff-82b1-46d04be4caef",
@@ -744,6 +772,13 @@
       "slug": "how-to-retain-information-long-term-8-proven-methods",
       "path": "src/content/blog/generated/es/how-to-retain-information-long-term-8-proven-methods.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1c418-3f82-76fe-8a54-1db7cd7168a6",
+      "locale": "es",
+      "slug": "how-to-stop-procrastinating-on-studying-by-fixing-the-root-cause",
+      "path": "src/content/blog/generated/es/how-to-stop-procrastinating-on-studying-by-fixing-the-root-cause.mdx",
+      "includedInRebuild": true
     },
     {
       "draftId": "01a1aa5d-0438-753d-a905-556a7e6d1749",
@@ -772,6 +807,13 @@
       "slug": "the-second-brain-for-learning",
       "path": "src/content/blog/generated/es/the-second-brain-for-learning.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1c417-b451-7136-b2f0-6bdf30f804d8",
+      "locale": "es",
+      "slug": "why-do-i-forget-everything-i-learn",
+      "path": "src/content/blog/generated/es/why-do-i-forget-everything-i-learn.mdx",
+      "includedInRebuild": true
     },
     {
       "draftId": "01a1b4a3-0d24-738a-ae27-23cc57647cb3",
