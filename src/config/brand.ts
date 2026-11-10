@@ -29,13 +29,6 @@ export const brandTokens: BrandTokens = {
       width: 168,
     },
     {
-      href: "https://startupfa.me",
-      imageUrl: "https://startupfa.me/badge?t=classic&theme=dark",
-      imageUrlLight: "https://startupfa.me/badge?t=classic&theme=light",
-      alt: "Fluxo - Featured on Startup Fame",
-      width: 162,
-    },
-    {
       href: "https://twelve.tools",
       imageUrl: "https://twelve.tools/badge0-dark.svg",
       imageUrlLight: "https://twelve.tools/badge0-light.svg",
