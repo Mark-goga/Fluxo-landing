@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rebuildId": "01a1c476-83ef-73d2-95ec-e11aceb05030",
+  "rebuildId": "01a1c9ef-7e44-7342-97fa-48ec37bb1787",
   "applicationId": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
   "posts": [
     {
@@ -57,7 +57,7 @@
       "locale": "en",
       "slug": "active-recall-for-programming-learn-faster-by-testing-yourself",
       "path": "src/content/blog/generated/en/active-recall-for-programming-learn-faster-by-testing-yourself.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fbb5b-05f5-71d8-be1b-9f49d0988b03",
@@ -113,7 +113,7 @@
       "locale": "en",
       "slug": "anki-vs-quizlet-which-flashcard-app-fits-you",
       "path": "src/content/blog/generated/en/anki-vs-quizlet-which-flashcard-app-fits-you.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fd5d3-d5ae-767d-af45-7d89c06f0cdb",
@@ -204,7 +204,7 @@
       "locale": "en",
       "slug": "deliberate-practice-the-framework-for-building-real-expertise",
       "path": "src/content/blog/generated/en/deliberate-practice-the-framework-for-building-real-expertise.mdx",
-      "includedInRebuild": false
+      "includedInRebuild": true
     },
     {
       "draftId": "01a06550-6a41-75c6-a68e-f2988b1ba89a",
@@ -330,7 +330,7 @@
       "locale": "en",
       "slug": "how-to-make-good-flashcards-that-actually-stick",
       "path": "src/content/blog/generated/en/how-to-make-good-flashcards-that-actually-stick.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a03c17-bd9d-7407-b748-a21cc3d8890e",
@@ -400,7 +400,7 @@
       "locale": "en",
       "slug": "how-to-stop-procrastinating-on-studying-by-fixing-the-root-cause",
       "path": "src/content/blog/generated/en/how-to-stop-procrastinating-on-studying-by-fixing-the-root-cause.mdx",
-      "includedInRebuild": false
+      "includedInRebuild": true
     },
     {
       "draftId": "019fb106-a552-7258-852c-a7a6eff0cb6f",
@@ -652,7 +652,7 @@
       "locale": "en",
       "slug": "why-do-i-forget-everything-i-learn",
       "path": "src/content/blog/generated/en/why-do-i-forget-everything-i-learn.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a079f3-36cb-710e-92ee-2558adf2a95c",
@@ -680,7 +680,7 @@
       "locale": "es",
       "slug": "active-recall-for-programming-learn-faster-by-testing-yourself",
       "path": "src/content/blog/generated/es/active-recall-for-programming-learn-faster-by-testing-yourself.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a1b9ca-6cd8-74e3-9a58-562580e588b6",
@@ -694,7 +694,7 @@
       "locale": "es",
       "slug": "anki-vs-quizlet-which-flashcard-app-fits-you",
       "path": "src/content/blog/generated/es/anki-vs-quizlet-which-flashcard-app-fits-you.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a1af77-e3e7-731a-9576-0d454fb5015d",
@@ -750,7 +750,7 @@
       "locale": "es",
       "slug": "how-to-make-good-flashcards-that-actually-stick",
       "path": "src/content/blog/generated/es/how-to-make-good-flashcards-that-actually-stick.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a1c0a5-16a6-70ff-82b1-46d04be4caef",
@@ -788,11 +788,25 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a1c93c-0df4-7212-8d46-a8a249a981a4",
+      "locale": "es",
+      "slug": "how-to-study-when-you-have-no-motivation-four-proven-techniques",
+      "path": "src/content/blog/generated/es/how-to-study-when-you-have-no-motivation-four-proven-techniques.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "01a1c0a5-16ae-756a-8bdd-66fe11c4889b",
       "locale": "es",
       "slug": "how-to-study-while-working-full-time",
       "path": "src/content/blog/generated/es/how-to-study-while-working-full-time.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1c93d-22a4-705d-bf30-ea9d6e1d256c",
+      "locale": "es",
+      "slug": "how-to-take-notes-while-learning-to-code-a-cornell-method-guide",
+      "path": "src/content/blog/generated/es/how-to-take-notes-while-learning-to-code-a-cornell-method-guide.mdx",
+      "includedInRebuild": true
     },
     {
       "draftId": "01a1c0a5-16b5-70fe-9a2a-cba2bf46b16d",
@@ -802,6 +816,13 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a1c93c-81b5-708c-84ad-259e8dae8efc",
+      "locale": "es",
+      "slug": "how-to-use-the-pomodoro-technique-to-study-effectively",
+      "path": "src/content/blog/generated/es/how-to-use-the-pomodoro-technique-to-study-effectively.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "01a1c0a5-16bd-75d1-bfa1-6966b4a1646e",
       "locale": "es",
       "slug": "the-second-brain-for-learning",
@@ -809,11 +830,18 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a1c93d-99c9-74d2-971c-d7a18d787fc7",
+      "locale": "es",
+      "slug": "weekly-review-for-students-a-simple-system-to-stay-on-track",
+      "path": "src/content/blog/generated/es/weekly-review-for-students-a-simple-system-to-stay-on-track.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "01a1c417-b451-7136-b2f0-6bdf30f804d8",
       "locale": "es",
       "slug": "why-do-i-forget-everything-i-learn",
       "path": "src/content/blog/generated/es/why-do-i-forget-everything-i-learn.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a1b4a3-0d24-738a-ae27-23cc57647cb3",
