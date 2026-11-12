@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rebuildId": "01a1c9ef-7e44-7342-97fa-48ec37bb1787",
+  "rebuildId": "01a1d10b-41f9-775e-9966-e00a98427824",
   "applicationId": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
   "posts": [
     {
@@ -204,7 +204,7 @@
       "locale": "en",
       "slug": "deliberate-practice-the-framework-for-building-real-expertise",
       "path": "src/content/blog/generated/en/deliberate-practice-the-framework-for-building-real-expertise.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a06550-6a41-75c6-a68e-f2988b1ba89a",
@@ -400,7 +400,7 @@
       "locale": "en",
       "slug": "how-to-stop-procrastinating-on-studying-by-fixing-the-root-cause",
       "path": "src/content/blog/generated/en/how-to-stop-procrastinating-on-studying-by-fixing-the-root-cause.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fb106-a552-7258-852c-a7a6eff0cb6f",
@@ -414,7 +414,7 @@
       "locale": "en",
       "slug": "how-to-study-when-you-have-no-motivation-four-proven-techniques",
       "path": "src/content/blog/generated/en/how-to-study-when-you-have-no-motivation-four-proven-techniques.mdx",
-      "includedInRebuild": false
+      "includedInRebuild": true
     },
     {
       "draftId": "01a1c0a5-16ab-71c7-af2c-d6fa43b8de42",
@@ -505,7 +505,7 @@
       "locale": "en",
       "slug": "how-to-use-the-pomodoro-technique-to-study-effectively",
       "path": "src/content/blog/generated/en/how-to-use-the-pomodoro-technique-to-study-effectively.mdx",
-      "includedInRebuild": false
+      "includedInRebuild": true
     },
     {
       "draftId": "019ff926-8980-7414-8212-1da6626be901",
@@ -725,10 +725,24 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a1ce63-5f0c-7228-896a-1720160a1d4d",
+      "locale": "es",
+      "slug": "chatgpt-for-learning-without-losing-your-skills",
+      "path": "src/content/blog/generated/es/chatgpt-for-learning-without-losing-your-skills.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "01a1c418-cae1-70ff-9892-7e54a363729e",
       "locale": "es",
       "slug": "deliberate-practice-the-framework-for-building-real-expertise",
       "path": "src/content/blog/generated/es/deliberate-practice-the-framework-for-building-real-expertise.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1ce64-8a41-748a-9862-aef955802bd2",
+      "locale": "es",
+      "slug": "dunning-kruger-effect-in-learning-why-confidence-doesn-t-equal-competence",
+      "path": "src/content/blog/generated/es/dunning-kruger-effect-in-learning-why-confidence-doesn-t-equal-competence.mdx",
       "includedInRebuild": true
     },
     {
@@ -737,6 +751,13 @@
       "slug": "forgetting-curve-explained-why-memory-fades-fast",
       "path": "src/content/blog/generated/es/forgetting-curve-explained-why-memory-fades-fast.mdx",
       "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1ce65-0033-7254-88a6-ac2b00357608",
+      "locale": "es",
+      "slug": "how-to-build-an-ai-study-plan-from-your-syllabus",
+      "path": "src/content/blog/generated/es/how-to-build-an-ai-study-plan-from-your-syllabus.mdx",
+      "includedInRebuild": true
     },
     {
       "draftId": "01a1c0a5-169e-72a0-914f-13aa1f8b2cfe",
@@ -778,7 +799,7 @@
       "locale": "es",
       "slug": "how-to-stop-procrastinating-on-studying-by-fixing-the-root-cause",
       "path": "src/content/blog/generated/es/how-to-stop-procrastinating-on-studying-by-fixing-the-root-cause.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a1aa5d-0438-753d-a905-556a7e6d1749",
@@ -806,7 +827,7 @@
       "locale": "es",
       "slug": "how-to-take-notes-while-learning-to-code-a-cornell-method-guide",
       "path": "src/content/blog/generated/es/how-to-take-notes-while-learning-to-code-a-cornell-method-guide.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a1c0a5-16b5-70fe-9a2a-cba2bf46b16d",
@@ -823,6 +844,13 @@
       "includedInRebuild": true
     },
     {
+      "draftId": "01a1ce63-f946-74a1-aedf-85d7bc213b1a",
+      "locale": "es",
+      "slug": "interleaving-vs-blocked-practice-why-harder-learning-produces-better-long-term-retention",
+      "path": "src/content/blog/generated/es/interleaving-vs-blocked-practice-why-harder-learning-produces-better-long-term-retention.mdx",
+      "includedInRebuild": true
+    },
+    {
       "draftId": "01a1c0a5-16bd-75d1-bfa1-6966b4a1646e",
       "locale": "es",
       "slug": "the-second-brain-for-learning",
@@ -834,7 +862,7 @@
       "locale": "es",
       "slug": "weekly-review-for-students-a-simple-system-to-stay-on-track",
       "path": "src/content/blog/generated/es/weekly-review-for-students-a-simple-system-to-stay-on-track.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "01a1c417-b451-7136-b2f0-6bdf30f804d8",
