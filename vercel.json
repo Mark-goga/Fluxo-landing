@@ -1,5 +1,122 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "trailingSlash": true,
-  "cleanUrls": false
+  "cleanUrls": false,
+  "redirects": [
+    {
+      "source": "/blog/active-recall-why-retrieval-beats-re-reading/",
+      "destination": "/blog/why-rereading-notes-doesn-t-work-and-what-does/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/anki-alternatives-for-self-learners-who-take-notes/",
+      "destination": "/blog/anki-too-complicated-here-s-a-simpler-alternative/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/anki-sentence-mining-a-step-by-step-workflow-for-language-learners/",
+      "destination": "/blog/build-ai-flashcards-for-language-learning-with-anki/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/best-flashcard-app-in-2026-fluxo-anki-remnote-mochi-and-quizlet-compared/",
+      "destination": "/blog/ai-flashcard-generator-from-pdf-fluxo-vs-anki-vs-remnote-vs-mochi-vs-quizlet/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/best-note-taking-app-for-students-fluxo-vs-anki-vs-remnote-vs-mochi-vs-quizlet/",
+      "destination": "/blog/note-taking-apps-that-generate-flashcards-fluxo-vs-anki-vs-remnote-vs-mochi-vs-quizlet/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/best-spaced-repetition-software-compared-2026/",
+      "destination": "/blog/ai-flashcard-generator-from-pdf-fluxo-vs-anki-vs-remnote-vs-mochi-vs-quizlet/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/fsrs-algorithm-explained-how-modern-spaced-repetition-works/",
+      "destination": "/blog/fsrs-vs-sm-2-which-spaced-repetition-algorithm-fits-your-learning/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-ai-flashcard-generators-compare-anki-workflows-vs-fluxo-and-alternatives/",
+      "destination": "/blog/ai-flashcard-generator-from-pdf-fluxo-vs-anki-vs-remnote-vs-mochi-vs-quizlet/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-spaced-repetition-works-sm2-fsrs-and-the-science-of-retention/",
+      "destination": "/blog/fsrs-vs-sm-2-which-spaced-repetition-algorithm-fits-your-learning/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-make-flashcards-from-notes-fast/",
+      "destination": "/blog/how-to-make-flashcards-from-notes-with-ai-gemini/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-remember-what-you-read-and-actually-retain-it/",
+      "destination": "/blog/how-to-remember-books-long-term-the-page-one-review-method/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-take-notes-from-a-book-you-actually-retain/",
+      "destination": "/blog/how-to-remember-books-long-term-the-page-one-review-method/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/interleaving-practice-a-smarter-way-to-study/",
+      "destination": "/blog/interleaving-vs-blocked-practice-why-harder-learning-produces-better-long-term-retention/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/note-taking-app-with-spaced-repetition-anki-vs-remnote-vs-fluxo/",
+      "destination": "/blog/note-taking-apps-that-generate-flashcards-fluxo-vs-anki-vs-remnote-vs-mochi-vs-quizlet/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/notes-scattered-across-apps-fix-it-with-one-system/",
+      "destination": "/blog/building-a-second-brain-from-your-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/para-method-for-students-organize-your-study-notes-for-better-retention/",
+      "destination": "/blog/building-a-second-brain-from-your-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/quizlet-alternatives-compared-anki-remnote-mochi-and-fluxo/",
+      "destination": "/blog/remnote-alternative-6-tools-for-note-takers-who-study/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/remnote-vs-obsidian-vs-fluxo-which-study-tool-fits-your-workflow/",
+      "destination": "/blog/obsidian-vs-notion-for-students-plus-fluxo-and-4-alternatives/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/retrieval-practice-vs-rereading-what-actually-works-better/",
+      "destination": "/blog/why-rereading-notes-doesn-t-work-and-what-does/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/testing-effect-why-retrieval-beats-rereading/",
+      "destination": "/blog/why-rereading-notes-doesn-t-work-and-what-does/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-study-workflow-that-turns-notes-into-applied-knowledge/",
+      "destination": "/blog/building-a-second-brain-from-your-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-premade-flashcards-don-t-work-and-what-does/",
+      "destination": "/blog/ai-flashcards-vs-premade-decks-which-method-actually-sticks/",
+      "permanent": true
+    },
+    {
+      "source": "/es/blog/how-to-remember-what-you-read-and-actually-retain-it/",
+      "destination": "/blog/how-to-remember-books-long-term-the-page-one-review-method/",
+      "permanent": true
+    }
+  ]
 }
