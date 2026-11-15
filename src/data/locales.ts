@@ -363,7 +363,7 @@ export const landingContent = {
             ariaLabel: "Billing period",
             defaultPlan: "monthly",
             monthly: { label: "Monthly", amount: "$9.99", period: "/ month", note: "Billed monthly" },
-            yearly: { label: "Yearly", amount: "$95,99", period: "/ year", note: "Just $7.99/month", saveLabel: "−20%" },
+            yearly: { label: "Yearly", amount: "$95.99", period: "/ year", note: "Just $8.00/month", saveLabel: "−20%" },
           },
           features: [
             { text: "Unlimited Knowledge Spaces & notes", included: true },
@@ -488,7 +488,7 @@ export const landingContent = {
         offers: [
           { name: "Free", price: "0", priceCurrency: "USD", description: "Perfect for getting started with Fluxo — 3 knowledge spaces, capture, imports, and 5 AI summaries per month." },
           { name: "Boost (monthly)", price: "9.99", priceCurrency: "USD", description: "Unlimited Knowledge Spaces, smarter reviews, unlimited AI activities and advanced learning insights. 7 days free." },
-          { name: "Boost (yearly)", price: "95.90", priceCurrency: "USD", description: "Boost billed yearly — $7.99/month, save 20%. 7 days free." },
+          { name: "Boost (yearly)", price: "95.99", priceCurrency: "USD", description: "Boost billed yearly — $8.00/month, save 20%. 7 days free." },
         ],
       },
     },
@@ -668,7 +668,7 @@ export const landingContent = {
             ariaLabel: "Період оплати",
             defaultPlan: "monthly",
             monthly: { label: "Щомісяця", amount: "$9.99", period: "/ місяць", note: "Оплата щомісяця" },
-            yearly: { label: "Щороку", amount: "$95.90", period: "/ рік", note: "Лише $7.99/місяць", saveLabel: "−20%" },
+            yearly: { label: "Щороку", amount: "$95.99", period: "/ рік", note: "Лише $8.00/місяць", saveLabel: "−20%" },
           },
           features: [
             { text: "Необмежені простори знань і нотатки", included: true },
@@ -794,7 +794,7 @@ export const landingContent = {
         offers: [
           { name: "Безкоштовно", price: "0", priceCurrency: "USD", description: "Ідеально, щоб почати з Fluxo — 4 простори знань, базові ШІ-конспекти, синхронізація на 2 пристроях." },
           { name: "Boost (щомісяця)", price: "9.99", priceCurrency: "USD", description: "Необмежені простори знань, розумні повторення, необмежені ШІ-активності та розширена аналітика. 7 днів безкоштовно." },
-          { name: "Boost (щороку)", price: "95.90", priceCurrency: "USD", description: "Boost з оплатою за рік — $7.99/місяць, економія 20%. 7 днів безкоштовно." },
+          { name: "Boost (щороку)", price: "95.99", priceCurrency: "USD", description: "Boost з оплатою за рік — $8.00/місяць, економія 20%. 7 днів безкоштовно." },
         ],
       },
     },
@@ -978,7 +978,7 @@ export const landingContent = {
             ariaLabel: "Periodo de facturación",
             defaultPlan: "monthly",
             monthly: { label: "Mensual", amount: "$9.99", period: "/ mes", note: "Facturación mensual" },
-            yearly: { label: "Anual", amount: "$95.90", period: "/ año", note: "Solo $7.99/mes", saveLabel: "−20%" },
+            yearly: { label: "Anual", amount: "$95.99", period: "/ año", note: "Solo $8.00/mes", saveLabel: "−20%" },
           },
           features: [
             { text: "Espacios de conocimiento y notas ilimitados", included: true },
@@ -1103,7 +1103,7 @@ export const landingContent = {
         offers: [
           { name: "Free", price: "0", priceCurrency: "USD", description: "Perfecto para empezar con Fluxo — espacios de conocimiento, capturas e importaciones básicas." },
           { name: "Boost (mensual)", price: "9.99", priceCurrency: "USD", description: "Espacios ilimitados, repasos más inteligentes, actividades de IA ilimitadas y analítica avanzada. 7 días gratis." },
-          { name: "Boost (anual)", price: "95.90", priceCurrency: "USD", description: "Boost con pago anual — $7.99/mes, ahorra un 20%. 7 días gratis." },
+          { name: "Boost (anual)", price: "95.99", priceCurrency: "USD", description: "Boost con pago anual — $8.00/mes, ahorra un 20%. 7 días gratis." },
         ],
       },
     },
@@ -1287,7 +1287,7 @@ export const landingContent = {
             ariaLabel: "Abrechnungszeitraum",
             defaultPlan: "monthly",
             monthly: { label: "Monatlich", amount: "9,99 $", period: "/ Monat", note: "Monatliche Abrechnung" },
-            yearly: { label: "Jährlich", amount: "95,90 $", period: "/ Jahr", note: "Nur 7,99 $/Monat", saveLabel: "−20 %" },
+            yearly: { label: "Jährlich", amount: "95,99 $", period: "/ Jahr", note: "Nur 8,00 $/Monat", saveLabel: "−20 %" },
           },
           features: [
             { text: "Unbegrenzte Wissensräume und Notizen", included: true },
@@ -1412,7 +1412,7 @@ export const landingContent = {
         offers: [
           { name: "Free", price: "0", priceCurrency: "USD", description: "Perfekt für den Einstieg in Fluxo — Wissensräume, Erfassung und einfache Importe." },
           { name: "Boost (monatlich)", price: "9.99", priceCurrency: "USD", description: "Unbegrenzte Wissensräume, klügere Wiederholungen, unbegrenzte KI-Aktivitäten und erweiterte Lern-Einblicke. 7 Tage kostenlos." },
-          { name: "Boost (jährlich)", price: "95.90", priceCurrency: "USD", description: "Boost mit jährlicher Abrechnung — 7,99 $/Monat, 20 % gespart. 7 Tage kostenlos." },
+          { name: "Boost (jährlich)", price: "95.99", priceCurrency: "USD", description: "Boost mit jährlicher Abrechnung — 8,00 $/Monat, 20 % gespart. 7 Tage kostenlos." },
         ],
       },
     },
