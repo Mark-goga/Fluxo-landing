@@ -1,20 +1,62 @@
 {
   "schemaVersion": 1,
-  "rebuildId": "01a1ba61-f2ac-712a-81af-883f1589f223",
+  "rebuildId": "01a1d480-b048-76f4-828b-017a396c7304",
   "applicationId": "019e92d8-b331-7321-a2fc-a0f82fc0d2c3",
   "posts": [
+    {
+      "draftId": "01a1c0a5-168c-7402-bf66-8ef8eae68264",
+      "locale": "de",
+      "slug": "best-study-routine",
+      "path": "src/content/blog/generated/de/best-study-routine.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1c0a5-1695-7261-a638-883d75b295ef",
+      "locale": "de",
+      "slug": "best-way-to-learn-new-vocabulary",
+      "path": "src/content/blog/generated/de/best-way-to-learn-new-vocabulary.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1c0a5-169d-7146-8ae7-d54e8847b689",
+      "locale": "de",
+      "slug": "how-to-learn-without-forgetting",
+      "path": "src/content/blog/generated/de/how-to-learn-without-forgetting.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1c0a5-16a5-7330-94e9-3e47c78d07c7",
+      "locale": "de",
+      "slug": "how-to-remember-what-you-learn",
+      "path": "src/content/blog/generated/de/how-to-remember-what-you-learn.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1c0a5-16ac-70f8-828d-60fc21ccd6f7",
+      "locale": "de",
+      "slug": "how-to-study-while-working-full-time",
+      "path": "src/content/blog/generated/de/how-to-study-while-working-full-time.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1c0a5-16b4-707d-8e10-6a7f52f931a4",
+      "locale": "de",
+      "slug": "how-to-track-learning-progress",
+      "path": "src/content/blog/generated/de/how-to-track-learning-progress.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1c0a5-16bc-76c7-ae33-a5c8c3566d35",
+      "locale": "de",
+      "slug": "the-second-brain-for-learning",
+      "path": "src/content/blog/generated/de/the-second-brain-for-learning.mdx",
+      "includedInRebuild": false
+    },
     {
       "draftId": "01a06f9f-a66b-70e8-b989-21003e8a9101",
       "locale": "en",
       "slug": "active-recall-for-programming-learn-faster-by-testing-yourself",
       "path": "src/content/blog/generated/en/active-recall-for-programming-learn-faster-by-testing-yourself.mdx",
-      "includedInRebuild": false
-    },
-    {
-      "draftId": "019fbb5b-05f5-71d8-be1b-9f49d0988b03",
-      "locale": "en",
-      "slug": "active-recall-why-retrieval-beats-re-reading",
-      "path": "src/content/blog/generated/en/active-recall-why-retrieval-beats-re-reading.mdx",
       "includedInRebuild": false
     },
     {
@@ -36,20 +78,6 @@
       "locale": "en",
       "slug": "ai-flashcards-vs-premade-decks-which-method-actually-sticks",
       "path": "src/content/blog/generated/en/ai-flashcards-vs-premade-decks-which-method-actually-sticks.mdx",
-      "includedInRebuild": true
-    },
-    {
-      "draftId": "019fc5cc-bcdc-742c-ae4b-fa88399f65c1",
-      "locale": "en",
-      "slug": "anki-alternatives-for-self-learners-who-take-notes",
-      "path": "src/content/blog/generated/en/anki-alternatives-for-self-learners-who-take-notes.mdx",
-      "includedInRebuild": false
-    },
-    {
-      "draftId": "01a04680-3290-73ca-aa8a-2c382bd99617",
-      "locale": "en",
-      "slug": "anki-sentence-mining-a-step-by-step-workflow-for-language-learners",
-      "path": "src/content/blog/generated/en/anki-sentence-mining-a-step-by-step-workflow-for-language-learners.mdx",
       "includedInRebuild": false
     },
     {
@@ -81,24 +109,17 @@
       "includedInRebuild": false
     },
     {
-      "draftId": "019fc5d8-758f-763c-a870-01959d28d0a7",
+      "draftId": "01a1c0a5-168b-7291-b5d3-451ea1cda357",
       "locale": "en",
-      "slug": "best-flashcard-app-in-2026-fluxo-anki-remnote-mochi-and-quizlet-compared",
-      "path": "src/content/blog/generated/en/best-flashcard-app-in-2026-fluxo-anki-remnote-mochi-and-quizlet-compared.mdx",
+      "slug": "best-study-routine",
+      "path": "src/content/blog/generated/en/best-study-routine.mdx",
       "includedInRebuild": false
     },
     {
-      "draftId": "019fd5d9-49c2-76bb-bde5-be790d4c5577",
+      "draftId": "01a1c0a5-1693-7521-bba3-aa9e5060fa8b",
       "locale": "en",
-      "slug": "best-note-taking-app-for-students-fluxo-vs-anki-vs-remnote-vs-mochi-vs-quizlet",
-      "path": "src/content/blog/generated/en/best-note-taking-app-for-students-fluxo-vs-anki-vs-remnote-vs-mochi-vs-quizlet.mdx",
-      "includedInRebuild": false
-    },
-    {
-      "draftId": "01a06a74-4778-7629-9872-972ef60358fe",
-      "locale": "en",
-      "slug": "best-spaced-repetition-software-compared-2026",
-      "path": "src/content/blog/generated/en/best-spaced-repetition-software-compared-2026.mdx",
+      "slug": "best-way-to-learn-new-vocabulary",
+      "path": "src/content/blog/generated/en/best-way-to-learn-new-vocabulary.mdx",
       "includedInRebuild": false
     },
     {
@@ -113,7 +134,7 @@
       "locale": "en",
       "slug": "building-a-second-brain-from-your-notes",
       "path": "src/content/blog/generated/en/building-a-second-brain-from-your-notes.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
     },
     {
       "draftId": "019fb10a-53d8-770e-8672-9dc3c2f3f5a4",
@@ -158,13 +179,6 @@
       "includedInRebuild": false
     },
     {
-      "draftId": "019ff423-185b-7118-9620-409e0c1811e4",
-      "locale": "en",
-      "slug": "fsrs-algorithm-explained-how-modern-spaced-repetition-works",
-      "path": "src/content/blog/generated/en/fsrs-algorithm-explained-how-modern-spaced-repetition-works.mdx",
-      "includedInRebuild": false
-    },
-    {
       "draftId": "01a0413c-0f9c-7260-a634-0831333e806e",
       "locale": "en",
       "slug": "fsrs-vs-sm-2-which-spaced-repetition-algorithm-fits-your-learning",
@@ -172,24 +186,10 @@
       "includedInRebuild": false
     },
     {
-      "draftId": "01a050c8-de5c-748a-bcfe-7e2faa8c88e4",
-      "locale": "en",
-      "slug": "how-ai-flashcard-generators-compare-anki-workflows-vs-fluxo-and-alternatives",
-      "path": "src/content/blog/generated/en/how-ai-flashcard-generators-compare-anki-workflows-vs-fluxo-and-alternatives.mdx",
-      "includedInRebuild": false
-    },
-    {
       "draftId": "019fe9ba-35c6-7316-9dc9-2c5d35489fcc",
       "locale": "en",
       "slug": "how-chunking-memory-helps-you-learn-and-remember-more",
       "path": "src/content/blog/generated/en/how-chunking-memory-helps-you-learn-and-remember-more.mdx",
-      "includedInRebuild": false
-    },
-    {
-      "draftId": "019fe9a7-d14a-7515-bb1d-ab5fff357769",
-      "locale": "en",
-      "slug": "how-spaced-repetition-works-sm2-fsrs-and-the-science-of-retention",
-      "path": "src/content/blog/generated/en/how-spaced-repetition-works-sm2-fsrs-and-the-science-of-retention.mdx",
       "includedInRebuild": false
     },
     {
@@ -235,17 +235,17 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a1c0a5-169c-721b-a765-926b85f544a0",
+      "locale": "en",
+      "slug": "how-to-learn-without-forgetting",
+      "path": "src/content/blog/generated/en/how-to-learn-without-forgetting.mdx",
+      "includedInRebuild": false
+    },
+    {
       "draftId": "019fbb50-6290-7442-8da5-156bd8c6128f",
       "locale": "en",
       "slug": "how-to-make-a-study-schedule-that-actually-works",
       "path": "src/content/blog/generated/en/how-to-make-a-study-schedule-that-actually-works.mdx",
-      "includedInRebuild": false
-    },
-    {
-      "draftId": "01a074d3-a97a-726b-a74f-8a78a1ec019d",
-      "locale": "en",
-      "slug": "how-to-make-flashcards-from-notes-fast",
-      "path": "src/content/blog/generated/en/how-to-make-flashcards-from-notes-fast.mdx",
       "includedInRebuild": false
     },
     {
@@ -298,17 +298,17 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a1c0a5-16a3-7355-9b09-9f102e3f73f3",
+      "locale": "en",
+      "slug": "how-to-remember-what-you-learn",
+      "path": "src/content/blog/generated/en/how-to-remember-what-you-learn.mdx",
+      "includedInRebuild": false
+    },
+    {
       "draftId": "01a055fa-b6c2-7048-94c3-6a8d698bf6ec",
       "locale": "en",
       "slug": "how-to-remember-what-you-learn-from-online-courses",
       "path": "src/content/blog/generated/en/how-to-remember-what-you-learn-from-online-courses.mdx",
-      "includedInRebuild": false
-    },
-    {
-      "draftId": "019fabd6-77dc-70a3-98d8-c3a130a3151a",
-      "locale": "en",
-      "slug": "how-to-remember-what-you-read-and-actually-retain-it",
-      "path": "src/content/blog/generated/en/how-to-remember-what-you-read-and-actually-retain-it.mdx",
       "includedInRebuild": false
     },
     {
@@ -340,6 +340,13 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a1c0a5-16ab-71c7-af2c-d6fa43b8de42",
+      "locale": "en",
+      "slug": "how-to-study-while-working-full-time",
+      "path": "src/content/blog/generated/en/how-to-study-while-working-full-time.mdx",
+      "includedInRebuild": false
+    },
+    {
       "draftId": "01a0467b-2c47-710b-96e1-198ce3f6c0bb",
       "locale": "en",
       "slug": "how-to-sync-obsidian-to-anki-automatically-complete-plugin-guide",
@@ -351,13 +358,6 @@
       "locale": "en",
       "slug": "how-to-take-notes-for-programming-in-obsidian",
       "path": "src/content/blog/generated/en/how-to-take-notes-for-programming-in-obsidian.mdx",
-      "includedInRebuild": false
-    },
-    {
-      "draftId": "019fbb63-1c27-7354-99f5-d160ac9e0994",
-      "locale": "en",
-      "slug": "how-to-take-notes-from-a-book-you-actually-retain",
-      "path": "src/content/blog/generated/en/how-to-take-notes-from-a-book-you-actually-retain.mdx",
       "includedInRebuild": false
     },
     {
@@ -379,6 +379,13 @@
       "locale": "en",
       "slug": "how-to-take-notes-while-learning-to-code-a-cornell-method-guide",
       "path": "src/content/blog/generated/en/how-to-take-notes-while-learning-to-code-a-cornell-method-guide.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1c0a5-16b3-7565-8565-79b8469c9dc9",
+      "locale": "en",
+      "slug": "how-to-track-learning-progress",
+      "path": "src/content/blog/generated/en/how-to-track-learning-progress.mdx",
       "includedInRebuild": false
     },
     {
@@ -417,13 +424,6 @@
       "includedInRebuild": false
     },
     {
-      "draftId": "019ff926-8980-7414-8212-1da6626be901",
-      "locale": "en",
-      "slug": "interleaving-practice-a-smarter-way-to-study",
-      "path": "src/content/blog/generated/en/interleaving-practice-a-smarter-way-to-study.mdx",
-      "includedInRebuild": false
-    },
-    {
       "draftId": "01a06033-396d-700a-a46e-0d597ef17671",
       "locale": "en",
       "slug": "interleaving-vs-blocked-practice-why-harder-learning-produces-better-long-term-retention",
@@ -445,24 +445,10 @@
       "includedInRebuild": false
     },
     {
-      "draftId": "01a055f4-7f52-768a-8020-951574eb5196",
-      "locale": "en",
-      "slug": "note-taking-app-with-spaced-repetition-anki-vs-remnote-vs-fluxo",
-      "path": "src/content/blog/generated/en/note-taking-app-with-spaced-repetition-anki-vs-remnote-vs-fluxo.mdx",
-      "includedInRebuild": false
-    },
-    {
       "draftId": "01a06562-c54a-73ea-b780-abc69643010d",
       "locale": "en",
       "slug": "note-taking-apps-that-generate-flashcards-fluxo-vs-anki-vs-remnote-vs-mochi-vs-quizlet",
       "path": "src/content/blog/generated/en/note-taking-apps-that-generate-flashcards-fluxo-vs-anki-vs-remnote-vs-mochi-vs-quizlet.mdx",
-      "includedInRebuild": false
-    },
-    {
-      "draftId": "01a079e8-63e2-77c8-9a47-d00bd7609232",
-      "locale": "en",
-      "slug": "notes-scattered-across-apps-fix-it-with-one-system",
-      "path": "src/content/blog/generated/en/notes-scattered-across-apps-fix-it-with-one-system.mdx",
       "includedInRebuild": false
     },
     {
@@ -473,45 +459,10 @@
       "includedInRebuild": false
     },
     {
-      "draftId": "01a04683-c11c-724b-9668-491765c00c14",
-      "locale": "en",
-      "slug": "para-method-for-students-organize-your-study-notes-for-better-retention",
-      "path": "src/content/blog/generated/en/para-method-for-students-organize-your-study-notes-for-better-retention.mdx",
-      "includedInRebuild": false
-    },
-    {
-      "draftId": "01a06a82-446e-73fd-bc40-62aa95197932",
-      "locale": "en",
-      "slug": "quizlet-alternatives-compared-anki-remnote-mochi-and-fluxo",
-      "path": "src/content/blog/generated/en/quizlet-alternatives-compared-anki-remnote-mochi-and-fluxo.mdx",
-      "includedInRebuild": false
-    },
-    {
       "draftId": "019fd5ce-554c-717d-86c8-96ce88925ac1",
       "locale": "en",
       "slug": "remnote-alternative-6-tools-for-note-takers-who-study",
       "path": "src/content/blog/generated/en/remnote-alternative-6-tools-for-note-takers-who-study.mdx",
-      "includedInRebuild": false
-    },
-    {
-      "draftId": "01a055ef-c16b-7536-aa43-d07d0c9b1af5",
-      "locale": "en",
-      "slug": "remnote-vs-obsidian-vs-fluxo-which-study-tool-fits-your-workflow",
-      "path": "src/content/blog/generated/en/remnote-vs-obsidian-vs-fluxo-which-study-tool-fits-your-workflow.mdx",
-      "includedInRebuild": false
-    },
-    {
-      "draftId": "01a04ba3-ea77-76f4-91ab-13901d904e0a",
-      "locale": "en",
-      "slug": "retrieval-practice-vs-rereading-what-actually-works-better",
-      "path": "src/content/blog/generated/en/retrieval-practice-vs-rereading-what-actually-works-better.mdx",
-      "includedInRebuild": false
-    },
-    {
-      "draftId": "01a06037-c87d-74eb-bcc9-3ceabd6e6f43",
-      "locale": "en",
-      "slug": "testing-effect-why-retrieval-beats-rereading",
-      "path": "src/content/blog/generated/en/testing-effect-why-retrieval-beats-rereading.mdx",
       "includedInRebuild": false
     },
     {
@@ -522,10 +473,10 @@
       "includedInRebuild": false
     },
     {
-      "draftId": "019fb111-3baf-73c9-8cd0-ca3545257ede",
+      "draftId": "01a1c0a5-16ba-7568-b1f0-313036d54d67",
       "locale": "en",
-      "slug": "the-study-workflow-that-turns-notes-into-applied-knowledge",
-      "path": "src/content/blog/generated/en/the-study-workflow-that-turns-notes-into-applied-knowledge.mdx",
+      "slug": "the-second-brain-for-learning",
+      "path": "src/content/blog/generated/en/the-second-brain-for-learning.mdx",
       "includedInRebuild": false
     },
     {
@@ -557,13 +508,6 @@
       "includedInRebuild": false
     },
     {
-      "draftId": "01a079f3-36cb-710e-92ee-2558adf2a95c",
-      "locale": "en",
-      "slug": "why-premade-flashcards-don-t-work-and-what-does",
-      "path": "src/content/blog/generated/en/why-premade-flashcards-don-t-work-and-what-does.mdx",
-      "includedInRebuild": false
-    },
-    {
       "draftId": "01a074db-dcb0-761a-9b6b-9a0fc27a7485",
       "locale": "en",
       "slug": "why-rereading-notes-doesn-t-work-and-what-does",
@@ -578,11 +522,25 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a1c412-d524-7655-9a62-f618eeec8948",
+      "locale": "es",
+      "slug": "active-recall-for-programming-learn-faster-by-testing-yourself",
+      "path": "src/content/blog/generated/es/active-recall-for-programming-learn-faster-by-testing-yourself.mdx",
+      "includedInRebuild": false
+    },
+    {
       "draftId": "01a1b9ca-6cd8-74e3-9a58-562580e588b6",
       "locale": "es",
       "slug": "ai-flashcards-vs-premade-decks-which-method-actually-sticks",
       "path": "src/content/blog/generated/es/ai-flashcards-vs-premade-decks-which-method-actually-sticks.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1beeb-1dff-7613-af67-ad3ef6af372f",
+      "locale": "es",
+      "slug": "anki-vs-quizlet-which-flashcard-app-fits-you",
+      "path": "src/content/blog/generated/es/anki-vs-quizlet-which-flashcard-app-fits-you.mdx",
+      "includedInRebuild": false
     },
     {
       "draftId": "01a1af77-e3e7-731a-9576-0d454fb5015d",
@@ -592,11 +550,46 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a1c0a5-168e-7742-bcd1-a8ee9a637281",
+      "locale": "es",
+      "slug": "best-study-routine",
+      "path": "src/content/blog/generated/es/best-study-routine.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1c0a5-1696-7341-863e-67fa55070e19",
+      "locale": "es",
+      "slug": "best-way-to-learn-new-vocabulary",
+      "path": "src/content/blog/generated/es/best-way-to-learn-new-vocabulary.mdx",
+      "includedInRebuild": false
+    },
+    {
       "draftId": "01a1b9c5-3d62-74f6-82f8-46f092f83402",
       "locale": "es",
       "slug": "building-a-second-brain-from-your-notes",
       "path": "src/content/blog/generated/es/building-a-second-brain-from-your-notes.mdx",
-      "includedInRebuild": true
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1ce63-5f0c-7228-896a-1720160a1d4d",
+      "locale": "es",
+      "slug": "chatgpt-for-learning-without-losing-your-skills",
+      "path": "src/content/blog/generated/es/chatgpt-for-learning-without-losing-your-skills.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1c418-cae1-70ff-9892-7e54a363729e",
+      "locale": "es",
+      "slug": "deliberate-practice-the-framework-for-building-real-expertise",
+      "path": "src/content/blog/generated/es/deliberate-practice-the-framework-for-building-real-expertise.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1ce64-8a41-748a-9862-aef955802bd2",
+      "locale": "es",
+      "slug": "dunning-kruger-effect-in-learning-why-confidence-doesn-t-equal-competence",
+      "path": "src/content/blog/generated/es/dunning-kruger-effect-in-learning-why-confidence-doesn-t-equal-competence.mdx",
+      "includedInRebuild": false
     },
     {
       "draftId": "01a1b49f-57aa-71ec-aaf4-0aa72806c8a9",
@@ -606,10 +599,31 @@
       "includedInRebuild": false
     },
     {
-      "draftId": "01a1aa59-10c5-7199-aa85-e5ba3d21b50f",
+      "draftId": "01a1ce65-0033-7254-88a6-ac2b00357608",
       "locale": "es",
-      "slug": "how-to-remember-what-you-read-and-actually-retain-it",
-      "path": "src/content/blog/generated/es/how-to-remember-what-you-read-and-actually-retain-it.mdx",
+      "slug": "how-to-build-an-ai-study-plan-from-your-syllabus",
+      "path": "src/content/blog/generated/es/how-to-build-an-ai-study-plan-from-your-syllabus.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1c0a5-169e-72a0-914f-13aa1f8b2cfe",
+      "locale": "es",
+      "slug": "how-to-learn-without-forgetting",
+      "path": "src/content/blog/generated/es/how-to-learn-without-forgetting.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1beef-7112-74cb-a3f2-d5ee29636cc3",
+      "locale": "es",
+      "slug": "how-to-make-good-flashcards-that-actually-stick",
+      "path": "src/content/blog/generated/es/how-to-make-good-flashcards-that-actually-stick.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1c0a5-16a6-70ff-82b1-46d04be4caef",
+      "locale": "es",
+      "slug": "how-to-remember-what-you-learn",
+      "path": "src/content/blog/generated/es/how-to-remember-what-you-learn.mdx",
       "includedInRebuild": false
     },
     {
@@ -620,6 +634,13 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a1c418-3f82-76fe-8a54-1db7cd7168a6",
+      "locale": "es",
+      "slug": "how-to-stop-procrastinating-on-studying-by-fixing-the-root-cause",
+      "path": "src/content/blog/generated/es/how-to-stop-procrastinating-on-studying-by-fixing-the-root-cause.mdx",
+      "includedInRebuild": false
+    },
+    {
       "draftId": "01a1aa5d-0438-753d-a905-556a7e6d1749",
       "locale": "es",
       "slug": "how-to-study-effectively-for-long-term-retention",
@@ -627,10 +648,122 @@
       "includedInRebuild": false
     },
     {
+      "draftId": "01a1c93c-0df4-7212-8d46-a8a249a981a4",
+      "locale": "es",
+      "slug": "how-to-study-when-you-have-no-motivation-four-proven-techniques",
+      "path": "src/content/blog/generated/es/how-to-study-when-you-have-no-motivation-four-proven-techniques.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1c0a5-16ae-756a-8bdd-66fe11c4889b",
+      "locale": "es",
+      "slug": "how-to-study-while-working-full-time",
+      "path": "src/content/blog/generated/es/how-to-study-while-working-full-time.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1c93d-22a4-705d-bf30-ea9d6e1d256c",
+      "locale": "es",
+      "slug": "how-to-take-notes-while-learning-to-code-a-cornell-method-guide",
+      "path": "src/content/blog/generated/es/how-to-take-notes-while-learning-to-code-a-cornell-method-guide.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1c0a5-16b5-70fe-9a2a-cba2bf46b16d",
+      "locale": "es",
+      "slug": "how-to-track-learning-progress",
+      "path": "src/content/blog/generated/es/how-to-track-learning-progress.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1c93c-81b5-708c-84ad-259e8dae8efc",
+      "locale": "es",
+      "slug": "how-to-use-the-pomodoro-technique-to-study-effectively",
+      "path": "src/content/blog/generated/es/how-to-use-the-pomodoro-technique-to-study-effectively.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1ce63-f946-74a1-aedf-85d7bc213b1a",
+      "locale": "es",
+      "slug": "interleaving-vs-blocked-practice-why-harder-learning-produces-better-long-term-retention",
+      "path": "src/content/blog/generated/es/interleaving-vs-blocked-practice-why-harder-learning-produces-better-long-term-retention.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1c0a5-16bd-75d1-bfa1-6966b4a1646e",
+      "locale": "es",
+      "slug": "the-second-brain-for-learning",
+      "path": "src/content/blog/generated/es/the-second-brain-for-learning.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1c93d-99c9-74d2-971c-d7a18d787fc7",
+      "locale": "es",
+      "slug": "weekly-review-for-students-a-simple-system-to-stay-on-track",
+      "path": "src/content/blog/generated/es/weekly-review-for-students-a-simple-system-to-stay-on-track.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1c417-b451-7136-b2f0-6bdf30f804d8",
+      "locale": "es",
+      "slug": "why-do-i-forget-everything-i-learn",
+      "path": "src/content/blog/generated/es/why-do-i-forget-everything-i-learn.mdx",
+      "includedInRebuild": false
+    },
+    {
       "draftId": "01a1b4a3-0d24-738a-ae27-23cc57647cb3",
       "locale": "es",
       "slug": "why-rereading-notes-doesn-t-work-and-what-does",
       "path": "src/content/blog/generated/es/why-rereading-notes-doesn-t-work-and-what-does.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1c0a5-168f-73e9-bac0-b4240298d3a6",
+      "locale": "uk",
+      "slug": "best-study-routine",
+      "path": "src/content/blog/generated/uk/best-study-routine.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1c0a5-1697-72c7-8949-9397d965562f",
+      "locale": "uk",
+      "slug": "best-way-to-learn-new-vocabulary",
+      "path": "src/content/blog/generated/uk/best-way-to-learn-new-vocabulary.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1c0a5-169f-74b3-947c-4607ee7bc856",
+      "locale": "uk",
+      "slug": "how-to-learn-without-forgetting",
+      "path": "src/content/blog/generated/uk/how-to-learn-without-forgetting.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1c0a5-16a7-726e-b1f9-ec675d0739a9",
+      "locale": "uk",
+      "slug": "how-to-remember-what-you-learn",
+      "path": "src/content/blog/generated/uk/how-to-remember-what-you-learn.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1c0a5-16af-7396-b4b4-a5927fb32882",
+      "locale": "uk",
+      "slug": "how-to-study-while-working-full-time",
+      "path": "src/content/blog/generated/uk/how-to-study-while-working-full-time.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1c0a5-16b6-77fd-b754-ccf8dcae6365",
+      "locale": "uk",
+      "slug": "how-to-track-learning-progress",
+      "path": "src/content/blog/generated/uk/how-to-track-learning-progress.mdx",
+      "includedInRebuild": false
+    },
+    {
+      "draftId": "01a1c0a5-16be-7236-a3ad-1f304339be04",
+      "locale": "uk",
+      "slug": "the-second-brain-for-learning",
+      "path": "src/content/blog/generated/uk/the-second-brain-for-learning.mdx",
       "includedInRebuild": false
     }
   ]
