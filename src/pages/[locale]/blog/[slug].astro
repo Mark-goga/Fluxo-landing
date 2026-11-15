@@ -1,6 +1,7 @@
 ---
 import Page, { getStaticPaths as kitGetStaticPaths } from "@kit/pages/[locale]/blog/[slug].astro";
+import { storeLinks } from "@site/config/stores";
 
 export const getStaticPaths = kitGetStaticPaths;
 ---
-<Page {...Astro.props} />
+<Page {...Astro.props} storeLinks={storeLinks} />

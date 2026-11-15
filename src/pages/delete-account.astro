@@ -1,5 +1,6 @@
 ---
 import Page from "@kit/pages/delete-account.astro";
+import { storeLinks } from "@site/config/stores";
 import type { AccountDataItem } from "@kit/lib/account-deletion";
 
 const deletedData: AccountDataItem[] = [
@@ -32,4 +33,5 @@ const keptData: AccountDataItem[] = [
   inAppOutcome="Confirm. Your account is deleted immediately, together with your notes, files and learning progress on our servers and on that device."
   deletedData={deletedData}
   keptData={keptData}
+  storeLinks={storeLinks}
 />

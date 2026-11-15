@@ -1,4 +1,6 @@
 import { siteConfig, type LocaleKey } from "@kit/config/site";
+import { brandProfiles } from "@site/config/brand-profiles";
+import { storeLinks } from "@site/config/stores";
 
 type Link = {
   label: string;
@@ -131,18 +133,21 @@ export type LandingContent = {
     titleHtml: string;
     placeholder: string;
     submit: Action;
-    noteHtml: string;
+    /** Small line under the call-to-action; omitted when there is nothing to add. */
+    noteHtml?: string;
   };
   modal: {
     title: string;
     description: string;
-    placeholder: string;
-    submit: string;
     closeAria: string;
     /** Small line above the store name on each store button. */
     downloadOn: string;
     appStoreLabel: string;
     googlePlayLabel: string;
+    /** Legacy email lead-capture fields — unused once storeLinks is set, kept optional
+     * so this type stays compatible with landing-kit consumers still on that flow. */
+    placeholder?: string;
+    submit?: string;
   };
   toast: {
     success: string;
@@ -150,6 +155,7 @@ export type LandingContent = {
   };
   footer: {
     brandAlt: string;
+    stores?: { label: string; href: string; icon: string }[];
     socials: { label: string; href: string }[];
     columns: FooterColumn[];
     consentPreferences: string;
@@ -404,15 +410,11 @@ export const landingContent = {
     cta: {
       titleHtml: `Ready to actually<br/><strong>remember</strong> what you learn?`,
       placeholder: "Enter your email",
-      submit: { label: "Get early access", href: "#", clarityEvent: "signup_submit" },
-      noteHtml: `First 50 users get <strong>60% off Boost</strong>`,
+      submit: { label: "Get the app", href: "#", clarityEvent: "signup_submit" },
     },
     modal: {
-      title: "We haven't launched yet",
-      description:
-        "Fluxo isn't live yet – but the first members get exclusive early-bird discounts. Leave your email and we'll let you know the moment we launch.",
-      placeholder: "Enter your email",
-      submit: "Notify me",
+      title: "Get Fluxo on your phone",
+      description: "Choose your platform to download the app.",
       closeAria: "Close",
       downloadOn: "Download on the",
       appStoreLabel: "App Store",
@@ -424,6 +426,10 @@ export const landingContent = {
     },
     footer: {
       brandAlt: `${siteConfig.name}`,
+      stores: [
+        { label: "App Store", href: storeLinks.appStore, icon: "assets/ic_baseline-apple.svg" },
+        { label: "Google Play", href: storeLinks.googlePlay, icon: "assets/material-icon-theme_google.svg" },
+      ],
       socials: [
         { label: "TikTok", href: "#" },
         { label: "Instagram", href: "#" },
@@ -437,6 +443,8 @@ export const landingContent = {
             { label: "Features", href: "#features" },
             { label: "Pricing", href: "#pricing" },
             { label: "FAQs", href: "#faq" },
+            { label: "App Store", href: storeLinks.appStore },
+            { label: "Google Play", href: storeLinks.googlePlay },
           ],
         },
         {
@@ -472,6 +480,7 @@ export const landingContent = {
       searchUrlTemplate: "/blog/?q={search_term_string}",
       organization: {
         logoPath: "/assets/logo-fluxo.png",
+        sameAs: brandProfiles,
       },
       software: {
         category: "EducationalApplication",
@@ -706,15 +715,11 @@ export const landingContent = {
     cta: {
       titleHtml: `Готовий справді<br/><strong>пам'ятати</strong> те, що вивчаєш?`,
       placeholder: "Введіть ваш email",
-      submit: { label: "Отримати ранній доступ", href: "#", clarityEvent: "signup_submit" },
-      noteHtml: `Перші 50 користувачів отримають <strong>знижку 60% на Boost</strong>`,
+      submit: { label: "Завантажити застосунок", href: "#", clarityEvent: "signup_submit" },
     },
     modal: {
-      title: "Ми ще не запустилися",
-      description:
-        "Fluxo поки не запущено — але перші учасники отримають ексклюзивні знижки. Залиш свій email, і ми повідомимо, щойно запустимося.",
-      placeholder: "Введіть ваш email",
-      submit: "Повідомити мене",
+      title: "Отримайте Fluxo на телефон",
+      description: "Оберіть платформу, щоб завантажити застосунок.",
       closeAria: "Закрити",
       downloadOn: "Завантажити з",
       appStoreLabel: "App Store",
@@ -726,6 +731,10 @@ export const landingContent = {
     },
     footer: {
       brandAlt: `${siteConfig.name}`,
+      stores: [
+        { label: "App Store", href: storeLinks.appStore, icon: "assets/ic_baseline-apple.svg" },
+        { label: "Google Play", href: storeLinks.googlePlay, icon: "assets/material-icon-theme_google.svg" },
+      ],
       socials: [
         { label: "TikTok", href: "#" },
         { label: "Instagram", href: "#" },
@@ -739,6 +748,8 @@ export const landingContent = {
             { label: "Можливості", href: "#features" },
             { label: "Тарифи", href: "#pricing" },
             { label: "Питання", href: "#faq" },
+            { label: "App Store", href: storeLinks.appStore },
+            { label: "Google Play", href: storeLinks.googlePlay },
           ],
         },
         {
@@ -775,6 +786,7 @@ export const landingContent = {
       searchUrlTemplate: "/uk/blog/?q={search_term_string}",
       organization: {
         logoPath: "/assets/logo-fluxo.png",
+        sameAs: brandProfiles,
       },
       software: {
         category: "EducationalApplication",
@@ -1013,15 +1025,11 @@ export const landingContent = {
     cta: {
       titleHtml: `¿Listo para recordar de verdad<br/>lo que <strong>aprendes</strong>?`,
       placeholder: "Introduce tu email",
-      submit: { label: "Consigue acceso anticipado", href: "#", clarityEvent: "signup_submit" },
-      noteHtml: `Los primeros 50 usuarios consiguen un <strong>60% de descuento en Boost</strong>`,
+      submit: { label: "Descarga la app", href: "#", clarityEvent: "signup_submit" },
     },
     modal: {
-      title: "Aún no hemos lanzado",
-      description:
-        "Fluxo todavía no está disponible, pero los primeros miembros consiguen descuentos exclusivos de lanzamiento. Déjanos tu email y te avisamos en cuanto lancemos.",
-      placeholder: "Introduce tu email",
-      submit: "Avísame",
+      title: "Obtén Fluxo en tu teléfono",
+      description: "Elige tu plataforma para descargar la app.",
       closeAria: "Cerrar",
       downloadOn: "Descárgalo en",
       appStoreLabel: "App Store",
@@ -1033,6 +1041,10 @@ export const landingContent = {
     },
     footer: {
       brandAlt: `${siteConfig.name}`,
+      stores: [
+        { label: "App Store", href: storeLinks.appStore, icon: "assets/ic_baseline-apple.svg" },
+        { label: "Google Play", href: storeLinks.googlePlay, icon: "assets/material-icon-theme_google.svg" },
+      ],
       socials: [
         { label: "TikTok", href: "#" },
         { label: "Instagram", href: "#" },
@@ -1046,6 +1058,8 @@ export const landingContent = {
             { label: "Funciones", href: "#features" },
             { label: "Precios", href: "#pricing" },
             { label: "Preguntas frecuentes", href: "#faq" },
+            { label: "App Store", href: storeLinks.appStore },
+            { label: "Google Play", href: storeLinks.googlePlay },
           ],
         },
         {
@@ -1081,6 +1095,7 @@ export const landingContent = {
       searchUrlTemplate: "/es/blog/?q={search_term_string}",
       organization: {
         logoPath: "/assets/logo-fluxo.png",
+        sameAs: brandProfiles,
       },
       software: {
         category: "EducationalApplication",
@@ -1319,15 +1334,11 @@ export const landingContent = {
     cta: {
       titleHtml: `Bereit, das Gelernte<br/>wirklich zu <strong>behalten</strong>?`,
       placeholder: "Gib deine E-Mail ein",
-      submit: { label: "Frühen Zugang sichern", href: "#", clarityEvent: "signup_submit" },
-      noteHtml: `Die ersten 50 Nutzer erhalten <strong>60 % Rabatt auf Boost</strong>`,
+      submit: { label: "App herunterladen", href: "#", clarityEvent: "signup_submit" },
     },
     modal: {
-      title: "Wir sind noch nicht gestartet",
-      description:
-        "Fluxo ist noch nicht live – aber die ersten Mitglieder bekommen exklusive Early-Bird-Rabatte. Lass uns deine E-Mail da, und wir melden uns, sobald wir starten.",
-      placeholder: "Gib deine E-Mail ein",
-      submit: "Benachrichtige mich",
+      title: "Hole dir Fluxo auf dein Handy",
+      description: "Wähle deine Plattform, um die App herunterzuladen.",
       closeAria: "Schließen",
       downloadOn: "Lade es im",
       appStoreLabel: "App Store",
@@ -1339,6 +1350,10 @@ export const landingContent = {
     },
     footer: {
       brandAlt: `${siteConfig.name}`,
+      stores: [
+        { label: "App Store", href: storeLinks.appStore, icon: "assets/ic_baseline-apple.svg" },
+        { label: "Google Play", href: storeLinks.googlePlay, icon: "assets/material-icon-theme_google.svg" },
+      ],
       socials: [
         { label: "TikTok", href: "#" },
         { label: "Instagram", href: "#" },
@@ -1352,6 +1367,8 @@ export const landingContent = {
             { label: "Funktionen", href: "#features" },
             { label: "Preise", href: "#pricing" },
             { label: "FAQ", href: "#faq" },
+            { label: "App Store", href: storeLinks.appStore },
+            { label: "Google Play", href: storeLinks.googlePlay },
           ],
         },
         {
@@ -1387,6 +1404,7 @@ export const landingContent = {
       searchUrlTemplate: "/de/blog/?q={search_term_string}",
       organization: {
         logoPath: "/assets/logo-fluxo.png",
+        sameAs: brandProfiles,
       },
       software: {
         category: "EducationalApplication",

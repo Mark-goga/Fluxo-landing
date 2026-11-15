@@ -1049,6 +1049,65 @@ main {
   font-weight: 600;
 }
 
+/* ── CTA store buttons ── */
+.cta-stores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.cta-store-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 190px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  background: #0A0716;
+  color: white;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.cta-store-btn:hover {
+  background: #231B45;
+  transform: translateY(-1px);
+}
+
+.cta-store-icon {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+}
+
+.cta-store-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.2;
+}
+
+.cta-store-small {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 11px;
+  opacity: 0.7;
+}
+
+.cta-store-name {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .cta-stores {
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
 /* ── Footer ── */
 .footer {
   background: #040013;
@@ -1113,6 +1172,58 @@ main {
 .footer-social-btn:hover svg,
 .footer-social-btn:hover img {
   opacity: 1;
+}
+
+.footer-stores {
+  display: flex;
+  gap: 8px;
+}
+
+/* Same look as .footer-social-btn (see the footer social overrides below). */
+.footer-store-btn {
+  width: 78px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  outline: 1px solid rgba(255, 255, 255, 0.1);
+  outline-offset: -1px;
+  transition: background 0.2s ease, outline-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.footer-store-btn:hover {
+  background: rgba(255, 255, 255, 0.09);
+  outline: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+html:not([data-theme="dark"]) .footer-store-btn {
+  background: rgba(255, 255, 255, 0.5);
+  outline: 1px solid white;
+  box-shadow: 0px 4px 7.5px rgba(8, 3, 27, 0.08);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+html:not([data-theme="dark"]) .footer-store-btn:hover {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: none;
+}
+
+/* The Apple glyph ships white; turn it dark on the light footer. */
+html:not([data-theme="dark"]) .footer-store-btn[data-store-label="App Store"] img {
+  filter: brightness(0);
+}
+
+.footer-store-btn:focus-visible {
+  outline: 2px solid #4C27E3;
+  outline-offset: 2px;
+}
+
+.footer-store-btn img {
+  width: 20px;
+  height: 20px;
 }
 
 .footer-cols {
@@ -2054,6 +2165,54 @@ html.is-es .locale-en {
   background: #3D1FB6;
 }
 
+/* ── Modal store buttons ── */
+.lead-modal__stores {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lead-modal__store-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: #0A0716;
+  color: white;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.lead-modal__store-btn:hover {
+  background: #231B45;
+  transform: translateY(-1px);
+}
+
+.lead-modal__store-icon {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+}
+
+.lead-modal__store-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.lead-modal__store-small {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 11px;
+  opacity: 0.7;
+}
+
+.lead-modal__store-name {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
 .lead-modal__submit:disabled,
 .cta-form button:disabled {
   opacity: 0.6;
@@ -2398,6 +2557,19 @@ html[data-theme="dark"] .lead-modal__close {
 }
 html[data-theme="dark"] .lead-modal__close:hover {
   background: rgba(255, 255, 255, 0.08);
+}
+html[data-theme="dark"] .lead-modal__store-btn {
+  background: rgba(255, 255, 255, 0.08);
+  outline: 1px solid rgba(255, 255, 255, 0.14);
+  outline-offset: -1px;
+  color: #F5F2FF;
+}
+html[data-theme="dark"] .lead-modal__store-btn:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+html[data-theme="dark"] .cta-store-btn {
+  outline: 1px solid rgba(255, 255, 255, 0.18);
+  outline-offset: -1px;
 }
 html[data-theme="dark"] .lead-modal__title {
   color: #F5F2FF;

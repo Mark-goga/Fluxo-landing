@@ -3,6 +3,7 @@ import PageLayout from "@kit/layouts/PageLayout.astro";
 import Header from "@kit/components/Header.astro";
 import Footer from "@kit/components/Footer.astro";
 import LeadModal from "@kit/components/LeadModal.astro";
+import { storeLinks } from "@site/config/stores";
 import Breadcrumb, { type BreadcrumbItem } from "@kit/components/Breadcrumb.astro";
 import { absoluteUrl, siteConfig, supportedLocales, type LocaleKey } from "@kit/config/site";
 import { landingContent } from "@site/data/locales";
@@ -157,7 +158,7 @@ const isBold = (r: AboutParagraph[number]): r is { b: string } => typeof r !== "
   </main>
 
   <Footer content={content} routePath={ABOUT_PATH} />
-  <LeadModal content={content} routePath={ABOUT_PATH} />
+  <LeadModal content={content} routePath={ABOUT_PATH} storeLinks={storeLinks} />
 </PageLayout>
 
 <script>

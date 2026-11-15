@@ -1,5 +1,6 @@
 ---
 import Page from "@kit/pages/support.astro";
 import { DELETE_ACCOUNT_PATH } from "@kit/lib/account-deletion";
+import { storeLinks } from "@site/config/stores";
 ---
-<Page supportEmail="fluxo.admin@gmail.com" subscriptions deleteAccountPath={DELETE_ACCOUNT_PATH} />
+<Page supportEmail="fluxo.admin@gmail.com" subscriptions deleteAccountPath={DELETE_ACCOUNT_PATH} storeLinks={storeLinks} />
