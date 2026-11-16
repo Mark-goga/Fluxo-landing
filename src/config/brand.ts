@@ -43,7 +43,7 @@ export const brandTokens: BrandTokens = {
       width: 180,
     },
     {
-      href: "https://startupbase.io/products/fluxo?utm_source=startupbase&utm_medium=badge&utm_campaign=launch-badge-dark",
+      href: "https://startupbase.io",
       imageUrl: "https://statics.startupbase.io/site/badges/launched-on-sb-dark.svg",
       imageUrlLight: "https://statics.startupbase.io/site/badges/launched-on-sb.svg",
       alt: "Launched on StartupBase",
