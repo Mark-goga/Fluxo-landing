@@ -35,5 +35,19 @@ export const brandTokens: BrandTokens = {
       alt: "Featured on Twelve Tools",
       width: 189,
     },
+    {
+      href: "https://smollaunch.com",
+      imageUrl: "https://smollaunch.com/badges/featured-dark.svg",
+      imageUrlLight: "https://smollaunch.com/badges/featured.svg",
+      alt: "Fluxo — Featured on Smol Launch",
+      width: 180,
+    },
+    {
+      href: "https://startupbase.io/products/fluxo?utm_source=startupbase&utm_medium=badge&utm_campaign=launch-badge-dark",
+      imageUrl: "https://statics.startupbase.io/site/badges/launched-on-sb-dark.svg",
+      imageUrlLight: "https://statics.startupbase.io/site/badges/launched-on-sb.svg",
+      alt: "Launched on StartupBase",
+      width: 165,
+    },
   ],
 };
