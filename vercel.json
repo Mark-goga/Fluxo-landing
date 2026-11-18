@@ -118,5 +118,15 @@
       "destination": "/blog/how-to-remember-books-long-term-the-page-one-review-method/",
       "permanent": true
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/go/:slug",
+      "destination": "https://api.fluxo.today/l/:slug"
+    },
+    {
+      "source": "/go/:slug/",
+      "destination": "https://api.fluxo.today/l/:slug"
+    }
   ]
 }
