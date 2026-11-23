@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Last updated: November 5, 2026**
+**Last updated: November 23, 2026**
 
 This Privacy Policy explains how **Fluxo**, operated by **Markiian Halabut** ("Fluxo", "we", "us", or "our"), collects, uses, stores, and shares personal information when you use:
 
@@ -79,13 +79,26 @@ To provide spaced review, practice, progress tracking, and streaks, we store inf
 * quiz, flashcard, and other practice results; and
 * related timestamps.
 
-### 2.5 Voice Input
+### 2.5 App Usage Information
+
+When you use the Fluxo application while signed in, our backend records limited usage information about your account, for example:
+
+* the days on which your account was active;
+* the number of requests made on each of those days;
+* the platform you used (for example iOS, Android, or web); and
+* counts that describe sync activity, such as the number of synchronizations, changes sent and received, and errors.
+
+We use this information to understand how many people use Fluxo and keep using it over time, to measure reliability, and to improve the application. It is linked to your account and is deleted when your account is deleted.
+
+This information does not include the content of your notes, and the Fluxo application does not contain Google Analytics, Microsoft Clarity, or any session-recording or advertising SDK.
+
+### 2.6 Voice Input
 
 If you use voice input, speech is converted to text by the speech-recognition service of your device's operating system, such as Apple's or Google's speech services.
 
 Depending on your device and settings, audio may be processed by Apple or Google under their own privacy policies. Fluxo receives the resulting text, which becomes part of your note content.
 
-### 2.6 Subscription and Purchase Information
+### 2.7 Subscription and Purchase Information
 
 If you purchase a subscription through the mobile application, the transaction is processed through the applicable platform, such as:
 
@@ -112,7 +125,7 @@ We receive from Paddle and RevenueCat the information needed to provide your sub
 
 We do not receive your complete payment-card details from Apple, Google, Paddle, or RevenueCat.
 
-### 2.7 Crash and Diagnostic Information
+### 2.8 Crash and Diagnostic Information
 
 We use **Sentry** to identify crashes, errors, and technical problems.
 
@@ -132,7 +145,7 @@ Fluxo does not intentionally send the content of your notes to Sentry.
 
 We aim to limit diagnostic information to what is reasonably necessary to identify and fix technical problems.
 
-### 2.8 Website Analytics and Usage Information
+### 2.9 Website Analytics and Usage Information
 
 The website at fluxo.today may use analytics services including:
 
@@ -154,7 +167,7 @@ Microsoft Clarity may also provide session-replay and interaction-analysis funct
 
 These analytics tools apply to the website and do not receive the content of your notes.
 
-### 2.9 Communications
+### 2.10 Communications
 
 If you contact us, we may process:
 
@@ -231,6 +244,7 @@ We may process personal information for the following purposes:
 | Tracking learning activity, reviews, and streaks | Performance of a contract                                         |
 | Managing subscription access and AI credits      | Performance of a contract                                         |
 | Processing payments and purchase records         | Performance of a contract and legal obligations                   |
+| Measuring app usage, retention, and reliability  | Legitimate interests                                              |
 | Diagnosing crashes and technical problems        | Legitimate interests or consent where required                    |
 | Protecting Fluxo against abuse or fraud          | Legitimate interests and legal obligations                        |
 | Website analytics                                | Consent where required and, where permitted, legitimate interests |
@@ -381,6 +395,7 @@ In general:
 * account and profile information is retained while your account remains active and for a limited period afterward where necessary for security, dispute resolution, fraud prevention, or legal compliance;
 * notes, spaces, folders, files, learning statistics, and generated study materials are retained on our backend while your account remains active, so that they can be synchronized and restored;
 * content you delete in the application is removed from our backend when the deletion is synchronized, although copies may remain in technical backups for a limited period;
+* app usage information is retained while your account remains active;
 * AI request records are retained for as long as reasonably necessary for operations, cost accounting, troubleshooting, and abuse prevention;
 * purchase, tax, and transaction records may be retained for periods required by accounting, tax, consumer-protection, or other applicable laws;
 * support communications may be retained while necessary to handle the request and related legal or operational matters; and
@@ -418,7 +433,8 @@ This includes:
 * notes, spaces, folders, and their content;
 * images, photos, and files stored for your notes;
 * learning statistics, review history, activity, and streaks;
-* generated study materials and your AI credit records; and
+* generated study materials and your AI credit records;
+* app usage information; and
 * other server-side data directly associated with the account.
 
 We also delete the content of your AI request records, keeping only anonymous usage data as described in Section 3.4.
