@@ -49,5 +49,19 @@ export const brandTokens: BrandTokens = {
       alt: "Launched on StartupBase",
       width: 165,
     },
+    {
+      href: "https://launchigniter.com/product/fluxo?ref=badge-fluxo",
+      imageUrl: "https://launchigniter.com/api/badge/fluxo?theme=dark",
+      imageUrlLight: "https://launchigniter.com/api/badge/fluxo?theme=light",
+      alt: "Fluxo — Featured on LaunchIgniter",
+      width: 212,
+    },
+    {
+      href: "https://foundrlist.com/product/fluxo?utm_source=badge&utm_medium=embed",
+      imageUrl: "https://foundrlist.com/api/badge/fluxo?theme=dark",
+      imageUrlLight: "https://foundrlist.com/api/badge/fluxo?theme=light",
+      alt: "Fluxo — Featured on FoundrList",
+      width: 150,
+    },
   ],
 };
