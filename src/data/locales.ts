@@ -217,7 +217,7 @@ export const landingContent = {
     ogLocale: "en_US",
     ogLocaleAlternate: "uk_UA",
     meta: {
-      title: `${siteConfig.name} — Learn quickly, remember forever`,
+      title: `${siteConfig.name} — Notes to Flashcards & Spaced Repetition App`,
       description:
         "Fluxo turns passive reading into long-term memory with knowledge spaces, AI summaries and spaced repetition. Learn quickly and remember what you learn.",
       ogTitle: `${siteConfig.name} — Learn quickly, remember forever`,
@@ -319,7 +319,7 @@ export const landingContent = {
         {
           title: "Works everywhere",
           desc:
-            "iOS, Android, web, desktop. Fully synced, always up to date. Works offline — keep learning anywhere, your all updates syncs automatically when connection returns.",
+            "iOS, Android, web, desktop. Fully synced, always up to date. Works offline — keep learning anywhere, and your updates sync automatically when the connection returns.",
           bg: "#E0F2FF",
           imageBg: "#F0F8FF",
           sticker: "blue",
@@ -526,7 +526,7 @@ export const landingContent = {
     ogLocale: "uk_UA",
     ogLocaleAlternate: "en_US",
     meta: {
-      title: `${siteConfig.name} — Вчись швидко, пам'ятай завжди`,
+      title: `${siteConfig.name} — нотатки у флеш-картки з інтервальним повторенням`,
       description:
         "Fluxo перетворює читання на довготривалу пам'ять: простори знань, ШІ-конспекти та інтервальне повторення. Вчись швидко й пам'ятай вивчене.",
       ogTitle: `${siteConfig.name} — Вчись швидко, пам'ятай завжди`,
@@ -832,7 +832,7 @@ export const landingContent = {
     ogLocale: "es_ES",
     ogLocaleAlternate: "en_US",
     meta: {
-      title: `${siteConfig.name} — Aprende rápido, recuerda para siempre`,
+      title: `${siteConfig.name} — de apuntes a flashcards con repetición espaciada`,
       description:
         "Fluxo convierte la lectura en memoria a largo plazo con espacios de conocimiento, resúmenes con IA y repetición espaciada. Aprende rápido y no olvides.",
       ogTitle: `${siteConfig.name} — Aprende rápido, recuerda para siempre`,
@@ -1141,7 +1141,7 @@ export const landingContent = {
     ogLocale: "de_DE",
     ogLocaleAlternate: "en_US",
     meta: {
-      title: `${siteConfig.name} — Schnell lernen, für immer behalten`,
+      title: `${siteConfig.name} — Notizen zu Karteikarten mit Spaced Repetition`,
       description:
         "Fluxo macht aus passivem Lesen Langzeitwissen: Wissensräume, KI-Zusammenfassungen und verteiltes Wiederholen. Schnell lernen, dauerhaft behalten.",
       ogTitle: `${siteConfig.name} — Schnell lernen, für immer behalten`,
