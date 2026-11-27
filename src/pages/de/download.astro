@@ -1,5 +1,6 @@
 ---
-import DownloadPage from "@site/components/DownloadPage.astro";
+import DownloadPage from "@kit/components/DownloadPage.astro";
+import { storeLinks } from "@site/config/stores";
 ---
 
-<DownloadPage locale="de" />
+<DownloadPage locale="de" storeLinks={storeLinks} />

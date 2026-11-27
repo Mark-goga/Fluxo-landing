@@ -2,7 +2,7 @@ import { GET as kitSitemap } from "@kit/pages/sitemap.xml";
 import { absoluteUrl, supportedLocales } from "@kit/config/site";
 import type { LocaleKey } from "@kit/config/site";
 import { aboutPath } from "@site/data/about";
-import { downloadPath } from "@site/data/download";
+import { downloadSitemapUrls } from "@kit/lib/download";
 
 // The kit's sitemap knows nothing about site-specific pages, so append the localized
 // About and Download pages (with hreflang alternates) to whatever it generates.
@@ -27,7 +27,7 @@ ${alternates}
 };
 
 const aboutUrls = localizedUrls(aboutPath, "0.5");
-const downloadUrls = localizedUrls(downloadPath, "0.6");
+const downloadUrls = downloadSitemapUrls();
 
 // The kit lists /privacy/ and /cookies/ but not /terms/ or /refund/, which this site adds.
 const legalUrls = ["/terms/", "/refund/"]
