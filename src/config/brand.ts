@@ -1,4 +1,5 @@
 import type { BrandTokens } from "@kit/config/site";
+import { appStoreId } from "./stores";
 
 // Fluxo brand tokens — visual/asset paths owned by the landing, not the kit.
 // Every landing implements this at `@site/config/brand.ts`.
@@ -14,6 +15,7 @@ export const brandTokens: BrandTokens = {
   logoPath: "assets/logo-fluxo.png",
   twitterSite: "@fluxo_app",
   twitterCreator: "@fluxo_app",
+  appStoreId,
   footerBadges: [
     {
       href: "https://fazier.com",

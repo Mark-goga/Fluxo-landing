@@ -1,6 +1,6 @@
 import { siteConfig, type LocaleKey } from "@kit/config/site";
 import { brandProfiles } from "@site/config/brand-profiles";
-import { storeLinks } from "@site/config/stores";
+import { storeLinks, webAppLinks } from "@site/config/stores";
 
 type Link = {
   label: string;
@@ -100,6 +100,8 @@ export type LandingContent = {
     nav: Link[];
     languageAria: string;
     cta: Action;
+    /** "Log in" into the web app; desktop and mobile menu. */
+    signIn?: Action;
   };
   hero: {
     titleHtml: string;
@@ -237,6 +239,7 @@ export const landingContent = {
       ],
       languageAria: "Change language",
       cta: { label: "Get started", href: "#cta", clarityEvent: "header_cta_click" },
+      signIn: { label: "Log in", href: webAppLinks.signIn, clarityEvent: "header_sign_in_click" },
     },
     hero: {
       titleHtml: `Learn quickly. Keep <span class="hero-keyword">knowledge</span> fresh forever`,
@@ -546,6 +549,7 @@ export const landingContent = {
       ],
       languageAria: "Змінити мову",
       cta: { label: "Почати", href: "#cta", clarityEvent: "header_cta_click" },
+      signIn: { label: "Увійти", href: webAppLinks.signIn, clarityEvent: "header_sign_in_click" },
     },
     hero: {
       titleHtml: `Вчись швидко. Тримай <span class="hero-keyword">знання</span> свіжими назавжди`,
@@ -852,6 +856,7 @@ export const landingContent = {
       ],
       languageAria: "Cambiar idioma",
       cta: { label: "Empieza ahora", href: "#cta", clarityEvent: "header_cta_click" },
+      signIn: { label: "Iniciar sesión", href: webAppLinks.signIn, clarityEvent: "header_sign_in_click" },
     },
     hero: {
       titleHtml: `Aprende rápido. Mantén tu <span class="hero-keyword">conocimiento</span> fresco para siempre`,
@@ -1161,6 +1166,7 @@ export const landingContent = {
       ],
       languageAria: "Sprache wechseln",
       cta: { label: "Loslegen", href: "#cta", clarityEvent: "header_cta_click" },
+      signIn: { label: "Anmelden", href: webAppLinks.signIn, clarityEvent: "header_sign_in_click" },
     },
     hero: {
       titleHtml: `Schnell lernen. <span class="hero-keyword">Wissen</span> für immer frisch halten`,

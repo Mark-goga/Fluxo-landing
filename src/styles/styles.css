@@ -3259,6 +3259,38 @@ html[data-theme="dark"] .burger:hover {
   margin-left: 8px;
 }
 
+/* "Log in" into the web app: a quiet text action beside the CTA, same type as the CTA. */
+.header-login {
+  margin-left: 8px;
+  padding: 12px;
+  border-radius: 12px;
+  color: #1C1C1C;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+
+.header-login:hover {
+  color: #3D1FB6;
+}
+
+.header-login:focus-visible {
+  outline: 2px solid #4C27E3;
+  outline-offset: 2px;
+}
+
+html[data-theme="dark"] .header-login {
+  color: #F5F2FF;
+}
+
+html[data-theme="dark"] .header-login:hover {
+  color: #9377FF;
+}
+
 /* While the inline nav is visible (≥920px — the narrowest width where the full desktop
    header fits in every locale), give both sides equal columns so the nav sits truly
    centred; minmax(max-content, 1fr) keeps it from ever overlapping. */
@@ -3333,7 +3365,8 @@ html.lenis body {
     gap: 4px;
   }
 
-  .header-right > .theme-toggle {
+  .header-right > .theme-toggle,
+  .header-right > .header-login {
     display: none;
   }
 
