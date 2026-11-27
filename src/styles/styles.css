@@ -50,6 +50,25 @@ body {
   background: #F3F3F3;
 }
 
+/* Keep the footer at the bottom of the screen on short pages (Download, 404): main takes
+   the height the content leaves. Header, modal and toast are fixed, so only main and the
+   footer are in the flow; explicit widths stop a flex item from shrinking to its content. */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+body > main {
+  flex: 1 0 auto;
+  width: 100%;
+}
+
+body > footer {
+  width: 100%;
+}
+
 img {
   max-width: 100%;
   display: block;
