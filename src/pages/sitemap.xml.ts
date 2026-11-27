@@ -1,26 +1,33 @@
 import { GET as kitSitemap } from "@kit/pages/sitemap.xml";
 import { absoluteUrl, supportedLocales } from "@kit/config/site";
+import type { LocaleKey } from "@kit/config/site";
 import { aboutPath } from "@site/data/about";
+import { downloadPath } from "@site/data/download";
 
 // The kit's sitemap knows nothing about site-specific pages, so append the localized
-// About pages (with hreflang alternates) to whatever it generates.
-const aboutAlternates = [
-  ...supportedLocales.map(
-    (locale) => `    <xhtml:link rel="alternate" hreflang="${locale.hreflang}" href="${absoluteUrl(aboutPath(locale.key))}"/>`,
-  ),
-  `    <xhtml:link rel="alternate" hreflang="x-default" href="${absoluteUrl(aboutPath("en"))}"/>`,
-].join("\n");
+// About and Download pages (with hreflang alternates) to whatever it generates.
+const localizedUrls = (pathFor: (locale: LocaleKey) => string, priority: string) => {
+  const alternates = [
+    ...supportedLocales.map(
+      (locale) => `    <xhtml:link rel="alternate" hreflang="${locale.hreflang}" href="${absoluteUrl(pathFor(locale.key))}"/>`,
+    ),
+    `    <xhtml:link rel="alternate" hreflang="x-default" href="${absoluteUrl(pathFor("en"))}"/>`,
+  ].join("\n");
 
-const aboutUrls = supportedLocales
-  .map(
-    (locale) => `  <url>
-    <loc>${absoluteUrl(aboutPath(locale.key))}</loc>
+  return supportedLocales
+    .map(
+      (locale) => `  <url>
+    <loc>${absoluteUrl(pathFor(locale.key))}</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-${aboutAlternates}
+    <priority>${priority}</priority>
+${alternates}
   </url>`,
-  )
-  .join("\n");
+    )
+    .join("\n");
+};
+
+const aboutUrls = localizedUrls(aboutPath, "0.5");
+const downloadUrls = localizedUrls(downloadPath, "0.6");
 
 // The kit lists /privacy/ and /cookies/ but not /terms/ or /refund/, which this site adds.
 const legalUrls = ["/terms/", "/refund/"]
@@ -35,6 +42,6 @@ const legalUrls = ["/terms/", "/refund/"]
 
 export async function GET() {
   const response = await kitSitemap();
-  const xml = (await response.text()).replace("</urlset>", `${aboutUrls}\n${legalUrls}\n</urlset>`);
+  const xml = (await response.text()).replace("</urlset>", `${aboutUrls}\n${downloadUrls}\n${legalUrls}\n</urlset>`);
   return new Response(xml, { headers: response.headers });
 }
